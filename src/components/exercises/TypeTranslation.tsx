@@ -80,6 +80,12 @@ export default function TypeTranslation({ exercise, onAnswer }: TypeTranslationP
           Tačno! ✓
         </p>
       )}
+
+      {result && exercise.phrase.notes && (
+        <div className="rounded-xl bg-navy-800/50 border border-navy-700 px-4 py-2">
+          <p className="text-xs text-amber-400">{exercise.phrase.notes}</p>
+        </div>
+      )}
     </div>
   );
 }

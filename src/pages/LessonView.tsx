@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getLessonById } from '../data/lessons';
 import { generateLessonExercises } from '../engine/exercise-generator';
@@ -11,6 +11,7 @@ import {
   addAchievement,
 } from '../store/progress';
 import ProgressBar from '../components/ProgressBar';
+import PhraseIntro from '../components/exercises/PhraseIntro';
 import MultipleChoice from '../components/exercises/MultipleChoice';
 import TypeTranslation from '../components/exercises/TypeTranslation';
 import FillInBlank from '../components/exercises/FillInBlank';
@@ -18,13 +19,17 @@ import WordTiles from '../components/exercises/WordTiles';
 import ScriptConvert from '../components/exercises/ScriptConvert';
 import ContextPick from '../components/exercises/ContextPick';
 import MatchPairs from '../components/exercises/MatchPairs';
-import type { Exercise, UserProgress } from '../store/types';
+import type { Exercise, Phrase, UserProgress } from '../store/types';
+
+type LessonPhase = 'intro' | 'exercises' | 'finished';
 
 interface LessonViewProps {
   progress: UserProgress;
   setProgress: (p: UserProgress) => void;
   script: 'latin' | 'cyrillic';
 }
+
+const INTRO_BATCH_SIZE = 5;
 
 export default function LessonView({
   progress,
@@ -35,18 +40,48 @@ export default function LessonView({
   const navigate = useNavigate();
   const lesson = id ? getLessonById(id) : undefined;
 
+  const allLessonPhrases = useMemo(() => {
+    if (!lesson) return [];
+    return lesson.phraseGroups.flatMap((g) => g.phrases);
+  }, [lesson]);
+
+  const newPhrases = useMemo(() => {
+    return allLessonPhrases.filter(
+      (p) => !progress.phrases[p.id] || progress.phrases[p.id].bucket === 0
+    );
+  }, [allLessonPhrases, progress.phrases]);
+
+  const introNeeded = newPhrases.length > 0;
+  const introPhrases = useMemo(
+    () => newPhrases.slice(0, INTRO_BATCH_SIZE),
+    [newPhrases]
+  );
+
+  const [phase, setPhase] = useState<LessonPhase>(introNeeded ? 'intro' : 'exercises');
   const [exercises, setExercises] = useState<Exercise[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [totalAnswered, setTotalAnswered] = useState(0);
   const [showMatchPairs, setShowMatchPairs] = useState(false);
-  const [finished, setFinished] = useState(false);
 
   useEffect(() => {
-    if (!lesson) return;
+    if (!lesson || phase !== 'exercises') return;
     const generated = generateLessonExercises(lesson, progress.phrases, script, 15);
     setExercises(generated);
-  }, [lesson, script]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [lesson, script, phase]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  const handleIntroComplete = useCallback(() => {
+    if (!lesson) return;
+    introPhrases.forEach((phrase) => {
+      const existing = progress.phrases[phrase.id] ?? createPhraseProgress(phrase.id);
+      if (existing.bucket === 0) {
+        const newProgress = updatePhraseProgress(progress, { ...existing, bucket: 0, lastReviewed: Date.now() });
+        setProgress(newProgress);
+        saveProgress(newProgress);
+      }
+    });
+    setPhase('exercises');
+  }, [lesson, introPhrases, progress, setProgress]);
 
   const handleAnswer = useCallback(
     (correct: boolean) => {
@@ -70,13 +105,11 @@ export default function LessonView({
       setProgress(newProgress);
       saveProgress(newProgress);
 
-      setTimeout(() => {
-        if (currentIndex + 1 >= exercises.length) {
-          finishLesson(newProgress, correct);
-        } else {
-          setCurrentIndex((i) => i + 1);
-        }
-      }, 300);
+      if (currentIndex + 1 >= exercises.length) {
+        finishLesson(newProgress, correct);
+      } else {
+        setCurrentIndex((i) => i + 1);
+      }
     },
     [exercises, currentIndex, progress, setProgress] // eslint-disable-line react-hooks/exhaustive-deps
   );
@@ -109,7 +142,7 @@ export default function LessonView({
 
     setProgress(newProgress);
     saveProgress(newProgress);
-    setFinished(true);
+    setPhase('finished');
   };
 
   const handleMatchPairsComplete = (correctPairs: number, totalPairs: number) => {
@@ -138,7 +171,33 @@ export default function LessonView({
     );
   }
 
-  if (finished) {
+  if (phase === 'intro') {
+    const title = script === 'cyrillic' ? lesson.title.sr_cyrillic : lesson.title.sr_latin;
+    return (
+      <div className="flex flex-col gap-6 pb-4">
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => navigate('/')}
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            ✕
+          </button>
+          <div className="flex-1">
+            <h2 className="text-lg font-semibold text-white">{title}</h2>
+            <p className="text-xs text-gray-500">{lesson.description.en}</p>
+          </div>
+        </div>
+
+        <PhraseIntro
+          phrases={introPhrases}
+          script={script}
+          onComplete={handleIntroComplete}
+        />
+      </div>
+    );
+  }
+
+  if (phase === 'finished') {
     const accuracy =
       totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
 
@@ -165,6 +224,14 @@ export default function LessonView({
           </div>
         </div>
 
+        <div className="mt-4 w-full max-w-xs">
+          <PhraseReviewSummary
+            phrases={allLessonPhrases}
+            progress={progress}
+            script={script}
+          />
+        </div>
+
         <div className="flex gap-3 mt-4">
           <button
             onClick={() => navigate('/')}
@@ -174,17 +241,10 @@ export default function LessonView({
           </button>
           <button
             onClick={() => {
-              setFinished(false);
+              setPhase(introNeeded ? 'intro' : 'exercises');
               setCurrentIndex(0);
               setCorrectCount(0);
               setTotalAnswered(0);
-              const newExercises = generateLessonExercises(
-                lesson,
-                progress.phrases,
-                script,
-                15
-              );
-              setExercises(newExercises);
             }}
             className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900"
           >
@@ -227,29 +287,23 @@ export default function LessonView({
         </span>
       </div>
 
-      {exercise.phrase.notes && (
-        <div className="rounded-xl bg-navy-800/50 border border-navy-700 px-4 py-2">
-          <p className="text-xs text-amber-400">{exercise.phrase.notes}</p>
-        </div>
-      )}
-
       {exercise.type === 'multiple-choice' && (
-        <MultipleChoice exercise={exercise} onAnswer={handleAnswer} />
+        <MultipleChoice key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'type-translation' && (
-        <TypeTranslation exercise={exercise} onAnswer={handleAnswer} />
+        <TypeTranslation key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'fill-in-blank' && (
-        <FillInBlank exercise={exercise} onAnswer={handleAnswer} />
+        <FillInBlank key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'word-tiles' && (
-        <WordTiles exercise={exercise} onAnswer={handleAnswer} />
+        <WordTiles key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'script-convert' && (
-        <ScriptConvert exercise={exercise} onAnswer={handleAnswer} />
+        <ScriptConvert key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'context-pick' && (
-        <ContextPick exercise={exercise} onAnswer={handleAnswer} />
+        <ContextPick key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
 
       {currentIndex === 4 && !showMatchPairs && exercises.length > 5 && (
@@ -260,6 +314,49 @@ export default function LessonView({
           Try matching pairs instead
         </button>
       )}
+    </div>
+  );
+}
+
+function PhraseReviewSummary({
+  phrases,
+  progress,
+  script,
+}: {
+  phrases: Phrase[];
+  progress: UserProgress;
+  script: 'latin' | 'cyrillic';
+}) {
+  const studied = phrases.filter((p) => progress.phrases[p.id]);
+  if (studied.length === 0) return null;
+
+  return (
+    <div className="rounded-xl border border-navy-700 bg-navy-800/30 p-3 text-left">
+      <p className="text-xs text-gray-400 mb-2">Phrases studied:</p>
+      <div className="flex flex-col gap-1">
+        {studied.slice(0, 8).map((p) => {
+          const prog = progress.phrases[p.id];
+          const mastery = prog ? Math.min(100, prog.bucket * 20) : 0;
+          return (
+            <div key={p.id} className="flex items-center gap-2">
+              <div className="flex-1 min-w-0">
+                <p className="text-xs text-white truncate">
+                  {script === 'cyrillic' ? p.sr_cyrillic : p.sr_latin}
+                </p>
+              </div>
+              <div className="w-12 h-1.5 rounded-full bg-navy-700 overflow-hidden">
+                <div
+                  className="h-full rounded-full bg-amber-500"
+                  style={{ width: `${mastery}%` }}
+                />
+              </div>
+            </div>
+          );
+        })}
+        {studied.length > 8 && (
+          <p className="text-[10px] text-gray-600">+{studied.length - 8} more</p>
+        )}
+      </div>
     </div>
   );
 }

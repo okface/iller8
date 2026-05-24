@@ -15,7 +15,7 @@ export default function MultipleChoice({ exercise, onAnswer }: MultipleChoicePro
     setSelected(option);
     setAnswered(true);
     const correct = option === exercise.correctAnswer;
-    setTimeout(() => onAnswer(correct), 1200);
+    setTimeout(() => onAnswer(correct), 2000);
   };
 
   return (
@@ -66,6 +66,12 @@ export default function MultipleChoice({ exercise, onAnswer }: MultipleChoicePro
         <p className="text-sm text-correct">
           Correct answer: {exercise.correctAnswer}
         </p>
+      )}
+
+      {answered && exercise.phrase.notes && (
+        <div className="rounded-xl bg-navy-800/50 border border-navy-700 px-4 py-2">
+          <p className="text-xs text-amber-400">{exercise.phrase.notes}</p>
+        </div>
       )}
     </div>
   );

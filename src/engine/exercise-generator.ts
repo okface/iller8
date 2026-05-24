@@ -49,23 +49,20 @@ function generateMultipleChoice(
     };
   } else {
     const srField = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
-    const distractors = getDistractors(
-      phrase[srField === 'sr_cyrillic' ? 'sr_latin' : 'sr_latin'],
-      allPhrases,
-      'sr_latin',
-      3
-    );
-    const correctSr = script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin;
+    const correctSr = phrase[srField];
+    const distractorPhrases = allPhrases
+      .filter((p) => p.id !== phrase.id)
+      .map((p) => p[srField]);
+    const uniqueDistractors = [...new Set(distractorPhrases)]
+      .filter((d) => d !== correctSr);
+    const selectedDistractors = pickRandom(uniqueDistractors, 3);
     return {
       type: 'multiple-choice',
       phrase,
       direction,
       prompt: phrase.en,
       correctAnswer: correctSr,
-      options: shuffle([correctSr, ...distractors.map(() => {
-        const rp = allPhrases[Math.floor(Math.random() * allPhrases.length)];
-        return script === 'cyrillic' ? rp.sr_cyrillic : rp.sr_latin;
-      }).filter(d => d !== correctSr).slice(0, 3), correctSr].slice(0, 4)),
+      options: shuffle([correctSr, ...selectedDistractors]),
       context: phrase.context,
     };
   }

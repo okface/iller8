@@ -63,23 +63,21 @@ export default function ReviewSession({
       setProgress(newProgress);
       saveProgress(newProgress);
 
-      setTimeout(() => {
-        if (currentIndex + 1 >= exercises.length) {
-          let finalProgress = newProgress;
-          const reviewCount = (finalProgress.dailyStats || []).reduce(
-            (sum, d) => sum + d.phrasesStudied,
-            0
-          );
-          if (reviewCount >= 150) {
-            finalProgress = addAchievement(finalProgress, 'review-champion');
-            setProgress(finalProgress);
-            saveProgress(finalProgress);
-          }
-          setFinished(true);
-        } else {
-          setCurrentIndex((i) => i + 1);
+      if (currentIndex + 1 >= exercises.length) {
+        let finalProgress = newProgress;
+        const reviewCount = (finalProgress.dailyStats || []).reduce(
+          (sum, d) => sum + d.phrasesStudied,
+          0
+        );
+        if (reviewCount >= 150) {
+          finalProgress = addAchievement(finalProgress, 'review-champion');
+          setProgress(finalProgress);
+          saveProgress(finalProgress);
         }
-      }, 300);
+        setFinished(true);
+      } else {
+        setCurrentIndex((i) => i + 1);
+      }
     },
     [exercises, currentIndex, progress, setProgress]
   );
@@ -158,22 +156,22 @@ export default function ReviewSession({
       </div>
 
       {exercise.type === 'multiple-choice' && (
-        <MultipleChoice exercise={exercise} onAnswer={handleAnswer} />
+        <MultipleChoice key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'type-translation' && (
-        <TypeTranslation exercise={exercise} onAnswer={handleAnswer} />
+        <TypeTranslation key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'fill-in-blank' && (
-        <FillInBlank exercise={exercise} onAnswer={handleAnswer} />
+        <FillInBlank key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'word-tiles' && (
-        <WordTiles exercise={exercise} onAnswer={handleAnswer} />
+        <WordTiles key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'script-convert' && (
-        <ScriptConvert exercise={exercise} onAnswer={handleAnswer} />
+        <ScriptConvert key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
       {exercise.type === 'context-pick' && (
-        <ContextPick exercise={exercise} onAnswer={handleAnswer} />
+        <ContextPick key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
     </div>
   );
