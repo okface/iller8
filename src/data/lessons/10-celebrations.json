@@ -1,0 +1,435 @@
+{
+  "id": "celebrations",
+  "title": {
+    "sr_latin": "Proslave i nazdravljanje",
+    "sr_cyrillic": "Прославе и наздрављање",
+    "en": "Celebrations & Toasts"
+  },
+  "description": {
+    "sr_latin": "Fraze za slavlja, zdravice, rođendane, slavu i druženje.",
+    "en": "Phrases for celebrations, toasts, birthdays, slava, and gathering culture."
+  },
+  "order": 10,
+  "prerequisites": [],
+  "phraseGroups": [
+    {
+      "id": "toasts-cheers",
+      "theme": "Toasts & Cheers",
+      "phrases": [
+        {
+          "id": "ziveli",
+          "sr_latin": "Živeli!",
+          "sr_cyrillic": "Живели!",
+          "en": "Cheers!",
+          "context": "The standard Serbian toast. Used every time you clink glasses.",
+          "notes": "Literally means 'may we live'. Always look people in the eyes when you say it."
+        },
+        {
+          "id": "u-zdravlje",
+          "sr_latin": "U zdravlje!",
+          "sr_cyrillic": "У здравље!",
+          "en": "To health!",
+          "context": "A toast to good health. Can be used on its own or as part of a longer toast.",
+          "notes": "You can specify whose health: 'U tvoje zdravlje!' = 'To your health!'"
+        },
+        {
+          "id": "na-zdravlje-posle-pica",
+          "sr_latin": "Na zdravlje!",
+          "sr_cyrillic": "На здравље!",
+          "en": "To your health! / Bless you!",
+          "context": "Used both as a toast and after someone sneezes. Also said after someone finishes eating.",
+          "notes": "One of the most versatile phrases. Context determines the meaning."
+        },
+        {
+          "id": "za-nas",
+          "sr_latin": "Za nas!",
+          "sr_cyrillic": "За нас!",
+          "en": "To us!",
+          "context": "A simple, intimate toast when drinking with your partner or close friends.",
+          "notes": "Short and sweet. Very common between couples."
+        }
+      ]
+    },
+    {
+      "id": "birthday-wishes",
+      "theme": "Birthday Wishes",
+      "phrases": [
+        {
+          "id": "srecan-rodjendan",
+          "sr_latin": "Srećan rođendan!",
+          "sr_cyrillic": "Срећан рођендан!",
+          "en": "Happy birthday!",
+          "context": "The standard birthday greeting.",
+          "notes": "'Rođendan' literally = 'birth day'. 'Srećan' = happy/fortunate."
+        },
+        {
+          "id": "sve-najbolje",
+          "sr_latin": "Sve najbolje!",
+          "sr_cyrillic": "Све најбоље!",
+          "en": "All the best!",
+          "context": "Often added after 'Srećan rođendan' or used on its own for any occasion.",
+          "notes": "'Najbolje' = the best (superlative of 'dobro'). Very common well-wish."
+        },
+        {
+          "id": "ziveo-zivela",
+          "sr_latin": "Živeo!",
+          "sr_cyrillic": "Живео!",
+          "en": "Long live! / Cheers to you!",
+          "context": "Shouted at the birthday person, like 'hip hip hooray'. The crowd responds with this.",
+          "notes": "For a woman: 'Živela!' For a group: 'Živeli!'",
+          "variations": [
+            {
+              "sr_latin": "Živela!",
+              "sr_cyrillic": "Живела!",
+              "en": "Long live! (to a woman)"
+            }
+          ]
+        },
+        {
+          "id": "koliko-ti-godina-imas",
+          "sr_latin": "Koliko godina puniš?",
+          "sr_cyrillic": "Колико година пуниш?",
+          "en": "How old are you turning?",
+          "context": "Asking someone what age they're celebrating.",
+          "notes": "'Puniti godine' = to turn (an age). More natural than 'Koliko imaš godina?' in a birthday context."
+        }
+      ]
+    },
+    {
+      "id": "slava",
+      "theme": "Slava (Patron Saint Day)",
+      "phrases": [
+        {
+          "id": "srecna-slava",
+          "sr_latin": "Srećna slava!",
+          "sr_cyrillic": "Срећна слава!",
+          "en": "Happy slava!",
+          "context": "The greeting when you visit someone's slava celebration.",
+          "notes": "Slava is a uniquely Serbian tradition — each family celebrates their patron saint annually. It's UNESCO-protected. This is the most important thing to know."
+        },
+        {
+          "id": "da-bog-da-slavili",
+          "sr_latin": "Da Bog da slavili još mnogo godina!",
+          "sr_cyrillic": "Да Бог да славили још много година!",
+          "en": "God willing, may you celebrate for many more years!",
+          "context": "A traditional wish at someone's slava. Shows respect for the tradition.",
+          "notes": "'Da Bog da' = 'God willing' / 'may God grant'. Very traditional phrasing."
+        },
+        {
+          "id": "kada-ti-je-slava",
+          "sr_latin": "Kada ti je slava?",
+          "sr_cyrillic": "Када ти је слава?",
+          "en": "When is your slava?",
+          "context": "Asking someone about their family's patron saint day. This shows genuine interest in Serbian culture.",
+          "notes": "Every Serbian family has one. Asking this is a great conversation starter and shows you care."
+        },
+        {
+          "id": "koja-je-vasa-slava",
+          "sr_latin": "Koja je vaša slava?",
+          "sr_cyrillic": "Која је ваша слава?",
+          "en": "Which is your (family's) slava?",
+          "context": "Asking which saint the family celebrates. Common saints: Sveti Nikola, Sveti Sava, Sveti Đorđe.",
+          "notes": "'Vaša' (your, formal/plural) because you're asking about the whole family's tradition."
+        }
+      ]
+    },
+    {
+      "id": "new-year",
+      "theme": "New Year & Holidays",
+      "phrases": [
+        {
+          "id": "srecna-nova-godina",
+          "sr_latin": "Srećna Nova godina!",
+          "sr_cyrillic": "Срећна Нова година!",
+          "en": "Happy New Year!",
+          "context": "Standard New Year's greeting. Used from Dec 31 well into January.",
+          "notes": "Serbs celebrate both Jan 1 (New Year) and Jan 14 (Orthodox New Year / 'Srpska Nova godina')."
+        },
+        {
+          "id": "hristos-se-rodi",
+          "sr_latin": "Hristos se rodi!",
+          "sr_cyrillic": "Христос се роди!",
+          "en": "Christ is born!",
+          "context": "Serbian Orthodox Christmas greeting (January 7th). The response is 'Vaistinu se rodi!'",
+          "notes": "Even non-religious Serbs use this. Christmas is Jan 7, not Dec 25.",
+          "variations": [
+            {
+              "sr_latin": "Vaistinu se rodi!",
+              "sr_cyrillic": "Ваистину се роди!",
+              "en": "Indeed He is born! (the required response)"
+            }
+          ]
+        },
+        {
+          "id": "srecni-praznici",
+          "sr_latin": "Srećni praznici!",
+          "sr_cyrillic": "Срећни празници!",
+          "en": "Happy holidays!",
+          "context": "A general holiday greeting that works for any celebration period.",
+          "notes": "'Praznici' = holidays (plural of 'praznik')."
+        }
+      ]
+    },
+    {
+      "id": "drinking-culture",
+      "theme": "Drinking & Going Another Round",
+      "phrases": [
+        {
+          "id": "ajmo-jos-jednu",
+          "sr_latin": "Ajmo još jednu!",
+          "sr_cyrillic": "Ајмо још једну!",
+          "en": "Let's have one more!",
+          "context": "Suggesting another round. Warning: this phrase has no upper limit in Serbian culture.",
+          "notes": "'Ajmo' = colloquial 'hajdemo' (let's go). 'Još jednu' = one more (feminine, referring to 'čašu' — glass)."
+        },
+        {
+          "id": "nece-ti-nista-biti",
+          "sr_latin": "Neće ti ništa biti, pij!",
+          "sr_cyrillic": "Неће ти ништа бити, пиј!",
+          "en": "Nothing will happen to you, drink!",
+          "context": "What your Serbian friends say when you try to stop drinking. Peer pressure, but affectionate.",
+          "notes": "'Pij' = drink (imperative). This is the classic Serbian encouragement."
+        },
+        {
+          "id": "dosta-mi-je",
+          "sr_latin": "Dosta mi je, ne mogu više.",
+          "sr_cyrillic": "Доста ми је, не могу више.",
+          "en": "I've had enough, I can't anymore.",
+          "context": "Trying to stop drinking. Good luck — they probably won't accept this.",
+          "notes": "'Dosta' = enough. 'Ne mogu više' = I can't anymore. Expect to hear 'Ma daj, još jednu!'"
+        },
+        {
+          "id": "rakija-domaca",
+          "sr_latin": "Ova rakija je domaća!",
+          "sr_cyrillic": "Ова ракија је домаћа!",
+          "en": "This rakija is homemade!",
+          "context": "Serbs are proud of their homemade rakija. Expect this announcement before every pour.",
+          "notes": "'Domaća' = homemade/domestic. Homemade rakija is a point of family pride. Always compliment it."
+        }
+      ]
+    },
+    {
+      "id": "hosting-guests",
+      "theme": "Hosting Guests",
+      "phrases": [
+        {
+          "id": "dobro-dosli",
+          "sr_latin": "Dobro došli!",
+          "sr_cyrillic": "Добро дошли!",
+          "en": "Welcome!",
+          "context": "Greeting guests at the door. Essential hospitality phrase.",
+          "notes": "Literally 'well come'. For one person: 'Dobro došao!' (m) / 'Dobro došla!' (f).",
+          "variations": [
+            {
+              "sr_latin": "Dobro došao!",
+              "sr_cyrillic": "Добро дошао!",
+              "en": "Welcome! (to one man)"
+            },
+            {
+              "sr_latin": "Dobro došla!",
+              "sr_cyrillic": "Добро дошла!",
+              "en": "Welcome! (to one woman)"
+            }
+          ]
+        },
+        {
+          "id": "izuj-se",
+          "sr_latin": "Izuj se, slobodno.",
+          "sr_cyrillic": "Изуј се, слободно.",
+          "en": "Take your shoes off, make yourself at home.",
+          "context": "Asking guests to remove shoes. Standard in Serbian homes.",
+          "notes": "'Izuti se' = to take off shoes. 'Slobodno' = freely/feel free. You'll get house slippers ('papuče')."
+        },
+        {
+          "id": "jesi-gladan",
+          "sr_latin": "Jesi gladan? Imam da ti ponudim nešto.",
+          "sr_cyrillic": "Јеси гладан? Имам да ти понудим нешто.",
+          "en": "Are you hungry? I have something to offer you.",
+          "context": "A Serbian host will ALWAYS offer food. Refusing is almost impossible.",
+          "notes": "For a female guest: 'Jesi gladna?' Serbian hospitality means you will be fed whether you want to or not.",
+          "variations": [
+            {
+              "sr_latin": "Jesi gladna? Imam da ti ponudim nešto.",
+              "sr_cyrillic": "Јеси гладна? Имам да ти понудим нешто.",
+              "en": "Are you hungry? I have something to offer you. (to a woman)"
+            }
+          ]
+        },
+        {
+          "id": "osecaj-se-kao-kod-kuce",
+          "sr_latin": "Osećaj se kao kod kuće.",
+          "sr_cyrillic": "Осећај се као код куће.",
+          "en": "Feel at home. / Make yourself at home.",
+          "context": "Telling someone to relax and feel comfortable in your space.",
+          "notes": "'Kod kuće' = at home. 'Osećaj se' = feel yourself (imperative, reflexive)."
+        }
+      ]
+    },
+    {
+      "id": "party-phrases",
+      "theme": "Party Phrases",
+      "phrases": [
+        {
+          "id": "gde-je-zurka",
+          "sr_latin": "Gde je žurka večeras?",
+          "sr_cyrillic": "Где је журка вечерас?",
+          "en": "Where's the party tonight?",
+          "context": "Asking about plans for going out.",
+          "notes": "'Žurka' = party (informal). 'Večeras' = tonight."
+        },
+        {
+          "id": "do-kad-ostajemo",
+          "sr_latin": "Do kad ostajemo?",
+          "sr_cyrillic": "До кад остајемо?",
+          "en": "How long are we staying?",
+          "context": "Checking how late the night is going to go. The answer is usually 'until morning'.",
+          "notes": "'Do kad' = until when. Spoiler: there is rarely a firm end time."
+        },
+        {
+          "id": "odlicna-muzika",
+          "sr_latin": "Odlična muzika!",
+          "sr_cyrillic": "Одлична музика!",
+          "en": "Great music!",
+          "context": "Complimenting the music at a gathering or party.",
+          "notes": "'Odlična' = excellent (feminine, matching 'muzika'). Serbs take their music seriously."
+        },
+        {
+          "id": "pojacaj-muziku",
+          "sr_latin": "Pojačaj muziku!",
+          "sr_cyrillic": "Појачај музику!",
+          "en": "Turn up the music!",
+          "context": "When the party energy is rising. Classic request.",
+          "notes": "'Pojačati' = to turn up/amplify. Opposite: 'Smanji muziku' (turn it down)."
+        }
+      ]
+    },
+    {
+      "id": "gathering-culture",
+      "theme": "Gathering Culture",
+      "phrases": [
+        {
+          "id": "ajde-svi-kod-mene",
+          "sr_latin": "Ajde svi kod mene!",
+          "sr_cyrillic": "Ајде сви код мене!",
+          "en": "Everyone come to my place!",
+          "context": "Inviting friends over. Serbian socializing often happens at someone's home.",
+          "notes": "'Kod mene' = at my place. Very casual and spontaneous — this is how plans happen."
+        },
+        {
+          "id": "dolazi-ne-pravi-se-vazna",
+          "sr_latin": "Dolazi, nemoj da se praviš važan.",
+          "sr_cyrillic": "Долази, немој да се правиш важан.",
+          "en": "Come on, don't act all important.",
+          "context": "Pressuring a friend who's trying to bail on plans. Said with love.",
+          "notes": "'Praviti se važan' = to act important/busy. Feminine: 'važna'. Classic guilt-trip among friends.",
+          "variations": [
+            {
+              "sr_latin": "Dolazi, nemoj da se praviš važna.",
+              "sr_cyrillic": "Долази, немој да се правиш важна.",
+              "en": "Come on, don't act all important. (to a woman)"
+            }
+          ]
+        },
+        {
+          "id": "ko-sta-donosi",
+          "sr_latin": "Ko šta donosi?",
+          "sr_cyrillic": "Ко шта доноси?",
+          "en": "Who's bringing what?",
+          "context": "Organizing who brings food/drinks to a gathering.",
+          "notes": "Short and efficient. The answer is usually 'Ja donosim piće' (I'm bringing drinks) or 'Ja donosim meze' (I'm bringing snacks)."
+        },
+        {
+          "id": "nema-frke",
+          "sr_latin": "Nema frke, dolazite kad stignete.",
+          "sr_cyrillic": "Нема фрке, долазите кад стигнете.",
+          "en": "No worries, come whenever you can.",
+          "context": "Telling people there's no rush, come when they're ready. Very Serbian approach to timing.",
+          "notes": "'Nema frke' = no worries/no stress (slang). 'Kad stignete' = when you manage to arrive."
+        }
+      ]
+    },
+    {
+      "id": "congratulations",
+      "theme": "Congratulations & Well Wishes",
+      "phrases": [
+        {
+          "id": "cestitam",
+          "sr_latin": "Čestitam!",
+          "sr_cyrillic": "Честитам!",
+          "en": "Congratulations!",
+          "context": "Universal congratulations — works for any achievement, milestone, or celebration.",
+          "notes": "'Čestitati' = to congratulate. Can add what for: 'Čestitam ti na...' (I congratulate you on...)."
+        },
+        {
+          "id": "svaka-cast",
+          "sr_latin": "Svaka čast!",
+          "sr_cyrillic": "Свака част!",
+          "en": "Well done! / Respect!",
+          "context": "Expressing admiration or respect for something someone did. Very versatile.",
+          "notes": "Literally 'every honor'. Used constantly in casual speech. Works for big and small achievements."
+        },
+        {
+          "id": "ponosan-sam-na-tebe",
+          "sr_latin": "Ponosan sam na tebe!",
+          "sr_cyrillic": "Поносан сам на тебе!",
+          "en": "I'm proud of you!",
+          "context": "Telling your partner or friend you're proud of them.",
+          "notes": "Feminine: 'Ponosna sam na tebe!' Deeply meaningful in close relationships.",
+          "variations": [
+            {
+              "sr_latin": "Ponosna sam na tebe!",
+              "sr_cyrillic": "Поносна сам на тебе!",
+              "en": "I'm proud of you! (said by a woman)"
+            }
+          ]
+        },
+        {
+          "id": "to-se-mora-proslaviti",
+          "sr_latin": "To se mora proslaviti!",
+          "sr_cyrillic": "То се мора прославити!",
+          "en": "That must be celebrated!",
+          "context": "When someone shares good news. Any excuse to celebrate is a good excuse.",
+          "notes": "'Proslaviti' = to celebrate. Serbs will find a reason to celebrate almost anything."
+        }
+      ]
+    },
+    {
+      "id": "leaving-party",
+      "theme": "Leaving the Party",
+      "phrases": [
+        {
+          "id": "moram-da-idem",
+          "sr_latin": "Moram da idem, ljudi.",
+          "sr_cyrillic": "Морам да идем, људи.",
+          "en": "I gotta go, guys.",
+          "context": "Announcing your departure. Expect resistance and at least 30 more minutes of saying goodbye.",
+          "notes": "'Ljudi' = people/guys. Adding it makes the goodbye casual and warm."
+        },
+        {
+          "id": "gde-ces-rano-je",
+          "sr_latin": "Gde ćeš? Rano je!",
+          "sr_cyrillic": "Где ћеш? Рано је!",
+          "en": "Where are you going? It's early!",
+          "context": "What everyone says when you try to leave. Even at 3 AM, it's apparently 'early'.",
+          "notes": "'Gde ćeš' = where are you going (literally 'where will you'). Standard protest when someone tries to leave."
+        },
+        {
+          "id": "bilo-je-odlicno",
+          "sr_latin": "Bilo je odlično, hvala na svemu!",
+          "sr_cyrillic": "Било је одлично, хвала на свему!",
+          "en": "It was great, thanks for everything!",
+          "context": "Thanking your host when you finally manage to leave.",
+          "notes": "'Hvala na svemu' = thanks for everything. A warm and proper way to end the evening."
+        },
+        {
+          "id": "vidimo-se-uskoro",
+          "sr_latin": "Vidimo se uskoro!",
+          "sr_cyrillic": "Видимо се ускоро!",
+          "en": "See you soon!",
+          "context": "A casual goodbye that keeps the connection going.",
+          "notes": "'Vidimo se' = we see each other / see you. 'Uskoro' = soon."
+        }
+      ]
+    }
+  ]
+}

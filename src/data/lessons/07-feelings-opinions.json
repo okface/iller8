@@ -1,0 +1,371 @@
+{
+  "id": "feelings-opinions",
+  "title": {
+    "sr_latin": "Osećanja i mišljenja",
+    "sr_cyrillic": "Осећања и мишљења",
+    "en": "Feelings & Opinions"
+  },
+  "description": {
+    "sr_latin": "Kako da kažeš šta misliš i kako se osećaš — bez filtera.",
+    "en": "How to say what you think and how you feel — unfiltered."
+  },
+  "order": 7,
+  "prerequisites": [],
+  "phraseGroups": [
+    {
+      "id": "agreeing",
+      "theme": "Agreeing",
+      "phrases": [
+        {
+          "id": "slazem-se",
+          "sr_latin": "Slažem se.",
+          "sr_cyrillic": "Слажем се.",
+          "en": "I agree.",
+          "context": "Standard way to agree with someone's point.",
+          "notes": "Reflexive verb — the 'se' is mandatory."
+        },
+        {
+          "id": "tacno",
+          "sr_latin": "Tačno.",
+          "sr_cyrillic": "Тачно.",
+          "en": "Exactly. / That's right.",
+          "context": "Quick confirmation, like nodding along emphatically."
+        },
+        {
+          "id": "bas-tako",
+          "sr_latin": "Baš tako.",
+          "sr_cyrillic": "Баш тако.",
+          "en": "Exactly like that. / Spot on.",
+          "context": "Stronger emphasis than just 'tačno' — you fully back what was said.",
+          "notes": "'Baš' is an intensifier you'll hear constantly. It means 'really/exactly/just'."
+        },
+        {
+          "id": "u-pravu-si",
+          "sr_latin": "U pravu si.",
+          "sr_cyrillic": "У праву си.",
+          "en": "You're right.",
+          "context": "Telling someone they're correct. Works in arguments too when you're conceding."
+        }
+      ]
+    },
+    {
+      "id": "disagreeing",
+      "theme": "Disagreeing",
+      "phrases": [
+        {
+          "id": "ma-kakvi",
+          "sr_latin": "Ma kakvi!",
+          "sr_cyrillic": "Ма какви!",
+          "en": "No way! / As if!",
+          "context": "Dismissive disagreement. Like waving something off as ridiculous.",
+          "notes": "Very common in casual speech. Tone matters — can be lighthearted or firm."
+        },
+        {
+          "id": "nije-bas-tako",
+          "sr_latin": "Nije baš tako.",
+          "sr_cyrillic": "Није баш тако.",
+          "en": "It's not really like that.",
+          "context": "Softer disagreement — you're correcting without starting a fight."
+        },
+        {
+          "id": "ne-slazem-se",
+          "sr_latin": "Ne slažem se.",
+          "sr_cyrillic": "Не слажем се.",
+          "en": "I disagree.",
+          "context": "Direct but not aggressive. Fine for normal conversation."
+        },
+        {
+          "id": "ma-daj-molim-te",
+          "sr_latin": "Ma daj, molim te.",
+          "sr_cyrillic": "Ма дај, молим те.",
+          "en": "Oh come on, please.",
+          "context": "When someone says something you think is nonsense. Eye-roll energy.",
+          "notes": "'Ma daj' on its own is already a classic dismissal."
+        }
+      ]
+    },
+    {
+      "id": "surprise",
+      "theme": "Expressing Surprise",
+      "phrases": [
+        {
+          "id": "stvarno",
+          "sr_latin": "Stvarno?!",
+          "sr_cyrillic": "Стварно?!",
+          "en": "Really?! / Seriously?!",
+          "context": "The go-to reaction for surprise. Use it constantly.",
+          "notes": "Also works as a statement: 'Stvarno.' = 'For real.'"
+        },
+        {
+          "id": "ne-mogu-da-verujem",
+          "sr_latin": "Ne mogu da verujem.",
+          "sr_cyrillic": "Не могу да верујем.",
+          "en": "I can't believe it.",
+          "context": "Genuine shock or disbelief. Also used sarcastically."
+        },
+        {
+          "id": "ozbiljno",
+          "sr_latin": "Ozbiljno?",
+          "sr_cyrillic": "Озбиљно?",
+          "en": "Seriously?",
+          "context": "Slightly more intense than 'stvarno' — you're checking if they're joking."
+        }
+      ]
+    },
+    {
+      "id": "frustration",
+      "theme": "Frustration & Annoyance",
+      "phrases": [
+        {
+          "id": "pa-dobro",
+          "sr_latin": "Pa dobro...",
+          "sr_cyrillic": "Па добро...",
+          "en": "Well, fine... / Okay then...",
+          "context": "Exasperated acceptance. You don't love it but you'll deal.",
+          "notes": "Tone is everything. Can range from mild annoyance to barely contained rage."
+        },
+        {
+          "id": "smara-me",
+          "sr_latin": "Smara me.",
+          "sr_cyrillic": "Смара ме.",
+          "en": "It's annoying me. / It's boring me.",
+          "context": "Something or someone is getting on your nerves or boring you to death.",
+          "notes": "'Smaranje' (noun) = annoyance/boredom. Very common casual word."
+        },
+        {
+          "id": "ne-mogu-vise",
+          "sr_latin": "Ne mogu više.",
+          "sr_cyrillic": "Не могу више.",
+          "en": "I can't anymore. / I've had enough.",
+          "context": "You're done. Fed up. Over it. Works for anything from a bad day to a long meeting."
+        },
+        {
+          "id": "nervira-me",
+          "sr_latin": "Nervira me to.",
+          "sr_cyrillic": "Нервира ме то.",
+          "en": "That irritates me.",
+          "context": "Straightforward — something is getting under your skin."
+        }
+      ]
+    },
+    {
+      "id": "excitement-happiness",
+      "theme": "Excitement & Happiness",
+      "phrases": [
+        {
+          "id": "odlicno",
+          "sr_latin": "Odlično!",
+          "sr_cyrillic": "Одлично!",
+          "en": "Excellent! / Awesome!",
+          "context": "Pure enthusiasm. Good news, great food, anything positive."
+        },
+        {
+          "id": "bas-mi-je-drago",
+          "sr_latin": "Baš mi je drago.",
+          "sr_cyrillic": "Баш ми је драго.",
+          "en": "I'm really glad. / That makes me really happy.",
+          "context": "Genuine warmth. Use when hearing good news about someone you care about."
+        },
+        {
+          "id": "jedva-cekam",
+          "sr_latin": "Jedva čekam!",
+          "sr_cyrillic": "Једва чекам!",
+          "en": "I can't wait!",
+          "context": "Excited anticipation — a trip, seeing someone, an event.",
+          "notes": "Literally 'I barely wait.' Natural and very common."
+        }
+      ]
+    },
+    {
+      "id": "sarcasm",
+      "theme": "Being Sarcastic",
+      "phrases": [
+        {
+          "id": "ma-nemoj",
+          "sr_latin": "Ma nemoj!",
+          "sr_cyrillic": "Ма немој!",
+          "en": "You don't say! / No kidding!",
+          "context": "Dripping sarcasm when someone states the obvious.",
+          "notes": "Literally 'Don't!' but used purely sarcastically in this context."
+        },
+        {
+          "id": "svaka-cast",
+          "sr_latin": "Svaka čast.",
+          "sr_cyrillic": "Свака част.",
+          "en": "Well done. / Hats off.",
+          "context": "Can be genuine praise OR devastating sarcasm depending on tone. Context is king.",
+          "notes": "Literally 'every honor.' One of the most versatile Serbian expressions."
+        },
+        {
+          "id": "bas-si-pametan",
+          "sr_latin": "Baš si pametan.",
+          "sr_cyrillic": "Баш си паметан.",
+          "en": "You're so smart.",
+          "context": "Almost always sarcastic. When someone does or says something dumb.",
+          "notes": "For a female target: 'Baš si pametna.' Adjective changes by gender.",
+          "variations": [
+            {
+              "sr_latin": "Baš si pametna.",
+              "sr_cyrillic": "Баш си паметна.",
+              "en": "You're so smart. (to a woman)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cool-boring-annoying",
+      "theme": "Cool, Boring & Annoying",
+      "phrases": [
+        {
+          "id": "to-je-kul",
+          "sr_latin": "To je kul.",
+          "sr_cyrillic": "То је кул.",
+          "en": "That's cool.",
+          "context": "Casual approval. Yes, they use 'kul' borrowed from English.",
+          "notes": "Also hear 'ekstra' or 'do jaja' for cool/awesome (the latter is vulgar but very common)."
+        },
+        {
+          "id": "to-je-smor",
+          "sr_latin": "To je smor.",
+          "sr_cyrillic": "То је смор.",
+          "en": "That's boring. / That's a drag.",
+          "context": "When something is tediously dull. Very casual.",
+          "notes": "From 'smoriti se' — to get bored/fed up."
+        },
+        {
+          "id": "ubija-me-u-pojam",
+          "sr_latin": "Ubija me u pojam.",
+          "sr_cyrillic": "Убија ме у појам.",
+          "en": "It kills my vibe. / It's mind-numbing.",
+          "context": "Something is so boring or annoying it's draining your life force.",
+          "notes": "Literally 'kills me into concept.' A very expressive, very Serbian complaint."
+        },
+        {
+          "id": "strava",
+          "sr_latin": "Strava!",
+          "sr_cyrillic": "Страва!",
+          "en": "Awesome! / Wicked!",
+          "context": "Something is impressively cool. Slightly retro slang but still used.",
+          "notes": "Literally means 'horror/dread' — used positively, like English 'sick' or 'wicked'."
+        }
+      ]
+    },
+    {
+      "id": "emotional-reactions",
+      "theme": "Emotional Reactions",
+      "phrases": [
+        {
+          "id": "uzas",
+          "sr_latin": "Užas!",
+          "sr_cyrillic": "Ужас!",
+          "en": "Horrible! / What a nightmare!",
+          "context": "Reacting to bad news, a terrible situation, or something awful.",
+          "notes": "Literally 'horror.' Can also be used for dramatic effect over minor things."
+        },
+        {
+          "id": "srce-mi-se-topi",
+          "sr_latin": "Srce mi se topi.",
+          "sr_cyrillic": "Срце ми се топи.",
+          "en": "My heart is melting.",
+          "context": "Seeing something adorable — a baby, a puppy, or your girlfriend doing something cute."
+        },
+        {
+          "id": "presrecna-sam",
+          "sr_latin": "Presrećan sam.",
+          "sr_cyrillic": "Пресрећан сам.",
+          "en": "I'm overjoyed. (male speaker)",
+          "context": "Big happiness — engagement, promotion, great news.",
+          "notes": "Female speaker: 'Presrećna sam.' The prefix 'pre-' intensifies the adjective.",
+          "variations": [
+            {
+              "sr_latin": "Presrećna sam.",
+              "sr_cyrillic": "Пресрећна сам.",
+              "en": "I'm overjoyed. (female speaker)"
+            }
+          ]
+        },
+        {
+          "id": "bas-me-iznervirao",
+          "sr_latin": "Baš me iznervirao.",
+          "sr_cyrillic": "Баш ме изнервирао.",
+          "en": "He really pissed me off.",
+          "context": "Venting about someone who got under your skin.",
+          "notes": "Change ending for gender: 'iznervirala' (she), 'iznerviralo' (it/situation).",
+          "variations": [
+            {
+              "sr_latin": "Baš me iznervirala.",
+              "sr_cyrillic": "Баш ме изнервирала.",
+              "en": "She really pissed me off."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "opinions",
+      "theme": "Sharing Opinions",
+      "phrases": [
+        {
+          "id": "meni-se-svidja",
+          "sr_latin": "Meni se sviđa.",
+          "sr_cyrillic": "Мени се свиђа.",
+          "en": "I like it.",
+          "context": "General approval — food, a movie, an idea, anything.",
+          "notes": "Emphasizing 'meni' (to me) is optional but natural in conversation."
+        },
+        {
+          "id": "nije-mi-nesto",
+          "sr_latin": "Nije mi nešto.",
+          "sr_cyrillic": "Није ми нешто.",
+          "en": "It's not great. / Meh.",
+          "context": "Polite-ish way to say you're not impressed. Very understated.",
+          "notes": "Literally 'It's not something to me.' Perfectly diplomatic."
+        },
+        {
+          "id": "po-meni",
+          "sr_latin": "Po meni, to nema smisla.",
+          "sr_cyrillic": "По мени, то нема смисла.",
+          "en": "In my opinion, that makes no sense.",
+          "context": "Starting a sentence with your take. 'Po meni' = 'according to me.'"
+        },
+        {
+          "id": "boli-me-uvo",
+          "sr_latin": "Boli me uvo.",
+          "sr_cyrillic": "Боли ме уво.",
+          "en": "I don't care at all.",
+          "context": "You could not care less. Casual and slightly blunt.",
+          "notes": "Literally 'my ear hurts.' There's a vulgar version with a different body part that's even more common."
+        }
+      ]
+    },
+    {
+      "id": "softening-hedging",
+      "theme": "Softening & Hedging",
+      "phrases": [
+        {
+          "id": "ne-znam-bas",
+          "sr_latin": "Ne znam baš.",
+          "sr_cyrillic": "Не знам баш.",
+          "en": "I'm not so sure about that.",
+          "context": "You have doubts but don't want to be confrontational."
+        },
+        {
+          "id": "mozda-si-u-pravu",
+          "sr_latin": "Možda si u pravu.",
+          "sr_cyrillic": "Можда си у праву.",
+          "en": "Maybe you're right.",
+          "context": "Halfway conceding. You're not fully convinced but you'll give ground."
+        },
+        {
+          "id": "kako-da-ti-kazem",
+          "sr_latin": "Kako da ti kažem...",
+          "sr_cyrillic": "Како да ти кажем...",
+          "en": "How do I put this...",
+          "context": "Stalling before delivering an opinion you know they won't love.",
+          "notes": "Classic hedge. Everyone will recognize you're about to say something uncomfortable."
+        }
+      ]
+    }
+  ]
+}

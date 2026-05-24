@@ -1,0 +1,378 @@
+{
+  "id": "reactions",
+  "title": {
+    "sr_latin": "Reakcije i uzvici",
+    "sr_cyrillic": "Реакције и узвици",
+    "en": "Reactions & Exclamations"
+  },
+  "description": {
+    "sr_latin": "Kako da reagovaš kao pravi Srbin — iznenađenje, frustracija, oduševljenje.",
+    "en": "How to react like a real Serb — surprise, frustration, excitement, and everything in between."
+  },
+  "order": 2,
+  "prerequisites": [],
+  "phraseGroups": [
+    {
+      "id": "surprise-reactions",
+      "theme": "Surprise & Disbelief",
+      "phrases": [
+        {
+          "id": "rx-stvarno",
+          "sr_latin": "Stvarno?",
+          "sr_cyrillic": "Стварно?",
+          "en": "Really? / Seriously?",
+          "context": "Your go-to reaction for anything surprising. Used constantly in Serbian conversation.",
+          "notes": "Can be genuine surprise or sarcastic, depending on tone. Very versatile."
+        },
+        {
+          "id": "rx-ma-daj",
+          "sr_latin": "Ma daj!",
+          "sr_cyrillic": "Ма дај!",
+          "en": "Come on! / No way! / Get out!",
+          "context": "Disbelief, dismissal, or 'you can't be serious.' One of the most Serbian expressions.",
+          "notes": "'Ma' adds emphasis/dismissal. 'Daj' = give. Together it's pure disbelief."
+        },
+        {
+          "id": "rx-nema-sanse",
+          "sr_latin": "Nema šanse!",
+          "sr_cyrillic": "Нема шансе!",
+          "en": "No chance! / No way!",
+          "context": "Stronger disbelief or flat-out refusal. Also used to express that something is impossible.",
+          "notes": "'Nema' = there is no. 'Šanse' = chance (genitive)."
+        },
+        {
+          "id": "rx-ozbiljno",
+          "sr_latin": "Ozbiljno?",
+          "sr_cyrillic": "Озбиљно?",
+          "en": "Seriously? / For real?",
+          "context": "Similar to 'stvarno' but with more weight. You're genuinely asking if they're serious.",
+          "notes": "'Ozbiljan' = serious. This is the adverb form used as a question."
+        }
+      ]
+    },
+    {
+      "id": "positive-reactions",
+      "theme": "Positive Reactions",
+      "phrases": [
+        {
+          "id": "rx-super",
+          "sr_latin": "Super!",
+          "sr_cyrillic": "Супер!",
+          "en": "Great! / Awesome!",
+          "context": "Universal positive reaction. Works in any casual conversation.",
+          "notes": "Borrowed from English/German. Pronounced 'SOO-per' with Serbian accent."
+        },
+        {
+          "id": "rx-odlicno",
+          "sr_latin": "Odlično!",
+          "sr_cyrillic": "Одлично!",
+          "en": "Excellent! / Perfect!",
+          "context": "A step above 'super.' Shows genuine enthusiasm.",
+          "notes": "From 'odličan' = excellent. The most positive grade in Serbian schools is 'odličan' (5)."
+        },
+        {
+          "id": "rx-svaka-cast",
+          "sr_latin": "Svaka čast!",
+          "sr_cyrillic": "Свака част!",
+          "en": "Well done! / Respect! / Props!",
+          "context": "Acknowledging someone did something impressive. Very Serbian expression.",
+          "notes": "Literally 'every honor.' Used to show respect and admiration. No direct English equivalent."
+        },
+        {
+          "id": "rx-ekstra",
+          "sr_latin": "Ekstra!",
+          "sr_cyrillic": "Екстра!",
+          "en": "Awesome! / Sick!",
+          "context": "Casual, upbeat reaction. Common among younger people.",
+          "notes": "Used as a standalone exclamation. Can also mean 'extra good' as an adjective."
+        }
+      ]
+    },
+    {
+      "id": "negative-reactions",
+      "theme": "Negative Reactions & Frustration",
+      "phrases": [
+        {
+          "id": "rx-uzas",
+          "sr_latin": "Užas!",
+          "sr_cyrillic": "Ужас!",
+          "en": "Horrible! / Awful! / What a nightmare!",
+          "context": "When something is terrible. Can be about a situation, food, weather, anything.",
+          "notes": "Literally 'horror.' Very commonly used as a standalone reaction."
+        },
+        {
+          "id": "rx-jao",
+          "sr_latin": "Jao!",
+          "sr_cyrillic": "Јао!",
+          "en": "Oh no! / Oh! / Ugh!",
+          "context": "The Serbian 'oh no.' Used for pain, surprise, exasperation — extremely versatile.",
+          "notes": "One of the most common Serbian exclamations. Pronunciation can change the meaning — short and sharp for pain, drawn out for exasperation."
+        },
+        {
+          "id": "rx-katastrofa",
+          "sr_latin": "Katastrofa!",
+          "sr_cyrillic": "Катастрофа!",
+          "en": "Disaster! / It's a catastrophe!",
+          "context": "Dramatic reaction to something going wrong. Serbs love a bit of dramatic flair.",
+          "notes": "Often used with playful exaggeration. Your bus is 5 minutes late? Katastrofa."
+        },
+        {
+          "id": "rx-ma-pusti",
+          "sr_latin": "Ma pusti!",
+          "sr_cyrillic": "Ма пусти!",
+          "en": "Forget it! / Don't even bother!",
+          "context": "When something's not worth discussing or you're frustrated explaining it.",
+          "notes": "'Pustiti' = to let go / to leave. 'Ma pusti' = dismissive 'forget about it.'"
+        }
+      ]
+    },
+    {
+      "id": "religious-exclamations",
+      "theme": "God-Related Exclamations",
+      "phrases": [
+        {
+          "id": "rx-boze-moj",
+          "sr_latin": "Bože moj!",
+          "sr_cyrillic": "Боже мој!",
+          "en": "Oh my God!",
+          "context": "Exactly like English 'oh my god.' Surprise, shock, exasperation.",
+          "notes": "'Bože' is the vocative of 'Bog' (God). Used by everyone regardless of religiosity."
+        },
+        {
+          "id": "rx-joj-boze",
+          "sr_latin": "Joj, Bože!",
+          "sr_cyrillic": "Јој, Боже!",
+          "en": "Oh God! / Dear Lord!",
+          "context": "Exasperation or overwhelm. 'Joj' adds emotional weight.",
+          "notes": "'Joj' is a uniquely Serbian exclamation — something between 'oh' and 'ugh.'"
+        },
+        {
+          "id": "rx-boga-mi",
+          "sr_latin": "Boga mi!",
+          "sr_cyrillic": "Бога ми!",
+          "en": "By God! / I swear!",
+          "context": "Emphasizing that you're telling the truth. 'I'm dead serious.'",
+          "notes": "Literally 'by my God.' Used for emphasis, not literally religious."
+        }
+      ]
+    },
+    {
+      "id": "agreement-reactions",
+      "theme": "Agreement & Confirmation",
+      "phrases": [
+        {
+          "id": "rx-vazi",
+          "sr_latin": "Važi.",
+          "sr_cyrillic": "Важи.",
+          "en": "Okay. / Deal. / Sounds good.",
+          "context": "The most common casual 'okay' in Serbian. Used to confirm plans, agree to something.",
+          "notes": "Literally means 'it holds/applies.' Far more natural than 'okej' in most contexts."
+        },
+        {
+          "id": "rx-slazem-se",
+          "sr_latin": "Slažem se.",
+          "sr_cyrillic": "Слажем се.",
+          "en": "I agree.",
+          "context": "When you're on the same page as someone. Clear, direct agreement.",
+          "notes": "'Slagati se' = to agree. Reflexive verb."
+        },
+        {
+          "id": "rx-naravno",
+          "sr_latin": "Naravno!",
+          "sr_cyrillic": "Наравно!",
+          "en": "Of course!",
+          "context": "Obvious agreement. 'Yes, obviously!'",
+          "notes": "Can be genuine or slightly sarcastic depending on delivery."
+        },
+        {
+          "id": "rx-bas-tako",
+          "sr_latin": "Baš tako!",
+          "sr_cyrillic": "Баш тако!",
+          "en": "Exactly! / That's right!",
+          "context": "Strong agreement. When someone says exactly what you were thinking.",
+          "notes": "'Baš' = exactly/truly. 'Tako' = so/like that."
+        }
+      ]
+    },
+    {
+      "id": "disagreement-reactions",
+      "theme": "Disagreement & Denial",
+      "phrases": [
+        {
+          "id": "rx-nema-veze",
+          "sr_latin": "Nema veze.",
+          "sr_cyrillic": "Нема везе.",
+          "en": "It doesn't matter. / No worries. / Never mind.",
+          "context": "Dismissing something — either reassuring someone or brushing something off.",
+          "notes": "Literally 'there's no connection.' One of the most useful Serbian phrases. Can mean 'it's okay' or 'it's not related.'"
+        },
+        {
+          "id": "rx-ma-kakvi",
+          "sr_latin": "Ma kakvi!",
+          "sr_cyrillic": "Ма какви!",
+          "en": "No way! / As if! / Nonsense!",
+          "context": "Strong disagreement or dismissal. 'That's ridiculous.'",
+          "notes": "Literally 'what kind!' Used to reject an idea or suggestion."
+        },
+        {
+          "id": "rx-nista-to",
+          "sr_latin": "Ništa to.",
+          "sr_cyrillic": "Ништа то.",
+          "en": "It's nothing. / No big deal.",
+          "context": "Downplaying something. When someone thanks you or makes a big deal of something small.",
+          "notes": "'Ništa' = nothing. Very casual dismissal."
+        }
+      ]
+    },
+    {
+      "id": "annoyance-reactions",
+      "theme": "Annoyance & Impatience",
+      "phrases": [
+        {
+          "id": "rx-ajde-bre",
+          "sr_latin": "Ajde bre!",
+          "sr_cyrillic": "Ајде бре!",
+          "en": "Come on, man!",
+          "context": "Impatience, frustration, or urging someone. 'Bre' is the most Serbian word ever.",
+          "notes": "'Bre' is an untranslatable Serbian particle. It adds emphasis, frustration, or camaraderie. Use it and you'll sound instantly more Serbian.",
+          "variations": [
+            {
+              "sr_latin": "Bre!",
+              "sr_cyrillic": "Бре!",
+              "en": "Dude! / Man! (as exclamation)"
+            }
+          ]
+        },
+        {
+          "id": "rx-smori-me",
+          "sr_latin": "Smara me.",
+          "sr_cyrillic": "Смара ме.",
+          "en": "It's annoying me. / It's bugging me.",
+          "context": "When something or someone is getting on your nerves.",
+          "notes": "'Smarati' = to bore/annoy. Very casual/slangy."
+        },
+        {
+          "id": "rx-dosadno",
+          "sr_latin": "Dosadno mi je.",
+          "sr_cyrillic": "Досадно ми је.",
+          "en": "I'm bored.",
+          "context": "Expressing boredom. Also used as a reaction to a boring story or situation.",
+          "notes": "Literally 'it is boring to me.' Dative construction — the boredom happens TO you."
+        },
+        {
+          "id": "rx-dosta-vise",
+          "sr_latin": "Dosta više!",
+          "sr_cyrillic": "Доста више!",
+          "en": "Enough already!",
+          "context": "You've reached your limit. Something needs to stop.",
+          "notes": "'Dosta' = enough. 'Više' = more/already. Together: 'enough already!'"
+        }
+      ]
+    },
+    {
+      "id": "reaction-filler",
+      "theme": "Filler Reactions & Stalling",
+      "phrases": [
+        {
+          "id": "rx-pa-ne-znam",
+          "sr_latin": "Pa... ne znam.",
+          "sr_cyrillic": "Па... не знам.",
+          "en": "Well... I don't know.",
+          "context": "When you're unsure or buying time. 'Pa' is the ultimate Serbian filler word.",
+          "notes": "'Pa' = well/so. Serbians start half their sentences with 'pa.' It's the thinking word."
+        },
+        {
+          "id": "rx-ma-sta-znam",
+          "sr_latin": "Ma šta znam.",
+          "sr_cyrillic": "Ма шта знам.",
+          "en": "I dunno. / Beats me.",
+          "context": "Casual 'I have no idea.' Very natural filler.",
+          "notes": "Literally 'well, what do I know.' Feels more natural than a direct 'ne znam.'"
+        },
+        {
+          "id": "rx-kako-da-ne",
+          "sr_latin": "Kako da ne!",
+          "sr_cyrillic": "Како да не!",
+          "en": "Sure thing! / But of course!",
+          "context": "Enthusiastic or slightly sarcastic agreement. Context and tone determine meaning.",
+          "notes": "Literally 'how not to!' Can be genuine enthusiasm or dripping sarcasm."
+        }
+      ]
+    },
+    {
+      "id": "empathy-reactions",
+      "theme": "Empathy & Sympathy Reactions",
+      "phrases": [
+        {
+          "id": "rx-jadan",
+          "sr_latin": "Jadan ti!",
+          "sr_cyrillic": "Јадан ти!",
+          "en": "You poor thing! (to a man)",
+          "context": "Sympathizing with someone's bad luck or difficult situation.",
+          "notes": "'Jadan' = poor/pitiful. 'Jadna' for a woman.",
+          "variations": [
+            {
+              "sr_latin": "Jadna ti!",
+              "sr_cyrillic": "Јадна ти!",
+              "en": "You poor thing! (to a woman)"
+            }
+          ]
+        },
+        {
+          "id": "rx-grozno",
+          "sr_latin": "Grozno!",
+          "sr_cyrillic": "Грозно!",
+          "en": "That's terrible! / How awful!",
+          "context": "Reacting to bad news someone shares with you.",
+          "notes": "'Grozno' = terrible/awful. Strong negative reaction."
+        },
+        {
+          "id": "rx-zao-mi-je",
+          "sr_latin": "Žao mi je.",
+          "sr_cyrillic": "Жао ми је.",
+          "en": "I'm sorry. (empathy, not apology)",
+          "context": "When someone tells you bad news. Not an apology — it's sympathy.",
+          "notes": "Literally 'it is grievous to me.' Different from 'izvini' which is an actual apology."
+        }
+      ]
+    },
+    {
+      "id": "impressed-reactions",
+      "theme": "Being Impressed",
+      "phrases": [
+        {
+          "id": "rx-nije-lose",
+          "sr_latin": "Nije loše!",
+          "sr_cyrillic": "Није лоше!",
+          "en": "Not bad!",
+          "context": "Serbian understatement. Often means 'actually pretty good.' Peak Balkan energy.",
+          "notes": "Serbs often express positivity through understatement. 'Nije loše' can be high praise."
+        },
+        {
+          "id": "rx-bas-dobro",
+          "sr_latin": "Baš dobro!",
+          "sr_cyrillic": "Баш добро!",
+          "en": "Really good!",
+          "context": "Genuine appreciation. Works for food, news, someone's work — anything.",
+          "notes": "'Baš' intensifies whatever follows. 'Dobro' = good."
+        },
+        {
+          "id": "rx-ludilo",
+          "sr_latin": "Ludilo!",
+          "sr_cyrillic": "Лудило!",
+          "en": "Insane! / Unreal! / Wild!",
+          "context": "When something is so good or crazy it blows your mind. Very current slang.",
+          "notes": "Literally 'madness.' Used positively like English 'insane!' or 'crazy good!'"
+        },
+        {
+          "id": "rx-vrh",
+          "sr_latin": "Vrh!",
+          "sr_cyrillic": "Врх!",
+          "en": "Top! / The best! / Peak!",
+          "context": "Youth slang for something being amazing. Like saying 'fire' or 'peak.'",
+          "notes": "Literally 'peak/top.' Very casual, mostly younger generation."
+        }
+      ]
+    }
+  ]
+}

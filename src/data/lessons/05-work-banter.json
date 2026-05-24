@@ -1,0 +1,356 @@
+{
+  "id": "work-banter",
+  "title": {
+    "sr_latin": "Posao i Dev priča",
+    "sr_cyrillic": "Посао и Dev прича",
+    "en": "Work Banter & Dev Talk"
+  },
+  "description": {
+    "sr_latin": "Kancelarijski razgovori, programerski humor, i kako da preživiš standup na srpskom.",
+    "en": "Office chat, developer humor, and how to survive standup in Serbian."
+  },
+  "order": 5,
+  "prerequisites": [],
+  "phraseGroups": [
+    {
+      "id": "bugs-and-fixes",
+      "theme": "Bugs & Fixes",
+      "phrases": [
+        {
+          "id": "imam-bag",
+          "sr_latin": "Imam bag i ne mogu da skontam odakle dolazi.",
+          "sr_cyrillic": "Имам баг и не могу да сконтам одакле долази.",
+          "en": "I've got a bug and I can't figure out where it's coming from.",
+          "context": "Classic dev frustration. 'Skontam' is slang for 'figure out'.",
+          "notes": "'Bag' is the Serbianized spelling of 'bug'. Tech loanwords are everywhere."
+        },
+        {
+          "id": "radi-na-mom",
+          "sr_latin": "Radi na mom računaru.",
+          "sr_cyrillic": "Ради на мом рачунару.",
+          "en": "It works on my machine.",
+          "context": "The universal developer excuse, Serbian edition.",
+          "notes": "'Računar' = computer. This phrase transcends all languages."
+        },
+        {
+          "id": "ko-je-ovo-pisao",
+          "sr_latin": "Ko je ovo pisao?",
+          "sr_cyrillic": "Ко је ово писао?",
+          "en": "Who wrote this?",
+          "context": "Looking at terrible code and questioning humanity. Usually the answer is yourself, six months ago.",
+          "variations": [
+            {
+              "sr_latin": "Koji je ovo haos.",
+              "sr_cyrillic": "Који је ово хаос.",
+              "en": "What a mess this is."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "deploy-and-releases",
+      "theme": "Deploys & Releases",
+      "phrases": [
+        {
+          "id": "pustam-deploy",
+          "sr_latin": "Puštam deploy.",
+          "sr_cyrillic": "Пуштам deploy.",
+          "en": "I'm pushing a deploy.",
+          "context": "Letting the team know you're deploying. 'Puštam' literally means 'I'm releasing/letting go'.",
+          "notes": "'Deploy' stays in English in most Serbian dev teams."
+        },
+        {
+          "id": "ne-diraj-petkom",
+          "sr_latin": "Ne deployuj petkom, brate.",
+          "sr_cyrillic": "Не deployуј петком, брате.",
+          "en": "Don't deploy on Friday, bro.",
+          "context": "The sacred rule of software development, applicable in all languages.",
+          "notes": "'Brate' (bro/brother) is used constantly in casual Serbian speech."
+        },
+        {
+          "id": "pukao-prod",
+          "sr_latin": "Pukao nam je prod.",
+          "sr_cyrillic": "Пукао нам је прод.",
+          "en": "Prod crashed on us.",
+          "context": "Production is down. Panic mode activated.",
+          "notes": "'Pukao' literally means 'burst/exploded'. Very dramatic, very Serbian."
+        },
+        {
+          "id": "rollback",
+          "sr_latin": "Moramo da rollbackujemo.",
+          "sr_cyrillic": "Морамо да rollbackујемо.",
+          "en": "We need to roll back.",
+          "context": "When the deploy goes wrong and you need to revert.",
+          "notes": "Serbian devs freely verb-ify English tech terms by adding Serbian verb endings."
+        }
+      ]
+    },
+    {
+      "id": "coffee-break",
+      "theme": "Coffee Break",
+      "phrases": [
+        {
+          "id": "ajde-na-kafu",
+          "sr_latin": "Ajde na kafu.",
+          "sr_cyrillic": "Ајде на кафу.",
+          "en": "Let's grab a coffee.",
+          "context": "The most important phrase in any Serbian workplace. Coffee breaks are sacred.",
+          "notes": "'Ajde' is the casual/shortened form of 'hajde'."
+        },
+        {
+          "id": "pauza-pet-minuta",
+          "sr_latin": "Pauza pet minuta.",
+          "sr_cyrillic": "Пауза пет минута.",
+          "en": "Break, five minutes.",
+          "context": "Announcing a quick break. Will inevitably last 20 minutes."
+        },
+        {
+          "id": "bez-kafe-ne-radim",
+          "sr_latin": "Bez kafe ne mogu da funkcionišem.",
+          "sr_cyrillic": "Без кафе не могу да функционишем.",
+          "en": "I can't function without coffee.",
+          "context": "A statement of fact, not a complaint. Universal among Serbian devs."
+        }
+      ]
+    },
+    {
+      "id": "standup-meeting",
+      "theme": "Standup & Meetings",
+      "phrases": [
+        {
+          "id": "sta-radis-danas",
+          "sr_latin": "Šta radiš danas?",
+          "sr_cyrillic": "Шта радиш данас?",
+          "en": "What are you working on today?",
+          "context": "Classic standup question."
+        },
+        {
+          "id": "radim-na-tiketu",
+          "sr_latin": "Radim na onom tiketu od juče.",
+          "sr_cyrillic": "Радим на оном тикету од јуче.",
+          "en": "I'm working on that ticket from yesterday.",
+          "context": "Standard standup update. 'Tiket' = ticket (Jira, etc.)."
+        },
+        {
+          "id": "blokiram-se",
+          "sr_latin": "Blokiran sam, čekam review.",
+          "sr_cyrillic": "Блокиран сам, чекам review.",
+          "en": "I'm blocked, waiting for a review.",
+          "context": "When you can't proceed without someone else's input."
+        },
+        {
+          "id": "opet-meeting",
+          "sr_latin": "Opet meeting? Pa kad ću da radim?",
+          "sr_cyrillic": "Опет meeting? Па кад ћу да радим?",
+          "en": "Another meeting? When am I supposed to work?",
+          "context": "The universal developer complaint about too many meetings.",
+          "notes": "'Pa' is a filler word like 'well' or 'so', used for emphasis here."
+        }
+      ]
+    },
+    {
+      "id": "does-it-work",
+      "theme": "Testing & QA",
+      "phrases": [
+        {
+          "id": "radi-li-ti-ovo",
+          "sr_latin": "Radi li ti ovo?",
+          "sr_cyrillic": "Ради ли ти ово?",
+          "en": "Does this work for you?",
+          "context": "Asking a colleague to verify something works on their end."
+        },
+        {
+          "id": "probaj-sad",
+          "sr_latin": "Probaj sad, trebalo bi da radi.",
+          "sr_cyrillic": "Пробај сад, требало би да ради.",
+          "en": "Try now, it should work.",
+          "context": "After you've pushed a fix and you're hoping for the best.",
+          "notes": "'Trebalo bi' = 'it should' — beautifully noncommittal."
+        },
+        {
+          "id": "ne-radi-opet",
+          "sr_latin": "Opet ne radi.",
+          "sr_cyrillic": "Опет не ради.",
+          "en": "It's broken again.",
+          "context": "When the fix didn't fix it.",
+          "variations": [
+            {
+              "sr_latin": "Isti bag, samo drugi dan.",
+              "sr_cyrillic": "Исти баг, само други дан.",
+              "en": "Same bug, different day."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "friday-monday",
+      "theme": "Friday Mood & Monday Dread",
+      "phrases": [
+        {
+          "id": "jedva-cekam-petak",
+          "sr_latin": "Jedva čekam petak.",
+          "sr_cyrillic": "Једва чекам петак.",
+          "en": "I can't wait for Friday.",
+          "context": "Every weekday except Friday.",
+          "notes": "'Jedva čekam' literally means 'I barely wait' — used for 'I can't wait'."
+        },
+        {
+          "id": "petak-je-brate",
+          "sr_latin": "Petak je, brate!",
+          "sr_cyrillic": "Петак је, брате!",
+          "en": "It's Friday, bro!",
+          "context": "The Friday celebration announcement."
+        },
+        {
+          "id": "ponedeljak-opet",
+          "sr_latin": "Kako je već ponedeljak?",
+          "sr_cyrillic": "Како је већ понедељак?",
+          "en": "How is it Monday already?",
+          "context": "The Monday dread that transcends all cultures."
+        },
+        {
+          "id": "vikend-prekratak",
+          "sr_latin": "Vikend je uvek prekratak.",
+          "sr_cyrillic": "Викенд је увек прекратак.",
+          "en": "The weekend is always too short.",
+          "context": "Monday morning wisdom."
+        }
+      ]
+    },
+    {
+      "id": "lunch-break",
+      "theme": "Lunch Break",
+      "phrases": [
+        {
+          "id": "idemo-na-rucak",
+          "sr_latin": "Idemo na ručak?",
+          "sr_cyrillic": "Идемо на ручак?",
+          "en": "Shall we go for lunch?",
+          "context": "Suggesting a lunch break with colleagues."
+        },
+        {
+          "id": "gde-jedemo",
+          "sr_latin": "Gde jedemo danas?",
+          "sr_cyrillic": "Где једемо данас?",
+          "en": "Where are we eating today?",
+          "context": "The daily lunch debate."
+        },
+        {
+          "id": "doneo-sam-od-kuce",
+          "sr_latin": "Doneo sam od kuće.",
+          "sr_cyrillic": "Донео сам од куће.",
+          "en": "I brought food from home.",
+          "context": "When you packed lunch. Use 'Donela sam' if female.",
+          "variations": [
+            {
+              "sr_latin": "Danas sam štedljiv, jedem od kuće.",
+              "sr_cyrillic": "Данас сам штедљив, једем од куће.",
+              "en": "I'm being frugal today, eating from home."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "erp-backend",
+      "theme": "ERP & Backend Humor",
+      "phrases": [
+        {
+          "id": "erp-opet-pao",
+          "sr_latin": "ERP opet pao. Klasika.",
+          "sr_cyrillic": "ЕРП опет пао. Класика.",
+          "en": "ERP went down again. Classic.",
+          "context": "When the ERP system crashes, which it always does.",
+          "notes": "'Klasika' = 'classic' — used sarcastically when something predictably goes wrong."
+        },
+        {
+          "id": "migracija-podataka",
+          "sr_latin": "Ne diraj bazu dok traje migracija!",
+          "sr_cyrillic": "Не дирај базу док траје миграција!",
+          "en": "Don't touch the database during migration!",
+          "context": "Yelling at a colleague during a data migration. 'Baza' = database."
+        },
+        {
+          "id": "ko-je-menjao-semu",
+          "sr_latin": "Ko je menjao šemu bez da mi kaže?",
+          "sr_cyrillic": "Ко је мењао шему без да ми каже?",
+          "en": "Who changed the schema without telling me?",
+          "context": "Backend dev rage when someone modifies the database schema."
+        },
+        {
+          "id": "pim-integracija",
+          "sr_latin": "Jesi završio integraciju sa PIM-om?",
+          "sr_cyrillic": "Јеси завршио интеграцију са ПИМ-ом?",
+          "en": "Did you finish the PIM integration?",
+          "context": "Asking about product information management system integration.",
+          "notes": "'Sa PIM-om' — Serbian adds case endings even to acronyms."
+        }
+      ]
+    },
+    {
+      "id": "end-of-day",
+      "theme": "End of Day",
+      "phrases": [
+        {
+          "id": "gotov-sam-za-danas",
+          "sr_latin": "Gotov sam za danas.",
+          "sr_cyrillic": "Готов сам за данас.",
+          "en": "I'm done for today.",
+          "context": "Signing off at the end of the work day. Use 'Gotova sam' if female."
+        },
+        {
+          "id": "pustam-pr",
+          "sr_latin": "Puštam PR pa idem.",
+          "sr_cyrillic": "Пуштам PR па идем.",
+          "en": "Pushing the PR and then I'm out.",
+          "context": "Last thing before leaving — submit that pull request."
+        },
+        {
+          "id": "vidimo-se-sutra",
+          "sr_latin": "Vidimo se sutra. Ako preživi prod.",
+          "sr_cyrillic": "Видимо се сутра. Ако преживи прод.",
+          "en": "See you tomorrow. If prod survives.",
+          "context": "A darkly humorous goodbye after a sketchy deploy."
+        }
+      ]
+    },
+    {
+      "id": "general-work-chat",
+      "theme": "General Office Chat",
+      "phrases": [
+        {
+          "id": "kako-napreduje",
+          "sr_latin": "Kako napreduje?",
+          "sr_cyrillic": "Како напредује?",
+          "en": "How's it going? / How's progress?",
+          "context": "Checking in on someone's work without being pushy."
+        },
+        {
+          "id": "polako",
+          "sr_latin": "Polako, stižem.",
+          "sr_cyrillic": "Полако, стижем.",
+          "en": "Easy, I'm getting there.",
+          "context": "Reassuring someone you're making progress at your own pace.",
+          "notes": "'Polako' is quintessentially Serbian — it means 'slowly/easy/chill'. It's both a philosophy and a response."
+        },
+        {
+          "id": "treba-mi-pomoc",
+          "sr_latin": "Možeš da mi pomogneš sa nečim?",
+          "sr_cyrillic": "Можеш да ми помогнеш са нечим?",
+          "en": "Can you help me with something?",
+          "context": "Asking a colleague for help."
+        },
+        {
+          "id": "ubija-me-ovaj-task",
+          "sr_latin": "Ubija me ovaj task.",
+          "sr_cyrillic": "Убија ме овај таск.",
+          "en": "This task is killing me.",
+          "context": "Complaining about a difficult or tedious task.",
+          "notes": "'Ubija' = 'kills'. Serbian loves dramatic expressions for mundane frustrations."
+        }
+      ]
+    }
+  ]
+}

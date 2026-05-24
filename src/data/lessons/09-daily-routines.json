@@ -1,0 +1,391 @@
+{
+  "id": "daily-routines",
+  "title": {
+    "sr_latin": "Svakodnevne rutine i kućni život",
+    "sr_cyrillic": "Свакодневне рутине и кућни живот",
+    "en": "Daily Routines & Home Life"
+  },
+  "description": {
+    "sr_latin": "Fraze za jutarnje rutine, kućne poslove, večernje opuštanje i zajednički život.",
+    "en": "Phrases for morning routines, household chores, evening chill time, and living together."
+  },
+  "order": 9,
+  "prerequisites": [],
+  "phraseGroups": [
+    {
+      "id": "morning-wakeup",
+      "theme": "Morning Wake-Up",
+      "phrases": [
+        {
+          "id": "ustaj-kasno-je",
+          "sr_latin": "Ustaj, kasno je!",
+          "sr_cyrillic": "Устај, касно је!",
+          "en": "Get up, it's late!",
+          "context": "Waking up your partner or friend who's oversleeping.",
+          "notes": "'Ustaj' is the imperative of 'ustati' (to get up). Casual and direct."
+        },
+        {
+          "id": "jos-pet-minuta",
+          "sr_latin": "Još pet minuta...",
+          "sr_cyrillic": "Још пет минута...",
+          "en": "Five more minutes...",
+          "context": "The universal reply when someone tries to wake you up.",
+          "notes": "'Još' means 'more/still'. You'll hear this constantly."
+        },
+        {
+          "id": "hoces-kafu",
+          "sr_latin": "Hoćeš kafu?",
+          "sr_cyrillic": "Хоћеш кафу?",
+          "en": "Want a coffee?",
+          "context": "Offering to make coffee in the morning. This is practically a love language in Serbia.",
+          "notes": "'Kafa' (not 'kava' like in Croatian) is sacred. Domestic Turkish coffee is the default, not espresso."
+        },
+        {
+          "id": "napravi-mi-kafu",
+          "sr_latin": "Napravi mi kafu, molim te.",
+          "sr_cyrillic": "Направи ми кафу, молим те.",
+          "en": "Make me a coffee, please.",
+          "context": "Asking your partner to make coffee. Add 'molim te' to keep it sweet.",
+          "notes": "'Napravi' = imperative of 'napraviti' (to make). Works for food/drinks."
+        }
+      ]
+    },
+    {
+      "id": "morning-routine",
+      "theme": "Getting Ready",
+      "phrases": [
+        {
+          "id": "ko-prvi-u-kupatilo",
+          "sr_latin": "Ko ide prvi u kupatilo?",
+          "sr_cyrillic": "Ко иде први у купатило?",
+          "en": "Who's going to the bathroom first?",
+          "context": "The daily negotiation when you share one bathroom.",
+          "notes": "'Kupatilo' = bathroom. In Bosnia you might also hear 'kupaonica'."
+        },
+        {
+          "id": "pozuri-kasnim",
+          "sr_latin": "Požuri, kasnim!",
+          "sr_cyrillic": "Пожури, касним!",
+          "en": "Hurry up, I'm running late!",
+          "context": "When your partner is taking forever in the bathroom.",
+          "notes": "'Požuri' = hurry (imperative). 'Kasnim' = I'm late (from 'kasniti')."
+        },
+        {
+          "id": "sta-oblacis-danas",
+          "sr_latin": "Šta oblačiš danas?",
+          "sr_cyrillic": "Шта облачиш данас?",
+          "en": "What are you wearing today?",
+          "context": "Casual morning conversation about outfits.",
+          "notes": "'Oblačiti' = to put on (clothes). Present tense used for 'going to wear'."
+        }
+      ]
+    },
+    {
+      "id": "breakfast-food",
+      "theme": "Breakfast & Meals at Home",
+      "phrases": [
+        {
+          "id": "sta-ima-za-dorucak",
+          "sr_latin": "Šta ima za doručak?",
+          "sr_cyrillic": "Шта има за доручак?",
+          "en": "What's for breakfast?",
+          "context": "Asking what's available to eat in the morning.",
+          "notes": "'Doručak' = breakfast. 'Ručak' = lunch. 'Večera' = dinner."
+        },
+        {
+          "id": "gladan-sam-kao-vuk",
+          "sr_latin": "Gladan sam kao vuk.",
+          "sr_cyrillic": "Гладан сам као вук.",
+          "en": "I'm hungry as a wolf.",
+          "context": "Saying you're starving. Common Serbian expression.",
+          "notes": "If you're female, say 'Gladna sam kao vuk.' Adjective changes gender.",
+          "variations": [
+            {
+              "sr_latin": "Gladna sam kao vuk.",
+              "sr_cyrillic": "Гладна сам као вук.",
+              "en": "I'm hungry as a wolf. (feminine)"
+            }
+          ]
+        },
+        {
+          "id": "ja-kuham-ti-peres",
+          "sr_latin": "Ja kuham, ti pereš sudove.",
+          "sr_cyrillic": "Ја кухам, ти переш судове.",
+          "en": "I cook, you wash the dishes.",
+          "context": "Dividing kitchen duties fairly (or trying to).",
+          "notes": "'Kuhati' = to cook. 'Prati sudove' / 'perati sudove' = to wash dishes."
+        }
+      ]
+    },
+    {
+      "id": "household-chores",
+      "theme": "Household Chores",
+      "phrases": [
+        {
+          "id": "ko-pere-sudove",
+          "sr_latin": "Ko pere sudove?",
+          "sr_cyrillic": "Ко пере судове?",
+          "en": "Who's doing the dishes?",
+          "context": "The eternal household debate.",
+          "notes": "'Prati/perati sudove' = to wash dishes. 'Sudovi' = dishes (plural)."
+        },
+        {
+          "id": "treba-da-usisamo",
+          "sr_latin": "Treba da usisamo.",
+          "sr_cyrillic": "Треба да усисамо.",
+          "en": "We need to vacuum.",
+          "context": "Suggesting it's time to clean up.",
+          "notes": "'Treba da' + present tense = 'need to'. Very common construction. 'Usisati' = to vacuum."
+        },
+        {
+          "id": "iznesi-djubre",
+          "sr_latin": "Iznesi đubre.",
+          "sr_cyrillic": "Изнеси ђубре.",
+          "en": "Take out the trash.",
+          "context": "Asking someone to take the garbage out.",
+          "notes": "'Đubre' = trash/garbage. 'Izneti' = to take out."
+        },
+        {
+          "id": "ves-nece-sam-sebe",
+          "sr_latin": "Veš neće sam sebe da opere.",
+          "sr_cyrillic": "Веш неће сам себе да опере.",
+          "en": "The laundry won't wash itself.",
+          "context": "A passive-aggressive nudge to get someone to do laundry.",
+          "notes": "'Veš' = laundry. This sarcastic phrasing is very natural in Serbian."
+        }
+      ]
+    },
+    {
+      "id": "asking-partner",
+      "theme": "Asking Your Partner to Do Something",
+      "phrases": [
+        {
+          "id": "mozes-li-da",
+          "sr_latin": "Možeš li da odeš do prodavnice?",
+          "sr_cyrillic": "Можеш ли да одеш до продавнице?",
+          "en": "Can you go to the store?",
+          "context": "Asking your partner to run an errand.",
+          "notes": "'Možeš li da...' = 'Can you...' Polite but casual way to ask for something."
+        },
+        {
+          "id": "pomozi-mi-malo",
+          "sr_latin": "Pomozi mi malo.",
+          "sr_cyrillic": "Помози ми мало.",
+          "en": "Help me out a bit.",
+          "context": "Asking for a hand with something around the house.",
+          "notes": "'Pomozi' = help (imperative of 'pomoći'). 'Malo' softens the request."
+        },
+        {
+          "id": "da-li-mozes-da-skuvas",
+          "sr_latin": "Može da skuvaš nešto za večeru?",
+          "sr_cyrillic": "Може да скуваш нешто за вечеру?",
+          "en": "Could you cook something for dinner?",
+          "context": "Gently asking your partner to handle dinner.",
+          "notes": "'Može da...' is a softer, more colloquial way to ask than 'Možeš li da...'"
+        }
+      ]
+    },
+    {
+      "id": "evening-couch",
+      "theme": "Evening & Couch Time",
+      "phrases": [
+        {
+          "id": "ajde-da-gledamo",
+          "sr_latin": "Ajde da gledamo nešto.",
+          "sr_cyrillic": "Ајде да гледамо нешто.",
+          "en": "Let's watch something.",
+          "context": "Suggesting you watch a show or movie together in the evening.",
+          "notes": "'Ajde da...' = 'Let's...' — one of the most useful constructions in casual Serbian."
+        },
+        {
+          "id": "sta-ces-da-gledas",
+          "sr_latin": "Šta ćeš da gledaš?",
+          "sr_cyrillic": "Шта ћеш да гледаш?",
+          "en": "What do you want to watch?",
+          "context": "Letting the other person pick what to watch.",
+          "notes": "'Šta ćeš da...' = 'What will you / what do you want to...'"
+        },
+        {
+          "id": "umoran-sam",
+          "sr_latin": "Umoran sam, ceo dan sam radio.",
+          "sr_cyrillic": "Уморан сам, цео дан сам радио.",
+          "en": "I'm tired, I worked all day.",
+          "context": "Explaining why you just want to crash on the couch.",
+          "notes": "Feminine: 'Umorna sam, ceo dan sam radila.' Adjective and past tense change.",
+          "variations": [
+            {
+              "sr_latin": "Umorna sam, ceo dan sam radila.",
+              "sr_cyrillic": "Уморна сам, цео дан сам радила.",
+              "en": "I'm tired, I worked all day. (feminine)"
+            }
+          ]
+        },
+        {
+          "id": "daj-mi-daljinski",
+          "sr_latin": "Daj mi daljinski.",
+          "sr_cyrillic": "Дај ми даљински.",
+          "en": "Give me the remote.",
+          "context": "The classic couch battle.",
+          "notes": "'Daljinski' = remote control (short for 'daljinski upravljač')."
+        }
+      ]
+    },
+    {
+      "id": "going-to-bed",
+      "theme": "Going to Bed",
+      "phrases": [
+        {
+          "id": "ajde-da-spavamo",
+          "sr_latin": "Ajde da spavamo.",
+          "sr_cyrillic": "Ајде да спавамо.",
+          "en": "Let's go to sleep.",
+          "context": "Suggesting it's time for bed.",
+          "notes": "'Spavati' = to sleep. 'Ajde da spavamo' is the natural way to say 'let's go to bed'."
+        },
+        {
+          "id": "laku-noc",
+          "sr_latin": "Laku noć.",
+          "sr_cyrillic": "Лаку ноћ.",
+          "en": "Good night.",
+          "context": "Standard good night, used with everyone — partner, friends, family."
+        },
+        {
+          "id": "ugasi-svetlo",
+          "sr_latin": "Ugasi svetlo.",
+          "sr_cyrillic": "Угаси светло.",
+          "en": "Turn off the light.",
+          "context": "Asking someone to kill the lights before sleep.",
+          "notes": "'Ugasiti' = to turn off / extinguish. Also used for TV, phone, etc."
+        },
+        {
+          "id": "ne-mogu-da-spavam",
+          "sr_latin": "Ne mogu da spavam.",
+          "sr_cyrillic": "Не могу да спавам.",
+          "en": "I can't sleep.",
+          "context": "When you're tossing and turning at night.",
+          "notes": "'Ne mogu da...' = 'I can't...' Very common pattern."
+        }
+      ]
+    },
+    {
+      "id": "living-together",
+      "theme": "Living Together",
+      "phrases": [
+        {
+          "id": "gde-su-moji-kljucevi",
+          "sr_latin": "Gde su moji ključevi?",
+          "sr_cyrillic": "Где су моји кључеви?",
+          "en": "Where are my keys?",
+          "context": "The daily panic before leaving the house.",
+          "notes": "'Ključevi' = keys (plural of 'ključ')."
+        },
+        {
+          "id": "zakljucaj-vrata",
+          "sr_latin": "Zaključaj vrata.",
+          "sr_cyrillic": "Закључај врата.",
+          "en": "Lock the door.",
+          "context": "Reminding someone to lock up when leaving or before bed.",
+          "notes": "'Vrata' is neuter plural — always plural in Serbian, even for one door."
+        },
+        {
+          "id": "kad-dolazis-kuci",
+          "sr_latin": "Kad dolaziš kući?",
+          "sr_cyrillic": "Кад долазиш кући?",
+          "en": "When are you coming home?",
+          "context": "Texting your partner or asking when they'll be back.",
+          "notes": "'Kući' = home (dative, used for direction). 'Kod kuće' = at home."
+        },
+        {
+          "id": "ponestalo-nam-je",
+          "sr_latin": "Ponestalo nam je mleka.",
+          "sr_cyrillic": "Понестало нам је млека.",
+          "en": "We're out of milk.",
+          "context": "Letting someone know you need to restock something.",
+          "notes": "'Ponestati' = to run out of. Replace 'mleka' with whatever you're out of — 'hleba' (bread), 'kafe' (coffee)."
+        }
+      ]
+    },
+    {
+      "id": "lazy-sunday",
+      "theme": "Lazy Sunday Vibes",
+      "phrases": [
+        {
+          "id": "ne-izlazim-danas",
+          "sr_latin": "Ne izlazim danas nigde.",
+          "sr_cyrillic": "Не излазим данас нигде.",
+          "en": "I'm not going anywhere today.",
+          "context": "Declaring a full lazy day at home.",
+          "notes": "'Nigde' = nowhere. Double negatives are standard and required in Serbian."
+        },
+        {
+          "id": "ceo-dan-u-pidzami",
+          "sr_latin": "Ceo dan u pidžami.",
+          "sr_cyrillic": "Цео дан у пиџами.",
+          "en": "All day in pajamas.",
+          "context": "The lazy Sunday lifestyle declaration.",
+          "notes": "'Pidžama' = pajamas. 'Ceo dan' = all day."
+        },
+        {
+          "id": "hoces-da-narucimo",
+          "sr_latin": "Hoćeš da naručimo nešto?",
+          "sr_cyrillic": "Хоћеш да наручимо нешто?",
+          "en": "Want to order something?",
+          "context": "Suggesting you order food delivery instead of cooking.",
+          "notes": "'Naručiti' = to order. Works for food delivery, in a restaurant, online shopping."
+        },
+        {
+          "id": "hajde-da-lezimo",
+          "sr_latin": "Ma hajde da ležimo ceo dan.",
+          "sr_cyrillic": "Ма хајде да лежимо цео дан.",
+          "en": "Let's just lie around all day.",
+          "context": "Peak lazy Sunday energy. No plans, no obligations.",
+          "notes": "'Ma' at the start adds a dismissive/carefree tone, like 'oh just' or 'come on'."
+        }
+      ]
+    },
+    {
+      "id": "end-of-day-check-in",
+      "theme": "End-of-Day Check-In",
+      "phrases": [
+        {
+          "id": "kako-ti-je-bio-dan",
+          "sr_latin": "Kako ti je bio dan?",
+          "sr_cyrillic": "Како ти је био дан?",
+          "en": "How was your day?",
+          "context": "Asking your partner about their day when you reconnect in the evening.",
+          "notes": "'Dan' is masculine, so 'bio' (m. past participle). Natural and warm."
+        },
+        {
+          "id": "sta-si-radio-danas",
+          "sr_latin": "Šta si radio danas?",
+          "sr_cyrillic": "Шта си радио данас?",
+          "en": "What did you do today?",
+          "context": "Casual follow-up about someone's day.",
+          "notes": "Feminine form: 'Šta si radila danas?'",
+          "variations": [
+            {
+              "sr_latin": "Šta si radila danas?",
+              "sr_cyrillic": "Шта си радила данас?",
+              "en": "What did you do today? (to a woman)"
+            }
+          ]
+        },
+        {
+          "id": "bas-sam-se-smorio",
+          "sr_latin": "Baš sam se smorio na poslu.",
+          "sr_cyrillic": "Баш сам се сморио на послу.",
+          "en": "I was so bored at work.",
+          "context": "Complaining about a boring day at work.",
+          "notes": "'Smoriti se' = to get bored/fed up. Very colloquial. Feminine: 'smorila'.",
+          "variations": [
+            {
+              "sr_latin": "Baš sam se smorila na poslu.",
+              "sr_cyrillic": "Баш сам се сморила на послу.",
+              "en": "I was so bored at work. (feminine)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

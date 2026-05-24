@@ -1,0 +1,397 @@
+{
+  "id": "sweet-talk",
+  "title": {
+    "sr_latin": "Slatke reči",
+    "sr_cyrillic": "Слатке речи",
+    "en": "Sweet Talk & Pet Names"
+  },
+  "description": {
+    "sr_latin": "Nadimci, komplimenti i poruke za tvoju dragu osobu.",
+    "en": "Pet names, compliments, and sweet messages for your special person."
+  },
+  "order": 1,
+  "prerequisites": [],
+  "phraseGroups": [
+    {
+      "id": "pet-names-classic",
+      "theme": "Classic Pet Names",
+      "phrases": [
+        {
+          "id": "st-dusko",
+          "sr_latin": "Dušo moja.",
+          "sr_cyrillic": "Душо моја.",
+          "en": "My darling. (lit. 'my soul')",
+          "context": "The most common Serbian pet name. You'll hear this constantly between couples.",
+          "notes": "'Duša' means soul — calling someone 'dušo' is like saying they are your soul. Vocative case."
+        },
+        {
+          "id": "st-ljubavi",
+          "sr_latin": "Ljubavi.",
+          "sr_cyrillic": "Љубави.",
+          "en": "My love.",
+          "context": "Very warm and natural. Used freely in conversation, not just romantic moments.",
+          "notes": "Vocative of 'ljubav' (love). Can be used on its own or combined: 'Ljubavi moja.'"
+        },
+        {
+          "id": "st-draga",
+          "sr_latin": "Draga moja.",
+          "sr_cyrillic": "Драга моја.",
+          "en": "My dear. (to a woman)",
+          "context": "Affectionate but slightly more formal than 'dušo'. Works in public without being too cheesy.",
+          "notes": "Use 'dragi' when speaking to a man.",
+          "variations": [
+            {
+              "sr_latin": "Dragi moj.",
+              "sr_cyrillic": "Драги мој.",
+              "en": "My dear. (to a man)"
+            }
+          ]
+        },
+        {
+          "id": "st-maco",
+          "sr_latin": "Maco moja.",
+          "sr_cyrillic": "Мацо моја.",
+          "en": "My kitten / kitty.",
+          "context": "Playful and flirty. Like calling someone 'babe' in English but cuter.",
+          "notes": "From 'maca' (female cat). Very common among younger couples."
+        }
+      ]
+    },
+    {
+      "id": "pet-names-playful",
+      "theme": "Playful & Silly Pet Names",
+      "phrases": [
+        {
+          "id": "st-medo",
+          "sr_latin": "Medo moj.",
+          "sr_cyrillic": "Медо мој.",
+          "en": "My teddy bear.",
+          "context": "Cute and playful. Usually for guys but not exclusively.",
+          "notes": "From 'medved' (bear). 'Medo' is the diminutive — think teddy bear, not grizzly."
+        },
+        {
+          "id": "st-sunce",
+          "sr_latin": "Sunce moje.",
+          "sr_cyrillic": "Сунце моје.",
+          "en": "My sunshine.",
+          "context": "Very sweet and warm. Also used for kids. Not cheesy — Serbs actually say this a lot.",
+          "notes": "Sunce = sun. The possessive 'moje' makes it personal."
+        },
+        {
+          "id": "st-zlato",
+          "sr_latin": "Zlato moje.",
+          "sr_cyrillic": "Злато моје.",
+          "en": "My gold / my precious.",
+          "context": "Common term of endearment. Not over the top — parents use it for kids too.",
+          "notes": "Zlato = gold. Very natural in everyday Serbian."
+        },
+        {
+          "id": "st-srce",
+          "sr_latin": "Srce moje.",
+          "sr_cyrillic": "Срце моје.",
+          "en": "My heart.",
+          "context": "Deeply affectionate. Feels sincere, not performative.",
+          "notes": "Srce = heart. One of the most emotionally loaded pet names."
+        }
+      ]
+    },
+    {
+      "id": "compliments-looks",
+      "theme": "Compliments — Looks",
+      "phrases": [
+        {
+          "id": "st-prelepa-si",
+          "sr_latin": "Prelepa si.",
+          "sr_cyrillic": "Прелепа си.",
+          "en": "You're gorgeous.",
+          "context": "Direct and sincere. Use when she's dressed up or you just feel it.",
+          "notes": "'Pre-' is an intensifier prefix. 'Lepa' = pretty, 'prelepa' = stunning/gorgeous.",
+          "variations": [
+            {
+              "sr_latin": "Prelep si.",
+              "sr_cyrillic": "Прелеп си.",
+              "en": "You're gorgeous. (to a man)"
+            }
+          ]
+        },
+        {
+          "id": "st-lepo-stoji",
+          "sr_latin": "Lepo ti stoji.",
+          "sr_cyrillic": "Лепо ти стоји.",
+          "en": "That looks good on you.",
+          "context": "When she's trying on clothes, wearing something new, or got a haircut.",
+          "notes": "Literally 'it stands nicely on you.' Works for clothes, hair, accessories — anything."
+        },
+        {
+          "id": "st-ubila-si",
+          "sr_latin": "Ubila si!",
+          "sr_cyrillic": "Убила си!",
+          "en": "You killed it! / You look amazing!",
+          "context": "Casual, high-energy compliment. Like 'slaaay' vibes.",
+          "notes": "Literally 'you killed (it).' Slang but widely used. Very natural among young people."
+        }
+      ]
+    },
+    {
+      "id": "compliments-personality",
+      "theme": "Compliments — Personality & General",
+      "phrases": [
+        {
+          "id": "st-pametna-si",
+          "sr_latin": "Baš si pametna.",
+          "sr_cyrillic": "Баш си паметна.",
+          "en": "You're really smart.",
+          "context": "Genuine compliment. 'Baš' adds emphasis — like 'really' or 'truly.'",
+          "notes": "'Baš' is one of the most useful Serbian words. It adds sincerity or emphasis.",
+          "variations": [
+            {
+              "sr_latin": "Baš si pametan.",
+              "sr_cyrillic": "Баш си паметан.",
+              "en": "You're really smart. (to a man)"
+            }
+          ]
+        },
+        {
+          "id": "st-smesan",
+          "sr_latin": "Mnogo si smešna.",
+          "sr_cyrillic": "Много си смешна.",
+          "en": "You're so funny.",
+          "context": "When she makes you laugh. 'Mnogo' = very/so much.",
+          "notes": "'Smešna' for a woman, 'smešan' for a man.",
+          "variations": [
+            {
+              "sr_latin": "Mnogo si smešan.",
+              "sr_cyrillic": "Много си смешан.",
+              "en": "You're so funny. (to a man)"
+            }
+          ]
+        },
+        {
+          "id": "st-najbolja-si",
+          "sr_latin": "Ti si najbolja.",
+          "sr_cyrillic": "Ти си најбоља.",
+          "en": "You're the best.",
+          "context": "Simple but powerful. Good after she does something nice or just because.",
+          "notes": "'Naj-' prefix makes superlatives. Dobar → najbolji/najbolja.",
+          "variations": [
+            {
+              "sr_latin": "Ti si najbolji.",
+              "sr_cyrillic": "Ти си најбољи.",
+              "en": "You're the best. (to a man)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "texting-sweet",
+      "theme": "Sweet Texting Phrases",
+      "phrases": [
+        {
+          "id": "st-nedostajes",
+          "sr_latin": "Nedostaješ mi.",
+          "sr_cyrillic": "Недостајеш ми.",
+          "en": "I miss you.",
+          "context": "The go-to 'I miss you.' Natural over text or in person.",
+          "notes": "Literally 'you are missing to me.' The subject is the person you miss, not you."
+        },
+        {
+          "id": "st-mislim-na-tebe",
+          "sr_latin": "Mislim na tebe.",
+          "sr_cyrillic": "Мислим на тебе.",
+          "en": "I'm thinking about you.",
+          "context": "Sweet mid-day text. Not too heavy, just right.",
+          "notes": "'Mislim' = I think. 'Na tebe' = about you."
+        },
+        {
+          "id": "st-jedva-cekam",
+          "sr_latin": "Jedva čekam da te vidim.",
+          "sr_cyrillic": "Једва чекам да те видим.",
+          "en": "I can't wait to see you.",
+          "context": "Before a date or when you haven't seen each other in a while.",
+          "notes": "'Jedva čekam' literally means 'I barely wait' — used for eager anticipation."
+        },
+        {
+          "id": "st-volim-te",
+          "sr_latin": "Volim te.",
+          "sr_cyrillic": "Волим те.",
+          "en": "I love you.",
+          "context": "The big one. Serbs don't throw this around casually — it carries weight.",
+          "notes": "Unlike English, there's no casual 'love ya.' This is always sincere."
+        }
+      ]
+    },
+    {
+      "id": "morning-night",
+      "theme": "Morning & Night Sweet Talk",
+      "phrases": [
+        {
+          "id": "st-dobro-jutro-sunce",
+          "sr_latin": "Dobro jutro, sunce.",
+          "sr_cyrillic": "Добро јутро, сунце.",
+          "en": "Good morning, sunshine.",
+          "context": "Perfect morning text. Warm without being over the top.",
+          "notes": "'Jutro' = morning. Can swap 'sunce' for any pet name."
+        },
+        {
+          "id": "st-laku-noc-ljubavi",
+          "sr_latin": "Laku noć, ljubavi.",
+          "sr_cyrillic": "Лаку ноћ, љубави.",
+          "en": "Good night, my love.",
+          "context": "Classic goodnight text. Feels natural and caring.",
+          "notes": "'Laku noć' is the standard goodnight. Adding a pet name makes it personal."
+        },
+        {
+          "id": "st-sanjaj-me",
+          "sr_latin": "Sanjaj me.",
+          "sr_cyrillic": "Сањај ме.",
+          "en": "Dream of me.",
+          "context": "Flirty goodnight message. Playful, not desperate.",
+          "notes": "'Sanjati' = to dream. Imperative form here."
+        },
+        {
+          "id": "st-spavaj-lepo",
+          "sr_latin": "Spavaj lepo, dušo.",
+          "sr_cyrillic": "Спавај лепо, душо.",
+          "en": "Sleep well, darling.",
+          "context": "Caring goodnight. Feels warm and protective.",
+          "notes": "'Spavaj' = sleep (imperative). 'Lepo' = nicely/well."
+        }
+      ]
+    },
+    {
+      "id": "flirty-lines",
+      "theme": "Flirty & Cheeky Lines",
+      "phrases": [
+        {
+          "id": "st-za-tebe-uvek",
+          "sr_latin": "Za tebe uvek imam vremena.",
+          "sr_cyrillic": "За тебе увек имам времена.",
+          "en": "I always have time for you.",
+          "context": "Smooth and genuine. Works as a text reply when she asks if you're busy.",
+          "notes": "'Uvek' = always. 'Vremena' = time (genitive case)."
+        },
+        {
+          "id": "st-rastuzi-me",
+          "sr_latin": "Nemoj da me rastužiš.",
+          "sr_cyrillic": "Немој да ме растужиш.",
+          "en": "Don't make me sad.",
+          "context": "Playful guilt trip. Used when she's teasing or might cancel plans.",
+          "notes": "'Nemoj' = don't (informal imperative). Keeps it light."
+        },
+        {
+          "id": "st-ukrala-srce",
+          "sr_latin": "Ukrala si mi srce.",
+          "sr_cyrillic": "Украла си ми срце.",
+          "en": "You stole my heart.",
+          "context": "A bit cheesy but delivered with a smile, it works. Serbs appreciate directness.",
+          "notes": "'Ukrala' = stole (feminine past tense). 'Ukrao' for masculine."
+        }
+      ]
+    },
+    {
+      "id": "expressing-affection",
+      "theme": "Expressing How You Feel",
+      "phrases": [
+        {
+          "id": "st-srecan-sam",
+          "sr_latin": "Srećan sam kad sam s tobom.",
+          "sr_cyrillic": "Срећан сам кад сам с тобом.",
+          "en": "I'm happy when I'm with you.",
+          "context": "Sincere and simple. Good for a quiet moment together.",
+          "notes": "'Srećan' = happy (masculine). 'Srećna' for a woman saying this.",
+          "variations": [
+            {
+              "sr_latin": "Srećna sam kad sam s tobom.",
+              "sr_cyrillic": "Срећна сам кад сам с тобом.",
+              "en": "I'm happy when I'm with you. (said by a woman)"
+            }
+          ]
+        },
+        {
+          "id": "st-sve-mi-znacis",
+          "sr_latin": "Sve mi značiš.",
+          "sr_cyrillic": "Све ми значиш.",
+          "en": "You mean everything to me.",
+          "context": "Heavy but genuine. Save for real moments.",
+          "notes": "'Sve' = everything. 'Značiti' = to mean."
+        },
+        {
+          "id": "st-ludim-za-tobom",
+          "sr_latin": "Ludim za tobom.",
+          "sr_cyrillic": "Лудим за тобом.",
+          "en": "I'm crazy about you.",
+          "context": "Passionate but casual. Common expression, not as intense as it sounds in English.",
+          "notes": "'Luditi' = to go crazy. 'Za tobom' = for/after you."
+        }
+      ]
+    },
+    {
+      "id": "reassurance",
+      "theme": "Reassurance & Comfort",
+      "phrases": [
+        {
+          "id": "st-tu-sam",
+          "sr_latin": "Tu sam za tebe.",
+          "sr_cyrillic": "Ту сам за тебе.",
+          "en": "I'm here for you.",
+          "context": "When she's stressed or upset. Simple and comforting.",
+          "notes": "'Tu' = here. Direct and supportive."
+        },
+        {
+          "id": "st-sve-ce-biti-ok",
+          "sr_latin": "Sve će biti u redu.",
+          "sr_cyrillic": "Све ће бити у реду.",
+          "en": "Everything will be okay.",
+          "context": "Comforting someone who's worried or going through something tough.",
+          "notes": "'Će' = will (future tense marker). 'U redu' = in order / okay."
+        },
+        {
+          "id": "st-ne-brini",
+          "sr_latin": "Ne brini, dušo.",
+          "sr_cyrillic": "Не брини, душо.",
+          "en": "Don't worry, darling.",
+          "context": "Gentle reassurance. The pet name softens it.",
+          "notes": "'Brinuti' = to worry. 'Ne brini' = don't worry (informal)."
+        }
+      ]
+    },
+    {
+      "id": "after-argument",
+      "theme": "Making Up After a Fight",
+      "phrases": [
+        {
+          "id": "st-izvini",
+          "sr_latin": "Izvini, nisam mislio tako.",
+          "sr_cyrillic": "Извини, нисам мислио тако.",
+          "en": "Sorry, I didn't mean it like that.",
+          "context": "After you said something wrong or it came out badly.",
+          "notes": "'Izvini' = sorry/excuse me (informal). 'Nisam mislio' = I didn't think/mean.",
+          "variations": [
+            {
+              "sr_latin": "Izvini, nisam mislila tako.",
+              "sr_cyrillic": "Извини, нисам мислила тако.",
+              "en": "Sorry, I didn't mean it like that. (said by a woman)"
+            }
+          ]
+        },
+        {
+          "id": "st-hajde-ne-svadjamo",
+          "sr_latin": "Hajde da se ne svađamo.",
+          "sr_cyrillic": "Хајде да се не свађамо.",
+          "en": "Let's not fight.",
+          "context": "De-escalation move. Shows you'd rather be close than right.",
+          "notes": "'Hajde' = come on / let's. 'Svađati se' = to argue/fight."
+        },
+        {
+          "id": "st-mrzim-svadje",
+          "sr_latin": "Mrzim kad se svađamo.",
+          "sr_cyrillic": "Мрзим кад се свађамо.",
+          "en": "I hate when we fight.",
+          "context": "Vulnerable and honest. Good way to break a tense silence.",
+          "notes": "'Mrzim' = I hate. 'Kad' = when."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "id": "first-lesson",
+    "title": "Prve reči",
+    "description": "Complete your first lesson",
+    "icon": "star",
+    "condition": "complete_first_lesson"
+  },
+  {
+    "id": "streak-3",
+    "title": "Na dobrom putu",
+    "description": "Maintain a 3-day streak",
+    "icon": "fire",
+    "condition": "streak_3"
+  },
+  {
+    "id": "streak-7",
+    "title": "Nedelja dana",
+    "description": "Maintain a 7-day streak",
+    "icon": "fire",
+    "condition": "streak_7"
+  },
+  {
+    "id": "streak-14",
+    "title": "Dve nedelje",
+    "description": "Maintain a 14-day streak",
+    "icon": "fire",
+    "condition": "streak_14"
+  },
+  {
+    "id": "streak-30",
+    "title": "Mesec dana!",
+    "description": "Maintain a 30-day streak",
+    "icon": "fire",
+    "condition": "streak_30"
+  },
+  {
+    "id": "script-scholar",
+    "title": "Pismoználac",
+    "description": "Complete 5 script conversion exercises",
+    "icon": "scroll",
+    "condition": "script_exercises_5"
+  },
+  {
+    "id": "sweet-talker",
+    "title": "Slatkorečiv",
+    "description": "Master all phrases in Sweet Talk",
+    "icon": "heart",
+    "condition": "master_sweet-talk"
+  },
+  {
+    "id": "brate",
+    "title": "Brate!",
+    "description": "Master all phrases in Slang & Humor",
+    "icon": "handshake",
+    "condition": "master_slang-humor"
+  },
+  {
+    "id": "polyglot",
+    "title": "Poliglota",
+    "description": "Learn 100 phrases",
+    "icon": "globe",
+    "condition": "phrases_100"
+  },
+  {
+    "id": "perfect-lesson",
+    "title": "Savršeno!",
+    "description": "100% accuracy on a lesson",
+    "icon": "trophy",
+    "condition": "perfect_accuracy"
+  },
+  {
+    "id": "night-owl",
+    "title": "Noćna ptica",
+    "description": "Study after 11 PM",
+    "icon": "moon",
+    "condition": "study_late"
+  },
+  {
+    "id": "early-bird",
+    "title": "Rana ptica",
+    "description": "Study before 7 AM",
+    "icon": "sunrise",
+    "condition": "study_early"
+  },
+  {
+    "id": "review-champion",
+    "title": "Šampion ponavljanja",
+    "description": "Complete 10 review sessions",
+    "icon": "medal",
+    "condition": "review_sessions_10"
+  }
+]

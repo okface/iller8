@@ -1,0 +1,384 @@
+{
+  "id": "making-plans",
+  "title": {
+    "sr_latin": "Pravljenje planova",
+    "sr_cyrillic": "Прављење планова",
+    "en": "Making Plans & Hanging Out"
+  },
+  "description": {
+    "sr_latin": "Kako da se dogovoriš za izlazak, predložiš aktivnosti, i organizuješ bleju.",
+    "en": "How to make plans, suggest activities, and organize hangouts."
+  },
+  "order": 6,
+  "prerequisites": [],
+  "phraseGroups": [
+    {
+      "id": "hajde-da",
+      "theme": "Hajde da... (Let's...)",
+      "phrases": [
+        {
+          "id": "hajde-da-izadjemo",
+          "sr_latin": "Hajde da izađemo večeras.",
+          "sr_cyrillic": "Хајде да изађемо вечерас.",
+          "en": "Let's go out tonight.",
+          "context": "Suggesting a night out. 'Hajde da' + verb is the standard way to say 'let's'.",
+          "notes": "'Izađemo' comes from 'izaći' (to go out). Very common for suggesting plans."
+        },
+        {
+          "id": "hajde-da-prošetamo",
+          "sr_latin": "Hajde da prošetamo.",
+          "sr_cyrillic": "Хајде да прошетамо.",
+          "en": "Let's go for a walk.",
+          "context": "Suggesting a casual walk. Šetnja (a walk) is a big part of Serbian social life.",
+          "notes": "'Prošetamo' = 'take a stroll'. Serbians love evening walks, especially along the river or through town."
+        },
+        {
+          "id": "hajde-da-popijemo",
+          "sr_latin": "Hajde da popijemo nešto.",
+          "sr_cyrillic": "Хајде да попијемо нешто.",
+          "en": "Let's grab a drink.",
+          "context": "Suggesting drinks. Deliberately vague about whether it's coffee, beer, or rakija."
+        },
+        {
+          "id": "hajde-da-gledamo",
+          "sr_latin": "Hajde da gledamo nešto.",
+          "sr_cyrillic": "Хајде да гледамо нешто.",
+          "en": "Let's watch something.",
+          "context": "Suggesting a movie or show at home.",
+          "variations": [
+            {
+              "sr_latin": "Hajde da gledamo seriju.",
+              "sr_cyrillic": "Хајде да гледамо серију.",
+              "en": "Let's watch a series."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "suggesting-activities",
+      "theme": "Suggesting Activities",
+      "phrases": [
+        {
+          "id": "hoces-da-izadjemo",
+          "sr_latin": "Hoćeš da izađemo?",
+          "sr_cyrillic": "Хоћеш да изађемо?",
+          "en": "Do you want to go out?",
+          "context": "Asking someone if they want to go out — works for both a date and hanging with friends."
+        },
+        {
+          "id": "mozemo-u-bioskop",
+          "sr_latin": "Možemo u bioskop?",
+          "sr_cyrillic": "Можемо у биоскоп?",
+          "en": "Can we go to the cinema?",
+          "context": "Suggesting a movie. 'Bioskop' = cinema/movie theater."
+        },
+        {
+          "id": "ima-dobar-restoran",
+          "sr_latin": "Ima jedan dobar restoran blizu, hoćeš da probamo?",
+          "sr_cyrillic": "Има један добар ресторан близу, хоћеш да пробамо?",
+          "en": "There's a good restaurant nearby, want to try it?",
+          "context": "Suggesting a new place to eat."
+        },
+        {
+          "id": "aj-na-pivo",
+          "sr_latin": "Aj na pivo posle posla?",
+          "sr_cyrillic": "Ај на пиво после посла?",
+          "en": "Beer after work?",
+          "context": "Quick, casual invite for after-work drinks. 'Aj' is the ultra-casual form of 'hajde'.",
+          "notes": "'Aj' is even shorter than 'ajde'. Peak casual Serbian."
+        }
+      ]
+    },
+    {
+      "id": "weekend-plans",
+      "theme": "Weekend Plans",
+      "phrases": [
+        {
+          "id": "sta-radis-vikend",
+          "sr_latin": "Šta radiš za vikend?",
+          "sr_cyrillic": "Шта радиш за викенд?",
+          "en": "What are you doing this weekend?",
+          "context": "The classic Friday question to friends or your partner."
+        },
+        {
+          "id": "imas-planove",
+          "sr_latin": "Imaš li neke planove za vikend?",
+          "sr_cyrillic": "Имаш ли неке планове за викенд?",
+          "en": "Do you have any plans for the weekend?",
+          "context": "A slightly more formal way to ask about weekend plans."
+        },
+        {
+          "id": "nista-posebno",
+          "sr_latin": "Ništa posebno, ti?",
+          "sr_cyrillic": "Ништа посебно, ти?",
+          "en": "Nothing special, you?",
+          "context": "The standard non-answer to weekend plan questions."
+        },
+        {
+          "id": "idemo-negde",
+          "sr_latin": "Idemo negde za vikend?",
+          "sr_cyrillic": "Идемо негде за викенд?",
+          "en": "Shall we go somewhere this weekend?",
+          "context": "Open-ended suggestion for a weekend trip or outing."
+        }
+      ]
+    },
+    {
+      "id": "chilling",
+      "theme": "Chilling & Hanging Out",
+      "phrases": [
+        {
+          "id": "bleja-kod-mene",
+          "sr_latin": "Bleja kod mene?",
+          "sr_cyrillic": "Блеја код мене?",
+          "en": "Hang at my place?",
+          "context": "Inviting friends over to chill. 'Bleja' is slang for hanging out/chilling.",
+          "notes": "'Bleja' comes from 'blejati' which literally means 'to bleat' (like a sheep). It's evolved into the most common word for just hanging out and doing nothing."
+        },
+        {
+          "id": "dodjite-kod-mene",
+          "sr_latin": "Dođite kod mene, chill.",
+          "sr_cyrillic": "Дођите код мене, chill.",
+          "en": "Come to my place, chill.",
+          "context": "Inviting a group of friends over. 'Dođite' is plural/polite 'come'.",
+          "variations": [
+            {
+              "sr_latin": "Dođi kod mene.",
+              "sr_cyrillic": "Дођи код мене.",
+              "en": "Come to my place."
+            }
+          ]
+        },
+        {
+          "id": "samo-da-blejimo",
+          "sr_latin": "Samo da blejimo i pričamo.",
+          "sr_cyrillic": "Само да блејимо и причамо.",
+          "en": "Just chill and talk.",
+          "context": "When you don't need a plan — just hanging out is the plan."
+        }
+      ]
+    },
+    {
+      "id": "accepting-invitations",
+      "theme": "Accepting Invitations",
+      "phrases": [
+        {
+          "id": "moze",
+          "sr_latin": "Može!",
+          "sr_cyrillic": "Може!",
+          "en": "Sure! / Works for me!",
+          "context": "The most common way to accept any plan or invitation. Short and enthusiastic.",
+          "notes": "'Može' is probably the most useful single word in Serbian. It means 'okay', 'sure', 'can do', 'deal'."
+        },
+        {
+          "id": "vazi",
+          "sr_latin": "Važi, dogovoreno.",
+          "sr_cyrillic": "Важи, договорено.",
+          "en": "Cool, it's a deal.",
+          "context": "Confirming plans. 'Važi' = 'it's valid/agreed' but used casually like 'cool/alright'.",
+          "notes": "'Važi' is another essential word. You'll hear it constantly."
+        },
+        {
+          "id": "jedva-cekam",
+          "sr_latin": "Jedva čekam!",
+          "sr_cyrillic": "Једва чекам!",
+          "en": "I can't wait!",
+          "context": "Expressing excitement about upcoming plans."
+        },
+        {
+          "id": "super-vidimo-se",
+          "sr_latin": "Super, vidimo se tamo.",
+          "sr_cyrillic": "Супер, видимо се тамо.",
+          "en": "Great, see you there.",
+          "context": "Confirming you'll meet at the agreed location."
+        }
+      ]
+    },
+    {
+      "id": "declining-invitations",
+      "theme": "Declining Invitations",
+      "phrases": [
+        {
+          "id": "ne-mogu-danas",
+          "sr_latin": "Ne mogu danas, jel' može sutra?",
+          "sr_cyrillic": "Не могу данас, јел' може сутра?",
+          "en": "I can't today, how about tomorrow?",
+          "context": "Declining but offering an alternative. Keeps the door open."
+        },
+        {
+          "id": "morace-drugi-put",
+          "sr_latin": "Moraće drugi put.",
+          "sr_cyrillic": "Мораће други пут.",
+          "en": "It'll have to be another time.",
+          "context": "Politely declining when you're not available.",
+          "notes": "'Drugi put' = 'another time' or literally 'second time'."
+        },
+        {
+          "id": "umoran-sam",
+          "sr_latin": "Umoran sam, ostajem kući.",
+          "sr_cyrillic": "Уморан сам, остајем кући.",
+          "en": "I'm tired, I'm staying home.",
+          "context": "The honest excuse. Use 'Umorna sam' if female.",
+          "variations": [
+            {
+              "sr_latin": "Mrzi me da izlazim.",
+              "sr_cyrillic": "Мрзи ме да излазим.",
+              "en": "I can't be bothered to go out."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-are-you-doing",
+      "theme": "What Are You Up To?",
+      "phrases": [
+        {
+          "id": "sta-radis",
+          "sr_latin": "Šta radiš?",
+          "sr_cyrillic": "Шта радиш?",
+          "en": "What are you doing? / What's up?",
+          "context": "The most common conversation opener in Serbian. Can mean 'what are you doing right now' or just 'hey, what's up'.",
+          "notes": "This is often used as a greeting, not just a literal question."
+        },
+        {
+          "id": "gde-si",
+          "sr_latin": "Gde si?",
+          "sr_cyrillic": "Где си?",
+          "en": "Where are you? / Hey, what's up?",
+          "context": "Can be literal ('where are you?') or a casual greeting meaning 'hey!'.",
+          "notes": "When used as a greeting, it doesn't actually require you to state your location."
+        },
+        {
+          "id": "jesi-slobodan",
+          "sr_latin": "Jesi slobodan večeras?",
+          "sr_cyrillic": "Јеси слободан вечерас?",
+          "en": "Are you free tonight?",
+          "context": "Checking availability before suggesting plans. Use 'slobodna' for female.",
+          "variations": [
+            {
+              "sr_latin": "Jesi zauzet?",
+              "sr_cyrillic": "Јеси заузет?",
+              "en": "Are you busy?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coordinating-timing",
+      "theme": "Coordinating Time",
+      "phrases": [
+        {
+          "id": "u-koliko-sati",
+          "sr_latin": "U koliko sati?",
+          "sr_cyrillic": "У колико сати?",
+          "en": "At what time?",
+          "context": "Asking when to meet."
+        },
+        {
+          "id": "recimo-u-osam",
+          "sr_latin": "Recimo u osam?",
+          "sr_cyrillic": "Рецимо у осам?",
+          "en": "Let's say eight?",
+          "context": "Suggesting a time. 'Recimo' = 'let's say'.",
+          "notes": "Serbians tend to run late, so 'u osam' might mean 8:15-8:30."
+        },
+        {
+          "id": "kasnim",
+          "sr_latin": "Kasnim malo, sačekaj me.",
+          "sr_cyrillic": "Касним мало, сачекај ме.",
+          "en": "I'm running a bit late, wait for me.",
+          "context": "The text you'll send when you're already supposed to be there.",
+          "notes": "'Malo' = 'a little'. Could mean 5 minutes, could mean 30."
+        },
+        {
+          "id": "gde-se-nadjemo",
+          "sr_latin": "Gde da se nađemo?",
+          "sr_cyrillic": "Где да се нађемо?",
+          "en": "Where should we meet?",
+          "context": "Deciding on a meeting point.",
+          "variations": [
+            {
+              "sr_latin": "Nađemo se ispred?",
+              "sr_cyrillic": "Нађемо се испред?",
+              "en": "Meet out front?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "spontaneous-plans",
+      "theme": "Spontaneous Plans",
+      "phrases": [
+        {
+          "id": "ajde-bre",
+          "sr_latin": "Ajde bre, biće zabavno!",
+          "sr_cyrillic": "Ајде бре, биће забавно!",
+          "en": "Come on, it'll be fun!",
+          "context": "Convincing someone to come along. 'Bre' is a uniquely Serbian exclamation — an all-purpose interjection.",
+          "notes": "'Bre' has no direct translation. It adds emphasis, like 'man', 'dude', or just raw energy. Quintessentially Serbian."
+        },
+        {
+          "id": "sta-cekas",
+          "sr_latin": "Šta čekaš? Idemo!",
+          "sr_cyrillic": "Шта чекаш? Идемо!",
+          "en": "What are you waiting for? Let's go!",
+          "context": "Pushing someone to stop thinking and just go."
+        },
+        {
+          "id": "ma-hajde",
+          "sr_latin": "Ma hajde, šta ti fali.",
+          "sr_cyrillic": "Ма хајде, шта ти фали.",
+          "en": "Oh come on, what's stopping you.",
+          "context": "Persuading someone who's on the fence. 'Šta ti fali' = 'what are you missing/lacking'.",
+          "notes": "'Ma' before 'hajde' adds an insistent, almost exasperated tone."
+        }
+      ]
+    },
+    {
+      "id": "wrapping-up-plans",
+      "theme": "Confirming & Wrapping Up",
+      "phrases": [
+        {
+          "id": "onda-dogovoreno",
+          "sr_latin": "Onda dogovoreno.",
+          "sr_cyrillic": "Онда договорено.",
+          "en": "Then it's settled.",
+          "context": "Finalizing plans. Clean, definitive."
+        },
+        {
+          "id": "javim-ti",
+          "sr_latin": "Javim ti kad krenem.",
+          "sr_cyrillic": "Јавим ти кад кренем.",
+          "en": "I'll text you when I leave.",
+          "context": "Letting someone know you'll update them when you're on your way.",
+          "notes": "'Javim' = 'I'll let you know/inform'. Very commonly used for coordination."
+        },
+        {
+          "id": "javi-kad-stignes",
+          "sr_latin": "Javi kad stigneš.",
+          "sr_cyrillic": "Јави кад стигнеш.",
+          "en": "Text me when you arrive.",
+          "context": "Asking someone to let you know when they get there."
+        },
+        {
+          "id": "vidimo-se",
+          "sr_latin": "Vidimo se!",
+          "sr_cyrillic": "Видимо се!",
+          "en": "See you!",
+          "context": "The standard casual goodbye when you have plans to meet.",
+          "variations": [
+            {
+              "sr_latin": "Čujemo se!",
+              "sr_cyrillic": "Чујемо се!",
+              "en": "Talk later! / We'll be in touch!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
