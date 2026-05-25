@@ -37,7 +37,7 @@ export function recordAnswer(
       streak: progress.streak + 1,
     };
   }
-  const drop = progress.bucket >= 3 ? 1 : 2;
+  const drop = progress.bucket >= 3 ? 2 : 1;
   return {
     ...progress,
     bucket: Math.max(1, progress.bucket - drop),

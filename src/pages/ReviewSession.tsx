@@ -18,6 +18,7 @@ import ScriptConvert from '../components/exercises/ScriptConvert';
 import ContextPick from '../components/exercises/ContextPick';
 import SentenceBuilder from '../components/exercises/SentenceBuilder';
 import Comprehension from '../components/exercises/Comprehension';
+import PatternMatch from '../components/exercises/PatternMatch';
 import type { Exercise, UserProgress } from '../store/types';
 
 interface ReviewSessionProps {
@@ -180,6 +181,9 @@ export default function ReviewSession({
       )}
       {exercise.type === 'comprehension' && (
         <Comprehension key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+      )}
+      {exercise.type === 'pattern-match' && (
+        <PatternMatch key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
     </div>
   );

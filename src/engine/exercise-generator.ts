@@ -387,6 +387,86 @@ function generateComprehension(
   };
 }
 
+/**
+ * Identify the words that changed between two phrases.
+ * Returns a string like "draga → dragi, moja → moj"
+ */
+function describeChanges(original: string, variant: string): string {
+  const origWords = original.replace(/[.!?,;:'"]/g, '').split(/\s+/).filter(Boolean);
+  const varWords = variant.replace(/[.!?,;:'"]/g, '').split(/\s+/).filter(Boolean);
+
+  const changes: string[] = [];
+  const maxLen = Math.max(origWords.length, varWords.length);
+  for (let i = 0; i < maxLen; i++) {
+    const ow = origWords[i] ?? '';
+    const vw = varWords[i] ?? '';
+    if (ow.toLowerCase() !== vw.toLowerCase()) {
+      if (ow && vw) {
+        changes.push(`${ow} → ${vw}`);
+      } else if (vw) {
+        changes.push(`+${vw}`);
+      } else {
+        changes.push(`-${ow}`);
+      }
+    }
+  }
+  return changes.join(', ') || 'same words, different form';
+}
+
+function generatePatternMatch(
+  phrase: Phrase,
+  allPhrases: Phrase[],
+  script: 'latin' | 'cyrillic',
+  lesson?: Lesson
+): Exercise {
+  // This type should only be called for phrases with variations.
+  // If somehow called without, fall back to multiple-choice.
+  if (!phrase.variations || phrase.variations.length === 0) {
+    return generateMultipleChoice(phrase, allPhrases, script, 'sr-to-en', lesson);
+  }
+
+  const variation = phrase.variations[Math.floor(Math.random() * phrase.variations.length)];
+  const srField = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
+
+  const originalText = phrase[srField];
+  const variantText = variation[srField];
+  const originalEn = phrase.en;
+  const variantEn = variation.en;
+
+  // Build the correct answer: describe what changed
+  const correctAnswer = describeChanges(originalText, variantText);
+
+  // Build distractor options
+  const distractors = [
+    'The word order changed',
+    'A new word was added',
+    'A word was removed',
+    'The verb tense changed',
+    'The sentence became a question',
+  ];
+  // Pick 2 distractors that don't overlap with the correct answer
+  const filteredDistractors = shuffle(distractors).slice(0, 2);
+
+  // Build the grammar note from phrase notes or context
+  let grammarNote = phrase.notes || '';
+  if (!grammarNote) {
+    grammarNote = `The original says "${originalEn}" and the variant says "${variantEn}". Notice how the word endings change.`;
+  }
+
+  return {
+    type: 'pattern-match',
+    phrase,
+    direction: 'sr-to-en',
+    prompt: `${originalText}  |  ${variantText}`,
+    correctAnswer,
+    options: shuffle([correctAnswer, ...filteredDistractors]),
+    context: phrase.context,
+    originalPhrase: { text: originalText, label: originalEn },
+    variantPhrase: { text: variantText, label: variantEn },
+    grammarNote,
+  };
+}
+
 function generateContextPick(
   phrase: Phrase,
   allPhrases: Phrase[],
@@ -420,9 +500,9 @@ function generateContextPick(
 const exerciseTypesForBucket: Record<number, ExerciseType[]> = {
   0: ['multiple-choice'],
   1: ['multiple-choice', 'context-pick'],
-  2: ['fill-in-blank', 'context-pick', 'multiple-choice'],
-  3: ['type-translation', 'word-tiles', 'fill-in-blank', 'sentence-builder', 'comprehension'],
-  4: ['type-translation', 'script-convert', 'sentence-builder', 'comprehension'],
+  2: ['fill-in-blank', 'context-pick', 'multiple-choice', 'pattern-match'],
+  3: ['type-translation', 'word-tiles', 'fill-in-blank', 'sentence-builder', 'comprehension', 'pattern-match'],
+  4: ['type-translation', 'script-convert', 'sentence-builder', 'comprehension', 'pattern-match'],
   5: ['type-translation', 'script-convert'],
 };
 
@@ -504,6 +584,11 @@ export function generateExercise(
     case 'comprehension':
       return generateComprehension(phrase, allPhrases, script);
     case 'pattern-match':
+      // Only generate pattern-match for phrases with variations; fall back otherwise
+      if (phrase.variations && phrase.variations.length > 0) {
+        return generatePatternMatch(phrase, allPhrases, script, lesson);
+      }
+      return generateMultipleChoice(phrase, allPhrases, script, direction, lesson);
     case 'match-pairs':
     default:
       return generateMultipleChoice(phrase, allPhrases, script, 'sr-to-en', lesson);
