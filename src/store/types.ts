@@ -80,7 +80,9 @@ export type ExerciseType =
   | 'match-pairs'
   | 'word-tiles'
   | 'script-convert'
-  | 'context-pick';
+  | 'context-pick'
+  | 'sentence-builder'
+  | 'comprehension';
 
 export interface Exercise {
   type: ExerciseType;
@@ -92,6 +94,10 @@ export interface Exercise {
   context?: string;
   blankIndex?: number;
   tiles?: string[];
+  situationalPrompt?: string;
+  acceptedAnswers?: string[];
+  dialogue?: string[];
+  question?: string;
 }
 
 export interface Achievement {

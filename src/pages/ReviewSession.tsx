@@ -16,6 +16,8 @@ import FillInBlank from '../components/exercises/FillInBlank';
 import WordTiles from '../components/exercises/WordTiles';
 import ScriptConvert from '../components/exercises/ScriptConvert';
 import ContextPick from '../components/exercises/ContextPick';
+import SentenceBuilder from '../components/exercises/SentenceBuilder';
+import Comprehension from '../components/exercises/Comprehension';
 import type { Exercise, UserProgress } from '../store/types';
 
 interface ReviewSessionProps {
@@ -172,6 +174,12 @@ export default function ReviewSession({
       )}
       {exercise.type === 'context-pick' && (
         <ContextPick key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+      )}
+      {exercise.type === 'sentence-builder' && (
+        <SentenceBuilder key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+      )}
+      {exercise.type === 'comprehension' && (
+        <Comprehension key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
     </div>
   );

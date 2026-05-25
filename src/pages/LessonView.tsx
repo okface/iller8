@@ -1,7 +1,7 @@
-import { useState, useEffect, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getLessonById } from '../data/lessons';
-import { generateLessonExercises } from '../engine/exercise-generator';
+import { generateLessonExercises, generateExercise } from '../engine/exercise-generator';
 import { createPhraseProgress, recordAnswer } from '../engine/srs';
 import {
   updatePhraseProgress,
@@ -18,6 +18,8 @@ import FillInBlank from '../components/exercises/FillInBlank';
 import WordTiles from '../components/exercises/WordTiles';
 import ScriptConvert from '../components/exercises/ScriptConvert';
 import ContextPick from '../components/exercises/ContextPick';
+import SentenceBuilder from '../components/exercises/SentenceBuilder';
+import Comprehension from '../components/exercises/Comprehension';
 import MatchPairs from '../components/exercises/MatchPairs';
 import type { Exercise, Phrase, UserProgress } from '../store/types';
 
@@ -83,6 +85,8 @@ export default function LessonView({
     setPhase('exercises');
   }, [lesson, introPhrases, progress, setProgress]);
 
+  const retryCountRef = React.useRef<Record<string, number>>({});
+
   const handleAnswer = useCallback(
     (correct: boolean) => {
       const exercise = exercises[currentIndex];
@@ -102,6 +106,27 @@ export default function LessonView({
       if (hour >= 23 || hour < 5) newProgress = addAchievement(newProgress, 'night-owl');
       if (hour >= 5 && hour < 7) newProgress = addAchievement(newProgress, 'early-bird');
 
+      if (!correct && lesson) {
+        const retries = retryCountRef.current[phraseId] ?? 0;
+        if (retries < 2) {
+          retryCountRef.current[phraseId] = retries + 1;
+          const allPhrases = lesson.phraseGroups.flatMap(g => g.phrases);
+          const retryExercise = generateExercise(
+            exercise.phrase,
+            allPhrases,
+            script,
+            0,
+            'multiple-choice'
+          );
+          const insertAt = Math.min(currentIndex + 4, exercises.length);
+          setExercises(prev => {
+            const updated = [...prev];
+            updated.splice(insertAt, 0, retryExercise);
+            return updated;
+          });
+        }
+      }
+
       setProgress(newProgress);
       saveProgress(newProgress);
 
@@ -111,7 +136,7 @@ export default function LessonView({
         setCurrentIndex((i) => i + 1);
       }
     },
-    [exercises, currentIndex, progress, setProgress] // eslint-disable-line react-hooks/exhaustive-deps
+    [exercises, currentIndex, progress, setProgress, lesson, script] // eslint-disable-line react-hooks/exhaustive-deps
   );
 
   const finishLesson = (currentProgress: UserProgress, lastCorrect: boolean) => {
@@ -304,6 +329,12 @@ export default function LessonView({
       )}
       {exercise.type === 'context-pick' && (
         <ContextPick key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+      )}
+      {exercise.type === 'sentence-builder' && (
+        <SentenceBuilder key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+      )}
+      {exercise.type === 'comprehension' && (
+        <Comprehension key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
 
       {currentIndex === 4 && !showMatchPairs && exercises.length > 5 && (
