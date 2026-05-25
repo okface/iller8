@@ -33,7 +33,11 @@ export default function App() {
       <Routes>
         <Route
           element={
-            <Layout script={script} onScriptChange={handleScriptChange} />
+            <Layout
+              script={script}
+              onScriptChange={handleScriptChange}
+              streak={progress.currentStreak}
+            />
           }
         >
           <Route

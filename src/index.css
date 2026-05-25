@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
 
 @theme {
+  /* legacy navy/amber scales (kept; safe to remove later) */
   --color-navy-50: #f0f1f8;
   --color-navy-100: #d9dbed;
   --color-navy-200: #b3b7db;
@@ -25,15 +28,110 @@
 
   --color-correct: #22c55e;
   --color-incorrect: #ef4444;
+
+  /* iller8 design tokens (from design handoff) */
+  --color-bg:           #06070d;
+  --color-paper:        #0c0e17;
+  --color-surface:      rgba(255,255,255,0.025);
+  --color-surface-hi:   rgba(255,255,255,0.05);
+  --color-surface-warm: rgba(255,193,7,0.05);
+  --color-border:       rgba(255,255,255,0.07);
+  --color-border-hi:    rgba(255,255,255,0.13);
+  --color-border-warm:  rgba(255,193,7,0.3);
+  --color-text:         #f0f1f8;
+  --color-dim:          #9ca3af;
+  --color-mute:         #5a5e72;
+  --color-ink-on-amber: #1a1300;
+  --color-amber:        #ffc107;
+  --color-amber-dark:   #ff8f00;
+  --color-amber-dim:    rgba(255,193,7,0.13);
+  --color-amber-soft:   rgba(255,193,7,0.25);
+  --color-green:        #22c55e;
+  --color-green-dim:    rgba(34,197,94,0.12);
+  --color-red:          #ef4444;
+  --color-red-dim:      rgba(239,68,68,0.12);
+  --color-purple:       #a78bfa;
+  --color-purple-dim:   rgba(167,139,250,0.12);
+
+  --font-sans:  'Geist', 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono:  'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-serif: 'Newsreader', 'Iowan Old Style', 'Charter', Georgia, serif;
+
+  --ease-out-iller: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+:root {
+  --t-bg: #06070d;
+  --t-paper: #0c0e17;
+  --t-surface: rgba(255,255,255,0.025);
+  --t-surface-hi: rgba(255,255,255,0.05);
+  --t-surface-warm: rgba(255,193,7,0.05);
+  --t-border: rgba(255,255,255,0.07);
+  --t-border-hi: rgba(255,255,255,0.13);
+  --t-border-warm: rgba(255,193,7,0.3);
+  --t-text: #f0f1f8;
+  --t-dim: #9ca3af;
+  --t-mute: #5a5e72;
+  --t-ink-on-amber: #1a1300;
+  --t-amber: #ffc107;
+  --t-amber-dark: #ff8f00;
+  --t-amber-dim: rgba(255,193,7,0.13);
+  --t-amber-soft: rgba(255,193,7,0.25);
+  --t-green: #22c55e;
+  --t-green-dim: rgba(34,197,94,0.12);
+  --t-red: #ef4444;
+  --t-red-dim: rgba(239,68,68,0.12);
+  --t-purple: #a78bfa;
+  --t-purple-dim: rgba(167,139,250,0.12);
+  --t-mira-grad: linear-gradient(135deg, #ffc107 0%, #ff8f00 100%);
+
+  --t-ease: cubic-bezier(0.32, 0.72, 0, 1);
 }
 
 body {
   margin: 0;
-  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: var(--t-bg);
+  color: var(--t-text);
+  font-family: 'Geist', 'Inter', -apple-system, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.dark {
-  color-scheme: dark;
+.dark { color-scheme: dark; }
+
+/* ── Typography helpers ─────────────────────────────────── */
+.font-serif-sr   { font-family: 'Newsreader', 'Iowan Old Style', 'Charter', Georgia, serif; letter-spacing: -0.3px; }
+.font-mono-meta  { font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace; }
+
+.meta-label {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 10px;
+  color: var(--t-mute);
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
 }
+
+/* ── Animations ─────────────────────────────────────────── */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-4px); }
+  40% { transform: translateX(4px); }
+  60% { transform: translateX(-4px); }
+  80% { transform: translateX(4px); }
+}
+@keyframes ans-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+.anim-shake { animation: shake 200ms ease-out 1; }
+.anim-pop   { animation: ans-pop 220ms cubic-bezier(0.32, 0.72, 0, 1) 1; }
+.blink-caret { animation: blink 1s steps(2) infinite; }
+
+/* ── Custom scrollbar (subtle) ──────────────────────────── */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.07); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.13); }

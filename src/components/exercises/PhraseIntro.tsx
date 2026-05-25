@@ -1,5 +1,10 @@
 import { useState, useCallback } from 'react';
 import type { Phrase } from '../../store/types';
+import Card from '../ui/Card';
+import Btn from '../ui/Btn';
+import MonoBadge from '../ui/MonoBadge';
+import { T, metaLabel } from '../../lib/tokens';
+import { IconBrain, IconAudio } from '../ui/Icons';
 
 interface PhraseIntroProps {
   phrases: Phrase[];
@@ -49,54 +54,54 @@ export default function PhraseIntro({ phrases, script, onComplete }: PhraseIntro
         setEchoSubmitted(false);
       }
     } else {
-      setCardState(s => ({ ...s, step: nextStep, revealed: false }));
+      setCardState((s) => ({ ...s, step: nextStep, revealed: false }));
       if (nextStep === 'echo') {
         setEchoInput('');
         setEchoSubmitted(false);
       }
-      if (nextStep === 'check') {
-        setCheckAnswer(null);
-      }
+      if (nextStep === 'check') setCheckAnswer(null);
     }
   }, [cardState, phrases.length]);
 
   if (seenAll) {
     return (
-      <div className="flex flex-col items-center gap-6 py-8 text-center">
-        <span className="text-5xl">✨</span>
-        <h2 className="text-xl font-bold text-white">
-          {script === 'cyrillic' ? 'Спремни за вежбу!' : 'Spremni za vežbu!'}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, padding: '32px 0', textAlign: 'center' }}>
+        <span style={{ fontSize: 48 }}>✨</span>
+        <h2 className="font-serif-sr" style={{ fontSize: 28, fontWeight: 500, color: T.text }}>
+          {script === 'cyrillic' ? 'Спремни за вежбу' : 'Spremni za vežbu'}
         </h2>
-        <p className="text-sm text-gray-400">
-          You've studied {phrases.length} new phrases. Time to practice!
+        <p style={{ fontSize: 13, color: T.dim }}>
+          You've met {phrases.length} new phrases. Time to drill.
         </p>
-        <button
-          onClick={onComplete}
-          className="rounded-xl bg-amber-500 px-8 py-3 font-semibold text-navy-900"
-        >
-          {script === 'cyrillic' ? 'Почни вежбање' : 'Počni vežbanje'}
-        </button>
+        <Btn kind="primary" size="lg" onClick={onComplete}>
+          Start practice
+        </Btn>
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col gap-6 pb-4">
-      <div className="flex items-center justify-between">
-        <span className="text-xs text-gray-500">
-          {script === 'cyrillic' ? 'Нове речи' : 'Nove reči'} — {cardState.phraseIndex + 1}/{phrases.length}
-        </span>
-        <div className="flex gap-1">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={metaLabel}>
+          NEW PHRASE · {cardState.phraseIndex + 1} OF {phrases.length}
+        </div>
+        <div style={{ display: 'flex', gap: 4 }}>
           {phrases.map((_, i) => (
             <div
               key={i}
-              className={`h-1.5 w-6 rounded-full transition-colors ${
-                i < cardState.phraseIndex
-                  ? 'bg-amber-500'
-                  : i === cardState.phraseIndex
-                    ? 'bg-amber-500/50'
-                    : 'bg-navy-700'
-              }`}
+              style={{
+                height: 4,
+                width: 22,
+                borderRadius: 2,
+                background:
+                  i < cardState.phraseIndex
+                    ? T.amber
+                    : i === cardState.phraseIndex
+                      ? 'rgba(255,193,7,0.5)'
+                      : T.border,
+                transition: `background ${T.fast} ${T.ease}`,
+              }}
             />
           ))}
         </div>
@@ -108,35 +113,19 @@ export default function PhraseIntro({ phrases, script, onComplete }: PhraseIntro
           altScript={altScript}
           phrase={phrase}
           revealed={cardState.revealed}
-          script={script}
-          onReveal={() => setCardState(s => ({ ...s, revealed: true }))}
+          onReveal={() => setCardState((s) => ({ ...s, revealed: true }))}
           onNext={advanceStep}
         />
       )}
-
       {cardState.step === 'breakdown' && (
-        <BreakdownStep
-          srText={srText}
-          words={words}
-          phrase={phrase}
-          script={script}
-          onNext={advanceStep}
-        />
+        <BreakdownStep srText={srText} words={words} phrase={phrase} onNext={advanceStep} />
       )}
-
       {cardState.step === 'context' && (
-        <ContextStep
-          srText={srText}
-          phrase={phrase}
-          script={script}
-          onNext={advanceStep}
-        />
+        <ContextStep srText={srText} phrase={phrase} script={script} onNext={advanceStep} />
       )}
-
       {cardState.step === 'echo' && (
         <EchoStep
           srText={srText}
-          phrase={phrase}
           input={echoInput}
           submitted={echoSubmitted}
           script={script}
@@ -145,7 +134,6 @@ export default function PhraseIntro({ phrases, script, onComplete }: PhraseIntro
           onNext={advanceStep}
         />
       )}
-
       {cardState.step === 'check' && (
         <QuickRecall
           phrase={phrase}
@@ -153,7 +141,6 @@ export default function PhraseIntro({ phrases, script, onComplete }: PhraseIntro
           checkAnswer={checkAnswer}
           onSelect={setCheckAnswer}
           allPhrases={phrases}
-          script={script}
           onNext={advanceStep}
         />
       )}
@@ -166,7 +153,6 @@ function PresentStep({
   altScript,
   phrase,
   revealed,
-  script,
   onReveal,
   onNext,
 }: {
@@ -174,43 +160,77 @@ function PresentStep({
   altScript: string;
   phrase: Phrase;
   revealed: boolean;
-  script: 'latin' | 'cyrillic';
   onReveal: () => void;
   onNext: () => void;
 }) {
   return (
-    <div className="flex flex-col gap-5">
-      <div className="rounded-2xl border border-navy-600 bg-navy-800/40 p-6 text-center">
-        <p className="text-3xl font-bold text-white leading-relaxed tracking-wide mb-2">
-          {srText}
-        </p>
-        <p className="text-sm text-gray-600 mb-4">{altScript}</p>
-
-        {!revealed ? (
-          <button
-            onClick={onReveal}
-            className="rounded-lg bg-navy-700 border border-navy-600 px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors"
-          >
-            {script === 'cyrillic' ? 'Покажи значење' : 'Pokaži značenje'}
-          </button>
-        ) : (
-          <div className="space-y-2 border-t border-navy-700 pt-4 mt-2">
-            <p className="text-lg text-amber-400">{phrase.en}</p>
-            {phrase.context && (
-              <p className="text-sm text-gray-500 italic">{phrase.context}</p>
-            )}
-          </div>
-        )}
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+      <div
+        className="font-serif-sr"
+        style={{
+          fontSize: 38,
+          fontWeight: 500,
+          letterSpacing: -0.6,
+          marginTop: 6,
+          lineHeight: 1.1,
+          color: T.text,
+        }}
+      >
+        {srText}
+      </div>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+        <button
+          style={{
+            background: T.surfaceHi,
+            border: `1px solid ${T.border}`,
+            borderRadius: T.rPill,
+            padding: '6px 12px',
+            color: T.mute,
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 6,
+            fontSize: 12,
+            fontFamily: T.mono,
+            cursor: 'not-allowed',
+          }}
+          disabled
+          aria-label="Pronunciation (audio coming soon)"
+        >
+          <IconAudio size={12} /> {altScript}
+        </button>
       </div>
 
-      <p className="text-xs text-gray-600 text-center">
-        Read the Serbian aloud. Let the sounds become familiar before checking the meaning.
-      </p>
-
-      {revealed && (
-        <button onClick={onNext} className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900">
-          {script === 'cyrillic' ? 'Даље' : 'Dalje'}
-        </button>
+      {!revealed ? (
+        <Btn kind="secondary" size="md" onClick={onReveal}>
+          Reveal meaning
+        </Btn>
+      ) : (
+        <>
+          <div style={{ fontSize: 18, color: T.amber, fontWeight: 500 }}>{phrase.en}</div>
+          {phrase.context && (
+            <div
+              className="font-serif-sr"
+              style={{ fontStyle: 'italic', fontSize: 13, color: T.dim, lineHeight: 1.55 }}
+            >
+              {phrase.context}
+            </div>
+          )}
+          {phrase.notes && (
+            <Card pad={14}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+                <MonoBadge kind="purple">
+                  <IconBrain size={11} /> NOTE
+                </MonoBadge>
+              </div>
+              <div style={{ fontSize: 13, color: T.text, marginTop: 10, lineHeight: 1.55 }}>
+                {phrase.notes}
+              </div>
+            </Card>
+          )}
+          <Btn kind="primary" size="lg" full onClick={onNext}>
+            Got it
+          </Btn>
+        </>
       )}
     </div>
   );
@@ -220,46 +240,54 @@ function BreakdownStep({
   srText,
   words,
   phrase,
-  script,
   onNext,
 }: {
   srText: string;
   words: string[];
   phrase: Phrase;
-  script: 'latin' | 'cyrillic';
   onNext: () => void;
 }) {
   return (
-    <div className="flex flex-col gap-5">
-      <div className="rounded-2xl border border-navy-600 bg-navy-800/40 p-6">
-        <p className="text-sm text-gray-400 mb-4">
-          {script === 'cyrillic' ? 'Реч по реч:' : 'Reč po reč:'}
-        </p>
-        <div className="flex flex-wrap gap-3 justify-center mb-4">
-          {words.map((word, i) => (
-            <span
-              key={i}
-              className="text-lg font-semibold text-white bg-navy-700 rounded-lg px-3 py-1.5"
-            >
-              {word}
-            </span>
-          ))}
-        </div>
-        <div className="border-t border-navy-700 pt-4 mt-2">
-          <p className="text-xl text-white text-center mb-1">{srText}</p>
-          <p className="text-sm text-amber-400 text-center">{phrase.en}</p>
-        </div>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+      <div style={metaLabel}>WORD BY WORD</div>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        {words.map((word, i) => (
+          <span
+            key={i}
+            className="font-serif-sr"
+            style={{
+              padding: '8px 12px',
+              borderRadius: T.r2,
+              background: T.surface,
+              border: `1px solid ${T.border}`,
+              fontSize: 16,
+              fontWeight: 500,
+              color: T.text,
+            }}
+          >
+            {word}
+          </span>
+        ))}
       </div>
-
-      {phrase.notes && (
-        <div className="rounded-xl bg-navy-800/50 border border-navy-700 px-4 py-2">
-          <p className="text-xs text-amber-400">{phrase.notes}</p>
+      <Card pad={14}>
+        <div className="font-serif-sr" style={{ fontSize: 20, fontWeight: 500, color: T.text }}>
+          {srText}
         </div>
+        <div style={{ fontSize: 13, color: T.amber, marginTop: 6 }}>{phrase.en}</div>
+      </Card>
+      {phrase.notes && (
+        <Card pad={12}>
+          <MonoBadge kind="purple">
+            <IconBrain size={11} /> NOTE
+          </MonoBadge>
+          <div style={{ fontSize: 12, color: T.text, marginTop: 8, lineHeight: 1.55 }}>
+            {phrase.notes}
+          </div>
+        </Card>
       )}
-
-      <button onClick={onNext} className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900">
-        {script === 'cyrillic' ? 'Даље' : 'Dalje'}
-      </button>
+      <Btn kind="primary" size="lg" full onClick={onNext}>
+        Continue
+      </Btn>
     </div>
   );
 }
@@ -276,43 +304,55 @@ function ContextStep({
   onNext: () => void;
 }) {
   return (
-    <div className="flex flex-col gap-5">
-      <div className="rounded-2xl border border-navy-600 bg-navy-800/40 p-6">
-        {phrase.context && (
-          <p className="text-sm text-gray-400 mb-3">{phrase.context}</p>
-        )}
-        <div className="bg-navy-900/50 rounded-xl p-4 border-l-2 border-amber-500">
-          <p className="text-lg text-white mb-1">{srText}</p>
-          <p className="text-sm text-gray-500">{phrase.en}</p>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+      {phrase.context && (
+        <div className="font-serif-sr" style={{ fontStyle: 'italic', fontSize: 13, color: T.dim, lineHeight: 1.6 }}>
+          {phrase.context}
         </div>
+      )}
+      <Card warm pad={16} style={{ borderLeft: `3px solid ${T.amber}` }}>
+        <div className="font-serif-sr" style={{ fontSize: 22, fontWeight: 500, color: T.text }}>
+          {srText}
+        </div>
+        <div style={{ fontSize: 13, color: T.dim, marginTop: 6 }}>{phrase.en}</div>
+      </Card>
 
-        {phrase.variations && phrase.variations.length > 0 && (
-          <div className="mt-4 space-y-3">
-            <p className="text-xs text-gray-500">
-              {script === 'cyrillic' ? 'Варијације:' : 'Varijacije:'}
-            </p>
+      {phrase.variations && phrase.variations.length > 0 && (
+        <div>
+          <div style={metaLabel}>VARIATIONS</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 8 }}>
             {phrase.variations.map((v, i) => (
-              <div key={i} className="bg-navy-900/30 rounded-lg p-3">
-                <p className="text-sm text-white">
+              <div
+                key={i}
+                style={{
+                  padding: '8px 12px',
+                  borderRadius: T.rPill,
+                  background: T.surface,
+                  border: `1px solid ${T.border}`,
+                  display: 'flex',
+                  alignItems: 'baseline',
+                  gap: 8,
+                }}
+              >
+                <span className="font-serif-sr" style={{ fontSize: 13, color: T.text }}>
                   {script === 'cyrillic' ? v.sr_cyrillic : v.sr_latin}
-                </p>
-                <p className="text-xs text-gray-500">{v.en}</p>
+                </span>
+                <span style={{ fontSize: 11, color: T.dim }}>{v.en}</span>
               </div>
             ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
-      <button onClick={onNext} className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900">
-        {script === 'cyrillic' ? 'Покушај да напишеш' : 'Pokušaj da napišeš'}
-      </button>
+      <Btn kind="primary" size="lg" full onClick={onNext}>
+        Type it out
+      </Btn>
     </div>
   );
 }
 
 function EchoStep({
   srText,
-  phrase,
   input,
   submitted,
   script,
@@ -321,7 +361,6 @@ function EchoStep({
   onNext,
 }: {
   srText: string;
-  phrase: Phrase;
   input: string;
   submitted: boolean;
   script: 'latin' | 'cyrillic';
@@ -336,57 +375,52 @@ function EchoStep({
   };
 
   return (
-    <div className="flex flex-col gap-5">
-      <div className="rounded-2xl border border-navy-600 bg-navy-800/40 p-6 text-center">
-        <p className="text-sm text-gray-400 mb-2">
-          {script === 'cyrillic' ? 'Напиши ову реченицу:' : 'Napiši ovu rečenicu:'}
-        </p>
-        <p className="text-sm text-amber-400 mb-3">{phrase.en}</p>
-        {submitted && (
-          <p className="text-lg text-white font-semibold">{srText}</p>
-        )}
-      </div>
-
-      <form onSubmit={handleFormSubmit} className="flex flex-col gap-3">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+      <div style={metaLabel}>TYPE WHAT YOU JUST SAW</div>
+      <form onSubmit={handleFormSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
         <input
           type="text"
           value={input}
           onChange={(e) => onInputChange(e.target.value)}
           disabled={submitted}
-          placeholder={script === 'cyrillic' ? 'Напиши на српском...' : 'Napiši na srpskom...'}
+          placeholder={script === 'cyrillic' ? 'Напиши на српском…' : 'Napiši na srpskom…'}
           autoFocus
-          className={`w-full rounded-xl border-2 bg-navy-800/50 p-4 text-lg text-white placeholder-gray-600 outline-none transition-colors ${
-            submitted ? 'border-amber-500/50' : 'border-navy-600 focus:border-amber-500'
-          }`}
+          className="font-serif-sr"
+          style={{
+            width: '100%',
+            padding: '16px 18px',
+            borderRadius: T.r3,
+            background: T.surface,
+            border: `1px solid ${submitted ? T.borderHi : T.borderWarm}`,
+            color: T.text,
+            fontSize: 22,
+            outline: 'none',
+            transition: `all ${T.fast} ${T.ease}`,
+          }}
         />
-
         {!submitted && (
-          <button
-            type="submit"
-            disabled={!input.trim()}
-            className="rounded-xl bg-navy-700 border border-navy-600 px-6 py-3 text-sm text-gray-300 transition-opacity disabled:opacity-40"
-          >
-            {script === 'cyrillic' ? 'Провери' : 'Proveri'}
-          </button>
+          <Btn type="submit" kind="primary" size="md" disabled={!input.trim()}>
+            Check
+          </Btn>
         )}
       </form>
 
       {submitted && (
-        <div className="rounded-xl bg-navy-800/50 p-4">
-          <p className="text-xs text-gray-400 mb-1">
-            {script === 'cyrillic' ? 'Тачан одговор:' : 'Tačan odgovor:'}
-          </p>
-          <p className="text-lg text-white">{srText}</p>
-          <p className="text-xs text-gray-500 mt-2">
-            This is just practice — no scoring here. The goal is to get your fingers used to typing Serbian.
-          </p>
-        </div>
+        <Card pad={14}>
+          <div style={metaLabel}>CORRECT</div>
+          <div className="font-serif-sr" style={{ fontSize: 18, fontWeight: 500, color: T.text, marginTop: 6 }}>
+            {srText}
+          </div>
+          <div style={{ fontSize: 11, color: T.mute, marginTop: 8 }}>
+            No score here — just to wake up your fingers.
+          </div>
+        </Card>
       )}
 
       {submitted && (
-        <button onClick={onNext} className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900">
-          {script === 'cyrillic' ? 'Провери се' : 'Proveri se'}
-        </button>
+        <Btn kind="primary" size="lg" full onClick={onNext}>
+          Quick check
+        </Btn>
       )}
     </div>
   );
@@ -398,7 +432,6 @@ function QuickRecall({
   checkAnswer,
   onSelect,
   allPhrases,
-  script,
   onNext,
 }: {
   phrase: Phrase;
@@ -406,13 +439,12 @@ function QuickRecall({
   checkAnswer: string | null;
   onSelect: (a: string) => void;
   allPhrases: Phrase[];
-  script: 'latin' | 'cyrillic';
   onNext: () => void;
 }) {
   const [options] = useState(() => {
     const distractors = allPhrases
-      .filter(p => p.id !== phrase.id)
-      .map(p => p.en)
+      .filter((p) => p.id !== phrase.id)
+      .map((p) => p.en)
       .sort(() => Math.random() - 0.5)
       .slice(0, 2);
     return [phrase.en, ...distractors].sort(() => Math.random() - 0.5);
@@ -422,28 +454,50 @@ function QuickRecall({
   const correct = checkAnswer === phrase.en;
 
   return (
-    <div className="flex flex-col gap-5">
-      <div className="rounded-2xl border border-navy-600 bg-navy-800/40 p-6 text-center">
-        <p className="text-sm text-gray-400 mb-2">
-          {script === 'cyrillic' ? 'Да ли се сећаш?' : 'Da li se sećaš?'}
-        </p>
-        <p className="text-2xl font-bold text-white">{srText}</p>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+      <div style={metaLabel}>QUICK CHECK · WHAT DOES THIS MEAN?</div>
+      <div className="font-serif-sr" style={{ fontSize: 28, fontWeight: 500, color: T.text, letterSpacing: -0.4 }}>
+        {srText}
       </div>
 
-      <div className="flex flex-col gap-2">
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
         {options.map((opt, i) => {
-          let style = 'border-navy-600 hover:border-amber-500/50';
+          const isCorrect = opt === phrase.en;
+          const isSelected = opt === checkAnswer;
+
+          let bg: string = T.surface;
+          let border: string = T.border;
+          let opacity = 1;
           if (answered) {
-            if (opt === phrase.en) style = 'border-correct bg-correct/10';
-            else if (opt === checkAnswer) style = 'border-incorrect bg-incorrect/10';
-            else style = 'border-navy-700 opacity-50';
+            if (isCorrect) {
+              bg = T.greenDim;
+              border = 'rgba(34,197,94,0.4)';
+            } else if (isSelected) {
+              bg = T.redDim;
+              border = 'rgba(239,68,68,0.4)';
+            } else {
+              opacity = 0.45;
+            }
           }
+
           return (
             <button
               key={i}
               onClick={() => !answered && onSelect(opt)}
               disabled={answered}
-              className={`w-full rounded-xl border-2 p-3 text-left text-white transition-all text-sm ${style}`}
+              style={{
+                padding: '12px 16px',
+                borderRadius: T.r3,
+                background: bg,
+                border: `1px solid ${border}`,
+                color: T.text,
+                fontSize: 14,
+                fontWeight: 500,
+                textAlign: 'left',
+                cursor: answered ? 'default' : 'pointer',
+                opacity,
+                transition: `all ${T.fast} ${T.ease}`,
+              }}
             >
               {opt}
             </button>
@@ -452,22 +506,14 @@ function QuickRecall({
       </div>
 
       {answered && (
-        <div className="text-center">
-          <p className={`text-sm font-semibold mb-3 ${correct ? 'text-correct' : 'text-incorrect'}`}>
-            {correct
-              ? (script === 'cyrillic' ? 'Тачно! ✓' : 'Tačno! ✓')
-              : (script === 'cyrillic' ? 'Није тачно — запамти ово' : 'Nije tačno — zapamti ovo')}
-          </p>
-          {!correct && (
-            <div className="rounded-xl bg-navy-800/50 p-3 mb-3">
-              <p className="text-sm text-white">{srText}</p>
-              <p className="text-xs text-amber-400">{phrase.en}</p>
-            </div>
-          )}
-          <button onClick={onNext} className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900">
-            {script === 'cyrillic' ? 'Даље' : 'Dalje'}
-          </button>
-        </div>
+        <>
+          <div style={{ fontSize: 13, color: correct ? T.green : T.red, fontWeight: 600, textAlign: 'center' }}>
+            {correct ? 'Tačno ✓' : 'Not quite — remember this one.'}
+          </div>
+          <Btn kind="primary" size="lg" full onClick={onNext}>
+            Next
+          </Btn>
+        </>
       )}
     </div>
   );

@@ -1,26 +1,24 @@
-import { cn } from '../lib/utils';
+import LinearProgress from './ui/LinearProgress';
+import { T } from '../lib/tokens';
 
 interface ProgressBarProps {
   current: number;
   total: number;
   className?: string;
   color?: string;
+  height?: number;
 }
 
 export default function ProgressBar({
   current,
   total,
   className,
-  color = 'bg-amber-500',
+  color = T.amber,
+  height = 4,
 }: ProgressBarProps) {
-  const pct = total > 0 ? Math.min(100, (current / total) * 100) : 0;
-
   return (
-    <div className={cn('h-2 w-full rounded-full bg-navy-800', className)}>
-      <div
-        className={cn('h-full rounded-full transition-all duration-500', color)}
-        style={{ width: `${pct}%` }}
-      />
+    <div className={className} style={{ width: '100%' }}>
+      <LinearProgress value={current} total={total} color={color} height={height} />
     </div>
   );
 }

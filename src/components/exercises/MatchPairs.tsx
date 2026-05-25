@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import type { Lesson } from '../../store/types';
 import { generateMatchPairsData } from '../../engine/exercise-generator';
-import { cn } from '../../lib/utils';
+import { T, metaLabel } from '../../lib/tokens';
 
 interface MatchPairsProps {
   lesson: Lesson;
@@ -17,102 +17,161 @@ export default function MatchPairs({ lesson, script, onComplete }: MatchPairsPro
   const [wrong, setWrong] = useState<{ sr: string; en: string } | null>(null);
   const [mistakes, setMistakes] = useState(0);
 
-  const [shuffledSr] = useState(() =>
-    [...pairs.pairs].sort(() => Math.random() - 0.5)
-  );
-  const [shuffledEn] = useState(() =>
-    [...pairs.pairs].sort(() => Math.random() - 0.5)
-  );
+  const [shuffledSr] = useState(() => [...pairs.pairs].sort(() => Math.random() - 0.5));
+  const [shuffledEn] = useState(() => [...pairs.pairs].sort(() => Math.random() - 0.5));
 
-  const checkMatch = useCallback((sr: string, en: string) => {
-    const pair = pairs.pairs.find((p) => p.sr === sr && p.en === en);
-    if (pair) {
-      setMatched((prev) => new Set([...prev, pair.id]));
-      setSelectedSr(null);
-      setSelectedEn(null);
-    } else {
-      setWrong({ sr, en });
-      setMistakes((m) => m + 1);
-      setTimeout(() => {
-        setWrong(null);
+  const checkMatch = useCallback(
+    (sr: string, en: string) => {
+      const pair = pairs.pairs.find((p) => p.sr === sr && p.en === en);
+      if (pair) {
+        setMatched((prev) => new Set([...prev, pair.id]));
         setSelectedSr(null);
         setSelectedEn(null);
-      }, 800);
-    }
-  }, [pairs.pairs]);
+      } else {
+        setWrong({ sr, en });
+        setMistakes((m) => m + 1);
+        setTimeout(() => {
+          setWrong(null);
+          setSelectedSr(null);
+          setSelectedEn(null);
+        }, 800);
+      }
+    },
+    [pairs.pairs]
+  );
 
   useEffect(() => {
-    if (selectedSr && selectedEn) {
-      checkMatch(selectedSr, selectedEn);
-    }
+    if (selectedSr && selectedEn) checkMatch(selectedSr, selectedEn);
   }, [selectedSr, selectedEn, checkMatch]);
 
   useEffect(() => {
     if (matched.size === pairs.pairs.length) {
-      setTimeout(() => onComplete(pairs.pairs.length - mistakes, pairs.pairs.length), 500);
+      setTimeout(
+        () => onComplete(pairs.pairs.length - mistakes, pairs.pairs.length),
+        500
+      );
     }
   }, [matched.size, pairs.pairs.length, mistakes, onComplete]);
 
   return (
-    <div className="flex flex-col gap-6">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
       <div>
-        <p className="text-sm text-gray-400 mb-2">Match the pairs:</p>
-        <p className="text-xs text-gray-500">
-          {matched.size}/{pairs.pairs.length} matched
-        </p>
+        <div style={metaLabel}>MATCH PAIRS</div>
+        <div
+          style={{
+            fontSize: 18,
+            fontWeight: 600,
+            color: T.text,
+            marginTop: 8,
+          }}
+        >
+          Tap a Serbian phrase, then its English.
+        </div>
+        <div style={{ ...metaLabel, marginTop: 6 }}>
+          {matched.size} / {pairs.pairs.length} MATCHED
+        </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="flex flex-col gap-2">
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           {shuffledSr.map((pair) => {
             const isMatched = matched.has(pair.id);
             const isSelected = selectedSr === pair.sr;
             const isWrong = wrong?.sr === pair.sr;
-
             return (
-              <button
+              <Tile
                 key={pair.id + '-sr'}
+                text={pair.sr}
+                serif
+                state={
+                  isMatched
+                    ? 'matched'
+                    : isWrong
+                      ? 'wrong'
+                      : isSelected
+                        ? 'selected'
+                        : 'idle'
+                }
                 onClick={() => !isMatched && setSelectedSr(pair.sr)}
-                disabled={isMatched}
-                className={cn(
-                  'rounded-xl border-2 p-3 text-left text-sm transition-all',
-                  isMatched && 'border-correct/30 bg-correct/5 opacity-60',
-                  isSelected && !isWrong && 'border-amber-500 bg-amber-500/10',
-                  isWrong && 'border-incorrect bg-incorrect/10 animate-shake',
-                  !isMatched && !isSelected && !isWrong && 'border-navy-600 hover:border-navy-500 text-white'
-                )}
-              >
-                {pair.sr}
-              </button>
+              />
             );
           })}
         </div>
-
-        <div className="flex flex-col gap-2">
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           {shuffledEn.map((pair) => {
             const isMatched = matched.has(pair.id);
             const isSelected = selectedEn === pair.en;
             const isWrong = wrong?.en === pair.en;
-
             return (
-              <button
+              <Tile
                 key={pair.id + '-en'}
+                text={pair.en}
+                state={
+                  isMatched
+                    ? 'matched'
+                    : isWrong
+                      ? 'wrong'
+                      : isSelected
+                        ? 'selected'
+                        : 'idle'
+                }
                 onClick={() => !isMatched && setSelectedEn(pair.en)}
-                disabled={isMatched}
-                className={cn(
-                  'rounded-xl border-2 p-3 text-left text-sm transition-all',
-                  isMatched && 'border-correct/30 bg-correct/5 opacity-60',
-                  isSelected && !isWrong && 'border-amber-500 bg-amber-500/10',
-                  isWrong && 'border-incorrect bg-incorrect/10',
-                  !isMatched && !isSelected && !isWrong && 'border-navy-600 hover:border-navy-500 text-white'
-                )}
-              >
-                {pair.en}
-              </button>
+              />
             );
           })}
         </div>
       </div>
     </div>
+  );
+}
+
+type TileState = 'idle' | 'selected' | 'matched' | 'wrong';
+
+function Tile({
+  text,
+  state,
+  serif,
+  onClick,
+}: {
+  text: string;
+  state: TileState;
+  serif?: boolean;
+  onClick?: () => void;
+}) {
+  const map: Record<TileState, { bg: string; bd: string; fg: string }> = {
+    idle: { bg: T.surface, bd: T.border, fg: T.text },
+    selected: { bg: T.surfaceWarm, bd: T.amber, fg: T.text },
+    matched: { bg: T.greenDim, bd: 'rgba(34,197,94,0.3)', fg: T.dim },
+    wrong: { bg: T.redDim, bd: 'rgba(239,68,68,0.4)', fg: T.text },
+  };
+  const k = map[state];
+
+  return (
+    <button
+      onClick={onClick}
+      disabled={state === 'matched'}
+      className={state === 'wrong' ? 'anim-shake' : undefined}
+      style={{
+        padding: '14px 12px',
+        borderRadius: T.r3,
+        minHeight: 60,
+        background: k.bg,
+        border: `1px solid ${k.bd}`,
+        color: k.fg,
+        fontFamily: serif ? T.serif : T.sans,
+        fontSize: serif ? 16 : 14,
+        fontWeight: 500,
+        letterSpacing: serif ? -0.2 : 0,
+        display: 'flex',
+        alignItems: 'center',
+        textAlign: 'left',
+        textDecoration: state === 'matched' ? 'line-through' : 'none',
+        opacity: state === 'matched' ? 0.6 : 1,
+        cursor: state === 'matched' ? 'default' : 'pointer',
+        transition: `all ${T.fast} ${T.ease}`,
+      }}
+    >
+      {text}
+    </button>
   );
 }

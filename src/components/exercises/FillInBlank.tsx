@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import type { Exercise } from '../../store/types';
 import { checkAnswerFuzzy } from '../../engine/scoring';
+import Btn from '../ui/Btn';
+import Card from '../ui/Card';
+import { T, metaLabel } from '../../lib/tokens';
 
 interface FillInBlankProps {
   exercise: Exercise;
@@ -20,63 +23,107 @@ export default function FillInBlank({ exercise, onAnswer }: FillInBlankProps) {
     setTimeout(() => onAnswer(check.correct), 1500);
   };
 
+  const borderColor =
+    result === null ? T.borderWarm : result.correct ? T.green : T.red;
+  const bgColor =
+    result === null
+      ? T.surface
+      : result.correct
+        ? T.greenDim
+        : T.redDim;
+
   return (
-    <div className="flex flex-col gap-6">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
       <div>
-        <p className="text-sm text-gray-400 mb-2">Fill in the blank:</p>
-        <p className="text-2xl font-semibold text-white leading-relaxed">
+        <div style={metaLabel}>FILL IN THE BLANK</div>
+        <div
+          className="font-serif-sr"
+          style={{
+            fontSize: 26,
+            fontWeight: 500,
+            letterSpacing: -0.4,
+            lineHeight: 1.3,
+            color: T.text,
+            marginTop: 8,
+          }}
+        >
           {exercise.prompt}
-        </p>
+        </div>
         {exercise.context && (
-          <p className="text-sm text-gray-500 mt-2">({exercise.context})</p>
+          <div
+            className="font-serif-sr"
+            style={{
+              fontStyle: 'italic',
+              fontSize: 13,
+              color: T.dim,
+              marginTop: 8,
+              lineHeight: 1.5,
+            }}
+          >
+            {exercise.context}
+          </div>
         )}
       </div>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
         <input
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           disabled={result !== null}
-          placeholder="Type the missing word..."
+          placeholder="Type the missing word…"
           autoFocus
-          className={`w-full rounded-xl border-2 bg-navy-800/50 p-4 text-lg text-white placeholder-gray-600 outline-none transition-colors ${
-            result === null
-              ? 'border-navy-600 focus:border-amber-500'
-              : result.correct
-                ? 'border-correct bg-correct/10'
-                : 'border-incorrect bg-incorrect/10'
-          }`}
+          className="font-serif-sr"
+          style={{
+            width: '100%',
+            padding: '16px 18px',
+            borderRadius: T.r3,
+            background: bgColor,
+            border: `1px solid ${borderColor}`,
+            color: T.text,
+            fontSize: 20,
+            outline: 'none',
+            transition: `all ${T.fast} ${T.ease}`,
+          }}
         />
 
         {result === null && (
-          <button
-            type="submit"
-            disabled={!input.trim()}
-            className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900 transition-opacity disabled:opacity-40"
-          >
+          <Btn type="submit" kind="primary" size="lg" full disabled={!input.trim()}>
             Check
-          </button>
+          </Btn>
         )}
       </form>
 
       {result && !result.correct && (
-        <div className="rounded-xl bg-navy-800/50 p-4">
-          <p className="text-sm text-gray-400">Correct answer:</p>
-          <p className="text-lg text-correct">{exercise.correctAnswer}</p>
-        </div>
+        <Card pad={14}>
+          {result.close && (
+            <div style={{ ...metaLabel, color: T.amber, marginBottom: 6 }}>
+              ALMOST · WATCH THE SPELLING
+            </div>
+          )}
+          <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT ANSWER</div>
+          <div
+            className="font-serif-sr"
+            style={{ fontSize: 18, color: T.green, fontWeight: 500 }}
+          >
+            {exercise.correctAnswer}
+          </div>
+        </Card>
       )}
 
       {result?.correct && (
-        <p className="text-lg font-semibold text-correct text-center">
-          Tačno! ✓
-        </p>
+        <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
+          Tačno ✓
+        </div>
       )}
 
       {result && exercise.phrase.notes && (
-        <div className="rounded-xl bg-navy-800/50 border border-navy-700 px-4 py-2">
-          <p className="text-xs text-amber-400">{exercise.phrase.notes}</p>
-        </div>
+        <Card pad={12}>
+          <div style={{ ...metaLabel, color: T.purple, marginBottom: 6 }}>NOTE</div>
+          <div style={{ fontSize: 12, color: T.text, lineHeight: 1.55 }}>
+            {exercise.phrase.notes}
+          </div>
+        </Card>
       )}
     </div>
   );

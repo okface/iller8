@@ -9,7 +9,10 @@ import {
   saveProgress,
   addAchievement,
 } from '../store/progress';
-import ProgressBar from '../components/ProgressBar';
+import DrillFrame from '../components/ui/DrillFrame';
+import Card from '../components/ui/Card';
+import Btn from '../components/ui/Btn';
+import { T, metaLabel } from '../lib/tokens';
 import MultipleChoice from '../components/exercises/MultipleChoice';
 import TypeTranslation from '../components/exercises/TypeTranslation';
 import FillInBlank from '../components/exercises/FillInBlank';
@@ -27,11 +30,19 @@ interface ReviewSessionProps {
   script: 'latin' | 'cyrillic';
 }
 
-export default function ReviewSession({
-  progress,
-  setProgress,
-  script,
-}: ReviewSessionProps) {
+const EXERCISE_LABELS: Record<string, string> = {
+  'multiple-choice': 'multiple choice',
+  'type-translation': 'type it',
+  'fill-in-blank': 'fill in',
+  'word-tiles': 'build it',
+  'script-convert': 'script swap',
+  'context-pick': 'context',
+  'sentence-builder': 'build sentence',
+  'comprehension': 'comprehension',
+  'pattern-match': 'pattern',
+};
+
+export default function ReviewSession({ progress, setProgress, script }: ReviewSessionProps) {
   const navigate = useNavigate();
   const [exercises, setExercises] = useState<Exercise[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,77 +98,93 @@ export default function ReviewSession({
 
   if (dueCount === 0 && exercises.length === 0) {
     return (
-      <div className="flex flex-col items-center gap-6 py-12 text-center">
-        <span className="text-6xl">✨</span>
-        <h2 className="text-2xl font-bold text-white">
-          {script === 'cyrillic' ? 'Све си поновио!' : 'Sve si ponovio!'}
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18, padding: '48px 0', textAlign: 'center' }}>
+        <span style={{ fontSize: 48 }}>✨</span>
+        <h2 style={{ fontSize: 22, fontWeight: 700, color: T.text }}>
+          {script === 'cyrillic' ? 'Све си поновио!' : 'All caught up'}
         </h2>
-        <p className="text-gray-400">Nothing to review right now. Come back later!</p>
-        <button
-          onClick={() => navigate('/')}
-          className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900"
-        >
-          {script === 'cyrillic' ? 'Назад' : 'Nazad'}
-        </button>
+        <p style={{ color: T.dim, maxWidth: 280, fontSize: 13 }}>
+          Nothing is due right now. Come back in a few hours.
+        </p>
+        <Btn kind="primary" size="lg" onClick={() => navigate('/')}>
+          Back home
+        </Btn>
       </div>
     );
   }
 
   if (finished) {
-    const accuracy =
-      totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+    const accuracy = totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
 
     return (
-      <div className="flex flex-col items-center gap-6 py-12 text-center">
-        <span className="text-6xl">{accuracy >= 80 ? '🔥' : '💪'}</span>
-        <h2 className="text-2xl font-bold text-white">
-          {script === 'cyrillic' ? 'Понављање завршено!' : 'Ponavljanje završeno!'}
-        </h2>
-        <p className="text-gray-400">Review session complete</p>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 0, paddingTop: 16 }}>
+        <div style={{ ...metaLabel, color: T.amber }}>REVIEW · COMPLETE</div>
+        <h1
+          className="font-serif-sr"
+          style={{
+            fontSize: 40,
+            fontWeight: 700,
+            letterSpacing: -1.1,
+            margin: '14px 0 0',
+            lineHeight: 1,
+            color: T.text,
+          }}
+        >
+          Bravo.
+        </h1>
+        <p style={{ fontSize: 14, color: T.dim, marginTop: 14, lineHeight: 1.5 }}>
+          {totalAnswered} reviews logged. Buckets shuffled.
+        </p>
 
-        <div className="flex gap-8">
-          <div className="text-center">
-            <p className="text-3xl font-bold text-amber-500">{accuracy}%</p>
-            <p className="text-xs text-gray-400">accuracy</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-white">{correctCount}</p>
-            <p className="text-xs text-gray-400">correct</p>
-          </div>
+        <div style={{ marginTop: 22, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          <Card pad={16}>
+            <div
+              style={{
+                fontFamily: T.mono,
+                fontSize: 32,
+                fontWeight: 600,
+                letterSpacing: -1,
+                color: accuracy >= 80 ? T.green : T.text,
+              }}
+            >
+              {accuracy}%
+            </div>
+            <div style={{ ...metaLabel, marginTop: 4 }}>accuracy</div>
+          </Card>
+          <Card pad={16}>
+            <div
+              style={{
+                fontFamily: T.mono,
+                fontSize: 32,
+                fontWeight: 600,
+                letterSpacing: -1,
+                color: T.text,
+              }}
+            >
+              {correctCount}
+            </div>
+            <div style={{ ...metaLabel, marginTop: 4 }}>correct</div>
+          </Card>
         </div>
 
-        <button
-          onClick={() => navigate('/')}
-          className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900 mt-4"
-        >
-          {script === 'cyrillic' ? 'Назад' : 'Nazad'}
-        </button>
+        <Btn kind="primary" size="lg" full style={{ marginTop: 22 }} onClick={() => navigate('/')}>
+          Back home
+        </Btn>
       </div>
     );
   }
 
   const exercise = exercises[currentIndex];
-  if (!exercise) return <p className="text-gray-400">Loading...</p>;
+  if (!exercise) return <p style={{ color: T.dim }}>Loading…</p>;
 
   return (
-    <div className="flex flex-col gap-6 pb-4">
-      <div className="flex items-center gap-3">
-        <button
-          onClick={() => navigate('/')}
-          className="text-gray-400 hover:text-white transition-colors"
-        >
-          ✕
-        </button>
-        <ProgressBar current={currentIndex} total={exercises.length} className="flex-1" />
-        <span className="text-xs text-gray-500">
-          {currentIndex + 1}/{exercises.length}
-        </span>
-      </div>
-
-      <div className="rounded-xl bg-navy-800/30 border border-navy-700 px-3 py-1.5 text-xs text-amber-400 inline-block self-start">
-        Review
-      </div>
-
+    <DrillFrame
+      progress={currentIndex + 1}
+      total={exercises.length}
+      contextLabel={`REVIEW · ${EXERCISE_LABELS[exercise.type] ?? exercise.type}`}
+      streak={progress.currentStreak}
+      onClose={() => navigate('/')}
+    >
       {exercise.type === 'multiple-choice' && (
         <MultipleChoice key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
@@ -185,6 +212,6 @@ export default function ReviewSession({
       {exercise.type === 'pattern-match' && (
         <PatternMatch key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
-    </div>
+    </DrillFrame>
   );
 }

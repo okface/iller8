@@ -1,28 +1,52 @@
+import { T } from '../lib/tokens';
+
 interface ScriptToggleProps {
   script: 'latin' | 'cyrillic';
   onChange: (script: 'latin' | 'cyrillic') => void;
 }
 
 export default function ScriptToggle({ script, onChange }: ScriptToggleProps) {
+  const isLatin = script === 'latin';
   return (
-    <div className="flex items-center gap-1 rounded-lg bg-navy-800/50 p-1">
+    <div
+      style={{
+        display: 'inline-flex',
+        border: `1px solid ${T.border}`,
+        borderRadius: T.r2,
+        overflow: 'hidden',
+        fontFamily: T.mono,
+        fontSize: 11,
+      }}
+    >
       <button
         onClick={() => onChange('latin')}
-        className={`rounded-md px-3 py-1 text-sm font-medium transition-colors ${
-          script === 'latin'
-            ? 'bg-amber-500 text-navy-900'
-            : 'text-gray-400 hover:text-gray-200'
-        }`}
+        style={{
+          padding: '5px 11px',
+          background: isLatin ? T.surfaceHi : 'transparent',
+          color: isLatin ? T.text : T.dim,
+          border: 'none',
+          cursor: 'pointer',
+          fontFamily: T.mono,
+          fontSize: 11,
+          fontWeight: 500,
+          transition: `all ${T.fast} ${T.ease}`,
+        }}
       >
         Lat
       </button>
       <button
         onClick={() => onChange('cyrillic')}
-        className={`rounded-md px-3 py-1 text-sm font-medium transition-colors ${
-          script === 'cyrillic'
-            ? 'bg-amber-500 text-navy-900'
-            : 'text-gray-400 hover:text-gray-200'
-        }`}
+        style={{
+          padding: '5px 11px',
+          background: !isLatin ? T.surfaceHi : 'transparent',
+          color: !isLatin ? T.text : T.dim,
+          border: 'none',
+          cursor: 'pointer',
+          fontFamily: T.mono,
+          fontSize: 11,
+          fontWeight: 500,
+          transition: `all ${T.fast} ${T.ease}`,
+        }}
       >
         Ћир
       </button>

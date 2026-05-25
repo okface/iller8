@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, type CSSProperties, type ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
   updateSettings,
@@ -7,6 +7,13 @@ import {
   exportProgress,
   importProgress,
 } from '../store/progress';
+import Card from '../components/ui/Card';
+import SectionHead from '../components/ui/SectionHead';
+import MonoBadge from '../components/ui/MonoBadge';
+import Btn from '../components/ui/Btn';
+import ScriptToggle from '../components/ScriptToggle';
+import { IconChev } from '../components/ui/Icons';
+import { T } from '../lib/tokens';
 import type { UserProgress } from '../store/types';
 
 interface SettingsProps {
@@ -15,11 +22,7 @@ interface SettingsProps {
   script: 'latin' | 'cyrillic';
 }
 
-export default function Settings({
-  progress,
-  setProgress,
-  script,
-}: SettingsProps) {
+export default function Settings({ progress, setProgress, script }: SettingsProps) {
   const navigate = useNavigate();
   const [showResetConfirm, setShowResetConfirm] = useState(false);
   const [importError, setImportError] = useState('');
@@ -72,126 +75,251 @@ export default function Settings({
     navigate('/');
   };
 
+  const masteredCount = Object.values(progress.phrases).filter(
+    (p) => p.bucket >= 5
+  ).length;
+
+  const goalBadgeKind: 'amber' | 'default' =
+    settings.dailyGoal >= 20 ? 'amber' : 'default';
+
   return (
-    <div className="flex flex-col gap-6 pb-4">
-      <h1 className="text-2xl font-bold text-white">
-        {script === 'cyrillic' ? 'Подешавања' : 'Podešavanja'}
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+      <h1
+        style={{
+          fontSize: 28,
+          fontWeight: 700,
+          letterSpacing: -0.6,
+          margin: '0 0 4px',
+          color: T.text,
+        }}
+      >
+        {script === 'cyrillic' ? 'Подешавања' : 'Settings'}
       </h1>
+      <p style={{ fontSize: 13, color: T.dim, marginBottom: 18 }}>
+        Tune the app to fit how you learn.
+      </p>
 
-      <Section title="Script Preference">
-        <div className="flex gap-2">
-          {(['latin', 'cyrillic', 'both'] as const).map((opt) => (
-            <button
-              key={opt}
-              onClick={() => update({ scriptPreference: opt })}
-              className={`flex-1 rounded-xl border-2 p-3 text-sm font-medium transition-colors ${
-                settings.scriptPreference === opt
-                  ? 'border-amber-500 bg-amber-500/10 text-amber-400'
-                  : 'border-navy-600 text-gray-400 hover:border-navy-500'
-              }`}
-            >
-              {opt === 'latin' ? 'Latin' : opt === 'cyrillic' ? 'Ћирилица' : 'Both'}
-            </button>
-          ))}
+      {/* Profile */}
+      <Card pad={16} style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+        <div
+          style={{
+            width: 44,
+            height: 44,
+            borderRadius: '50%',
+            background: T.surfaceHi,
+            border: `1px solid ${T.border}`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: 16,
+            fontWeight: 600,
+            color: T.text,
+          }}
+        >
+          V
         </div>
-      </Section>
-
-      <Section title="Daily Goal">
-        <div className="flex gap-2">
-          {[5, 10, 15, 20].map((goal) => (
-            <button
-              key={goal}
-              onClick={() => update({ dailyGoal: goal })}
-              className={`flex-1 rounded-xl border-2 p-3 text-sm font-medium transition-colors ${
-                settings.dailyGoal === goal
-                  ? 'border-amber-500 bg-amber-500/10 text-amber-400'
-                  : 'border-navy-600 text-gray-400 hover:border-navy-500'
-              }`}
-            >
-              {goal}
-            </button>
-          ))}
-        </div>
-      </Section>
-
-      <Section title="Claude API Key">
-        <p className="text-xs text-gray-500 mb-2">
-          Optional. Enables custom content extraction from pasted Serbian text.
-        </p>
-        <input
-          type="password"
-          value={settings.apiKey}
-          onChange={(e) => update({ apiKey: e.target.value })}
-          placeholder="sk-ant-..."
-          className="w-full rounded-xl border-2 border-navy-600 bg-navy-800/50 p-3 text-sm text-white placeholder-gray-600 outline-none focus:border-amber-500"
-        />
-      </Section>
-
-      <Section title="Data">
-        <div className="flex gap-3">
-          <button
-            onClick={handleExport}
-            className="flex-1 rounded-xl border border-navy-600 p-3 text-sm text-gray-400 hover:text-white transition-colors"
-          >
-            Export Progress
-          </button>
-          <button
-            onClick={handleImport}
-            className="flex-1 rounded-xl border border-navy-600 p-3 text-sm text-gray-400 hover:text-white transition-colors"
-          >
-            Import Progress
-          </button>
-        </div>
-        {importError && (
-          <p className="text-sm text-incorrect mt-2">{importError}</p>
-        )}
-      </Section>
-
-      <Section title="Reset">
-        {!showResetConfirm ? (
-          <button
-            onClick={() => setShowResetConfirm(true)}
-            className="w-full rounded-xl border border-red-500/30 p-3 text-sm text-red-400 hover:bg-red-500/10 transition-colors"
-          >
-            Reset All Progress
-          </button>
-        ) : (
-          <div className="flex flex-col gap-3">
-            <p className="text-sm text-red-400">
-              This will delete all your progress. Are you sure?
-            </p>
-            <div className="flex gap-3">
-              <button
-                onClick={() => setShowResetConfirm(false)}
-                className="flex-1 rounded-xl border border-navy-600 p-3 text-sm text-gray-400"
-              >
-                Cancel
-              </button>
-              <button
-                onClick={handleReset}
-                className="flex-1 rounded-xl bg-red-500 p-3 text-sm font-semibold text-white"
-              >
-                Yes, reset
-              </button>
-            </div>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <div style={{ fontSize: 15, fontWeight: 600 }}>Victor</div>
+          <div style={{ fontSize: 12, color: T.dim, fontFamily: T.mono }}>
+            day {progress.currentStreak} · {masteredCount} mastered
           </div>
+        </div>
+      </Card>
+
+      {/* Learning */}
+      <div style={{ marginTop: 22 }}>
+        <SectionHead>LEARNING</SectionHead>
+        <Card pad={0}>
+          <Row
+            label="Daily goal"
+            sub={`${settings.dailyGoal} phrases`}
+            trailing={
+              <MonoBadge kind={goalBadgeKind}>
+                {settings.dailyGoal <= 5
+                  ? 'CASUAL'
+                  : settings.dailyGoal <= 10
+                    ? 'STEADY'
+                    : settings.dailyGoal <= 15
+                      ? 'SERIOUS'
+                      : 'OBSESSED'}
+              </MonoBadge>
+            }
+          />
+          <div style={{ padding: '0 16px 14px', display: 'flex', gap: 6 }}>
+            {[5, 10, 15, 20].map((g) => {
+              const active = settings.dailyGoal === g;
+              return (
+                <button
+                  key={g}
+                  onClick={() => update({ dailyGoal: g })}
+                  style={{
+                    flex: 1,
+                    padding: '8px 0',
+                    borderRadius: T.r2,
+                    border: `1px solid ${active ? T.amber : T.border}`,
+                    background: active ? T.amberDim : T.surface,
+                    color: active ? T.amber : T.dim,
+                    fontFamily: T.mono,
+                    fontSize: 12,
+                    fontWeight: 600,
+                    cursor: 'pointer',
+                    transition: `all ${T.fast} ${T.ease}`,
+                  }}
+                >
+                  {g}
+                </button>
+              );
+            })}
+          </div>
+          <Divider />
+          <Row
+            label="Default script"
+            trailing={
+              <ScriptToggle
+                script={settings.scriptPreference === 'cyrillic' ? 'cyrillic' : 'latin'}
+                onChange={(s) => update({ scriptPreference: s })}
+              />
+            }
+            last
+          />
+        </Card>
+      </div>
+
+      {/* Claude API */}
+      <div style={{ marginTop: 22 }}>
+        <SectionHead>CUSTOM CONTENT</SectionHead>
+        <Card pad={16}>
+          <div style={{ fontSize: 13, fontWeight: 500 }}>Claude API key</div>
+          <div style={{ fontSize: 11, color: T.dim, marginTop: 2 }}>
+            Optional. Enables custom content extraction from pasted Serbian text.
+          </div>
+          <input
+            type="password"
+            value={settings.apiKey}
+            onChange={(e) => update({ apiKey: e.target.value })}
+            placeholder="sk-ant-..."
+            style={{
+              width: '100%',
+              marginTop: 12,
+              padding: '10px 12px',
+              borderRadius: T.r2,
+              border: `1px solid ${T.border}`,
+              background: T.surface,
+              color: T.text,
+              fontFamily: T.mono,
+              fontSize: 12,
+              outline: 'none',
+            }}
+          />
+        </Card>
+      </div>
+
+      {/* Account / Data */}
+      <div style={{ marginTop: 22 }}>
+        <SectionHead>DATA</SectionHead>
+        <Card pad={0}>
+          <Row
+            label="Export progress"
+            sub="Download JSON snapshot"
+            trailing={<IconChev size={14} />}
+            onClick={handleExport}
+          />
+          <Divider />
+          <Row
+            label="Import progress"
+            sub="Restore from a previous export"
+            trailing={<IconChev size={14} />}
+            onClick={handleImport}
+          />
+          <Divider />
+          <Row
+            label="Reset all data"
+            sub="Wipe progress, settings, achievements"
+            trailing={
+              <span style={{ color: T.red, fontSize: 13, fontWeight: 600 }}>
+                Reset
+              </span>
+            }
+            onClick={() => setShowResetConfirm(true)}
+            last
+          />
+        </Card>
+        {importError && (
+          <p style={{ color: T.red, fontSize: 12, marginTop: 8 }}>{importError}</p>
         )}
-      </Section>
+      </div>
+
+      {showResetConfirm && (
+        <Card style={{ marginTop: 12, borderColor: T.red }} pad={14}>
+          <div style={{ fontSize: 13, color: T.red, marginBottom: 12 }}>
+            This will delete all your progress. Are you sure?
+          </div>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <Btn
+              kind="secondary"
+              size="md"
+              onClick={() => setShowResetConfirm(false)}
+              style={{ flex: 1 }}
+            >
+              Cancel
+            </Btn>
+            <Btn kind="danger" size="md" onClick={handleReset} style={{ flex: 1 }}>
+              Yes, reset
+            </Btn>
+          </div>
+        </Card>
+      )}
+
+      <div
+        style={{
+          marginTop: 26,
+          textAlign: 'center',
+          fontFamily: T.mono,
+          fontSize: 10,
+          color: T.mute,
+          letterSpacing: 0.6,
+        }}
+      >
+        iller8 · built for Victor
+      </div>
     </div>
   );
 }
 
-function Section({
-  title,
-  children,
+function Divider() {
+  return <div style={{ height: 0.5, background: T.border }} />;
+}
+
+function Row({
+  label,
+  sub,
+  trailing,
+  last,
+  onClick,
 }: {
-  title: string;
-  children: React.ReactNode;
+  label: string;
+  sub?: string;
+  trailing?: ReactNode;
+  last?: boolean;
+  onClick?: () => void;
 }) {
+  const style: CSSProperties = {
+    padding: '14px 16px',
+    display: 'flex',
+    alignItems: 'center',
+    gap: 12,
+    cursor: onClick ? 'pointer' : 'default',
+    borderBottom: last ? 'none' : undefined,
+  };
   return (
-    <div className="rounded-2xl border border-navy-700 bg-navy-800/30 p-4">
-      <h3 className="text-sm font-medium text-gray-400 mb-3">{title}</h3>
-      {children}
+    <div style={style} onClick={onClick}>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ fontSize: 14, fontWeight: 500, color: T.text }}>{label}</div>
+        {sub && <div style={{ fontSize: 11, color: T.dim, marginTop: 2 }}>{sub}</div>}
+      </div>
+      <div style={{ flexShrink: 0, display: 'flex', alignItems: 'center', gap: 6, color: T.dim }}>
+        {trailing}
+      </div>
     </div>
   );
 }

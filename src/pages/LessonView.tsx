@@ -10,7 +10,11 @@ import {
   saveProgress,
   addAchievement,
 } from '../store/progress';
-import ProgressBar from '../components/ProgressBar';
+import DrillFrame from '../components/ui/DrillFrame';
+import Card from '../components/ui/Card';
+import MonoBadge from '../components/ui/MonoBadge';
+import Btn from '../components/ui/Btn';
+import { T, metaLabel } from '../lib/tokens';
 import PhraseIntro from '../components/exercises/PhraseIntro';
 import MultipleChoice from '../components/exercises/MultipleChoice';
 import TypeTranslation from '../components/exercises/TypeTranslation';
@@ -34,11 +38,20 @@ interface LessonViewProps {
 
 const INTRO_BATCH_SIZE = 5;
 
-export default function LessonView({
-  progress,
-  setProgress,
-  script,
-}: LessonViewProps) {
+const EXERCISE_LABELS: Record<string, string> = {
+  'multiple-choice': 'multiple choice',
+  'type-translation': 'type it',
+  'fill-in-blank': 'fill in',
+  'word-tiles': 'build it',
+  'script-convert': 'script swap',
+  'context-pick': 'context',
+  'sentence-builder': 'build sentence',
+  'comprehension': 'comprehension',
+  'pattern-match': 'pattern',
+  'match-pairs': 'match pairs',
+};
+
+export default function LessonView({ progress, setProgress, script }: LessonViewProps) {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const lesson = id ? getLessonById(id) : undefined;
@@ -78,7 +91,11 @@ export default function LessonView({
     introPhrases.forEach((phrase) => {
       const existing = progress.phrases[phrase.id] ?? createPhraseProgress(phrase.id);
       if (existing.bucket === 0) {
-        const newProgress = updatePhraseProgress(progress, { ...existing, bucket: 0, lastReviewed: Date.now() });
+        const newProgress = updatePhraseProgress(progress, {
+          ...existing,
+          bucket: 0,
+          lastReviewed: Date.now(),
+        });
         setProgress(newProgress);
         saveProgress(newProgress);
       }
@@ -111,7 +128,7 @@ export default function LessonView({
         const retries = retryCountRef.current[phraseId] ?? 0;
         if (retries < 2) {
           retryCountRef.current[phraseId] = retries + 1;
-          const allPhrases = lesson.phraseGroups.flatMap(g => g.phrases);
+          const allPhrases = lesson.phraseGroups.flatMap((g) => g.phrases);
           const retryExercise = generateExercise(
             exercise.phrase,
             allPhrases,
@@ -120,10 +137,10 @@ export default function LessonView({
             'multiple-choice'
           );
           const insertAt = Math.min(currentIndex + 4, exercises.length);
-          setExercises(prev => {
-            const updated = [...prev];
-            updated.splice(insertAt, 0, retryExercise);
-            return updated;
+          setExercises((prev) => {
+            const next = [...prev];
+            next.splice(insertAt, 0, retryExercise);
+            return next;
           });
         }
       }
@@ -157,9 +174,7 @@ export default function LessonView({
     const learnedCount = Object.values(newProgress.phrases).filter(
       (p) => p.bucket >= 1
     ).length;
-    if (learnedCount >= 100) {
-      newProgress = addAchievement(newProgress, 'polyglot');
-    }
+    if (learnedCount >= 100) newProgress = addAchievement(newProgress, 'polyglot');
 
     if (newProgress.currentStreak >= 3) newProgress = addAchievement(newProgress, 'streak-3');
     if (newProgress.currentStreak >= 7) newProgress = addAchievement(newProgress, 'streak-7');
@@ -174,7 +189,7 @@ export default function LessonView({
   const handleMatchPairsComplete = (correctPairs: number, totalPairs: number) => {
     for (let i = 0; i < totalPairs; i++) {
       const correct = i < correctPairs;
-      let newProgress = updateDailyStats(progress, correct);
+      const newProgress = updateDailyStats(progress, correct);
       setProgress(newProgress);
       saveProgress(newProgress);
     }
@@ -185,40 +200,33 @@ export default function LessonView({
 
   if (!lesson) {
     return (
-      <div className="flex flex-col items-center gap-4 py-12">
-        <p className="text-gray-400">Lesson not found</p>
-        <button
-          onClick={() => navigate('/')}
-          className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900"
-        >
-          Back to lessons
-        </button>
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, padding: '48px 0' }}>
+        <p style={{ color: T.dim }}>Lesson not found</p>
+        <Btn kind="primary" onClick={() => navigate('/')}>Back to lessons</Btn>
       </div>
     );
   }
 
-  if (phase === 'intro') {
-    const title = script === 'cyrillic' ? lesson.title.sr_cyrillic : lesson.title.sr_latin;
-    return (
-      <div className="flex flex-col gap-6 pb-4">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => navigate('/')}
-            className="text-gray-400 hover:text-white transition-colors"
-          >
-            ✕
-          </button>
-          <div className="flex-1">
-            <h2 className="text-lg font-semibold text-white">{title}</h2>
-            <p className="text-xs text-gray-500">{lesson.description.en}</p>
-          </div>
-        </div>
+  const lessonLabel = `${String(lesson.order).padStart(2, '0')} · ${
+    script === 'cyrillic' ? lesson.title.sr_cyrillic : lesson.title.sr_latin
+  }`;
 
-        <PhraseIntro
-          phrases={introPhrases}
-          script={script}
-          onComplete={handleIntroComplete}
-        />
+  if (phase === 'intro') {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <DrillFrame
+          progress={0}
+          total={introPhrases.length}
+          contextLabel={`${lessonLabel} · intro`}
+          streak={progress.currentStreak}
+          onClose={() => navigate('/')}
+        >
+          <PhraseIntro
+            phrases={introPhrases}
+            script={script}
+            onComplete={handleIntroComplete}
+          />
+        </DrillFrame>
       </div>
     );
   }
@@ -226,56 +234,90 @@ export default function LessonView({
   if (phase === 'finished') {
     const accuracy =
       totalAnswered > 0 ? Math.round((correctCount / totalAnswered) * 100) : 0;
+    const lessonTitle = script === 'cyrillic' ? lesson.title.sr_cyrillic : lesson.title.sr_latin;
 
     return (
-      <div className="flex flex-col items-center gap-6 py-12 text-center">
-        <span className="text-6xl">{accuracy === 100 ? '🏆' : accuracy >= 70 ? '🎉' : '💪'}</span>
-        <h2 className="text-2xl font-bold text-white">
-          {script === 'cyrillic' ? 'Лекција завршена!' : 'Lekcija završena!'}
-        </h2>
-        <p className="text-gray-400">Lesson complete</p>
-
-        <div className="flex gap-8">
-          <div className="text-center">
-            <p className="text-3xl font-bold text-amber-500">{accuracy}%</p>
-            <p className="text-xs text-gray-400">accuracy</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-white">{correctCount}</p>
-            <p className="text-xs text-gray-400">correct</p>
-          </div>
-          <div className="text-center">
-            <p className="text-3xl font-bold text-white">{totalAnswered}</p>
-            <p className="text-xs text-gray-400">total</p>
-          </div>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 0, paddingTop: 16 }}>
+        <div style={{ ...metaLabel, color: T.amber }}>
+          LESSON {String(lesson.order).padStart(2, '0')} · COMPLETE
         </div>
-
-        <div className="mt-4 w-full max-w-xs">
-          <PhraseReviewSummary
-            phrases={allLessonPhrases}
-            progress={progress}
-            script={script}
-          />
-        </div>
-
-        <div className="flex gap-3 mt-4">
-          <button
-            onClick={() => navigate('/')}
-            className="rounded-xl border border-navy-600 px-6 py-3 font-semibold text-white"
+        <h1
+          className="font-serif-sr"
+          style={{
+            fontSize: 44,
+            fontWeight: 700,
+            letterSpacing: -1.2,
+            margin: '14px 0 0',
+            lineHeight: 1,
+            color: T.text,
+          }}
+        >
+          Bravo,{' '}
+          <em
+            style={{
+              fontStyle: 'italic',
+              color: T.amber,
+              fontWeight: 500,
+            }}
           >
-            {script === 'cyrillic' ? 'Назад' : 'Nazad'}
-          </button>
-          <button
+            dušo.
+          </em>
+        </h1>
+        <p style={{ fontSize: 14, color: T.dim, lineHeight: 1.5, marginTop: 14, maxWidth: 320 }}>
+          You finished {lessonTitle} — {totalAnswered} answers logged. Mira will check in tomorrow.
+        </p>
+
+        {/* Stat grid */}
+        <div style={{ marginTop: 22, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+          {[
+            { v: String(correctCount), l: 'correct', c: T.text },
+            { v: `${accuracy}%`, l: 'accuracy', c: accuracy >= 80 ? T.green : T.text },
+            { v: String(totalAnswered), l: 'answered', c: T.text },
+            { v: `+${Math.max(0, progress.currentStreak - (progress.longestStreak - 1))}`, l: 'streak', c: T.amber },
+          ].map((stat) => (
+            <Card key={stat.l} pad={16}>
+              <div
+                style={{
+                  fontFamily: T.mono,
+                  fontSize: 32,
+                  fontWeight: 600,
+                  letterSpacing: -1,
+                  color: stat.c,
+                }}
+              >
+                {stat.v}
+              </div>
+              <div style={{ ...metaLabel, marginTop: 4 }}>{stat.l}</div>
+            </Card>
+          ))}
+        </div>
+
+        <div style={{ marginTop: 22 }}>
+          <PhraseReviewSummary phrases={allLessonPhrases} progress={progress} script={script} />
+        </div>
+
+        <div style={{ display: 'flex', gap: 8, marginTop: 18 }}>
+          <Btn
+            kind="secondary"
+            size="lg"
+            full
+            onClick={() => navigate('/')}
+          >
+            Back home
+          </Btn>
+          <Btn
+            kind="primary"
+            size="lg"
+            full
             onClick={() => {
               setPhase(introNeeded ? 'intro' : 'exercises');
               setCurrentIndex(0);
               setCorrectCount(0);
               setTotalAnswered(0);
             }}
-            className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900"
           >
-            {script === 'cyrillic' ? 'Поново' : 'Ponovo'}
-          </button>
+            Try again
+          </Btn>
         </div>
       </div>
     );
@@ -283,36 +325,33 @@ export default function LessonView({
 
   if (showMatchPairs) {
     return (
-      <div className="py-4">
-        <MatchPairs
-          lesson={lesson}
-          script={script}
-          onComplete={handleMatchPairsComplete}
-        />
-      </div>
+      <DrillFrame
+        progress={currentIndex}
+        total={exercises.length}
+        contextLabel={`${lessonLabel} · match pairs`}
+        streak={progress.currentStreak}
+        onClose={() => navigate('/')}
+      >
+        <MatchPairs lesson={lesson} script={script} onComplete={handleMatchPairsComplete} />
+      </DrillFrame>
     );
   }
 
   const exercise = exercises[currentIndex];
   if (!exercise) {
-    return <p className="text-gray-400">Loading exercises...</p>;
+    return <p style={{ color: T.dim }}>Loading exercises…</p>;
   }
 
-  return (
-    <div className="flex flex-col gap-6 pb-4">
-      <div className="flex items-center gap-3">
-        <button
-          onClick={() => navigate('/')}
-          className="text-gray-400 hover:text-white transition-colors"
-        >
-          ✕
-        </button>
-        <ProgressBar current={currentIndex} total={exercises.length} className="flex-1" />
-        <span className="text-xs text-gray-500">
-          {currentIndex + 1}/{exercises.length}
-        </span>
-      </div>
+  const contextLabel = `${lessonLabel} · ${EXERCISE_LABELS[exercise.type] ?? exercise.type}`;
 
+  return (
+    <DrillFrame
+      progress={currentIndex + 1}
+      total={exercises.length}
+      contextLabel={contextLabel}
+      streak={progress.currentStreak}
+      onClose={() => navigate('/')}
+    >
       {exercise.type === 'multiple-choice' && (
         <MultipleChoice key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
       )}
@@ -342,14 +381,13 @@ export default function LessonView({
       )}
 
       {currentIndex === 4 && !showMatchPairs && exercises.length > 5 && (
-        <button
-          onClick={() => setShowMatchPairs(true)}
-          className="rounded-xl border border-navy-600 px-4 py-2 text-sm text-gray-400 hover:text-white transition-colors"
-        >
-          Try matching pairs instead
-        </button>
+        <div style={{ display: 'flex', justifyContent: 'center', marginTop: 16 }}>
+          <Btn kind="quiet" size="sm" onClick={() => setShowMatchPairs(true)}>
+            Try matching pairs instead
+          </Btn>
+        </div>
       )}
-    </div>
+    </DrillFrame>
   );
 }
 
@@ -365,33 +403,42 @@ function PhraseReviewSummary({
   const studied = phrases.filter((p) => progress.phrases[p.id]);
   if (studied.length === 0) return null;
 
+  const best = studied
+    .slice()
+    .sort((a, b) => (progress.phrases[b.id].bucket - progress.phrases[a.id].bucket))[0];
+  const hardest = studied
+    .slice()
+    .sort((a, b) => {
+      const aP = progress.phrases[a.id];
+      const bP = progress.phrases[b.id];
+      const aRatio = aP.incorrectCount / Math.max(1, aP.correctCount + aP.incorrectCount);
+      const bRatio = bP.incorrectCount / Math.max(1, bP.correctCount + bP.incorrectCount);
+      return bRatio - aRatio;
+    })[0];
+
   return (
-    <div className="rounded-xl border border-navy-700 bg-navy-800/30 p-3 text-left">
-      <p className="text-xs text-gray-400 mb-2">Phrases studied:</p>
-      <div className="flex flex-col gap-1">
-        {studied.slice(0, 8).map((p) => {
-          const prog = progress.phrases[p.id];
-          const mastery = prog ? Math.min(100, prog.bucket * 20) : 0;
-          return (
-            <div key={p.id} className="flex items-center gap-2">
-              <div className="flex-1 min-w-0">
-                <p className="text-xs text-white truncate">
-                  {script === 'cyrillic' ? p.sr_cyrillic : p.sr_latin}
-                </p>
-              </div>
-              <div className="w-12 h-1.5 rounded-full bg-navy-700 overflow-hidden">
-                <div
-                  className="h-full rounded-full bg-amber-500"
-                  style={{ width: `${mastery}%` }}
-                />
-              </div>
-            </div>
-          );
-        })}
-        {studied.length > 8 && (
-          <p className="text-[10px] text-gray-600">+{studied.length - 8} more</p>
-        )}
-      </div>
+    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>
+      <Card pad={14}>
+        <div style={{ ...metaLabel, color: T.green }}>NAILED</div>
+        <div
+          className="font-serif-sr"
+          style={{ fontSize: 14, fontWeight: 500, marginTop: 6, lineHeight: 1.3 }}
+        >
+          {script === 'cyrillic' ? best.sr_cyrillic : best.sr_latin}
+        </div>
+      </Card>
+      <Card pad={14}>
+        <div style={{ ...metaLabel, color: T.red }}>STUMBLED</div>
+        <div
+          className="font-serif-sr"
+          style={{ fontSize: 14, fontWeight: 500, marginTop: 6, lineHeight: 1.3 }}
+        >
+          {script === 'cyrillic' ? hardest.sr_cyrillic : hardest.sr_latin}
+        </div>
+        <div style={{ fontSize: 11, color: T.dim, marginTop: 4 }}>
+          <MonoBadge>retry queued</MonoBadge>
+        </div>
+      </Card>
     </div>
   );
 }

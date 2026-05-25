@@ -2,6 +2,9 @@ import { useState } from 'react';
 import type { Exercise } from '../../store/types';
 import { checkAnswer } from '../../engine/scoring';
 import { isCyrillic } from '../../engine/script-converter';
+import Btn from '../ui/Btn';
+import Card from '../ui/Card';
+import { T, metaLabel } from '../../lib/tokens';
 
 interface ScriptConvertProps {
   exercise: Exercise;
@@ -23,18 +26,47 @@ export default function ScriptConvert({ exercise, onAnswer }: ScriptConvertProps
     setTimeout(() => onAnswer(correct), 1500);
   };
 
+  const borderColor =
+    result === null ? T.borderWarm : result ? T.green : T.red;
+  const bgColor =
+    result === null ? T.surface : result ? T.greenDim : T.redDim;
+
   return (
-    <div className="flex flex-col gap-6">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
       <div>
-        <p className="text-sm text-gray-400 mb-2">
-          {exercise.context}
-        </p>
-        <p className="text-2xl font-semibold text-white leading-relaxed tracking-wide">
+        <div style={metaLabel}>
+          {fromCyrillic ? 'CONVERT CYRILLIC → LATIN' : 'CONVERT LATIN → CYRILLIC'}
+        </div>
+        <div
+          className="font-serif-sr"
+          style={{
+            fontSize: 30,
+            fontWeight: 500,
+            letterSpacing: -0.5,
+            lineHeight: 1.2,
+            color: T.text,
+            marginTop: 8,
+          }}
+        >
           {exercise.prompt}
-        </p>
+        </div>
+        {exercise.context && (
+          <div
+            className="font-serif-sr"
+            style={{
+              fontStyle: 'italic',
+              fontSize: 12,
+              color: T.dim,
+              marginTop: 6,
+              lineHeight: 1.5,
+            }}
+          >
+            {exercise.context}
+          </div>
+        )}
       </div>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
         <input
           type="text"
           value={input}
@@ -42,41 +74,60 @@ export default function ScriptConvert({ exercise, onAnswer }: ScriptConvertProps
           disabled={result !== null}
           placeholder={
             fromCyrillic
-              ? 'Write in Latin script...'
-              : 'Write in Cyrillic script...'
+              ? 'Write in Latin script…'
+              : 'Write in Cyrillic script…'
           }
           autoFocus
-          className={`w-full rounded-xl border-2 bg-navy-800/50 p-4 text-lg text-white placeholder-gray-600 outline-none transition-colors ${
-            result === null
-              ? 'border-navy-600 focus:border-amber-500'
-              : result
-                ? 'border-correct bg-correct/10'
-                : 'border-incorrect bg-incorrect/10'
-          }`}
+          className="font-serif-sr"
+          style={{
+            width: '100%',
+            padding: '16px 18px',
+            borderRadius: T.r3,
+            background: bgColor,
+            border: `1px solid ${borderColor}`,
+            color: T.text,
+            fontSize: 22,
+            outline: 'none',
+            transition: `all ${T.fast} ${T.ease}`,
+          }}
         />
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            fontSize: 11,
+            color: T.mute,
+            fontFamily: T.mono,
+          }}
+        >
+          <span>{fromCyrillic ? 'use latin diacritics: č š ž ć đ' : 'use cyrillic letters'}</span>
+          <span>{input.length} chars</span>
+        </div>
 
         {result === null && (
-          <button
-            type="submit"
-            disabled={!input.trim()}
-            className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900 transition-opacity disabled:opacity-40"
-          >
+          <Btn type="submit" kind="primary" size="lg" full disabled={!input.trim()}>
             Check
-          </button>
+          </Btn>
         )}
       </form>
 
       {result === false && (
-        <div className="rounded-xl bg-navy-800/50 p-4">
-          <p className="text-sm text-gray-400">Correct answer:</p>
-          <p className="text-lg text-correct">{exercise.correctAnswer}</p>
-        </div>
+        <Card pad={14}>
+          <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT ANSWER</div>
+          <div
+            className="font-serif-sr"
+            style={{ fontSize: 20, color: T.green, fontWeight: 500 }}
+          >
+            {exercise.correctAnswer}
+          </div>
+        </Card>
       )}
 
       {result === true && (
-        <p className="text-lg font-semibold text-correct text-center">
-          Svaka čast! ✓
-        </p>
+        <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
+          Svaka čast ✓
+        </div>
       )}
     </div>
   );

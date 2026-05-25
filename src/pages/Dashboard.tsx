@@ -2,11 +2,14 @@ import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { lessons, isLessonUnlocked, getAllPhrases } from '../data/lessons';
 import LessonCard from '../components/LessonCard';
-import StreakCounter from '../components/StreakCounter';
-import ProgressBar from '../components/ProgressBar';
+import Card from '../components/ui/Card';
+import LinearProgress from '../components/ui/LinearProgress';
+import SectionHead from '../components/ui/SectionHead';
+import { IconAudio, IconChev } from '../components/ui/Icons';
 import { getDueItems } from '../engine/srs';
 import { getTodayStats } from '../store/progress';
 import { getTimeGreeting, getToday } from '../lib/utils';
+import { T, metaLabel } from '../lib/tokens';
 import type { UserProgress } from '../store/types';
 
 interface DashboardProps {
@@ -14,10 +17,13 @@ interface DashboardProps {
   script: 'latin' | 'cyrillic';
 }
 
+const DAY_LABELS = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
+
 export default function Dashboard({ progress, script }: DashboardProps) {
   const navigate = useNavigate();
   const greeting = getTimeGreeting();
   const todayStats = getTodayStats(progress);
+
   const dueCount = useMemo(
     () => getDueItems(progress.phrases).length,
     [progress.phrases]
@@ -31,97 +37,261 @@ export default function Dashboard({ progress, script }: DashboardProps) {
   }, []);
 
   const totalLearned = useMemo(
-    () => Object.values(progress.phrases).filter(p => p.bucket >= 1).length,
+    () => Object.values(progress.phrases).filter((p) => p.bucket >= 1).length,
     [progress.phrases]
   );
 
-  const totalPhrases = useMemo(
-    () => getAllPhrases().length,
-    []
-  );
+  const accuracy =
+    todayStats.totalAnswers > 0
+      ? Math.round((todayStats.correctAnswers / todayStats.totalAnswers) * 100)
+      : null;
+
+  const nextLesson = useMemo(() => {
+    return lessons.find((l) => {
+      if (!isLessonUnlocked(l.id, progress.completedLessons)) return false;
+      const totalPhrases = l.phraseGroups.reduce(
+        (s, g) => s + g.phrases.length,
+        0
+      );
+      const masteredInLesson = l.phraseGroups.reduce(
+        (s, g) =>
+          s + g.phrases.filter((p) => (progress.phrases[p.id]?.bucket ?? 0) >= 4).length,
+        0
+      );
+      return masteredInLesson < totalPhrases;
+    }) ?? lessons[0];
+  }, [progress.completedLessons, progress.phrases]);
+
+  const nextLessonStats = useMemo(() => {
+    const total = nextLesson.phraseGroups.reduce((s, g) => s + g.phrases.length, 0);
+    const learned = nextLesson.phraseGroups.reduce(
+      (s, g) => s + g.phrases.filter((p) => (progress.phrases[p.id]?.bucket ?? 0) >= 1).length,
+      0
+    );
+    return { total, learned };
+  }, [nextLesson, progress.phrases]);
+
+  const now = new Date();
+  const dateLabel = `${DAY_LABELS[now.getDay()]} · ${now
+    .getHours()
+    .toString()
+    .padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
 
   const greetingText = script === 'cyrillic' ? greeting.sr_cyrillic : greeting.sr_latin;
 
   return (
-    <div className="flex flex-col gap-6 pb-4">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="text-2xl font-bold text-white">{greetingText}!</h1>
-          <p className="text-sm text-gray-400">{greeting.en}</p>
-        </div>
-        <StreakCounter count={progress.currentStreak} />
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+      <div style={metaLabel}>{dateLabel}</div>
+      <h1
+        style={{
+          fontSize: 28,
+          fontWeight: 700,
+          letterSpacing: -0.6,
+          margin: '8px 0 4px',
+          lineHeight: 1.1,
+          color: T.text,
+        }}
+      >
+        {greetingText}.
+      </h1>
+      <div style={{ fontSize: 13, color: T.dim }}>{greeting.en}.</div>
+
+      {/* Stat row */}
+      <div
+        style={{
+          marginTop: 16,
+          display: 'grid',
+          gridTemplateColumns: 'repeat(3, 1fr)',
+          gap: 1,
+          background: T.border,
+          borderRadius: T.r2,
+          overflow: 'hidden',
+          border: `1px solid ${T.border}`,
+        }}
+      >
+        {[
+          { k: 'LEARNED', v: String(totalLearned), c: T.text },
+          { k: 'DUE', v: String(dueCount), c: dueCount > 0 ? T.amber : T.text },
+          {
+            k: 'ACCURACY',
+            v: accuracy !== null ? `${accuracy}%` : '—',
+            c: accuracy !== null && accuracy >= 80 ? T.green : T.text,
+          },
+        ].map(({ k, v, c }) => (
+          <div key={k} style={{ background: T.bg, padding: '12px 14px' }}>
+            <div style={metaLabel}>{k}</div>
+            <div
+              style={{
+                fontFamily: T.mono,
+                fontSize: 20,
+                fontWeight: 500,
+                marginTop: 2,
+                letterSpacing: -0.5,
+                color: c,
+              }}
+            >
+              {v}
+            </div>
+          </div>
+        ))}
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
-        <StatPill label={script === 'cyrillic' ? 'Научено' : 'Naučeno'} value={totalLearned} />
-        <StatPill label={script === 'cyrillic' ? 'Укупно' : 'Ukupno'} value={totalPhrases} />
-        <StatPill
-          label={script === 'cyrillic' ? 'Тачност' : 'Tačnost'}
-          value={
-            todayStats.totalAnswers > 0
-              ? `${Math.round((todayStats.correctAnswers / todayStats.totalAnswers) * 100)}%`
-              : '—'
-          }
-        />
-      </div>
-
-      <div className="rounded-2xl border border-navy-700 bg-navy-800/30 p-4">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-sm text-gray-400">
-            {script === 'cyrillic' ? 'Дневни циљ' : 'Dnevni cilj'}
-          </span>
-          <span className="text-sm text-amber-500 font-medium">
+      {/* Daily goal */}
+      <Card style={{ marginTop: 16 }} pad={14}>
+        <div
+          style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'baseline',
+            marginBottom: 8,
+          }}
+        >
+          <span style={metaLabel}>DAILY GOAL</span>
+          <span style={{ fontFamily: T.mono, fontSize: 11, color: T.text }}>
             {todayStats.phrasesStudied} / {progress.settings.dailyGoal}
           </span>
         </div>
-        <ProgressBar
-          current={todayStats.phrasesStudied}
-          total={progress.settings.dailyGoal}
-        />
+        <LinearProgress value={todayStats.phrasesStudied} total={progress.settings.dailyGoal} />
+      </Card>
+
+      {/* Continue + Review side by side */}
+      <div
+        style={{
+          marginTop: 16,
+          display: 'grid',
+          gridTemplateColumns: '1.5fr 1fr',
+          gap: 8,
+        }}
+      >
+        <Card
+          warm
+          pad={14}
+          onClick={() => navigate(`/lesson/${nextLesson.id}`)}
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            minHeight: 100,
+          }}
+        >
+          <div>
+            <div style={{ ...metaLabel, color: T.amber }}>CONTINUE</div>
+            <div
+              style={{
+                fontSize: 16,
+                fontWeight: 600,
+                marginTop: 6,
+                letterSpacing: -0.2,
+                color: T.text,
+              }}
+            >
+              {String(nextLesson.order).padStart(2, '0')} ·{' '}
+              {script === 'cyrillic'
+                ? nextLesson.title.sr_cyrillic
+                : nextLesson.title.sr_latin}
+            </div>
+            <div style={{ fontSize: 11, color: T.dim, marginTop: 3 }}>
+              {nextLessonStats.learned} of {nextLessonStats.total} phrases
+            </div>
+          </div>
+          <div style={{ marginTop: 10 }}>
+            <LinearProgress value={nextLessonStats.learned} total={nextLessonStats.total} />
+          </div>
+        </Card>
+
+        <Card
+          pad={14}
+          onClick={() => dueCount > 0 && navigate('/review')}
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between',
+            minHeight: 100,
+            opacity: dueCount > 0 ? 1 : 0.5,
+          }}
+        >
+          <div>
+            <div style={metaLabel}>REVIEW</div>
+            <div
+              style={{
+                fontSize: 16,
+                fontWeight: 600,
+                marginTop: 6,
+                letterSpacing: -0.2,
+                color: T.text,
+              }}
+            >
+              {dueCount > 0 ? `${dueCount} due` : 'Nothing'}
+            </div>
+            <div style={{ fontSize: 11, color: T.dim, marginTop: 3 }}>
+              {dueCount > 0 ? `~${Math.max(1, Math.round(dueCount / 3))} min` : 'all caught up'}
+            </div>
+          </div>
+          <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 10 }}>
+            <span style={{ color: dueCount > 0 ? T.amber : T.mute, display: 'flex' }}>
+              <IconChev size={18} />
+            </span>
+          </div>
+        </Card>
       </div>
 
+      {/* Phrase of the day */}
       {phraseOfDay && (
-        <div className="rounded-2xl border border-navy-700 bg-navy-800/20 p-4">
-          <p className="text-xs text-gray-500 mb-2">
-            {script === 'cyrillic' ? 'Реченица дана' : 'Rečenica dana'}
-          </p>
-          <p className="text-lg text-white font-medium">
+        <Card style={{ marginTop: 16 }} pad={16}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+            <span style={metaLabel}>PHRASE OF THE DAY</span>
+            <button
+              style={{
+                background: 'none',
+                border: 'none',
+                color: T.mute,
+                cursor: 'not-allowed',
+                padding: 0,
+              }}
+              disabled
+              aria-label="audio (coming soon)"
+            >
+              <IconAudio size={14} />
+            </button>
+          </div>
+          <div
+            className="font-serif-sr"
+            style={{
+              fontSize: 24,
+              fontWeight: 500,
+              marginTop: 10,
+              color: T.text,
+            }}
+          >
             {script === 'cyrillic'
               ? phraseOfDay.phrase.sr_cyrillic
               : phraseOfDay.phrase.sr_latin}
-          </p>
-          <p className="text-sm text-amber-400 mt-1">{phraseOfDay.phrase.en}</p>
-          {phraseOfDay.phrase.context && (
-            <p className="text-xs text-gray-500 mt-1 italic">
-              {phraseOfDay.phrase.context}
-            </p>
-          )}
-        </div>
-      )}
-
-      {dueCount > 0 && (
-        <button
-          onClick={() => navigate('/review')}
-          className="flex items-center justify-between rounded-2xl border border-amber-500/30 bg-amber-500/5 p-4 transition-colors hover:bg-amber-500/10"
-        >
-          <div className="text-left">
-            <p className="font-semibold text-amber-400">
-              {script === 'cyrillic' ? 'Време за понављање!' : 'Vreme za ponavljanje!'}
-            </p>
-            <p className="text-sm text-gray-400">
-              {dueCount} {dueCount === 1 ? 'phrase' : 'phrases'} to review
-            </p>
           </div>
-          <span className="text-2xl">🔄</span>
-        </button>
+          <div style={{ fontSize: 13, color: T.amber, marginTop: 4 }}>
+            {phraseOfDay.phrase.en}
+          </div>
+          {phraseOfDay.phrase.context && (
+            <div
+              className="font-serif-sr"
+              style={{
+                fontStyle: 'italic',
+                fontSize: 12,
+                color: T.mute,
+                marginTop: 6,
+                lineHeight: 1.5,
+              }}
+            >
+              {phraseOfDay.phrase.context}
+            </div>
+          )}
+        </Card>
       )}
 
-      <div>
-        <h2 className="text-lg font-semibold text-white mb-3">
-          {script === 'cyrillic' ? 'Лекције' : 'Lekcije'}
-        </h2>
-        <div className="flex flex-col gap-3">
-          {lessons.map((lesson) => (
+      {/* Lesson list */}
+      <div style={{ marginTop: 24 }}>
+        <SectionHead suffix={String(lessons.length)}>LESSONS</SectionHead>
+        <div>
+          {lessons.map((lesson, i) => (
             <LessonCard
               key={lesson.id}
               lesson={lesson}
@@ -129,19 +299,11 @@ export default function Dashboard({ progress, script }: DashboardProps) {
               completed={progress.completedLessons.includes(lesson.id)}
               unlocked={isLessonUnlocked(lesson.id, progress.completedLessons)}
               phraseProgress={progress.phrases}
+              topBorder={i === 0}
             />
           ))}
         </div>
       </div>
-    </div>
-  );
-}
-
-function StatPill({ label, value }: { label: string; value: string | number }) {
-  return (
-    <div className="rounded-xl border border-navy-700 bg-navy-800/30 p-3 text-center">
-      <p className="text-lg font-bold text-white">{value}</p>
-      <p className="text-[10px] text-gray-500">{label}</p>
     </div>
   );
 }

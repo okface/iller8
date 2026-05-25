@@ -1,6 +1,12 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { extractContent } from '../lib/claude';
+import Card from '../components/ui/Card';
+import SectionHead from '../components/ui/SectionHead';
+import MonoBadge from '../components/ui/MonoBadge';
+import Btn from '../components/ui/Btn';
+import { IconSpark } from '../components/ui/Icons';
+import { T, metaLabel } from '../lib/tokens';
 import type { UserProgress } from '../store/types';
 
 interface CustomContentProps {
@@ -44,80 +50,151 @@ export default function CustomContent({ progress, script }: CustomContentProps) 
 
   if (!hasApiKey) {
     return (
-      <div className="flex flex-col items-center gap-6 py-12 text-center">
-        <span className="text-5xl">🔑</span>
-        <h2 className="text-xl font-bold text-white">API Key Required</h2>
-        <p className="text-gray-400 max-w-sm">
-          To extract vocabulary from custom text, add your Anthropic API key in
-          Settings.
+      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 16, padding: '48px 0', textAlign: 'center' }}>
+        <span style={{ fontSize: 40 }}>🔑</span>
+        <h2 style={{ fontSize: 22, fontWeight: 700, color: T.text }}>API key required</h2>
+        <p style={{ color: T.dim, maxWidth: 320 }}>
+          To extract vocabulary from custom text, add your Anthropic API key in Settings.
         </p>
-        <button
-          onClick={() => navigate('/settings')}
-          className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900"
-        >
+        <Btn kind="primary" size="lg" onClick={() => navigate('/settings')}>
           Go to Settings
-        </button>
+        </Btn>
       </div>
     );
   }
 
+  const lineCount = input ? input.split('\n').filter((l) => l.trim()).length : 0;
+  const wordCount = input ? input.trim().split(/\s+/).filter(Boolean).length : 0;
+
   return (
-    <div className="flex flex-col gap-6 pb-4">
-      <h1 className="text-2xl font-bold text-white">
-        {script === 'cyrillic' ? 'Свој садржај' : 'Svoj sadržaj'}
-      </h1>
-      <p className="text-sm text-gray-400">
-        Paste Serbian text — song lyrics, phrases you've heard, messages, articles — and
-        extract vocabulary and phrases from it.
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <h1
+          style={{
+            fontSize: 28,
+            fontWeight: 700,
+            letterSpacing: -0.6,
+            margin: '0',
+            color: T.text,
+          }}
+        >
+          {script === 'cyrillic' ? 'Свој садржај' : 'Custom content'}
+        </h1>
+        <MonoBadge kind="amber">
+          <IconSpark size={11} /> BETA
+        </MonoBadge>
+      </div>
+      <div style={metaLabel}>BUILD YOUR OWN LESSON</div>
+      <p style={{ fontSize: 13, color: T.dim, marginTop: 8, lineHeight: 1.55 }}>
+        Paste Serbian text — chat snippets, song lyrics, articles — and we'll mine the phrases for you.
       </p>
 
-      <textarea
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Paste Serbian text here..."
-        rows={6}
-        className="w-full rounded-xl border-2 border-navy-600 bg-navy-800/50 p-4 text-white placeholder-gray-600 outline-none focus:border-amber-500 resize-y"
-      />
+      <div style={{ marginTop: 16 }}>
+        <SectionHead>YOUR TEXT</SectionHead>
+        <Card pad={14}>
+          <textarea
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Paste Serbian text here…"
+            rows={8}
+            className="font-serif-sr"
+            style={{
+              width: '100%',
+              padding: 0,
+              border: 'none',
+              outline: 'none',
+              resize: 'vertical',
+              background: 'transparent',
+              color: T.text,
+              fontSize: 15,
+              lineHeight: 1.65,
+            }}
+          />
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginTop: 12,
+              paddingTop: 12,
+              borderTop: `0.5px solid ${T.border}`,
+            }}
+          >
+            <span style={{ fontFamily: T.mono, fontSize: 11, color: T.dim }}>
+              {lineCount} lines · {wordCount} words
+            </span>
+            <button
+              onClick={() => setInput('')}
+              style={{
+                background: 'none',
+                border: 'none',
+                color: T.amber,
+                fontFamily: T.mono,
+                fontSize: 11,
+                padding: 0,
+                cursor: 'pointer',
+              }}
+            >
+              CLEAR
+            </button>
+          </div>
+        </Card>
+      </div>
 
-      <button
-        onClick={handleExtract}
-        disabled={loading || !input.trim()}
-        className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900 transition-opacity disabled:opacity-40"
-      >
-        {loading ? 'Extracting...' : 'Extract Phrases'}
-      </button>
+      <div style={{ marginTop: 16 }}>
+        <Btn
+          kind="primary"
+          size="lg"
+          full
+          onClick={handleExtract}
+          disabled={loading || !input.trim()}
+        >
+          {loading ? 'Extracting…' : 'Extract phrases'}
+        </Btn>
+      </div>
 
       {error && (
-        <div className="rounded-xl border border-red-500/30 bg-red-500/10 p-4">
-          <p className="text-sm text-red-400">{error}</p>
-        </div>
+        <Card
+          pad={12}
+          style={{ marginTop: 12, borderColor: 'rgba(239,68,68,0.3)', background: T.redDim }}
+        >
+          <p style={{ color: T.red, fontSize: 13, margin: 0 }}>{error}</p>
+        </Card>
       )}
 
       {result && (
-        <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-semibold text-white">{result.title}</h2>
-          <p className="text-sm text-gray-400">
-            {result.phrases.length} phrases extracted
-          </p>
-          <div className="flex flex-col gap-3">
-            {result.phrases.map((phrase, i) => (
+        <div style={{ marginTop: 22 }}>
+          <SectionHead suffix={`${result.phrases.length} FOUND`}>DETECTED PHRASES</SectionHead>
+          <h2 style={{ fontSize: 16, fontWeight: 600, color: T.text, marginTop: 0, marginBottom: 8 }}>
+            {result.title}
+          </h2>
+          <Card pad={0}>
+            {result.phrases.map((p, i) => (
               <div
                 key={i}
-                className="rounded-xl border border-navy-700 bg-navy-800/30 p-4"
+                style={{
+                  padding: '12px 14px',
+                  borderTop: i === 0 ? 'none' : `0.5px solid ${T.border}`,
+                }}
               >
-                <p className="text-lg text-white font-medium">
-                  {script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin}
-                </p>
-                <p className="text-sm text-gray-400 mt-1">{phrase.en}</p>
-                {phrase.context && (
-                  <p className="text-xs text-amber-400 mt-2">{phrase.context}</p>
+                <div className="font-serif-sr" style={{ fontSize: 15, fontWeight: 500, color: T.text }}>
+                  {script === 'cyrillic' ? p.sr_cyrillic : p.sr_latin}
+                </div>
+                <div style={{ fontSize: 11, color: T.dim, marginTop: 2 }}>{p.en}</div>
+                {p.context && (
+                  <div style={{ fontSize: 11, color: T.amber, marginTop: 4 }}>{p.context}</div>
                 )}
-                {phrase.notes && (
-                  <p className="text-xs text-gray-500 mt-1">{phrase.notes}</p>
+                {p.notes && (
+                  <div
+                    className="font-serif-sr"
+                    style={{ fontStyle: 'italic', fontSize: 11, color: T.mute, marginTop: 4 }}
+                  >
+                    {p.notes}
+                  </div>
                 )}
               </div>
             ))}
-          </div>
+          </Card>
         </div>
       )}
     </div>

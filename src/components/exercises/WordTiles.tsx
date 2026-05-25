@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import type { Exercise } from '../../store/types';
-import { cn } from '../../lib/utils';
+import Btn from '../ui/Btn';
+import Card from '../ui/Card';
+import { T, metaLabel } from '../../lib/tokens';
 
 interface WordTilesProps {
   exercise: Exercise;
@@ -32,71 +34,129 @@ export default function WordTiles({ exercise, onAnswer }: WordTilesProps) {
     setTimeout(() => onAnswer(correct), 1500);
   };
 
+  const dropBg =
+    result === null ? T.surface : result ? T.greenDim : T.redDim;
+  const dropBorder =
+    result === null ? T.border : result ? 'rgba(34,197,94,0.4)' : 'rgba(239,68,68,0.4)';
+
+  const tileSelectedStyle = {
+    padding: '10px 14px',
+    borderRadius: T.r2,
+    background: T.surfaceHi,
+    border: `1px solid ${T.borderHi}`,
+    color: T.text,
+    fontFamily: T.serif,
+    fontSize: 16,
+    fontWeight: 500,
+    boxShadow: T.shadow1,
+    cursor: 'grab',
+  } as const;
+
+  const tileAvailableStyle = {
+    padding: '10px 14px',
+    borderRadius: T.r2,
+    background: T.surface,
+    border: `1px solid ${T.border}`,
+    color: T.text,
+    fontFamily: T.serif,
+    fontSize: 16,
+    fontWeight: 500,
+    cursor: 'pointer',
+  } as const;
+
   return (
-    <div className="flex flex-col gap-6">
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
       <div>
-        <p className="text-sm text-gray-400 mb-2">
-          Arrange the words into the correct Serbian sentence:
-        </p>
-        <p className="text-xl font-semibold text-white leading-relaxed">
+        <div style={metaLabel}>BUILD THE SENTENCE</div>
+        <div
+          style={{
+            fontSize: 22,
+            fontWeight: 700,
+            letterSpacing: -0.4,
+            lineHeight: 1.2,
+            color: T.text,
+            marginTop: 8,
+          }}
+        >
           {exercise.prompt}
-        </p>
+        </div>
       </div>
 
       <div
-        className={cn(
-          'min-h-[60px] rounded-xl border-2 border-dashed p-3 flex flex-wrap gap-2',
-          result === null && 'border-navy-600',
-          result === true && 'border-correct bg-correct/10',
-          result === false && 'border-incorrect bg-incorrect/10'
-        )}
+        className={result === false ? 'anim-shake' : result === true ? 'anim-pop' : undefined}
+        style={{
+          padding: '14px 14px',
+          borderRadius: T.r3,
+          background: dropBg,
+          border: `1px solid ${dropBorder}`,
+          minHeight: 96,
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 8,
+          alignContent: 'flex-start',
+          transition: `all ${T.fast} ${T.ease}`,
+        }}
       >
         {placed.length === 0 && (
-          <span className="text-gray-600 text-sm">Tap words below to build the sentence...</span>
+          <span style={{ color: T.mute, fontSize: 13, fontFamily: T.mono }}>
+            Tap words below to build the sentence…
+          </span>
         )}
         {placed.map((word, i) => (
           <button
             key={`placed-${i}`}
             onClick={() => handleRemoveTile(i)}
-            className="rounded-lg bg-amber-500/20 border border-amber-500/40 px-3 py-1.5 text-sm text-amber-300 transition-colors hover:bg-amber-500/30"
+            style={tileSelectedStyle as React.CSSProperties}
           >
             {word}
           </button>
         ))}
       </div>
 
-      <div className="flex flex-wrap gap-2 min-h-[44px]">
+      <div
+        style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          gap: 8,
+          paddingTop: 14,
+          borderTop: `0.5px solid ${T.border}`,
+        }}
+      >
         {available.map((word, i) => (
           <button
             key={`avail-${i}`}
             onClick={() => handleTileClick(word, i)}
-            className="rounded-lg bg-navy-700 border border-navy-600 px-3 py-1.5 text-sm text-white transition-colors hover:bg-navy-600"
+            style={tileAvailableStyle as React.CSSProperties}
           >
             {word}
           </button>
         ))}
+        {available.length === 0 && (
+          <span style={{ color: T.mute, fontSize: 12, fontFamily: T.mono }}>
+            all tiles placed
+          </span>
+        )}
       </div>
 
       {result === null && placed.length > 0 && (
-        <button
-          onClick={handleCheck}
-          className="rounded-xl bg-amber-500 px-6 py-3 font-semibold text-navy-900"
-        >
+        <Btn kind="primary" size="lg" full onClick={handleCheck}>
           Check
-        </button>
+        </Btn>
       )}
 
       {result === false && (
-        <div className="rounded-xl bg-navy-800/50 p-4">
-          <p className="text-sm text-gray-400">Correct order:</p>
-          <p className="text-lg text-correct">{exercise.correctAnswer}</p>
-        </div>
+        <Card pad={14}>
+          <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT ORDER</div>
+          <div className="font-serif-sr" style={{ fontSize: 17, color: T.green, fontWeight: 500 }}>
+            {exercise.correctAnswer}
+          </div>
+        </Card>
       )}
 
       {result === true && (
-        <p className="text-lg font-semibold text-correct text-center">
-          Odlično! ✓
-        </p>
+        <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
+          Odlično ✓
+        </div>
       )}
     </div>
   );

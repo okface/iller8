@@ -1,4 +1,8 @@
 import { useNavigate } from 'react-router-dom';
+import { T } from '../lib/tokens';
+import MonoBadge from './ui/MonoBadge';
+import RingProgress from './ui/RingProgress';
+import { IconLock } from './ui/Icons';
 import type { Lesson, PhraseProgress } from '../store/types';
 
 interface LessonCardProps {
@@ -7,6 +11,7 @@ interface LessonCardProps {
   completed: boolean;
   unlocked: boolean;
   phraseProgress: Record<string, PhraseProgress>;
+  topBorder?: boolean;
 }
 
 export default function LessonCard({
@@ -15,6 +20,7 @@ export default function LessonCard({
   completed,
   unlocked,
   phraseProgress,
+  topBorder,
 }: LessonCardProps) {
   const navigate = useNavigate();
 
@@ -28,80 +34,80 @@ export default function LessonCard({
       g.phrases.filter((p) => (phraseProgress[p.id]?.bucket ?? 0) >= 4).length,
     0
   );
-  const progress = totalPhrases > 0 ? masteredPhrases / totalPhrases : 0;
+  const learnedPhrases = lesson.phraseGroups.reduce(
+    (sum, g) =>
+      sum + g.phrases.filter((p) => (phraseProgress[p.id]?.bucket ?? 0) >= 1).length,
+    0
+  );
+  const progress = totalPhrases > 0 ? learnedPhrases / totalPhrases : 0;
 
   const title =
     script === 'cyrillic' ? lesson.title.sr_cyrillic : lesson.title.sr_latin;
+  const subtitle = lesson.description.en;
 
   return (
     <button
       onClick={() => unlocked && navigate(`/lesson/${lesson.id}`)}
       disabled={!unlocked}
-      className={`relative w-full rounded-2xl border p-4 text-left transition-all ${
-        unlocked
-          ? completed
-            ? 'border-emerald-500/30 bg-emerald-500/5 hover:bg-emerald-500/10'
-            : 'border-navy-600 bg-navy-800/50 hover:bg-navy-700/50 hover:border-amber-500/40'
-          : 'border-navy-700/30 bg-navy-900/50 opacity-50 cursor-not-allowed'
-      }`}
+      style={{
+        display: 'grid',
+        gridTemplateColumns: '32px 1fr auto',
+        alignItems: 'center',
+        gap: 12,
+        padding: '14px 0',
+        borderTop: topBorder ? `0.5px solid ${T.border}` : undefined,
+        borderBottom: `0.5px solid ${T.border}`,
+        opacity: unlocked ? 1 : 0.4,
+        background: 'transparent',
+        border: 'none',
+        borderBottomLeftRadius: 0,
+        borderBottomRightRadius: 0,
+        cursor: unlocked ? 'pointer' : 'not-allowed',
+        width: '100%',
+        textAlign: 'left',
+        color: T.text,
+        transition: `all ${T.fast} ${T.ease}`,
+      }}
     >
-      <div className="flex items-start justify-between gap-3">
-        <div className="flex-1 min-w-0">
-          <div className="text-xs text-gray-500 mb-1">
-            {lesson.order}. lekcija
-          </div>
-          <h3 className="text-base font-semibold text-white truncate">
-            {title}
-          </h3>
-          <p className="text-sm text-gray-400 mt-1">
-            {lesson.description.en}
-          </p>
-        </div>
-        <div className="flex-shrink-0">
-          {completed ? (
-            <span className="text-2xl">✓</span>
-          ) : !unlocked ? (
-            <span className="text-2xl opacity-40">🔒</span>
-          ) : (
-            <div className="relative w-12 h-12">
-              <svg className="w-12 h-12 -rotate-90" viewBox="0 0 36 36">
-                <circle
-                  cx="18"
-                  cy="18"
-                  r="15.5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  className="text-navy-700"
-                />
-                <circle
-                  cx="18"
-                  cy="18"
-                  r="15.5"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeDasharray={`${progress * 97.4} 97.4`}
-                  className="text-amber-500"
-                />
-              </svg>
-              <span className="absolute inset-0 flex items-center justify-center text-xs text-gray-300">
-                {Math.round(progress * 100)}%
-              </span>
-            </div>
-          )}
+      <span
+        style={{
+          fontFamily: T.mono,
+          fontSize: 11,
+          color: completed ? T.green : T.mute,
+        }}
+      >
+        {String(lesson.order).padStart(2, '0')}
+      </span>
+      <div style={{ minWidth: 0 }}>
+        <div style={{ fontSize: 15, fontWeight: 500, letterSpacing: -0.2 }}>{title}</div>
+        <div
+          style={{
+            fontFamily: T.mono,
+            fontSize: 11,
+            color: T.dim,
+            marginTop: 1,
+            display: 'flex',
+            gap: 8,
+            alignItems: 'center',
+          }}
+        >
+          {subtitle}
         </div>
       </div>
-
-      <div className="mt-3 flex items-center gap-2 text-xs text-gray-500">
-        <span>{totalPhrases} phrases</span>
-        {masteredPhrases > 0 && (
-          <>
-            <span>·</span>
-            <span className="text-amber-500">{masteredPhrases} mastered</span>
-          </>
-        )}
-      </div>
+      {!unlocked ? (
+        <span style={{ color: T.dim, display: 'flex' }}>
+          <IconLock size={14} />
+        </span>
+      ) : completed && masteredPhrases >= totalPhrases ? (
+        <MonoBadge kind="green">100%</MonoBadge>
+      ) : (
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+          <span style={{ fontFamily: T.mono, fontSize: 11, color: T.text }}>
+            {Math.round(progress * 100)}%
+          </span>
+          <RingProgress value={progress * 100} total={100} size={20} stroke={2.4} />
+        </div>
+      )}
     </button>
   );
 }
