@@ -1,0 +1,1083 @@
+{
+  "families": [
+    {
+      "id": "miss-you",
+      "theme": "I miss you",
+      "category": "affection",
+      "lessonId": "sweet-talk",
+      "base": {
+        "id": "miss-you-base",
+        "sr_latin": "Nedostaješ mi.",
+        "sr_cyrillic": "Недостајеш ми.",
+        "en": "I miss you.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Literally 'you are missing to me'. The person missed is the subject; the one feeling it is in dative (mi)."
+      },
+      "variants": [
+        {
+          "id": "miss-you-past-masc",
+          "sr_latin": "Nedostajao si mi.",
+          "sr_cyrillic": "Недостајао си ми.",
+          "en": "I missed you. (to a man)",
+          "label": "past · to a man",
+          "transform": "tense-past",
+          "note": "Past participle 'nedostajao' agrees with the masculine 'you' who was missed."
+        },
+        {
+          "id": "miss-you-past-fem",
+          "sr_latin": "Nedostajala si mi.",
+          "sr_cyrillic": "Недостајала си ми.",
+          "en": "I missed you. (to a woman)",
+          "label": "past · to a woman",
+          "transform": "gender-listener",
+          "note": "Same idea but '-la' ending because the missed person is feminine."
+        },
+        {
+          "id": "miss-you-formal",
+          "sr_latin": "Nedostajete mi.",
+          "sr_cyrillic": "Недостајете ми.",
+          "en": "I miss you. (formal)",
+          "label": "formal (vi)",
+          "transform": "formality",
+          "note": "Use 'vi' form with elders, bosses, strangers."
+        },
+        {
+          "id": "miss-you-reciprocity",
+          "sr_latin": "I ti meni nedostaješ.",
+          "sr_cyrillic": "И ти мени недостајеш.",
+          "en": "I miss you too.",
+          "label": "I miss you too",
+          "transform": "reciprocity",
+          "hint": "Literally: and you to me are missing.",
+          "note": "Word order flips for emphasis: 'i ti meni' fronts the reciprocal idea."
+        },
+        {
+          "id": "miss-you-object-her",
+          "sr_latin": "Ona mi nedostaje.",
+          "sr_cyrillic": "Она ми недостаје.",
+          "en": "I miss her.",
+          "label": "I miss her",
+          "transform": "subject-swap",
+          "note": "She is the grammatical subject; the verb takes 3rd person 'nedostaje'."
+        },
+        {
+          "id": "miss-you-object-him",
+          "sr_latin": "On mi nedostaje.",
+          "sr_cyrillic": "Он ми недостаје.",
+          "en": "I miss him.",
+          "label": "I miss him",
+          "transform": "subject-swap"
+        },
+        {
+          "id": "miss-you-intensified",
+          "sr_latin": "Mnogo mi nedostaješ.",
+          "sr_cyrillic": "Много ми недостајеш.",
+          "en": "I miss you so much.",
+          "label": "with intensifier",
+          "transform": "intensifier",
+          "note": "'Mnogo' is the everyday way to say 'a lot / so much'."
+        },
+        {
+          "id": "miss-you-negation",
+          "sr_latin": "Ne nedostaješ mi.",
+          "sr_cyrillic": "Не недостајеш ми.",
+          "en": "I don't miss you.",
+          "label": "in the negative",
+          "transform": "negation",
+          "hint": "Cold, but grammatically clean."
+        }
+      ]
+    },
+    {
+      "id": "love-you",
+      "theme": "I love you",
+      "category": "affection",
+      "lessonId": "sweet-talk",
+      "base": {
+        "id": "love-you-base",
+        "sr_latin": "Volim te.",
+        "sr_cyrillic": "Волим те.",
+        "en": "I love you.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "'Te' is the short accusative of 'ti' (you). Used constantly."
+      },
+      "variants": [
+        {
+          "id": "love-you-formal",
+          "sr_latin": "Volim vas.",
+          "sr_cyrillic": "Волим вас.",
+          "en": "I love you. (formal/plural)",
+          "label": "formal (vi)",
+          "transform": "formality",
+          "hint": "Also means 'I love you all'."
+        },
+        {
+          "id": "love-you-past-masc",
+          "sr_latin": "Voleo sam te.",
+          "sr_cyrillic": "Волео сам те.",
+          "en": "I loved you. (masc speaker)",
+          "label": "past · male speaker",
+          "transform": "gender-speaker",
+          "note": "Past participle 'voleo' agrees with masculine 'I'."
+        },
+        {
+          "id": "love-you-past-fem",
+          "sr_latin": "Volela sam te.",
+          "sr_cyrillic": "Волела сам те.",
+          "en": "I loved you. (fem speaker)",
+          "label": "past · female speaker",
+          "transform": "gender-speaker"
+        },
+        {
+          "id": "love-you-he-her",
+          "sr_latin": "On je voli.",
+          "sr_cyrillic": "Он је воли.",
+          "en": "He loves her.",
+          "label": "he loves her",
+          "transform": "subject-swap",
+          "hint": "'je' here is the short accusative 'her', not the verb 'is'."
+        },
+        {
+          "id": "love-you-question",
+          "sr_latin": "Voliš li me?",
+          "sr_cyrillic": "Волиш ли ме?",
+          "en": "Do you love me?",
+          "label": "as a question",
+          "transform": "question",
+          "note": "Add 'li' after the verb for a yes/no question. Even more common: 'Da li me voliš?'"
+        },
+        {
+          "id": "love-you-intensified",
+          "sr_latin": "Mnogo te volim.",
+          "sr_cyrillic": "Много те волим.",
+          "en": "I love you so much.",
+          "label": "with intensifier",
+          "transform": "intensifier"
+        },
+        {
+          "id": "love-you-negation",
+          "sr_latin": "Ne volim te više.",
+          "sr_cyrillic": "Не волим те више.",
+          "en": "I don't love you anymore.",
+          "label": "in the negative",
+          "transform": "negation",
+          "hint": "'više' = anymore / more."
+        }
+      ]
+    },
+    {
+      "id": "how-are-you",
+      "theme": "How are you?",
+      "category": "small-talk",
+      "base": {
+        "id": "how-are-you-base",
+        "sr_latin": "Kako si?",
+        "sr_cyrillic": "Како си?",
+        "en": "How are you?",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Literally 'how are you' — the everyday greeting between friends."
+      },
+      "variants": [
+        {
+          "id": "how-are-you-formal",
+          "sr_latin": "Kako ste?",
+          "sr_cyrillic": "Како сте?",
+          "en": "How are you? (formal)",
+          "label": "formal (vi)",
+          "transform": "formality",
+          "hint": "Use with strangers, elders, in shops."
+        },
+        {
+          "id": "how-are-you-plural",
+          "sr_latin": "Kako ste vi?",
+          "sr_cyrillic": "Како сте ви?",
+          "en": "How are you guys?",
+          "label": "to a group",
+          "transform": "number",
+          "note": "Same form as formal — context tells you which it is."
+        },
+        {
+          "id": "how-are-you-past-masc",
+          "sr_latin": "Kako si bio?",
+          "sr_cyrillic": "Како си био?",
+          "en": "How have you been? (to a man)",
+          "label": "past · to a man",
+          "transform": "tense-past",
+          "note": "Uses past participle of 'biti' (to be). 'Bila' for a woman."
+        },
+        {
+          "id": "how-are-you-past-fem",
+          "sr_latin": "Kako si bila?",
+          "sr_cyrillic": "Како си била?",
+          "en": "How have you been? (to a woman)",
+          "label": "past · to a woman",
+          "transform": "gender-listener"
+        },
+        {
+          "id": "how-are-you-she",
+          "sr_latin": "Kako je ona?",
+          "sr_cyrillic": "Како је она?",
+          "en": "How is she?",
+          "label": "how is she?",
+          "transform": "subject-swap"
+        },
+        {
+          "id": "how-are-you-casual",
+          "sr_latin": "Šta ima?",
+          "sr_cyrillic": "Шта има?",
+          "en": "What's up?",
+          "label": "super casual",
+          "transform": "intensifier",
+          "hint": "Literally 'what's there?' — the slangier hello.",
+          "note": "Among friends this often replaces 'kako si'. Reply: 'Ništa posebno.'"
+        },
+        {
+          "id": "how-are-you-everyone",
+          "sr_latin": "Kako ste svi?",
+          "sr_cyrillic": "Како сте сви?",
+          "en": "How is everyone?",
+          "label": "everyone",
+          "transform": "number"
+        }
+      ]
+    },
+    {
+      "id": "what-are-you-doing",
+      "theme": "What are you doing?",
+      "category": "questions",
+      "lessonId": "texting",
+      "base": {
+        "id": "what-doing-base",
+        "sr_latin": "Šta radiš?",
+        "sr_cyrillic": "Шта радиш?",
+        "en": "What are you doing?",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Default texting opener — equivalent to 'wyd?'"
+      },
+      "variants": [
+        {
+          "id": "what-doing-formal",
+          "sr_latin": "Šta radite?",
+          "sr_cyrillic": "Шта радите?",
+          "en": "What are you doing? (formal)",
+          "label": "formal (vi)",
+          "transform": "formality"
+        },
+        {
+          "id": "what-doing-past-masc",
+          "sr_latin": "Šta si radio?",
+          "sr_cyrillic": "Шта си радио?",
+          "en": "What were you doing? (to a man)",
+          "label": "past · to a man",
+          "transform": "tense-past",
+          "note": "'Radio' is the masculine past participle. For a woman: 'radila'."
+        },
+        {
+          "id": "what-doing-past-fem",
+          "sr_latin": "Šta si radila?",
+          "sr_cyrillic": "Шта си радила?",
+          "en": "What were you doing? (to a woman)",
+          "label": "past · to a woman",
+          "transform": "gender-listener"
+        },
+        {
+          "id": "what-doing-future",
+          "sr_latin": "Šta ćeš raditi?",
+          "sr_cyrillic": "Шта ћеш радити?",
+          "en": "What will you do?",
+          "label": "future tense",
+          "transform": "tense-future",
+          "note": "Future is formed with 'ću/ćeš/će' + infinitive."
+        },
+        {
+          "id": "what-doing-she",
+          "sr_latin": "Šta ona radi?",
+          "sr_cyrillic": "Шта она ради?",
+          "en": "What is she doing?",
+          "label": "she → subject",
+          "transform": "subject-swap"
+        },
+        {
+          "id": "what-doing-plural",
+          "sr_latin": "Šta radite, ljudi?",
+          "sr_cyrillic": "Шта радите, људи?",
+          "en": "What are you up to, guys?",
+          "label": "to a group",
+          "transform": "number",
+          "hint": "'Ljudi' = people/guys, super common address."
+        },
+        {
+          "id": "what-doing-now",
+          "sr_latin": "Šta radiš sad?",
+          "sr_cyrillic": "Шта радиш сад?",
+          "en": "What are you doing now?",
+          "label": "with 'now'",
+          "transform": "intensifier"
+        }
+      ]
+    },
+    {
+      "id": "i-want",
+      "theme": "I want coffee",
+      "category": "food",
+      "lessonId": "food-cooking",
+      "base": {
+        "id": "want-coffee-base",
+        "sr_latin": "Hoću kafu.",
+        "sr_cyrillic": "Хоћу кафу.",
+        "en": "I want coffee.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "'Hoću' is the present of 'hteti'. 'Kafu' is the accusative of 'kafa'."
+      },
+      "variants": [
+        {
+          "id": "want-coffee-negation",
+          "sr_latin": "Neću kafu.",
+          "sr_cyrillic": "Нећу кафу.",
+          "en": "I don't want coffee.",
+          "label": "in the negative",
+          "transform": "negation",
+          "note": "Negation fuses with the verb: ne + hoću → neću."
+        },
+        {
+          "id": "want-coffee-past-masc",
+          "sr_latin": "Hteo sam kafu.",
+          "sr_cyrillic": "Хтео сам кафу.",
+          "en": "I wanted coffee. (masc speaker)",
+          "label": "past · male speaker",
+          "transform": "gender-speaker"
+        },
+        {
+          "id": "want-coffee-past-fem",
+          "sr_latin": "Htela sam kafu.",
+          "sr_cyrillic": "Хтела сам кафу.",
+          "en": "I wanted coffee. (fem speaker)",
+          "label": "past · female speaker",
+          "transform": "gender-speaker"
+        },
+        {
+          "id": "want-coffee-question",
+          "sr_latin": "Hoćeš kafu?",
+          "sr_cyrillic": "Хоћеш кафу?",
+          "en": "Do you want coffee?",
+          "label": "as a question",
+          "transform": "question",
+          "hint": "Intonation alone makes it a question."
+        },
+        {
+          "id": "want-coffee-formal",
+          "sr_latin": "Hoćete kafu?",
+          "sr_cyrillic": "Хоћете кафу?",
+          "en": "Would you like coffee? (formal)",
+          "label": "formal (vi)",
+          "transform": "formality"
+        },
+        {
+          "id": "want-coffee-she-tea",
+          "sr_latin": "Ona hoće čaj.",
+          "sr_cyrillic": "Она хоће чај.",
+          "en": "She wants tea.",
+          "label": "she wants tea",
+          "transform": "object-swap"
+        },
+        {
+          "id": "want-coffee-conditional",
+          "sr_latin": "Hteo bih kafu.",
+          "sr_cyrillic": "Хтео бих кафу.",
+          "en": "I'd like a coffee.",
+          "label": "softer · 'I'd like'",
+          "transform": "formality",
+          "note": "Conditional 'bih' softens requests — perfect when ordering at a café."
+        }
+      ]
+    },
+    {
+      "id": "see-you",
+      "theme": "See you tomorrow",
+      "category": "plans",
+      "lessonId": "making-plans",
+      "base": {
+        "id": "see-you-base",
+        "sr_latin": "Vidimo se sutra.",
+        "sr_cyrillic": "Видимо се сутра.",
+        "en": "See you tomorrow.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Literally 'we see each other tomorrow'. 'Se' marks the reciprocal."
+      },
+      "variants": [
+        {
+          "id": "see-you-later",
+          "sr_latin": "Vidimo se kasnije.",
+          "sr_cyrillic": "Видимо се касније.",
+          "en": "See you later.",
+          "label": "later",
+          "transform": "intensifier"
+        },
+        {
+          "id": "see-you-tonight",
+          "sr_latin": "Vidimo se večeras.",
+          "sr_cyrillic": "Видимо се вечерас.",
+          "en": "See you tonight.",
+          "label": "tonight",
+          "transform": "intensifier"
+        },
+        {
+          "id": "see-you-past-masc",
+          "sr_latin": "Videli smo se juče.",
+          "sr_cyrillic": "Видели смо се јуче.",
+          "en": "We saw each other yesterday.",
+          "label": "past (we saw)",
+          "transform": "tense-past",
+          "note": "Plural past participle 'videli' for mixed/masc group; 'videle' for all women."
+        },
+        {
+          "id": "see-you-question",
+          "sr_latin": "Vidimo se sutra?",
+          "sr_cyrillic": "Видимо се сутра?",
+          "en": "See you tomorrow?",
+          "label": "as a question",
+          "transform": "question",
+          "hint": "Same words, rising intonation."
+        },
+        {
+          "id": "see-you-formal",
+          "sr_latin": "Vidimo se sutra, gospodine.",
+          "sr_cyrillic": "Видимо се сутра, господине.",
+          "en": "See you tomorrow, sir.",
+          "label": "formal address",
+          "transform": "formality",
+          "hint": "Gospođo for a woman."
+        },
+        {
+          "id": "see-you-reciprocity",
+          "sr_latin": "Videćeš me sutra.",
+          "sr_cyrillic": "Видећеш ме сутра.",
+          "en": "You'll see me tomorrow.",
+          "label": "you'll see me",
+          "transform": "reciprocity",
+          "note": "Future tense with the speaker as the object — flips the perspective."
+        },
+        {
+          "id": "see-you-not",
+          "sr_latin": "Ne vidimo se sutra.",
+          "sr_cyrillic": "Не видимо се сутра.",
+          "en": "We're not seeing each other tomorrow.",
+          "label": "in the negative",
+          "transform": "negation"
+        }
+      ]
+    },
+    {
+      "id": "thank-you",
+      "theme": "Thanks",
+      "category": "reactions",
+      "base": {
+        "id": "thanks-base",
+        "sr_latin": "Hvala.",
+        "sr_cyrillic": "Хвала.",
+        "en": "Thanks.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Default everyday 'thanks'."
+      },
+      "variants": [
+        {
+          "id": "thanks-intensified",
+          "sr_latin": "Hvala puno.",
+          "sr_cyrillic": "Хвала пуно.",
+          "en": "Thanks a lot.",
+          "label": "with intensifier",
+          "transform": "intensifier",
+          "hint": "'Puno' = a lot. Also: 'hvala mnogo'."
+        },
+        {
+          "id": "thanks-very-much",
+          "sr_latin": "Hvala lepo.",
+          "sr_cyrillic": "Хвала лепо.",
+          "en": "Thank you kindly.",
+          "label": "warm thanks",
+          "transform": "intensifier",
+          "note": "Literally 'thanks nicely' — friendly but slightly more polished."
+        },
+        {
+          "id": "thanks-formal",
+          "sr_latin": "Hvala vam.",
+          "sr_cyrillic": "Хвала вам.",
+          "en": "Thank you. (formal)",
+          "label": "formal (vam)",
+          "transform": "formality",
+          "note": "'Vam' is dative of 'vi' — adds politeness."
+        },
+        {
+          "id": "thanks-informal",
+          "sr_latin": "Hvala ti.",
+          "sr_cyrillic": "Хвала ти.",
+          "en": "Thanks. (to one friend)",
+          "label": "to a friend (ti)",
+          "transform": "subject-swap",
+          "hint": "Warmer than bare 'hvala'."
+        },
+        {
+          "id": "thanks-reciprocity",
+          "sr_latin": "Hvala i tebi.",
+          "sr_cyrillic": "Хвала и теби.",
+          "en": "Thanks back at you.",
+          "label": "thanks back",
+          "transform": "reciprocity"
+        },
+        {
+          "id": "thanks-past-masc",
+          "sr_latin": "Zahvalio sam ti se.",
+          "sr_cyrillic": "Захвалио сам ти се.",
+          "en": "I thanked you. (masc speaker)",
+          "label": "past · male speaker",
+          "transform": "tense-past",
+          "note": "Verb 'zahvaliti se' is reflexive — 'se' is required."
+        },
+        {
+          "id": "thanks-no",
+          "sr_latin": "Ne, hvala.",
+          "sr_cyrillic": "Не, хвала.",
+          "en": "No thanks.",
+          "label": "in the negative",
+          "transform": "negation"
+        }
+      ]
+    },
+    {
+      "id": "im-tired",
+      "theme": "I'm tired",
+      "category": "feelings",
+      "lessonId": "feelings-opinions",
+      "base": {
+        "id": "tired-base-masc",
+        "sr_latin": "Umoran sam.",
+        "sr_cyrillic": "Уморан сам.",
+        "en": "I'm tired. (masc speaker)",
+        "label": "base · male speaker",
+        "transform": "gender-speaker",
+        "note": "Adjective 'umoran' agrees with masculine 'I'. A woman says 'umorna sam'."
+      },
+      "variants": [
+        {
+          "id": "tired-fem",
+          "sr_latin": "Umorna sam.",
+          "sr_cyrillic": "Уморна сам.",
+          "en": "I'm tired. (fem speaker)",
+          "label": "female speaker",
+          "transform": "gender-speaker"
+        },
+        {
+          "id": "tired-past-masc",
+          "sr_latin": "Bio sam umoran.",
+          "sr_cyrillic": "Био сам уморан.",
+          "en": "I was tired. (masc speaker)",
+          "label": "past · male speaker",
+          "transform": "tense-past",
+          "note": "Past 'biti' + adjective; both agree in gender."
+        },
+        {
+          "id": "tired-past-fem",
+          "sr_latin": "Bila sam umorna.",
+          "sr_cyrillic": "Била сам уморна.",
+          "en": "I was tired. (fem speaker)",
+          "label": "past · female speaker",
+          "transform": "gender-speaker"
+        },
+        {
+          "id": "tired-intensified",
+          "sr_latin": "Mrtav sam umoran.",
+          "sr_cyrillic": "Мртав сам уморан.",
+          "en": "I'm dead tired.",
+          "label": "with intensifier",
+          "transform": "intensifier",
+          "hint": "Literally 'I'm dead tired'. 'Mrtva' if female speaker.",
+          "note": "Slangy and very common. Also: 'baš sam umoran'."
+        },
+        {
+          "id": "tired-negation",
+          "sr_latin": "Nisam umoran.",
+          "sr_cyrillic": "Нисам уморан.",
+          "en": "I'm not tired.",
+          "label": "in the negative",
+          "transform": "negation",
+          "note": "'Nisam' fuses 'ne' + 'sam'."
+        },
+        {
+          "id": "tired-formal",
+          "sr_latin": "Jeste li umorni?",
+          "sr_cyrillic": "Јесте ли уморни?",
+          "en": "Are you tired? (formal)",
+          "label": "formal question",
+          "transform": "formality",
+          "hint": "'Umorni' is the plural/formal adjective form."
+        },
+        {
+          "id": "tired-she",
+          "sr_latin": "Ona je umorna.",
+          "sr_cyrillic": "Она је уморна.",
+          "en": "She is tired.",
+          "label": "she is tired",
+          "transform": "subject-swap"
+        }
+      ]
+    },
+    {
+      "id": "im-going",
+      "theme": "I'm going home",
+      "category": "plans",
+      "lessonId": "daily-routines",
+      "base": {
+        "id": "going-home-base",
+        "sr_latin": "Idem kući.",
+        "sr_cyrillic": "Идем кући.",
+        "en": "I'm going home.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "'Kući' is the dative of 'kuća' — used as 'home' (direction)."
+      },
+      "variants": [
+        {
+          "id": "going-work",
+          "sr_latin": "Idem na posao.",
+          "sr_cyrillic": "Идем на посао.",
+          "en": "I'm going to work.",
+          "label": "to work",
+          "transform": "object-swap"
+        },
+        {
+          "id": "going-store",
+          "sr_latin": "Idem u prodavnicu.",
+          "sr_cyrillic": "Идем у продавницу.",
+          "en": "I'm going to the store.",
+          "label": "to the store",
+          "transform": "object-swap",
+          "hint": "'U + accusative' for going into a place."
+        },
+        {
+          "id": "going-girlfriend",
+          "sr_latin": "Idem kod devojke.",
+          "sr_cyrillic": "Идем код девојке.",
+          "en": "I'm going to my girlfriend's.",
+          "label": "to my girlfriend's",
+          "transform": "object-swap",
+          "note": "'Kod + genitive' = to someone's place."
+        },
+        {
+          "id": "going-past-masc",
+          "sr_latin": "Išao sam kući.",
+          "sr_cyrillic": "Ишао сам кући.",
+          "en": "I was going home. (masc speaker)",
+          "label": "past · male speaker",
+          "transform": "tense-past",
+          "note": "'Išao' is the masculine past participle of 'ići'. For a woman: 'išla'."
+        },
+        {
+          "id": "going-future",
+          "sr_latin": "Ići ću kući.",
+          "sr_cyrillic": "Ићи ћу кући.",
+          "en": "I'll go home.",
+          "label": "future tense",
+          "transform": "tense-future"
+        },
+        {
+          "id": "going-we",
+          "sr_latin": "Idemo kući.",
+          "sr_cyrillic": "Идемо кући.",
+          "en": "We're going home.",
+          "label": "we are going",
+          "transform": "number"
+        },
+        {
+          "id": "going-negation",
+          "sr_latin": "Ne idem kući.",
+          "sr_cyrillic": "Не идем кући.",
+          "en": "I'm not going home.",
+          "label": "in the negative",
+          "transform": "negation"
+        }
+      ]
+    },
+    {
+      "id": "can-you",
+      "theme": "Can you help me?",
+      "category": "questions",
+      "lessonId": "work-banter",
+      "base": {
+        "id": "can-help-base",
+        "sr_latin": "Možeš da mi pomogneš?",
+        "sr_cyrillic": "Можеш да ми помогнеш?",
+        "en": "Can you help me?",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Serbian uses 'da + present' where English uses an infinitive. 'Mi' is dative — you help 'to me'."
+      },
+      "variants": [
+        {
+          "id": "can-help-formal",
+          "sr_latin": "Možete li da mi pomognete?",
+          "sr_cyrillic": "Можете ли да ми помогнете?",
+          "en": "Can you help me? (formal)",
+          "label": "formal (vi)",
+          "transform": "formality",
+          "hint": "'Li' makes it crisper and more polite."
+        },
+        {
+          "id": "can-help-past-masc",
+          "sr_latin": "Mogao si da mi pomogneš?",
+          "sr_cyrillic": "Могао си да ми помогнеш?",
+          "en": "Could you have helped me? (to a man)",
+          "label": "past · to a man",
+          "transform": "tense-past",
+          "note": "Past 'mogao' for masc subject; 'mogla' for fem."
+        },
+        {
+          "id": "can-help-she",
+          "sr_latin": "Može li ona da mi pomogne?",
+          "sr_cyrillic": "Може ли она да ми помогне?",
+          "en": "Can she help me?",
+          "label": "can she?",
+          "transform": "subject-swap"
+        },
+        {
+          "id": "can-help-negation",
+          "sr_latin": "Ne možeš da mi pomogneš?",
+          "sr_cyrillic": "Не можеш да ми помогнеш?",
+          "en": "Can't you help me?",
+          "label": "in the negative",
+          "transform": "negation"
+        },
+        {
+          "id": "can-help-reciprocity",
+          "sr_latin": "Mogu li ja tebi da pomognem?",
+          "sr_cyrillic": "Могу ли ја теби да помогнем?",
+          "en": "Can I help you?",
+          "label": "can I help you?",
+          "transform": "reciprocity",
+          "note": "Flip subject/object — useful when offering help."
+        },
+        {
+          "id": "can-help-future",
+          "sr_latin": "Hoćeš li moći da mi pomogneš?",
+          "sr_cyrillic": "Хоћеш ли моћи да ми помогнеш?",
+          "en": "Will you be able to help me?",
+          "label": "future · 'will you be able'",
+          "transform": "tense-future",
+          "hint": "Future of 'moći' = 'hoću moći'."
+        }
+      ]
+    },
+    {
+      "id": "im-hungry",
+      "theme": "I'm hungry",
+      "category": "feelings",
+      "lessonId": "food-cooking",
+      "base": {
+        "id": "hungry-base-masc",
+        "sr_latin": "Gladan sam.",
+        "sr_cyrillic": "Гладан сам.",
+        "en": "I'm hungry. (masc speaker)",
+        "label": "base · male speaker",
+        "transform": "gender-speaker",
+        "note": "Adjective 'gladan' agrees with masculine 'I'. A woman says 'gladna'."
+      },
+      "variants": [
+        {
+          "id": "hungry-fem",
+          "sr_latin": "Gladna sam.",
+          "sr_cyrillic": "Гладна сам.",
+          "en": "I'm hungry. (fem speaker)",
+          "label": "female speaker",
+          "transform": "gender-speaker"
+        },
+        {
+          "id": "hungry-intensified",
+          "sr_latin": "Mnogo sam gladan.",
+          "sr_cyrillic": "Много сам гладан.",
+          "en": "I'm really hungry.",
+          "label": "with intensifier",
+          "transform": "intensifier",
+          "hint": "Use 'gladna' if the speaker is female."
+        },
+        {
+          "id": "hungry-past-masc",
+          "sr_latin": "Bio sam gladan.",
+          "sr_cyrillic": "Био сам гладан.",
+          "en": "I was hungry. (masc speaker)",
+          "label": "past · male speaker",
+          "transform": "tense-past"
+        },
+        {
+          "id": "hungry-he",
+          "sr_latin": "On je gladan.",
+          "sr_cyrillic": "Он је гладан.",
+          "en": "He's hungry.",
+          "label": "he is hungry",
+          "transform": "subject-swap"
+        },
+        {
+          "id": "hungry-negation",
+          "sr_latin": "Nisam gladan.",
+          "sr_cyrillic": "Нисам гладан.",
+          "en": "I'm not hungry.",
+          "label": "in the negative",
+          "transform": "negation",
+          "hint": "'Nisam gladna' for a female speaker."
+        },
+        {
+          "id": "hungry-question",
+          "sr_latin": "Jesi li gladan?",
+          "sr_cyrillic": "Јеси ли гладан?",
+          "en": "Are you hungry?",
+          "label": "as a question",
+          "transform": "question",
+          "note": "Use 'gladna' if you're asking a woman."
+        },
+        {
+          "id": "hungry-dying",
+          "sr_latin": "Umirem od gladi.",
+          "sr_cyrillic": "Умирем од глади.",
+          "en": "I'm starving.",
+          "label": "slang · starving",
+          "transform": "intensifier",
+          "hint": "Literally 'I'm dying from hunger'.",
+          "note": "Idiomatic and very common in chat."
+        }
+      ]
+    },
+    {
+      "id": "sorry",
+      "theme": "Sorry",
+      "category": "reactions",
+      "lessonId": "reactions",
+      "base": {
+        "id": "sorry-base",
+        "sr_latin": "Izvini.",
+        "sr_cyrillic": "Извини.",
+        "en": "Sorry.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Imperative form — literally 'forgive (me)'."
+      },
+      "variants": [
+        {
+          "id": "sorry-formal",
+          "sr_latin": "Izvinite.",
+          "sr_cyrillic": "Извините.",
+          "en": "Sorry. (formal)",
+          "label": "formal (vi)",
+          "transform": "formality"
+        },
+        {
+          "id": "sorry-intensified",
+          "sr_latin": "Mnogo mi je žao.",
+          "sr_cyrillic": "Много ми је жао.",
+          "en": "I'm so sorry.",
+          "label": "with intensifier",
+          "transform": "intensifier",
+          "note": "Literally 'it's very sorry to me'. 'Žao mi je' is the standard 'I'm sorry'."
+        },
+        {
+          "id": "sorry-past-masc",
+          "sr_latin": "Bilo mi je žao.",
+          "sr_cyrillic": "Било ми је жао.",
+          "en": "I was sorry.",
+          "label": "past tense",
+          "transform": "tense-past",
+          "hint": "'Žao' is invariant — only 'biti' shifts."
+        },
+        {
+          "id": "sorry-negation",
+          "sr_latin": "Nemoj da se izvinjavaš.",
+          "sr_cyrillic": "Немој да се извињаваш.",
+          "en": "Don't apologize.",
+          "label": "don't apologize",
+          "transform": "negation",
+          "note": "'Nemoj + da' is the standard way to say 'don't' with verbs."
+        },
+        {
+          "id": "sorry-reciprocity",
+          "sr_latin": "Ne moraš da se izvinjavaš.",
+          "sr_cyrillic": "Не мораш да се извињаваш.",
+          "en": "You don't have to apologize.",
+          "label": "no need to apologize",
+          "transform": "reciprocity"
+        },
+        {
+          "id": "sorry-question",
+          "sr_latin": "Što ti je žao?",
+          "sr_cyrillic": "Што ти је жао?",
+          "en": "Why are you sorry?",
+          "label": "as a question",
+          "transform": "question",
+          "hint": "'Što' here means 'why'."
+        }
+      ]
+    },
+    {
+      "id": "call-me",
+      "theme": "Call me",
+      "category": "plans",
+      "lessonId": "texting",
+      "base": {
+        "id": "call-me-base",
+        "sr_latin": "Pozovi me.",
+        "sr_cyrillic": "Позови ме.",
+        "en": "Call me.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Imperative of 'pozvati' (perfective — one specific call)."
+      },
+      "variants": [
+        {
+          "id": "call-me-formal",
+          "sr_latin": "Pozovite me.",
+          "sr_cyrillic": "Позовите ме.",
+          "en": "Call me. (formal)",
+          "label": "formal (vi)",
+          "transform": "formality"
+        },
+        {
+          "id": "call-me-past-masc",
+          "sr_latin": "Pozvao si me.",
+          "sr_cyrillic": "Позвао си ме.",
+          "en": "You called me. (a man called)",
+          "label": "past · a man called",
+          "transform": "tense-past",
+          "note": "Past participle 'pozvao' for masc subject; 'pozvala' for fem."
+        },
+        {
+          "id": "call-me-future",
+          "sr_latin": "Pozvaću te.",
+          "sr_cyrillic": "Позваћу те.",
+          "en": "I'll call you.",
+          "label": "future · I'll call you",
+          "transform": "tense-future",
+          "note": "Future contracted: pozvati + ću → pozvaću."
+        },
+        {
+          "id": "call-her",
+          "sr_latin": "Pozovi je.",
+          "sr_cyrillic": "Позови је.",
+          "en": "Call her.",
+          "label": "call her",
+          "transform": "object-swap",
+          "hint": "'Je' is the short accusative of 'ona'."
+        },
+        {
+          "id": "call-me-question",
+          "sr_latin": "Hoćeš li me pozvati?",
+          "sr_cyrillic": "Хоћеш ли ме позвати?",
+          "en": "Will you call me?",
+          "label": "as a question",
+          "transform": "question"
+        },
+        {
+          "id": "call-me-negation",
+          "sr_latin": "Nemoj da me zoveš.",
+          "sr_cyrillic": "Немој да ме зовеш.",
+          "en": "Don't call me.",
+          "label": "don't call",
+          "transform": "negation",
+          "note": "Switches to imperfective 'zvati' — negative commands usually take the imperfective."
+        },
+        {
+          "id": "call-me-aspect",
+          "sr_latin": "Zovi me kad stigneš.",
+          "sr_cyrillic": "Зови ме кад стигнеш.",
+          "en": "Call me when you get there.",
+          "label": "imperfective · 'be calling'",
+          "transform": "aspect",
+          "hint": "'Zovi' (imperfective) feels softer and open-ended.",
+          "note": "Imperfective imperative for an ongoing or repeated action."
+        }
+      ]
+    },
+    {
+      "id": "happy-birthday",
+      "theme": "Happy birthday / celebrations",
+      "category": "celebrations",
+      "lessonId": "celebrations",
+      "base": {
+        "id": "happy-bday-base",
+        "sr_latin": "Srećan rođendan!",
+        "sr_cyrillic": "Срећан рођендан!",
+        "en": "Happy birthday!",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "'Srećan' agrees with the masculine noun 'rođendan'. The phrase doesn't change with the recipient's gender — only the noun matters."
+      },
+      "variants": [
+        {
+          "id": "happy-new-year",
+          "sr_latin": "Srećna Nova godina!",
+          "sr_cyrillic": "Срећна Нова година!",
+          "en": "Happy New Year!",
+          "label": "with feminine noun",
+          "transform": "object-swap",
+          "note": "'Godina' is feminine, so the adjective becomes 'srećna'."
+        },
+        {
+          "id": "happy-holidays",
+          "sr_latin": "Srećni praznici!",
+          "sr_cyrillic": "Срећни празници!",
+          "en": "Happy holidays!",
+          "label": "plural noun",
+          "transform": "number",
+          "note": "'Praznici' is plural → adjective becomes 'srećni'."
+        },
+        {
+          "id": "happy-bday-formal",
+          "sr_latin": "Srećan vam rođendan!",
+          "sr_cyrillic": "Срећан вам рођендан!",
+          "en": "Happy birthday! (formal)",
+          "label": "formal (vam)",
+          "transform": "formality",
+          "hint": "'Vam' = dative of 'vi'."
+        },
+        {
+          "id": "happy-bday-familiar",
+          "sr_latin": "Srećan ti rođendan!",
+          "sr_cyrillic": "Срећан ти рођендан!",
+          "en": "Happy birthday, mate!",
+          "label": "to a friend (ti)",
+          "transform": "subject-swap",
+          "note": "Adding 'ti' makes it warmer and more direct."
+        },
+        {
+          "id": "happy-bday-many-more",
+          "sr_latin": "Srećan rođendan, da si mi živ i zdrav!",
+          "sr_cyrillic": "Срећан рођендан, да си ми жив и здрав!",
+          "en": "Happy birthday — live long and stay healthy!",
+          "label": "many happy returns",
+          "transform": "intensifier",
+          "hint": "'Živa i zdrava' if addressing a woman.",
+          "note": "The classic Serbian birthday wish — health is everything."
+        },
+        {
+          "id": "happy-bday-reciprocity",
+          "sr_latin": "Hvala, i tebi sve najbolje!",
+          "sr_cyrillic": "Хвала, и теби све најбоље!",
+          "en": "Thanks — and all the best to you too!",
+          "label": "and same to you",
+          "transform": "reciprocity",
+          "note": "Standard reply when someone wishes you something."
+        },
+        {
+          "id": "happy-bday-plural",
+          "sr_latin": "Srećan rođendan, ljudi!",
+          "sr_cyrillic": "Срећан рођендан, људи!",
+          "en": "Happy birthday, everyone!",
+          "label": "to a group",
+          "transform": "number"
+        }
+      ]
+    }
+  ]
+}

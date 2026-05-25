@@ -7,6 +7,9 @@ import ReviewSession from './pages/ReviewSession';
 import Stats from './pages/Stats';
 import Settings from './pages/Settings';
 import CustomContent from './pages/CustomContent';
+import Hammer from './pages/Hammer';
+import Catalog from './pages/Catalog';
+import FamilyDrill from './pages/FamilyDrill';
 import { loadProgress, saveProgress, updateSettings } from './store/progress';
 import type { UserProgress } from './store/types';
 
@@ -43,6 +46,36 @@ export default function App() {
           <Route
             index
             element={<Dashboard progress={progress} script={script} />}
+          />
+          <Route
+            path="hammer"
+            element={
+              <Hammer progress={progress} setProgress={setProgress} script={script} />
+            }
+          />
+          <Route
+            path="catalog"
+            element={<Catalog progress={progress} script={script} />}
+          />
+          <Route
+            path="families"
+            element={
+              <FamilyDrill
+                progress={progress}
+                setProgress={setProgress}
+                script={script}
+              />
+            }
+          />
+          <Route
+            path="families/:lessonId"
+            element={
+              <FamilyDrill
+                progress={progress}
+                setProgress={setProgress}
+                script={script}
+              />
+            }
           />
           <Route
             path="lesson/:id"

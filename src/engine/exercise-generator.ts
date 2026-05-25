@@ -507,6 +507,24 @@ const exerciseTypesForBucket: Record<number, ExerciseType[]> = {
 };
 
 /**
+ * When the learner has `skipTyping` on, swap any free-text production
+ * exercise for a recognition-style alternative. Word-tiles stays — tapping
+ * tiles isn't typing — and pattern-match stays — it's multiple-choice.
+ * Comprehension, fill-in-blank, sentence-builder all stay (they're MC
+ * or tap-to-place). Only `type-translation` and `script-convert` need
+ * swapping out.
+ */
+const SKIP_TYPING_SWAP: Partial<Record<ExerciseType, ExerciseType>> = {
+  'type-translation': 'multiple-choice',
+  'script-convert': 'multiple-choice',
+};
+
+function applySkipTyping(type: ExerciseType, skipTyping: boolean): ExerciseType {
+  if (!skipTyping) return type;
+  return SKIP_TYPING_SWAP[type] ?? type;
+}
+
+/**
  * Weighted random selection from exercise types for a bucket.
  * Later entries in the array are treated as harder. Within a session,
  * `sessionPosition` (0-1) biases toward harder types as the learner
@@ -544,6 +562,7 @@ const exerciseDifficultyTier: Record<ExerciseType, number> = {
   'type-translation': 2,
   'script-convert': 2,
   'comprehension': 2,
+  'perspective-shift': 1,
 };
 
 function getDirectionForBucket(bucket: number): 'sr-to-en' | 'en-to-sr' {
@@ -559,11 +578,13 @@ export function generateExercise(
   bucket: number = 0,
   forcedType?: ExerciseType,
   lesson?: Lesson,
-  sessionPosition: number = 0.5
+  sessionPosition: number = 0.5,
+  skipTyping: boolean = false
 ): Exercise {
   const clampedBucket = Math.min(bucket, 5);
   const types = exerciseTypesForBucket[clampedBucket] ?? exerciseTypesForBucket[0];
-  const type = forcedType ?? pickExerciseType(types, sessionPosition);
+  const picked = forcedType ?? pickExerciseType(types, sessionPosition);
+  const type = applySkipTyping(picked, skipTyping);
   const direction = getDirectionForBucket(clampedBucket);
 
   switch (type) {
@@ -599,7 +620,8 @@ export function generateLessonExercises(
   lesson: Lesson,
   phraseProgress: Record<string, PhraseProgress>,
   script: 'latin' | 'cyrillic',
-  count: number = 15
+  count: number = 15,
+  skipTyping: boolean = false
 ): Exercise[] {
   const allPhrases = getAllPhrases(lesson);
   if (allPhrases.length === 0) return [];
@@ -614,7 +636,7 @@ export function generateLessonExercises(
     const bucket = progress?.bucket ?? 0;
     const sessionPosition = exercises.length / Math.max(count - 1, 1);
     exercises.push(
-      generateExercise(phrase, allPhrases, script, bucket, undefined, lesson, sessionPosition)
+      generateExercise(phrase, allPhrases, script, bucket, undefined, lesson, sessionPosition, skipTyping)
     );
     i++;
   }
@@ -640,7 +662,8 @@ export function generateReviewExercises(
   lessons: Lesson[],
   dueItems: PhraseProgress[],
   script: 'latin' | 'cyrillic',
-  count: number = 15
+  count: number = 15,
+  skipTyping: boolean = false
 ): Exercise[] {
   const allPhrases = lessons.flatMap(getAllPhrases);
   const phraseMap = new Map(allPhrases.map((p) => [p.id, p]));
@@ -665,11 +688,91 @@ export function generateReviewExercises(
     const lesson = phraseLessonMap.get(progress.phraseId);
     const sessionPosition = exercises.length / Math.max(count - 1, 1);
     exercises.push(
-      generateExercise(phrase, allPhrases, script, progress.bucket, undefined, lesson, sessionPosition)
+      generateExercise(phrase, allPhrases, script, progress.bucket, undefined, lesson, sessionPosition, skipTyping)
     );
   }
 
   return exercises;
+}
+
+/**
+ * Generate a low-commitment, randomized "Hammer" session that pulls from
+ * the *entire* phrase catalog (every lesson). Bias:
+ *   - 60% from low-bucket items (unseen or being-learned)
+ *   - 30% from mid-bucket items (familiar, due-ish)
+ *   - 10% from high-bucket items (light maintenance)
+ * This gives quick wins on new vocab without ignoring older words.
+ */
+export function generateHammerSession(
+  lessons: Lesson[],
+  phraseProgress: Record<string, PhraseProgress>,
+  script: 'latin' | 'cyrillic',
+  count: number = 15,
+  skipTyping: boolean = false
+): Exercise[] {
+  const allPhrases = lessons.flatMap(getAllPhrases);
+  if (allPhrases.length === 0) return [];
+
+  const phraseLessonMap = new Map<string, Lesson>();
+  for (const lesson of lessons) {
+    for (const group of lesson.phraseGroups) {
+      for (const p of group.phrases) {
+        phraseLessonMap.set(p.id, lesson);
+      }
+    }
+  }
+
+  const buckets: Phrase[][] = [[], [], []]; // [low, mid, high]
+  for (const phrase of allPhrases) {
+    const b = phraseProgress[phrase.id]?.bucket ?? 0;
+    if (b <= 1) buckets[0].push(phrase);
+    else if (b <= 3) buckets[1].push(phrase);
+    else buckets[2].push(phrase);
+  }
+
+  // If a bucket is empty, redistribute weights to the others.
+  const targets = [
+    Math.round(count * 0.6),
+    Math.round(count * 0.3),
+    count - Math.round(count * 0.6) - Math.round(count * 0.3),
+  ];
+
+  const picked: Phrase[] = [];
+  for (let i = 0; i < buckets.length; i++) {
+    const pool = buckets[i];
+    if (pool.length === 0) continue;
+    const target = targets[i];
+    const sample = shuffle(pool).slice(0, target);
+    picked.push(...sample);
+  }
+
+  // Pad with random phrases if some buckets were too small
+  if (picked.length < count) {
+    const seen = new Set(picked.map((p) => p.id));
+    const extras = shuffle(allPhrases.filter((p) => !seen.has(p.id))).slice(
+      0,
+      count - picked.length
+    );
+    picked.push(...extras);
+  }
+
+  const finalPhrases = shuffle(picked).slice(0, count);
+
+  return finalPhrases.map((phrase, idx) => {
+    const bucket = phraseProgress[phrase.id]?.bucket ?? 0;
+    const lesson = phraseLessonMap.get(phrase.id);
+    const sessionPosition = idx / Math.max(count - 1, 1);
+    return generateExercise(
+      phrase,
+      allPhrases,
+      script,
+      bucket,
+      undefined,
+      lesson,
+      sessionPosition,
+      skipTyping
+    );
+  });
 }
 
 export function generateMatchPairsData(

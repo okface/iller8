@@ -180,6 +180,39 @@ export default function Settings({ progress, setProgress, script }: SettingsProp
                 onChange={(s) => update({ scriptPreference: s })}
               />
             }
+          />
+          <Divider />
+          <Row
+            label="Skip typing"
+            sub="Use multiple-choice instead of typed answers"
+            trailing={
+              <button
+                onClick={() => update({ skipTyping: !settings.skipTyping })}
+                aria-label="Toggle skip typing"
+                style={{
+                  width: 36,
+                  height: 22,
+                  borderRadius: 11,
+                  padding: 2,
+                  background: settings.skipTyping ? T.amber : T.borderHi,
+                  border: 'none',
+                  display: 'flex',
+                  justifyContent: settings.skipTyping ? 'flex-end' : 'flex-start',
+                  cursor: 'pointer',
+                  transition: `all ${T.fast} ${T.ease}`,
+                }}
+              >
+                <span
+                  style={{
+                    width: 18,
+                    height: 18,
+                    borderRadius: '50%',
+                    background: '#fff',
+                    boxShadow: '0 1px 2px rgba(0,0,0,0.3)',
+                  }}
+                />
+              </button>
+            }
             last
           />
         </Card>

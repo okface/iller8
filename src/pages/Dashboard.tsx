@@ -1,11 +1,13 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { lessons, isLessonUnlocked, getAllPhrases } from '../data/lessons';
+import { families } from '../data/phrase-families';
 import LessonCard from '../components/LessonCard';
 import Card from '../components/ui/Card';
 import LinearProgress from '../components/ui/LinearProgress';
 import SectionHead from '../components/ui/SectionHead';
-import { IconAudio, IconChev } from '../components/ui/Icons';
+import MonoBadge from '../components/ui/MonoBadge';
+import { IconAudio, IconChev, IconBolt, IconBrain, IconBook } from '../components/ui/Icons';
 import { getDueItems } from '../engine/srs';
 import { getTodayStats } from '../store/progress';
 import { getTimeGreeting, getToday } from '../lib/utils';
@@ -233,6 +235,62 @@ export default function Dashboard({ progress, script }: DashboardProps) {
             </span>
           </div>
         </Card>
+      </div>
+
+      {/* Quick-access tiles — Hammer / Families / Catalog */}
+      <div style={{ marginTop: 16 }}>
+        <SectionHead suffix="QUICK">JUMP IN</SectionHead>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(3, 1fr)',
+            gap: 8,
+          }}
+        >
+          <Card
+            warm
+            pad={12}
+            onClick={() => navigate('/hammer')}
+            style={{ display: 'flex', flexDirection: 'column', gap: 6, minHeight: 96 }}
+          >
+            <span style={{ color: T.amber }}>
+              <IconBolt size={18} />
+            </span>
+            <div style={{ fontSize: 13, fontWeight: 700, color: T.text }}>Hammer</div>
+            <div style={{ fontSize: 11, color: T.dim, lineHeight: 1.4 }}>
+              Random across all lessons. ~5 min.
+            </div>
+          </Card>
+          <Card
+            pad={12}
+            onClick={() => navigate('/families')}
+            style={{ display: 'flex', flexDirection: 'column', gap: 6, minHeight: 96 }}
+          >
+            <span style={{ color: T.purple }}>
+              <IconBrain size={18} />
+            </span>
+            <div style={{ fontSize: 13, fontWeight: 700, color: T.text }}>Perspective</div>
+            <div style={{ fontSize: 11, color: T.dim, lineHeight: 1.4 }}>
+              Same phrase, many forms.
+            </div>
+            <div style={{ marginTop: 'auto' }}>
+              <MonoBadge kind="purple">{families.length} fams</MonoBadge>
+            </div>
+          </Card>
+          <Card
+            pad={12}
+            onClick={() => navigate('/catalog')}
+            style={{ display: 'flex', flexDirection: 'column', gap: 6, minHeight: 96 }}
+          >
+            <span style={{ color: T.dim }}>
+              <IconBook size={18} />
+            </span>
+            <div style={{ fontSize: 13, fontWeight: 700, color: T.text }}>Catalog</div>
+            <div style={{ fontSize: 11, color: T.dim, lineHeight: 1.4 }}>
+              Browse every phrase.
+            </div>
+          </Card>
+        </div>
       </div>
 
       {/* Phrase of the day */}

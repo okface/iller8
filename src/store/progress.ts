@@ -7,6 +7,7 @@ const defaultSettings: UserSettings = {
   dailyGoal: 10,
   darkMode: true,
   apiKey: '',
+  skipTyping: false,
 };
 
 function createDefaultProgress(): UserProgress {

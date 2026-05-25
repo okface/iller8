@@ -53,7 +53,13 @@ export default function ReviewSession({ progress, setProgress, script }: ReviewS
   useEffect(() => {
     const dueItems = getDueItems(progress.phrases);
     if (dueItems.length === 0) return;
-    const generated = generateReviewExercises(lessons, dueItems, script, 15);
+    const generated = generateReviewExercises(
+      lessons,
+      dueItems,
+      script,
+      15,
+      progress.settings.skipTyping
+    );
     setExercises(generated);
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 

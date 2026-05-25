@@ -82,7 +82,13 @@ export default function LessonView({ progress, setProgress, script }: LessonView
 
   useEffect(() => {
     if (!lesson || phase !== 'exercises') return;
-    const generated = generateLessonExercises(lesson, progress.phrases, script, 15);
+    const generated = generateLessonExercises(
+      lesson,
+      progress.phrases,
+      script,
+      15,
+      progress.settings.skipTyping
+    );
     setExercises(generated);
   }, [lesson, script, phase]); // eslint-disable-line react-hooks/exhaustive-deps
 
