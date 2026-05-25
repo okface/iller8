@@ -1,4 +1,4 @@
-import type { Exercise, ExerciseType, Lesson, Phrase, PhraseProgress } from '../store/types';
+import type { Exercise, ExerciseType, Lesson, Phrase, PhraseGroup, PhraseProgress } from '../store/types';
 
 function shuffle<T>(array: T[]): T[] {
   const arr = [...array];
@@ -17,27 +17,71 @@ function getAllPhrases(lesson: Lesson): Phrase[] {
   return lesson.phraseGroups.flatMap((g) => g.phrases);
 }
 
+/**
+ * Find the phrase group that contains the given phrase.
+ */
+function findPhraseGroup(phrase: Phrase, lesson: Lesson): PhraseGroup | undefined {
+  return lesson.phraseGroups.find((g) => g.phrases.some((p) => p.id === phrase.id));
+}
+
+/**
+ * Get distractors preferring same phrase group (semantically related), then
+ * falling back to the rest of the lesson. Always returns exactly `count`
+ * unique distractors (or fewer only if there aren't enough candidates at all).
+ */
 function getDistractors(
   correct: string,
+  phrase: Phrase,
   allPhrases: Phrase[],
-  field: 'en' | 'sr_latin',
-  count: number
+  field: 'en' | 'sr_latin' | 'sr_cyrillic',
+  count: number,
+  lesson?: Lesson
 ): string[] {
-  const others = allPhrases
-    .map((p) => p[field])
-    .filter((t) => t !== correct);
-  return pickRandom(others, count);
+  const seen = new Set<string>([correct]);
+  const result: string[] = [];
+
+  // Phase 1: same phrase group (semantically related distractors)
+  if (lesson) {
+    const group = findPhraseGroup(phrase, lesson);
+    if (group) {
+      const groupCandidates = shuffle(group.phrases)
+        .filter((p) => p.id !== phrase.id)
+        .map((p) => p[field])
+        .filter((t) => !seen.has(t));
+      for (const t of groupCandidates) {
+        if (result.length >= count) break;
+        seen.add(t);
+        result.push(t);
+      }
+    }
+  }
+
+  // Phase 2: pad with other phrases from the lesson
+  if (result.length < count) {
+    const remaining = shuffle(allPhrases)
+      .filter((p) => p.id !== phrase.id)
+      .map((p) => p[field])
+      .filter((t) => !seen.has(t));
+    for (const t of remaining) {
+      if (result.length >= count) break;
+      seen.add(t);
+      result.push(t);
+    }
+  }
+
+  return result;
 }
 
 function generateMultipleChoice(
   phrase: Phrase,
   allPhrases: Phrase[],
   script: 'latin' | 'cyrillic',
-  direction: 'sr-to-en' | 'en-to-sr'
+  direction: 'sr-to-en' | 'en-to-sr',
+  lesson?: Lesson
 ): Exercise {
   if (direction === 'sr-to-en') {
     const prompt = script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin;
-    const distractors = getDistractors(phrase.en, allPhrases, 'en', 3);
+    const distractors = getDistractors(phrase.en, phrase, allPhrases, 'en', 3, lesson);
     return {
       type: 'multiple-choice',
       phrase,
@@ -50,19 +94,14 @@ function generateMultipleChoice(
   } else {
     const srField = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
     const correctSr = phrase[srField];
-    const distractorPhrases = allPhrases
-      .filter((p) => p.id !== phrase.id)
-      .map((p) => p[srField]);
-    const uniqueDistractors = [...new Set(distractorPhrases)]
-      .filter((d) => d !== correctSr);
-    const selectedDistractors = pickRandom(uniqueDistractors, 3);
+    const distractors = getDistractors(correctSr, phrase, allPhrases, srField, 3, lesson);
     return {
       type: 'multiple-choice',
       phrase,
       direction,
       prompt: phrase.en,
       correctAnswer: correctSr,
-      options: shuffle([correctSr, ...selectedDistractors]),
+      options: shuffle([correctSr, ...distractors]),
       context: phrase.context,
     };
   }
@@ -351,14 +390,12 @@ function generateComprehension(
 function generateContextPick(
   phrase: Phrase,
   allPhrases: Phrase[],
-  script: 'latin' | 'cyrillic'
+  script: 'latin' | 'cyrillic',
+  lesson?: Lesson
 ): Exercise {
   const srField = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
   const correct = phrase[srField];
-  const distractors = pickRandom(
-    allPhrases.filter((p) => p.id !== phrase.id).map((p) => p[srField]),
-    3
-  );
+  const distractors = getDistractors(correct, phrase, allPhrases, srField, 3, lesson);
 
   return {
     type: 'context-pick',
@@ -370,15 +407,63 @@ function generateContextPick(
   };
 }
 
+/**
+ * Pedagogically-ordered exercise types per SRS bucket.
+ *
+ * Bucket 0 (New):      pure recognition — see Serbian, pick English
+ * Bucket 1 (Learning): multiple-choice both directions, context-pick
+ * Bucket 2 (Familiar): guided production — fill-in-blank, context-pick, MC en-to-sr
+ * Bucket 3 (Known):    free recall — type-translation, word-tiles, fill-in-blank, sentence-builder, comprehension
+ * Bucket 4 (Strong):   hardest production — type-translation, script-convert, sentence-builder, comprehension
+ * Bucket 5 (Mastered): maintenance — type-translation, script-convert only
+ */
 const exerciseTypesForBucket: Record<number, ExerciseType[]> = {
   0: ['multiple-choice'],
   1: ['multiple-choice', 'context-pick'],
-  2: ['multiple-choice', 'fill-in-blank', 'word-tiles', 'context-pick'],
-  3: ['fill-in-blank', 'word-tiles', 'type-translation', 'sentence-builder', 'context-pick'],
-  4: ['type-translation', 'word-tiles', 'sentence-builder', 'script-convert', 'comprehension'],
-  5: ['type-translation', 'script-convert', 'sentence-builder', 'comprehension'],
-  6: ['type-translation', 'script-convert', 'comprehension'],
-  7: ['type-translation', 'script-convert', 'comprehension'],
+  2: ['fill-in-blank', 'context-pick', 'multiple-choice'],
+  3: ['type-translation', 'word-tiles', 'fill-in-blank', 'sentence-builder', 'comprehension'],
+  4: ['type-translation', 'script-convert', 'sentence-builder', 'comprehension'],
+  5: ['type-translation', 'script-convert'],
+};
+
+/**
+ * Weighted random selection from exercise types for a bucket.
+ * Later entries in the array are treated as harder. Within a session,
+ * `sessionPosition` (0-1) biases toward harder types as the learner
+ * progresses.
+ */
+function pickExerciseType(types: ExerciseType[], sessionPosition: number): ExerciseType {
+  if (types.length <= 1) return types[0];
+
+  const weights = types.map((_, idx) => {
+    const normalizedIdx = idx / (types.length - 1);
+    return 1 + sessionPosition * normalizedIdx * 2;
+  });
+
+  const totalWeight = weights.reduce((a, b) => a + b, 0);
+  let roll = Math.random() * totalWeight;
+  for (let i = 0; i < weights.length; i++) {
+    roll -= weights[i];
+    if (roll <= 0) return types[i];
+  }
+  return types[types.length - 1];
+}
+
+/**
+ * Difficulty tier for session ordering.
+ * 0 = easy (recognition), 1 = medium (guided production), 2 = hard (free recall)
+ */
+const exerciseDifficultyTier: Record<ExerciseType, number> = {
+  'multiple-choice': 0,
+  'context-pick': 0,
+  'match-pairs': 1,
+  'fill-in-blank': 1,
+  'word-tiles': 1,
+  'pattern-match': 1,
+  'sentence-builder': 2,
+  'type-translation': 2,
+  'script-convert': 2,
+  'comprehension': 2,
 };
 
 function getDirectionForBucket(bucket: number): 'sr-to-en' | 'en-to-sr' {
@@ -392,16 +477,18 @@ export function generateExercise(
   allPhrases: Phrase[],
   script: 'latin' | 'cyrillic',
   bucket: number = 0,
-  forcedType?: ExerciseType
+  forcedType?: ExerciseType,
+  lesson?: Lesson,
+  sessionPosition: number = 0.5
 ): Exercise {
-  const clampedBucket = Math.min(bucket, 7);
+  const clampedBucket = Math.min(bucket, 5);
   const types = exerciseTypesForBucket[clampedBucket] ?? exerciseTypesForBucket[0];
-  const type = forcedType ?? types[Math.floor(Math.random() * types.length)];
+  const type = forcedType ?? pickExerciseType(types, sessionPosition);
   const direction = getDirectionForBucket(clampedBucket);
 
   switch (type) {
     case 'multiple-choice':
-      return generateMultipleChoice(phrase, allPhrases, script, direction);
+      return generateMultipleChoice(phrase, allPhrases, script, direction, lesson);
     case 'type-translation':
       return generateTypeTranslation(phrase, script, direction);
     case 'fill-in-blank':
@@ -411,13 +498,15 @@ export function generateExercise(
     case 'script-convert':
       return generateScriptConvert(phrase);
     case 'context-pick':
-      return generateContextPick(phrase, allPhrases, script);
+      return generateContextPick(phrase, allPhrases, script, lesson);
     case 'sentence-builder':
       return generateSentenceBuilder(phrase, allPhrases, script);
     case 'comprehension':
       return generateComprehension(phrase, allPhrases, script);
+    case 'pattern-match':
+    case 'match-pairs':
     default:
-      return generateMultipleChoice(phrase, allPhrases, script, 'sr-to-en');
+      return generateMultipleChoice(phrase, allPhrases, script, 'sr-to-en', lesson);
   }
 }
 
@@ -438,11 +527,28 @@ export function generateLessonExercises(
     const phrase = phrasesToPractice[i % phrasesToPractice.length];
     const progress = phraseProgress[phrase.id];
     const bucket = progress?.bucket ?? 0;
-    exercises.push(generateExercise(phrase, allPhrases, script, bucket));
+    const sessionPosition = exercises.length / Math.max(count - 1, 1);
+    exercises.push(
+      generateExercise(phrase, allPhrases, script, bucket, undefined, lesson, sessionPosition)
+    );
     i++;
   }
 
-  return exercises;
+  // Order exercises by difficulty tier within the session:
+  //   First third:  easy (recognition)
+  //   Middle third: medium (guided production)
+  //   Last third:   hard (free recall)
+  // Within each tier, shuffle for variety.
+  const chunkSize = Math.ceil(count / 3);
+  const sorted = [...exercises].sort(
+    (a, b) => exerciseDifficultyTier[a.type] - exerciseDifficultyTier[b.type]
+  );
+
+  const easyChunk = shuffle(sorted.slice(0, chunkSize));
+  const mediumChunk = shuffle(sorted.slice(chunkSize, chunkSize * 2));
+  const hardChunk = shuffle(sorted.slice(chunkSize * 2));
+
+  return [...easyChunk, ...mediumChunk, ...hardChunk];
 }
 
 export function generateReviewExercises(
@@ -454,6 +560,16 @@ export function generateReviewExercises(
   const allPhrases = lessons.flatMap(getAllPhrases);
   const phraseMap = new Map(allPhrases.map((p) => [p.id, p]));
 
+  // Build a lesson lookup for distractor grouping
+  const phraseLessonMap = new Map<string, Lesson>();
+  for (const lesson of lessons) {
+    for (const group of lesson.phraseGroups) {
+      for (const p of group.phrases) {
+        phraseLessonMap.set(p.id, lesson);
+      }
+    }
+  }
+
   const exercises: Exercise[] = [];
   const dueShuffled = shuffle(dueItems);
 
@@ -461,7 +577,11 @@ export function generateReviewExercises(
     const progress = dueShuffled[i];
     const phrase = phraseMap.get(progress.phraseId);
     if (!phrase) continue;
-    exercises.push(generateExercise(phrase, allPhrases, script, progress.bucket));
+    const lesson = phraseLessonMap.get(progress.phraseId);
+    const sessionPosition = exercises.length / Math.max(count - 1, 1);
+    exercises.push(
+      generateExercise(phrase, allPhrases, script, progress.bucket, undefined, lesson, sessionPosition)
+    );
   }
 
   return exercises;

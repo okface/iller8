@@ -82,7 +82,8 @@ export type ExerciseType =
   | 'script-convert'
   | 'context-pick'
   | 'sentence-builder'
-  | 'comprehension';
+  | 'comprehension'
+  | 'pattern-match';
 
 export interface Exercise {
   type: ExerciseType;
@@ -98,6 +99,10 @@ export interface Exercise {
   acceptedAnswers?: string[];
   dialogue?: string[];
   question?: string;
+  /** pattern-match specific fields */
+  originalPhrase?: { text: string; label: string };
+  variantPhrase?: { text: string; label: string };
+  grammarNote?: string;
 }
 
 export interface Achievement {
