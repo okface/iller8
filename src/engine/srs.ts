@@ -37,10 +37,10 @@ export function recordAnswer(
       streak: progress.streak + 1,
     };
   }
-  const drop = progress.bucket >= 3 ? 1 : 2;
+  const bucketDrop = progress.bucket >= 3 ? 1 : 2;
   return {
     ...progress,
-    bucket: Math.max(1, progress.bucket - drop),
+    bucket: Math.max(1, progress.bucket - bucketDrop),
     lastReviewed: Date.now(),
     incorrectCount: progress.incorrectCount + 1,
     streak: 0,
