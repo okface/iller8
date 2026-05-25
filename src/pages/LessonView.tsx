@@ -359,31 +359,31 @@ export default function LessonView({ progress, setProgress, script }: LessonView
       onClose={() => navigate('/')}
     >
       {exercise.type === 'multiple-choice' && (
-        <MultipleChoice key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+        <MultipleChoice key={currentIndex} exercise={exercise} onAnswer={handleAnswer} script={script} />
       )}
       {exercise.type === 'type-translation' && (
-        <TypeTranslation key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+        <TypeTranslation key={currentIndex} exercise={exercise} onAnswer={handleAnswer} script={script} />
       )}
       {exercise.type === 'fill-in-blank' && (
-        <FillInBlank key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+        <FillInBlank key={currentIndex} exercise={exercise} onAnswer={handleAnswer} script={script} />
       )}
       {exercise.type === 'word-tiles' && (
-        <WordTiles key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+        <WordTiles key={currentIndex} exercise={exercise} onAnswer={handleAnswer} script={script} />
       )}
       {exercise.type === 'script-convert' && (
-        <ScriptConvert key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+        <ScriptConvert key={currentIndex} exercise={exercise} onAnswer={handleAnswer} script={script} />
       )}
       {exercise.type === 'context-pick' && (
-        <ContextPick key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+        <ContextPick key={currentIndex} exercise={exercise} onAnswer={handleAnswer} script={script} />
       )}
       {exercise.type === 'sentence-builder' && (
-        <SentenceBuilder key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+        <SentenceBuilder key={currentIndex} exercise={exercise} onAnswer={handleAnswer} script={script} />
       )}
       {exercise.type === 'comprehension' && (
-        <Comprehension key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+        <Comprehension key={currentIndex} exercise={exercise} onAnswer={handleAnswer} script={script} />
       )}
       {exercise.type === 'pattern-match' && (
-        <PatternMatch key={currentIndex} exercise={exercise} onAnswer={handleAnswer} />
+        <PatternMatch key={currentIndex} exercise={exercise} onAnswer={handleAnswer} script={script} />
       )}
 
       {currentIndex === 4 && !showMatchPairs && exercises.length > 5 && (

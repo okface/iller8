@@ -4,21 +4,25 @@ import { checkAnswerFuzzy } from '../../engine/scoring';
 import Btn from '../ui/Btn';
 import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
+import DualScript from '../ui/DualScript';
+import ContinueButton from '../ui/ContinueButton';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
 interface PerspectiveShiftProps {
   exercise: Exercise;
   onAnswer: (correct: boolean) => void;
+  script?: 'latin' | 'cyrillic';
 }
 
 /**
  * Show a base Serbian phrase + a transformation instruction
  * ("Now to a group of friends. (formal/plural)") and ask the learner
  * to produce the variant. Multiple-choice when options are present,
- * type-it when they aren't.
+ * type-it when they aren't. No auto-advance — the learner taps Continue
+ * once they've absorbed the grammar note.
  */
-export default function PerspectiveShift({ exercise, onAnswer }: PerspectiveShiftProps) {
+export default function PerspectiveShift({ exercise, onAnswer, script = 'latin' }: PerspectiveShiftProps) {
   const hasOptions = !!exercise.options && exercise.options.length > 1;
   const [input, setInput] = useState('');
   const [picked, setPicked] = useState<string | null>(null);
@@ -29,7 +33,6 @@ export default function PerspectiveShift({ exercise, onAnswer }: PerspectiveShif
     if (result || !input.trim()) return;
     const check = checkAnswerFuzzy(input, exercise.correctAnswer);
     setResult(check);
-    setTimeout(() => onAnswer(check.correct), 1600);
   };
 
   const handlePick = (option: string) => {
@@ -37,11 +40,15 @@ export default function PerspectiveShift({ exercise, onAnswer }: PerspectiveShif
     setPicked(option);
     const correct = option === exercise.correctAnswer;
     setResult({ correct });
-    setTimeout(() => onAnswer(correct), 1600);
+  };
+
+  const handleContinue = () => {
+    if (!result) return;
+    onAnswer(result.correct);
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+    <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
       <div>
         <div style={metaLabel}>NOW SAY IT…</div>
         <div
@@ -60,36 +67,49 @@ export default function PerspectiveShift({ exercise, onAnswer }: PerspectiveShif
         </div>
       </div>
 
-      {/* Base phrase card — the anchor */}
-      <Card pad={16}>
-        <div style={metaLabel}>BASE</div>
-        <div
-          className="font-serif-sr"
-          style={{
-            fontSize: 24,
-            fontWeight: 500,
-            letterSpacing: -0.3,
-            color: T.text,
-            marginTop: 8,
-          }}
-        >
-          {exercise.baseSr ?? exercise.prompt}
-        </div>
-        {exercise.baseEn && (
-          <div
-            style={{
-              fontFamily: T.mono,
-              fontSize: 12,
-              color: T.dim,
-              marginTop: 4,
-            }}
-          >
-            {exercise.baseEn}
+      {/* Base phrase card — the anchor (dual-script when both available) */}
+      {(exercise.baseSr || exercise.baseEn || exercise.baseSrLatin) && (
+        <Card pad={16}>
+          <div style={metaLabel}>BASE</div>
+          <div style={{ marginTop: 8 }}>
+            {exercise.baseSrLatin && exercise.baseSrCyrillic ? (
+              <DualScript
+                srLatin={exercise.baseSrLatin}
+                srCyrillic={exercise.baseSrCyrillic}
+                script={script}
+                size="lg"
+              />
+            ) : exercise.baseSr ? (
+              <div
+                className="font-serif-sr"
+                style={{
+                  fontSize: 22,
+                  fontWeight: 500,
+                  letterSpacing: -0.3,
+                  color: T.text,
+                  lineHeight: 1.15,
+                }}
+              >
+                {exercise.baseSr}
+              </div>
+            ) : null}
           </div>
-        )}
-      </Card>
+          {exercise.baseEn && (
+            <div
+              style={{
+                fontSize: 13,
+                color: T.amber,
+                marginTop: 6,
+                fontWeight: 500,
+              }}
+            >
+              {exercise.baseEn}
+            </div>
+          )}
+        </Card>
+      )}
 
-      {/* The target English (what the variant should mean) */}
+      {/* Target meaning in English */}
       <div>
         <div style={metaLabel}>TARGET MEANING</div>
         <div
@@ -230,16 +250,20 @@ export default function PerspectiveShift({ exercise, onAnswer }: PerspectiveShif
       )}
 
       {result && exercise.grammarNote && (
-        <Card pad={12}>
+        <Card pad={14}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
             <MonoBadge kind="purple">
-              <IconBrain size={11} /> NOTE
+              <IconBrain size={11} /> WHY
             </MonoBadge>
           </div>
-          <div style={{ fontSize: 12, color: T.text, lineHeight: 1.55 }}>
+          <div style={{ fontSize: 13, color: T.text, lineHeight: 1.6 }}>
             {exercise.grammarNote}
           </div>
         </Card>
+      )}
+
+      {result && (
+        <ContinueButton correct={result.correct} onContinue={handleContinue} />
       )}
     </div>
   );

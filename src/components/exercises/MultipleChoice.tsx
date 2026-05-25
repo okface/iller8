@@ -1,55 +1,81 @@
 import { useState } from 'react';
 import type { Exercise } from '../../store/types';
 import Card from '../ui/Card';
+import MonoBadge from '../ui/MonoBadge';
+import DualScript from '../ui/DualScript';
+import ContinueButton from '../ui/ContinueButton';
 import { T, metaLabel } from '../../lib/tokens';
+import { IconBrain } from '../ui/Icons';
 
 interface MultipleChoiceProps {
   exercise: Exercise;
   onAnswer: (correct: boolean) => void;
+  /** Optional override — when provided, used for dual-script. */
+  script?: 'latin' | 'cyrillic';
 }
 
 const LETTERS = ['A', 'B', 'C', 'D'];
 
-export default function MultipleChoice({ exercise, onAnswer }: MultipleChoiceProps) {
+export default function MultipleChoice({ exercise, onAnswer, script }: MultipleChoiceProps) {
   const [selected, setSelected] = useState<string | null>(null);
-  const [answered, setAnswered] = useState(false);
+  const [result, setResult] = useState<{ correct: boolean } | null>(null);
 
   const handleSelect = (option: string) => {
-    if (answered) return;
+    if (result) return;
     setSelected(option);
-    setAnswered(true);
-    const correct = option === exercise.correctAnswer;
-    setTimeout(() => onAnswer(correct), 1800);
+    setResult({ correct: option === exercise.correctAnswer });
   };
 
-  // sr-to-en: prompt is Serbian (serif), options are English (sans)
+  const handleContinue = () => {
+    if (!result) return;
+    onAnswer(result.correct);
+  };
+
+  // sr-to-en: prompt is Serbian → use serif + dual-script
   // en-to-sr: prompt is English (sans), options are Serbian (serif)
   const promptIsSerbian = exercise.direction === 'sr-to-en';
   const optionsAreSerbian = !promptIsSerbian;
+  const inferredScript = script ?? 'latin';
 
-  const optionLabel = promptIsSerbian ? 'WHAT DOES THIS MEAN?' : 'PICK THE SERBIAN FOR';
+  const optionLabel = promptIsSerbian ? 'WHAT DOES THIS MEAN?' : 'HOW DO YOU SAY THIS?';
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
       <div>
         <div style={metaLabel}>{optionLabel}</div>
-        <div
-          className={promptIsSerbian ? 'font-serif-sr' : undefined}
-          style={{
-            fontSize: promptIsSerbian ? 30 : 28,
-            fontWeight: promptIsSerbian ? 500 : 700,
-            letterSpacing: -0.6,
-            lineHeight: 1.15,
-            color: T.text,
-            marginTop: 8,
-          }}
-        >
-          {exercise.prompt}
+        <div style={{ marginTop: 10 }}>
+          {promptIsSerbian && exercise.phrase ? (
+            <DualScript
+              srLatin={exercise.phrase.sr_latin}
+              srCyrillic={exercise.phrase.sr_cyrillic}
+              script={inferredScript}
+              size="hero"
+              weight={500}
+            />
+          ) : (
+            <div
+              style={{
+                fontSize: 28,
+                fontWeight: 700,
+                letterSpacing: -0.6,
+                lineHeight: 1.15,
+                color: T.text,
+              }}
+            >
+              {exercise.prompt}
+            </div>
+          )}
         </div>
-        {exercise.context && !answered && (
+        {exercise.context && !result && (
           <div
             className="font-serif-sr"
-            style={{ fontStyle: 'italic', fontSize: 13, color: T.dim, marginTop: 8, lineHeight: 1.5 }}
+            style={{
+              fontStyle: 'italic',
+              fontSize: 13,
+              color: T.dim,
+              marginTop: 10,
+              lineHeight: 1.5,
+            }}
           >
             {exercise.context}
           </div>
@@ -69,7 +95,7 @@ export default function MultipleChoice({ exercise, onAnswer }: MultipleChoicePro
           let pillColor: string = T.dim;
           let textColor: string = T.text;
 
-          if (!answered) {
+          if (!result) {
             if (isSelected) {
               bg = T.surfaceWarm;
               border = T.amber;
@@ -100,7 +126,7 @@ export default function MultipleChoice({ exercise, onAnswer }: MultipleChoicePro
             <button
               key={i}
               onClick={() => handleSelect(option)}
-              disabled={answered}
+              disabled={!!result}
               style={{
                 padding: '14px 16px',
                 borderRadius: T.r3,
@@ -110,7 +136,7 @@ export default function MultipleChoice({ exercise, onAnswer }: MultipleChoicePro
                 alignItems: 'center',
                 gap: 14,
                 opacity,
-                cursor: answered ? 'default' : 'pointer',
+                cursor: result ? 'default' : 'pointer',
                 transition: `all ${T.fast} ${T.ease}`,
                 textAlign: 'left',
                 width: '100%',
@@ -140,7 +166,7 @@ export default function MultipleChoice({ exercise, onAnswer }: MultipleChoicePro
                   className={optionsAreSerbian ? 'font-serif-sr' : undefined}
                   style={{
                     fontSize: optionsAreSerbian ? 18 : 15,
-                    fontWeight: optionsAreSerbian ? 500 : 500,
+                    fontWeight: 500,
                     color: textColor,
                     letterSpacing: optionsAreSerbian ? -0.2 : 0,
                   }}
@@ -153,27 +179,33 @@ export default function MultipleChoice({ exercise, onAnswer }: MultipleChoicePro
         })}
       </div>
 
-      {answered && selected !== exercise.correctAnswer && (
-        <div style={{ fontSize: 13, color: T.green }}>
-          Correct answer: {exercise.correctAnswer}
-        </div>
+      {result && !result.correct && (
+        <Card pad={14}>
+          <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT</div>
+          <div
+            className={optionsAreSerbian ? 'font-serif-sr' : undefined}
+            style={{ fontSize: 17, color: T.green, fontWeight: 500 }}
+          >
+            {exercise.correctAnswer}
+          </div>
+        </Card>
       )}
 
-      {answered && exercise.phrase.notes && (
-        <Card pad={12}>
-          <div
-            style={{
-              ...metaLabel,
-              color: T.purple,
-              marginBottom: 6,
-            }}
-          >
-            NOTE
+      {result && exercise.phrase.notes && (
+        <Card pad={14}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+            <MonoBadge kind="purple">
+              <IconBrain size={11} /> WHY
+            </MonoBadge>
           </div>
-          <div style={{ fontSize: 12, color: T.text, lineHeight: 1.55 }}>
+          <div style={{ fontSize: 13, color: T.text, lineHeight: 1.6 }}>
             {exercise.phrase.notes}
           </div>
         </Card>
+      )}
+
+      {result && (
+        <ContinueButton correct={result.correct} onContinue={handleContinue} />
       )}
     </div>
   );

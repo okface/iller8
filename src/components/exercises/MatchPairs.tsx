@@ -44,14 +44,16 @@ export default function MatchPairs({ lesson, script, onComplete }: MatchPairsPro
     if (selectedSr && selectedEn) checkMatch(selectedSr, selectedEn);
   }, [selectedSr, selectedEn, checkMatch]);
 
+  const allMatched = matched.size === pairs.pairs.length;
+
   useEffect(() => {
-    if (matched.size === pairs.pairs.length) {
+    if (allMatched) {
       setTimeout(
         () => onComplete(pairs.pairs.length - mistakes, pairs.pairs.length),
-        500
+        1500
       );
     }
-  }, [matched.size, pairs.pairs.length, mistakes, onComplete]);
+  }, [allMatched, pairs.pairs.length, mistakes, onComplete]);
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
@@ -70,6 +72,17 @@ export default function MatchPairs({ lesson, script, onComplete }: MatchPairsPro
         <div style={{ ...metaLabel, marginTop: 6 }}>
           {matched.size} / {pairs.pairs.length} MATCHED
         </div>
+        {allMatched && (
+          <div
+            style={{
+              ...metaLabel,
+              color: T.green,
+              marginTop: 6,
+            }}
+          >
+            ALL MATCHED · FINISHING…
+          </div>
+        )}
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 8 }}>

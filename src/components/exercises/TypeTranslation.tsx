@@ -3,14 +3,19 @@ import type { Exercise } from '../../store/types';
 import { checkAnswerFuzzy } from '../../engine/scoring';
 import Btn from '../ui/Btn';
 import Card from '../ui/Card';
+import MonoBadge from '../ui/MonoBadge';
+import DualScript from '../ui/DualScript';
+import ContinueButton from '../ui/ContinueButton';
 import { T, metaLabel } from '../../lib/tokens';
+import { IconBrain } from '../ui/Icons';
 
 interface TypeTranslationProps {
   exercise: Exercise;
   onAnswer: (correct: boolean) => void;
+  script?: 'latin' | 'cyrillic';
 }
 
-export default function TypeTranslation({ exercise, onAnswer }: TypeTranslationProps) {
+export default function TypeTranslation({ exercise, onAnswer, script = 'latin' }: TypeTranslationProps) {
   const [input, setInput] = useState('');
   const [result, setResult] = useState<{ correct: boolean; close: boolean } | null>(null);
 
@@ -19,7 +24,11 @@ export default function TypeTranslation({ exercise, onAnswer }: TypeTranslationP
     if (result || !input.trim()) return;
     const check = checkAnswerFuzzy(input, exercise.correctAnswer);
     setResult(check);
-    setTimeout(() => onAnswer(check.correct), 1500);
+  };
+
+  const handleContinue = () => {
+    if (!result) return;
+    onAnswer(result.correct);
   };
 
   const targetIsSerbian = exercise.direction !== 'sr-to-en';
@@ -40,23 +49,33 @@ export default function TypeTranslation({ exercise, onAnswer }: TypeTranslationP
         <div style={metaLabel}>
           {targetIsSerbian ? 'TYPE IN SERBIAN' : 'TYPE IN ENGLISH'}
         </div>
-        <div
-          className={promptIsSerbian ? 'font-serif-sr' : undefined}
-          style={{
-            fontSize: promptIsSerbian ? 30 : 26,
-            fontWeight: promptIsSerbian ? 500 : 700,
-            letterSpacing: -0.5,
-            lineHeight: 1.15,
-            color: T.text,
-            marginTop: 8,
-          }}
-        >
-          {exercise.prompt}
+        <div style={{ marginTop: 10 }}>
+          {promptIsSerbian && exercise.phrase ? (
+            <DualScript
+              srLatin={exercise.phrase.sr_latin}
+              srCyrillic={exercise.phrase.sr_cyrillic}
+              script={script}
+              size="hero"
+              weight={500}
+            />
+          ) : (
+            <div
+              style={{
+                fontSize: 26,
+                fontWeight: 700,
+                letterSpacing: -0.5,
+                lineHeight: 1.15,
+                color: T.text,
+              }}
+            >
+              {exercise.prompt}
+            </div>
+          )}
         </div>
         {exercise.context && !result && (
           <div
             className="font-serif-sr"
-            style={{ fontStyle: 'italic', fontSize: 12, color: T.dim, marginTop: 6, lineHeight: 1.5 }}
+            style={{ fontStyle: 'italic', fontSize: 12, color: T.dim, marginTop: 10, lineHeight: 1.5 }}
           >
             {exercise.context}
           </div>
@@ -129,12 +148,20 @@ export default function TypeTranslation({ exercise, onAnswer }: TypeTranslationP
       )}
 
       {result && exercise.phrase.notes && (
-        <Card pad={12}>
-          <div style={{ ...metaLabel, color: T.purple, marginBottom: 6 }}>NOTE</div>
-          <div style={{ fontSize: 12, color: T.text, lineHeight: 1.55 }}>
+        <Card pad={14}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+            <MonoBadge kind="purple">
+              <IconBrain size={11} /> WHY
+            </MonoBadge>
+          </div>
+          <div style={{ fontSize: 13, color: T.text, lineHeight: 1.6 }}>
             {exercise.phrase.notes}
           </div>
         </Card>
+      )}
+
+      {result && (
+        <ContinueButton correct={result.correct} onContinue={handleContinue} />
       )}
     </div>
   );

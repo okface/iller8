@@ -260,6 +260,7 @@ export default function FamilyDrill({ progress, setProgress, script }: FamilyDri
           key={currentIndex}
           exercise={exercise}
           onAnswer={handleAnswer}
+          script={script}
         />
       </DrillFrame>
     );

@@ -2,17 +2,21 @@ import { useState } from 'react';
 import type { Exercise } from '../../store/types';
 import Btn from '../ui/Btn';
 import Card from '../ui/Card';
+import MonoBadge from '../ui/MonoBadge';
+import ContinueButton from '../ui/ContinueButton';
 import { T, metaLabel } from '../../lib/tokens';
+import { IconBrain } from '../ui/Icons';
 
 interface WordTilesProps {
   exercise: Exercise;
   onAnswer: (correct: boolean) => void;
+  script?: 'latin' | 'cyrillic';
 }
 
 export default function WordTiles({ exercise, onAnswer }: WordTilesProps) {
   const [placed, setPlaced] = useState<string[]>([]);
   const [available, setAvailable] = useState<string[]>(exercise.tiles ?? []);
-  const [result, setResult] = useState<boolean | null>(null);
+  const [result, setResult] = useState<{ correct: boolean } | null>(null);
 
   const handleTileClick = (word: string, index: number) => {
     if (result !== null) return;
@@ -30,14 +34,18 @@ export default function WordTiles({ exercise, onAnswer }: WordTilesProps) {
   const handleCheck = () => {
     const answer = placed.join(' ');
     const correct = answer === exercise.correctAnswer;
-    setResult(correct);
-    setTimeout(() => onAnswer(correct), 1500);
+    setResult({ correct });
+  };
+
+  const handleContinue = () => {
+    if (!result) return;
+    onAnswer(result.correct);
   };
 
   const dropBg =
-    result === null ? T.surface : result ? T.greenDim : T.redDim;
+    result === null ? T.surface : result.correct ? T.greenDim : T.redDim;
   const dropBorder =
-    result === null ? T.border : result ? 'rgba(34,197,94,0.4)' : 'rgba(239,68,68,0.4)';
+    result === null ? T.border : result.correct ? 'rgba(34,197,94,0.4)' : 'rgba(239,68,68,0.4)';
 
   const tileSelectedStyle = {
     padding: '10px 14px',
@@ -83,7 +91,7 @@ export default function WordTiles({ exercise, onAnswer }: WordTilesProps) {
       </div>
 
       <div
-        className={result === false ? 'anim-shake' : result === true ? 'anim-pop' : undefined}
+        className={result?.correct === false ? 'anim-shake' : result?.correct === true ? 'anim-pop' : undefined}
         style={{
           padding: '14px 14px',
           borderRadius: T.r3,
@@ -144,7 +152,7 @@ export default function WordTiles({ exercise, onAnswer }: WordTilesProps) {
         </Btn>
       )}
 
-      {result === false && (
+      {result && !result.correct && (
         <Card pad={14}>
           <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT ORDER</div>
           <div className="font-serif-sr" style={{ fontSize: 17, color: T.green, fontWeight: 500 }}>
@@ -153,10 +161,27 @@ export default function WordTiles({ exercise, onAnswer }: WordTilesProps) {
         </Card>
       )}
 
-      {result === true && (
+      {result?.correct && (
         <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
           Odlično ✓
         </div>
+      )}
+
+      {result && exercise.phrase.notes && (
+        <Card pad={14}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+            <MonoBadge kind="purple">
+              <IconBrain size={11} /> WHY
+            </MonoBadge>
+          </div>
+          <div style={{ fontSize: 13, color: T.text, lineHeight: 1.6 }}>
+            {exercise.phrase.notes}
+          </div>
+        </Card>
+      )}
+
+      {result && (
+        <ContinueButton correct={result.correct} onContinue={handleContinue} />
       )}
     </div>
   );

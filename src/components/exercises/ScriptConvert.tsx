@@ -4,16 +4,20 @@ import { checkAnswer } from '../../engine/scoring';
 import { isCyrillic } from '../../engine/script-converter';
 import Btn from '../ui/Btn';
 import Card from '../ui/Card';
+import MonoBadge from '../ui/MonoBadge';
+import ContinueButton from '../ui/ContinueButton';
 import { T, metaLabel } from '../../lib/tokens';
+import { IconBrain } from '../ui/Icons';
 
 interface ScriptConvertProps {
   exercise: Exercise;
   onAnswer: (correct: boolean) => void;
+  script?: 'latin' | 'cyrillic';
 }
 
 export default function ScriptConvert({ exercise, onAnswer }: ScriptConvertProps) {
   const [input, setInput] = useState('');
-  const [result, setResult] = useState<boolean | null>(null);
+  const [result, setResult] = useState<{ correct: boolean } | null>(null);
 
   const fromCyrillic = isCyrillic(exercise.prompt);
 
@@ -22,14 +26,18 @@ export default function ScriptConvert({ exercise, onAnswer }: ScriptConvertProps
     if (result !== null || !input.trim()) return;
 
     const correct = checkAnswer(input, exercise.correctAnswer);
-    setResult(correct);
-    setTimeout(() => onAnswer(correct), 1500);
+    setResult({ correct });
+  };
+
+  const handleContinue = () => {
+    if (!result) return;
+    onAnswer(result.correct);
   };
 
   const borderColor =
-    result === null ? T.borderWarm : result ? T.green : T.red;
+    result === null ? T.borderWarm : result.correct ? T.green : T.red;
   const bgColor =
-    result === null ? T.surface : result ? T.greenDim : T.redDim;
+    result === null ? T.surface : result.correct ? T.greenDim : T.redDim;
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
@@ -112,7 +120,7 @@ export default function ScriptConvert({ exercise, onAnswer }: ScriptConvertProps
         )}
       </form>
 
-      {result === false && (
+      {result && !result.correct && (
         <Card pad={14}>
           <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT ANSWER</div>
           <div
@@ -124,10 +132,27 @@ export default function ScriptConvert({ exercise, onAnswer }: ScriptConvertProps
         </Card>
       )}
 
-      {result === true && (
+      {result?.correct && (
         <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
           Svaka čast ✓
         </div>
+      )}
+
+      {result && exercise.phrase.notes && (
+        <Card pad={14}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+            <MonoBadge kind="purple">
+              <IconBrain size={11} /> WHY
+            </MonoBadge>
+          </div>
+          <div style={{ fontSize: 13, color: T.text, lineHeight: 1.6 }}>
+            {exercise.phrase.notes}
+          </div>
+        </Card>
+      )}
+
+      {result && (
+        <ContinueButton correct={result.correct} onContinue={handleContinue} />
       )}
     </div>
   );

@@ -3,11 +3,15 @@ import type { Exercise } from '../../store/types';
 import { checkAnswerFuzzy } from '../../engine/scoring';
 import Btn from '../ui/Btn';
 import Card from '../ui/Card';
+import MonoBadge from '../ui/MonoBadge';
+import ContinueButton from '../ui/ContinueButton';
 import { T, metaLabel } from '../../lib/tokens';
+import { IconBrain } from '../ui/Icons';
 
 interface FillInBlankProps {
   exercise: Exercise;
   onAnswer: (correct: boolean) => void;
+  script?: 'latin' | 'cyrillic';
 }
 
 export default function FillInBlank({ exercise, onAnswer }: FillInBlankProps) {
@@ -20,7 +24,11 @@ export default function FillInBlank({ exercise, onAnswer }: FillInBlankProps) {
 
     const check = checkAnswerFuzzy(input, exercise.correctAnswer);
     setResult(check);
-    setTimeout(() => onAnswer(check.correct), 1500);
+  };
+
+  const handleContinue = () => {
+    if (!result) return;
+    onAnswer(result.correct);
   };
 
   const borderColor =
@@ -118,12 +126,20 @@ export default function FillInBlank({ exercise, onAnswer }: FillInBlankProps) {
       )}
 
       {result && exercise.phrase.notes && (
-        <Card pad={12}>
-          <div style={{ ...metaLabel, color: T.purple, marginBottom: 6 }}>NOTE</div>
-          <div style={{ fontSize: 12, color: T.text, lineHeight: 1.55 }}>
+        <Card pad={14}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+            <MonoBadge kind="purple">
+              <IconBrain size={11} /> WHY
+            </MonoBadge>
+          </div>
+          <div style={{ fontSize: 13, color: T.text, lineHeight: 1.6 }}>
             {exercise.phrase.notes}
           </div>
         </Card>
+      )}
+
+      {result && (
+        <ContinueButton correct={result.correct} onContinue={handleContinue} />
       )}
     </div>
   );

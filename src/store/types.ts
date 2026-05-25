@@ -109,7 +109,9 @@ export interface Exercise {
   variantPhrase?: { text: string; label: string };
   grammarNote?: string;
   /** perspective-shift specific fields */
-  baseSr?: string;
+  baseSr?: string;             // the script the learner is currently using
+  baseSrLatin?: string;
+  baseSrCyrillic?: string;
   baseEn?: string;
   transformLabel?: string;
   transformHint?: string;

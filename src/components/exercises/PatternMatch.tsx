@@ -6,6 +6,7 @@ import { T, metaLabel } from '../../lib/tokens';
 interface PatternMatchProps {
   exercise: Exercise;
   onAnswer: (correct: boolean) => void;
+  script?: 'latin' | 'cyrillic';
 }
 
 const LETTERS = ['A', 'B', 'C', 'D'];

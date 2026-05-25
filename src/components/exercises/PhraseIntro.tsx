@@ -3,6 +3,7 @@ import type { Phrase } from '../../store/types';
 import Card from '../ui/Card';
 import Btn from '../ui/Btn';
 import MonoBadge from '../ui/MonoBadge';
+import DualScript from '../ui/DualScript';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -23,9 +24,6 @@ export default function PhraseIntro({ phrases, script, onComplete }: PhraseIntro
   const [revealed, setRevealed] = useState(false);
   const phrase = phrases[index];
   if (!phrase) return null;
-
-  const srText = script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin;
-  const altScript = script === 'cyrillic' ? phrase.sr_latin : phrase.sr_cyrillic;
 
   const next = () => {
     if (index + 1 >= phrases.length) {
@@ -63,28 +61,14 @@ export default function PhraseIntro({ phrases, script, onComplete }: PhraseIntro
         </div>
       </div>
 
-      <div
-        className="font-serif-sr"
-        style={{
-          fontSize: 40,
-          fontWeight: 500,
-          letterSpacing: -0.7,
-          marginTop: 6,
-          lineHeight: 1.1,
-          color: T.text,
-        }}
-      >
-        {srText}
-      </div>
-
-      <div
-        style={{
-          fontFamily: T.mono,
-          fontSize: 13,
-          color: T.dim,
-        }}
-      >
-        {altScript}
+      <div style={{ marginTop: 6 }}>
+        <DualScript
+          srLatin={phrase.sr_latin}
+          srCyrillic={phrase.sr_cyrillic}
+          script={script}
+          size="hero"
+          weight={500}
+        />
       </div>
 
       {!revealed ? (

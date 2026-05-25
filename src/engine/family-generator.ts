@@ -62,6 +62,8 @@ export function generatePerspectiveShiftExercise(
     correctAnswer: correct,
     prompt: variant.en,
     baseSr,
+    baseSrLatin: family.base.sr_latin,
+    baseSrCyrillic: family.base.sr_cyrillic,
     baseEn: family.base.en,
     transformLabel: variant.label,
     transformHint: variant.hint,
