@@ -231,6 +231,7 @@ export default function LessonView({ progress, setProgress, script }: LessonView
             phrases={introPhrases}
             script={script}
             onComplete={handleIntroComplete}
+            progress={progress}
           />
         </DrillFrame>
       </div>

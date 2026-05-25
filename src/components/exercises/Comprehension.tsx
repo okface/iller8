@@ -1,7 +1,10 @@
 import { useState } from 'react';
 import type { Exercise } from '../../store/types';
 import Card from '../ui/Card';
+import MonoBadge from '../ui/MonoBadge';
+import ContinueButton from '../ui/ContinueButton';
 import { T, metaLabel } from '../../lib/tokens';
+import { IconBrain } from '../ui/Icons';
 
 interface ComprehensionProps {
   exercise: Exercise;
@@ -13,14 +16,17 @@ const LETTERS = ['A', 'B', 'C', 'D'];
 
 export default function Comprehension({ exercise, onAnswer }: ComprehensionProps) {
   const [selected, setSelected] = useState<string | null>(null);
-  const [answered, setAnswered] = useState(false);
+  const [result, setResult] = useState<{ correct: boolean } | null>(null);
 
   const handleSelect = (option: string) => {
-    if (answered) return;
+    if (result) return;
     setSelected(option);
-    setAnswered(true);
-    const correct = option === exercise.correctAnswer;
-    setTimeout(() => onAnswer(correct), 2000);
+    setResult({ correct: option === exercise.correctAnswer });
+  };
+
+  const handleContinue = () => {
+    if (!result) return;
+    onAnswer(result.correct);
   };
 
   return (
@@ -85,7 +91,7 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
           let pillColor: string = T.dim;
           let textColor: string = T.text;
 
-          if (!answered) {
+          if (!result) {
             if (isSelected) {
               bg = T.surfaceWarm;
               border = T.amber;
@@ -116,7 +122,7 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
             <button
               key={i}
               onClick={() => handleSelect(option)}
-              disabled={answered}
+              disabled={!!result}
               style={{
                 padding: '14px 16px',
                 borderRadius: T.r3,
@@ -126,7 +132,7 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
                 alignItems: 'center',
                 gap: 14,
                 opacity,
-                cursor: answered ? 'default' : 'pointer',
+                cursor: result ? 'default' : 'pointer',
                 transition: `all ${T.fast} ${T.ease}`,
                 textAlign: 'left',
                 width: '100%',
@@ -169,13 +175,13 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
         })}
       </div>
 
-      {answered && selected === exercise.correctAnswer && (
+      {result?.correct && (
         <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
           Odlično ✓
         </div>
       )}
 
-      {answered && selected !== exercise.correctAnswer && (
+      {result && !result.correct && (
         <Card pad={14}>
           <div style={{ ...metaLabel, marginBottom: 6 }}>TAČAN ODGOVOR</div>
           <div
@@ -187,13 +193,21 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
         </Card>
       )}
 
-      {answered && exercise.phrase.notes && (
-        <Card pad={12}>
-          <div style={{ ...metaLabel, color: T.purple, marginBottom: 6 }}>NOTE</div>
-          <div style={{ fontSize: 12, color: T.text, lineHeight: 1.55 }}>
+      {result && exercise.phrase.notes && (
+        <Card pad={14}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
+            <MonoBadge kind="purple">
+              <IconBrain size={11} /> WHY
+            </MonoBadge>
+          </div>
+          <div style={{ fontSize: 13, color: T.text, lineHeight: 1.6 }}>
             {exercise.phrase.notes}
           </div>
         </Card>
+      )}
+
+      {result && (
+        <ContinueButton correct={result.correct} onContinue={handleContinue} />
       )}
     </div>
   );

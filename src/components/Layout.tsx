@@ -3,7 +3,7 @@ import { T, monoPillStyle } from '../lib/tokens';
 import I8Mark from './ui/I8Mark';
 import ScriptToggle from './ScriptToggle';
 import StreakCounter from './StreakCounter';
-import { IconBook, IconRefresh, IconStar, IconUser, IconBolt, IconFire } from './ui/Icons';
+import { IconBook, IconRefresh, IconUser, IconBolt, IconFire } from './ui/Icons';
 
 interface LayoutProps {
   script: 'latin' | 'cyrillic';
@@ -135,10 +135,10 @@ export default function Layout({ script, onScriptChange, streak = 0 }: LayoutPro
             padding: '8px 12px 14px',
           }}
         >
-          <TabItem to="/" label="Learn" icon={<IconBook size={16} />} />
+          <TabItem to="/" label="Home" icon={<IconBook size={16} />} />
+          <TabItem to="/words" label="Words" icon={<IconBook size={16} />} />
           <TabItem to="/hammer" label="Hammer" icon={<IconBolt size={16} />} />
           <TabItem to="/review" label="Review" icon={<IconRefresh size={16} />} />
-          <TabItem to="/stats" label="Stats" icon={<IconStar size={16} />} />
           <TabItem to="/settings" label="Me" icon={<IconUser size={16} />} />
         </div>
       </nav>

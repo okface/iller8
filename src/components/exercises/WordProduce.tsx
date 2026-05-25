@@ -6,7 +6,7 @@ import ContinueButton from '../ui/ContinueButton';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
-interface PatternMatchProps {
+interface WordProduceProps {
   exercise: Exercise;
   onAnswer: (correct: boolean) => void;
   script?: 'latin' | 'cyrillic';
@@ -14,9 +14,30 @@ interface PatternMatchProps {
 
 const LETTERS = ['A', 'B', 'C', 'D'];
 
-export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) {
+/**
+ * Single-word production: show an English gloss, pick the Serbian word
+ * from 4 options (minimal-pair distractors). This is the harder
+ * direction — and the one the user asked for. "How do I say 'dear' in
+ * Serbian?" with 4 plausible Serbian words.
+ *
+ * Conventions on Exercise:
+ *   prompt              = English gloss (the question)
+ *   correctAnswer       = correct Serbian lemma (in the learner's script)
+ *   phrase.sr_latin     = Serbian word in Latin
+ *   phrase.sr_cyrillic  = Serbian word in Cyrillic
+ *   phrase.en           = English gloss
+ *   options             = 4 Serbian lemmas (one correct + 3 distractors)
+ *   context             = POS label
+ *   phrase.notes        = optional grammar note
+ */
+export default function WordProduce({ exercise, onAnswer, script: _script = 'latin' }: WordProduceProps) {
   const [selected, setSelected] = useState<string | null>(null);
   const [result, setResult] = useState<{ correct: boolean } | null>(null);
+
+  // _script is accepted for API consistency with sibling exercises;
+  // the actual rendered script is determined by what the generator
+  // put in `options` and `correctAnswer`.
+  void _script;
 
   const handleSelect = (option: string) => {
     if (result) return;
@@ -29,90 +50,29 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
     onAnswer(result.correct);
   };
 
-  const original = exercise.originalPhrase;
-  const variant = exercise.variantPhrase;
-
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-      {/* Header */}
       <div>
-        <div style={{ ...metaLabel, color: T.amber }}>COMPARE THESE PHRASES</div>
-
-        {/* Side-by-side phrase cards */}
+        <div style={metaLabel}>HOW DO YOU SAY THIS WORD?</div>
         <div
           style={{
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            gap: 10,
-            marginTop: 12,
+            marginTop: 10,
+            fontSize: 32,
+            fontWeight: 700,
+            letterSpacing: -0.6,
+            lineHeight: 1.15,
+            color: T.text,
           }}
         >
-          {/* Original phrase */}
-          <Card pad={14}>
-            <div
-              className="font-serif-sr"
-              style={{
-                fontSize: 18,
-                fontWeight: 500,
-                letterSpacing: -0.2,
-                lineHeight: 1.35,
-                color: T.text,
-              }}
-            >
-              {original?.text}
-            </div>
-            <div
-              style={{
-                fontSize: 12,
-                color: T.dim,
-                marginTop: 8,
-                fontFamily: T.mono,
-              }}
-            >
-              {original?.label}
-            </div>
-          </Card>
-
-          {/* Variant phrase */}
-          <Card warm pad={14}>
-            <div
-              className="font-serif-sr"
-              style={{
-                fontSize: 18,
-                fontWeight: 500,
-                letterSpacing: -0.2,
-                lineHeight: 1.35,
-                color: T.text,
-              }}
-            >
-              {variant?.text}
-            </div>
-            <div
-              style={{
-                fontSize: 12,
-                color: T.dim,
-                marginTop: 8,
-                fontFamily: T.mono,
-              }}
-            >
-              {variant?.label}
-            </div>
-          </Card>
+          {exercise.prompt}
         </div>
-
-        <div
-          style={{
-            fontSize: 13,
-            color: T.dim,
-            marginTop: 14,
-            fontFamily: T.mono,
-          }}
-        >
-          What changed between these two?
-        </div>
+        {exercise.context && (
+          <div style={{ marginTop: 8 }}>
+            <MonoBadge>{exercise.context}</MonoBadge>
+          </div>
+        )}
       </div>
 
-      {/* Options */}
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
         {exercise.options?.map((option, i) => {
           const isCorrect = option === exercise.correctAnswer;
@@ -134,23 +94,21 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
               pillBorder = T.amber;
               pillColor = T.inkOnAmber;
             }
+          } else if (isCorrect) {
+            bg = T.greenDim;
+            border = 'rgba(34,197,94,0.4)';
+            pillBg = T.green;
+            pillBorder = T.green;
+            pillColor = '#072c14';
+          } else if (isSelected) {
+            bg = T.redDim;
+            border = 'rgba(239,68,68,0.4)';
+            pillBg = T.red;
+            pillBorder = T.red;
+            pillColor = '#3a0a0a';
           } else {
-            if (isCorrect) {
-              bg = T.greenDim;
-              border = 'rgba(34,197,94,0.4)';
-              pillBg = T.green;
-              pillBorder = T.green;
-              pillColor = '#072c14';
-            } else if (isSelected) {
-              bg = T.redDim;
-              border = 'rgba(239,68,68,0.4)';
-              pillBg = T.red;
-              pillBorder = T.red;
-              pillColor = '#3a0a0a';
-            } else {
-              opacity = 0.45;
-              textColor = T.dim;
-            }
+            opacity = 0.45;
+            textColor = T.dim;
           }
 
           return (
@@ -158,6 +116,7 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
               key={i}
               onClick={() => handleSelect(option)}
               disabled={!!result}
+              className="font-serif-sr"
               style={{
                 padding: '14px 16px',
                 borderRadius: T.r3,
@@ -171,6 +130,7 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
                 transition: `all ${T.fast} ${T.ease}`,
                 textAlign: 'left',
                 width: '100%',
+                color: textColor,
               }}
             >
               <span
@@ -192,43 +152,27 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
               >
                 {LETTERS[i]}
               </span>
-              <div style={{ flex: 1, minWidth: 0 }}>
-                <div
-                  style={{
-                    fontSize: 14,
-                    fontWeight: 500,
-                    color: textColor,
-                    lineHeight: 1.4,
-                  }}
-                >
-                  {option}
-                </div>
+              <div style={{ fontSize: 18, fontWeight: 500, letterSpacing: -0.2 }}>
+                {option}
               </div>
             </button>
           );
         })}
       </div>
 
-      {/* Feedback after answering */}
-      {result?.correct && (
-        <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
-          Tačno ✓
-        </div>
-      )}
-
       {result && !result.correct && (
         <Card pad={14}>
-          <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT ANSWER</div>
+          <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT</div>
           <div
-            style={{ fontSize: 15, color: T.green, fontWeight: 500, lineHeight: 1.4 }}
+            className="font-serif-sr"
+            style={{ fontSize: 18, color: T.green, fontWeight: 500 }}
           >
             {exercise.correctAnswer}
           </div>
         </Card>
       )}
 
-      {/* Grammar note shown after answering */}
-      {result && exercise.grammarNote && (
+      {result && exercise.phrase.notes && (
         <Card pad={14}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 8 }}>
             <MonoBadge kind="purple">
@@ -236,7 +180,7 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
             </MonoBadge>
           </div>
           <div style={{ fontSize: 13, color: T.text, lineHeight: 1.6 }}>
-            {exercise.grammarNote}
+            {exercise.phrase.notes}
           </div>
         </Card>
       )}

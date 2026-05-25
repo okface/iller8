@@ -563,6 +563,8 @@ const exerciseDifficultyTier: Record<ExerciseType, number> = {
   'script-convert': 2,
   'comprehension': 2,
   'perspective-shift': 1,
+  'word-recognize': 0,
+  'word-produce': 1,
 };
 
 function getDirectionForBucket(bucket: number): 'sr-to-en' | 'en-to-sr' {

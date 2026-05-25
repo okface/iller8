@@ -2,6 +2,8 @@ import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { lessons, isLessonUnlocked, getAllPhrases } from '../data/lessons';
 import { families } from '../data/phrase-families';
+import { words } from '../data/words';
+import { getWordBucket } from '../lib/word-progress';
 import LessonCard from '../components/LessonCard';
 import Card from '../components/ui/Card';
 import LinearProgress from '../components/ui/LinearProgress';
@@ -237,18 +239,36 @@ export default function Dashboard({ progress, script }: DashboardProps) {
         </Card>
       </div>
 
-      {/* Quick-access tiles — Hammer / Families / Catalog */}
+      {/* Quick-access tiles — Words / Hammer / Perspective / Catalog */}
       <div style={{ marginTop: 16 }}>
         <SectionHead suffix="QUICK">JUMP IN</SectionHead>
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(3, 1fr)',
+            gridTemplateColumns: 'repeat(2, 1fr)',
             gap: 8,
           }}
         >
           <Card
             warm
+            pad={12}
+            onClick={() => navigate('/words')}
+            style={{ display: 'flex', flexDirection: 'column', gap: 6, minHeight: 96 }}
+          >
+            <span style={{ color: T.amber }}>
+              <IconBook size={18} />
+            </span>
+            <div style={{ fontSize: 13, fontWeight: 700, color: T.text }}>Words</div>
+            <div style={{ fontSize: 11, color: T.dim, lineHeight: 1.4 }}>
+              Single words, both directions. Beginner-first.
+            </div>
+            <div style={{ marginTop: 'auto' }}>
+              <MonoBadge kind="amber">
+                {words.filter((w) => getWordBucket(progress, w.id) >= 1).length} / {words.length} met
+              </MonoBadge>
+            </div>
+          </Card>
+          <Card
             pad={12}
             onClick={() => navigate('/hammer')}
             style={{ display: 'flex', flexDirection: 'column', gap: 6, minHeight: 96 }}
@@ -258,7 +278,7 @@ export default function Dashboard({ progress, script }: DashboardProps) {
             </span>
             <div style={{ fontSize: 13, fontWeight: 700, color: T.text }}>Hammer</div>
             <div style={{ fontSize: 11, color: T.dim, lineHeight: 1.4 }}>
-              Random across all lessons. ~5 min.
+              Random phrases across all lessons.
             </div>
           </Card>
           <Card

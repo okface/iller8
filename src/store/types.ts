@@ -12,6 +12,12 @@ export interface Phrase {
   context?: string;
   notes?: string;
   variations?: PhraseVariation[];
+  /** IDs of content Words this phrase is composed of. Used for the
+   *  readiness gate (a phrase becomes drillable when the learner has
+   *  met its content words individually) and the word-breakdown chips
+   *  shown in PhraseIntro. Function words (clitics, prepositions) are
+   *  generally NOT listed — only the words worth tracking on their own. */
+  wordRefs?: string[];
 }
 
 export interface PhraseGroup {
@@ -88,7 +94,9 @@ export type ExerciseType =
   | 'sentence-builder'
   | 'comprehension'
   | 'pattern-match'
-  | 'perspective-shift';
+  | 'perspective-shift'
+  | 'word-recognize'   // see a single Serbian word, pick the English gloss
+  | 'word-produce';    // see an English gloss, pick the Serbian word
 
 export interface Exercise {
   type: ExerciseType;
@@ -176,4 +184,64 @@ export interface Achievement {
   description: string;
   icon: string;
   condition: string;
+}
+
+/* ─── Word lexicon ─────────────────────────────────────────
+ * The unit beneath Phrase. A learner who knows "voleti" gets
+ * credit when "Volim te", "Volim kafu", and "Voleo sam te"
+ * appear. Tracked in the same SRS map as phrases, keyed
+ * `word:<id>` so the existing engine doesn't need to change.
+ * See PEDAGOGY_AUDIT.md §3.1.
+ * ─────────────────────────────────────────────────────── */
+
+export type POS =
+  | 'verb'
+  | 'noun'
+  | 'adj'
+  | 'pron'
+  | 'prep'
+  | 'conj'
+  | 'adv'
+  | 'particle'
+  | 'num'
+  | 'interj';
+
+export type Gender = 'm' | 'f' | 'n';
+
+export interface WordExample {
+  sr_latin: string;
+  sr_cyrillic: string;
+  en: string;
+  /** Source phrase id, if applicable. */
+  phraseRef?: string;
+}
+
+export interface WordForm {
+  /** Form tag — short, lowercase, dot-separated, e.g. '1sg.pres', 'past.m.sg', 'voc.sg', 'acc.sg'. */
+  tag: string;
+  sr_latin: string;
+  sr_cyrillic: string;
+  /** Optional gloss for the form (e.g. "I love" for 1sg.pres of voleti). */
+  en?: string;
+}
+
+export interface Word {
+  id: string;                   // 'voleti', 'duša', 'mi-dat'
+  lemma_sr_latin: string;       // canonical dictionary form, Latin
+  lemma_sr_cyrillic: string;
+  gloss_en: string;             // 'to love', 'soul', 'me (dat)'
+  pos: POS;
+  /** Noun gender (skip for non-nouns). */
+  gender?: Gender;
+  /** Verb aspect. */
+  aspect?: 'perf' | 'impf';
+  /** A handful of inflected forms worth drilling. Optional. */
+  forms?: WordForm[];
+  /** 2–4 example uses in real phrases. */
+  examples: WordExample[];
+  /** Lesson IDs that surface this word. */
+  appearsIn?: string[];
+  /** Frequency rank within our corpus (1 = most common). */
+  rank?: number;
+  notes?: string;
 }

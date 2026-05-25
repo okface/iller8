@@ -10,6 +10,7 @@ import CustomContent from './pages/CustomContent';
 import Hammer from './pages/Hammer';
 import Catalog from './pages/Catalog';
 import FamilyDrill from './pages/FamilyDrill';
+import WordDrill from './pages/WordDrill';
 import { loadProgress, saveProgress, updateSettings } from './store/progress';
 import type { UserProgress } from './store/types';
 
@@ -51,6 +52,12 @@ export default function App() {
             path="hammer"
             element={
               <Hammer progress={progress} setProgress={setProgress} script={script} />
+            }
+          />
+          <Route
+            path="words"
+            element={
+              <WordDrill progress={progress} setProgress={setProgress} script={script} />
             }
           />
           <Route

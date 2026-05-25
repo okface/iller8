@@ -1,0 +1,2346 @@
+[
+  {
+    "id": "ja",
+    "lemma_sr_latin": "ja",
+    "lemma_sr_cyrillic": "ја",
+    "gloss_en": "I",
+    "pos": "pron",
+    "rank": 3,
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "ja", "sr_cyrillic": "ја", "en": "I" },
+      { "tag": "acc.sg", "sr_latin": "mene", "sr_cyrillic": "мене", "en": "me (full)" },
+      { "tag": "dat.sg", "sr_latin": "meni", "sr_cyrillic": "мени", "en": "to me (full)" }
+    ],
+    "examples": [
+      { "sr_latin": "Ja sam srećan.", "sr_cyrillic": "Ја сам срећан.", "en": "I am happy." },
+      { "sr_latin": "Ja te volim.", "sr_cyrillic": "Ја те волим.", "en": "I love you." }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Often dropped in Serbian since verb endings carry the subject. Add 'ja' for emphasis."
+  },
+  {
+    "id": "ti-nom",
+    "lemma_sr_latin": "ti",
+    "lemma_sr_cyrillic": "ти",
+    "gloss_en": "you (sg, informal)",
+    "pos": "pron",
+    "rank": 4,
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "ti", "sr_cyrillic": "ти", "en": "you" },
+      { "tag": "acc.sg", "sr_latin": "tebe", "sr_cyrillic": "тебе", "en": "you (full acc)" },
+      { "tag": "dat.sg", "sr_latin": "tebi", "sr_cyrillic": "теби", "en": "to you (full dat)" }
+    ],
+    "examples": [
+      { "sr_latin": "Ti si najbolja.", "sr_cyrillic": "Ти си најбоља.", "en": "You're the best.", "phraseRef": "st-najbolja-si" },
+      { "sr_latin": "Jadan ti!", "sr_cyrillic": "Јадан ти!", "en": "You poor thing!", "phraseRef": "rx-jadan" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Informal singular 'you'. Use 'vi' for formal or plural address."
+  },
+  {
+    "id": "on",
+    "lemma_sr_latin": "on",
+    "lemma_sr_cyrillic": "он",
+    "gloss_en": "he",
+    "pos": "pron",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "on", "sr_cyrillic": "он", "en": "he" },
+      { "tag": "acc.sg", "sr_latin": "njega", "sr_cyrillic": "њега", "en": "him (full)" },
+      { "tag": "dat.sg", "sr_latin": "njemu", "sr_cyrillic": "њему", "en": "to him (full)" }
+    ],
+    "examples": [
+      { "sr_latin": "On je dobar.", "sr_cyrillic": "Он је добар.", "en": "He is good." },
+      { "sr_latin": "On me voli.", "sr_cyrillic": "Он ме воли.", "en": "He loves me." }
+    ]
+  },
+  {
+    "id": "ona",
+    "lemma_sr_latin": "ona",
+    "lemma_sr_cyrillic": "она",
+    "gloss_en": "she",
+    "pos": "pron",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "ona", "sr_cyrillic": "она", "en": "she" },
+      { "tag": "acc.sg", "sr_latin": "nju", "sr_cyrillic": "њу", "en": "her (full)" },
+      { "tag": "dat.sg", "sr_latin": "njoj", "sr_cyrillic": "њој", "en": "to her (full)" }
+    ],
+    "examples": [
+      { "sr_latin": "Ona je lepa.", "sr_cyrillic": "Она је лепа.", "en": "She is beautiful." },
+      { "sr_latin": "Ona te voli.", "sr_cyrillic": "Она те воли.", "en": "She loves you." }
+    ]
+  },
+  {
+    "id": "mi-nom",
+    "lemma_sr_latin": "mi",
+    "lemma_sr_cyrillic": "ми",
+    "gloss_en": "we",
+    "pos": "pron",
+    "forms": [
+      { "tag": "nom.pl", "sr_latin": "mi", "sr_cyrillic": "ми", "en": "we" },
+      { "tag": "acc.pl", "sr_latin": "nas", "sr_cyrillic": "нас", "en": "us" },
+      { "tag": "dat.pl", "sr_latin": "nama", "sr_cyrillic": "нама", "en": "to us" }
+    ],
+    "examples": [
+      { "sr_latin": "Mi smo srećni.", "sr_cyrillic": "Ми смо срећни.", "en": "We are happy." },
+      { "sr_latin": "Kad se svađamo, mrzim to.", "sr_cyrillic": "Кад се свађамо, мрзим то.", "en": "When we fight, I hate it." }
+    ],
+    "notes": "Don't confuse with the dative clitic 'mi' meaning 'to me'."
+  },
+  {
+    "id": "vi",
+    "lemma_sr_latin": "vi",
+    "lemma_sr_cyrillic": "ви",
+    "gloss_en": "you (pl / formal)",
+    "pos": "pron",
+    "forms": [
+      { "tag": "nom.pl", "sr_latin": "vi", "sr_cyrillic": "ви", "en": "you (pl/formal)" },
+      { "tag": "acc.pl", "sr_latin": "vas", "sr_cyrillic": "вас", "en": "you (acc)" },
+      { "tag": "dat.pl", "sr_latin": "vama", "sr_cyrillic": "вама", "en": "to you (dat)" }
+    ],
+    "examples": [
+      { "sr_latin": "Vi ste u pravu.", "sr_cyrillic": "Ви сте у праву.", "en": "You are right." }
+    ],
+    "notes": "Used for plural 'you' and as polite singular for strangers, elders, bosses."
+  },
+  {
+    "id": "oni",
+    "lemma_sr_latin": "oni",
+    "lemma_sr_cyrillic": "они",
+    "gloss_en": "they",
+    "pos": "pron",
+    "forms": [
+      { "tag": "nom.pl", "sr_latin": "oni", "sr_cyrillic": "они", "en": "they (m/mixed)" },
+      { "tag": "nom.pl.f", "sr_latin": "one", "sr_cyrillic": "оне", "en": "they (f)" },
+      { "tag": "acc.pl", "sr_latin": "njih", "sr_cyrillic": "њих", "en": "them (full)" }
+    ],
+    "examples": [
+      { "sr_latin": "Oni su prijatelji.", "sr_cyrillic": "Они су пријатељи.", "en": "They are friends." }
+    ]
+  },
+  {
+    "id": "me-acc",
+    "lemma_sr_latin": "me",
+    "lemma_sr_cyrillic": "ме",
+    "gloss_en": "me (acc clitic)",
+    "pos": "pron",
+    "rank": 5,
+    "examples": [
+      { "sr_latin": "Sanjaj me.", "sr_cyrillic": "Сањај ме.", "en": "Dream of me.", "phraseRef": "st-sanjaj-me" },
+      { "sr_latin": "Nemoj da me rastužiš.", "sr_cyrillic": "Немој да ме растужиш.", "en": "Don't make me sad.", "phraseRef": "st-rastuzi-me" },
+      { "sr_latin": "Smara me.", "sr_cyrillic": "Смара ме.", "en": "It's annoying me.", "phraseRef": "rx-smori-me" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Short (clitic) accusative form of 'ja'. Always unstressed, never sentence-initial."
+  },
+  {
+    "id": "te-acc",
+    "lemma_sr_latin": "te",
+    "lemma_sr_cyrillic": "те",
+    "gloss_en": "you (acc clitic)",
+    "pos": "pron",
+    "rank": 6,
+    "examples": [
+      { "sr_latin": "Volim te.", "sr_cyrillic": "Волим те.", "en": "I love you.", "phraseRef": "st-volim-te" },
+      { "sr_latin": "Jedva čekam da te vidim.", "sr_cyrillic": "Једва чекам да те видим.", "en": "I can't wait to see you.", "phraseRef": "st-jedva-cekam" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Short accusative of 'ti'. Comes right after the verb or in second position."
+  },
+  {
+    "id": "ga-acc",
+    "lemma_sr_latin": "ga",
+    "lemma_sr_cyrillic": "га",
+    "gloss_en": "him / it (acc clitic)",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Vidim ga.", "sr_cyrillic": "Видим га.", "en": "I see him." },
+      { "sr_latin": "Volim ga.", "sr_cyrillic": "Волим га.", "en": "I love him." }
+    ],
+    "notes": "Short accusative of 'on' and neuter 'ono'."
+  },
+  {
+    "id": "je-acc",
+    "lemma_sr_latin": "je",
+    "lemma_sr_cyrillic": "је",
+    "gloss_en": "her (acc clitic)",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Vidim je.", "sr_cyrillic": "Видим је.", "en": "I see her." },
+      { "sr_latin": "Volim je.", "sr_cyrillic": "Волим је.", "en": "I love her." }
+    ],
+    "notes": "Identical in spelling to 'je' = 'is' (3sg of biti); context disambiguates."
+  },
+  {
+    "id": "mi-dat",
+    "lemma_sr_latin": "mi",
+    "lemma_sr_cyrillic": "ми",
+    "gloss_en": "to me (dat clitic)",
+    "pos": "pron",
+    "rank": 7,
+    "examples": [
+      { "sr_latin": "Nedostaješ mi.", "sr_cyrillic": "Недостајеш ми.", "en": "I miss you. (lit. you are missing to me)", "phraseRef": "st-nedostajes" },
+      { "sr_latin": "Sve mi značiš.", "sr_cyrillic": "Све ми значиш.", "en": "You mean everything to me.", "phraseRef": "st-sve-mi-znacis" },
+      { "sr_latin": "Ukrala si mi srce.", "sr_cyrillic": "Украла си ми срце.", "en": "You stole my heart.", "phraseRef": "st-ukrala-srce" },
+      { "sr_latin": "Žao mi je.", "sr_cyrillic": "Жао ми је.", "en": "I'm sorry. (sympathy)", "phraseRef": "rx-zao-mi-je" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Same spelling as 'mi' meaning 'we', but here it's the dative clitic. Used in 'experiencer' constructions: 'dosadno mi je', 'žao mi je', 'nedostaješ mi'."
+  },
+  {
+    "id": "ti-dat",
+    "lemma_sr_latin": "ti",
+    "lemma_sr_cyrillic": "ти",
+    "gloss_en": "to you (dat clitic)",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Lepo ti stoji.", "sr_cyrillic": "Лепо ти стоји.", "en": "That looks good on you.", "phraseRef": "st-lepo-stoji" },
+      { "sr_latin": "Jadan ti!", "sr_cyrillic": "Јадан ти!", "en": "You poor thing!", "phraseRef": "rx-jadan" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Same spelling as 'ti' (you, nom). Position and context disambiguate: dative clitic sits in second position."
+  },
+  {
+    "id": "mu-dat",
+    "lemma_sr_latin": "mu",
+    "lemma_sr_cyrillic": "му",
+    "gloss_en": "to him (dat clitic)",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Reci mu.", "sr_cyrillic": "Реци му.", "en": "Tell him." }
+    ],
+    "notes": "Short dative of 'on' / 'ono'."
+  },
+  {
+    "id": "joj-dat",
+    "lemma_sr_latin": "joj",
+    "lemma_sr_cyrillic": "јој",
+    "gloss_en": "to her (dat clitic)",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Reci joj.", "sr_cyrillic": "Реци јој.", "en": "Tell her." }
+    ],
+    "notes": "Identical in spelling to the exclamation 'joj' (oh!) — context decides."
+  },
+  {
+    "id": "se",
+    "lemma_sr_latin": "se",
+    "lemma_sr_cyrillic": "се",
+    "gloss_en": "(reflexive)",
+    "pos": "pron",
+    "rank": 10,
+    "examples": [
+      { "sr_latin": "Slažem se.", "sr_cyrillic": "Слажем се.", "en": "I agree.", "phraseRef": "rx-slazem-se" },
+      { "sr_latin": "Hajde da se ne svađamo.", "sr_cyrillic": "Хајде да се не свађамо.", "en": "Let's not fight.", "phraseRef": "st-hajde-ne-svadjamo" },
+      { "sr_latin": "Mrzim kad se svađamo.", "sr_cyrillic": "Мрзим кад се свађамо.", "en": "I hate when we fight.", "phraseRef": "st-mrzim-svadje" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Reflexive clitic. Marks reflexive verbs ('svađati se' = to fight) and impersonal constructions."
+  },
+  {
+    "id": "moj",
+    "lemma_sr_latin": "moj",
+    "lemma_sr_cyrillic": "мој",
+    "gloss_en": "my",
+    "pos": "pron",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "moj", "sr_cyrillic": "мој", "en": "my (m)" },
+      { "tag": "f.sg", "sr_latin": "moja", "sr_cyrillic": "моја", "en": "my (f)" },
+      { "tag": "n.sg", "sr_latin": "moje", "sr_cyrillic": "моје", "en": "my (n)" }
+    ],
+    "examples": [
+      { "sr_latin": "Dušo moja.", "sr_cyrillic": "Душо моја.", "en": "My darling.", "phraseRef": "st-dusko" },
+      { "sr_latin": "Srce moje.", "sr_cyrillic": "Срце моје.", "en": "My heart.", "phraseRef": "st-srce" },
+      { "sr_latin": "Medo moj.", "sr_cyrillic": "Медо мој.", "en": "My teddy bear.", "phraseRef": "st-medo" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Possessive 'my'. Agrees with the noun in gender, number, case. Common in pet names: 'dušo moja'."
+  },
+  {
+    "id": "tvoj",
+    "lemma_sr_latin": "tvoj",
+    "lemma_sr_cyrillic": "твој",
+    "gloss_en": "your (sg)",
+    "pos": "pron",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "tvoj", "sr_cyrillic": "твој", "en": "your (m)" },
+      { "tag": "f.sg", "sr_latin": "tvoja", "sr_cyrillic": "твоја", "en": "your (f)" },
+      { "tag": "n.sg", "sr_latin": "tvoje", "sr_cyrillic": "твоје", "en": "your (n)" }
+    ],
+    "examples": [
+      { "sr_latin": "Tvoja mama.", "sr_cyrillic": "Твоја мама.", "en": "Your mom." }
+    ]
+  },
+  {
+    "id": "tebe",
+    "lemma_sr_latin": "tebe",
+    "lemma_sr_cyrillic": "тебе",
+    "gloss_en": "you (acc full)",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Mislim na tebe.", "sr_cyrillic": "Мислим на тебе.", "en": "I'm thinking about you.", "phraseRef": "st-mislim-na-tebe" },
+      { "sr_latin": "Za tebe uvek imam vremena.", "sr_cyrillic": "За тебе увек имам времена.", "en": "I always have time for you.", "phraseRef": "st-za-tebe-uvek" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Stressed/full accusative of 'ti'. Used after prepositions ('na tebe', 'za tebe') and for emphasis."
+  },
+  {
+    "id": "tobom",
+    "lemma_sr_latin": "tobom",
+    "lemma_sr_cyrillic": "тобом",
+    "gloss_en": "with/by you (instr)",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Srećan sam kad sam s tobom.", "sr_cyrillic": "Срећан сам кад сам с тобом.", "en": "I'm happy when I'm with you.", "phraseRef": "st-srecan-sam" },
+      { "sr_latin": "Ludim za tobom.", "sr_cyrillic": "Лудим за тобом.", "en": "I'm crazy about you.", "phraseRef": "st-ludim-za-tobom" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Instrumental of 'ti'. Required after 's/sa' (with) and 'za' in expressions like 'ludim za tobom'."
+  },
+  {
+    "id": "biti",
+    "lemma_sr_latin": "biti",
+    "lemma_sr_cyrillic": "бити",
+    "gloss_en": "to be",
+    "pos": "verb",
+    "aspect": "impf",
+    "rank": 1,
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "sam", "sr_cyrillic": "сам", "en": "I am" },
+      { "tag": "2sg.pres", "sr_latin": "si", "sr_cyrillic": "си", "en": "you are" },
+      { "tag": "3sg.pres", "sr_latin": "je", "sr_cyrillic": "је", "en": "he/she/it is" },
+      { "tag": "1pl.pres", "sr_latin": "smo", "sr_cyrillic": "смо", "en": "we are" },
+      { "tag": "2pl.pres", "sr_latin": "ste", "sr_cyrillic": "сте", "en": "you (pl) are" },
+      { "tag": "3pl.pres", "sr_latin": "su", "sr_cyrillic": "су", "en": "they are" },
+      { "tag": "3sg.fut", "sr_latin": "će", "sr_cyrillic": "ће", "en": "will be" }
+    ],
+    "examples": [
+      { "sr_latin": "Prelepa si.", "sr_cyrillic": "Прелепа си.", "en": "You're gorgeous.", "phraseRef": "st-prelepa-si" },
+      { "sr_latin": "Ti si najbolja.", "sr_cyrillic": "Ти си најбоља.", "en": "You're the best.", "phraseRef": "st-najbolja-si" },
+      { "sr_latin": "Sve će biti u redu.", "sr_cyrillic": "Све ће бити у реду.", "en": "Everything will be okay.", "phraseRef": "st-sve-ce-biti-ok" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "The most important verb. Present-tense forms are clitics: sam, si, je, smo, ste, su."
+  },
+  {
+    "id": "imati",
+    "lemma_sr_latin": "imati",
+    "lemma_sr_cyrillic": "имати",
+    "gloss_en": "to have",
+    "pos": "verb",
+    "aspect": "impf",
+    "rank": 8,
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "imam", "sr_cyrillic": "имам", "en": "I have" },
+      { "tag": "2sg.pres", "sr_latin": "imaš", "sr_cyrillic": "имаш", "en": "you have" },
+      { "tag": "3sg.pres", "sr_latin": "ima", "sr_cyrillic": "има", "en": "he/she/it has" },
+      { "tag": "3sg.pres.neg", "sr_latin": "nema", "sr_cyrillic": "нема", "en": "there is no / doesn't have" }
+    ],
+    "examples": [
+      { "sr_latin": "Za tebe uvek imam vremena.", "sr_cyrillic": "За тебе увек имам времена.", "en": "I always have time for you.", "phraseRef": "st-za-tebe-uvek" },
+      { "sr_latin": "Nema šanse!", "sr_cyrillic": "Нема шансе!", "en": "No chance!", "phraseRef": "rx-nema-sanse" },
+      { "sr_latin": "Nema veze.", "sr_cyrillic": "Нема везе.", "en": "It doesn't matter.", "phraseRef": "rx-nema-veze" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "'Nema' (3sg negative) is hugely productive: 'nema veze', 'nema šanse', 'nema problema'."
+  },
+  {
+    "id": "voleti",
+    "lemma_sr_latin": "voleti",
+    "lemma_sr_cyrillic": "волети",
+    "gloss_en": "to love",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "volim", "sr_cyrillic": "волим", "en": "I love" },
+      { "tag": "2sg.pres", "sr_latin": "voliš", "sr_cyrillic": "волиш", "en": "you love" },
+      { "tag": "3sg.pres", "sr_latin": "voli", "sr_cyrillic": "воли", "en": "he/she loves" },
+      { "tag": "past.m.sg", "sr_latin": "voleo", "sr_cyrillic": "волео", "en": "loved (m)" },
+      { "tag": "past.f.sg", "sr_latin": "volela", "sr_cyrillic": "волела", "en": "loved (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Volim te.", "sr_cyrillic": "Волим те.", "en": "I love you.", "phraseRef": "st-volim-te" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Used for both 'love' and 'like'. Ekavian 'voleti' (Serbian standard) vs Ijekavian 'voljeti' (Bosnian/Croatian)."
+  },
+  {
+    "id": "hteti",
+    "lemma_sr_latin": "hteti",
+    "lemma_sr_cyrillic": "хтети",
+    "gloss_en": "to want",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "hoću", "sr_cyrillic": "хоћу", "en": "I want" },
+      { "tag": "2sg.pres", "sr_latin": "hoćeš", "sr_cyrillic": "хоћеш", "en": "you want" },
+      { "tag": "3sg.pres", "sr_latin": "hoće", "sr_cyrillic": "хоће", "en": "he/she wants" },
+      { "tag": "1sg.fut.clitic", "sr_latin": "ću", "sr_cyrillic": "ћу", "en": "(future aux)" },
+      { "tag": "3sg.fut.clitic", "sr_latin": "će", "sr_cyrillic": "ће", "en": "(future aux)" }
+    ],
+    "examples": [
+      { "sr_latin": "Hoću kafu.", "sr_cyrillic": "Хоћу кафу.", "en": "I want coffee." },
+      { "sr_latin": "Sve će biti u redu.", "sr_cyrillic": "Све ће бити у реду.", "en": "Everything will be okay.", "phraseRef": "st-sve-ce-biti-ok" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "'Hteti' is also the future auxiliary: clitic forms ću, ćeš, će, ćemo, ćete, će form the future tense."
+  },
+  {
+    "id": "znati",
+    "lemma_sr_latin": "znati",
+    "lemma_sr_cyrillic": "знати",
+    "gloss_en": "to know",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "znam", "sr_cyrillic": "знам", "en": "I know" },
+      { "tag": "2sg.pres", "sr_latin": "znaš", "sr_cyrillic": "знаш", "en": "you know" },
+      { "tag": "3sg.pres", "sr_latin": "zna", "sr_cyrillic": "зна", "en": "he/she knows" }
+    ],
+    "examples": [
+      { "sr_latin": "Pa... ne znam.", "sr_cyrillic": "Па... не знам.", "en": "Well... I don't know.", "phraseRef": "rx-pa-ne-znam" },
+      { "sr_latin": "Ma šta znam.", "sr_cyrillic": "Ма шта знам.", "en": "I dunno.", "phraseRef": "rx-ma-sta-znam" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "ici",
+    "lemma_sr_latin": "ići",
+    "lemma_sr_cyrillic": "ићи",
+    "gloss_en": "to go",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "idem", "sr_cyrillic": "идем", "en": "I go" },
+      { "tag": "2sg.pres", "sr_latin": "ideš", "sr_cyrillic": "идеш", "en": "you go" },
+      { "tag": "3sg.pres", "sr_latin": "ide", "sr_cyrillic": "иде", "en": "he/she goes" },
+      { "tag": "imp.2sg", "sr_latin": "idi", "sr_cyrillic": "иди", "en": "go!" }
+    ],
+    "examples": [
+      { "sr_latin": "Idem kući.", "sr_cyrillic": "Идем кући.", "en": "I'm going home." }
+    ]
+  },
+  {
+    "id": "raditi",
+    "lemma_sr_latin": "raditi",
+    "lemma_sr_cyrillic": "радити",
+    "gloss_en": "to work / to do",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "radim", "sr_cyrillic": "радим", "en": "I work / I do" },
+      { "tag": "2sg.pres", "sr_latin": "radiš", "sr_cyrillic": "радиш", "en": "you work / you do" },
+      { "tag": "3sg.pres", "sr_latin": "radi", "sr_cyrillic": "ради", "en": "he/she works" }
+    ],
+    "examples": [
+      { "sr_latin": "Šta radiš?", "sr_cyrillic": "Шта радиш?", "en": "What are you doing?" }
+    ]
+  },
+  {
+    "id": "moci",
+    "lemma_sr_latin": "moći",
+    "lemma_sr_cyrillic": "моћи",
+    "gloss_en": "can / to be able",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "mogu", "sr_cyrillic": "могу", "en": "I can" },
+      { "tag": "2sg.pres", "sr_latin": "možeš", "sr_cyrillic": "можеш", "en": "you can" },
+      { "tag": "3sg.pres", "sr_latin": "može", "sr_cyrillic": "може", "en": "he/she can" }
+    ],
+    "examples": [
+      { "sr_latin": "Mogu da pomognem.", "sr_cyrillic": "Могу да помогнем.", "en": "I can help." },
+      { "sr_latin": "Može.", "sr_cyrillic": "Може.", "en": "Sure. / Okay." }
+    ],
+    "notes": "'Može' on its own is a casual 'sure / okay'."
+  },
+  {
+    "id": "morati",
+    "lemma_sr_latin": "morati",
+    "lemma_sr_cyrillic": "морати",
+    "gloss_en": "to have to / must",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "moram", "sr_cyrillic": "морам", "en": "I have to" },
+      { "tag": "2sg.pres", "sr_latin": "moraš", "sr_cyrillic": "мораш", "en": "you have to" },
+      { "tag": "3sg.pres", "sr_latin": "mora", "sr_cyrillic": "мора", "en": "he/she has to" }
+    ],
+    "examples": [
+      { "sr_latin": "Moram da idem.", "sr_cyrillic": "Морам да идем.", "en": "I have to go." }
+    ]
+  },
+  {
+    "id": "videti",
+    "lemma_sr_latin": "videti",
+    "lemma_sr_cyrillic": "видети",
+    "gloss_en": "to see",
+    "pos": "verb",
+    "aspect": "perf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "vidim", "sr_cyrillic": "видим", "en": "I see" },
+      { "tag": "2sg.pres", "sr_latin": "vidiš", "sr_cyrillic": "видиш", "en": "you see" },
+      { "tag": "3sg.pres", "sr_latin": "vidi", "sr_cyrillic": "види", "en": "he/she sees" }
+    ],
+    "examples": [
+      { "sr_latin": "Jedva čekam da te vidim.", "sr_cyrillic": "Једва чекам да те видим.", "en": "I can't wait to see you.", "phraseRef": "st-jedva-cekam" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "cuti",
+    "lemma_sr_latin": "čuti",
+    "lemma_sr_cyrillic": "чути",
+    "gloss_en": "to hear",
+    "pos": "verb",
+    "aspect": "perf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "čujem", "sr_cyrillic": "чујем", "en": "I hear" },
+      { "tag": "2sg.pres", "sr_latin": "čuješ", "sr_cyrillic": "чујеш", "en": "you hear" },
+      { "tag": "3sg.pres", "sr_latin": "čuje", "sr_cyrillic": "чује", "en": "he/she hears" }
+    ],
+    "examples": [
+      { "sr_latin": "Čujem te.", "sr_cyrillic": "Чујем те.", "en": "I hear you." }
+    ]
+  },
+  {
+    "id": "pricati",
+    "lemma_sr_latin": "pričati",
+    "lemma_sr_cyrillic": "причати",
+    "gloss_en": "to talk / chat",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "pričam", "sr_cyrillic": "причам", "en": "I talk" },
+      { "tag": "2sg.pres", "sr_latin": "pričaš", "sr_cyrillic": "причаш", "en": "you talk" },
+      { "tag": "3sg.pres", "sr_latin": "priča", "sr_cyrillic": "прича", "en": "he/she talks" }
+    ],
+    "examples": [
+      { "sr_latin": "Pričamo kasnije.", "sr_cyrillic": "Причамо касније.", "en": "We'll talk later." }
+    ]
+  },
+  {
+    "id": "reci",
+    "lemma_sr_latin": "reći",
+    "lemma_sr_cyrillic": "рећи",
+    "gloss_en": "to say",
+    "pos": "verb",
+    "aspect": "perf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "kažem", "sr_cyrillic": "кажем", "en": "I say" },
+      { "tag": "2sg.pres", "sr_latin": "kažeš", "sr_cyrillic": "кажеш", "en": "you say" },
+      { "tag": "3sg.pres", "sr_latin": "kaže", "sr_cyrillic": "каже", "en": "he/she says" },
+      { "tag": "imp.2sg", "sr_latin": "reci", "sr_cyrillic": "реци", "en": "say!" }
+    ],
+    "examples": [
+      { "sr_latin": "Reci mi.", "sr_cyrillic": "Реци ми.", "en": "Tell me." }
+    ],
+    "notes": "Irregular: infinitive 'reći' but present is 'kažem' (paradigm of 'kazati')."
+  },
+  {
+    "id": "doci",
+    "lemma_sr_latin": "doći",
+    "lemma_sr_cyrillic": "доћи",
+    "gloss_en": "to come (perf)",
+    "pos": "verb",
+    "aspect": "perf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "dođem", "sr_cyrillic": "дођем", "en": "I'll come" },
+      { "tag": "2sg.pres", "sr_latin": "dođeš", "sr_cyrillic": "дођеш", "en": "you'll come" },
+      { "tag": "3sg.pres", "sr_latin": "dođe", "sr_cyrillic": "дође", "en": "he/she'll come" }
+    ],
+    "examples": [
+      { "sr_latin": "Dođi kod mene.", "sr_cyrillic": "Дођи код мене.", "en": "Come to my place." }
+    ]
+  },
+  {
+    "id": "nedostajati",
+    "lemma_sr_latin": "nedostajati",
+    "lemma_sr_cyrillic": "недостајати",
+    "gloss_en": "to be missing / missed",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "nedostajem", "sr_cyrillic": "недостајем", "en": "I am missed" },
+      { "tag": "2sg.pres", "sr_latin": "nedostaješ", "sr_cyrillic": "недостајеш", "en": "you are missed" },
+      { "tag": "3sg.pres", "sr_latin": "nedostaje", "sr_cyrillic": "недостаје", "en": "he/she is missed" }
+    ],
+    "examples": [
+      { "sr_latin": "Nedostaješ mi.", "sr_cyrillic": "Недостајеш ми.", "en": "I miss you.", "phraseRef": "st-nedostajes" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Inverse construction: the person missed is the SUBJECT and the misser is in dative. 'Nedostaješ mi' = lit. 'you are missing to me'."
+  },
+  {
+    "id": "mrzeti",
+    "lemma_sr_latin": "mrzeti",
+    "lemma_sr_cyrillic": "мрзети",
+    "gloss_en": "to hate",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "mrzim", "sr_cyrillic": "мрзим", "en": "I hate" },
+      { "tag": "2sg.pres", "sr_latin": "mrziš", "sr_cyrillic": "мрзиш", "en": "you hate" },
+      { "tag": "3sg.pres", "sr_latin": "mrzi", "sr_cyrillic": "мрзи", "en": "he/she hates" }
+    ],
+    "examples": [
+      { "sr_latin": "Mrzim kad se svađamo.", "sr_cyrillic": "Мрзим кад се свађамо.", "en": "I hate when we fight.", "phraseRef": "st-mrzim-svadje" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "misliti",
+    "lemma_sr_latin": "misliti",
+    "lemma_sr_cyrillic": "мислити",
+    "gloss_en": "to think",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "mislim", "sr_cyrillic": "мислим", "en": "I think" },
+      { "tag": "2sg.pres", "sr_latin": "misliš", "sr_cyrillic": "мислиш", "en": "you think" },
+      { "tag": "3sg.pres", "sr_latin": "misli", "sr_cyrillic": "мисли", "en": "he/she thinks" },
+      { "tag": "past.m.sg", "sr_latin": "mislio", "sr_cyrillic": "мислио", "en": "thought/meant (m)" },
+      { "tag": "past.f.sg", "sr_latin": "mislila", "sr_cyrillic": "мислила", "en": "thought/meant (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Mislim na tebe.", "sr_cyrillic": "Мислим на тебе.", "en": "I'm thinking about you.", "phraseRef": "st-mislim-na-tebe" },
+      { "sr_latin": "Izvini, nisam mislio tako.", "sr_cyrillic": "Извини, нисам мислио тако.", "en": "Sorry, I didn't mean it like that.", "phraseRef": "st-izvini" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "cekati",
+    "lemma_sr_latin": "čekati",
+    "lemma_sr_cyrillic": "чекати",
+    "gloss_en": "to wait",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "čekam", "sr_cyrillic": "чекам", "en": "I wait" },
+      { "tag": "2sg.pres", "sr_latin": "čekaš", "sr_cyrillic": "чекаш", "en": "you wait" },
+      { "tag": "3sg.pres", "sr_latin": "čeka", "sr_cyrillic": "чека", "en": "he/she waits" }
+    ],
+    "examples": [
+      { "sr_latin": "Jedva čekam da te vidim.", "sr_cyrillic": "Једва чекам да те видим.", "en": "I can't wait to see you.", "phraseRef": "st-jedva-cekam" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "spavati",
+    "lemma_sr_latin": "spavati",
+    "lemma_sr_cyrillic": "спавати",
+    "gloss_en": "to sleep",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "spavam", "sr_cyrillic": "спавам", "en": "I sleep" },
+      { "tag": "2sg.pres", "sr_latin": "spavaš", "sr_cyrillic": "спаваш", "en": "you sleep" },
+      { "tag": "imp.2sg", "sr_latin": "spavaj", "sr_cyrillic": "спавај", "en": "sleep!" }
+    ],
+    "examples": [
+      { "sr_latin": "Spavaj lepo, dušo.", "sr_cyrillic": "Спавај лепо, душо.", "en": "Sleep well, darling.", "phraseRef": "st-spavaj-lepo" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "sanjati",
+    "lemma_sr_latin": "sanjati",
+    "lemma_sr_cyrillic": "сањати",
+    "gloss_en": "to dream",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "sanjam", "sr_cyrillic": "сањам", "en": "I dream" },
+      { "tag": "imp.2sg", "sr_latin": "sanjaj", "sr_cyrillic": "сањај", "en": "dream!" }
+    ],
+    "examples": [
+      { "sr_latin": "Sanjaj me.", "sr_cyrillic": "Сањај ме.", "en": "Dream of me.", "phraseRef": "st-sanjaj-me" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "luditi",
+    "lemma_sr_latin": "luditi",
+    "lemma_sr_cyrillic": "лудити",
+    "gloss_en": "to go crazy",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "ludim", "sr_cyrillic": "лудим", "en": "I go crazy" },
+      { "tag": "2sg.pres", "sr_latin": "ludiš", "sr_cyrillic": "лудиш", "en": "you go crazy" }
+    ],
+    "examples": [
+      { "sr_latin": "Ludim za tobom.", "sr_cyrillic": "Лудим за тобом.", "en": "I'm crazy about you.", "phraseRef": "st-ludim-za-tobom" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "znaciti",
+    "lemma_sr_latin": "značiti",
+    "lemma_sr_cyrillic": "значити",
+    "gloss_en": "to mean",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "značim", "sr_cyrillic": "значим", "en": "I mean (sth)" },
+      { "tag": "2sg.pres", "sr_latin": "značiš", "sr_cyrillic": "значиш", "en": "you mean" },
+      { "tag": "3sg.pres", "sr_latin": "znači", "sr_cyrillic": "значи", "en": "means" }
+    ],
+    "examples": [
+      { "sr_latin": "Sve mi značiš.", "sr_cyrillic": "Све ми значиш.", "en": "You mean everything to me.", "phraseRef": "st-sve-mi-znacis" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "'Znači' as a filler also means 'so' / 'I mean' / 'in other words'."
+  },
+  {
+    "id": "stajati",
+    "lemma_sr_latin": "stajati",
+    "lemma_sr_cyrillic": "стајати",
+    "gloss_en": "to stand / suit (clothing)",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "3sg.pres", "sr_latin": "stoji", "sr_cyrillic": "стоји", "en": "stands / suits" },
+      { "tag": "3pl.pres", "sr_latin": "stoje", "sr_cyrillic": "стоје", "en": "stand / suit" }
+    ],
+    "examples": [
+      { "sr_latin": "Lepo ti stoji.", "sr_cyrillic": "Лепо ти стоји.", "en": "That looks good on you.", "phraseRef": "st-lepo-stoji" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Idiomatically used for clothes: 'lepo ti stoji' = it suits you / looks good on you."
+  },
+  {
+    "id": "brinuti",
+    "lemma_sr_latin": "brinuti",
+    "lemma_sr_cyrillic": "бринути",
+    "gloss_en": "to worry",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "brinem", "sr_cyrillic": "бринем", "en": "I worry" },
+      { "tag": "imp.2sg", "sr_latin": "brini", "sr_cyrillic": "брини", "en": "worry!" },
+      { "tag": "imp.2sg.neg", "sr_latin": "ne brini", "sr_cyrillic": "не брини", "en": "don't worry" }
+    ],
+    "examples": [
+      { "sr_latin": "Ne brini, dušo.", "sr_cyrillic": "Не брини, душо.", "en": "Don't worry, darling.", "phraseRef": "st-ne-brini" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "svadjati-se",
+    "lemma_sr_latin": "svađati se",
+    "lemma_sr_cyrillic": "свађати се",
+    "gloss_en": "to argue / fight",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "svađam se", "sr_cyrillic": "свађам се", "en": "I argue" },
+      { "tag": "1pl.pres", "sr_latin": "svađamo se", "sr_cyrillic": "свађамо се", "en": "we argue" }
+    ],
+    "examples": [
+      { "sr_latin": "Hajde da se ne svađamo.", "sr_cyrillic": "Хајде да се не свађамо.", "en": "Let's not fight.", "phraseRef": "st-hajde-ne-svadjamo" },
+      { "sr_latin": "Mrzim kad se svađamo.", "sr_cyrillic": "Мрзим кад се свађамо.", "en": "I hate when we fight.", "phraseRef": "st-mrzim-svadje" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Reflexive verb — always with 'se'. About verbal fights/arguments, not physical."
+  },
+  {
+    "id": "ukrasti",
+    "lemma_sr_latin": "ukrasti",
+    "lemma_sr_cyrillic": "украсти",
+    "gloss_en": "to steal",
+    "pos": "verb",
+    "aspect": "perf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "ukradem", "sr_cyrillic": "украдем", "en": "I'll steal" },
+      { "tag": "past.m.sg", "sr_latin": "ukrao", "sr_cyrillic": "украо", "en": "stole (m)" },
+      { "tag": "past.f.sg", "sr_latin": "ukrala", "sr_cyrillic": "украла", "en": "stole (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Ukrala si mi srce.", "sr_cyrillic": "Украла си ми срце.", "en": "You stole my heart.", "phraseRef": "st-ukrala-srce" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "ubiti",
+    "lemma_sr_latin": "ubiti",
+    "lemma_sr_cyrillic": "убити",
+    "gloss_en": "to kill",
+    "pos": "verb",
+    "aspect": "perf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "ubijem", "sr_cyrillic": "убијем", "en": "I'll kill" },
+      { "tag": "past.m.sg", "sr_latin": "ubio", "sr_cyrillic": "убио", "en": "killed (m)" },
+      { "tag": "past.f.sg", "sr_latin": "ubila", "sr_cyrillic": "убила", "en": "killed (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Ubila si!", "sr_cyrillic": "Убила си!", "en": "You killed it!", "phraseRef": "st-ubila-si" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Slang use: 'ubila si!' = 'you killed it!' (looks/performance). Literal meaning is more violent."
+  },
+  {
+    "id": "izviniti",
+    "lemma_sr_latin": "izviniti",
+    "lemma_sr_cyrillic": "извинити",
+    "gloss_en": "to excuse / apologize",
+    "pos": "verb",
+    "aspect": "perf",
+    "forms": [
+      { "tag": "imp.2sg", "sr_latin": "izvini", "sr_cyrillic": "извини", "en": "sorry / excuse me" },
+      { "tag": "imp.2pl", "sr_latin": "izvinite", "sr_cyrillic": "извините", "en": "sorry (formal/pl)" }
+    ],
+    "examples": [
+      { "sr_latin": "Izvini, nisam mislio tako.", "sr_cyrillic": "Извини, нисам мислио тако.", "en": "Sorry, I didn't mean it.", "phraseRef": "st-izvini" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "The imperative 'izvini' / 'izvinite' is by far the most common form — it's how you say 'sorry'."
+  },
+  {
+    "id": "rastuziti",
+    "lemma_sr_latin": "rastužiti",
+    "lemma_sr_cyrillic": "растужити",
+    "gloss_en": "to make sad",
+    "pos": "verb",
+    "aspect": "perf",
+    "forms": [
+      { "tag": "2sg.pres", "sr_latin": "rastužiš", "sr_cyrillic": "растужиш", "en": "you make (sb) sad" }
+    ],
+    "examples": [
+      { "sr_latin": "Nemoj da me rastužiš.", "sr_cyrillic": "Немој да ме растужиш.", "en": "Don't make me sad.", "phraseRef": "st-rastuzi-me" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "pustiti",
+    "lemma_sr_latin": "pustiti",
+    "lemma_sr_cyrillic": "пустити",
+    "gloss_en": "to let go / let",
+    "pos": "verb",
+    "aspect": "perf",
+    "forms": [
+      { "tag": "imp.2sg", "sr_latin": "pusti", "sr_cyrillic": "пусти", "en": "let it go / drop it" }
+    ],
+    "examples": [
+      { "sr_latin": "Ma pusti!", "sr_cyrillic": "Ма пусти!", "en": "Forget it!", "phraseRef": "rx-ma-pusti" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "slagati-se",
+    "lemma_sr_latin": "slagati se",
+    "lemma_sr_cyrillic": "слагати се",
+    "gloss_en": "to agree",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "slažem se", "sr_cyrillic": "слажем се", "en": "I agree" },
+      { "tag": "2sg.pres", "sr_latin": "slažeš se", "sr_cyrillic": "слажеш се", "en": "you agree" }
+    ],
+    "examples": [
+      { "sr_latin": "Slažem se.", "sr_cyrillic": "Слажем се.", "en": "I agree.", "phraseRef": "rx-slazem-se" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "Reflexive verb. Without 'se', 'slagati' means 'to stack' or 'to lie'."
+  },
+  {
+    "id": "smarati",
+    "lemma_sr_latin": "smarati",
+    "lemma_sr_cyrillic": "смарати",
+    "gloss_en": "to bore / annoy",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "3sg.pres", "sr_latin": "smara", "sr_cyrillic": "смара", "en": "bores/annoys" }
+    ],
+    "examples": [
+      { "sr_latin": "Smara me.", "sr_cyrillic": "Смара ме.", "en": "It's annoying me.", "phraseRef": "rx-smori-me" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "Slangy. The thing/person doing the annoying is the subject."
+  },
+  {
+    "id": "vaziti",
+    "lemma_sr_latin": "važiti",
+    "lemma_sr_cyrillic": "важити",
+    "gloss_en": "to apply / hold",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "3sg.pres", "sr_latin": "važi", "sr_cyrillic": "важи", "en": "holds / OK" }
+    ],
+    "examples": [
+      { "sr_latin": "Važi.", "sr_cyrillic": "Важи.", "en": "Okay. / Deal.", "phraseRef": "rx-vazi" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "'Važi' as a standalone is the most natural casual 'OK / deal'."
+  },
+  {
+    "id": "dusa",
+    "lemma_sr_latin": "duša",
+    "lemma_sr_cyrillic": "душа",
+    "gloss_en": "soul",
+    "pos": "noun",
+    "gender": "f",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "duša", "sr_cyrillic": "душа", "en": "soul" },
+      { "tag": "voc.sg", "sr_latin": "dušo", "sr_cyrillic": "душо", "en": "soul! (darling)" }
+    ],
+    "examples": [
+      { "sr_latin": "Dušo moja.", "sr_cyrillic": "Душо моја.", "en": "My darling.", "phraseRef": "st-dusko" },
+      { "sr_latin": "Spavaj lepo, dušo.", "sr_cyrillic": "Спавај лепо, душо.", "en": "Sleep well, darling.", "phraseRef": "st-spavaj-lepo" },
+      { "sr_latin": "Ne brini, dušo.", "sr_cyrillic": "Не брини, душо.", "en": "Don't worry, darling.", "phraseRef": "st-ne-brini" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "'Dušo' (vocative) is the most common Serbian term of endearment — works for anyone you love."
+  },
+  {
+    "id": "ljubav",
+    "lemma_sr_latin": "ljubav",
+    "lemma_sr_cyrillic": "љубав",
+    "gloss_en": "love",
+    "pos": "noun",
+    "gender": "f",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "ljubav", "sr_cyrillic": "љубав", "en": "love" },
+      { "tag": "voc.sg", "sr_latin": "ljubavi", "sr_cyrillic": "љубави", "en": "my love!" }
+    ],
+    "examples": [
+      { "sr_latin": "Ljubavi.", "sr_cyrillic": "Љубави.", "en": "My love.", "phraseRef": "st-ljubavi" },
+      { "sr_latin": "Laku noć, ljubavi.", "sr_cyrillic": "Лаку ноћ, љубави.", "en": "Good night, my love.", "phraseRef": "st-laku-noc-ljubavi" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "srce",
+    "lemma_sr_latin": "srce",
+    "lemma_sr_cyrillic": "срце",
+    "gloss_en": "heart",
+    "pos": "noun",
+    "gender": "n",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "srce", "sr_cyrillic": "срце", "en": "heart" },
+      { "tag": "acc.sg", "sr_latin": "srce", "sr_cyrillic": "срце", "en": "heart (acc)" }
+    ],
+    "examples": [
+      { "sr_latin": "Srce moje.", "sr_cyrillic": "Срце моје.", "en": "My heart.", "phraseRef": "st-srce" },
+      { "sr_latin": "Ukrala si mi srce.", "sr_cyrillic": "Украла си ми срце.", "en": "You stole my heart.", "phraseRef": "st-ukrala-srce" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "sunce",
+    "lemma_sr_latin": "sunce",
+    "lemma_sr_cyrillic": "сунце",
+    "gloss_en": "sun / sunshine",
+    "pos": "noun",
+    "gender": "n",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "sunce", "sr_cyrillic": "сунце", "en": "sun" }
+    ],
+    "examples": [
+      { "sr_latin": "Sunce moje.", "sr_cyrillic": "Сунце моје.", "en": "My sunshine.", "phraseRef": "st-sunce" },
+      { "sr_latin": "Dobro jutro, sunce.", "sr_cyrillic": "Добро јутро, сунце.", "en": "Good morning, sunshine.", "phraseRef": "st-dobro-jutro-sunce" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Vocative is identical to nominative for neuter '-e' nouns."
+  },
+  {
+    "id": "zlato",
+    "lemma_sr_latin": "zlato",
+    "lemma_sr_cyrillic": "злато",
+    "gloss_en": "gold / precious",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      { "sr_latin": "Zlato moje.", "sr_cyrillic": "Злато моје.", "en": "My gold / precious.", "phraseRef": "st-zlato" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "maca",
+    "lemma_sr_latin": "maca",
+    "lemma_sr_cyrillic": "маца",
+    "gloss_en": "kitten / kitty",
+    "pos": "noun",
+    "gender": "f",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "maca", "sr_cyrillic": "маца", "en": "kitten" },
+      { "tag": "voc.sg", "sr_latin": "maco", "sr_cyrillic": "мацо", "en": "kitty! (pet name)" }
+    ],
+    "examples": [
+      { "sr_latin": "Maco moja.", "sr_cyrillic": "Мацо моја.", "en": "My kitten.", "phraseRef": "st-maco" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "medo",
+    "lemma_sr_latin": "medo",
+    "lemma_sr_cyrillic": "медо",
+    "gloss_en": "teddy bear",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      { "sr_latin": "Medo moj.", "sr_cyrillic": "Медо мој.", "en": "My teddy bear.", "phraseRef": "st-medo" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Diminutive of 'medved' (bear). Used as a pet name for guys."
+  },
+  {
+    "id": "jutro",
+    "lemma_sr_latin": "jutro",
+    "lemma_sr_cyrillic": "јутро",
+    "gloss_en": "morning",
+    "pos": "noun",
+    "gender": "n",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "jutro", "sr_cyrillic": "јутро", "en": "morning" }
+    ],
+    "examples": [
+      { "sr_latin": "Dobro jutro, sunce.", "sr_cyrillic": "Добро јутро, сунце.", "en": "Good morning, sunshine.", "phraseRef": "st-dobro-jutro-sunce" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "noc",
+    "lemma_sr_latin": "noć",
+    "lemma_sr_cyrillic": "ноћ",
+    "gloss_en": "night",
+    "pos": "noun",
+    "gender": "f",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "noć", "sr_cyrillic": "ноћ", "en": "night" },
+      { "tag": "acc.sg", "sr_latin": "noć", "sr_cyrillic": "ноћ", "en": "night (acc)" }
+    ],
+    "examples": [
+      { "sr_latin": "Laku noć, ljubavi.", "sr_cyrillic": "Лаку ноћ, љубави.", "en": "Good night, my love.", "phraseRef": "st-laku-noc-ljubavi" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "vreme",
+    "lemma_sr_latin": "vreme",
+    "lemma_sr_cyrillic": "време",
+    "gloss_en": "time / weather",
+    "pos": "noun",
+    "gender": "n",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "vreme", "sr_cyrillic": "време", "en": "time" },
+      { "tag": "gen.sg", "sr_latin": "vremena", "sr_cyrillic": "времена", "en": "of time" }
+    ],
+    "examples": [
+      { "sr_latin": "Za tebe uvek imam vremena.", "sr_cyrillic": "За тебе увек имам времена.", "en": "I always have time for you.", "phraseRef": "st-za-tebe-uvek" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Means both 'time' and 'weather' depending on context."
+  },
+  {
+    "id": "veza",
+    "lemma_sr_latin": "veza",
+    "lemma_sr_cyrillic": "веза",
+    "gloss_en": "connection / relationship",
+    "pos": "noun",
+    "gender": "f",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "veza", "sr_cyrillic": "веза", "en": "connection" },
+      { "tag": "gen.sg", "sr_latin": "veze", "sr_cyrillic": "везе", "en": "of connection" }
+    ],
+    "examples": [
+      { "sr_latin": "Nema veze.", "sr_cyrillic": "Нема везе.", "en": "It doesn't matter.", "phraseRef": "rx-nema-veze" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "sansa",
+    "lemma_sr_latin": "šansa",
+    "lemma_sr_cyrillic": "шанса",
+    "gloss_en": "chance",
+    "pos": "noun",
+    "gender": "f",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "šansa", "sr_cyrillic": "шанса", "en": "chance" },
+      { "tag": "gen.sg", "sr_latin": "šanse", "sr_cyrillic": "шансе", "en": "of chance" }
+    ],
+    "examples": [
+      { "sr_latin": "Nema šanse!", "sr_cyrillic": "Нема шансе!", "en": "No chance!", "phraseRef": "rx-nema-sanse" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "bog",
+    "lemma_sr_latin": "Bog",
+    "lemma_sr_cyrillic": "Бог",
+    "gloss_en": "God",
+    "pos": "noun",
+    "gender": "m",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "Bog", "sr_cyrillic": "Бог", "en": "God" },
+      { "tag": "voc.sg", "sr_latin": "Bože", "sr_cyrillic": "Боже", "en": "God! (voc)" },
+      { "tag": "acc.sg", "sr_latin": "Boga", "sr_cyrillic": "Бога", "en": "God (acc)" }
+    ],
+    "examples": [
+      { "sr_latin": "Bože moj!", "sr_cyrillic": "Боже мој!", "en": "Oh my God!", "phraseRef": "rx-boze-moj" },
+      { "sr_latin": "Boga mi!", "sr_cyrillic": "Бога ми!", "en": "By God! / I swear!", "phraseRef": "rx-boga-mi" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "uzas",
+    "lemma_sr_latin": "užas",
+    "lemma_sr_cyrillic": "ужас",
+    "gloss_en": "horror / awful",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      { "sr_latin": "Užas!", "sr_cyrillic": "Ужас!", "en": "Horrible!", "phraseRef": "rx-uzas" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "katastrofa",
+    "lemma_sr_latin": "katastrofa",
+    "lemma_sr_cyrillic": "катастрофа",
+    "gloss_en": "disaster / catastrophe",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      { "sr_latin": "Katastrofa!", "sr_cyrillic": "Катастрофа!", "en": "Disaster!", "phraseRef": "rx-katastrofa" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "ludilo",
+    "lemma_sr_latin": "ludilo",
+    "lemma_sr_cyrillic": "лудило",
+    "gloss_en": "madness / insanity",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      { "sr_latin": "Ludilo!", "sr_cyrillic": "Лудило!", "en": "Insane!", "phraseRef": "rx-ludilo" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "vrh",
+    "lemma_sr_latin": "vrh",
+    "lemma_sr_cyrillic": "врх",
+    "gloss_en": "peak / top",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      { "sr_latin": "Vrh!", "sr_cyrillic": "Врх!", "en": "The best! / Peak!", "phraseRef": "rx-vrh" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "cast",
+    "lemma_sr_latin": "čast",
+    "lemma_sr_cyrillic": "част",
+    "gloss_en": "honor / respect",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      { "sr_latin": "Svaka čast!", "sr_cyrillic": "Свака част!", "en": "Well done!", "phraseRef": "rx-svaka-cast" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "kafa",
+    "lemma_sr_latin": "kafa",
+    "lemma_sr_cyrillic": "кафа",
+    "gloss_en": "coffee",
+    "pos": "noun",
+    "gender": "f",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "kafa", "sr_cyrillic": "кафа", "en": "coffee" },
+      { "tag": "acc.sg", "sr_latin": "kafu", "sr_cyrillic": "кафу", "en": "coffee (acc)" }
+    ],
+    "examples": [
+      { "sr_latin": "Hoću kafu.", "sr_cyrillic": "Хоћу кафу.", "en": "I want coffee." }
+    ]
+  },
+  {
+    "id": "voda",
+    "lemma_sr_latin": "voda",
+    "lemma_sr_cyrillic": "вода",
+    "gloss_en": "water",
+    "pos": "noun",
+    "gender": "f",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "voda", "sr_cyrillic": "вода", "en": "water" },
+      { "tag": "acc.sg", "sr_latin": "vodu", "sr_cyrillic": "воду", "en": "water (acc)" }
+    ],
+    "examples": [
+      { "sr_latin": "Pijem vodu.", "sr_cyrillic": "Пијем воду.", "en": "I drink water." }
+    ]
+  },
+  {
+    "id": "hrana",
+    "lemma_sr_latin": "hrana",
+    "lemma_sr_cyrillic": "храна",
+    "gloss_en": "food",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      { "sr_latin": "Hrana je dobra.", "sr_cyrillic": "Храна је добра.", "en": "The food is good." }
+    ]
+  },
+  {
+    "id": "kuca",
+    "lemma_sr_latin": "kuća",
+    "lemma_sr_cyrillic": "кућа",
+    "gloss_en": "house / home",
+    "pos": "noun",
+    "gender": "f",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "kuća", "sr_cyrillic": "кућа", "en": "house" },
+      { "tag": "dat.sg", "sr_latin": "kući", "sr_cyrillic": "кући", "en": "home (to home)" }
+    ],
+    "examples": [
+      { "sr_latin": "Idem kući.", "sr_cyrillic": "Идем кући.", "en": "I'm going home." }
+    ],
+    "notes": "'Kući' (dat) means 'home(ward)'. 'Kod kuće' means 'at home'."
+  },
+  {
+    "id": "posao",
+    "lemma_sr_latin": "posao",
+    "lemma_sr_cyrillic": "посао",
+    "gloss_en": "work / job",
+    "pos": "noun",
+    "gender": "m",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "posao", "sr_cyrillic": "посао", "en": "work" },
+      { "tag": "acc.sg", "sr_latin": "posao", "sr_cyrillic": "посао", "en": "work (acc)" },
+      { "tag": "loc.sg", "sr_latin": "poslu", "sr_cyrillic": "послу", "en": "at work" }
+    ],
+    "examples": [
+      { "sr_latin": "Na poslu sam.", "sr_cyrillic": "На послу сам.", "en": "I'm at work." }
+    ]
+  },
+  {
+    "id": "dan",
+    "lemma_sr_latin": "dan",
+    "lemma_sr_cyrillic": "дан",
+    "gloss_en": "day",
+    "pos": "noun",
+    "gender": "m",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "dan", "sr_cyrillic": "дан", "en": "day" },
+      { "tag": "nom.pl", "sr_latin": "dani", "sr_cyrillic": "дани", "en": "days" }
+    ],
+    "examples": [
+      { "sr_latin": "Dobar dan.", "sr_cyrillic": "Добар дан.", "en": "Good day / Hello." }
+    ]
+  },
+  {
+    "id": "vece",
+    "lemma_sr_latin": "veče",
+    "lemma_sr_cyrillic": "вече",
+    "gloss_en": "evening",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      { "sr_latin": "Dobro veče.", "sr_cyrillic": "Добро вече.", "en": "Good evening." }
+    ]
+  },
+  {
+    "id": "prijatelj",
+    "lemma_sr_latin": "prijatelj",
+    "lemma_sr_cyrillic": "пријатељ",
+    "gloss_en": "friend",
+    "pos": "noun",
+    "gender": "m",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "prijatelj", "sr_cyrillic": "пријатељ", "en": "friend" },
+      { "tag": "nom.pl", "sr_latin": "prijatelji", "sr_cyrillic": "пријатељи", "en": "friends" }
+    ],
+    "examples": [
+      { "sr_latin": "On je moj prijatelj.", "sr_cyrillic": "Он је мој пријатељ.", "en": "He's my friend." }
+    ]
+  },
+  {
+    "id": "drug",
+    "lemma_sr_latin": "drug",
+    "lemma_sr_cyrillic": "друг",
+    "gloss_en": "buddy / mate",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      { "sr_latin": "Moj drug.", "sr_cyrillic": "Мој друг.", "en": "My buddy." }
+    ],
+    "notes": "More casual than 'prijatelj'. 'Drugarica' = female friend."
+  },
+  {
+    "id": "mama",
+    "lemma_sr_latin": "mama",
+    "lemma_sr_cyrillic": "мама",
+    "gloss_en": "mom",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      { "sr_latin": "Moja mama.", "sr_cyrillic": "Моја мама.", "en": "My mom." }
+    ]
+  },
+  {
+    "id": "tata",
+    "lemma_sr_latin": "tata",
+    "lemma_sr_cyrillic": "тата",
+    "gloss_en": "dad",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      { "sr_latin": "Moj tata.", "sr_cyrillic": "Мој тата.", "en": "My dad." }
+    ],
+    "notes": "Masculine even though it ends in '-a'."
+  },
+  {
+    "id": "zena",
+    "lemma_sr_latin": "žena",
+    "lemma_sr_cyrillic": "жена",
+    "gloss_en": "woman / wife",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      { "sr_latin": "Lepa žena.", "sr_cyrillic": "Лепа жена.", "en": "Beautiful woman." }
+    ]
+  },
+  {
+    "id": "muz",
+    "lemma_sr_latin": "muž",
+    "lemma_sr_cyrillic": "муж",
+    "gloss_en": "husband",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      { "sr_latin": "Moj muž.", "sr_cyrillic": "Мој муж.", "en": "My husband." }
+    ]
+  },
+  {
+    "id": "dete",
+    "lemma_sr_latin": "dete",
+    "lemma_sr_cyrillic": "дете",
+    "gloss_en": "child",
+    "pos": "noun",
+    "gender": "n",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "dete", "sr_cyrillic": "дете", "en": "child" },
+      { "tag": "nom.pl", "sr_latin": "deca", "sr_cyrillic": "деца", "en": "children" }
+    ],
+    "examples": [
+      { "sr_latin": "Lepo dete.", "sr_cyrillic": "Лепо дете.", "en": "A lovely child." }
+    ],
+    "notes": "Irregular plural: 'deca' is grammatically feminine singular but means 'children'."
+  },
+  {
+    "id": "dobar",
+    "lemma_sr_latin": "dobar",
+    "lemma_sr_cyrillic": "добар",
+    "gloss_en": "good",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "dobar", "sr_cyrillic": "добар", "en": "good (m)" },
+      { "tag": "f.sg", "sr_latin": "dobra", "sr_cyrillic": "добра", "en": "good (f)" },
+      { "tag": "n.sg", "sr_latin": "dobro", "sr_cyrillic": "добро", "en": "good (n)" },
+      { "tag": "pl", "sr_latin": "dobri", "sr_cyrillic": "добри", "en": "good (pl)" },
+      { "tag": "sup.m", "sr_latin": "najbolji", "sr_cyrillic": "најбољи", "en": "the best (m)" },
+      { "tag": "sup.f", "sr_latin": "najbolja", "sr_cyrillic": "најбоља", "en": "the best (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Ti si najbolja.", "sr_cyrillic": "Ти си најбоља.", "en": "You're the best.", "phraseRef": "st-najbolja-si" },
+      { "sr_latin": "Dobro jutro, sunce.", "sr_cyrillic": "Добро јутро, сунце.", "en": "Good morning, sunshine.", "phraseRef": "st-dobro-jutro-sunce" },
+      { "sr_latin": "Baš dobro!", "sr_cyrillic": "Баш добро!", "en": "Really good!", "phraseRef": "rx-bas-dobro" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Irregular superlative: dobar → najbolji. 'Dobro' is also used as adverb ('well') and standalone ('OK')."
+  },
+  {
+    "id": "lep",
+    "lemma_sr_latin": "lep",
+    "lemma_sr_cyrillic": "леп",
+    "gloss_en": "pretty / nice",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "lep", "sr_cyrillic": "леп", "en": "pretty (m)" },
+      { "tag": "f.sg", "sr_latin": "lepa", "sr_cyrillic": "лепа", "en": "pretty (f)" },
+      { "tag": "n.sg", "sr_latin": "lepo", "sr_cyrillic": "лепо", "en": "pretty (n)" },
+      { "tag": "f.sg.intens", "sr_latin": "prelepa", "sr_cyrillic": "прелепа", "en": "gorgeous (f)" },
+      { "tag": "m.sg.intens", "sr_latin": "prelep", "sr_cyrillic": "прелеп", "en": "gorgeous (m)" }
+    ],
+    "examples": [
+      { "sr_latin": "Prelepa si.", "sr_cyrillic": "Прелепа си.", "en": "You're gorgeous.", "phraseRef": "st-prelepa-si" },
+      { "sr_latin": "Lepo ti stoji.", "sr_cyrillic": "Лепо ти стоји.", "en": "That looks good on you.", "phraseRef": "st-lepo-stoji" },
+      { "sr_latin": "Spavaj lepo.", "sr_cyrillic": "Спавај лепо.", "en": "Sleep well.", "phraseRef": "st-spavaj-lepo" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Prefix 'pre-' intensifies: lep → prelep (gorgeous). 'Lepo' as adverb means 'nicely/well'."
+  },
+  {
+    "id": "drag",
+    "lemma_sr_latin": "drag",
+    "lemma_sr_cyrillic": "драг",
+    "gloss_en": "dear",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "dragi", "sr_cyrillic": "драги", "en": "dear (m)" },
+      { "tag": "f.sg", "sr_latin": "draga", "sr_cyrillic": "драга", "en": "dear (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Draga moja.", "sr_cyrillic": "Драга моја.", "en": "My dear (to a woman).", "phraseRef": "st-draga" },
+      { "sr_latin": "Dragi moj.", "sr_cyrillic": "Драги мој.", "en": "My dear (to a man).", "phraseRef": "st-draga" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "pametan",
+    "lemma_sr_latin": "pametan",
+    "lemma_sr_cyrillic": "паметан",
+    "gloss_en": "smart",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "pametan", "sr_cyrillic": "паметан", "en": "smart (m)" },
+      { "tag": "f.sg", "sr_latin": "pametna", "sr_cyrillic": "паметна", "en": "smart (f)" },
+      { "tag": "n.sg", "sr_latin": "pametno", "sr_cyrillic": "паметно", "en": "smart (n)" }
+    ],
+    "examples": [
+      { "sr_latin": "Baš si pametna.", "sr_cyrillic": "Баш си паметна.", "en": "You're really smart.", "phraseRef": "st-pametna-si" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "smesan",
+    "lemma_sr_latin": "smešan",
+    "lemma_sr_cyrillic": "смешан",
+    "gloss_en": "funny",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "smešan", "sr_cyrillic": "смешан", "en": "funny (m)" },
+      { "tag": "f.sg", "sr_latin": "smešna", "sr_cyrillic": "смешна", "en": "funny (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Mnogo si smešna.", "sr_cyrillic": "Много си смешна.", "en": "You're so funny.", "phraseRef": "st-smesan" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "srecan",
+    "lemma_sr_latin": "srećan",
+    "lemma_sr_cyrillic": "срећан",
+    "gloss_en": "happy",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "srećan", "sr_cyrillic": "срећан", "en": "happy (m)" },
+      { "tag": "f.sg", "sr_latin": "srećna", "sr_cyrillic": "срећна", "en": "happy (f)" },
+      { "tag": "n.sg", "sr_latin": "srećno", "sr_cyrillic": "срећно", "en": "happy (n) / good luck" }
+    ],
+    "examples": [
+      { "sr_latin": "Srećan sam kad sam s tobom.", "sr_cyrillic": "Срећан сам кад сам с тобом.", "en": "I'm happy when I'm with you.", "phraseRef": "st-srecan-sam" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "'Srećno!' on its own means 'Good luck!'."
+  },
+  {
+    "id": "jadan",
+    "lemma_sr_latin": "jadan",
+    "lemma_sr_cyrillic": "јадан",
+    "gloss_en": "poor / pitiful",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "jadan", "sr_cyrillic": "јадан", "en": "poor (m)" },
+      { "tag": "f.sg", "sr_latin": "jadna", "sr_cyrillic": "јадна", "en": "poor (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Jadan ti!", "sr_cyrillic": "Јадан ти!", "en": "You poor thing!", "phraseRef": "rx-jadan" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "ozbiljan",
+    "lemma_sr_latin": "ozbiljan",
+    "lemma_sr_cyrillic": "озбиљан",
+    "gloss_en": "serious",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "ozbiljan", "sr_cyrillic": "озбиљан", "en": "serious (m)" },
+      { "tag": "f.sg", "sr_latin": "ozbiljna", "sr_cyrillic": "озбиљна", "en": "serious (f)" },
+      { "tag": "adv", "sr_latin": "ozbiljno", "sr_cyrillic": "озбиљно", "en": "seriously" }
+    ],
+    "examples": [
+      { "sr_latin": "Ozbiljno?", "sr_cyrillic": "Озбиљно?", "en": "Seriously?", "phraseRef": "rx-ozbiljno" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "odlican",
+    "lemma_sr_latin": "odličan",
+    "lemma_sr_cyrillic": "одличан",
+    "gloss_en": "excellent",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "odličan", "sr_cyrillic": "одличан", "en": "excellent (m)" },
+      { "tag": "adv", "sr_latin": "odlično", "sr_cyrillic": "одлично", "en": "excellently" }
+    ],
+    "examples": [
+      { "sr_latin": "Odlično!", "sr_cyrillic": "Одлично!", "en": "Excellent!", "phraseRef": "rx-odlicno" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "grozan",
+    "lemma_sr_latin": "grozan",
+    "lemma_sr_cyrillic": "грозан",
+    "gloss_en": "awful / horrible",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "grozan", "sr_cyrillic": "грозан", "en": "awful (m)" },
+      { "tag": "f.sg", "sr_latin": "grozna", "sr_cyrillic": "грозна", "en": "awful (f)" },
+      { "tag": "n.sg", "sr_latin": "grozno", "sr_cyrillic": "грозно", "en": "awful (n)" }
+    ],
+    "examples": [
+      { "sr_latin": "Grozno!", "sr_cyrillic": "Грозно!", "en": "That's terrible!", "phraseRef": "rx-grozno" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "los",
+    "lemma_sr_latin": "loš",
+    "lemma_sr_cyrillic": "лош",
+    "gloss_en": "bad",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "loš", "sr_cyrillic": "лош", "en": "bad (m)" },
+      { "tag": "n.sg", "sr_latin": "loše", "sr_cyrillic": "лоше", "en": "bad (n)" }
+    ],
+    "examples": [
+      { "sr_latin": "Nije loše!", "sr_cyrillic": "Није лоше!", "en": "Not bad!", "phraseRef": "rx-nije-lose" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "lak",
+    "lemma_sr_latin": "lak",
+    "lemma_sr_cyrillic": "лак",
+    "gloss_en": "easy / light",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "lak", "sr_cyrillic": "лак", "en": "easy/light (m)" },
+      { "tag": "f.sg", "sr_latin": "laka", "sr_cyrillic": "лака", "en": "easy/light (f)" },
+      { "tag": "acc.f.sg", "sr_latin": "laku", "sr_cyrillic": "лаку", "en": "easy/light (acc f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Laku noć.", "sr_cyrillic": "Лаку ноћ.", "en": "Good night.", "phraseRef": "st-laku-noc-ljubavi" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Means both 'easy' and 'light' (weight). 'Laku noć' = lit. 'light night'."
+  },
+  {
+    "id": "sladak",
+    "lemma_sr_latin": "sladak",
+    "lemma_sr_cyrillic": "сладак",
+    "gloss_en": "sweet / cute",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "sladak", "sr_cyrillic": "сладак", "en": "sweet (m)" },
+      { "tag": "f.sg", "sr_latin": "slatka", "sr_cyrillic": "слатка", "en": "sweet (f)" },
+      { "tag": "n.sg", "sr_latin": "slatko", "sr_cyrillic": "слатко", "en": "sweet (n)" }
+    ],
+    "examples": [
+      { "sr_latin": "Slatka si.", "sr_cyrillic": "Слатка си.", "en": "You're sweet." }
+    ]
+  },
+  {
+    "id": "lud",
+    "lemma_sr_latin": "lud",
+    "lemma_sr_cyrillic": "луд",
+    "gloss_en": "crazy",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "lud", "sr_cyrillic": "луд", "en": "crazy (m)" },
+      { "tag": "f.sg", "sr_latin": "luda", "sr_cyrillic": "луда", "en": "crazy (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Lud si!", "sr_cyrillic": "Луд си!", "en": "You're crazy!" }
+    ]
+  },
+  {
+    "id": "umoran",
+    "lemma_sr_latin": "umoran",
+    "lemma_sr_cyrillic": "уморан",
+    "gloss_en": "tired",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "umoran", "sr_cyrillic": "уморан", "en": "tired (m)" },
+      { "tag": "f.sg", "sr_latin": "umorna", "sr_cyrillic": "уморна", "en": "tired (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Umoran sam.", "sr_cyrillic": "Уморан сам.", "en": "I'm tired." }
+    ]
+  },
+  {
+    "id": "gladan",
+    "lemma_sr_latin": "gladan",
+    "lemma_sr_cyrillic": "гладан",
+    "gloss_en": "hungry",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "gladan", "sr_cyrillic": "гладан", "en": "hungry (m)" },
+      { "tag": "f.sg", "sr_latin": "gladna", "sr_cyrillic": "гладна", "en": "hungry (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Gladna sam.", "sr_cyrillic": "Гладна сам.", "en": "I'm hungry. (said by woman)" }
+    ]
+  },
+  {
+    "id": "mali",
+    "lemma_sr_latin": "mali",
+    "lemma_sr_cyrillic": "мали",
+    "gloss_en": "small / little",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "mali", "sr_cyrillic": "мали", "en": "small (m)" },
+      { "tag": "f.sg", "sr_latin": "mala", "sr_cyrillic": "мала", "en": "small (f)" },
+      { "tag": "n.sg", "sr_latin": "malo", "sr_cyrillic": "мало", "en": "small (n) / a little" }
+    ],
+    "examples": [
+      { "sr_latin": "Mali pas.", "sr_cyrillic": "Мали пас.", "en": "A small dog." }
+    ]
+  },
+  {
+    "id": "veliki",
+    "lemma_sr_latin": "veliki",
+    "lemma_sr_cyrillic": "велики",
+    "gloss_en": "big / large",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "veliki", "sr_cyrillic": "велики", "en": "big (m)" },
+      { "tag": "f.sg", "sr_latin": "velika", "sr_cyrillic": "велика", "en": "big (f)" },
+      { "tag": "n.sg", "sr_latin": "veliko", "sr_cyrillic": "велико", "en": "big (n)" }
+    ],
+    "examples": [
+      { "sr_latin": "Velika kuća.", "sr_cyrillic": "Велика кућа.", "en": "A big house." }
+    ]
+  },
+  {
+    "id": "tezak",
+    "lemma_sr_latin": "težak",
+    "lemma_sr_cyrillic": "тежак",
+    "gloss_en": "heavy / hard",
+    "pos": "adj",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "težak", "sr_cyrillic": "тежак", "en": "hard (m)" },
+      { "tag": "f.sg", "sr_latin": "teška", "sr_cyrillic": "тешка", "en": "hard (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Težak dan.", "sr_cyrillic": "Тежак дан.", "en": "A hard day." }
+    ]
+  },
+  {
+    "id": "ekstra-adj",
+    "lemma_sr_latin": "ekstra",
+    "lemma_sr_cyrillic": "екстра",
+    "gloss_en": "awesome / extra (slang)",
+    "pos": "adj",
+    "examples": [
+      { "sr_latin": "Ekstra!", "sr_cyrillic": "Екстра!", "en": "Awesome!", "phraseRef": "rx-ekstra" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "Indeclinable in this usage — same form regardless of gender/number."
+  },
+  {
+    "id": "da-yes",
+    "lemma_sr_latin": "da",
+    "lemma_sr_cyrillic": "да",
+    "gloss_en": "yes",
+    "pos": "particle",
+    "rank": 12,
+    "examples": [
+      { "sr_latin": "Da, hoću.", "sr_cyrillic": "Да, хоћу.", "en": "Yes, I want." }
+    ],
+    "notes": "'Da' has two distinct uses: (1) as 'yes', (2) as the subordinating conjunction 'that / to' (see 'da-conj')."
+  },
+  {
+    "id": "da-conj",
+    "lemma_sr_latin": "da",
+    "lemma_sr_cyrillic": "да",
+    "gloss_en": "that / to (subjunctive)",
+    "pos": "conj",
+    "rank": 13,
+    "examples": [
+      { "sr_latin": "Jedva čekam da te vidim.", "sr_cyrillic": "Једва чекам да те видим.", "en": "I can't wait to see you.", "phraseRef": "st-jedva-cekam" },
+      { "sr_latin": "Nemoj da me rastužiš.", "sr_cyrillic": "Немој да ме растужиш.", "en": "Don't make me sad.", "phraseRef": "st-rastuzi-me" },
+      { "sr_latin": "Hajde da se ne svađamo.", "sr_cyrillic": "Хајде да се не свађамо.", "en": "Let's not fight.", "phraseRef": "st-hajde-ne-svadjamo" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Subjunctive 'da' replaces the infinitive in modern Serbian: 'hoću da idem' rather than 'hoću ići'."
+  },
+  {
+    "id": "ne",
+    "lemma_sr_latin": "ne",
+    "lemma_sr_cyrillic": "не",
+    "gloss_en": "no / not",
+    "pos": "particle",
+    "rank": 11,
+    "examples": [
+      { "sr_latin": "Ne brini, dušo.", "sr_cyrillic": "Не брини, душо.", "en": "Don't worry, darling.", "phraseRef": "st-ne-brini" },
+      { "sr_latin": "Pa... ne znam.", "sr_cyrillic": "Па... не знам.", "en": "Well... I don't know.", "phraseRef": "rx-pa-ne-znam" },
+      { "sr_latin": "Nije loše!", "sr_cyrillic": "Није лоше!", "en": "Not bad!", "phraseRef": "rx-nije-lose" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Negates verbs: 'ne znam', 'ne mogu'. 'Nije' (= ne + je) is the 3sg negative of 'biti'."
+  },
+  {
+    "id": "nemoj",
+    "lemma_sr_latin": "nemoj",
+    "lemma_sr_cyrillic": "немој",
+    "gloss_en": "don't (negative imperative)",
+    "pos": "particle",
+    "forms": [
+      { "tag": "imp.2sg", "sr_latin": "nemoj", "sr_cyrillic": "немој", "en": "don't (sg)" },
+      { "tag": "imp.2pl", "sr_latin": "nemojte", "sr_cyrillic": "немојте", "en": "don't (pl/formal)" }
+    ],
+    "examples": [
+      { "sr_latin": "Nemoj da me rastužiš.", "sr_cyrillic": "Немој да ме растужиш.", "en": "Don't make me sad.", "phraseRef": "st-rastuzi-me" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Used to form negative commands: 'Nemoj + da + verb'."
+  },
+  {
+    "id": "mnogo",
+    "lemma_sr_latin": "mnogo",
+    "lemma_sr_cyrillic": "много",
+    "gloss_en": "a lot / very",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Mnogo si smešna.", "sr_cyrillic": "Много си смешна.", "en": "You're so funny.", "phraseRef": "st-smesan" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "malo",
+    "lemma_sr_latin": "malo",
+    "lemma_sr_cyrillic": "мало",
+    "gloss_en": "a little / a bit",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Malo sam umoran.", "sr_cyrillic": "Мало сам уморан.", "en": "I'm a little tired." }
+    ]
+  },
+  {
+    "id": "bas",
+    "lemma_sr_latin": "baš",
+    "lemma_sr_cyrillic": "баш",
+    "gloss_en": "really / exactly",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Baš si pametna.", "sr_cyrillic": "Баш си паметна.", "en": "You're really smart.", "phraseRef": "st-pametna-si" },
+      { "sr_latin": "Baš tako!", "sr_cyrillic": "Баш тако!", "en": "Exactly!", "phraseRef": "rx-bas-tako" },
+      { "sr_latin": "Baš dobro!", "sr_cyrillic": "Баш добро!", "en": "Really good!", "phraseRef": "rx-bas-dobro" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Intensifier — adds sincerity or emphasis. One of the most useful little Serbian words."
+  },
+  {
+    "id": "stvarno",
+    "lemma_sr_latin": "stvarno",
+    "lemma_sr_cyrillic": "стварно",
+    "gloss_en": "really / seriously",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Stvarno?", "sr_cyrillic": "Стварно?", "en": "Really?", "phraseRef": "rx-stvarno" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "samo",
+    "lemma_sr_latin": "samo",
+    "lemma_sr_cyrillic": "само",
+    "gloss_en": "only / just",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Samo ti.", "sr_cyrillic": "Само ти.", "en": "Only you." }
+    ]
+  },
+  {
+    "id": "jos",
+    "lemma_sr_latin": "još",
+    "lemma_sr_cyrillic": "још",
+    "gloss_en": "still / more",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Još malo.", "sr_cyrillic": "Још мало.", "en": "A little more." }
+    ]
+  },
+  {
+    "id": "vec",
+    "lemma_sr_latin": "već",
+    "lemma_sr_cyrillic": "већ",
+    "gloss_en": "already",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Već znam.", "sr_cyrillic": "Већ знам.", "en": "I already know." }
+    ]
+  },
+  {
+    "id": "vise",
+    "lemma_sr_latin": "više",
+    "lemma_sr_cyrillic": "више",
+    "gloss_en": "more / anymore",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Dosta više!", "sr_cyrillic": "Доста више!", "en": "Enough already!", "phraseRef": "rx-dosta-vise" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "dosta",
+    "lemma_sr_latin": "dosta",
+    "lemma_sr_cyrillic": "доста",
+    "gloss_en": "enough",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Dosta više!", "sr_cyrillic": "Доста више!", "en": "Enough already!", "phraseRef": "rx-dosta-vise" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "uvek",
+    "lemma_sr_latin": "uvek",
+    "lemma_sr_cyrillic": "увек",
+    "gloss_en": "always",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Za tebe uvek imam vremena.", "sr_cyrillic": "За тебе увек имам времена.", "en": "I always have time for you.", "phraseRef": "st-za-tebe-uvek" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "kasnije",
+    "lemma_sr_latin": "kasnije",
+    "lemma_sr_cyrillic": "касније",
+    "gloss_en": "later",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Pričamo kasnije.", "sr_cyrillic": "Причамо касније.", "en": "We'll talk later." }
+    ]
+  },
+  {
+    "id": "sada",
+    "lemma_sr_latin": "sada",
+    "lemma_sr_cyrillic": "сада",
+    "gloss_en": "now",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Sada idem.", "sr_cyrillic": "Сада идем.", "en": "I'm going now." }
+    ],
+    "notes": "Often shortened to 'sad'."
+  },
+  {
+    "id": "sutra",
+    "lemma_sr_latin": "sutra",
+    "lemma_sr_cyrillic": "сутра",
+    "gloss_en": "tomorrow",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Vidimo se sutra.", "sr_cyrillic": "Видимо се сутра.", "en": "See you tomorrow." }
+    ]
+  },
+  {
+    "id": "juce",
+    "lemma_sr_latin": "juče",
+    "lemma_sr_cyrillic": "јуче",
+    "gloss_en": "yesterday",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Juče sam radio.", "sr_cyrillic": "Јуче сам радио.", "en": "I worked yesterday." }
+    ]
+  },
+  {
+    "id": "tako",
+    "lemma_sr_latin": "tako",
+    "lemma_sr_cyrillic": "тако",
+    "gloss_en": "so / like that",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Baš tako!", "sr_cyrillic": "Баш тако!", "en": "Exactly!", "phraseRef": "rx-bas-tako" },
+      { "sr_latin": "Izvini, nisam mislio tako.", "sr_cyrillic": "Извини, нисам мислио тако.", "en": "Sorry, I didn't mean it like that.", "phraseRef": "st-izvini" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"]
+  },
+  {
+    "id": "jedva",
+    "lemma_sr_latin": "jedva",
+    "lemma_sr_cyrillic": "једва",
+    "gloss_en": "barely / hardly",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Jedva čekam.", "sr_cyrillic": "Једва чекам.", "en": "I can't wait. (lit. I barely wait)", "phraseRef": "st-jedva-cekam" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "kako",
+    "lemma_sr_latin": "kako",
+    "lemma_sr_cyrillic": "како",
+    "gloss_en": "how",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Kako da ne!", "sr_cyrillic": "Како да не!", "en": "Sure thing!", "phraseRef": "rx-kako-da-ne" },
+      { "sr_latin": "Kako si?", "sr_cyrillic": "Како си?", "en": "How are you?" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "kakvi",
+    "lemma_sr_latin": "kakvi",
+    "lemma_sr_cyrillic": "какви",
+    "gloss_en": "what kind (pl)",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Ma kakvi!", "sr_cyrillic": "Ма какви!", "en": "No way! / As if!", "phraseRef": "rx-ma-kakvi" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "From 'kakav' (what kind of). 'Ma kakvi!' is an idiomatic dismissal."
+  },
+  {
+    "id": "sta",
+    "lemma_sr_latin": "šta",
+    "lemma_sr_cyrillic": "шта",
+    "gloss_en": "what",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Šta radiš?", "sr_cyrillic": "Шта радиш?", "en": "What are you doing?" },
+      { "sr_latin": "Ma šta znam.", "sr_cyrillic": "Ма шта знам.", "en": "I dunno.", "phraseRef": "rx-ma-sta-znam" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "gde",
+    "lemma_sr_latin": "gde",
+    "lemma_sr_cyrillic": "где",
+    "gloss_en": "where",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Gde si?", "sr_cyrillic": "Где си?", "en": "Where are you?" }
+    ]
+  },
+  {
+    "id": "kada",
+    "lemma_sr_latin": "kada",
+    "lemma_sr_cyrillic": "када",
+    "gloss_en": "when",
+    "pos": "conj",
+    "examples": [
+      { "sr_latin": "Srećan sam kad sam s tobom.", "sr_cyrillic": "Срећан сам кад сам с тобом.", "en": "I'm happy when I'm with you.", "phraseRef": "st-srecan-sam" },
+      { "sr_latin": "Mrzim kad se svađamo.", "sr_cyrillic": "Мрзим кад се свађамо.", "en": "I hate when we fight.", "phraseRef": "st-mrzim-svadje" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Often shortened to 'kad'. Functions as both 'when' (question) and 'when' (conjunction)."
+  },
+  {
+    "id": "zasto",
+    "lemma_sr_latin": "zašto",
+    "lemma_sr_cyrillic": "зашто",
+    "gloss_en": "why",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Zašto?", "sr_cyrillic": "Зашто?", "en": "Why?" }
+    ]
+  },
+  {
+    "id": "hajde",
+    "lemma_sr_latin": "hajde",
+    "lemma_sr_cyrillic": "хајде",
+    "gloss_en": "come on / let's",
+    "pos": "particle",
+    "examples": [
+      { "sr_latin": "Hajde da se ne svađamo.", "sr_cyrillic": "Хајде да се не свађамо.", "en": "Let's not fight.", "phraseRef": "st-hajde-ne-svadjamo" },
+      { "sr_latin": "Ajde bre!", "sr_cyrillic": "Ајде бре!", "en": "Come on, man!", "phraseRef": "rx-ajde-bre" }
+    ],
+    "appearsIn": ["sweet-talk", "reactions"],
+    "notes": "Often written/said as 'ajde'. Used for invitation ('let's go') or impatience ('come on!')."
+  },
+  {
+    "id": "ma",
+    "lemma_sr_latin": "ma",
+    "lemma_sr_cyrillic": "ма",
+    "gloss_en": "well / oh / nah",
+    "pos": "particle",
+    "examples": [
+      { "sr_latin": "Ma daj!", "sr_cyrillic": "Ма дај!", "en": "Come on!", "phraseRef": "rx-ma-daj" },
+      { "sr_latin": "Ma pusti!", "sr_cyrillic": "Ма пусти!", "en": "Forget it!", "phraseRef": "rx-ma-pusti" },
+      { "sr_latin": "Ma šta znam.", "sr_cyrillic": "Ма шта знам.", "en": "I dunno.", "phraseRef": "rx-ma-sta-znam" },
+      { "sr_latin": "Ma kakvi!", "sr_cyrillic": "Ма какви!", "en": "No way!", "phraseRef": "rx-ma-kakvi" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "Adds dismissal, mild contradiction, or casual emphasis. Sentence-initial particle."
+  },
+  {
+    "id": "bre",
+    "lemma_sr_latin": "bre",
+    "lemma_sr_cyrillic": "бре",
+    "gloss_en": "man / dude (particle)",
+    "pos": "particle",
+    "examples": [
+      { "sr_latin": "Ajde bre!", "sr_cyrillic": "Ајде бре!", "en": "Come on, man!", "phraseRef": "rx-ajde-bre" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "Quintessentially Serbian particle. Adds emphasis, camaraderie, frustration depending on tone. No real translation."
+  },
+  {
+    "id": "pa",
+    "lemma_sr_latin": "pa",
+    "lemma_sr_cyrillic": "па",
+    "gloss_en": "well / so",
+    "pos": "particle",
+    "examples": [
+      { "sr_latin": "Pa... ne znam.", "sr_cyrillic": "Па... не знам.", "en": "Well... I don't know.", "phraseRef": "rx-pa-ne-znam" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "Filler / discourse marker. Serbs start a huge fraction of sentences with 'pa'."
+  },
+  {
+    "id": "joj-interj",
+    "lemma_sr_latin": "joj",
+    "lemma_sr_cyrillic": "јој",
+    "gloss_en": "oh! / ouch!",
+    "pos": "interj",
+    "examples": [
+      { "sr_latin": "Jao!", "sr_cyrillic": "Јао!", "en": "Oh no!", "phraseRef": "rx-jao" },
+      { "sr_latin": "Joj, Bože!", "sr_cyrillic": "Јој, Боже!", "en": "Oh God!", "phraseRef": "rx-joj-boze" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "Pure emotional reaction word. Same spelling as the dative clitic 'joj' (to her); context disambiguates."
+  },
+  {
+    "id": "jao",
+    "lemma_sr_latin": "jao",
+    "lemma_sr_cyrillic": "јао",
+    "gloss_en": "oh no / ouch",
+    "pos": "interj",
+    "examples": [
+      { "sr_latin": "Jao!", "sr_cyrillic": "Јао!", "en": "Oh no!", "phraseRef": "rx-jao" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "naravno",
+    "lemma_sr_latin": "naravno",
+    "lemma_sr_cyrillic": "наравно",
+    "gloss_en": "of course",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Naravno!", "sr_cyrillic": "Наравно!", "en": "Of course!", "phraseRef": "rx-naravno" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "nista",
+    "lemma_sr_latin": "ništa",
+    "lemma_sr_cyrillic": "ништа",
+    "gloss_en": "nothing",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Ništa to.", "sr_cyrillic": "Ништа то.", "en": "It's nothing.", "phraseRef": "rx-nista-to" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "sve",
+    "lemma_sr_latin": "sve",
+    "lemma_sr_cyrillic": "све",
+    "gloss_en": "everything / all",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Sve mi značiš.", "sr_cyrillic": "Све ми значиш.", "en": "You mean everything to me.", "phraseRef": "st-sve-mi-znacis" },
+      { "sr_latin": "Sve će biti u redu.", "sr_cyrillic": "Све ће бити у реду.", "en": "Everything will be okay.", "phraseRef": "st-sve-ce-biti-ok" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "to",
+    "lemma_sr_latin": "to",
+    "lemma_sr_cyrillic": "то",
+    "gloss_en": "that / it",
+    "pos": "pron",
+    "examples": [
+      { "sr_latin": "Ništa to.", "sr_cyrillic": "Ништа то.", "en": "It's nothing.", "phraseRef": "rx-nista-to" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "tu",
+    "lemma_sr_latin": "tu",
+    "lemma_sr_cyrillic": "ту",
+    "gloss_en": "here / there",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Tu sam za tebe.", "sr_cyrillic": "Ту сам за тебе.", "en": "I'm here for you.", "phraseRef": "st-tu-sam" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "red",
+    "lemma_sr_latin": "red",
+    "lemma_sr_cyrillic": "ред",
+    "gloss_en": "order / row",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      { "sr_latin": "Sve će biti u redu.", "sr_cyrillic": "Све ће бити у реду.", "en": "Everything will be okay. (lit. in order)", "phraseRef": "st-sve-ce-biti-ok" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "'U redu' is the idiomatic 'okay / alright'."
+  },
+  {
+    "id": "svaki",
+    "lemma_sr_latin": "svaki",
+    "lemma_sr_cyrillic": "сваки",
+    "gloss_en": "every / each",
+    "pos": "pron",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "svaki", "sr_cyrillic": "сваки", "en": "every (m)" },
+      { "tag": "f.sg", "sr_latin": "svaka", "sr_cyrillic": "свака", "en": "every (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Svaka čast!", "sr_cyrillic": "Свака част!", "en": "Well done!", "phraseRef": "rx-svaka-cast" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "super",
+    "lemma_sr_latin": "super",
+    "lemma_sr_cyrillic": "супер",
+    "gloss_en": "great / awesome",
+    "pos": "interj",
+    "examples": [
+      { "sr_latin": "Super!", "sr_cyrillic": "Супер!", "en": "Great!", "phraseRef": "rx-super" }
+    ],
+    "appearsIn": ["reactions"],
+    "notes": "Borrowed loanword, used as both adjective and interjection. Indeclinable."
+  },
+  {
+    "id": "ekstra-interj",
+    "lemma_sr_latin": "ekstra",
+    "lemma_sr_cyrillic": "екстра",
+    "gloss_en": "awesome!",
+    "pos": "interj",
+    "examples": [
+      { "sr_latin": "Ekstra!", "sr_cyrillic": "Екстра!", "en": "Awesome!", "phraseRef": "rx-ekstra" }
+    ],
+    "appearsIn": ["reactions"]
+  },
+  {
+    "id": "na",
+    "lemma_sr_latin": "na",
+    "lemma_sr_cyrillic": "на",
+    "gloss_en": "on / to / at",
+    "pos": "prep",
+    "examples": [
+      { "sr_latin": "Mislim na tebe.", "sr_cyrillic": "Мислим на тебе.", "en": "I'm thinking about you.", "phraseRef": "st-mislim-na-tebe" },
+      { "sr_latin": "Na poslu sam.", "sr_cyrillic": "На послу сам.", "en": "I'm at work." }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Takes accusative for direction ('na posao' = to work), locative for location ('na poslu' = at work)."
+  },
+  {
+    "id": "u",
+    "lemma_sr_latin": "u",
+    "lemma_sr_cyrillic": "у",
+    "gloss_en": "in / into",
+    "pos": "prep",
+    "examples": [
+      { "sr_latin": "Sve će biti u redu.", "sr_cyrillic": "Све ће бити у реду.", "en": "Everything will be okay.", "phraseRef": "st-sve-ce-biti-ok" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Takes accusative for direction, locative for location."
+  },
+  {
+    "id": "za",
+    "lemma_sr_latin": "za",
+    "lemma_sr_cyrillic": "за",
+    "gloss_en": "for / behind",
+    "pos": "prep",
+    "examples": [
+      { "sr_latin": "Za tebe uvek imam vremena.", "sr_cyrillic": "За тебе увек имам времена.", "en": "I always have time for you.", "phraseRef": "st-za-tebe-uvek" },
+      { "sr_latin": "Tu sam za tebe.", "sr_cyrillic": "Ту сам за тебе.", "en": "I'm here for you.", "phraseRef": "st-tu-sam" },
+      { "sr_latin": "Ludim za tobom.", "sr_cyrillic": "Лудим за тобом.", "en": "I'm crazy about you.", "phraseRef": "st-ludim-za-tobom" }
+    ],
+    "appearsIn": ["sweet-talk"]
+  },
+  {
+    "id": "sa",
+    "lemma_sr_latin": "sa",
+    "lemma_sr_cyrillic": "са",
+    "gloss_en": "with",
+    "pos": "prep",
+    "examples": [
+      { "sr_latin": "Srećan sam kad sam s tobom.", "sr_cyrillic": "Срећан сам кад сам с тобом.", "en": "I'm happy when I'm with you.", "phraseRef": "st-srecan-sam" }
+    ],
+    "appearsIn": ["sweet-talk"],
+    "notes": "Often shortened to 's' before vowels and many consonants. Takes instrumental case."
+  },
+  {
+    "id": "od",
+    "lemma_sr_latin": "od",
+    "lemma_sr_cyrillic": "од",
+    "gloss_en": "from / of",
+    "pos": "prep",
+    "examples": [
+      { "sr_latin": "Od mame.", "sr_cyrillic": "Од маме.", "en": "From mom." }
+    ],
+    "notes": "Takes genitive case."
+  },
+  {
+    "id": "do",
+    "lemma_sr_latin": "do",
+    "lemma_sr_cyrillic": "до",
+    "gloss_en": "until / to",
+    "pos": "prep",
+    "examples": [
+      { "sr_latin": "Do sutra.", "sr_cyrillic": "До сутра.", "en": "Until tomorrow." }
+    ],
+    "notes": "Takes genitive case."
+  },
+  {
+    "id": "kod",
+    "lemma_sr_latin": "kod",
+    "lemma_sr_cyrillic": "код",
+    "gloss_en": "at (someone's place)",
+    "pos": "prep",
+    "examples": [
+      { "sr_latin": "Kod kuće sam.", "sr_cyrillic": "Код куће сам.", "en": "I'm at home." }
+    ],
+    "notes": "Takes genitive. 'Kod mene' = at my place."
+  },
+  {
+    "id": "i",
+    "lemma_sr_latin": "i",
+    "lemma_sr_cyrillic": "и",
+    "gloss_en": "and",
+    "pos": "conj",
+    "rank": 14,
+    "examples": [
+      { "sr_latin": "Ti i ja.", "sr_cyrillic": "Ти и ја.", "en": "You and me." }
+    ]
+  },
+  {
+    "id": "a",
+    "lemma_sr_latin": "a",
+    "lemma_sr_cyrillic": "а",
+    "gloss_en": "and / but / while",
+    "pos": "conj",
+    "examples": [
+      { "sr_latin": "Ja idem, a ti?", "sr_cyrillic": "Ја идем, а ти?", "en": "I'm going, and you?" }
+    ],
+    "notes": "Contrastive 'and' — implies a slight shift. Different from 'i' (additive) and 'ali' (but)."
+  },
+  {
+    "id": "ali",
+    "lemma_sr_latin": "ali",
+    "lemma_sr_cyrillic": "али",
+    "gloss_en": "but",
+    "pos": "conj",
+    "examples": [
+      { "sr_latin": "Hoću, ali ne mogu.", "sr_cyrillic": "Хоћу, али не могу.", "en": "I want to, but I can't." }
+    ]
+  },
+  {
+    "id": "ili",
+    "lemma_sr_latin": "ili",
+    "lemma_sr_cyrillic": "или",
+    "gloss_en": "or",
+    "pos": "conj",
+    "examples": [
+      { "sr_latin": "Kafa ili čaj?", "sr_cyrillic": "Кафа или чај?", "en": "Coffee or tea?" }
+    ]
+  },
+  {
+    "id": "ako",
+    "lemma_sr_latin": "ako",
+    "lemma_sr_cyrillic": "ако",
+    "gloss_en": "if",
+    "pos": "conj",
+    "examples": [
+      { "sr_latin": "Ako možeš.", "sr_cyrillic": "Ако можеш.", "en": "If you can." }
+    ]
+  },
+  {
+    "id": "jer",
+    "lemma_sr_latin": "jer",
+    "lemma_sr_cyrillic": "јер",
+    "gloss_en": "because",
+    "pos": "conj",
+    "examples": [
+      { "sr_latin": "Jer te volim.", "sr_cyrillic": "Јер те волим.", "en": "Because I love you." }
+    ]
+  },
+  {
+    "id": "jedan",
+    "lemma_sr_latin": "jedan",
+    "lemma_sr_cyrillic": "један",
+    "gloss_en": "one",
+    "pos": "num",
+    "forms": [
+      { "tag": "m.sg", "sr_latin": "jedan", "sr_cyrillic": "један", "en": "one (m)" },
+      { "tag": "f.sg", "sr_latin": "jedna", "sr_cyrillic": "једна", "en": "one (f)" },
+      { "tag": "n.sg", "sr_latin": "jedno", "sr_cyrillic": "једно", "en": "one (n)" }
+    ],
+    "examples": [
+      { "sr_latin": "Jedan dan.", "sr_cyrillic": "Један дан.", "en": "One day." }
+    ]
+  },
+  {
+    "id": "dva",
+    "lemma_sr_latin": "dva",
+    "lemma_sr_cyrillic": "два",
+    "gloss_en": "two",
+    "pos": "num",
+    "forms": [
+      { "tag": "m/n", "sr_latin": "dva", "sr_cyrillic": "два", "en": "two (m/n)" },
+      { "tag": "f", "sr_latin": "dve", "sr_cyrillic": "две", "en": "two (f)" }
+    ],
+    "examples": [
+      { "sr_latin": "Dva dana.", "sr_cyrillic": "Два дана.", "en": "Two days." }
+    ],
+    "notes": "Numbers 2-4 take a special 'paucal' form: 'dva dana' (not 'dva dani')."
+  },
+  {
+    "id": "tri",
+    "lemma_sr_latin": "tri",
+    "lemma_sr_cyrillic": "три",
+    "gloss_en": "three",
+    "pos": "num",
+    "examples": [
+      { "sr_latin": "Tri dana.", "sr_cyrillic": "Три дана.", "en": "Three days." }
+    ]
+  },
+  {
+    "id": "cetiri",
+    "lemma_sr_latin": "četiri",
+    "lemma_sr_cyrillic": "четири",
+    "gloss_en": "four",
+    "pos": "num",
+    "examples": [
+      { "sr_latin": "Četiri sata.", "sr_cyrillic": "Четири сата.", "en": "Four hours / o'clock." }
+    ]
+  },
+  {
+    "id": "pet",
+    "lemma_sr_latin": "pet",
+    "lemma_sr_cyrillic": "пет",
+    "gloss_en": "five",
+    "pos": "num",
+    "examples": [
+      { "sr_latin": "Pet minuta.", "sr_cyrillic": "Пет минута.", "en": "Five minutes." }
+    ],
+    "notes": "From 'pet' onward, the noun takes genitive plural: 'pet minuta' (not 'pet minuti')."
+  },
+  {
+    "id": "nula",
+    "lemma_sr_latin": "nula",
+    "lemma_sr_cyrillic": "нула",
+    "gloss_en": "zero",
+    "pos": "num",
+    "examples": [
+      { "sr_latin": "Nula bodova.", "sr_cyrillic": "Нула бодова.", "en": "Zero points." }
+    ]
+  }
+]

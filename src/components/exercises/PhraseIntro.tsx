@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import type { Phrase } from '../../store/types';
+import type { Phrase, UserProgress, Word } from '../../store/types';
 import Card from '../ui/Card';
 import Btn from '../ui/Btn';
 import MonoBadge from '../ui/MonoBadge';
 import DualScript from '../ui/DualScript';
+import WordChips from '../ui/WordChips';
+import { getWordById } from '../../data/words';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -11,6 +13,8 @@ interface PhraseIntroProps {
   phrases: Phrase[];
   script: 'latin' | 'cyrillic';
   onComplete: () => void;
+  /** Optional — when passed, word chips colour-code by SRS bucket. */
+  progress?: UserProgress;
 }
 
 /**
@@ -19,11 +23,18 @@ interface PhraseIntroProps {
  * were near-identical for short phrases like "Dušo moja" and added
  * busywork instead of encoding. Retrieval happens later in the SRS.
  */
-export default function PhraseIntro({ phrases, script, onComplete }: PhraseIntroProps) {
+export default function PhraseIntro({ phrases, script, onComplete, progress }: PhraseIntroProps) {
   const [index, setIndex] = useState(0);
   const [revealed, setRevealed] = useState(false);
   const phrase = phrases[index];
   if (!phrase) return null;
+
+  // Resolve word references — the breakdown chips shown under each
+  // phrase. Missing word IDs are dropped silently (lessons not yet
+  // tagged just don't show chips). Audit §3.10.
+  const refWords: Word[] = (phrase.wordRefs ?? [])
+    .map(getWordById)
+    .filter((w): w is Word => !!w);
 
   const next = () => {
     if (index + 1 >= phrases.length) {
@@ -70,6 +81,13 @@ export default function PhraseIntro({ phrases, script, onComplete }: PhraseIntro
           weight={500}
         />
       </div>
+
+      {refWords.length > 0 && (
+        <div>
+          <div style={{ ...metaLabel, marginBottom: 8 }}>WORD BY WORD</div>
+          <WordChips words={refWords} script={script} progress={progress} />
+        </div>
+      )}
 
       {!revealed ? (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
