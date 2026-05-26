@@ -4,6 +4,7 @@ import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
 import DualScript from '../ui/DualScript';
 import ContinueButton from '../ui/ContinueButton';
+import GlossHint from '../ui/GlossHint';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -188,7 +189,14 @@ export default function MultipleChoice({ exercise, onAnswer, script }: MultipleC
           >
             {exercise.correctAnswer}
           </div>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
         </Card>
+      )}
+
+      {result?.correct && exercise.phrase.gloss_hint && (
+        <div style={{ textAlign: 'center' }}>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
+        </div>
       )}
 
       {result && exercise.phrase.notes && (

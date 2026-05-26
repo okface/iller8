@@ -135,6 +135,7 @@ function wordAsPhrase(word: Word): Phrase {
     sr_latin: word.lemma_sr_latin,
     sr_cyrillic: word.lemma_sr_cyrillic,
     en: word.gloss_en,
+    gloss_hint: word.gloss_hint,
     context: posLabel(word),
     notes: word.notes,
   };

@@ -4,6 +4,7 @@ import Card from '../ui/Card';
 import Btn from '../ui/Btn';
 import MonoBadge from '../ui/MonoBadge';
 import DualScript from '../ui/DualScript';
+import GlossHint from '../ui/GlossHint';
 import WordChips from '../ui/WordChips';
 import { normalizeWordRefs } from '../../data/words';
 import { T, metaLabel } from '../../lib/tokens';
@@ -102,6 +103,7 @@ export default function PhraseIntro({ phrases, script, onComplete, progress }: P
           <div style={{ fontSize: 20, color: T.amber, fontWeight: 500, marginTop: -4 }}>
             {phrase.en}
           </div>
+          <GlossHint hint={phrase.gloss_hint} />
           {phrase.context && (
             <div
               className="font-serif-sr"

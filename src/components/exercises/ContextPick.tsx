@@ -3,6 +3,7 @@ import type { Exercise } from '../../store/types';
 import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
 import ContinueButton from '../ui/ContinueButton';
+import GlossHint from '../ui/GlossHint';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -155,8 +156,11 @@ export default function ContextPick({ exercise, onAnswer }: ContextPickProps) {
       </div>
 
       {result?.correct && (
-        <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
-          Super ✓
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: 15, color: T.green, fontWeight: 600 }}>
+            Super ✓
+          </div>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
         </div>
       )}
 
@@ -169,6 +173,7 @@ export default function ContextPick({ exercise, onAnswer }: ContextPickProps) {
           >
             {exercise.correctAnswer}
           </div>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
         </Card>
       )}
 

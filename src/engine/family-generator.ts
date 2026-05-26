@@ -22,6 +22,7 @@ function variantAsPhrase(family: PhraseFamily, variant: FamilyVariant): Phrase {
     sr_latin: variant.sr_latin,
     sr_cyrillic: variant.sr_cyrillic,
     en: variant.en,
+    gloss_hint: variant.gloss_hint,
     context: family.theme,
     notes: variant.note,
   };

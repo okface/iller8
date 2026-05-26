@@ -5,6 +5,7 @@ import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
 import DualScript from '../ui/DualScript';
 import ContinueButton from '../ui/ContinueButton';
+import GlossHint from '../ui/GlossHint';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -217,6 +218,7 @@ export default function SentenceBuilder({ exercise, onAnswer, script = 'latin' }
             <div style={{ fontSize: 13, color: T.dim, marginTop: 8, fontFamily: T.mono }}>
               {exercise.phrase.en}
             </div>
+            <GlossHint hint={exercise.phrase.gloss_hint} />
           </Card>
         </div>
       )}
@@ -234,6 +236,7 @@ export default function SentenceBuilder({ exercise, onAnswer, script = 'latin' }
           <div style={{ fontSize: 13, color: T.dim, marginTop: 8, fontFamily: T.mono }}>
             {exercise.phrase.en}
           </div>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
         </Card>
       )}
 

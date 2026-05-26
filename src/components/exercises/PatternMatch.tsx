@@ -3,6 +3,7 @@ import type { Exercise } from '../../store/types';
 import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
 import ContinueButton from '../ui/ContinueButton';
+import GlossHint from '../ui/GlossHint';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -211,8 +212,11 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
 
       {/* Feedback after answering */}
       {result?.correct && (
-        <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
-          Tačno ✓
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: 15, color: T.green, fontWeight: 600 }}>
+            Tačno ✓
+          </div>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
         </div>
       )}
 
@@ -224,6 +228,7 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
           >
             {exercise.correctAnswer}
           </div>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
         </Card>
       )}
 

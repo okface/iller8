@@ -4,6 +4,7 @@ import Btn from '../ui/Btn';
 import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
 import ContinueButton from '../ui/ContinueButton';
+import GlossHint from '../ui/GlossHint';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -158,12 +159,16 @@ export default function WordTiles({ exercise, onAnswer }: WordTilesProps) {
           <div className="font-serif-sr" style={{ fontSize: 17, color: T.green, fontWeight: 500 }}>
             {exercise.correctAnswer}
           </div>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
         </Card>
       )}
 
       {result?.correct && (
-        <div style={{ fontSize: 15, color: T.green, textAlign: 'center', fontWeight: 600 }}>
-          Odlično ✓
+        <div style={{ textAlign: 'center' }}>
+          <div style={{ fontSize: 15, color: T.green, fontWeight: 600 }}>
+            Odlično ✓
+          </div>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
         </div>
       )}
 
