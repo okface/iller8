@@ -2363,5 +2363,241 @@
     "examples": [
       { "sr_latin": "Nula bodova.", "sr_cyrillic": "Нула бодова.", "en": "Zero points." }
     ]
+  },
+  {
+    "id": "ovo",
+    "lemma_sr_latin": "ovo",
+    "lemma_sr_cyrillic": "ово",
+    "gloss_en": "this",
+    "gloss_hint": "n, proximal",
+    "pos": "pron",
+    "forms": [
+      { "tag": "nom.n.sg", "sr_latin": "ovo", "sr_cyrillic": "ово", "en": "this" },
+      { "tag": "acc.n.sg", "sr_latin": "ovo", "sr_cyrillic": "ово", "en": "this (acc)" },
+      { "tag": "gen.n.sg", "sr_latin": "ovog", "sr_cyrillic": "овог", "en": "of this" },
+      { "tag": "gen.n.sg.alt", "sr_latin": "ovoga", "sr_cyrillic": "овога", "en": "of this (long)" }
+    ],
+    "examples": [
+      { "sr_latin": "Ovo je ludnica.", "sr_cyrillic": "Ово је лудница.", "en": "This is madness.", "phraseRef": "ovo-je-ludnica" },
+      { "sr_latin": "Ovo je odlično!", "sr_cyrillic": "Ово је одлично!", "en": "This is excellent!", "phraseRef": "ovo-je-odlicno" }
+    ],
+    "appearsIn": ["texting", "food-cooking", "work-banter", "slang-humor"],
+    "notes": "Demonstrative neuter 'this' — proximal (close to speaker). Compare to 'to' (general 'that/it') and 'ono' (distal 'that')."
+  },
+  {
+    "id": "ovaj",
+    "lemma_sr_latin": "ovaj",
+    "lemma_sr_cyrillic": "овај",
+    "gloss_en": "this",
+    "gloss_hint": "m, proximal",
+    "pos": "pron",
+    "forms": [
+      { "tag": "nom.m.sg", "sr_latin": "ovaj", "sr_cyrillic": "овај", "en": "this (m)" },
+      { "tag": "acc.m.sg.anim", "sr_latin": "ovog", "sr_cyrillic": "овог", "en": "this (m, animate)" },
+      { "tag": "acc.m.sg.anim.alt", "sr_latin": "ovoga", "sr_cyrillic": "овога", "en": "this (m, animate, long)" },
+      { "tag": "acc.m.sg.inan", "sr_latin": "ovaj", "sr_cyrillic": "овај", "en": "this (m, inanimate)" },
+      { "tag": "nom.f.sg", "sr_latin": "ova", "sr_cyrillic": "ова", "en": "this (f)" },
+      { "tag": "nom.n.sg", "sr_latin": "ovo", "sr_cyrillic": "ово", "en": "this (n)" },
+      { "tag": "nom.pl", "sr_latin": "ovi", "sr_cyrillic": "ови", "en": "these" }
+    ],
+    "examples": [
+      { "sr_latin": "Ubija me ovaj task.", "sr_cyrillic": "Убија ме овај таск.", "en": "This task is killing me.", "phraseRef": "ubija-me-ovaj-task" }
+    ],
+    "appearsIn": ["work-banter"],
+    "notes": "Demonstrative 'this' — fully inflected. Use 'ovaj' for masculine nouns close at hand; 'taj' (general 'that') is more common when distance is neutral."
+  },
+  {
+    "id": "ono",
+    "lemma_sr_latin": "ono",
+    "lemma_sr_cyrillic": "оно",
+    "gloss_en": "that",
+    "gloss_hint": "n, distal",
+    "pos": "pron",
+    "forms": [
+      { "tag": "nom.n.sg", "sr_latin": "ono", "sr_cyrillic": "оно", "en": "that" },
+      { "tag": "acc.n.sg", "sr_latin": "ono", "sr_cyrillic": "оно", "en": "that (acc)" }
+    ],
+    "examples": [
+      { "sr_latin": "Ono je njegovo.", "sr_cyrillic": "Оно је његово.", "en": "That (over there) is his." },
+      { "sr_latin": "Sećaš se ono što sam rekao?", "sr_cyrillic": "Сећаш се оно што сам рекао?", "en": "Remember that thing I said?" }
+    ],
+    "notes": "Demonstrative neuter 'that' — more distal than 'to'. 'To' is the everyday 'that/it'; 'ono' specifically points at something farther away or earlier mentioned."
+  },
+  {
+    "id": "posle",
+    "lemma_sr_latin": "posle",
+    "lemma_sr_cyrillic": "после",
+    "gloss_en": "later / after",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Vidimo se posle.", "sr_cyrillic": "Видимо се после.", "en": "See you later.", "phraseRef": "tx-vidimo-se" },
+      { "sr_latin": "Aj na pivo posle posla?", "sr_cyrillic": "Ај на пиво после посла?", "en": "Beer after work?", "phraseRef": "aj-na-pivo" }
+    ],
+    "appearsIn": ["texting", "making-plans", "celebrations"],
+    "notes": "As an adverb means 'later/afterwards'. As a preposition takes genitive: 'posle posla' = after work, 'posle ručka' = after lunch."
+  },
+  {
+    "id": "danas",
+    "lemma_sr_latin": "danas",
+    "lemma_sr_cyrillic": "данас",
+    "gloss_en": "today",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Šta radiš danas?", "sr_cyrillic": "Шта радиш данас?", "en": "What are you working on today?", "phraseRef": "sta-radis-danas" },
+      { "sr_latin": "Gotov sam za danas.", "sr_cyrillic": "Готов сам за данас.", "en": "I'm done for today.", "phraseRef": "gotov-sam-za-danas" }
+    ],
+    "appearsIn": ["texting", "work-banter", "making-plans", "daily-routines"],
+    "notes": "Indeclinable. Pairs naturally with 'sutra' (tomorrow) and 'juče' (yesterday)."
+  },
+  {
+    "id": "veceras",
+    "lemma_sr_latin": "večeras",
+    "lemma_sr_cyrillic": "вечерас",
+    "gloss_en": "tonight / this evening",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Šta pravimo večeras?", "sr_cyrillic": "Шта правимо вечерас?", "en": "What are we making tonight?", "phraseRef": "sta-pravimo-veceras" },
+      { "sr_latin": "Gde je žurka večeras?", "sr_cyrillic": "Где је журка вечерас?", "en": "Where's the party tonight?", "phraseRef": "gde-je-zurka" }
+    ],
+    "appearsIn": ["texting", "food-cooking", "making-plans", "celebrations"],
+    "notes": "Indeclinable. The diacritic-correct spelling is 'večeras'; the lessons sometimes write 'veceras' for ASCII compatibility — both refer to the same word."
+  },
+  {
+    "id": "brate",
+    "lemma_sr_latin": "brate",
+    "lemma_sr_cyrillic": "брате",
+    "gloss_en": "bro",
+    "gloss_hint": "vocative of brat (brother)",
+    "pos": "noun",
+    "gender": "m",
+    "forms": [
+      { "tag": "nom.sg", "sr_latin": "brat", "sr_cyrillic": "брат", "en": "brother" },
+      { "tag": "voc.sg", "sr_latin": "brate", "sr_cyrillic": "брате", "en": "bro! (vocative)" },
+      { "tag": "acc.sg", "sr_latin": "brata", "sr_cyrillic": "брата", "en": "brother (acc)" }
+    ],
+    "examples": [
+      { "sr_latin": "Gde si, brate?", "sr_cyrillic": "Где си, брате?", "en": "What's up, bro?", "phraseRef": "tx-gde-si" },
+      { "sr_latin": "Koji je ovo život, brate.", "sr_cyrillic": "Који је ово живот, брате.", "en": "What kind of life is this, bro.", "phraseRef": "koji-je-ovo-zivot" }
+    ],
+    "appearsIn": ["texting", "work-banter", "slang-humor"],
+    "notes": "Super common slang address between young men — like English 'bro' or 'dude'. Not literal. The lemma here is 'brate' (vocative) because that's the everyday form you hear; for the literal 'brother' meaning use 'brat'."
+  },
+  {
+    "id": "nesto",
+    "lemma_sr_latin": "nešto",
+    "lemma_sr_cyrillic": "нешто",
+    "gloss_en": "something",
+    "pos": "pron",
+    "forms": [
+      { "tag": "nom", "sr_latin": "nešto", "sr_cyrillic": "нешто", "en": "something" },
+      { "tag": "acc", "sr_latin": "nešto", "sr_cyrillic": "нешто", "en": "something (acc)" }
+    ],
+    "examples": [
+      { "sr_latin": "Imam da ti ponudim nešto.", "sr_cyrillic": "Имам да ти понудим нешто.", "en": "I have something to offer you.", "phraseRef": "jesi-gladan" },
+      { "sr_latin": "Može da skuvaš nešto za večeru?", "sr_cyrillic": "Може да скуваш нешто за вечеру?", "en": "Can you cook something for dinner?", "phraseRef": "da-li-mozes-da-skuvas" }
+    ],
+    "appearsIn": ["texting", "food-cooking", "making-plans", "feelings-opinions", "daily-routines", "celebrations"],
+    "notes": "Indefinite pronoun. Pairs with 'ništa' (nothing) and 'sve' (everything). Inflects like an adjective in oblique cases (nečega, nečemu) but nom/acc are identical."
+  },
+  {
+    "id": "negde",
+    "lemma_sr_latin": "negde",
+    "lemma_sr_cyrillic": "негде",
+    "gloss_en": "somewhere",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Idemo negde za vikend?", "sr_cyrillic": "Идемо негде за викенд?", "en": "Shall we go somewhere this weekend?", "phraseRef": "idemo-negde" },
+      { "sr_latin": "Dosadno mi je, ajde negde.", "sr_cyrillic": "Досадно ми је, ајде негде.", "en": "I'm bored, let's go somewhere.", "phraseRef": "tx-dosadno-ajde" }
+    ],
+    "appearsIn": ["texting", "making-plans"],
+    "notes": "Indeclinable. Ekavian form (Serbian standard). The Ijekavian (Bosnian/Croatian) form is 'negdje'."
+  },
+  {
+    "id": "nigde",
+    "lemma_sr_latin": "nigde",
+    "lemma_sr_cyrillic": "нигде",
+    "gloss_en": "nowhere",
+    "pos": "adv",
+    "examples": [
+      { "sr_latin": "Ne izlazim danas nigde.", "sr_cyrillic": "Не излазим данас нигде.", "en": "I'm not going anywhere today.", "phraseRef": "ne-izlazim-danas" },
+      { "sr_latin": "Nigde te nema.", "sr_cyrillic": "Нигде те нема.", "en": "You're nowhere to be found." }
+    ],
+    "appearsIn": ["daily-routines"],
+    "notes": "Always paired with a negated verb — Serbian requires double negation: 'ne idem nigde' (lit. 'I don't go nowhere')."
+  },
+  {
+    "id": "mene",
+    "lemma_sr_latin": "mene",
+    "lemma_sr_cyrillic": "мене",
+    "gloss_en": "me",
+    "gloss_hint": "full form, acc/gen of ja",
+    "pos": "pron",
+    "forms": [
+      { "tag": "acc.sg", "sr_latin": "mene", "sr_cyrillic": "мене", "en": "me (full)" },
+      { "tag": "gen.sg", "sr_latin": "mene", "sr_cyrillic": "мене", "en": "of me" },
+      { "tag": "dat.sg", "sr_latin": "meni", "sr_cyrillic": "мени", "en": "to me (full)" },
+      { "tag": "loc.sg", "sr_latin": "meni", "sr_cyrillic": "мени", "en": "(about) me" }
+    ],
+    "examples": [
+      { "sr_latin": "Ajde svi kod mene!", "sr_cyrillic": "Ајде сви код мене!", "en": "Everyone come to my place!", "phraseRef": "ajde-svi-kod-mene" },
+      { "sr_latin": "Bleja kod mene?", "sr_cyrillic": "Блеја код мене?", "en": "Hang at my place?", "phraseRef": "bleja-kod-mene" }
+    ],
+    "appearsIn": ["making-plans", "celebrations"],
+    "notes": "Full (stressed) accusative/genitive form of 'ja'. Required after prepositions like 'kod', 'za', 'od' and when emphasised. The unstressed clitic 'me' is used elsewhere."
+  },
+  {
+    "id": "nas-acc-gen",
+    "lemma_sr_latin": "nas",
+    "lemma_sr_cyrillic": "нас",
+    "gloss_en": "us",
+    "gloss_hint": "acc/gen of mi",
+    "pos": "pron",
+    "forms": [
+      { "tag": "acc.pl", "sr_latin": "nas", "sr_cyrillic": "нас", "en": "us (acc)" },
+      { "tag": "gen.pl", "sr_latin": "nas", "sr_cyrillic": "нас", "en": "of us" }
+    ],
+    "examples": [
+      { "sr_latin": "Za nas!", "sr_cyrillic": "За нас!", "en": "To us!", "phraseRef": "za-nas" },
+      { "sr_latin": "Nema nas.", "sr_cyrillic": "Нема нас.", "en": "We're not around." }
+    ],
+    "appearsIn": ["celebrations"],
+    "notes": "Same form for accusative and genitive of 'mi' (we). Functions as both clitic and full form — no separate long version like 'mene'."
+  },
+  {
+    "id": "piti",
+    "lemma_sr_latin": "piti",
+    "lemma_sr_cyrillic": "пити",
+    "gloss_en": "to drink",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      { "tag": "1sg.pres", "sr_latin": "pijem", "sr_cyrillic": "пијем", "en": "I drink" },
+      { "tag": "2sg.pres", "sr_latin": "piješ", "sr_cyrillic": "пијеш", "en": "you drink" },
+      { "tag": "3sg.pres", "sr_latin": "pije", "sr_cyrillic": "пије", "en": "he/she drinks" },
+      { "tag": "1pl.pres", "sr_latin": "pijemo", "sr_cyrillic": "пијемо", "en": "we drink" },
+      { "tag": "past.m.sg", "sr_latin": "pio", "sr_cyrillic": "пио", "en": "drank (m)" },
+      { "tag": "past.f.sg", "sr_latin": "pila", "sr_cyrillic": "пила", "en": "drank (f)" },
+      { "tag": "imp.2sg", "sr_latin": "pij", "sr_cyrillic": "пиј", "en": "drink! (sg)" },
+      { "tag": "imp.2pl", "sr_latin": "pijte", "sr_cyrillic": "пијте", "en": "drink! (pl)" }
+    ],
+    "examples": [
+      { "sr_latin": "Neće ti ništa biti, pij!", "sr_cyrillic": "Неће ти ништа бити, пиј!", "en": "Nothing will happen to you, drink!", "phraseRef": "nece-ti-nista-biti" },
+      { "sr_latin": "Šta piješ?", "sr_cyrillic": "Шта пијеш?", "en": "What are you drinking?" }
+    ],
+    "appearsIn": ["celebrations"],
+    "notes": "Imperfective. The perfective counterpart is 'popiti' (to drink up / finish drinking)."
+  },
+  {
+    "id": "evo",
+    "lemma_sr_latin": "evo",
+    "lemma_sr_cyrillic": "ево",
+    "gloss_en": "here is / voilà",
+    "pos": "particle",
+    "examples": [
+      { "sr_latin": "Evo me.", "sr_cyrillic": "Ево ме.", "en": "Here I am.", "phraseRef": "tx-evo-me" },
+      { "sr_latin": "Evo ti.", "sr_cyrillic": "Ево ти.", "en": "Here you go." }
+    ],
+    "appearsIn": ["texting"],
+    "notes": "Deictic particle pointing to something present. 'Evo me' = here I am, 'evo ti' = here you go (handing something over). Companion forms 'eto' (there, near you) and 'eno' (over there) work the same way."
   }
 ]
