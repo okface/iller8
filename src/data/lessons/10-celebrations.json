@@ -22,6 +22,7 @@
           "sr_cyrillic": "Живели!",
           "en": "Cheers!",
           "context": "The standard Serbian toast. Used every time you clink glasses.",
+          "wordRefs": [],
           "notes": "Literally means 'may we live'. Always look people in the eyes when you say it."
         },
         {
@@ -30,6 +31,9 @@
           "sr_cyrillic": "У здравље!",
           "en": "To health!",
           "context": "A toast to good health. Can be used on its own or as part of a longer toast.",
+          "wordRefs": [
+            "u"
+          ],
           "notes": "You can specify whose health: 'U tvoje zdravlje!' = 'To your health!'"
         },
         {
@@ -38,6 +42,9 @@
           "sr_cyrillic": "На здравље!",
           "en": "To your health! / Bless you!",
           "context": "Used both as a toast and after someone sneezes. Also said after someone finishes eating.",
+          "wordRefs": [
+            "na"
+          ],
           "notes": "One of the most versatile phrases. Context determines the meaning."
         },
         {
@@ -46,6 +53,9 @@
           "sr_cyrillic": "За нас!",
           "en": "To us!",
           "context": "A simple, intimate toast when drinking with your partner or close friends.",
+          "wordRefs": [
+            "za"
+          ],
           "notes": "Short and sweet. Very common between couples."
         }
       ]
@@ -60,6 +70,9 @@
           "sr_cyrillic": "Срећан рођендан!",
           "en": "Happy birthday!",
           "context": "The standard birthday greeting.",
+          "wordRefs": [
+            "srecan"
+          ],
           "notes": "'Rođendan' literally = 'birth day'. 'Srećan' = happy/fortunate."
         },
         {
@@ -68,6 +81,10 @@
           "sr_cyrillic": "Све најбоље!",
           "en": "All the best!",
           "context": "Often added after 'Srećan rođendan' or used on its own for any occasion.",
+          "wordRefs": [
+            "sve",
+            { "id": "dobar", "surface": "najbolje", "surface_cyrillic": "најбоље" }
+          ],
           "notes": "'Najbolje' = the best (superlative of 'dobro'). Very common well-wish."
         },
         {
@@ -76,6 +93,7 @@
           "sr_cyrillic": "Живео!",
           "en": "Long live! / Cheers to you!",
           "context": "Shouted at the birthday person, like 'hip hip hooray'. The crowd responds with this.",
+          "wordRefs": [],
           "notes": "For a woman: 'Živela!' For a group: 'Živeli!'",
           "variations": [
             {
@@ -92,6 +110,7 @@
           "sr_cyrillic": "Колико година пуниш?",
           "en": "How old are you turning?",
           "context": "Asking someone what age they're celebrating.",
+          "wordRefs": [],
           "notes": "'Puniti godine' = to turn (an age). More natural than 'Koliko imaš godina?' in a birthday context."
         }
       ]
@@ -106,6 +125,9 @@
           "sr_cyrillic": "Срећна слава!",
           "en": "Happy slava!",
           "context": "The greeting when you visit someone's slava celebration.",
+          "wordRefs": [
+            { "id": "srecan", "surface": "Srećna", "surface_cyrillic": "Срећна", "form": "f.sg" }
+          ],
           "notes": "Slava is a uniquely Serbian tradition — each family celebrates their patron saint annually. It's UNESCO-protected. This is the most important thing to know."
         },
         {
@@ -114,6 +136,13 @@
           "sr_cyrillic": "Да Бог да славили још много година!",
           "en": "God willing, may you celebrate for many more years!",
           "context": "A traditional wish at someone's slava. Shows respect for the tradition.",
+          "wordRefs": [
+            "da-conj",
+            "bog",
+            "da-conj",
+            "jos",
+            "mnogo"
+          ],
           "notes": "'Da Bog da' = 'God willing' / 'may God grant'. Very traditional phrasing."
         },
         {
@@ -122,6 +151,11 @@
           "sr_cyrillic": "Када ти је слава?",
           "en": "When is your slava?",
           "context": "Asking someone about their family's patron saint day. This shows genuine interest in Serbian culture.",
+          "wordRefs": [
+            "kada",
+            "ti-dat",
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ],
           "notes": "Every Serbian family has one. Asking this is a great conversation starter and shows you care."
         },
         {
@@ -130,6 +164,9 @@
           "sr_cyrillic": "Која је ваша слава?",
           "en": "Which is your (family's) slava?",
           "context": "Asking which saint the family celebrates. Common saints: Sveti Nikola, Sveti Sava, Sveti Đorđe.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ],
           "notes": "'Vaša' (your, formal/plural) because you're asking about the whole family's tradition."
         }
       ]
@@ -144,6 +181,9 @@
           "sr_cyrillic": "Срећна Нова година!",
           "en": "Happy New Year!",
           "context": "Standard New Year's greeting. Used from Dec 31 well into January.",
+          "wordRefs": [
+            { "id": "srecan", "surface": "Srećna", "surface_cyrillic": "Срећна", "form": "f.sg" }
+          ],
           "notes": "Serbs celebrate both Jan 1 (New Year) and Jan 14 (Orthodox New Year / 'Srpska Nova godina')."
         },
         {
@@ -152,6 +192,9 @@
           "sr_cyrillic": "Христос се роди!",
           "en": "Christ is born!",
           "context": "Serbian Orthodox Christmas greeting (January 7th). The response is 'Vaistinu se rodi!'",
+          "wordRefs": [
+            "se"
+          ],
           "notes": "Even non-religious Serbs use this. Christmas is Jan 7, not Dec 25.",
           "variations": [
             {
@@ -168,6 +211,7 @@
           "sr_cyrillic": "Срећни празници!",
           "en": "Happy holidays!",
           "context": "A general holiday greeting that works for any celebration period.",
+          "wordRefs": [],
           "notes": "'Praznici' = holidays (plural of 'praznik')."
         }
       ]
@@ -182,6 +226,9 @@
           "sr_cyrillic": "Ајмо још једну!",
           "en": "Let's have one more!",
           "context": "Suggesting another round. Warning: this phrase has no upper limit in Serbian culture.",
+          "wordRefs": [
+            "jos"
+          ],
           "notes": "'Ajmo' = colloquial 'hajdemo' (let's go). 'Još jednu' = one more (feminine, referring to 'čašu' — glass)."
         },
         {
@@ -190,6 +237,11 @@
           "sr_cyrillic": "Неће ти ништа бити, пиј!",
           "en": "Nothing will happen to you, drink!",
           "context": "What your Serbian friends say when you try to stop drinking. Peer pressure, but affectionate.",
+          "wordRefs": [
+            "ti-dat",
+            "nista",
+            "biti"
+          ],
           "notes": "'Pij' = drink (imperative). This is the classic Serbian encouragement."
         },
         {
@@ -198,6 +250,14 @@
           "sr_cyrillic": "Доста ми је, не могу више.",
           "en": "I've had enough, I can't anymore.",
           "context": "Trying to stop drinking. Good luck — they probably won't accept this.",
+          "wordRefs": [
+            "dosta",
+            "mi-dat",
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "ne",
+            { "id": "moci", "surface": "mogu", "surface_cyrillic": "могу", "form": "1sg.pres" },
+            "vise"
+          ],
           "notes": "'Dosta' = enough. 'Ne mogu više' = I can't anymore. Expect to hear 'Ma daj, još jednu!'"
         },
         {
@@ -206,6 +266,9 @@
           "sr_cyrillic": "Ова ракија је домаћа!",
           "en": "This rakija is homemade!",
           "context": "Serbs are proud of their homemade rakija. Expect this announcement before every pour.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ],
           "notes": "'Domaća' = homemade/domestic. Homemade rakija is a point of family pride. Always compliment it."
         }
       ]
@@ -220,6 +283,9 @@
           "sr_cyrillic": "Добро дошли!",
           "en": "Welcome!",
           "context": "Greeting guests at the door. Essential hospitality phrase.",
+          "wordRefs": [
+            { "id": "dobar", "surface": "Dobro", "surface_cyrillic": "Добро", "form": "n.sg" }
+          ],
           "notes": "Literally 'well come'. For one person: 'Dobro došao!' (m) / 'Dobro došla!' (f).",
           "variations": [
             {
@@ -242,6 +308,9 @@
           "sr_cyrillic": "Изуј се, слободно.",
           "en": "Take your shoes off, make yourself at home.",
           "context": "Asking guests to remove shoes. Standard in Serbian homes.",
+          "wordRefs": [
+            "se"
+          ],
           "notes": "'Izuti se' = to take off shoes. 'Slobodno' = freely/feel free. You'll get house slippers ('papuče')."
         },
         {
@@ -250,6 +319,13 @@
           "sr_cyrillic": "Јеси гладан? Имам да ти понудим нешто.",
           "en": "Are you hungry? I have something to offer you.",
           "context": "A Serbian host will ALWAYS offer food. Refusing is almost impossible.",
+          "wordRefs": [
+            { "id": "biti", "surface": "Jesi", "surface_cyrillic": "Јеси", "form": "2sg.pres" },
+            "gladan",
+            { "id": "imati", "surface": "Imam", "surface_cyrillic": "Имам", "form": "1sg.pres" },
+            "da-conj",
+            "ti-dat"
+          ],
           "notes": "For a female guest: 'Jesi gladna?' Serbian hospitality means you will be fed whether you want to or not.",
           "variations": [
             {
@@ -266,6 +342,11 @@
           "sr_cyrillic": "Осећај се као код куће.",
           "en": "Feel at home. / Make yourself at home.",
           "context": "Telling someone to relax and feel comfortable in your space.",
+          "wordRefs": [
+            "se",
+            "kod",
+            { "id": "kuca", "surface": "kuće", "surface_cyrillic": "куће", "case": "gen" }
+          ],
           "notes": "'Kod kuće' = at home. 'Osećaj se' = feel yourself (imperative, reflexive)."
         }
       ]
@@ -280,6 +361,10 @@
           "sr_cyrillic": "Где је журка вечерас?",
           "en": "Where's the party tonight?",
           "context": "Asking about plans for going out.",
+          "wordRefs": [
+            "gde",
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ],
           "notes": "'Žurka' = party (informal). 'Večeras' = tonight."
         },
         {
@@ -288,6 +373,10 @@
           "sr_cyrillic": "До кад остајемо?",
           "en": "How long are we staying?",
           "context": "Checking how late the night is going to go. The answer is usually 'until morning'.",
+          "wordRefs": [
+            "do",
+            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" }
+          ],
           "notes": "'Do kad' = until when. Spoiler: there is rarely a firm end time."
         },
         {
@@ -296,6 +385,9 @@
           "sr_cyrillic": "Одлична музика!",
           "en": "Great music!",
           "context": "Complimenting the music at a gathering or party.",
+          "wordRefs": [
+            { "id": "odlican", "surface": "Odlična", "surface_cyrillic": "Одлична", "form": "f.sg" }
+          ],
           "notes": "'Odlična' = excellent (feminine, matching 'muzika'). Serbs take their music seriously."
         },
         {
@@ -304,6 +396,7 @@
           "sr_cyrillic": "Појачај музику!",
           "en": "Turn up the music!",
           "context": "When the party energy is rising. Classic request.",
+          "wordRefs": [],
           "notes": "'Pojačati' = to turn up/amplify. Opposite: 'Smanji muziku' (turn it down)."
         }
       ]
@@ -318,6 +411,10 @@
           "sr_cyrillic": "Ајде сви код мене!",
           "en": "Everyone come to my place!",
           "context": "Inviting friends over. Serbian socializing often happens at someone's home.",
+          "wordRefs": [
+            { "id": "hajde", "surface": "Ajde", "surface_cyrillic": "Ајде" },
+            "kod"
+          ],
           "notes": "'Kod mene' = at my place. Very casual and spontaneous — this is how plans happen."
         },
         {
@@ -326,6 +423,11 @@
           "sr_cyrillic": "Долази, немој да се правиш важан.",
           "en": "Come on, don't act all important.",
           "context": "Pressuring a friend who's trying to bail on plans. Said with love.",
+          "wordRefs": [
+            "nemoj",
+            "da-conj",
+            "se"
+          ],
           "notes": "'Praviti se važan' = to act important/busy. Feminine: 'važna'. Classic guilt-trip among friends.",
           "variations": [
             {
@@ -342,6 +444,9 @@
           "sr_cyrillic": "Ко шта доноси?",
           "en": "Who's bringing what?",
           "context": "Organizing who brings food/drinks to a gathering.",
+          "wordRefs": [
+            "sta"
+          ],
           "notes": "Short and efficient. The answer is usually 'Ja donosim piće' (I'm bringing drinks) or 'Ja donosim meze' (I'm bringing snacks)."
         },
         {
@@ -350,6 +455,10 @@
           "sr_cyrillic": "Нема фрке, долазите кад стигнете.",
           "en": "No worries, come whenever you can.",
           "context": "Telling people there's no rush, come when they're ready. Very Serbian approach to timing.",
+          "wordRefs": [
+            { "id": "imati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres.neg" },
+            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" }
+          ],
           "notes": "'Nema frke' = no worries/no stress (slang). 'Kad stignete' = when you manage to arrive."
         }
       ]
@@ -364,6 +473,7 @@
           "sr_cyrillic": "Честитам!",
           "en": "Congratulations!",
           "context": "Universal congratulations — works for any achievement, milestone, or celebration.",
+          "wordRefs": [],
           "notes": "'Čestitati' = to congratulate. Can add what for: 'Čestitam ti na...' (I congratulate you on...)."
         },
         {
@@ -372,6 +482,10 @@
           "sr_cyrillic": "Свака част!",
           "en": "Well done! / Respect!",
           "context": "Expressing admiration or respect for something someone did. Very versatile.",
+          "wordRefs": [
+            { "id": "svaki", "surface": "Svaka", "surface_cyrillic": "Свака", "form": "f.sg" },
+            "cast"
+          ],
           "notes": "Literally 'every honor'. Used constantly in casual speech. Works for big and small achievements."
         },
         {
@@ -380,6 +494,11 @@
           "sr_cyrillic": "Поносан сам на тебе!",
           "en": "I'm proud of you!",
           "context": "Telling your partner or friend you're proud of them.",
+          "wordRefs": [
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            "na",
+            "tebe"
+          ],
           "notes": "Feminine: 'Ponosna sam na tebe!' Deeply meaningful in close relationships.",
           "variations": [
             {
@@ -396,6 +515,11 @@
           "sr_cyrillic": "То се мора прославити!",
           "en": "That must be celebrated!",
           "context": "When someone shares good news. Any excuse to celebrate is a good excuse.",
+          "wordRefs": [
+            "to",
+            "se",
+            { "id": "morati", "surface": "mora", "surface_cyrillic": "мора", "form": "3sg.pres" }
+          ],
           "notes": "'Proslaviti' = to celebrate. Serbs will find a reason to celebrate almost anything."
         }
       ]
@@ -410,6 +534,11 @@
           "sr_cyrillic": "Морам да идем, људи.",
           "en": "I gotta go, guys.",
           "context": "Announcing your departure. Expect resistance and at least 30 more minutes of saying goodbye.",
+          "wordRefs": [
+            { "id": "morati", "surface": "Moram", "surface_cyrillic": "Морам", "form": "1sg.pres" },
+            "da-conj",
+            { "id": "ici", "surface": "idem", "surface_cyrillic": "идем", "form": "1sg.pres" }
+          ],
           "notes": "'Ljudi' = people/guys. Adding it makes the goodbye casual and warm."
         },
         {
@@ -418,6 +547,11 @@
           "sr_cyrillic": "Где ћеш? Рано је!",
           "en": "Where are you going? It's early!",
           "context": "What everyone says when you try to leave. Even at 3 AM, it's apparently 'early'.",
+          "wordRefs": [
+            "gde",
+            { "id": "hteti", "surface": "ćeš", "surface_cyrillic": "ћеш" },
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ],
           "notes": "'Gde ćeš' = where are you going (literally 'where will you'). Standard protest when someone tries to leave."
         },
         {
@@ -426,6 +560,11 @@
           "sr_cyrillic": "Било је одлично, хвала на свему!",
           "en": "It was great, thanks for everything!",
           "context": "Thanking your host when you finally manage to leave.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            { "id": "odlican", "surface": "odlično", "surface_cyrillic": "одлично", "form": "n.sg" },
+            "na"
+          ],
           "notes": "'Hvala na svemu' = thanks for everything. A warm and proper way to end the evening."
         },
         {
@@ -434,6 +573,10 @@
           "sr_cyrillic": "Видимо се ускоро!",
           "en": "See you soon!",
           "context": "A casual goodbye that keeps the connection going.",
+          "wordRefs": [
+            { "id": "videti", "surface": "Vidimo", "surface_cyrillic": "Видимо", "form": "1pl.pres" },
+            "se"
+          ],
           "notes": "'Vidimo se' = we see each other / see you. 'Uskoro' = soon."
         }
       ]

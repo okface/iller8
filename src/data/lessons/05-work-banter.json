@@ -22,6 +22,13 @@
           "sr_cyrillic": "Имам баг и не могу да сконтам одакле долази.",
           "en": "I've got a bug and I can't figure out where it's coming from.",
           "context": "Classic dev frustration. 'Skontam' is slang for 'figure out'.",
+          "wordRefs": [
+            { "id": "imati", "surface": "Imam", "surface_cyrillic": "Имам", "form": "1sg.pres" },
+            "i",
+            "ne",
+            { "id": "moci", "surface": "mogu", "surface_cyrillic": "могу", "form": "1sg.pres" },
+            "da-conj"
+          ],
           "notes": "'Bag' is the Serbianized spelling of 'bug'. Tech loanwords are everywhere."
         },
         {
@@ -30,6 +37,11 @@
           "sr_cyrillic": "Ради на мом рачунару.",
           "en": "It works on my machine.",
           "context": "The universal developer excuse, Serbian edition.",
+          "wordRefs": [
+            { "id": "raditi", "surface": "Radi", "surface_cyrillic": "Ради", "form": "3sg.pres" },
+            "na",
+            { "id": "moj", "surface": "mom", "surface_cyrillic": "мом", "case": "loc" }
+          ],
           "notes": "'Računar' = computer. This phrase transcends all languages."
         },
         {
@@ -38,6 +50,9 @@
           "sr_cyrillic": "Ко је ово писао?",
           "en": "Who wrote this?",
           "context": "Looking at terrible code and questioning humanity. Usually the answer is yourself, six months ago.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ],
           "variations": [
             {
               "sr_latin": "Koji je ovo haos.",
@@ -58,6 +73,7 @@
           "sr_cyrillic": "Пуштам deploy.",
           "en": "I'm pushing a deploy.",
           "context": "Letting the team know you're deploying. 'Puštam' literally means 'I'm releasing/letting go'.",
+          "wordRefs": [],
           "notes": "'Deploy' stays in English in most Serbian dev teams."
         },
         {
@@ -66,6 +82,9 @@
           "sr_cyrillic": "Не deployуј петком, брате.",
           "en": "Don't deploy on Friday, bro.",
           "context": "The sacred rule of software development, applicable in all languages.",
+          "wordRefs": [
+            "ne"
+          ],
           "notes": "'Brate' (bro/brother) is used constantly in casual Serbian speech."
         },
         {
@@ -74,6 +93,9 @@
           "sr_cyrillic": "Пукао нам је прод.",
           "en": "Prod crashed on us.",
           "context": "Production is down. Panic mode activated.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ],
           "notes": "'Pukao' literally means 'burst/exploded'. Very dramatic, very Serbian."
         },
         {
@@ -82,6 +104,10 @@
           "sr_cyrillic": "Морамо да rollbackујемо.",
           "en": "We need to roll back.",
           "context": "When the deploy goes wrong and you need to revert.",
+          "wordRefs": [
+            { "id": "morati", "surface": "Moramo", "surface_cyrillic": "Морамо", "form": "1pl.pres" },
+            "da-conj"
+          ],
           "notes": "Serbian devs freely verb-ify English tech terms by adding Serbian verb endings."
         }
       ]
@@ -96,6 +122,11 @@
           "sr_cyrillic": "Ајде на кафу.",
           "en": "Let's grab a coffee.",
           "context": "The most important phrase in any Serbian workplace. Coffee breaks are sacred.",
+          "wordRefs": [
+            { "id": "hajde", "surface": "Ajde", "surface_cyrillic": "Ајде" },
+            "na",
+            { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" }
+          ],
           "notes": "'Ajde' is the casual/shortened form of 'hajde'."
         },
         {
@@ -103,14 +134,22 @@
           "sr_latin": "Pauza pet minuta.",
           "sr_cyrillic": "Пауза пет минута.",
           "en": "Break, five minutes.",
-          "context": "Announcing a quick break. Will inevitably last 20 minutes."
+          "context": "Announcing a quick break. Will inevitably last 20 minutes.",
+          "wordRefs": [
+            "pet"
+          ]
         },
         {
           "id": "bez-kafe-ne-radim",
           "sr_latin": "Bez kafe ne mogu da funkcionišem.",
           "sr_cyrillic": "Без кафе не могу да функционишем.",
           "en": "I can't function without coffee.",
-          "context": "A statement of fact, not a complaint. Universal among Serbian devs."
+          "context": "A statement of fact, not a complaint. Universal among Serbian devs.",
+          "wordRefs": [
+            "ne",
+            { "id": "moci", "surface": "mogu", "surface_cyrillic": "могу", "form": "1sg.pres" },
+            "da-conj"
+          ]
         }
       ]
     },
@@ -123,21 +162,35 @@
           "sr_latin": "Šta radiš danas?",
           "sr_cyrillic": "Шта радиш данас?",
           "en": "What are you working on today?",
-          "context": "Classic standup question."
+          "context": "Classic standup question.",
+          "wordRefs": [
+            "sta",
+            { "id": "raditi", "surface": "radiš", "surface_cyrillic": "радиш", "form": "2sg.pres" }
+          ]
         },
         {
           "id": "radim-na-tiketu",
           "sr_latin": "Radim na onom tiketu od juče.",
           "sr_cyrillic": "Радим на оном тикету од јуче.",
           "en": "I'm working on that ticket from yesterday.",
-          "context": "Standard standup update. 'Tiket' = ticket (Jira, etc.)."
+          "context": "Standard standup update. 'Tiket' = ticket (Jira, etc.).",
+          "wordRefs": [
+            { "id": "raditi", "surface": "Radim", "surface_cyrillic": "Радим", "form": "1sg.pres" },
+            "na",
+            "od",
+            "juce"
+          ]
         },
         {
           "id": "blokiram-se",
           "sr_latin": "Blokiran sam, čekam review.",
           "sr_cyrillic": "Блокиран сам, чекам review.",
           "en": "I'm blocked, waiting for a review.",
-          "context": "When you can't proceed without someone else's input."
+          "context": "When you can't proceed without someone else's input.",
+          "wordRefs": [
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            { "id": "cekati", "surface": "čekam", "surface_cyrillic": "чекам", "form": "1sg.pres" }
+          ]
         },
         {
           "id": "opet-meeting",
@@ -145,6 +198,13 @@
           "sr_cyrillic": "Опет meeting? Па кад ћу да радим?",
           "en": "Another meeting? When am I supposed to work?",
           "context": "The universal developer complaint about too many meetings.",
+          "wordRefs": [
+            "pa",
+            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" },
+            { "id": "hteti", "surface": "ću", "surface_cyrillic": "ћу", "form": "1sg.fut.clitic" },
+            "da-conj",
+            { "id": "raditi", "surface": "radim", "surface_cyrillic": "радим", "form": "1sg.pres" }
+          ],
           "notes": "'Pa' is a filler word like 'well' or 'so', used for emphasis here."
         }
       ]
@@ -158,7 +218,11 @@
           "sr_latin": "Radi li ti ovo?",
           "sr_cyrillic": "Ради ли ти ово?",
           "en": "Does this work for you?",
-          "context": "Asking a colleague to verify something works on their end."
+          "context": "Asking a colleague to verify something works on their end.",
+          "wordRefs": [
+            { "id": "raditi", "surface": "Radi", "surface_cyrillic": "Ради", "form": "3sg.pres" },
+            "ti-dat"
+          ]
         },
         {
           "id": "probaj-sad",
@@ -166,6 +230,11 @@
           "sr_cyrillic": "Пробај сад, требало би да ради.",
           "en": "Try now, it should work.",
           "context": "After you've pushed a fix and you're hoping for the best.",
+          "wordRefs": [
+            { "id": "sada", "surface": "sad", "surface_cyrillic": "сад" },
+            "da-conj",
+            { "id": "raditi", "surface": "radi", "surface_cyrillic": "ради", "form": "3sg.pres" }
+          ],
           "notes": "'Trebalo bi' = 'it should' — beautifully noncommittal."
         },
         {
@@ -174,6 +243,10 @@
           "sr_cyrillic": "Опет не ради.",
           "en": "It's broken again.",
           "context": "When the fix didn't fix it.",
+          "wordRefs": [
+            "ne",
+            { "id": "raditi", "surface": "radi", "surface_cyrillic": "ради", "form": "3sg.pres" }
+          ],
           "variations": [
             {
               "sr_latin": "Isti bag, samo drugi dan.",
@@ -194,6 +267,10 @@
           "sr_cyrillic": "Једва чекам петак.",
           "en": "I can't wait for Friday.",
           "context": "Every weekday except Friday.",
+          "wordRefs": [
+            "jedva",
+            { "id": "cekati", "surface": "čekam", "surface_cyrillic": "чекам", "form": "1sg.pres" }
+          ],
           "notes": "'Jedva čekam' literally means 'I barely wait' — used for 'I can't wait'."
         },
         {
@@ -201,21 +278,33 @@
           "sr_latin": "Petak je, brate!",
           "sr_cyrillic": "Петак је, брате!",
           "en": "It's Friday, bro!",
-          "context": "The Friday celebration announcement."
+          "context": "The Friday celebration announcement.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ]
         },
         {
           "id": "ponedeljak-opet",
           "sr_latin": "Kako je već ponedeljak?",
           "sr_cyrillic": "Како је већ понедељак?",
           "en": "How is it Monday already?",
-          "context": "The Monday dread that transcends all cultures."
+          "context": "The Monday dread that transcends all cultures.",
+          "wordRefs": [
+            "kako",
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "vec"
+          ]
         },
         {
           "id": "vikend-prekratak",
           "sr_latin": "Vikend je uvek prekratak.",
           "sr_cyrillic": "Викенд је увек прекратак.",
           "en": "The weekend is always too short.",
-          "context": "Monday morning wisdom."
+          "context": "Monday morning wisdom.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "uvek"
+          ]
         }
       ]
     },
@@ -228,14 +317,21 @@
           "sr_latin": "Idemo na ručak?",
           "sr_cyrillic": "Идемо на ручак?",
           "en": "Shall we go for lunch?",
-          "context": "Suggesting a lunch break with colleagues."
+          "context": "Suggesting a lunch break with colleagues.",
+          "wordRefs": [
+            { "id": "ici", "surface": "Idemo", "surface_cyrillic": "Идемо", "form": "1pl.pres" },
+            "na"
+          ]
         },
         {
           "id": "gde-jedemo",
           "sr_latin": "Gde jedemo danas?",
           "sr_cyrillic": "Где једемо данас?",
           "en": "Where are we eating today?",
-          "context": "The daily lunch debate."
+          "context": "The daily lunch debate.",
+          "wordRefs": [
+            "gde"
+          ]
         },
         {
           "id": "doneo-sam-od-kuce",
@@ -243,6 +339,11 @@
           "sr_cyrillic": "Донео сам од куће.",
           "en": "I brought food from home.",
           "context": "When you packed lunch. Use 'Donela sam' if female.",
+          "wordRefs": [
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            "od",
+            { "id": "kuca", "surface": "kuće", "surface_cyrillic": "куће", "case": "gen" }
+          ],
           "variations": [
             {
               "sr_latin": "Danas sam štedljiv, jedem od kuće.",
@@ -263,6 +364,7 @@
           "sr_cyrillic": "ЕРП опет пао. Класика.",
           "en": "ERP went down again. Classic.",
           "context": "When the ERP system crashes, which it always does.",
+          "wordRefs": [],
           "notes": "'Klasika' = 'classic' — used sarcastically when something predictably goes wrong."
         },
         {
@@ -270,14 +372,23 @@
           "sr_latin": "Ne diraj bazu dok traje migracija!",
           "sr_cyrillic": "Не дирај базу док траје миграција!",
           "en": "Don't touch the database during migration!",
-          "context": "Yelling at a colleague during a data migration. 'Baza' = database."
+          "context": "Yelling at a colleague during a data migration. 'Baza' = database.",
+          "wordRefs": [
+            "ne"
+          ]
         },
         {
           "id": "ko-je-menjao-semu",
           "sr_latin": "Ko je menjao šemu bez da mi kaže?",
           "sr_cyrillic": "Ко је мењао шему без да ми каже?",
           "en": "Who changed the schema without telling me?",
-          "context": "Backend dev rage when someone modifies the database schema."
+          "context": "Backend dev rage when someone modifies the database schema.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "da-conj",
+            "mi-dat",
+            { "id": "reci", "surface": "kaže", "surface_cyrillic": "каже", "form": "3sg.pres" }
+          ]
         },
         {
           "id": "pim-integracija",
@@ -285,6 +396,10 @@
           "sr_cyrillic": "Јеси завршио интеграцију са ПИМ-ом?",
           "en": "Did you finish the PIM integration?",
           "context": "Asking about product information management system integration.",
+          "wordRefs": [
+            { "id": "biti", "surface": "Jesi", "surface_cyrillic": "Јеси", "form": "2sg.pres" },
+            "sa"
+          ],
           "notes": "'Sa PIM-om' — Serbian adds case endings even to acronyms."
         }
       ]
@@ -298,21 +413,35 @@
           "sr_latin": "Gotov sam za danas.",
           "sr_cyrillic": "Готов сам за данас.",
           "en": "I'm done for today.",
-          "context": "Signing off at the end of the work day. Use 'Gotova sam' if female."
+          "context": "Signing off at the end of the work day. Use 'Gotova sam' if female.",
+          "wordRefs": [
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            "za"
+          ]
         },
         {
           "id": "pustam-pr",
           "sr_latin": "Puštam PR pa idem.",
           "sr_cyrillic": "Пуштам PR па идем.",
           "en": "Pushing the PR and then I'm out.",
-          "context": "Last thing before leaving — submit that pull request."
+          "context": "Last thing before leaving — submit that pull request.",
+          "wordRefs": [
+            "pa",
+            { "id": "ici", "surface": "idem", "surface_cyrillic": "идем", "form": "1sg.pres" }
+          ]
         },
         {
           "id": "vidimo-se-sutra",
           "sr_latin": "Vidimo se sutra. Ako preživi prod.",
           "sr_cyrillic": "Видимо се сутра. Ако преживи прод.",
           "en": "See you tomorrow. If prod survives.",
-          "context": "A darkly humorous goodbye after a sketchy deploy."
+          "context": "A darkly humorous goodbye after a sketchy deploy.",
+          "wordRefs": [
+            { "id": "videti", "surface": "Vidimo", "surface_cyrillic": "Видимо", "form": "1pl.pres" },
+            "se",
+            "sutra",
+            "ako"
+          ]
         }
       ]
     },
@@ -325,7 +454,10 @@
           "sr_latin": "Kako napreduje?",
           "sr_cyrillic": "Како напредује?",
           "en": "How's it going? / How's progress?",
-          "context": "Checking in on someone's work without being pushy."
+          "context": "Checking in on someone's work without being pushy.",
+          "wordRefs": [
+            "kako"
+          ]
         },
         {
           "id": "polako",
@@ -333,6 +465,7 @@
           "sr_cyrillic": "Полако, стижем.",
           "en": "Easy, I'm getting there.",
           "context": "Reassuring someone you're making progress at your own pace.",
+          "wordRefs": [],
           "notes": "'Polako' is quintessentially Serbian — it means 'slowly/easy/chill'. It's both a philosophy and a response."
         },
         {
@@ -340,7 +473,13 @@
           "sr_latin": "Možeš da mi pomogneš sa nečim?",
           "sr_cyrillic": "Можеш да ми помогнеш са нечим?",
           "en": "Can you help me with something?",
-          "context": "Asking a colleague for help."
+          "context": "Asking a colleague for help.",
+          "wordRefs": [
+            { "id": "moci", "surface": "Možeš", "surface_cyrillic": "Можеш", "form": "2sg.pres" },
+            "da-conj",
+            "mi-dat",
+            "sa"
+          ]
         },
         {
           "id": "ubija-me-ovaj-task",
@@ -348,6 +487,9 @@
           "sr_cyrillic": "Убија ме овај таск.",
           "en": "This task is killing me.",
           "context": "Complaining about a difficult or tedious task.",
+          "wordRefs": [
+            "me-acc"
+          ],
           "notes": "'Ubija' = 'kills'. Serbian loves dramatic expressions for mundane frustrations."
         }
       ]

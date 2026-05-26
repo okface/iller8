@@ -22,6 +22,10 @@
           "sr_cyrillic": "Хајде да кувамо.",
           "en": "Let's cook.",
           "context": "Suggesting you cook together at home.",
+          "wordRefs": [
+            "hajde",
+            "da-conj"
+          ],
           "notes": "'Hajde' is the go-to word for 'let's' or 'come on' in casual Serbian."
         },
         {
@@ -30,6 +34,9 @@
           "sr_cyrillic": "Шта правимо вечерас?",
           "en": "What are we making tonight?",
           "context": "Asking your partner what's for dinner when you're cooking together.",
+          "wordRefs": [
+            "sta"
+          ],
           "variations": [
             {
               "sr_latin": "Šta ćemo da pravimo?",
@@ -43,7 +50,11 @@
           "sr_latin": "Ja sečem, ti mešaj.",
           "sr_cyrillic": "Ја сечем, ти мешај.",
           "en": "I'll chop, you stir.",
-          "context": "Dividing up cooking tasks casually."
+          "context": "Dividing up cooking tasks casually.",
+          "wordRefs": [
+            "ja",
+            "ti-nom"
+          ]
         }
       ]
     },
@@ -57,6 +68,10 @@
           "sr_cyrillic": "Ово је одлично!",
           "en": "This is excellent!",
           "context": "General compliment about food someone made.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            { "id": "odlican", "surface": "odlično", "surface_cyrillic": "одлично", "form": "n.sg" }
+          ],
           "variations": [
             {
               "sr_latin": "Ovo je brutalno dobro!",
@@ -71,6 +86,7 @@
           "sr_cyrillic": "Укусно!",
           "en": "Delicious!",
           "context": "The simplest, most common compliment for food. Use it liberally.",
+          "wordRefs": [],
           "notes": "Short and sweet. You can also say 'Mnogo je ukusno!' for emphasis."
         },
         {
@@ -78,7 +94,13 @@
           "sr_latin": "Baš ti dobro ide kuvanje.",
           "sr_cyrillic": "Баш ти добро иде кување.",
           "en": "You're really good at cooking.",
-          "context": "Complimenting your girlfriend's or friend's cooking skills."
+          "context": "Complimenting your girlfriend's or friend's cooking skills.",
+          "wordRefs": [
+            "bas",
+            "ti-dat",
+            { "id": "dobar", "surface": "dobro", "surface_cyrillic": "добро", "form": "n.sg" },
+            { "id": "ici", "surface": "ide", "surface_cyrillic": "иде", "form": "3sg.pres" }
+          ]
         },
         {
           "id": "moze-jos-malo",
@@ -86,6 +108,11 @@
           "sr_cyrillic": "Може још мало?",
           "en": "Can I have a bit more?",
           "context": "Asking for seconds. This is also a compliment in itself.",
+          "wordRefs": [
+            { "id": "moci", "surface": "Može", "surface_cyrillic": "Може", "form": "3sg.pres" },
+            "jos",
+            "malo"
+          ],
           "notes": "'Može' literally means 'it can' but is used as 'can I have' or 'is it okay'."
         }
       ]
@@ -100,6 +127,11 @@
           "sr_cyrillic": "Хајде да бацимо ћевапе на роштиљ.",
           "en": "Let's throw some ćevapi on the grill.",
           "context": "Suggesting a classic Serbian grill session. Ćevapi are small grilled meat sausages.",
+          "wordRefs": [
+            "hajde",
+            "da-conj",
+            "na"
+          ],
           "notes": "Ćevapi (plural) are THE Serbian street food. Served in lepinja (flatbread) with onions and kajmak."
         },
         {
@@ -108,6 +140,10 @@
           "sr_cyrillic": "Нико не прави сарму као твоја бака.",
           "en": "Nobody makes sarma like your grandma.",
           "context": "Complimenting the family recipe. Sarma is cabbage rolls stuffed with minced meat and rice.",
+          "wordRefs": [
+            "ne",
+            { "id": "tvoj", "surface": "tvoja", "surface_cyrillic": "твоја" }
+          ],
           "notes": "This will score you huge points. Serbian grandmas take sarma very seriously."
         },
         {
@@ -115,7 +151,11 @@
           "sr_latin": "Hoćeš pljeskavicu ili ćevape?",
           "sr_cyrillic": "Хоћеш пљескавицу или ћевапе?",
           "en": "Do you want a pljeskavica or ćevapi?",
-          "context": "The eternal Serbian grill dilemma. Pljeskavica is a large spiced meat patty."
+          "context": "The eternal Serbian grill dilemma. Pljeskavica is a large spiced meat patty.",
+          "wordRefs": [
+            { "id": "hteti", "surface": "Hoćeš", "surface_cyrillic": "Хоћеш", "form": "2sg.pres" },
+            "ili"
+          ]
         }
       ]
     },
@@ -129,6 +169,7 @@
           "sr_cyrillic": "Јел' ово домаћи ајвар?",
           "en": "Is this homemade ajvar?",
           "context": "Asking if the ajvar (roasted red pepper spread) is homemade, which is a big deal.",
+          "wordRefs": [],
           "notes": "Domaći (homemade) ajvar is infinitely better than store-bought, and families make it in huge batches every autumn."
         },
         {
@@ -137,6 +178,12 @@
           "sr_cyrillic": "Бурек је само са месом. Остало су пите.",
           "en": "Burek is only with meat. Everything else is a pie.",
           "context": "The great Balkan debate. In Serbia, 'burek' specifically means the meat-filled one.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "samo",
+            "sa",
+            { "id": "biti", "surface": "su", "surface_cyrillic": "су", "form": "3pl.pres" }
+          ],
           "notes": "Do NOT call a cheese-filled pastry 'burek sa sirom' around purists. It's 'pita sa sirom'. This is a hill many Serbians will die on."
         },
         {
@@ -144,7 +191,12 @@
           "sr_latin": "Idemo na burek za doručak?",
           "sr_cyrillic": "Идемо на бурек за доручак?",
           "en": "Shall we go get burek for breakfast?",
-          "context": "Burek from a pekara (bakery) is a classic Serbian breakfast, especially after a night out."
+          "context": "Burek from a pekara (bakery) is a classic Serbian breakfast, especially after a night out.",
+          "wordRefs": [
+            { "id": "ici", "surface": "Idemo", "surface_cyrillic": "Идемо", "form": "1pl.pres" },
+            "na",
+            "za"
+          ]
         }
       ]
     },
@@ -158,6 +210,10 @@
           "sr_cyrillic": "Треба нам још лука и паприке.",
           "en": "We need more onions and peppers.",
           "context": "Making a grocery list or noting what's missing from the kitchen.",
+          "wordRefs": [
+            "jos",
+            "i"
+          ],
           "notes": "'Treba nam' = 'we need'. Luk (onion) and paprika (pepper) are staples in Serbian cooking."
         },
         {
@@ -166,6 +222,11 @@
           "sr_cyrillic": "Можеш ли да скочиш до продавнице?",
           "en": "Can you pop by the store?",
           "context": "Casually asking someone to grab something from the shop.",
+          "wordRefs": [
+            { "id": "moci", "surface": "Možeš", "surface_cyrillic": "Можеш", "form": "2sg.pres" },
+            "da-conj",
+            "do"
+          ],
           "notes": "'Skočiš' literally means 'jump' but here means 'quickly go to'."
         },
         {
@@ -173,7 +234,11 @@
           "sr_latin": "Nemamo ništa u frižideru.",
           "sr_cyrillic": "Немамо ништа у фрижидеру.",
           "en": "We have nothing in the fridge.",
-          "context": "The universal complaint when it's time to go shopping."
+          "context": "The universal complaint when it's time to go shopping.",
+          "wordRefs": [
+            "nista",
+            "u"
+          ]
         }
       ]
     },
@@ -186,14 +251,20 @@
           "sr_latin": "Probaj ovo, jel' treba još soli?",
           "sr_cyrillic": "Пробај ово, јел' треба још соли?",
           "en": "Taste this, does it need more salt?",
-          "context": "Asking your cooking partner to taste-test."
+          "context": "Asking your cooking partner to taste-test.",
+          "wordRefs": [
+            "jos"
+          ]
         },
         {
           "id": "pazi-vruce",
           "sr_latin": "Pazi, vruće je!",
           "sr_cyrillic": "Пази, вруће је!",
           "en": "Careful, it's hot!",
-          "context": "Warning someone about a hot pot or pan."
+          "context": "Warning someone about a hot pot or pan.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ]
         },
         {
           "id": "smanji-vatru",
@@ -201,6 +272,9 @@
           "sr_cyrillic": "Смањи ватру мало.",
           "en": "Turn the heat down a bit.",
           "context": "Telling someone to lower the stove temperature.",
+          "wordRefs": [
+            "malo"
+          ],
           "notes": "'Vatra' literally means 'fire'. 'Smanji' = reduce/lower."
         },
         {
@@ -208,7 +282,12 @@
           "sr_latin": "Mislim da je gotovo.",
           "sr_cyrillic": "Мислим да је готово.",
           "en": "I think it's done.",
-          "context": "When you think the food is ready."
+          "context": "When you think the food is ready.",
+          "wordRefs": [
+            { "id": "misliti", "surface": "Mislim", "surface_cyrillic": "Мислим", "form": "1sg.pres" },
+            "da-conj",
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ]
         }
       ]
     },
@@ -222,6 +301,11 @@
           "sr_cyrillic": "Шта има за јело?",
           "en": "What's for food? / What's to eat?",
           "context": "The classic question when you walk in the door or you're hungry.",
+          "wordRefs": [
+            "sta",
+            { "id": "imati", "surface": "ima", "surface_cyrillic": "има", "form": "3sg.pres" },
+            "za"
+          ],
           "notes": "Very common, casual phrasing. 'Jelo' = food/meal."
         },
         {
@@ -230,6 +314,10 @@
           "sr_cyrillic": "Гладан сам ко вук.",
           "en": "I'm hungry as a wolf.",
           "context": "Saying you're starving. Common Serbian expression.",
+          "wordRefs": [
+            "gladan",
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }
+          ],
           "notes": "Use 'gladna sam' if you're female.",
           "variations": [
             {
@@ -244,7 +332,11 @@
           "sr_latin": "Hajde da naručimo nešto.",
           "sr_cyrillic": "Хајде да наручимо нешто.",
           "en": "Let's order something.",
-          "context": "When neither of you feels like cooking."
+          "context": "When neither of you feels like cooking.",
+          "wordRefs": [
+            "hajde",
+            "da-conj"
+          ]
         }
       ]
     },
@@ -258,6 +350,7 @@
           "sr_cyrillic": "Пријатно!",
           "en": "Bon appétit! / Enjoy your meal!",
           "context": "Said before eating, like the Serbian equivalent of 'bon appétit'.",
+          "wordRefs": [],
           "notes": "You can also hear 'Dobar tek!' which means the same thing."
         },
         {
@@ -266,6 +359,10 @@
           "sr_cyrillic": "Додај ми хлеб, молим те.",
           "en": "Pass me the bread, please.",
           "context": "Asking someone to pass something at the table.",
+          "wordRefs": [
+            "mi-dat",
+            "te-acc"
+          ],
           "notes": "Bread is sacred in Serbian culture. There's always bread on the table."
         },
         {
@@ -274,6 +371,10 @@
           "sr_cyrillic": "Најео сам се, хвала.",
           "en": "I'm full, thanks.",
           "context": "Saying you've had enough. Good luck with Serbian hospitality though.",
+          "wordRefs": [
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            "se"
+          ],
           "notes": "Use 'Najela sam se' if you're female. Expect to be told 'Jedi još malo!' (Eat a bit more!) anyway.",
           "variations": [
             {
@@ -295,6 +396,10 @@
           "sr_cyrillic": "Хоћеш кафу?",
           "en": "Want a coffee?",
           "context": "Offering coffee. Coffee is a huge part of daily life in Serbia.",
+          "wordRefs": [
+            { "id": "hteti", "surface": "Hoćeš", "surface_cyrillic": "Хоћеш", "form": "2sg.pres" },
+            { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" }
+          ],
           "notes": "In Serbia, 'kafa' usually means domaća kafa (Turkish-style coffee), not espresso."
         },
         {
@@ -302,14 +407,24 @@
           "sr_latin": "Skuvaj mi kafu, molim te.",
           "sr_cyrillic": "Скувај ми кафу, молим те.",
           "en": "Make me a coffee, please.",
-          "context": "Asking your partner to make coffee. 'Skuvaj' literally means 'boil' because Turkish coffee is boiled."
+          "context": "Asking your partner to make coffee. 'Skuvaj' literally means 'boil' because Turkish coffee is boiled.",
+          "wordRefs": [
+            "mi-dat",
+            { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" },
+            "te-acc"
+          ]
         },
         {
           "id": "popijmo-kafu",
           "sr_latin": "Hajde da popijemo kafu.",
           "sr_cyrillic": "Хајде да попијемо кафу.",
           "en": "Let's have a coffee.",
-          "context": "Suggesting a coffee break. This is as much about socializing as about caffeine."
+          "context": "Suggesting a coffee break. This is as much about socializing as about caffeine.",
+          "wordRefs": [
+            "hajde",
+            "da-conj",
+            { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" }
+          ]
         }
       ]
     },
@@ -322,7 +437,10 @@
           "sr_latin": "Zagorelo je!",
           "sr_cyrillic": "Загорело је!",
           "en": "It burned!",
-          "context": "When you weren't paying attention and the food burned."
+          "context": "When you weren't paying attention and the food burned.",
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+          ]
         },
         {
           "id": "previse-soli",
@@ -330,6 +448,9 @@
           "sr_cyrillic": "Ставио сам превише соли.",
           "en": "I put too much salt.",
           "context": "Admitting you over-salted the food.",
+          "wordRefs": [
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }
+          ],
           "notes": "Use 'Stavila sam' if you're female.",
           "variations": [
             {
@@ -345,6 +466,10 @@
           "sr_cyrillic": "Ма пусти, наручићемо пицу.",
           "en": "Forget it, we'll order pizza.",
           "context": "The backup plan when cooking goes wrong.",
+          "wordRefs": [
+            "ma",
+            { "id": "pustiti", "surface": "pusti", "surface_cyrillic": "пусти", "form": "imp.2sg" }
+          ],
           "notes": "'Ma pusti' = 'forget it' / 'never mind'. Classic recovery phrase."
         }
       ]
