@@ -6,6 +6,7 @@ import MonoBadge from '../ui/MonoBadge';
 import DualScript from '../ui/DualScript';
 import GlossHint from '../ui/GlossHint';
 import WordChips from '../ui/WordChips';
+import AudioButton from '../ui/AudioButton';
 import { normalizeWordRefs } from '../../data/words';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
@@ -72,14 +73,19 @@ export default function PhraseIntro({ phrases, script, onComplete, progress }: P
         </div>
       </div>
 
-      <div style={{ marginTop: 6 }}>
-        <DualScript
-          srLatin={phrase.sr_latin}
-          srCyrillic={phrase.sr_cyrillic}
-          script={script}
-          size="hero"
-          weight={500}
-        />
+      <div style={{ marginTop: 6, display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <DualScript
+            srLatin={phrase.sr_latin}
+            srCyrillic={phrase.sr_cyrillic}
+            script={script}
+            size="hero"
+            weight={500}
+          />
+        </div>
+        <div style={{ paddingTop: 8 }}>
+          <AudioButton text={phrase.sr_latin} size={20} />
+        </div>
       </div>
 
       {refs.length > 0 && (

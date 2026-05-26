@@ -9,7 +9,8 @@ import Card from '../components/ui/Card';
 import LinearProgress from '../components/ui/LinearProgress';
 import SectionHead from '../components/ui/SectionHead';
 import MonoBadge from '../components/ui/MonoBadge';
-import { IconAudio, IconChev, IconBolt, IconBrain, IconBook } from '../components/ui/Icons';
+import { IconChev, IconBolt, IconBrain, IconBook } from '../components/ui/Icons';
+import AudioButton from '../components/ui/AudioButton';
 import { getDueItems } from '../engine/srs';
 import { getTodayStats } from '../store/progress';
 import { getTimeGreeting, getToday } from '../lib/utils';
@@ -318,19 +319,7 @@ export default function Dashboard({ progress, script }: DashboardProps) {
         <Card style={{ marginTop: 16 }} pad={16}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
             <span style={metaLabel}>PHRASE OF THE DAY</span>
-            <button
-              style={{
-                background: 'none',
-                border: 'none',
-                color: T.mute,
-                cursor: 'not-allowed',
-                padding: 0,
-              }}
-              disabled
-              aria-label="audio (coming soon)"
-            >
-              <IconAudio size={14} />
-            </button>
+            <AudioButton text={phraseOfDay.phrase.sr_latin} size={14} />
           </div>
           <div
             className="font-serif-sr"
