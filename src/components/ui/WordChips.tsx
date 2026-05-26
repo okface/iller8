@@ -1,28 +1,24 @@
-import type { Word, UserProgress } from '../../store/types';
+import type { UserProgress } from '../../store/types';
+import type { NormalizedWordRef } from '../../data/words';
 import { getWordBucket } from '../../lib/word-progress';
 import { T } from '../../lib/tokens';
 
 /**
- * Renders the word-breakdown strip shown under a phrase. Each chip
- * shows one content Word in the learner's primary script + its English
- * gloss, with a colour cue indicating SRS bucket. Tapping a chip can
- * navigate to that word's drill — wire `onWordClick` from the parent.
+ * Word-breakdown strip shown under a phrase. Each chip is one content
+ * Word. When the phrase carries an inflected surface form different
+ * from the lemma (e.g. `Dušo moja.` carrying `dušo` for the lemma
+ * `duša`), the chip shows the surface form prominently with the lemma
+ * underneath and a small case badge. Otherwise it shows just the lemma.
  *
- * Spec: PEDAGOGY_AUDIT.md §3.10 — "the single highest-impact change
- * to make a sentence feel constructed from pieces I know."
+ * Spec: PEDAGOGY_AUDIT.md §3.10 + TESTER_REPORT.md "vocative mismatch".
  */
 
 interface WordChipsProps {
-  /** Words to render, in display order. Pass the resolved Word objects
-   *  (the parent looks them up from wordRefs via the words loader). */
-  words: Word[];
-  /** User's primary script. */
+  /** Already-normalized refs from `normalizeWordRefs(phrase.wordRefs)`. */
+  refs: NormalizedWordRef[];
   script: 'latin' | 'cyrillic';
-  /** UserProgress to colour-code each chip by SRS bucket. Optional. */
   progress?: UserProgress;
-  /** Tap handler for a chip. Optional — chips are static if not provided. */
-  onWordClick?: (word: Word) => void;
-  /** Hide the English gloss row (compact). Default false. */
+  onWordClick?: (ref: NormalizedWordRef) => void;
   compact?: boolean;
 }
 
@@ -36,35 +32,37 @@ const BUCKET_COLORS: Record<number, { bg: string; border: string; fg: string }> 
 };
 
 export default function WordChips({
-  words,
+  refs,
   script,
   progress,
   onWordClick,
   compact = false,
 }: WordChipsProps) {
-  if (words.length === 0) return null;
+  if (refs.length === 0) return null;
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: 6,
-      }}
-    >
-      {words.map((word) => {
+    <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
+      {refs.map((ref) => {
+        const { word } = ref;
         const bucket = progress ? getWordBucket(progress, word.id) : 0;
         const c = BUCKET_COLORS[Math.min(5, bucket)];
-        const sr = script === 'cyrillic' ? word.lemma_sr_cyrillic : word.lemma_sr_latin;
+
+        // Surface form (what's in the phrase) — prefer the per-ref override.
+        const surfaceLatin = ref.surface_latin ?? word.lemma_sr_latin;
+        const surfaceCyrillic = ref.surface_cyrillic ?? word.lemma_sr_cyrillic;
+        const surface = script === 'cyrillic' ? surfaceCyrillic : surfaceLatin;
+        const lemma = script === 'cyrillic' ? word.lemma_sr_cyrillic : word.lemma_sr_latin;
+        const showLemma = surface !== lemma;
         const interactive = !!onWordClick;
+
         return (
           <button
-            key={word.id}
-            onClick={interactive ? () => onWordClick(word) : undefined}
+            key={ref.id + (ref.case ?? '')}
+            onClick={interactive ? () => onWordClick(ref) : undefined}
             disabled={!interactive}
             style={{
               display: 'inline-flex',
-              alignItems: 'baseline',
+              alignItems: 'center',
               gap: 6,
               padding: '6px 10px',
               borderRadius: T.rPill,
@@ -77,17 +75,42 @@ export default function WordChips({
             }}
             title={word.gloss_en}
           >
-            <span
-              className="font-serif-sr"
-              style={{ fontSize: 14, fontWeight: 500, color: T.text }}
-            >
-              {sr}
-            </span>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', lineHeight: 1 }}>
+              <span
+                className="font-serif-sr"
+                style={{ fontSize: 14, fontWeight: 500, color: T.text }}
+              >
+                {surface}
+              </span>
+              {showLemma && (
+                <span
+                  style={{
+                    fontFamily: T.mono,
+                    fontSize: 9,
+                    color: T.mute,
+                    marginTop: 1,
+                  }}
+                >
+                  ← {lemma}
+                </span>
+              )}
+            </div>
+            {ref.case && (
+              <span
+                style={{
+                  fontFamily: T.mono,
+                  fontSize: 9,
+                  color: c.fg,
+                  textTransform: 'uppercase',
+                  letterSpacing: 0.4,
+                }}
+              >
+                {ref.case}
+              </span>
+            )}
             {!compact && (
               <>
-                <span style={{ color: c.fg, fontSize: 10, fontFamily: T.mono }}>
-                  →
-                </span>
+                <span style={{ color: c.fg, fontSize: 10, fontFamily: T.mono }}>→</span>
                 <span style={{ fontSize: 12, color: c.fg }}>{word.gloss_en}</span>
               </>
             )}

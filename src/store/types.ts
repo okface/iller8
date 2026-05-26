@@ -4,20 +4,44 @@ export interface PhraseVariation {
   en: string;
 }
 
+/**
+ * One reference from a Phrase to a Word in the lexicon. The bare-string
+ * shorthand `"voleti"` is equivalent to `{ id: "voleti" }`. Use the
+ * object form to carry the inflected surface form when it differs from
+ * the lemma — e.g. `{ id: "duša", surface: "Dušo", case: "voc" }` so
+ * the chip strip can show what's actually in the phrase, not just the
+ * dictionary lookup. Normalise via `normalizeWordRef` in
+ * `src/data/words/index.ts` before consuming.
+ */
+export type WordRef =
+  | string
+  | {
+      id: string;
+      /** Surface form actually in the phrase (Latin). When absent, the chip uses the Word's lemma. */
+      surface?: string;
+      /** Cyrillic surface form. Optional — when absent, derived from surface. */
+      surface_cyrillic?: string;
+      /** Case label shown as a small badge on the chip. */
+      case?: 'voc' | 'nom' | 'acc' | 'dat' | 'gen' | 'loc' | 'ins';
+      /** Verb form tag (e.g. '1sg.pres', 'past.f.sg', 'imp.2sg'). */
+      form?: string;
+    };
+
 export interface Phrase {
   id: string;
   sr_latin: string;
   sr_cyrillic: string;
   en: string;
+  /** Optional disambiguating hint hidden until the answer is revealed.
+   *  Carries the kind of context that used to live in `(lit. ...)` or
+   *  `(to a woman)` parentheticals appended to `en`. Keep `en` clean. */
+  gloss_hint?: string;
   context?: string;
   notes?: string;
   variations?: PhraseVariation[];
-  /** IDs of content Words this phrase is composed of. Used for the
-   *  readiness gate (a phrase becomes drillable when the learner has
-   *  met its content words individually) and the word-breakdown chips
-   *  shown in PhraseIntro. Function words (clitics, prepositions) are
-   *  generally NOT listed — only the words worth tracking on their own. */
-  wordRefs?: string[];
+  /** Content words this phrase is composed of. See the WordRef type
+   *  above for the rich form supporting surface + case + form. */
+  wordRefs?: WordRef[];
 }
 
 export interface PhraseGroup {
@@ -230,6 +254,10 @@ export interface Word {
   lemma_sr_latin: string;       // canonical dictionary form, Latin
   lemma_sr_cyrillic: string;
   gloss_en: string;             // 'to love', 'soul', 'me (dat)'
+  /** Optional post-answer hint — same role as `Phrase.gloss_hint`. Used
+   *  for the parenthetical disambiguators that previously polluted
+   *  `gloss_en` (e.g. "(dat)" on `mi-dat` vs `mi-nom`). */
+  gloss_hint?: string;
   pos: POS;
   /** Noun gender (skip for non-nouns). */
   gender?: Gender;

@@ -1,5 +1,9 @@
-import type { Phrase, UserProgress } from '../store/types';
+import type { Phrase, UserProgress, WordRef } from '../store/types';
 import { getWordBucket } from '../lib/word-progress';
+
+function wordRefId(ref: WordRef): string {
+  return typeof ref === 'string' ? ref : ref.id;
+}
 
 /**
  * Readiness gate: a phrase is fully drillable once the learner has met
@@ -36,7 +40,8 @@ export function computeReadiness(
 
   const knownWordIds: string[] = [];
   const missingWordIds: string[] = [];
-  for (const id of refs) {
+  for (const ref of refs) {
+    const id = wordRefId(ref);
     if (getWordBucket(progress, id) >= minBucket) knownWordIds.push(id);
     else missingWordIds.push(id);
   }

@@ -54,7 +54,8 @@ export default function Hammer({ progress, setProgress, script }: HammerProps) {
       progress.phrases,
       script,
       sessionSize,
-      skipTyping
+      skipTyping,
+      progress
     );
     setExercises(generated);
   }, [phase, script, sessionSize, sessionSkipTyping]); // eslint-disable-line react-hooks/exhaustive-deps

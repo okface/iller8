@@ -87,7 +87,8 @@ export default function LessonView({ progress, setProgress, script }: LessonView
       progress.phrases,
       script,
       15,
-      progress.settings.skipTyping
+      progress.settings.skipTyping,
+      progress
     );
     setExercises(generated);
   }, [lesson, script, phase]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -110,6 +111,40 @@ export default function LessonView({ progress, setProgress, script }: LessonView
   }, [lesson, introPhrases, progress, setProgress]);
 
   const retryCountRef = React.useRef<Record<string, number>>({});
+
+  // Declared before handleAnswer so the closure references a real function,
+  // not a TDZ-dangerous forward reference. (Bug A in the code-health audit.)
+  const finishLesson = useCallback(
+    (currentProgress: UserProgress, lastCorrect: boolean) => {
+      if (!lesson) return;
+      let newProgress = markLessonComplete(currentProgress, lesson.id);
+
+      if (!newProgress.achievements.includes('first-lesson')) {
+        newProgress = addAchievement(newProgress, 'first-lesson');
+      }
+
+      const finalCorrect = correctCount + (lastCorrect ? 1 : 0);
+      const finalTotal = totalAnswered + 1;
+      if (finalTotal > 0 && finalCorrect === finalTotal) {
+        newProgress = addAchievement(newProgress, 'perfect-lesson');
+      }
+
+      const learnedCount = Object.values(newProgress.phrases).filter(
+        (p) => p.bucket >= 1
+      ).length;
+      if (learnedCount >= 100) newProgress = addAchievement(newProgress, 'polyglot');
+
+      if (newProgress.currentStreak >= 3) newProgress = addAchievement(newProgress, 'streak-3');
+      if (newProgress.currentStreak >= 7) newProgress = addAchievement(newProgress, 'streak-7');
+      if (newProgress.currentStreak >= 14) newProgress = addAchievement(newProgress, 'streak-14');
+      if (newProgress.currentStreak >= 30) newProgress = addAchievement(newProgress, 'streak-30');
+
+      setProgress(newProgress);
+      saveProgress(newProgress);
+      setPhase('finished');
+    },
+    [lesson, correctCount, totalAnswered, setProgress]
+  );
 
   const handleAnswer = useCallback(
     (correct: boolean) => {
@@ -160,45 +195,21 @@ export default function LessonView({ progress, setProgress, script }: LessonView
         setCurrentIndex((i) => i + 1);
       }
     },
-    [exercises, currentIndex, progress, setProgress, lesson, script] // eslint-disable-line react-hooks/exhaustive-deps
+    [exercises, currentIndex, progress, setProgress, lesson, script, finishLesson]
   );
 
-  const finishLesson = (currentProgress: UserProgress, lastCorrect: boolean) => {
-    if (!lesson) return;
-    let newProgress = markLessonComplete(currentProgress, lesson.id);
-
-    if (!newProgress.achievements.includes('first-lesson')) {
-      newProgress = addAchievement(newProgress, 'first-lesson');
-    }
-
-    const finalCorrect = correctCount + (lastCorrect ? 1 : 0);
-    const finalTotal = totalAnswered + 1;
-    if (finalTotal > 0 && finalCorrect === finalTotal) {
-      newProgress = addAchievement(newProgress, 'perfect-lesson');
-    }
-
-    const learnedCount = Object.values(newProgress.phrases).filter(
-      (p) => p.bucket >= 1
-    ).length;
-    if (learnedCount >= 100) newProgress = addAchievement(newProgress, 'polyglot');
-
-    if (newProgress.currentStreak >= 3) newProgress = addAchievement(newProgress, 'streak-3');
-    if (newProgress.currentStreak >= 7) newProgress = addAchievement(newProgress, 'streak-7');
-    if (newProgress.currentStreak >= 14) newProgress = addAchievement(newProgress, 'streak-14');
-    if (newProgress.currentStreak >= 30) newProgress = addAchievement(newProgress, 'streak-30');
-
-    setProgress(newProgress);
-    saveProgress(newProgress);
-    setPhase('finished');
-  };
-
   const handleMatchPairsComplete = (correctPairs: number, totalPairs: number) => {
+    // Bug B fix: previously the loop called setProgress N times with the same
+    // stale closure `progress`, so only the last call won and `phrasesStudied`
+    // was incremented by 1 instead of `totalPairs`. Thread the running value
+    // through the loop and commit once at the end.
+    let next = progress;
     for (let i = 0; i < totalPairs; i++) {
       const correct = i < correctPairs;
-      const newProgress = updateDailyStats(progress, correct);
-      setProgress(newProgress);
-      saveProgress(newProgress);
+      next = updateDailyStats(next, correct);
     }
+    setProgress(next);
+    saveProgress(next);
     setShowMatchPairs(false);
     setCorrectCount((c) => c + correctPairs);
     setTotalAnswered((t) => t + totalPairs);

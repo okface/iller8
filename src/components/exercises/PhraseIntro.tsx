@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import type { Phrase, UserProgress, Word } from '../../store/types';
+import type { Phrase, UserProgress } from '../../store/types';
 import Card from '../ui/Card';
 import Btn from '../ui/Btn';
 import MonoBadge from '../ui/MonoBadge';
 import DualScript from '../ui/DualScript';
 import WordChips from '../ui/WordChips';
-import { getWordById } from '../../data/words';
+import { normalizeWordRefs } from '../../data/words';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -30,11 +30,10 @@ export default function PhraseIntro({ phrases, script, onComplete, progress }: P
   if (!phrase) return null;
 
   // Resolve word references — the breakdown chips shown under each
-  // phrase. Missing word IDs are dropped silently (lessons not yet
-  // tagged just don't show chips). Audit §3.10.
-  const refWords: Word[] = (phrase.wordRefs ?? [])
-    .map(getWordById)
-    .filter((w): w is Word => !!w);
+  // phrase. Each ref carries an optional surface form + case so chips
+  // can show what's in the phrase rather than the bare lemma.
+  // Audit §3.10 + TESTER_REPORT.md "vocative mismatch".
+  const refs = normalizeWordRefs(phrase.wordRefs);
 
   const next = () => {
     if (index + 1 >= phrases.length) {
@@ -82,10 +81,10 @@ export default function PhraseIntro({ phrases, script, onComplete, progress }: P
         />
       </div>
 
-      {refWords.length > 0 && (
+      {refs.length > 0 && (
         <div>
           <div style={{ ...metaLabel, marginBottom: 8 }}>WORD BY WORD</div>
-          <WordChips words={refWords} script={script} progress={progress} />
+          <WordChips refs={refs} script={script} progress={progress} />
         </div>
       )}
 

@@ -1,4 +1,5 @@
-import type { Exercise, ExerciseType, Lesson, Phrase, PhraseGroup, PhraseProgress } from '../store/types';
+import type { Exercise, ExerciseType, Lesson, Phrase, PhraseGroup, PhraseProgress, UserProgress } from '../store/types';
+import { filterByReadiness } from './word-readiness';
 
 function shuffle<T>(array: T[]): T[] {
   const arr = [...array];
@@ -623,13 +624,29 @@ export function generateLessonExercises(
   phraseProgress: Record<string, PhraseProgress>,
   script: 'latin' | 'cyrillic',
   count: number = 15,
-  skipTyping: boolean = false
+  skipTyping: boolean = false,
+  /** Optional — when provided, filters out phrases whose content words
+   *  the learner hasn't met yet. Passed through to the readiness gate. */
+  userProgress?: UserProgress
 ): Exercise[] {
   const allPhrases = getAllPhrases(lesson);
   if (allPhrases.length === 0) return [];
 
+  // Readiness gate: when we have full UserProgress, filter the practice
+  // pool to phrases whose content words are at least met. Phrases with no
+  // wordRefs are treated as ready (so untagged lessons fall through).
+  const practicePool = userProgress
+    ? filterByReadiness(allPhrases, userProgress, 'preview')
+    : allPhrases;
+  if (practicePool.length === 0) {
+    // Nothing ready — fall back to the original pool so the user isn't
+    // shown an empty session. The chip strip / Word tab can pick up the
+    // unmet vocab.
+    practicePool.push(...allPhrases);
+  }
+
   const exercises: Exercise[] = [];
-  const phrasesToPractice = shuffle(allPhrases);
+  const phrasesToPractice = shuffle(practicePool);
 
   let i = 0;
   while (exercises.length < count) {
@@ -710,10 +727,19 @@ export function generateHammerSession(
   phraseProgress: Record<string, PhraseProgress>,
   script: 'latin' | 'cyrillic',
   count: number = 15,
-  skipTyping: boolean = false
+  skipTyping: boolean = false,
+  /** Optional — when provided, filters out phrases whose content words
+   *  the learner hasn't met yet. */
+  userProgress?: UserProgress
 ): Exercise[] {
   const allPhrases = lessons.flatMap(getAllPhrases);
   if (allPhrases.length === 0) return [];
+
+  // Readiness gate when we have UserProgress; otherwise everything goes.
+  const eligible = userProgress
+    ? filterByReadiness(allPhrases, userProgress, 'preview')
+    : allPhrases;
+  const poolForBucketing = eligible.length > 0 ? eligible : allPhrases;
 
   const phraseLessonMap = new Map<string, Lesson>();
   for (const lesson of lessons) {
@@ -725,7 +751,7 @@ export function generateHammerSession(
   }
 
   const buckets: Phrase[][] = [[], [], []]; // [low, mid, high]
-  for (const phrase of allPhrases) {
+  for (const phrase of poolForBucketing) {
     const b = phraseProgress[phrase.id]?.bucket ?? 0;
     if (b <= 1) buckets[0].push(phrase);
     else if (b <= 3) buckets[1].push(phrase);
