@@ -124,7 +124,7 @@ Ordered. Each phase ships independently.
 | 5 | Lessons 03–10 wordRefs backfill | done |
 | 6 | Orchestration extraction (`MCOptionList`, `useDrillSession`, `ExerciseRenderer`) | done |
 | 7 | Daily Session (unified primary path) at `/daily` | done |
-| 8 | Audio pipeline (Azure TTS script + `AudioButton`) — script ready, clips await Azure key | data layer done |
+| 8 | Audio pipeline (`AudioButton` + multi-provider TTS script: ElevenLabs default, Azure fallback) — clips await an API key | data layer done |
 | 9 | Migrate `Hammer`/`WordDrill`/`FamilyDrill`/`LessonView`/`ReviewSession` to `useDrillSession` | next |
 | 10 | Day-1 dashboard variant (gate secondary tiles on `totalLearned === 0`) | next |
 | 11 | Lexicon extension (~10 high-frequency words flagged in backfill) | in progress (subagent) |
