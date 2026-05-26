@@ -40,7 +40,10 @@
           "sr_cyrillic": "Нема шансе!",
           "en": "No chance! / No way!",
           "context": "Stronger disbelief or flat-out refusal. Also used to express that something is impossible.",
-          "wordRefs": ["imati", "sansa"],
+          "wordRefs": [
+            { "id": "imati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres.neg" },
+            { "id": "sansa", "surface": "šanse", "surface_cyrillic": "шансе", "case": "gen" }
+          ],
           "notes": "'Nema' = there is no. 'Šanse' = chance (genitive)."
         },
         {
@@ -49,7 +52,9 @@
           "sr_cyrillic": "Озбиљно?",
           "en": "Seriously? / For real?",
           "context": "Similar to 'stvarno' but with more weight. You're genuinely asking if they're serious.",
-          "wordRefs": ["ozbiljan"],
+          "wordRefs": [
+            { "id": "ozbiljan", "surface": "Ozbiljno", "surface_cyrillic": "Озбиљно", "form": "n.sg" }
+          ],
           "notes": "'Ozbiljan' = serious. This is the adverb form used as a question."
         }
       ]
@@ -73,7 +78,9 @@
           "sr_cyrillic": "Одлично!",
           "en": "Excellent! / Perfect!",
           "context": "A step above 'super.' Shows genuine enthusiasm.",
-          "wordRefs": ["odlican"],
+          "wordRefs": [
+            { "id": "odlican", "surface": "Odlično", "surface_cyrillic": "Одлично", "form": "n.sg" }
+          ],
           "notes": "From 'odličan' = excellent. The most positive grade in Serbian schools is 'odličan' (5)."
         },
         {
@@ -82,7 +89,10 @@
           "sr_cyrillic": "Свака част!",
           "en": "Well done! / Respect! / Props!",
           "context": "Acknowledging someone did something impressive. Very Serbian expression.",
-          "wordRefs": ["cast", "svaki"],
+          "wordRefs": [
+            "cast",
+            { "id": "svaki", "surface": "Svaka", "surface_cyrillic": "Свака", "form": "f.sg" }
+          ],
           "notes": "Literally 'every honor.' Used to show respect and admiration. No direct English equivalent."
         },
         {
@@ -133,7 +143,10 @@
           "sr_cyrillic": "Ма пусти!",
           "en": "Forget it! / Don't even bother!",
           "context": "When something's not worth discussing or you're frustrated explaining it.",
-          "wordRefs": ["ma", "pustiti"],
+          "wordRefs": [
+            "ma",
+            { "id": "pustiti", "surface": "pusti", "surface_cyrillic": "пусти", "form": "imp.2sg" }
+          ],
           "notes": "'Pustiti' = to let go / to leave. 'Ma pusti' = dismissive 'forget about it.'"
         }
       ]
@@ -148,7 +161,10 @@
           "sr_cyrillic": "Боже мој!",
           "en": "Oh my God!",
           "context": "Exactly like English 'oh my god.' Surprise, shock, exasperation.",
-          "wordRefs": ["bog", "moj"],
+          "wordRefs": [
+            { "id": "bog", "surface": "Bože", "surface_cyrillic": "Боже", "case": "voc" },
+            "moj"
+          ],
           "notes": "'Bože' is the vocative of 'Bog' (God). Used by everyone regardless of religiosity."
         },
         {
@@ -157,7 +173,10 @@
           "sr_cyrillic": "Јој, Боже!",
           "en": "Oh God! / Dear Lord!",
           "context": "Exasperation or overwhelm. 'Joj' adds emotional weight.",
-          "wordRefs": ["bog", "joj-interj"],
+          "wordRefs": [
+            { "id": "bog", "surface": "Bože", "surface_cyrillic": "Боже", "case": "voc" },
+            "joj-interj"
+          ],
           "notes": "'Joj' is a uniquely Serbian exclamation — something between 'oh' and 'ugh.'"
         },
         {
@@ -166,7 +185,10 @@
           "sr_cyrillic": "Бога ми!",
           "en": "By God! / I swear!",
           "context": "Emphasizing that you're telling the truth. 'I'm dead serious.'",
-          "wordRefs": ["bog", "mi-dat"],
+          "wordRefs": [
+            { "id": "bog", "surface": "Boga", "surface_cyrillic": "Бога", "case": "acc" },
+            "mi-dat"
+          ],
           "notes": "Literally 'by my God.' Used for emphasis, not literally religious."
         }
       ]
@@ -181,7 +203,9 @@
           "sr_cyrillic": "Важи.",
           "en": "Okay. / Deal. / Sounds good.",
           "context": "The most common casual 'okay' in Serbian. Used to confirm plans, agree to something.",
-          "wordRefs": ["vaziti"],
+          "wordRefs": [
+            { "id": "vaziti", "surface": "Važi", "surface_cyrillic": "Важи", "form": "3sg.pres" }
+          ],
           "notes": "Literally means 'it holds/applies.' Far more natural than 'okej' in most contexts."
         },
         {
@@ -190,7 +214,10 @@
           "sr_cyrillic": "Слажем се.",
           "en": "I agree.",
           "context": "When you're on the same page as someone. Clear, direct agreement.",
-          "wordRefs": ["se", "slagati-se"],
+          "wordRefs": [
+            "se",
+            { "id": "slagati-se", "surface": "Slažem", "surface_cyrillic": "Слажем", "form": "1sg.pres" }
+          ],
           "notes": "'Slagati se' = to agree. Reflexive verb."
         },
         {
@@ -223,7 +250,10 @@
           "sr_cyrillic": "Нема везе.",
           "en": "It doesn't matter. / No worries. / Never mind.",
           "context": "Dismissing something — either reassuring someone or brushing something off.",
-          "wordRefs": ["imati", "veza"],
+          "wordRefs": [
+            { "id": "imati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres.neg" },
+            { "id": "veza", "surface": "veze", "surface_cyrillic": "везе", "case": "gen" }
+          ],
           "notes": "Literally 'there's no connection.' One of the most useful Serbian phrases. Can mean 'it's okay' or 'it's not related.'"
         },
         {
@@ -262,7 +292,8 @@
             {
               "sr_latin": "Bre!",
               "sr_cyrillic": "Бре!",
-              "en": "Dude! / Man! (as exclamation)"
+              "en": "Dude! / Man!",
+              "gloss_hint": "as exclamation"
             }
           ]
         },
@@ -272,7 +303,10 @@
           "sr_cyrillic": "Смара ме.",
           "en": "It's annoying me. / It's bugging me.",
           "context": "When something or someone is getting on your nerves.",
-          "wordRefs": ["me-acc", "smarati"],
+          "wordRefs": [
+            "me-acc",
+            { "id": "smarati", "surface": "Smara", "surface_cyrillic": "Смара", "form": "3sg.pres" }
+          ],
           "notes": "'Smarati' = to bore/annoy. Very casual/slangy."
         },
         {
@@ -281,7 +315,10 @@
           "sr_cyrillic": "Досадно ми је.",
           "en": "I'm bored.",
           "context": "Expressing boredom. Also used as a reaction to a boring story or situation.",
-          "wordRefs": ["biti", "mi-dat"],
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "mi-dat"
+          ],
           "notes": "Literally 'it is boring to me.' Dative construction — the boredom happens TO you."
         },
         {
@@ -305,7 +342,11 @@
           "sr_cyrillic": "Па... не знам.",
           "en": "Well... I don't know.",
           "context": "When you're unsure or buying time. 'Pa' is the ultimate Serbian filler word.",
-          "wordRefs": ["ne", "pa", "znati"],
+          "wordRefs": [
+            "ne",
+            "pa",
+            { "id": "znati", "surface": "znam", "surface_cyrillic": "знам", "form": "1sg.pres" }
+          ],
           "notes": "'Pa' = well/so. Serbians start half their sentences with 'pa.' It's the thinking word."
         },
         {
@@ -314,7 +355,11 @@
           "sr_cyrillic": "Ма шта знам.",
           "en": "I dunno. / Beats me.",
           "context": "Casual 'I have no idea.' Very natural filler.",
-          "wordRefs": ["ma", "sta", "znati"],
+          "wordRefs": [
+            "ma",
+            "sta",
+            { "id": "znati", "surface": "znam", "surface_cyrillic": "знам", "form": "1sg.pres" }
+          ],
           "notes": "Literally 'well, what do I know.' Feels more natural than a direct 'ne znam.'"
         },
         {
@@ -336,7 +381,8 @@
           "id": "rx-jadan",
           "sr_latin": "Jadan ti!",
           "sr_cyrillic": "Јадан ти!",
-          "en": "You poor thing! (to a man)",
+          "en": "You poor thing!",
+          "gloss_hint": "to a man",
           "context": "Sympathizing with someone's bad luck or difficult situation.",
           "wordRefs": ["jadan", "ti-dat"],
           "notes": "'Jadan' = poor/pitiful. 'Jadna' for a woman.",
@@ -344,7 +390,8 @@
             {
               "sr_latin": "Jadna ti!",
               "sr_cyrillic": "Јадна ти!",
-              "en": "You poor thing! (to a woman)"
+              "en": "You poor thing!",
+              "gloss_hint": "to a woman"
             }
           ]
         },
@@ -354,16 +401,22 @@
           "sr_cyrillic": "Грозно!",
           "en": "That's terrible! / How awful!",
           "context": "Reacting to bad news someone shares with you.",
-          "wordRefs": ["grozan"],
+          "wordRefs": [
+            { "id": "grozan", "surface": "Grozno", "surface_cyrillic": "Грозно", "form": "n.sg" }
+          ],
           "notes": "'Grozno' = terrible/awful. Strong negative reaction."
         },
         {
           "id": "rx-zao-mi-je",
           "sr_latin": "Žao mi je.",
           "sr_cyrillic": "Жао ми је.",
-          "en": "I'm sorry. (empathy, not apology)",
+          "en": "I'm sorry.",
+          "gloss_hint": "empathy, not apology",
           "context": "When someone tells you bad news. Not an apology — it's sympathy.",
-          "wordRefs": ["biti", "mi-dat"],
+          "wordRefs": [
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "mi-dat"
+          ],
           "notes": "Literally 'it is grievous to me.' Different from 'izvini' which is an actual apology."
         }
       ]
@@ -378,7 +431,11 @@
           "sr_cyrillic": "Није лоше!",
           "en": "Not bad!",
           "context": "Serbian understatement. Often means 'actually pretty good.' Peak Balkan energy.",
-          "wordRefs": ["biti", "los", "ne"],
+          "wordRefs": [
+            { "id": "biti", "surface": "Nije", "surface_cyrillic": "Није", "form": "3sg.pres.neg" },
+            { "id": "los", "surface": "loše", "surface_cyrillic": "лоше", "form": "n.sg" },
+            "ne"
+          ],
           "notes": "Serbs often express positivity through understatement. 'Nije loše' can be high praise."
         },
         {
@@ -387,7 +444,10 @@
           "sr_cyrillic": "Баш добро!",
           "en": "Really good!",
           "context": "Genuine appreciation. Works for food, news, someone's work — anything.",
-          "wordRefs": ["bas", "dobar"],
+          "wordRefs": [
+            "bas",
+            { "id": "dobar", "surface": "dobro", "surface_cyrillic": "добро", "form": "n.sg" }
+          ],
           "notes": "'Baš' intensifies whatever follows. 'Dobro' = good."
         },
         {

@@ -103,7 +103,8 @@
             {
               "sr_latin": "Gladna sam kao vuk.",
               "sr_cyrillic": "Гладна сам као вук.",
-              "en": "I'm hungry as a wolf. (feminine)"
+              "en": "I'm hungry as a wolf.",
+              "gloss_hint": "feminine"
             }
           ]
         },
@@ -216,7 +217,8 @@
             {
               "sr_latin": "Umorna sam, ceo dan sam radila.",
               "sr_cyrillic": "Уморна сам, цео дан сам радила.",
-              "en": "I'm tired, I worked all day. (feminine)"
+              "en": "I'm tired, I worked all day.",
+              "gloss_hint": "feminine"
             }
           ]
         },
@@ -366,7 +368,8 @@
             {
               "sr_latin": "Šta si radila danas?",
               "sr_cyrillic": "Шта си радила данас?",
-              "en": "What did you do today? (to a woman)"
+              "en": "What did you do today?",
+              "gloss_hint": "to a woman"
             }
           ]
         },
@@ -381,7 +384,8 @@
             {
               "sr_latin": "Baš sam se smorila na poslu.",
               "sr_cyrillic": "Баш сам се сморила на послу.",
-              "en": "I was so bored at work. (feminine)"
+              "en": "I was so bored at work.",
+              "gloss_hint": "feminine"
             }
           ]
         }

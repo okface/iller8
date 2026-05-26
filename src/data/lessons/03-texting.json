@@ -96,7 +96,8 @@
             {
               "sr_latin": "Jesi zauzeta?",
               "sr_cyrillic": "Јеси заузета?",
-              "en": "Are you busy? (to a woman)"
+              "en": "Are you busy?",
+              "gloss_hint": "to a woman"
             }
           ]
         }
@@ -212,7 +213,8 @@
             {
               "sr_latin": "Jesi okej?",
               "sr_cyrillic": "Јеси океј?",
-              "en": "You okay? (very casual)"
+              "en": "You okay?",
+              "gloss_hint": "very casual"
             }
           ]
         },
@@ -243,7 +245,8 @@
             {
               "sr_latin": "Gde si nestala?",
               "sr_cyrillic": "Где си нестала?",
-              "en": "Where did you disappear to? (to a woman)"
+              "en": "Where did you disappear to?",
+              "gloss_hint": "to a woman"
             }
           ]
         }
@@ -288,7 +291,8 @@
             {
               "sr_latin": "Stigla sam.",
               "sr_cyrillic": "Стигла сам.",
-              "en": "I arrived. (said by a woman)"
+              "en": "I arrived.",
+              "gloss_hint": "said by a woman"
             }
           ]
         }
@@ -340,7 +344,8 @@
           "id": "tx-nmvz",
           "sr_latin": "nmvz",
           "sr_cyrillic": "нмвз",
-          "en": "nvm / no worries (nema veze)",
+          "en": "nvm / no worries",
+          "gloss_hint": "nema veze",
           "context": "Short for 'nema veze.' Used in chat constantly.",
           "notes": "Just the first letters of 'nema veze.' Everyone understands it."
         },
@@ -348,7 +353,8 @@
           "id": "tx-msm",
           "sr_latin": "msm",
           "sr_cyrillic": "мсм",
-          "en": "I mean (mislim)",
+          "en": "I mean",
+          "gloss_hint": "mislim",
           "context": "Short for 'mislim' (I think/I mean). Used mid-sentence to clarify.",
           "notes": "Like English 'tbh' or 'I mean.' Serbians text in abbreviations a lot."
         },
@@ -356,7 +362,8 @@
           "id": "tx-btj",
           "sr_latin": "btj",
           "sr_cyrillic": "бтј",
-          "en": "btw (bilo to jest / by the way)",
+          "en": "btw",
+          "gloss_hint": "bilo to jest / by the way",
           "context": "Some people use 'btj' as the Serbian version of 'btw.' Others just use 'btw.'",
           "notes": "Younger Serbians often just use English abbreviations in texts: 'btw', 'lol', 'omg.'"
         },
@@ -364,7 +371,8 @@
           "id": "tx-jbg",
           "sr_latin": "jbg",
           "sr_cyrillic": "јбг",
-          "en": "Oh well / It is what it is (mild swear)",
+          "en": "Oh well / It is what it is",
+          "gloss_hint": "mild swear",
           "context": "Short for a mildly vulgar expression meaning 'well, too bad.' Extremely common.",
           "notes": "Short for 'jebiga.' It's technically a swear word but so normalized that everyone uses it, like 'damn' in English. Very useful for expressing resigned acceptance."
         }
@@ -416,14 +424,16 @@
           "id": "tx-jesi-gladna",
           "sr_latin": "Jesi gladna?",
           "sr_cyrillic": "Јеси гладна?",
-          "en": "Are you hungry? (to a woman)",
+          "en": "Are you hungry?",
+          "gloss_hint": "to a woman",
           "context": "Important question in Serbia, where food is central to socializing.",
           "notes": "'Gladna' = hungry (feminine). 'Gladan' for masculine.",
           "variations": [
             {
               "sr_latin": "Jesi gladan?",
               "sr_cyrillic": "Јеси гладан?",
-              "en": "Are you hungry? (to a man)"
+              "en": "Are you hungry?",
+              "gloss_hint": "to a man"
             }
           ]
         },

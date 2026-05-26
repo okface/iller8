@@ -81,7 +81,8 @@
             {
               "sr_latin": "Živela!",
               "sr_cyrillic": "Живела!",
-              "en": "Long live! (to a woman)"
+              "en": "Long live!",
+              "gloss_hint": "to a woman"
             }
           ]
         },
@@ -156,7 +157,8 @@
             {
               "sr_latin": "Vaistinu se rodi!",
               "sr_cyrillic": "Ваистину се роди!",
-              "en": "Indeed He is born! (the required response)"
+              "en": "Indeed He is born!",
+              "gloss_hint": "the required response"
             }
           ]
         },
@@ -223,12 +225,14 @@
             {
               "sr_latin": "Dobro došao!",
               "sr_cyrillic": "Добро дошао!",
-              "en": "Welcome! (to one man)"
+              "en": "Welcome!",
+              "gloss_hint": "to one man"
             },
             {
               "sr_latin": "Dobro došla!",
               "sr_cyrillic": "Добро дошла!",
-              "en": "Welcome! (to one woman)"
+              "en": "Welcome!",
+              "gloss_hint": "to one woman"
             }
           ]
         },
@@ -251,7 +255,8 @@
             {
               "sr_latin": "Jesi gladna? Imam da ti ponudim nešto.",
               "sr_cyrillic": "Јеси гладна? Имам да ти понудим нешто.",
-              "en": "Are you hungry? I have something to offer you. (to a woman)"
+              "en": "Are you hungry? I have something to offer you.",
+              "gloss_hint": "to a woman"
             }
           ]
         },
@@ -326,7 +331,8 @@
             {
               "sr_latin": "Dolazi, nemoj da se praviš važna.",
               "sr_cyrillic": "Долази, немој да се правиш важна.",
-              "en": "Come on, don't act all important. (to a woman)"
+              "en": "Come on, don't act all important.",
+              "gloss_hint": "to a woman"
             }
           ]
         },
@@ -379,7 +385,8 @@
             {
               "sr_latin": "Ponosna sam na tebe!",
               "sr_cyrillic": "Поносна сам на тебе!",
-              "en": "I'm proud of you! (said by a woman)"
+              "en": "I'm proud of you!",
+              "gloss_hint": "said by a woman"
             }
           ]
         },

@@ -2,6 +2,10 @@ export interface PhraseVariation {
   sr_latin: string;
   sr_cyrillic: string;
   en: string;
+  /** Same role as `Phrase.gloss_hint` — disambiguator hidden until the
+   *  answer is revealed. Carries content that previously lived in
+   *  `(to a man)` / `(formal)` parentheticals on `en`. */
+  gloss_hint?: string;
 }
 
 /**
@@ -178,6 +182,8 @@ export interface FamilyVariant {
   sr_latin: string;
   sr_cyrillic: string;
   en: string;
+  /** Same role as `Phrase.gloss_hint`. */
+  gloss_hint?: string;
   /** Short label shown as the transform instruction (e.g., "formal (vi)", "past · to a man") */
   label: string;
   /** What kind of transformation this is — drives generator weighting. */

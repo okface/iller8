@@ -145,7 +145,8 @@
             {
               "sr_latin": "Pukla sam.",
               "sr_cyrillic": "Пукла сам.",
-              "en": "I'm done. / I cracked. (female speaker)"
+              "en": "I'm done. / I cracked.",
+              "gloss_hint": "female speaker"
             }
           ]
         },
@@ -166,7 +167,8 @@
           "id": "ja-sam-majmun",
           "sr_latin": "Ja sam majmun.",
           "sr_cyrillic": "Ја сам мајмун.",
-          "en": "I'm an idiot. (lit: I'm a monkey)",
+          "en": "I'm an idiot.",
+          "gloss_hint": "lit: I'm a monkey",
           "context": "When you do something stupid and own it. Self-roasting is a Serbian art form."
         },
         {
@@ -187,7 +189,8 @@
             {
               "sr_latin": "Opet sam se obrukala.",
               "sr_cyrillic": "Опет сам се обрукала.",
-              "en": "I embarrassed myself again. (female speaker)"
+              "en": "I embarrassed myself again.",
+              "gloss_hint": "female speaker"
             }
           ]
         }

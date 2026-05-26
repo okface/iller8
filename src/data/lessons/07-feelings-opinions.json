@@ -207,7 +207,8 @@
             {
               "sr_latin": "Baš si pametna.",
               "sr_cyrillic": "Баш си паметна.",
-              "en": "You're so smart. (to a woman)"
+              "en": "You're so smart.",
+              "gloss_hint": "to a woman"
             }
           ]
         }
@@ -274,14 +275,16 @@
           "id": "presrecna-sam",
           "sr_latin": "Presrećan sam.",
           "sr_cyrillic": "Пресрећан сам.",
-          "en": "I'm overjoyed. (male speaker)",
+          "en": "I'm overjoyed.",
+          "gloss_hint": "male speaker",
           "context": "Big happiness — engagement, promotion, great news.",
           "notes": "Female speaker: 'Presrećna sam.' The prefix 'pre-' intensifies the adjective.",
           "variations": [
             {
               "sr_latin": "Presrećna sam.",
               "sr_cyrillic": "Пресрећна сам.",
-              "en": "I'm overjoyed. (female speaker)"
+              "en": "I'm overjoyed.",
+              "gloss_hint": "female speaker"
             }
           ]
         },

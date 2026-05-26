@@ -19,7 +19,8 @@
           "id": "miss-you-past-masc",
           "sr_latin": "Nedostajao si mi.",
           "sr_cyrillic": "Недостајао си ми.",
-          "en": "I missed you. (to a man)",
+          "en": "I missed you.",
+          "gloss_hint": "to a man",
           "label": "past · to a man",
           "transform": "tense-past",
           "note": "Past participle 'nedostajao' agrees with the masculine 'you' who was missed."
@@ -28,7 +29,8 @@
           "id": "miss-you-past-fem",
           "sr_latin": "Nedostajala si mi.",
           "sr_cyrillic": "Недостајала си ми.",
-          "en": "I missed you. (to a woman)",
+          "en": "I missed you.",
+          "gloss_hint": "to a woman",
           "label": "past · to a woman",
           "transform": "gender-listener",
           "note": "Same idea but '-la' ending because the missed person is feminine."
@@ -37,7 +39,8 @@
           "id": "miss-you-formal",
           "sr_latin": "Nedostajete mi.",
           "sr_cyrillic": "Недостајете ми.",
-          "en": "I miss you. (formal)",
+          "en": "I miss you.",
+          "gloss_hint": "formal",
           "label": "formal (vi)",
           "transform": "formality",
           "note": "Use 'vi' form with elders, bosses, strangers."
@@ -108,7 +111,8 @@
           "id": "love-you-formal",
           "sr_latin": "Volim vas.",
           "sr_cyrillic": "Волим вас.",
-          "en": "I love you. (formal/plural)",
+          "en": "I love you.",
+          "gloss_hint": "formal/plural",
           "label": "formal (vi)",
           "transform": "formality",
           "hint": "Also means 'I love you all'."
@@ -117,7 +121,8 @@
           "id": "love-you-past-masc",
           "sr_latin": "Voleo sam te.",
           "sr_cyrillic": "Волео сам те.",
-          "en": "I loved you. (masc speaker)",
+          "en": "I loved you.",
+          "gloss_hint": "masc speaker",
           "label": "past · male speaker",
           "transform": "gender-speaker",
           "note": "Past participle 'voleo' agrees with masculine 'I'."
@@ -126,7 +131,8 @@
           "id": "love-you-past-fem",
           "sr_latin": "Volela sam te.",
           "sr_cyrillic": "Волела сам те.",
-          "en": "I loved you. (fem speaker)",
+          "en": "I loved you.",
+          "gloss_hint": "fem speaker",
           "label": "past · female speaker",
           "transform": "gender-speaker"
         },
@@ -185,7 +191,8 @@
           "id": "how-are-you-formal",
           "sr_latin": "Kako ste?",
           "sr_cyrillic": "Како сте?",
-          "en": "How are you? (formal)",
+          "en": "How are you?",
+          "gloss_hint": "formal",
           "label": "formal (vi)",
           "transform": "formality",
           "hint": "Use with strangers, elders, in shops."
@@ -203,7 +210,8 @@
           "id": "how-are-you-past-masc",
           "sr_latin": "Kako si bio?",
           "sr_cyrillic": "Како си био?",
-          "en": "How have you been? (to a man)",
+          "en": "How have you been?",
+          "gloss_hint": "to a man",
           "label": "past · to a man",
           "transform": "tense-past",
           "note": "Uses past participle of 'biti' (to be). 'Bila' for a woman."
@@ -212,7 +220,8 @@
           "id": "how-are-you-past-fem",
           "sr_latin": "Kako si bila?",
           "sr_cyrillic": "Како си била?",
-          "en": "How have you been? (to a woman)",
+          "en": "How have you been?",
+          "gloss_hint": "to a woman",
           "label": "past · to a woman",
           "transform": "gender-listener"
         },
@@ -263,7 +272,8 @@
           "id": "what-doing-formal",
           "sr_latin": "Šta radite?",
           "sr_cyrillic": "Шта радите?",
-          "en": "What are you doing? (formal)",
+          "en": "What are you doing?",
+          "gloss_hint": "formal",
           "label": "formal (vi)",
           "transform": "formality"
         },
@@ -271,7 +281,8 @@
           "id": "what-doing-past-masc",
           "sr_latin": "Šta si radio?",
           "sr_cyrillic": "Шта си радио?",
-          "en": "What were you doing? (to a man)",
+          "en": "What were you doing?",
+          "gloss_hint": "to a man",
           "label": "past · to a man",
           "transform": "tense-past",
           "note": "'Radio' is the masculine past participle. For a woman: 'radila'."
@@ -280,7 +291,8 @@
           "id": "what-doing-past-fem",
           "sr_latin": "Šta si radila?",
           "sr_cyrillic": "Шта си радила?",
-          "en": "What were you doing? (to a woman)",
+          "en": "What were you doing?",
+          "gloss_hint": "to a woman",
           "label": "past · to a woman",
           "transform": "gender-listener"
         },
@@ -348,7 +360,8 @@
           "id": "want-coffee-past-masc",
           "sr_latin": "Hteo sam kafu.",
           "sr_cyrillic": "Хтео сам кафу.",
-          "en": "I wanted coffee. (masc speaker)",
+          "en": "I wanted coffee.",
+          "gloss_hint": "masc speaker",
           "label": "past · male speaker",
           "transform": "gender-speaker"
         },
@@ -356,7 +369,8 @@
           "id": "want-coffee-past-fem",
           "sr_latin": "Htela sam kafu.",
           "sr_cyrillic": "Хтела сам кафу.",
-          "en": "I wanted coffee. (fem speaker)",
+          "en": "I wanted coffee.",
+          "gloss_hint": "fem speaker",
           "label": "past · female speaker",
           "transform": "gender-speaker"
         },
@@ -373,7 +387,8 @@
           "id": "want-coffee-formal",
           "sr_latin": "Hoćete kafu?",
           "sr_cyrillic": "Хоћете кафу?",
-          "en": "Would you like coffee? (formal)",
+          "en": "Would you like coffee?",
+          "gloss_hint": "formal",
           "label": "formal (vi)",
           "transform": "formality"
         },
@@ -509,7 +524,8 @@
           "id": "thanks-formal",
           "sr_latin": "Hvala vam.",
           "sr_cyrillic": "Хвала вам.",
-          "en": "Thank you. (formal)",
+          "en": "Thank you.",
+          "gloss_hint": "formal",
           "label": "formal (vam)",
           "transform": "formality",
           "note": "'Vam' is dative of 'vi' — adds politeness."
@@ -518,7 +534,8 @@
           "id": "thanks-informal",
           "sr_latin": "Hvala ti.",
           "sr_cyrillic": "Хвала ти.",
-          "en": "Thanks. (to one friend)",
+          "en": "Thanks.",
+          "gloss_hint": "to one friend",
           "label": "to a friend (ti)",
           "transform": "subject-swap",
           "hint": "Warmer than bare 'hvala'."
@@ -535,7 +552,8 @@
           "id": "thanks-past-masc",
           "sr_latin": "Zahvalio sam ti se.",
           "sr_cyrillic": "Захвалио сам ти се.",
-          "en": "I thanked you. (masc speaker)",
+          "en": "I thanked you.",
+          "gloss_hint": "masc speaker",
           "label": "past · male speaker",
           "transform": "tense-past",
           "note": "Verb 'zahvaliti se' is reflexive — 'se' is required."
@@ -559,7 +577,8 @@
         "id": "tired-base-masc",
         "sr_latin": "Umoran sam.",
         "sr_cyrillic": "Уморан сам.",
-        "en": "I'm tired. (masc speaker)",
+        "en": "I'm tired.",
+        "gloss_hint": "masc speaker",
         "label": "base · male speaker",
         "transform": "gender-speaker",
         "note": "Adjective 'umoran' agrees with masculine 'I'. A woman says 'umorna sam'."
@@ -569,7 +588,8 @@
           "id": "tired-fem",
           "sr_latin": "Umorna sam.",
           "sr_cyrillic": "Уморна сам.",
-          "en": "I'm tired. (fem speaker)",
+          "en": "I'm tired.",
+          "gloss_hint": "fem speaker",
           "label": "female speaker",
           "transform": "gender-speaker"
         },
@@ -577,7 +597,8 @@
           "id": "tired-past-masc",
           "sr_latin": "Bio sam umoran.",
           "sr_cyrillic": "Био сам уморан.",
-          "en": "I was tired. (masc speaker)",
+          "en": "I was tired.",
+          "gloss_hint": "masc speaker",
           "label": "past · male speaker",
           "transform": "tense-past",
           "note": "Past 'biti' + adjective; both agree in gender."
@@ -586,7 +607,8 @@
           "id": "tired-past-fem",
           "sr_latin": "Bila sam umorna.",
           "sr_cyrillic": "Била сам уморна.",
-          "en": "I was tired. (fem speaker)",
+          "en": "I was tired.",
+          "gloss_hint": "fem speaker",
           "label": "past · female speaker",
           "transform": "gender-speaker"
         },
@@ -613,7 +635,8 @@
           "id": "tired-formal",
           "sr_latin": "Jeste li umorni?",
           "sr_cyrillic": "Јесте ли уморни?",
-          "en": "Are you tired? (formal)",
+          "en": "Are you tired?",
+          "gloss_hint": "formal",
           "label": "formal question",
           "transform": "formality",
           "hint": "'Umorni' is the plural/formal adjective form."
@@ -673,7 +696,8 @@
           "id": "going-past-masc",
           "sr_latin": "Išao sam kući.",
           "sr_cyrillic": "Ишао сам кући.",
-          "en": "I was going home. (masc speaker)",
+          "en": "I was going home.",
+          "gloss_hint": "masc speaker",
           "label": "past · male speaker",
           "transform": "tense-past",
           "note": "'Išao' is the masculine past participle of 'ići'. For a woman: 'išla'."
@@ -723,7 +747,8 @@
           "id": "can-help-formal",
           "sr_latin": "Možete li da mi pomognete?",
           "sr_cyrillic": "Можете ли да ми помогнете?",
-          "en": "Can you help me? (formal)",
+          "en": "Can you help me?",
+          "gloss_hint": "formal",
           "label": "formal (vi)",
           "transform": "formality",
           "hint": "'Li' makes it crisper and more polite."
@@ -732,7 +757,8 @@
           "id": "can-help-past-masc",
           "sr_latin": "Mogao si da mi pomogneš?",
           "sr_cyrillic": "Могао си да ми помогнеш?",
-          "en": "Could you have helped me? (to a man)",
+          "en": "Could you have helped me?",
+          "gloss_hint": "to a man",
           "label": "past · to a man",
           "transform": "tense-past",
           "note": "Past 'mogao' for masc subject; 'mogla' for fem."
@@ -782,7 +808,8 @@
         "id": "hungry-base-masc",
         "sr_latin": "Gladan sam.",
         "sr_cyrillic": "Гладан сам.",
-        "en": "I'm hungry. (masc speaker)",
+        "en": "I'm hungry.",
+        "gloss_hint": "masc speaker",
         "label": "base · male speaker",
         "transform": "gender-speaker",
         "note": "Adjective 'gladan' agrees with masculine 'I'. A woman says 'gladna'."
@@ -792,7 +819,8 @@
           "id": "hungry-fem",
           "sr_latin": "Gladna sam.",
           "sr_cyrillic": "Гладна сам.",
-          "en": "I'm hungry. (fem speaker)",
+          "en": "I'm hungry.",
+          "gloss_hint": "fem speaker",
           "label": "female speaker",
           "transform": "gender-speaker"
         },
@@ -809,7 +837,8 @@
           "id": "hungry-past-masc",
           "sr_latin": "Bio sam gladan.",
           "sr_cyrillic": "Био сам гладан.",
-          "en": "I was hungry. (masc speaker)",
+          "en": "I was hungry.",
+          "gloss_hint": "masc speaker",
           "label": "past · male speaker",
           "transform": "tense-past"
         },
@@ -870,7 +899,8 @@
           "id": "sorry-formal",
           "sr_latin": "Izvinite.",
           "sr_cyrillic": "Извините.",
-          "en": "Sorry. (formal)",
+          "en": "Sorry.",
+          "gloss_hint": "formal",
           "label": "formal (vi)",
           "transform": "formality"
         },
@@ -939,7 +969,8 @@
           "id": "call-me-formal",
           "sr_latin": "Pozovite me.",
           "sr_cyrillic": "Позовите ме.",
-          "en": "Call me. (formal)",
+          "en": "Call me.",
+          "gloss_hint": "formal",
           "label": "formal (vi)",
           "transform": "formality"
         },
@@ -947,7 +978,8 @@
           "id": "call-me-past-masc",
           "sr_latin": "Pozvao si me.",
           "sr_cyrillic": "Позвао си ме.",
-          "en": "You called me. (a man called)",
+          "en": "You called me.",
+          "gloss_hint": "a man called",
           "label": "past · a man called",
           "transform": "tense-past",
           "note": "Past participle 'pozvao' for masc subject; 'pozvala' for fem."
@@ -1036,7 +1068,8 @@
           "id": "happy-bday-formal",
           "sr_latin": "Srećan vam rođendan!",
           "sr_cyrillic": "Срећан вам рођендан!",
-          "en": "Happy birthday! (formal)",
+          "en": "Happy birthday!",
+          "gloss_hint": "formal",
           "label": "formal (vam)",
           "transform": "formality",
           "hint": "'Vam' = dative of 'vi'."

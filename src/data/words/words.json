@@ -22,7 +22,8 @@
     "id": "ti-nom",
     "lemma_sr_latin": "ti",
     "lemma_sr_cyrillic": "ти",
-    "gloss_en": "you (sg, informal)",
+    "gloss_en": "you",
+    "gloss_hint": "sg, informal",
     "pos": "pron",
     "rank": 4,
     "forms": [
@@ -90,7 +91,8 @@
     "id": "vi",
     "lemma_sr_latin": "vi",
     "lemma_sr_cyrillic": "ви",
-    "gloss_en": "you (pl / formal)",
+    "gloss_en": "you",
+    "gloss_hint": "pl / formal",
     "pos": "pron",
     "forms": [
       { "tag": "nom.pl", "sr_latin": "vi", "sr_cyrillic": "ви", "en": "you (pl/formal)" },
@@ -121,7 +123,8 @@
     "id": "me-acc",
     "lemma_sr_latin": "me",
     "lemma_sr_cyrillic": "ме",
-    "gloss_en": "me (acc clitic)",
+    "gloss_en": "me",
+    "gloss_hint": "acc clitic",
     "pos": "pron",
     "rank": 5,
     "examples": [
@@ -136,7 +139,8 @@
     "id": "te-acc",
     "lemma_sr_latin": "te",
     "lemma_sr_cyrillic": "те",
-    "gloss_en": "you (acc clitic)",
+    "gloss_en": "you",
+    "gloss_hint": "acc clitic",
     "pos": "pron",
     "rank": 6,
     "examples": [
@@ -150,7 +154,8 @@
     "id": "ga-acc",
     "lemma_sr_latin": "ga",
     "lemma_sr_cyrillic": "га",
-    "gloss_en": "him / it (acc clitic)",
+    "gloss_en": "him / it",
+    "gloss_hint": "acc clitic",
     "pos": "pron",
     "examples": [
       { "sr_latin": "Vidim ga.", "sr_cyrillic": "Видим га.", "en": "I see him." },
@@ -162,7 +167,8 @@
     "id": "je-acc",
     "lemma_sr_latin": "je",
     "lemma_sr_cyrillic": "је",
-    "gloss_en": "her (acc clitic)",
+    "gloss_en": "her",
+    "gloss_hint": "acc clitic",
     "pos": "pron",
     "examples": [
       { "sr_latin": "Vidim je.", "sr_cyrillic": "Видим је.", "en": "I see her." },
@@ -174,7 +180,8 @@
     "id": "mi-dat",
     "lemma_sr_latin": "mi",
     "lemma_sr_cyrillic": "ми",
-    "gloss_en": "to me (dat clitic)",
+    "gloss_en": "to me",
+    "gloss_hint": "dat clitic",
     "pos": "pron",
     "rank": 7,
     "examples": [
@@ -190,7 +197,8 @@
     "id": "ti-dat",
     "lemma_sr_latin": "ti",
     "lemma_sr_cyrillic": "ти",
-    "gloss_en": "to you (dat clitic)",
+    "gloss_en": "to you",
+    "gloss_hint": "dat clitic",
     "pos": "pron",
     "examples": [
       { "sr_latin": "Lepo ti stoji.", "sr_cyrillic": "Лепо ти стоји.", "en": "That looks good on you.", "phraseRef": "st-lepo-stoji" },
@@ -203,7 +211,8 @@
     "id": "mu-dat",
     "lemma_sr_latin": "mu",
     "lemma_sr_cyrillic": "му",
-    "gloss_en": "to him (dat clitic)",
+    "gloss_en": "to him",
+    "gloss_hint": "dat clitic",
     "pos": "pron",
     "examples": [
       { "sr_latin": "Reci mu.", "sr_cyrillic": "Реци му.", "en": "Tell him." }
@@ -214,7 +223,8 @@
     "id": "joj-dat",
     "lemma_sr_latin": "joj",
     "lemma_sr_cyrillic": "јој",
-    "gloss_en": "to her (dat clitic)",
+    "gloss_en": "to her",
+    "gloss_hint": "dat clitic",
     "pos": "pron",
     "examples": [
       { "sr_latin": "Reci joj.", "sr_cyrillic": "Реци јој.", "en": "Tell her." }
@@ -259,7 +269,8 @@
     "id": "tvoj",
     "lemma_sr_latin": "tvoj",
     "lemma_sr_cyrillic": "твој",
-    "gloss_en": "your (sg)",
+    "gloss_en": "your",
+    "gloss_hint": "sg",
     "pos": "pron",
     "forms": [
       { "tag": "m.sg", "sr_latin": "tvoj", "sr_cyrillic": "твој", "en": "your (m)" },
@@ -274,7 +285,8 @@
     "id": "tebe",
     "lemma_sr_latin": "tebe",
     "lemma_sr_cyrillic": "тебе",
-    "gloss_en": "you (acc full)",
+    "gloss_en": "you",
+    "gloss_hint": "acc full",
     "pos": "pron",
     "examples": [
       { "sr_latin": "Mislim na tebe.", "sr_cyrillic": "Мислим на тебе.", "en": "I'm thinking about you.", "phraseRef": "st-mislim-na-tebe" },
@@ -287,7 +299,8 @@
     "id": "tobom",
     "lemma_sr_latin": "tobom",
     "lemma_sr_cyrillic": "тобом",
-    "gloss_en": "with/by you (instr)",
+    "gloss_en": "with/by you",
+    "gloss_hint": "instr",
     "pos": "pron",
     "examples": [
       { "sr_latin": "Srećan sam kad sam s tobom.", "sr_cyrillic": "Срећан сам кад сам с тобом.", "en": "I'm happy when I'm with you.", "phraseRef": "st-srecan-sam" },
@@ -540,7 +553,8 @@
     "id": "doci",
     "lemma_sr_latin": "doći",
     "lemma_sr_cyrillic": "доћи",
-    "gloss_en": "to come (perf)",
+    "gloss_en": "to come",
+    "gloss_hint": "perf",
     "pos": "verb",
     "aspect": "perf",
     "forms": [
@@ -695,7 +709,8 @@
     "id": "stajati",
     "lemma_sr_latin": "stajati",
     "lemma_sr_cyrillic": "стајати",
-    "gloss_en": "to stand / suit (clothing)",
+    "gloss_en": "to stand / suit",
+    "gloss_hint": "clothing",
     "pos": "verb",
     "aspect": "impf",
     "forms": [
@@ -1636,7 +1651,8 @@
     "id": "ekstra-adj",
     "lemma_sr_latin": "ekstra",
     "lemma_sr_cyrillic": "екстра",
-    "gloss_en": "awesome / extra (slang)",
+    "gloss_en": "awesome / extra",
+    "gloss_hint": "slang",
     "pos": "adj",
     "examples": [
       { "sr_latin": "Ekstra!", "sr_cyrillic": "Екстра!", "en": "Awesome!", "phraseRef": "rx-ekstra" }
@@ -1660,7 +1676,8 @@
     "id": "da-conj",
     "lemma_sr_latin": "da",
     "lemma_sr_cyrillic": "да",
-    "gloss_en": "that / to (subjunctive)",
+    "gloss_en": "that / to",
+    "gloss_hint": "subjunctive",
     "pos": "conj",
     "rank": 13,
     "examples": [
@@ -1690,7 +1707,8 @@
     "id": "nemoj",
     "lemma_sr_latin": "nemoj",
     "lemma_sr_cyrillic": "немој",
-    "gloss_en": "don't (negative imperative)",
+    "gloss_en": "don't",
+    "gloss_hint": "negative imperative",
     "pos": "particle",
     "forms": [
       { "tag": "imp.2sg", "sr_latin": "nemoj", "sr_cyrillic": "немој", "en": "don't (sg)" },
@@ -1891,7 +1909,8 @@
     "id": "kakvi",
     "lemma_sr_latin": "kakvi",
     "lemma_sr_cyrillic": "какви",
-    "gloss_en": "what kind (pl)",
+    "gloss_en": "what kind",
+    "gloss_hint": "pl",
     "pos": "pron",
     "examples": [
       { "sr_latin": "Ma kakvi!", "sr_cyrillic": "Ма какви!", "en": "No way! / As if!", "phraseRef": "rx-ma-kakvi" }
@@ -1976,7 +1995,8 @@
     "id": "bre",
     "lemma_sr_latin": "bre",
     "lemma_sr_cyrillic": "бре",
-    "gloss_en": "man / dude (particle)",
+    "gloss_en": "man / dude",
+    "gloss_hint": "particle",
     "pos": "particle",
     "examples": [
       { "sr_latin": "Ajde bre!", "sr_cyrillic": "Ајде бре!", "en": "Come on, man!", "phraseRef": "rx-ajde-bre" }
@@ -2203,7 +2223,8 @@
     "id": "kod",
     "lemma_sr_latin": "kod",
     "lemma_sr_cyrillic": "код",
-    "gloss_en": "at (someone's place)",
+    "gloss_en": "at",
+    "gloss_hint": "someone's place",
     "pos": "prep",
     "examples": [
       { "sr_latin": "Kod kuće sam.", "sr_cyrillic": "Код куће сам.", "en": "I'm at home." }
