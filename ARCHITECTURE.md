@@ -67,7 +67,8 @@ The shared SRS-key insight (`word:<id>`, `family:<famId>:<varId>`, bare phrase i
 
 Pages under `src/pages/`:
 
-- **Dashboard** (`/`) — greeting, stat strip, daily goal, "Continue" + "Review" cards, four quick tiles (Words / Hammer / Perspective / Catalog), phrase of the day, lesson list.
+- **Dashboard** (`/`) — greeting, stat strip, daily goal, hero "Daily Session" card (points at `/daily`), Review card, four quick tiles (Words / Hammer / Perspective / Catalog), phrase of the day, lesson list.
+- **Daily** (`/daily`) — **primary loop.** Mixed new + review + practice session. See §6.
 - **WordDrill** (`/words`) — POS filter, drill 12 random words mixing Recognize + Produce.
 - **LessonView** (`/lesson/:id`) — intro phase (PhraseIntro with word-by-word chips) → exercise phase → finished phase.
 - **ReviewSession** (`/review`) — SRS-due items only.
@@ -89,19 +90,26 @@ Primitives under `src/components/ui/`:
 
 Exercise components under `src/components/exercises/` — one file per `ExerciseType`.
 
-## 6. The flow we're building toward
+## 6. The unified flow (now live at `/daily`)
 
-The dashboard currently presents **six entry points** to drilling: Continue (lesson), Review, Words, Hammer, Perspective, Catalog. The intended end-state is **one primary action** — a *Daily Session* — with the others demoted to secondary explorers.
+The dashboard's hero "Continue" tile points at `/daily`. The Daily Session is the unified primary path; other surfaces (Words, Hammer, Perspective, Catalog, Review) are specialized explorers.
 
 The Daily Session picks ~15 items mixing:
 
-- New items the learner is ready for (low-bucket, readiness-gate-passing)
-- SRS-due items (review)
-- Consolidation items (recently met, low correctness)
+- **40% review** — SRS-due items across all three layers (words, phrases, family variants)
+- **40% new** — first-encounter words (ranked by frequency) + ready phrases (readiness gate passes)
+- **20% practice** — recently-met items (bucket 1–2) with low correct/total ratio
 
-For each picked item, the engine picks the right exercise type (WordRecognize for new word, WordProduce for known word, MC for ready phrase, SentenceBuilder for ready+ phrase, PerspectiveShift for mastered phrase). The learner taps Continue, gets the next item; they never choose what to drill.
+Dispatch by SRS key prefix:
 
-This collapses the choice paralysis and makes repetition structural.
+- `word:<id>` → `WordRecognize` (bucket 0) or `WordProduce` (bucket ≥ 1)
+- `family:<famId>:<varId>` → `PerspectiveShift` (MC when bucket < 3, type-it after)
+- `<phraseId>` → standard phrase exercise picked by bucket via `generateExercise`
+
+Items are interleaved (not blocked) — variability of practice beats blocked drilling for retention.
+
+Engine: `src/engine/daily-session.ts` (`generateDailySession`, `previewDailySession`, `getDailySummary`).
+Page: `src/pages/Daily.tsx` (~80 lines thanks to `useDrillSession` + `<ExerciseRenderer>`).
 
 ## 7. Roadmap
 
@@ -113,14 +121,16 @@ Ordered. Each phase ships independently.
 | 2 | Word drills + word SRS | done |
 | 3 | Word-readiness gate wired into generators | done |
 | 4 | Parenthetical strip → `gloss_hint`, rich `WordRef` with surface + case | done |
-| 5 | Lessons 03–10 wordRefs backfill | in progress (subagent) |
-| 6 | Orchestration extraction (`MCOptionList`, `useDrillSession`, `ExerciseRenderer`) | in progress |
-| 7 | Daily Session (unified primary path) | next |
-| 8 | Audio generation pipeline (Azure Neural TTS) + playback UI | next |
-| 9 | Day-1 dashboard variant (gate secondary tiles on `totalLearned === 0`) | next |
-| 10 | Option-leak cleanup tier (lowercase tiles, Comprehension rewrite, PatternMatch format) | later |
-| 11 | LLM chat-tutor surface (Mira) | later |
-| 12 | Grammar topics + first-30-days curriculum (per pedagogy audit §3.7) | later |
+| 5 | Lessons 03–10 wordRefs backfill | done |
+| 6 | Orchestration extraction (`MCOptionList`, `useDrillSession`, `ExerciseRenderer`) | done |
+| 7 | Daily Session (unified primary path) at `/daily` | done |
+| 8 | Audio pipeline (Azure TTS script + `AudioButton`) — script ready, clips await Azure key | data layer done |
+| 9 | Migrate `Hammer`/`WordDrill`/`FamilyDrill`/`LessonView`/`ReviewSession` to `useDrillSession` | next |
+| 10 | Day-1 dashboard variant (gate secondary tiles on `totalLearned === 0`) | next |
+| 11 | Lexicon extension (~10 high-frequency words flagged in backfill) | in progress (subagent) |
+| 12 | Option-leak cleanup tier (lowercase tiles, Comprehension rewrite, PatternMatch format) | later |
+| 13 | LLM chat-tutor surface (Mira) | later |
+| 14 | Grammar topics + first-30-days curriculum (per pedagogy audit §3.7) | later |
 
 ## 8. Decision log
 

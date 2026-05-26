@@ -136,8 +136,8 @@ export default function Layout({ script, onScriptChange, streak = 0 }: LayoutPro
           }}
         >
           <TabItem to="/" label="Home" icon={<IconBook size={16} />} />
+          <TabItem to="/daily" label="Daily" icon={<IconBolt size={16} />} />
           <TabItem to="/words" label="Words" icon={<IconBook size={16} />} />
-          <TabItem to="/hammer" label="Hammer" icon={<IconBolt size={16} />} />
           <TabItem to="/review" label="Review" icon={<IconRefresh size={16} />} />
           <TabItem to="/settings" label="Me" icon={<IconUser size={16} />} />
         </div>

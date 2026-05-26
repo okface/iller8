@@ -4,6 +4,7 @@ import { lessons, isLessonUnlocked, getAllPhrases } from '../data/lessons';
 import { families } from '../data/phrase-families';
 import { words } from '../data/words';
 import { getWordBucket } from '../lib/word-progress';
+import { getDailySummary } from '../engine/daily-session';
 import LessonCard from '../components/LessonCard';
 import Card from '../components/ui/Card';
 import LinearProgress from '../components/ui/LinearProgress';
@@ -75,6 +76,19 @@ export default function Dashboard({ progress, script }: DashboardProps) {
     );
     return { total, learned };
   }, [nextLesson, progress.phrases]);
+
+  const dailySummary = useMemo(
+    () =>
+      getDailySummary(
+        { progress, script, skipTyping: progress.settings.skipTyping },
+        15
+      ),
+    [progress, script]
+  );
+  // nextLesson and nextLessonStats remain available for future "continue
+  // the specific lesson you were on" surfaces. The Continue card itself
+  // now points at /daily, the unified front door.
+  void nextLessonStats;
 
   const now = new Date();
   const dateLabel = `${DAY_LABELS[now.getDay()]} · ${now
@@ -171,7 +185,7 @@ export default function Dashboard({ progress, script }: DashboardProps) {
         <Card
           warm
           pad={14}
-          onClick={() => navigate(`/lesson/${nextLesson.id}`)}
+          onClick={() => navigate('/daily')}
           style={{
             display: 'flex',
             flexDirection: 'column',
@@ -180,7 +194,7 @@ export default function Dashboard({ progress, script }: DashboardProps) {
           }}
         >
           <div>
-            <div style={{ ...metaLabel, color: T.amber }}>CONTINUE</div>
+            <div style={{ ...metaLabel, color: T.amber }}>DAILY SESSION</div>
             <div
               style={{
                 fontSize: 16,
@@ -190,17 +204,19 @@ export default function Dashboard({ progress, script }: DashboardProps) {
                 color: T.text,
               }}
             >
-              {String(nextLesson.order).padStart(2, '0')} ·{' '}
-              {script === 'cyrillic'
-                ? nextLesson.title.sr_cyrillic
-                : nextLesson.title.sr_latin}
+              Tap to start
             </div>
             <div style={{ fontSize: 11, color: T.dim, marginTop: 3 }}>
-              {nextLessonStats.learned} of {nextLessonStats.total} phrases
+              {dailySummary.newCount} new · {dailySummary.reviewCount} review · {dailySummary.consolidationCount} practice
             </div>
           </div>
-          <div style={{ marginTop: 10 }}>
-            <LinearProgress value={nextLessonStats.learned} total={nextLessonStats.total} />
+          <div style={{ marginTop: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            <span style={{ fontFamily: T.mono, fontSize: 11, color: T.amber }}>
+              ~15 items
+            </span>
+            <span style={{ color: T.amber, display: 'flex' }}>
+              <IconChev size={18} />
+            </span>
           </div>
         </Card>
 

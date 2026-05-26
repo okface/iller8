@@ -11,6 +11,7 @@ import Hammer from './pages/Hammer';
 import Catalog from './pages/Catalog';
 import FamilyDrill from './pages/FamilyDrill';
 import WordDrill from './pages/WordDrill';
+import Daily from './pages/Daily';
 import { loadProgress, saveProgress, updateSettings } from './store/progress';
 import type { UserProgress } from './store/types';
 
@@ -47,6 +48,12 @@ export default function App() {
           <Route
             index
             element={<Dashboard progress={progress} script={script} />}
+          />
+          <Route
+            path="daily"
+            element={
+              <Daily progress={progress} setProgress={setProgress} script={script} />
+            }
           />
           <Route
             path="hammer"
