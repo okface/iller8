@@ -229,7 +229,7 @@ async function generateAzure(text, voice) {
     headers: {
       'Ocp-Apim-Subscription-Key': KEY,
       'Content-Type': 'application/ssml+xml',
-      'X-Microsoft-OutputFormat': 'audio-24khz-48kbitrate-mono-mp3',
+      'X-Microsoft-OutputFormat': 'audio-48khz-192kbitrate-mono-mp3',
       'User-Agent': 'iller8/audio-gen',
     },
     body: ssmlForAzure(text, voice),

@@ -6,6 +6,7 @@ import DualScript from '../ui/DualScript';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
+import AudioButton from '../ui/AudioButton';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -50,14 +51,19 @@ export default function WordRecognize({ exercise, onAnswer, script = 'latin' }: 
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
       <div>
         <div style={metaLabel}>WHAT DOES THIS WORD MEAN?</div>
-        <div style={{ marginTop: 10 }}>
-          <DualScript
-            srLatin={exercise.phrase.sr_latin}
-            srCyrillic={exercise.phrase.sr_cyrillic}
-            script={script}
-            size="hero"
-            weight={500}
-          />
+        <div style={{ marginTop: 10, display: 'flex', alignItems: 'flex-start', gap: 12 }}>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <DualScript
+              srLatin={exercise.phrase.sr_latin}
+              srCyrillic={exercise.phrase.sr_cyrillic}
+              script={script}
+              size="hero"
+              weight={500}
+            />
+          </div>
+          <div style={{ paddingTop: 8 }}>
+            <AudioButton text={exercise.phrase.sr_latin} size={20} />
+          </div>
         </div>
         {exercise.context && (
           <div style={{ marginTop: 8 }}>

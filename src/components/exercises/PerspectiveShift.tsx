@@ -7,6 +7,7 @@ import MonoBadge from '../ui/MonoBadge';
 import DualScript from '../ui/DualScript';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
+import AudioButton from '../ui/AudioButton';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -71,7 +72,12 @@ export default function PerspectiveShift({ exercise, onAnswer, script = 'latin' 
       {/* Base phrase card — the anchor (dual-script when both available) */}
       {(exercise.baseSr || exercise.baseEn || exercise.baseSrLatin) && (
         <Card pad={16}>
-          <div style={metaLabel}>BASE</div>
+          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 8 }}>
+            <div style={metaLabel}>BASE</div>
+            {(exercise.baseSrLatin || exercise.baseSr) && (
+              <AudioButton text={exercise.baseSrLatin ?? exercise.baseSr ?? ''} size={16} />
+            )}
+          </div>
           <div style={{ marginTop: 8 }}>
             {exercise.baseSrLatin && exercise.baseSrCyrillic ? (
               <DualScript

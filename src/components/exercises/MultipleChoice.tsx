@@ -6,6 +6,7 @@ import DualScript from '../ui/DualScript';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
+import AudioButton from '../ui/AudioButton';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -43,15 +44,22 @@ export default function MultipleChoice({ exercise, onAnswer, script }: MultipleC
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
       <div>
         <div style={metaLabel}>{optionLabel}</div>
-        <div style={{ marginTop: 10 }}>
+        <div style={{ marginTop: 10, display: 'flex', alignItems: 'flex-start', gap: 12 }}>
           {promptIsSerbian && exercise.phrase ? (
-            <DualScript
-              srLatin={exercise.phrase.sr_latin}
-              srCyrillic={exercise.phrase.sr_cyrillic}
-              script={inferredScript}
-              size="hero"
-              weight={500}
-            />
+            <>
+              <div style={{ flex: 1, minWidth: 0 }}>
+                <DualScript
+                  srLatin={exercise.phrase.sr_latin}
+                  srCyrillic={exercise.phrase.sr_cyrillic}
+                  script={inferredScript}
+                  size="hero"
+                  weight={500}
+                />
+              </div>
+              <div style={{ paddingTop: 8 }}>
+                <AudioButton text={exercise.phrase.sr_latin} size={20} />
+              </div>
+            </>
           ) : (
             <div
               style={{
@@ -94,11 +102,16 @@ export default function MultipleChoice({ exercise, onAnswer, script }: MultipleC
       {result && !result.correct && (
         <Card pad={14}>
           <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT</div>
-          <div
-            className={optionsAreSerbian ? 'font-serif-sr' : undefined}
-            style={{ fontSize: 17, color: T.green, fontWeight: 500 }}
-          >
-            {exercise.correctAnswer}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <div
+              className={optionsAreSerbian ? 'font-serif-sr' : undefined}
+              style={{ fontSize: 17, color: T.green, fontWeight: 500, flex: 1 }}
+            >
+              {exercise.correctAnswer}
+            </div>
+            {optionsAreSerbian && (
+              <AudioButton text={exercise.phrase.sr_latin} size={16} />
+            )}
           </div>
           <GlossHint hint={exercise.phrase.gloss_hint} />
         </Card>

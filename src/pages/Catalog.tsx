@@ -5,6 +5,7 @@ import { families } from '../data/phrase-families';
 import Card from '../components/ui/Card';
 import SectionHead from '../components/ui/SectionHead';
 import MonoBadge from '../components/ui/MonoBadge';
+import AudioButton from '../components/ui/AudioButton';
 import { T, metaLabel } from '../lib/tokens';
 import type { UserProgress } from '../store/types';
 
@@ -214,9 +215,17 @@ export default function Catalog({ progress, script }: CatalogProps) {
                           ? T.green
                           : T.amber;
                     return (
-                      <button
+                      <div
                         key={phrase.id}
+                        role="button"
+                        tabIndex={0}
                         onClick={() => navigate(`/lesson/${lesson.id}`)}
+                        onKeyDown={(e) => {
+                          if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            navigate(`/lesson/${lesson.id}`);
+                          }
+                        }}
                         style={{
                           width: '100%',
                           textAlign: 'left',
@@ -226,7 +235,7 @@ export default function Catalog({ progress, script }: CatalogProps) {
                           borderTop: i === 0 ? 'none' : `0.5px solid ${T.border}`,
                           cursor: 'pointer',
                           display: 'grid',
-                          gridTemplateColumns: 'auto 1fr auto',
+                          gridTemplateColumns: 'auto 1fr auto auto',
                           gap: 12,
                           alignItems: 'center',
                           color: T.text,
@@ -258,6 +267,7 @@ export default function Catalog({ progress, script }: CatalogProps) {
                             {phrase.en}
                           </div>
                         </div>
+                        <AudioButton text={phrase.sr_latin} size={14} />
                         <span
                           style={{
                             fontFamily: T.mono,
@@ -267,7 +277,7 @@ export default function Catalog({ progress, script }: CatalogProps) {
                         >
                           {bucket > 0 ? `B${bucket}` : 'new'}
                         </span>
-                      </button>
+                      </div>
                     );
                   })}
                 </Card>
