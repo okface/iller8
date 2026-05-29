@@ -1,19 +1,30 @@
 /**
- * Audio is content-addressed: every Serbian source string maps to one
- * MP3 file at `public/audio/<hash>.mp3`. The mapping is deterministic,
- * so the data files don't need an `audio` field — the URL is derived
- * from the string at render time. Editing a phrase regenerates a new
- * hash and the old clip becomes orphan-deletable.
+ * Audio is content-addressed AND voice-addressed: every Serbian source
+ * string maps to one MP3 per voice at `public/audio/<voice>/<hash>.mp3`.
+ * The hash is derived from the Latin form (so it's stable regardless
+ * of which script gets sent to TTS for generation).
  *
- * The generation script (`scripts/generate-audio.mjs`) walks the data
- * files, derives the hash for every string, and only generates clips
- * that don't already exist. Re-runnable, free with Azure's TTS free
- * tier.
+ * Voices currently shipped:
+ *   sophie   — sr-RS-SophieNeural,   female, Cyrillic-trained
+ *   nicholas — sr-RS-NicholasNeural, male,   Cyrillic-trained
  *
- * Hash: FNV-1a 32-bit, hex. Stable across browser + Node. Collisions
- * at 908 strings are astronomically unlikely; if one ever shows up,
- * append a discriminator in `audioId` below.
+ * The voice is picked per-call (default 'sophie') so individual surfaces
+ * can override if needed, but in practice all callers read the active
+ * voice from the AudioSettings context (see `src/lib/audio-context.tsx`).
+ *
+ * Hash: FNV-1a 32-bit, hex. Stable across browser + Node.
  */
+
+export type VoiceId = 'sophie' | 'nicholas';
+
+export const VOICE_LABELS: Record<VoiceId, { label: string; gender: 'female' | 'male'; azure: string }> = {
+  sophie: { label: 'Sophie', gender: 'female', azure: 'sr-RS-SophieNeural' },
+  nicholas: { label: 'Nicholas', gender: 'male', azure: 'sr-RS-NicholasNeural' },
+};
+
+export function voiceForGender(gender: 'female' | 'male'): VoiceId {
+  return gender === 'male' ? 'nicholas' : 'sophie';
+}
 
 function fnv1a32(input: string): string {
   let h = 0x811c9dc5;
@@ -24,21 +35,18 @@ function fnv1a32(input: string): string {
   return h.toString(16).padStart(8, '0');
 }
 
-/** Normalise the input so trailing whitespace / casing / punctuation
- *  variations don't fragment the cache. */
 function normalize(text: string): string {
   return text.trim().normalize('NFC');
 }
 
-/** Stable ID for an audio clip. */
+/** Stable ID for an audio clip (derived from Latin source string). */
 export function audioId(text: string): string {
   return fnv1a32(normalize(text));
 }
 
-/** Browser-side URL for a clip. Uses `import.meta.env.BASE_URL` so it
- *  works under the GitHub Pages base path. */
-export function audioUrl(text: string): string {
+/** Browser-side URL for a clip. Honours `import.meta.env.BASE_URL`. */
+export function audioUrl(text: string, voice: VoiceId = 'sophie'): string {
   const base = import.meta.env.BASE_URL ?? '/';
   const trimmed = base.endsWith('/') ? base : base + '/';
-  return `${trimmed}audio/${audioId(text)}.mp3`;
+  return `${trimmed}audio/${voice}/${audioId(text)}.mp3`;
 }

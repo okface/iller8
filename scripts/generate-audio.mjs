@@ -8,39 +8,23 @@
  *   src/data/words/words.json
  *   src/data/phrase-families.json
  *
- * For each unique Serbian Latin string, computes the FNV-1a hash (same
- * function as `src/lib/audio.ts`), checks if `public/audio/<hash>.mp3`
- * already exists, and if not calls the chosen TTS provider.
+ * Each Serbian string has both Latin and Cyrillic forms. The file ID
+ * is the FNV-1a hash of the LATIN form (so it's stable regardless of
+ * which voice/script we generate against), but we SEND the CYRILLIC
+ * form to Azure — confirmed by A/B test that the Cyrillic-trained
+ * `sr-RS-SophieNeural` / `sr-RS-NicholasNeural` voices sound right
+ * with Cyrillic input and wrong with Latin input.
  *
- * ─── Providers ─────────────────────────────────────────────────
+ * Clips are stored per voice:
+ *   public/audio/sophie/<hash>.mp3
+ *   public/audio/nicholas/<hash>.mp3
  *
- * elevenlabs (default)
- *   Free tier: 10k chars/month — covers iller8's entire ~10k-char
- *   corpus in one shot. Email signup, no credit card.
- *   ENV: ELEVENLABS_API_KEY (required), ELEVENLABS_VOICE_ID (optional)
- *   Sign up: https://elevenlabs.io
+ * Usage:
+ *   AZURE_SPEECH_KEY=xxx AZURE_SPEECH_REGION=swedencentral \
+ *     node scripts/generate-audio.mjs
  *
- * azure
- *   Highest quality for Serbian (purpose-built sr-RS-SophieNeural).
- *   Free tier is huge but the account signup is notoriously janky;
- *   if Microsoft blocks you, use elevenlabs.
- *   ENV: AZURE_SPEECH_KEY (required), AZURE_SPEECH_REGION (default westeurope)
- *   Sign up: https://azure.microsoft.com/en-us/free
- *
- * piper (offline, free, no account — not bundled here)
- *   Install: `pip install piper-tts` then download a Serbian voice
- *   from https://huggingface.co/rhasspy/piper-voices
- *   Run manually:
- *     piper --model sr_RS-serbski-medium.onnx --output_file out.mp3 <<< "Volim te."
- *   Then hash the text yourself and place it at public/audio/<hash>.mp3.
- *   No script support yet — open issue if you want it integrated.
- *
- * ─── Usage ─────────────────────────────────────────────────────
- *
- *   ELEVENLABS_API_KEY=xxx npm run generate-audio
- *   ELEVENLABS_API_KEY=xxx npm run generate-audio -- --voice-id <id>
- *   AZURE_SPEECH_KEY=xxx npm run generate-audio -- --provider azure
- *   npm run generate-audio -- --dry-run
+ *   --voice sophie|nicholas|both     (default: both)
+ *   --dry-run                        (show what would be generated)
  */
 
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -50,7 +34,9 @@ import { dirname, join } from 'node:path';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..');
-const AUDIO_DIR = join(PROJECT_ROOT, 'public', 'audio');
+const AUDIO_ROOT = join(PROJECT_ROOT, 'public', 'audio');
+const REGION = process.env.AZURE_SPEECH_REGION ?? 'westeurope';
+const KEY = process.env.AZURE_SPEECH_KEY;
 
 const args = process.argv.slice(2);
 const flag = (name) => {
@@ -59,55 +45,33 @@ const flag = (name) => {
   return args[i + 1];
 };
 const dryRun = args.includes('--dry-run');
-const provider = flag('--provider') ?? 'elevenlabs';
-const voiceIdArg = flag('--voice-id');
+const voiceArg = flag('--voice') ?? 'both';
 
-/* ── Provider configs ────────────────────────────────────────────── */
-
-const PROVIDERS = {
-  elevenlabs: {
-    keyEnv: 'ELEVENLABS_API_KEY',
-    /** "Rachel" — the multilingual default. ElevenLabs has more voices
-     *  at https://api.elevenlabs.io/v1/voices once authenticated. */
-    defaultVoiceId: '21m00Tcm4TlvDq8ikWAM',
-    /** Multilingual v2 supports Serbian. v3 ("eleven_v3") is newer with
-     *  better prosody — switch when generally available. */
-    modelId: 'eleven_multilingual_v2',
-    needsRegion: false,
+const VOICES = {
+  sophie: {
+    dir: 'sophie',
+    azureName: 'sr-RS-SophieNeural',
+    locale: 'sr-RS',
   },
-  azure: {
-    keyEnv: 'AZURE_SPEECH_KEY',
-    defaultVoiceId: 'sr-RS-SophieNeural',
-    needsRegion: true,
-    regionEnv: 'AZURE_SPEECH_REGION',
-    defaultRegion: 'westeurope',
+  nicholas: {
+    dir: 'nicholas',
+    azureName: 'sr-RS-NicholasNeural',
+    locale: 'sr-RS',
   },
 };
 
-const cfg = PROVIDERS[provider];
-if (!cfg) {
-  console.error(`Unknown provider: ${provider}`);
-  console.error(`Known: ${Object.keys(PROVIDERS).join(', ')}`);
-  process.exit(1);
+const selectedVoices =
+  voiceArg === 'both' ? Object.keys(VOICES) : [voiceArg];
+for (const v of selectedVoices) {
+  if (!VOICES[v]) {
+    console.error(`Unknown voice: ${v}. Known: sophie, nicholas, both`);
+    process.exit(1);
+  }
 }
 
-const KEY = process.env[cfg.keyEnv];
-const REGION = cfg.needsRegion
-  ? (process.env[cfg.regionEnv] ?? cfg.defaultRegion)
-  : undefined;
-const VOICE = voiceIdArg ?? cfg.defaultVoiceId;
-
 if (!dryRun && !KEY) {
-  console.error(`${cfg.keyEnv} is not set. Run:`);
-  console.error(`  ${cfg.keyEnv}=xxx node scripts/generate-audio.mjs`);
-  if (provider === 'elevenlabs') {
-    console.error('Get a key: https://elevenlabs.io/app/settings/api-keys');
-    console.error('Free tier: 10k chars/month — covers the whole corpus.');
-  } else if (provider === 'azure') {
-    console.error('Get a key: https://azure.microsoft.com/en-us/free');
-    console.error('Note: Microsoft\'s free-tier signup is restrictive. Try');
-    console.error('  --provider elevenlabs if Azure blocks you.');
-  }
+  console.error('AZURE_SPEECH_KEY is not set. Run:');
+  console.error('  AZURE_SPEECH_KEY=xxx node scripts/generate-audio.mjs');
   process.exit(1);
 }
 
@@ -120,23 +84,25 @@ function fnv1a32(input) {
   }
   return h.toString(16).padStart(8, '0');
 }
-
 function normalize(text) {
   return text.trim().normalize('NFC');
 }
-
-function audioId(text) {
-  return fnv1a32(normalize(text));
+function audioId(latin) {
+  return fnv1a32(normalize(latin));
 }
 
-/* ── Walk the data files and collect unique Serbian strings ──────── */
+/* ── Walk the data files and collect unique (latin, cyrillic) pairs ─ */
 async function collectStrings() {
-  const strings = new Set();
-  const add = (s) => {
-    if (typeof s === 'string' && s.trim()) strings.add(normalize(s));
+  /** @type {Map<string, string>} */
+  const map = new Map();
+  const add = (latin, cyrillic) => {
+    if (typeof latin !== 'string' || !latin.trim()) return;
+    if (typeof cyrillic !== 'string' || !cyrillic.trim()) return;
+    const l = normalize(latin);
+    const c = normalize(cyrillic);
+    if (!map.has(l)) map.set(l, c);
   };
 
-  // Lessons
   const lessonsDir = join(PROJECT_ROOT, 'src', 'data', 'lessons');
   const lessonFiles = [
     '01-sweet-talk.json',
@@ -154,72 +120,41 @@ async function collectStrings() {
     const lesson = JSON.parse(await readFile(join(lessonsDir, file), 'utf8'));
     for (const group of lesson.phraseGroups ?? []) {
       for (const phrase of group.phrases ?? []) {
-        add(phrase.sr_latin);
-        for (const v of phrase.variations ?? []) add(v.sr_latin);
+        add(phrase.sr_latin, phrase.sr_cyrillic);
+        for (const v of phrase.variations ?? []) add(v.sr_latin, v.sr_cyrillic);
       }
     }
   }
 
-  // Words
   const words = JSON.parse(
     await readFile(join(PROJECT_ROOT, 'src', 'data', 'words', 'words.json'), 'utf8')
   );
   for (const word of words) {
-    add(word.lemma_sr_latin);
-    for (const ex of word.examples ?? []) add(ex.sr_latin);
-    for (const f of word.forms ?? []) add(f.sr_latin);
+    add(word.lemma_sr_latin, word.lemma_sr_cyrillic);
+    for (const ex of word.examples ?? []) add(ex.sr_latin, ex.sr_cyrillic);
+    for (const f of word.forms ?? []) add(f.sr_latin, f.sr_cyrillic);
   }
 
-  // Phrase families
   const familiesFile = JSON.parse(
     await readFile(join(PROJECT_ROOT, 'src', 'data', 'phrase-families.json'), 'utf8')
   );
   for (const fam of familiesFile.families ?? []) {
-    add(fam.base?.sr_latin);
-    for (const v of fam.variants ?? []) add(v.sr_latin);
+    add(fam.base?.sr_latin, fam.base?.sr_cyrillic);
+    for (const v of fam.variants ?? []) add(v.sr_latin, v.sr_cyrillic);
   }
 
-  return [...strings];
+  return [...map.entries()].map(([latin, cyrillic]) => ({ latin, cyrillic }));
 }
 
-/* ── Provider-specific generation calls ──────────────────────────── */
-
-async function generateElevenLabs(text, voice) {
-  const url = `https://api.elevenlabs.io/v1/text-to-speech/${voice}`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'xi-api-key': KEY,
-      'Content-Type': 'application/json',
-      'Accept': 'audio/mpeg',
-    },
-    body: JSON.stringify({
-      text,
-      model_id: PROVIDERS.elevenlabs.modelId,
-      voice_settings: {
-        // Stability higher → less drift on Serbian. Similarity moderate.
-        stability: 0.6,
-        similarity_boost: 0.7,
-        style: 0.0,
-        use_speaker_boost: true,
-      },
-    }),
-  });
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`ElevenLabs ${res.status} ${res.statusText}: ${body.slice(0, 200)}`);
-  }
-  return Buffer.from(await res.arrayBuffer());
-}
-
-function ssmlForAzure(text, voice) {
+/* ── Azure call ──────────────────────────────────────────────────── */
+function ssmlForAzure(text, voiceName, locale) {
   const escaped = text
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&apos;');
-  return `<speak version='1.0' xml:lang='sr-RS'><voice name='${voice}'>${escaped}</voice></speak>`;
+  return `<speak version='1.0' xml:lang='${locale}'><voice name='${voiceName}'>${escaped}</voice></speak>`;
 }
 
 async function generateAzure(text, voice) {
@@ -232,7 +167,7 @@ async function generateAzure(text, voice) {
       'X-Microsoft-OutputFormat': 'audio-48khz-192kbitrate-mono-mp3',
       'User-Agent': 'iller8/audio-gen',
     },
-    body: ssmlForAzure(text, voice),
+    body: ssmlForAzure(text, voice.azureName, voice.locale),
   });
   if (!res.ok) {
     const body = await res.text().catch(() => '');
@@ -241,46 +176,50 @@ async function generateAzure(text, voice) {
   return Buffer.from(await res.arrayBuffer());
 }
 
-async function generate(text, voice) {
-  if (provider === 'elevenlabs') return generateElevenLabs(text, voice);
-  if (provider === 'azure') return generateAzure(text, voice);
-  throw new Error(`No generator for provider: ${provider}`);
-}
-
 /* ── Main ────────────────────────────────────────────────────────── */
 async function main() {
   console.log(
-    `iller8 audio generator (provider: ${provider}, voice: ${VOICE}${dryRun ? ', dry-run' : ''})`
+    `iller8 audio generator (voices: ${selectedVoices.join(', ')}${dryRun ? ', dry-run' : ''})`
   );
-  if (!existsSync(AUDIO_DIR)) {
-    await mkdir(AUDIO_DIR, { recursive: true });
-  }
 
-  const strings = await collectStrings();
-  const totalChars = strings.reduce((n, s) => n + s.length, 0);
-  console.log(`Found ${strings.length} unique strings, ${totalChars} chars total.`);
-
-  let toGenerate = 0;
-  let skipped = 0;
-  const work = [];
-  for (const text of strings) {
-    const id = audioId(text);
-    const path = join(AUDIO_DIR, `${id}.mp3`);
-    try {
-      await access(path);
-      skipped++;
-    } catch {
-      toGenerate++;
-      work.push({ id, text, path });
+  // Ensure per-voice directories exist.
+  for (const v of selectedVoices) {
+    const dir = join(AUDIO_ROOT, VOICES[v].dir);
+    if (!existsSync(dir)) {
+      await mkdir(dir, { recursive: true });
     }
   }
 
-  console.log(`${skipped} clips already exist; ${toGenerate} need generation.`);
+  const pairs = await collectStrings();
+  const totalChars = pairs.reduce((n, p) => n + p.cyrillic.length, 0);
+  console.log(
+    `Found ${pairs.length} unique strings, ${totalChars} Cyrillic chars × ${selectedVoices.length} voices.`
+  );
+
+  /** @type {Array<{ voiceKey: string; voice: any; pair: any; id: string; path: string }>} */
+  const work = [];
+  let skipped = 0;
+  for (const voiceKey of selectedVoices) {
+    const voice = VOICES[voiceKey];
+    const voiceDir = join(AUDIO_ROOT, voice.dir);
+    for (const pair of pairs) {
+      const id = audioId(pair.latin);
+      const path = join(voiceDir, `${id}.mp3`);
+      try {
+        await access(path);
+        skipped++;
+      } catch {
+        work.push({ voiceKey, voice, pair, id, path });
+      }
+    }
+  }
+
+  console.log(`${skipped} clips already exist; ${work.length} need generation.`);
 
   if (dryRun) {
-    console.log(`Dry-run: not contacting ${provider}.`);
+    console.log('Dry-run: not contacting Azure.');
     for (const w of work.slice(0, 10)) {
-      console.log(`  would generate ${w.id}.mp3  "${w.text}"`);
+      console.log(`  would generate ${w.voiceKey}/${w.id}.mp3  "${w.pair.cyrillic}"`);
     }
     if (work.length > 10) console.log(`  … and ${work.length - 10} more`);
     return;
@@ -288,23 +227,22 @@ async function main() {
 
   let done = 0;
   let failed = 0;
-  for (const { id, text, path } of work) {
+  for (const { voiceKey, voice, pair, id, path } of work) {
     try {
-      const audio = await generate(text, VOICE);
+      const audio = await generateAzure(pair.cyrillic, voice);
       await writeFile(path, audio);
       done++;
-      console.log(`  ✓ ${id}.mp3  "${text.slice(0, 40)}${text.length > 40 ? '…' : ''}"`);
+      const t = pair.cyrillic.slice(0, 40);
+      console.log(`  ✓ ${voiceKey}/${id}.mp3  "${t}${pair.cyrillic.length > 40 ? '…' : ''}"`);
     } catch (err) {
       failed++;
-      console.error(`  ✕ ${id}.mp3  "${text}" — ${err.message}`);
+      console.error(`  ✕ ${voiceKey}/${id}.mp3  "${pair.cyrillic}" — ${err.message}`);
     }
-    // Be polite — small pause between requests.
     // Azure F0 caps at 20 TPS; 100ms = 10 TPS leaves safe headroom.
-    await new Promise((r) => setTimeout(r, provider === 'elevenlabs' ? 120 : 100));
+    await new Promise((r) => setTimeout(r, 100));
   }
 
   console.log(`\nDone. Generated ${done}, failed ${failed}, skipped ${skipped}.`);
-  console.log(`Audio files in: ${AUDIO_DIR}`);
 }
 
 main().catch((err) => {

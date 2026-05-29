@@ -13,6 +13,7 @@ import FamilyDrill from './pages/FamilyDrill';
 import WordDrill from './pages/WordDrill';
 import Daily from './pages/Daily';
 import { loadProgress, saveProgress, updateSettings } from './store/progress';
+import { AudioSettingsProvider } from './lib/audio-context';
 import type { UserProgress } from './store/types';
 
 export default function App() {
@@ -33,18 +34,38 @@ export default function App() {
     saveProgress(updated);
   };
 
+  const handleAutoplayChange = (enabled: boolean) => {
+    const updated = updateSettings(progress, { autoplayAudio: enabled });
+    setProgress(updated);
+    saveProgress(updated);
+  };
+
+  const handleVoiceGenderChange = (g: 'female' | 'male') => {
+    const updated = updateSettings(progress, { voiceGender: g });
+    setProgress(updated);
+    saveProgress(updated);
+  };
+
   return (
-    <HashRouter>
-      <Routes>
-        <Route
-          element={
-            <Layout
-              script={script}
-              onScriptChange={handleScriptChange}
-              streak={progress.currentStreak}
-            />
-          }
-        >
+    <AudioSettingsProvider
+      voiceGender={progress.settings.voiceGender}
+      autoplay={progress.settings.autoplayAudio}
+    >
+      <HashRouter>
+        <Routes>
+          <Route
+            element={
+              <Layout
+                script={script}
+                onScriptChange={handleScriptChange}
+                streak={progress.currentStreak}
+                autoplay={progress.settings.autoplayAudio}
+                onAutoplayChange={handleAutoplayChange}
+                voiceGender={progress.settings.voiceGender}
+                onVoiceGenderChange={handleVoiceGenderChange}
+              />
+            }
+          >
           <Route
             index
             element={<Dashboard progress={progress} script={script} />}
@@ -132,5 +153,6 @@ export default function App() {
         </Route>
       </Routes>
     </HashRouter>
+    </AudioSettingsProvider>
   );
 }

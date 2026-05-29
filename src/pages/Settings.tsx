@@ -186,32 +186,53 @@ export default function Settings({ progress, setProgress, script }: SettingsProp
             label="Skip typing"
             sub="Use multiple-choice instead of typed answers"
             trailing={
-              <button
+              <ToggleSwitch
+                on={settings.skipTyping}
                 onClick={() => update({ skipTyping: !settings.skipTyping })}
-                aria-label="Toggle skip typing"
-                style={{
-                  width: 36,
-                  height: 22,
-                  borderRadius: 11,
-                  padding: 2,
-                  background: settings.skipTyping ? T.amber : T.borderHi,
-                  border: 'none',
-                  display: 'flex',
-                  justifyContent: settings.skipTyping ? 'flex-end' : 'flex-start',
-                  cursor: 'pointer',
-                  transition: `all ${T.fast} ${T.ease}`,
-                }}
-              >
-                <span
-                  style={{
-                    width: 18,
-                    height: 18,
-                    borderRadius: '50%',
-                    background: '#fff',
-                    boxShadow: '0 1px 2px rgba(0,0,0,0.3)',
-                  }}
-                />
-              </button>
+                ariaLabel="Toggle skip typing"
+              />
+            }
+          />
+          <Divider />
+          <Row
+            label="Autoplay audio"
+            sub="Play the Serbian clip automatically on each prompt / reveal"
+            trailing={
+              <ToggleSwitch
+                on={settings.autoplayAudio}
+                onClick={() => update({ autoplayAudio: !settings.autoplayAudio })}
+                ariaLabel="Toggle autoplay"
+              />
+            }
+          />
+          <Divider />
+          <Row
+            label="Voice"
+            sub={settings.voiceGender === 'female' ? 'Sophie · female' : 'Nicholas · male'}
+            trailing={
+              <div style={{ display: 'inline-flex', border: `1px solid ${T.border}`, borderRadius: T.r2, overflow: 'hidden' }}>
+                {(['female', 'male'] as const).map((g) => {
+                  const active = settings.voiceGender === g;
+                  return (
+                    <button
+                      key={g}
+                      onClick={() => update({ voiceGender: g })}
+                      style={{
+                        padding: '6px 12px',
+                        background: active ? T.surfaceHi : 'transparent',
+                        color: active ? T.text : T.dim,
+                        border: 'none',
+                        cursor: 'pointer',
+                        fontFamily: T.mono,
+                        fontSize: 11,
+                        fontWeight: 500,
+                      }}
+                    >
+                      {g === 'female' ? '♀ Sophie' : '♂ Nicholas'}
+                    </button>
+                  );
+                })}
+              </div>
             }
             last
           />
@@ -321,6 +342,45 @@ export default function Settings({ progress, setProgress, script }: SettingsProp
 
 function Divider() {
   return <div style={{ height: 0.5, background: T.border }} />;
+}
+
+function ToggleSwitch({
+  on,
+  onClick,
+  ariaLabel,
+}: {
+  on: boolean;
+  onClick: () => void;
+  ariaLabel: string;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      aria-label={ariaLabel}
+      style={{
+        width: 36,
+        height: 22,
+        borderRadius: 11,
+        padding: 2,
+        background: on ? T.amber : T.borderHi,
+        border: 'none',
+        display: 'flex',
+        justifyContent: on ? 'flex-end' : 'flex-start',
+        cursor: 'pointer',
+        transition: `all ${T.fast} ${T.ease}`,
+      }}
+    >
+      <span
+        style={{
+          width: 18,
+          height: 18,
+          borderRadius: '50%',
+          background: '#fff',
+          boxShadow: '0 1px 2px rgba(0,0,0,0.3)',
+        }}
+      />
+    </button>
+  );
 }
 
 function Row({

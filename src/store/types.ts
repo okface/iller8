@@ -98,6 +98,12 @@ export interface UserSettings {
    *  exercises and the PhraseIntro flow drops its echo/typing step.
    *  Multiple-choice and recognition take their place. */
   skipTyping: boolean;
+  /** When true, Serbian audio plays once on prompt/answer-reveal
+   *  surfaces. Manual replay via AudioButton remains available. */
+  autoplayAudio: boolean;
+  /** Which Azure-generated voice to use for playback.
+   *   'female' → sophie, 'male' → nicholas. */
+  voiceGender: 'female' | 'male';
 }
 
 export interface UserProgress {

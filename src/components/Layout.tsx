@@ -4,11 +4,17 @@ import I8Mark from './ui/I8Mark';
 import ScriptToggle from './ScriptToggle';
 import StreakCounter from './StreakCounter';
 import { IconBook, IconRefresh, IconUser, IconBolt, IconFire } from './ui/Icons';
+import AutoplayToggle from './AutoplayToggle';
+import VoiceToggle from './VoiceToggle';
 
 interface LayoutProps {
   script: 'latin' | 'cyrillic';
   onScriptChange: (script: 'latin' | 'cyrillic') => void;
   streak?: number;
+  autoplay: boolean;
+  onAutoplayChange: (enabled: boolean) => void;
+  voiceGender: 'female' | 'male';
+  onVoiceGenderChange: (g: 'female' | 'male') => void;
 }
 
 const SECTION_MAP: Record<string, string> = {
@@ -28,7 +34,15 @@ function getSectionLabel(pathname: string): string {
   return SECTION_MAP[pathname] ?? 'home';
 }
 
-export default function Layout({ script, onScriptChange, streak = 0 }: LayoutProps) {
+export default function Layout({
+  script,
+  onScriptChange,
+  streak = 0,
+  autoplay,
+  onAutoplayChange,
+  voiceGender,
+  onVoiceGenderChange,
+}: LayoutProps) {
   const location = useLocation();
   const navigate = useNavigate();
   const section = getSectionLabel(location.pathname);
@@ -91,12 +105,14 @@ export default function Layout({ script, onScriptChange, streak = 0 }: LayoutPro
             </span>
           </div>
           <div style={{ flex: 1 }} />
-          <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
             {streak > 0 && (
               <span style={monoPillStyle(T.amberDim, T.amber, T.borderWarm)}>
                 <IconFire size={11} /> {streak}
               </span>
             )}
+            <AutoplayToggle enabled={autoplay} onChange={onAutoplayChange} />
+            <VoiceToggle voiceGender={voiceGender} onChange={onVoiceGenderChange} />
             <ScriptToggle script={script} onChange={onScriptChange} />
           </div>
         </div>

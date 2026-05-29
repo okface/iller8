@@ -8,6 +8,8 @@ const defaultSettings: UserSettings = {
   darkMode: true,
   apiKey: '',
   skipTyping: false,
+  autoplayAudio: true,
+  voiceGender: 'female',
 };
 
 function createDefaultProgress(): UserProgress {
