@@ -299,7 +299,8 @@ async function main() {
       console.error(`  ✕ ${id}.mp3  "${text}" — ${err.message}`);
     }
     // Be polite — small pause between requests.
-    await new Promise((r) => setTimeout(r, provider === 'elevenlabs' ? 120 : 50));
+    // Azure F0 caps at 20 TPS; 100ms = 10 TPS leaves safe headroom.
+    await new Promise((r) => setTimeout(r, provider === 'elevenlabs' ? 120 : 100));
   }
 
   console.log(`\nDone. Generated ${done}, failed ${failed}, skipped ${skipped}.`);
