@@ -7,6 +7,7 @@ import DualScript from '../ui/DualScript';
 import GlossHint from '../ui/GlossHint';
 import WordChips from '../ui/WordChips';
 import AudioButton from '../ui/AudioButton';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { normalizeWordRefs } from '../../data/words';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
@@ -48,6 +49,7 @@ export default function PhraseIntro({ phrases, script, onComplete, progress }: P
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+      <AutoplayAudio text={phrase.sr_latin} />
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <div style={metaLabel}>
           NEW PHRASE · {index + 1} OF {phrases.length}

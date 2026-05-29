@@ -5,6 +5,7 @@ import MonoBadge from '../ui/MonoBadge';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -52,6 +53,7 @@ export default function WordProduce({ exercise, onAnswer, script: _script = 'lat
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      <AutoplayAudio text={result ? exercise.phrase.sr_latin : undefined} />
       <div>
         <div style={metaLabel}>HOW DO YOU SAY THIS WORD?</div>
         <div

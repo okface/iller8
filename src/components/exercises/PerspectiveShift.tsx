@@ -8,6 +8,7 @@ import DualScript from '../ui/DualScript';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import AudioButton from '../ui/AudioButton';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -49,8 +50,15 @@ export default function PerspectiveShift({ exercise, onAnswer, script = 'latin' 
     onAnswer(result.correct);
   };
 
+  const basePhrase = exercise.baseSrLatin ?? exercise.baseSr;
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+      <AutoplayAudio text={basePhrase} />
+      <AutoplayAudio
+        text={result ? exercise.correctAnswer : undefined}
+        delayMs={300}
+      />
       <div>
         <div style={metaLabel}>NOW SAY IT…</div>
         <div

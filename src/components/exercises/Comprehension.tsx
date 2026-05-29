@@ -5,6 +5,7 @@ import MonoBadge from '../ui/MonoBadge';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -12,6 +13,22 @@ interface ComprehensionProps {
   exercise: Exercise;
   onAnswer: (correct: boolean) => void;
   script?: 'latin' | 'cyrillic';
+}
+
+/**
+ * Strip a `Speaker: "..."` prefix and surrounding quotes so AutoplayAudio
+ * gets just the spoken Serbian. Falls through unchanged when the line
+ * has no quotes.
+ */
+function extractSpoken(line: string): string {
+  const quoteMatch = line.match(/[“"„](.+?)["”“]/);
+  if (quoteMatch) return quoteMatch[1];
+  // Fallback: drop leading "Speaker: " if present.
+  const colonIdx = line.indexOf(':');
+  if (colonIdx > 0 && colonIdx < 24) {
+    return line.slice(colonIdx + 1).trim();
+  }
+  return line;
 }
 
 export default function Comprehension({ exercise, onAnswer }: ComprehensionProps) {
@@ -31,6 +48,13 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      {exercise.dialogue?.map((line, i) => (
+        <AutoplayAudio
+          key={i}
+          text={extractSpoken(line)}
+          delayMs={i * 700}
+        />
+      ))}
       {/* Dialogue */}
       <div>
         <div style={{ ...metaLabel, color: T.amber }}>SITUACIJA</div>

@@ -7,6 +7,7 @@ import MonoBadge from '../ui/MonoBadge';
 import DualScript from '../ui/DualScript';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -46,6 +47,15 @@ export default function TypeTranslation({ exercise, onAnswer, script = 'latin' }
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      <AutoplayAudio
+        text={
+          promptIsSerbian
+            ? exercise.phrase.sr_latin
+            : result
+              ? exercise.phrase.sr_latin
+              : undefined
+        }
+      />
       <div>
         <div style={metaLabel}>
           {targetIsSerbian ? 'TYPE IN SERBIAN' : 'TYPE IN ENGLISH'}

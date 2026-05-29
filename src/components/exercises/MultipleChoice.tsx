@@ -7,6 +7,7 @@ import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
 import AudioButton from '../ui/AudioButton';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -42,6 +43,15 @@ export default function MultipleChoice({ exercise, onAnswer, script }: MultipleC
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      <AutoplayAudio
+        text={
+          promptIsSerbian
+            ? exercise.phrase.sr_latin
+            : result
+              ? exercise.phrase.sr_latin
+              : undefined
+        }
+      />
       <div>
         <div style={metaLabel}>{optionLabel}</div>
         <div style={{ marginTop: 10, display: 'flex', alignItems: 'flex-start', gap: 12 }}>

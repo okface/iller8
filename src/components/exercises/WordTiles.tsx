@@ -5,6 +5,7 @@ import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -75,6 +76,7 @@ export default function WordTiles({ exercise, onAnswer }: WordTilesProps) {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
+      <AutoplayAudio text={result ? exercise.phrase.sr_latin : undefined} />
       <div>
         <div style={metaLabel}>BUILD THE SENTENCE</div>
         <div

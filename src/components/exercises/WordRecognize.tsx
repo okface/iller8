@@ -7,6 +7,7 @@ import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
 import AudioButton from '../ui/AudioButton';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -49,6 +50,7 @@ export default function WordRecognize({ exercise, onAnswer, script = 'latin' }: 
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      <AutoplayAudio text={exercise.phrase.sr_latin} />
       <div>
         <div style={metaLabel}>WHAT DOES THIS WORD MEAN?</div>
         <div style={{ marginTop: 10, display: 'flex', alignItems: 'flex-start', gap: 12 }}>

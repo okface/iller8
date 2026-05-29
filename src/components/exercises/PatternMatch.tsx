@@ -4,6 +4,7 @@ import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -35,6 +36,8 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      <AutoplayAudio text={original?.text} delayMs={0} />
+      <AutoplayAudio text={variant?.text} delayMs={700} />
       {/* Header */}
       <div>
         <div style={{ ...metaLabel, color: T.amber }}>COMPARE THESE PHRASES</div>

@@ -6,6 +6,7 @@ import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -43,6 +44,7 @@ export default function FillInBlank({ exercise, onAnswer }: FillInBlankProps) {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      <AutoplayAudio text={exercise.phrase.sr_latin} />
       <div>
         <div style={metaLabel}>FILL IN THE BLANK</div>
         <div
