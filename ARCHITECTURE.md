@@ -42,7 +42,7 @@ FamilyVariant    { id, sr_latin, sr_cyrillic, en, gloss_hint?, label, transform,
 Lesson           { id, title, description, order, prerequisites, phraseGroups }
 PhraseProgress   { phraseId, bucket, lastReviewed, correctCount, incorrectCount, streak }
 UserProgress     { phrases, completedLessons, dailyStats, achievements, currentStreak, longestStreak, lastActiveDate, settings }
-UserSettings     { scriptPreference, dailyGoal, darkMode, apiKey, skipTyping }
+UserSettings     { scriptPreference, dailyGoal, darkMode, apiKey, skipTyping, autoplayAudio, voiceGender }
 Exercise         { type, phrase, direction, options?, correctAnswer, prompt, ...type-specific fields }
 ExerciseType     'multiple-choice' | 'type-translation' | ... 13 types (see types.ts)
 ```
@@ -87,6 +87,14 @@ Primitives under `src/components/ui/`:
 - `GlossHint` — small italic post-answer disambiguator.
 - `ContinueButton` — explicit advance after answer (replaces auto-advance).
 - `Icons` — stroke-only SVG icon set.
+- `AudioButton` — manual replay of a clip for a given Serbian source string.
+- `AutoplayAudio` — headless primitive that plays a clip once on mount / when `text` changes. Honours the global autoplay flag and the active voice via `useAudioSettings()`. Supports a `delayMs` to sequence multiple plays (PatternMatch, Comprehension, PerspectiveShift base→variant).
+
+Header controls in `src/components/`:
+
+- `ScriptToggle` — Latin / Cyrillic.
+- `AutoplayToggle` — speaker icon, strike when off; toggles `settings.autoplayAudio`.
+- `VoiceToggle` — ♀ / ♂ pill; toggles `settings.voiceGender` (female → Sophie, male → Nicholas).
 
 Exercise components under `src/components/exercises/` — one file per `ExerciseType`.
 
@@ -124,7 +132,7 @@ Ordered. Each phase ships independently.
 | 5 | Lessons 03–10 wordRefs backfill | done |
 | 6 | Orchestration extraction (`MCOptionList`, `useDrillSession`, `ExerciseRenderer`) | done |
 | 7 | Daily Session (unified primary path) at `/daily` | done |
-| 8 | Audio pipeline (`AudioButton` + multi-provider TTS script: ElevenLabs default, Azure fallback) — clips await an API key | data layer done |
+| 8 | Audio pipeline — 914 clips × 2 voices (Azure `sr-RS-SophieNeural` default + `sr-RS-NicholasNeural`), Cyrillic-input generation, content-addressed by FNV-1a hash of Latin form, global autoplay + per-voice toggle wired across 13 exercise surfaces | done |
 | 9 | Migrate `Hammer`/`WordDrill`/`FamilyDrill`/`LessonView`/`ReviewSession` to `useDrillSession` | next |
 | 10 | Day-1 dashboard variant (gate secondary tiles on `totalLearned === 0`) | next |
 | 11 | Lexicon extension (~10 high-frequency words flagged in backfill) | in progress (subagent) |
@@ -146,6 +154,7 @@ Choices that should NOT drift without explicit revisiting:
 - **Words and phrases are one progression.** Words and phrases share the SRS map and (target state) the same Daily Session. Surfaces that drill one without the other (the Words tab, the lessons list) are secondary explorers, not the main loop.
 - **JSON-first content.** All learning content lives in `src/data/` as JSON. Components must not hard-code Serbian.
 - **Push to main, always.** GH Pages auto-deploys from main. Feature branches are not used.
+- **Audio: hash the Latin form, send the Cyrillic.** The MP3 file ID is the FNV-1a hash of the Latin source string (stable regardless of voice/script generated). The TTS call sends the Cyrillic form — A/B-tested: `sr-RS-SophieNeural` / `sr-RS-NicholasNeural` produce a native accent with Cyrillic input and an American accent with Latin input. Clips live at `public/audio/<voice>/<hash>.mp3`. Default voice is Sophie (female).
 
 ## 9. Don't-do list
 
@@ -201,7 +210,9 @@ src/
    ├─ tokens.ts                  design tokens
    ├─ utils.ts
    ├─ word-progress.ts           SRS-key helpers for words
-   └─ claude.ts                  Anthropic SDK for custom content
+   ├─ claude.ts                  Anthropic SDK for custom content
+   ├─ audio.ts                   audioId (FNV-1a 32-bit) + audioUrl per voice
+   └─ audio-context.tsx          AudioSettings provider (voice + autoplay)
 ```
 
 ## 11. Working agreement (for future AI agents on this repo)

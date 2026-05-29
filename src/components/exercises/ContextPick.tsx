@@ -5,6 +5,7 @@ import MonoBadge from '../ui/MonoBadge';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
+import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -31,6 +32,9 @@ export default function ContextPick({ exercise, onAnswer }: ContextPickProps) {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
+      {/* Only play after the learner picks — prompt is English; playing
+          the Serbian phrase on mount would spoil the answer. */}
+      <AutoplayAudio text={result ? exercise.phrase.sr_latin : undefined} />
       <div>
         <div style={{ ...metaLabel, color: T.amber }}>SITUATION</div>
         <div

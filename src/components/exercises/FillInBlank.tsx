@@ -44,7 +44,9 @@ export default function FillInBlank({ exercise, onAnswer }: FillInBlankProps) {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-      <AutoplayAudio text={exercise.phrase.sr_latin} />
+      {/* Only play after reveal — the full phrase would otherwise speak the
+          blanked word and give the answer away before they type. */}
+      <AutoplayAudio text={result ? exercise.phrase.sr_latin : undefined} />
       <div>
         <div style={metaLabel}>FILL IN THE BLANK</div>
         <div
