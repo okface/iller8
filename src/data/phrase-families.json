@@ -1111,6 +1111,428 @@
           "transform": "number"
         }
       ]
+    },
+    {
+      "id": "where-is",
+      "theme": "Where is…?",
+      "category": "questions",
+      "base": {
+        "id": "where-is-base",
+        "sr_latin": "Gde je kupatilo?",
+        "sr_cyrillic": "Где је купатило?",
+        "en": "Where's the bathroom?",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "'Gde' = where, 'je' = is. The thing you're looking for is the subject."
+      },
+      "variants": [
+        {
+          "id": "where-is-plural",
+          "sr_latin": "Gde su ključevi?",
+          "sr_cyrillic": "Где су кључеви?",
+          "en": "Where are the keys?",
+          "label": "plural",
+          "transform": "number",
+          "note": "Plural subject takes 'su' (are) instead of 'je' (is)."
+        },
+        {
+          "id": "where-is-place",
+          "sr_latin": "Gde je stanica?",
+          "sr_cyrillic": "Где је станица?",
+          "en": "Where's the station?",
+          "label": "to a place",
+          "transform": "subject-swap",
+          "note": "Same frame, just swap the subject noun. 'Stanica' = (bus/train) station."
+        },
+        {
+          "id": "where-is-which-way",
+          "sr_latin": "Kuda da idem?",
+          "sr_cyrillic": "Куда да идем?",
+          "en": "Which way should I go?",
+          "label": "which way",
+          "transform": "subject-swap",
+          "note": "'Kuda' asks about direction of motion (where to), unlike 'gde' (location). 'Da idem' = should I go."
+        },
+        {
+          "id": "where-is-how-far",
+          "sr_latin": "Je li daleko?",
+          "sr_cyrillic": "Је ли далеко?",
+          "en": "Is it far?",
+          "label": "as a question",
+          "transform": "question",
+          "note": "'Je li…?' turns a statement into a yes/no question. 'Daleko' = far."
+        },
+        {
+          "id": "where-is-formal",
+          "sr_latin": "Izvinite, gde je apoteka?",
+          "sr_cyrillic": "Извините, где је апотека?",
+          "en": "Excuse me, where's the pharmacy?",
+          "label": "formal",
+          "transform": "formality",
+          "note": "'Izvinite' is the polite 'vi'-form of 'excuse me' for approaching a stranger. 'Apoteka' = pharmacy."
+        },
+        {
+          "id": "where-is-nearby",
+          "sr_latin": "Ima li kafić u blizini?",
+          "sr_cyrillic": "Има ли кафић у близини?",
+          "en": "Is there a café nearby?",
+          "label": "nearby",
+          "transform": "question",
+          "note": "'Ima li…?' = is there…? 'U blizini' = in the vicinity / nearby."
+        }
+      ]
+    },
+    {
+      "id": "i-need",
+      "theme": "I need…",
+      "category": "small-talk",
+      "base": {
+        "id": "i-need-base",
+        "sr_latin": "Treba mi pomoć.",
+        "sr_cyrillic": "Треба ми помоћ.",
+        "en": "I need help.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Literally 'help is needed to me'. The needed thing is the subject; the needer is in dative (mi)."
+      },
+      "variants": [
+        {
+          "id": "i-need-object",
+          "sr_latin": "Treba mi voda.",
+          "sr_cyrillic": "Треба ми вода.",
+          "en": "I need water.",
+          "label": "swap the object",
+          "transform": "object-swap",
+          "note": "Just swap the needed noun. 'Treba' stays the same for any singular thing."
+        },
+        {
+          "id": "i-need-modal",
+          "sr_latin": "Moram da idem.",
+          "sr_cyrillic": "Морам да идем.",
+          "en": "I have to go.",
+          "label": "I have to…",
+          "transform": "subject-swap",
+          "note": "For needing to *do* something, use 'moram da + verb' rather than 'treba mi + noun'."
+        },
+        {
+          "id": "i-need-negation",
+          "sr_latin": "Ne treba mi ništa.",
+          "sr_cyrillic": "Не треба ми ништа.",
+          "en": "I don't need anything.",
+          "label": "in the negative",
+          "transform": "negation",
+          "note": "Double negative is required: 'ne… ništa' = not… anything."
+        },
+        {
+          "id": "i-need-question",
+          "sr_latin": "Treba li ti nešto?",
+          "sr_cyrillic": "Треба ли ти нешто?",
+          "en": "Do you need anything?",
+          "label": "as a question",
+          "transform": "question",
+          "note": "'Li' makes the yes/no question; the dative shifts to 'ti' (to you)."
+        },
+        {
+          "id": "i-need-past",
+          "sr_latin": "Trebao mi je odmor.",
+          "sr_cyrillic": "Требао ми је одмор.",
+          "en": "I needed a break.",
+          "label": "in the past",
+          "transform": "tense-past",
+          "note": "Past participle 'trebao' agrees with the masculine subject 'odmor' (rest/break), not the speaker."
+        },
+        {
+          "id": "i-need-we",
+          "sr_latin": "Treba nam hleb.",
+          "sr_cyrillic": "Треба нам хлеб.",
+          "en": "We need bread.",
+          "label": "we need…",
+          "transform": "subject-swap",
+          "note": "Swap the dative clitic to 'nam' (to us). 'Hleb' = bread."
+        }
+      ]
+    },
+    {
+      "id": "how-much",
+      "theme": "How much is it?",
+      "category": "small-talk",
+      "base": {
+        "id": "how-much-base",
+        "sr_latin": "Koliko košta?",
+        "sr_cyrillic": "Колико кошта?",
+        "en": "How much does it cost?",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "'Koliko' = how much. 'Košta' = it costs. The single most useful shopping question."
+      },
+      "variants": [
+        {
+          "id": "how-much-this",
+          "sr_latin": "Koliko košta ovo?",
+          "sr_cyrillic": "Колико кошта ово?",
+          "en": "How much is this?",
+          "label": "this one",
+          "transform": "object-swap",
+          "note": "'Ovo' = this (thing), used while pointing at an item."
+        },
+        {
+          "id": "how-much-total",
+          "sr_latin": "Koliko sve zajedno?",
+          "sr_cyrillic": "Колико све заједно?",
+          "en": "How much altogether?",
+          "label": "the total",
+          "transform": "object-swap",
+          "note": "'Sve zajedno' = all together. Asks for the full total at the register."
+        },
+        {
+          "id": "how-much-expensive",
+          "sr_latin": "Mnogo je skupo.",
+          "sr_cyrillic": "Много је скупо.",
+          "en": "That's too expensive.",
+          "label": "too expensive",
+          "transform": "intensifier",
+          "note": "'Mnogo' here means 'too / a lot'. 'Skupo' = expensive (neuter adverbial form)."
+        },
+        {
+          "id": "how-much-have",
+          "sr_latin": "Imate li sok?",
+          "sr_cyrillic": "Имате ли сок?",
+          "en": "Do you have juice?",
+          "label": "do you have…",
+          "transform": "question",
+          "note": "'Imate li…?' uses the polite 'vi'-form 'imate' — standard for addressing a shopkeeper. 'Sok' = juice."
+        },
+        {
+          "id": "how-much-take",
+          "sr_latin": "Uzeću ovo.",
+          "sr_cyrillic": "Узећу ово.",
+          "en": "I'll take this.",
+          "label": "I'll take it",
+          "transform": "tense-future",
+          "note": "'Uzeću' is the contracted future of 'uzeti' (to take): uzeti + ću → uzeću."
+        },
+        {
+          "id": "how-much-card",
+          "sr_latin": "Može karticom?",
+          "sr_cyrillic": "Може картицом?",
+          "en": "Can I pay by card?",
+          "label": "by card",
+          "transform": "question",
+          "note": "'Može…?' = is it OK / possible? 'Karticom' is the instrumental of 'kartica' (card) — 'by card'."
+        }
+      ]
+    },
+    {
+      "id": "introductions",
+      "theme": "My name is…",
+      "category": "small-talk",
+      "base": {
+        "id": "introductions-base",
+        "sr_latin": "Zovem se Viktor.",
+        "sr_cyrillic": "Зовем се Виктор.",
+        "en": "My name is Viktor.",
+        "label": "base form",
+        "transform": "subject-swap",
+        "note": "Literally 'I call myself Viktor'. 'Zvati se' (to be called) is reflexive — note the 'se'."
+      },
+      "variants": [
+        {
+          "id": "introductions-and-you",
+          "sr_latin": "A ti?",
+          "sr_cyrillic": "А ти?",
+          "en": "And you?",
+          "label": "and you?",
+          "transform": "reciprocity",
+          "note": "Bounce the question back. 'A' = and/but, a soft conversational opener."
+        },
+        {
+          "id": "introductions-where-from",
+          "sr_latin": "Odakle si?",
+          "sr_cyrillic": "Одакле си?",
+          "en": "Where are you from?",
+          "label": "where from",
+          "transform": "question",
+          "note": "'Odakle' = from where. 'Si' is the 2nd-person 'are' from 'biti'."
+        },
+        {
+          "id": "introductions-im-from",
+          "sr_latin": "Iz Engleske sam.",
+          "sr_cyrillic": "Из Енглеске сам.",
+          "en": "I'm from England.",
+          "label": "I'm from…",
+          "transform": "subject-swap",
+          "note": "'Iz' (from) takes the genitive: 'Engleska' → 'Engleske'."
+        },
+        {
+          "id": "introductions-nice",
+          "sr_latin": "Drago mi je.",
+          "sr_cyrillic": "Драго ми је.",
+          "en": "Nice to meet you.",
+          "label": "nice to meet you",
+          "transform": "subject-swap",
+          "note": "Literally 'it is dear to me'. The standard reply when introduced."
+        },
+        {
+          "id": "introductions-learning",
+          "sr_latin": "Učim srpski.",
+          "sr_cyrillic": "Учим српски.",
+          "en": "I'm learning Serbian.",
+          "label": "learning Serbian",
+          "transform": "subject-swap",
+          "note": "'Učim' = I learn / I'm learning. Serbian has no separate continuous tense."
+        },
+        {
+          "id": "introductions-a-little",
+          "sr_latin": "Pričam malo srpski.",
+          "sr_cyrillic": "Причам мало српски.",
+          "en": "I speak a little Serbian.",
+          "label": "a little",
+          "transform": "intensifier",
+          "note": "'Malo' = a little — softens the claim. 'Pričam' = I speak/talk."
+        }
+      ]
+    },
+    {
+      "id": "i-dont-understand",
+      "theme": "I don't understand",
+      "category": "small-talk",
+      "base": {
+        "id": "i-dont-understand-base",
+        "sr_latin": "Ne razumem.",
+        "sr_cyrillic": "Не разумем.",
+        "en": "I don't understand.",
+        "label": "base form",
+        "transform": "negation",
+        "note": "'Ne' negates the verb directly: 'ne razumem' = I don't understand."
+      },
+      "variants": [
+        {
+          "id": "i-dont-understand-slower",
+          "sr_latin": "Možeš sporije?",
+          "sr_cyrillic": "Можеш спорије?",
+          "en": "Can you go slower?",
+          "label": "slower",
+          "transform": "question",
+          "note": "'Sporije' is the comparative of 'sporo' (slowly) — 'more slowly'."
+        },
+        {
+          "id": "i-dont-understand-repeat",
+          "sr_latin": "Možeš da ponoviš?",
+          "sr_cyrillic": "Можеш да поновиш?",
+          "en": "Can you repeat that?",
+          "label": "repeat that",
+          "transform": "question",
+          "note": "'Da ponoviš' = (that) you repeat — the usual 'da + present' after 'možeš'."
+        },
+        {
+          "id": "i-dont-understand-how-say",
+          "sr_latin": "Kako se kaže to?",
+          "sr_cyrillic": "Како се каже то?",
+          "en": "How do you say that?",
+          "label": "how do you say…",
+          "transform": "question",
+          "note": "Impersonal 'se kaže' = how is it said. 'To' = that."
+        },
+        {
+          "id": "i-dont-understand-mean",
+          "sr_latin": "Šta znači to?",
+          "sr_cyrillic": "Шта значи то?",
+          "en": "What does that mean?",
+          "label": "what does it mean",
+          "transform": "question",
+          "note": "'Znači' = means. Drop in any word for 'to' to ask about it."
+        },
+        {
+          "id": "i-dont-understand-not-well",
+          "sr_latin": "Ne pričam dobro srpski.",
+          "sr_cyrillic": "Не причам добро српски.",
+          "en": "I don't speak Serbian well.",
+          "label": "I don't speak it well",
+          "transform": "negation",
+          "note": "'Dobro' = well. Negate the verb with 'ne pričam'."
+        },
+        {
+          "id": "i-dont-understand-english",
+          "sr_latin": "Govoriš engleski?",
+          "sr_cyrillic": "Говориш енглески?",
+          "en": "Do you speak English?",
+          "label": "do you speak English",
+          "transform": "question",
+          "note": "Rising intonation alone makes it a question; no 'li' needed in casual speech."
+        }
+      ]
+    },
+    {
+      "id": "id-like",
+      "theme": "I'd like…",
+      "category": "food",
+      "base": {
+        "id": "id-like-base",
+        "sr_latin": "Hteo bih kafu.",
+        "sr_cyrillic": "Хтео бих кафу.",
+        "en": "I'd like a coffee.",
+        "gloss_hint": "masc speaker",
+        "label": "base · male speaker",
+        "transform": "gender-speaker",
+        "note": "The conditional 'hteo bih' softens 'I want' into a polite 'I'd like'. 'Hteo' is the masculine participle."
+      },
+      "variants": [
+        {
+          "id": "id-like-fem",
+          "sr_latin": "Htela bih kafu.",
+          "sr_cyrillic": "Хтела бих кафу.",
+          "en": "I'd like a coffee.",
+          "gloss_hint": "fem speaker",
+          "label": "female speaker",
+          "transform": "gender-speaker",
+          "note": "A woman uses the feminine participle 'htela'; 'bih' stays the same."
+        },
+        {
+          "id": "id-like-two-beers",
+          "sr_latin": "Dva piva, molim.",
+          "sr_cyrillic": "Два пива, молим.",
+          "en": "Two beers, please.",
+          "label": "two of them",
+          "transform": "number",
+          "note": "After 'dva' (two) the noun takes the count form 'piva'. 'Molim' = please."
+        },
+        {
+          "id": "id-like-to-go",
+          "sr_latin": "Za poneti, molim.",
+          "sr_cyrillic": "За понети, молим.",
+          "en": "To go, please.",
+          "label": "to go",
+          "transform": "object-swap",
+          "note": "'Za poneti' = to take away. A common, fixed café phrase."
+        },
+        {
+          "id": "id-like-menu",
+          "sr_latin": "Mogu li jelovnik?",
+          "sr_cyrillic": "Могу ли јеловник?",
+          "en": "Could I get a menu?",
+          "label": "the menu",
+          "transform": "question",
+          "note": "'Mogu li…?' = may I…? 'Jelovnik' = menu."
+        },
+        {
+          "id": "id-like-check",
+          "sr_latin": "Račun, molim.",
+          "sr_cyrillic": "Рачун, молим.",
+          "en": "The check, please.",
+          "label": "the check",
+          "transform": "object-swap",
+          "note": "'Račun' = bill/check. Add 'molim' to keep it polite."
+        },
+        {
+          "id": "id-like-water",
+          "sr_latin": "Čašu vode, molim.",
+          "sr_cyrillic": "Чашу воде, молим.",
+          "en": "A glass of water, please.",
+          "label": "a glass of water",
+          "transform": "object-swap",
+          "note": "'Čašu' (acc) + 'vode' (gen) = a glass of water — the genitive marks the quantity."
+        }
+      ]
     }
   ]
 }

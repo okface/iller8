@@ -195,12 +195,31 @@ export function generateWordProduce(
 }
 
 /**
- * A full word-drill session — mixes recognize and produce per bucket.
+ * Build a word listening exercise (hear → pick English). Same option
+ * pool as recognize; the component hides the Serbian text and plays the
+ * clip. Audio is hashed by the Latin lemma (via wordAsPhrase.sr_latin).
+ */
+export function generateWordListen(word: Word, allWords: Word[]): Exercise {
+  const distractors = getWordDistractors(word, allWords, 3).map((w) => w.gloss_en);
+  const options = shuffle([word.gloss_en, ...distractors]);
+  return {
+    type: 'listen-choice',
+    phrase: wordAsPhrase(word),
+    direction: 'sr-to-en',
+    prompt: word.gloss_en,
+    correctAnswer: word.gloss_en,
+    options,
+    context: posLabel(word),
+  };
+}
+
+/**
+ * A full word-drill session — mixes recognize, produce, and (once met)
+ * listening per bucket.
  *
  * For beginners (audit §3.4): production wins fast.
- *   bucket 0: 50/50 — recognize first to build confidence, but produce immediately
- *   bucket 1: 30 recognize / 70 produce
- *   bucket 2+: 20 recognize / 80 produce
+ *   bucket 0: 50/50 recognize/produce (no listening until met)
+ *   bucket 1+: ~20% listen, rest weighted toward produce
  */
 export function generateWordSession(
   words: Word[],
@@ -211,8 +230,12 @@ export function generateWordSession(
 ): Exercise[] {
   const picks = pickWordsForSession(words, getBucket, count);
   return picks.map(({ word, bucket }) => {
-    const recognizeWeight =
-      bucket === 0 ? 0.5 : bucket === 1 ? 0.3 : 0.2;
+    // Once a word has been met (bucket ≥ 1), ~20% of the time train the
+    // ear with a listening exercise.
+    if (bucket >= 1 && Math.random() < 0.2) {
+      return generateWordListen(word, allWords);
+    }
+    const recognizeWeight = bucket === 0 ? 0.5 : bucket === 1 ? 0.3 : 0.2;
     const useRecognize = Math.random() < recognizeWeight;
     return useRecognize
       ? generateWordRecognize(word, allWords, script)

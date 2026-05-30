@@ -56,11 +56,10 @@ export default function ListenChoice({ exercise, onAnswer, script = 'latin' }: L
       <div>
         <div style={metaLabel}>LISTEN · WHAT DID YOU HEAR?</div>
 
-        {/* Big tap-to-replay surface. No Serbian text shown pre-answer. */}
-        <button
-          onClick={(e) => e.currentTarget.blur()}
-          aria-hidden
-          tabIndex={-1}
+        {/* Big tap-to-replay surface. No Serbian text shown pre-answer.
+            A div (not a button) so the inner AudioButton isn't a nested
+            button — invalid HTML and a click-target conflict. */}
+        <div
           style={{
             display: 'flex',
             alignItems: 'center',
@@ -68,18 +67,17 @@ export default function ListenChoice({ exercise, onAnswer, script = 'latin' }: L
             gap: 12,
             width: '100%',
             marginTop: 12,
-            padding: '28px 16px',
+            padding: '24px 16px',
             borderRadius: T.r3,
             background: T.surfaceWarm,
             border: `1px solid ${T.borderWarm}`,
-            cursor: 'default',
           }}
         >
           <span style={{ color: T.amber, display: 'flex', alignItems: 'center' }}>
             <IconAudio size={28} />
           </span>
-          <AudioButton text={exercise.phrase.sr_latin} size={26} ariaLabel="Replay audio" />
-        </button>
+          <AudioButton text={exercise.phrase.sr_latin} size={28} ariaLabel="Replay audio" />
+        </div>
         <div
           style={{
             ...metaLabel,

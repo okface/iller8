@@ -130,8 +130,8 @@ export default function Daily({ progress, setProgress, script }: DailyProps) {
                 fontSize: 11,
               }}
             >
-              Pool is light today — the session will fill with random ready
-              phrases.
+              Pool is light today — the session will fill with the most common
+              words and ready phrases you haven't seen yet.
             </div>
           )}
           {summary.total === 0 && (

@@ -5,7 +5,7 @@ import { families } from '../data/phrase-families';
 import { getDueItems } from './srs';
 import { isPhraseReady } from './word-readiness';
 import { generateExercise } from './exercise-generator';
-import { generateWordRecognize, generateWordProduce } from './word-generator';
+import { generateWordRecognize, generateWordProduce, generateWordListen } from './word-generator';
 import { generatePerspectiveShiftExercise } from './family-generator';
 
 /**
@@ -87,11 +87,11 @@ function exerciseForKey(
     const wordId = key.slice(WORD_PREFIX.length);
     const word = wordIndex.get(wordId);
     if (!word) return null;
-    // Production wins early (audit §3.4). New words get recognition first,
-    // then production from bucket 1 up.
-    return bucket === 0
-      ? generateWordRecognize(word, allWords, script)
-      : generateWordProduce(word, allWords, script);
+    // New words get recognition first. Once met (bucket ≥ 1): ~20%
+    // listening (train the ear), otherwise production wins (audit §3.4).
+    if (bucket === 0) return generateWordRecognize(word, allWords, script);
+    if (Math.random() < 0.2) return generateWordListen(word, allWords);
+    return generateWordProduce(word, allWords, script);
   }
 
   if (key.startsWith(FAMILY_PREFIX)) {

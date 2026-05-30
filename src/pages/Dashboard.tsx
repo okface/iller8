@@ -78,13 +78,16 @@ export default function Dashboard({ progress, script }: DashboardProps) {
     return { total, learned };
   }, [nextLesson, progress.phrases]);
 
+  // Mirror the Daily page's session length (clamp(dailyGoal, 5, 25)) so the
+  // advertised mix on this card matches the session the learner actually gets.
+  const dailySessionSize = Math.min(25, Math.max(5, progress.settings.dailyGoal || 15));
   const dailySummary = useMemo(
     () =>
       getDailySummary(
         { progress, script, skipTyping: progress.settings.skipTyping },
-        15
+        dailySessionSize
       ),
-    [progress, script]
+    [progress, script, dailySessionSize]
   );
   // nextLesson and nextLessonStats remain available for future "continue
   // the specific lesson you were on" surfaces. The Continue card itself
@@ -314,7 +317,7 @@ export default function Dashboard({ progress, script }: DashboardProps) {
           </div>
           <div style={{ marginTop: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
             <span style={{ fontFamily: T.mono, fontSize: 11, color: T.amber }}>
-              ~15 items
+              ~{dailySessionSize} items
             </span>
             <span style={{ color: T.amber, display: 'flex' }}>
               <IconChev size={18} />

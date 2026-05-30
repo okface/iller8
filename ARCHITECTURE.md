@@ -44,7 +44,7 @@ PhraseProgress   { phraseId, bucket, lastReviewed, correctCount, incorrectCount,
 UserProgress     { phrases, completedLessons, dailyStats, achievements, currentStreak, longestStreak, lastActiveDate, settings }
 UserSettings     { scriptPreference, dailyGoal, darkMode, apiKey, skipTyping, autoplayAudio, voiceGender }
 Exercise         { type, phrase, direction, options?, correctAnswer, prompt, ...type-specific fields }
-ExerciseType     'multiple-choice' | 'type-translation' | ... 13 types (see types.ts)
+ExerciseType     'multiple-choice' | 'type-translation' | 'listen-choice' | ... 14 types (see types.ts)
 ```
 
 Convention: `gloss_hint` is the post-answer disambiguator. Parentheticals like `(lit. ...)`, `(to a woman)`, `(formal)` must NOT appear in `en` / `gloss_en` — they belong in `gloss_hint`. Enforced visually by the `<GlossHint>` primitive.
@@ -102,11 +102,13 @@ Exercise components under `src/components/exercises/` — one file per `Exercise
 
 The dashboard's hero "Continue" tile points at `/daily`. The Daily Session is the unified primary path; other surfaces (Words, Hammer, Perspective, Catalog, Review) are specialized explorers.
 
-The Daily Session picks ~15 items mixing:
+The Daily Session length honors the learner's `dailyGoal` (clamped 5–25, was hardcoded 15). It picks items targeting:
 
 - **40% review** — SRS-due items across all three layers (words, phrases, family variants)
 - **40% new** — first-encounter words (ranked by frequency) + ready phrases (readiness gate passes)
 - **20% practice** — recently-met items (bucket 1–2) with low correct/total ratio
+
+Allocation is **greedy with carry-over**: when a stream is thin (e.g. no reviews due in week 1) its slots flow to the others (new → review → consolidation → back to new), so the session always reaches the target count with real SRS picks and the advertised mix on the landing screen is honest. Last-resort filler is frequency-ordered unseen words then ready phrases — never unweighted random.
 
 Dispatch by SRS key prefix:
 
@@ -116,8 +118,10 @@ Dispatch by SRS key prefix:
 
 Items are interleaved (not blocked) — variability of practice beats blocked drilling for retention.
 
-Engine: `src/engine/daily-session.ts` (`generateDailySession`, `previewDailySession`, `getDailySummary`).
-Page: `src/pages/Daily.tsx` (~80 lines thanks to `useDrillSession` + `<ExerciseRenderer>`).
+The session also **awards achievements** (via `checkAchievements`, applied every answer on fresh state) and **retries missed items** ~4 ahead (max 2×), both wired through `useDrillSession` so every drill path — not just the legacy lesson view — rewards and re-surfaces.
+
+Engine: `src/engine/daily-session.ts` (`generateDailySession`, `previewDailySession`, `getDailySummary`, `buildRetryExercise`).
+Page: `src/pages/Daily.tsx` (built on `useDrillSession` + `<ExerciseRenderer>`).
 
 ## 7. Roadmap
 
@@ -133,12 +137,16 @@ Ordered. Each phase ships independently.
 | 6 | Orchestration extraction (`MCOptionList`, `useDrillSession`, `ExerciseRenderer`) | done |
 | 7 | Daily Session (unified primary path) at `/daily` | done |
 | 8 | Audio pipeline — 914 clips × 2 voices (Azure `sr-RS-SophieNeural` default + `sr-RS-NicholasNeural`), Cyrillic-input generation, content-addressed by FNV-1a hash of Latin form, global autoplay + per-voice toggle wired across 13 exercise surfaces | done |
-| 9 | Migrate `Hammer`/`WordDrill`/`FamilyDrill`/`LessonView`/`ReviewSession` to `useDrillSession` | next |
-| 10 | Day-1 dashboard variant (gate secondary tiles on `totalLearned === 0`) | next |
-| 11 | Lexicon extension (~10 high-frequency words flagged in backfill) | in progress (subagent) |
-| 12 | Option-leak cleanup tier (lowercase tiles, Comprehension rewrite, PatternMatch format) | later |
-| 13 | LLM chat-tutor surface (Mira) | later |
-| 14 | Grammar topics + first-30-days curriculum (per pedagogy audit §3.7) | later |
+| 9 | Listening comprehension (`listen-choice`: hear Serbian, pick meaning) — activates the audio library | done |
+| 10 | SRS new-item fix (fail no longer promotes bucket 0) + production-first phrase direction curve | done |
+| 11 | Loop wiring: achievements + within-session retry on every path; greedy daily mix; session size = dailyGoal | done |
+| 12 | Day-1 dashboard gate + "You can say" mastered-phrase card + streak-at-risk banner | done |
+| 13 | Survival-vocab pack (~90 words) + grammar backfill (past participles, `biti` neg/future) | in progress (subagent) |
+| 14 | New phrase families (where-is, i-need, how-much, can-i, introductions, i-dont-understand, id-like) | in progress (subagent) |
+| 15 | Migrate `Hammer`/`WordDrill`/`FamilyDrill`/`LessonView`/`ReviewSession` to `useDrillSession` | next |
+| 16 | More listening types (`listen-pick-text`, dictation) + Foundations on-ramp re-sequencing | later |
+| 17 | Option-leak cleanup tier (lowercase tiles, Comprehension rewrite, PatternMatch format) | later |
+| 18 | LLM chat-tutor surface (Mira) | later |
 
 ## 8. Decision log
 
@@ -154,7 +162,12 @@ Choices that should NOT drift without explicit revisiting:
 - **Words and phrases are one progression.** Words and phrases share the SRS map and (target state) the same Daily Session. Surfaces that drill one without the other (the Words tab, the lessons list) are secondary explorers, not the main loop.
 - **JSON-first content.** All learning content lives in `src/data/` as JSON. Components must not hard-code Serbian.
 - **Push to main, always.** GH Pages auto-deploys from main. Feature branches are not used.
-- **Audio: hash the Latin form, send the Cyrillic.** The MP3 file ID is the FNV-1a hash of the Latin source string (stable regardless of voice/script generated). The TTS call sends the Cyrillic form — A/B-tested: `sr-RS-SophieNeural` / `sr-RS-NicholasNeural` produce a native accent with Cyrillic input and an American accent with Latin input. Clips live at `public/audio/<voice>/<hash>.mp3`. Default voice is Sophie (female).
+- **Audio: hash the Latin form, send the Cyrillic.** The MP3 file ID is the FNV-1a hash of the Latin source string (stable regardless of voice/script generated). The TTS call sends the Cyrillic form — A/B-tested: `sr-RS-SophieNeural` / `sr-RS-NicholasNeural` produce a native accent with Cyrillic input and an American accent with Latin input. Clips live at `public/audio/<voice>/<hash>.mp3`. Default voice is Sophie (female). **Every audio call (`AudioButton`, `AutoplayAudio`) must pass the LATIN form** — passing `correctAnswer`/dialogue text (which can be Cyrillic in Cyrillic mode) 404s the clip.
+- **Failing a NEW item must not promote it.** `recordAnswer` floors a wrong answer at bucket 0, not 1. A first-sight miss stays "new"; only correctly-promoted items enter the review pool (`getDueItems` filters bucket ≥ 1).
+- **Rewards & retry live in `useDrillSession`, not per-page.** Achievement awards (`checkAchievements`) and within-session retry (`buildRetry`) run in the shared hook so every drill path earns/retries identically. Don't re-add per-page award blocks.
+- **Toggling script mid-session must not regenerate the exercise list.** `script` is excluded from the regeneration deps on every drill surface — it's a display concern (DualScript shows both); regenerating reshuffles and "skips" the current item.
+- **Day-1 is gated.** When `totalLearned === 0`, the Dashboard shows one action (Start → `/daily`), never the full expert surface. Choice paralysis on first run is forbidden (§9).
+- **Listening uses hidden text.** `listen-choice` plays the clip and hides the Serbian until after the answer — the point is sound→meaning, not reading. Gated to bucket ≥ 1 (you hear a word only once you've met it).
 
 ## 9. Don't-do list
 
