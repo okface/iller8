@@ -112,8 +112,9 @@ Allocation is **greedy with carry-over**: when a stream is thin (e.g. no reviews
 
 Dispatch by SRS key prefix:
 
-- `word:<id>` → `WordRecognize` (bucket 0) or `WordProduce` (bucket ≥ 1)
+- `word:<id>` → `WordRecognize` (bucket 0) / `WordProduce` (bucket ≥ 1) / ~20% `ListenChoice` once met
 - `family:<famId>:<varId>` → `PerspectiveShift` (MC when bucket < 3, type-it after)
+- `conj:<verbId>:<personTag>` → `Conjugate` (MC when bucket < 2, type-it after) — gated by lemma readiness (word:<verbId> bucket ≥ 1)
 - `<phraseId>` → standard phrase exercise picked by bucket via `generateExercise`
 
 Items are interleaved (not blocked) — variability of practice beats blocked drilling for retention.
@@ -143,10 +144,12 @@ Ordered. Each phase ships independently.
 | 12 | Day-1 dashboard gate + "You can say" mastered-phrase card + streak-at-risk banner | done |
 | 13 | Survival-vocab pack (~90 words) + grammar backfill (past participles, `biti` neg/future) | in progress (subagent) |
 | 14 | New phrase families (where-is, i-need, how-much, can-i, introductions, i-dont-understand, id-like) | in progress (subagent) |
-| 15 | Migrate `Hammer`/`WordDrill`/`FamilyDrill`/`LessonView`/`ReviewSession` to `useDrillSession` | next |
-| 16 | More listening types (`listen-pick-text`, dictation) + Foundations on-ramp re-sequencing | later |
-| 17 | Option-leak cleanup tier (lowercase tiles, Comprehension rewrite, PatternMatch format) | later |
-| 18 | LLM chat-tutor surface (Mira) | later |
+| 15 | Word-level listening + abbreviation TTS override (`audio_cyrillic`) | done |
+| 16 | Conjugation drill (`conjugate`: verb × person, sibling-form distractors) + `like-svidja` family (sviđa mi se dative pattern) | done |
+| 17 | Migrate `Hammer`/`WordDrill`/`FamilyDrill`/`LessonView`/`ReviewSession` to `useDrillSession` | next |
+| 18 | More listening types (`listen-pick-text`, dictation) + Foundations on-ramp re-sequencing | later |
+| 19 | Option-leak cleanup tier (lowercase tiles, Comprehension rewrite, PatternMatch format) | later |
+| 20 | LLM chat-tutor surface (Mira) | later |
 
 ## 8. Decision log
 
@@ -168,6 +171,8 @@ Choices that should NOT drift without explicit revisiting:
 - **Toggling script mid-session must not regenerate the exercise list.** `script` is excluded from the regeneration deps on every drill surface — it's a display concern (DualScript shows both); regenerating reshuffles and "skips" the current item.
 - **Day-1 is gated.** When `totalLearned === 0`, the Dashboard shows one action (Start → `/daily`), never the full expert surface. Choice paralysis on first run is forbidden (§9).
 - **Listening uses hidden text.** `listen-choice` plays the clip and hides the Serbian until after the answer — the point is sound→meaning, not reading. Gated to bucket ≥ 1 (you hear a word only once you've met it).
+- **Conjugation distractors are sibling forms, not other verbs.** `conjugate` (key `conj:<verbId>:<personTag>`) drives off the `forms` in words.json; MC options are the other persons of the SAME verb (jedem/jedeš/jede/jedu) so the learner discriminates the ending. Gated by lemma readiness. The complementary `sviđa mi se` "I like" pattern ships as a phrase-family (the verb stays put, the dative clitic shifts) — pointedly the opposite of conjugation, which is the teaching contrast.
+- **`audio_cyrillic` overrides TTS only.** When a displayed string is an abbreviation the voice mangles (PR, nmvz), set `audio_cyrillic` to the spoken expansion; the clip is still keyed by the Latin hash, so only the recording changes, not what the learner sees.
 
 ## 9. Don't-do list
 

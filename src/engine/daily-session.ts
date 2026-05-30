@@ -7,6 +7,11 @@ import { isPhraseReady } from './word-readiness';
 import { generateExercise } from './exercise-generator';
 import { generateWordRecognize, generateWordProduce, generateWordListen } from './word-generator';
 import { generatePerspectiveShiftExercise } from './family-generator';
+import {
+  generateConjugateFromKey,
+  conjugationCellsForProgress,
+  CONJ_PREFIX,
+} from './conjugation-generator';
 
 /**
  * The unified daily session. Replaces "pick which mode" with "tap
@@ -83,6 +88,10 @@ function exerciseForKey(
 ): Exercise | null {
   const { script } = input;
 
+  if (key.startsWith(CONJ_PREFIX)) {
+    return generateConjugateFromKey(key, bucket, script);
+  }
+
   if (key.startsWith(WORD_PREFIX)) {
     const wordId = key.slice(WORD_PREFIX.length);
     const word = wordIndex.get(wordId);
@@ -152,16 +161,40 @@ function pickNewItems(input: SessionInput, count: number): string[] {
     )
     .map((p) => p.id);
 
-  // Interleave word, phrase, word, phrase…
+  // New conjugation cells: lemma met (gated inside), cell itself unseen.
+  // Kept in teaching order (jedem before jedeš), so don't shuffle.
+  const newConjIds = conjugationCellsForProgress(
+    (wid) => progress.phrases[`word:${wid}`]?.bucket ?? 0
+  ).filter((k) => (progress.phrases[k]?.bucket ?? 0) === 0);
+
+  // Interleave word, phrase, word, phrase… with ~15% conjugation woven in
+  // (only once the learner has met some verbs — early on this is empty).
   const picked: string[] = [];
-  const wordSlots = shuffle(newWordIds).slice(0, Math.ceil(count * 0.6));
-  const phraseSlots = shuffle(newPhraseIds).slice(0, Math.ceil(count * 0.4));
-  const ws = [...wordSlots];
-  const ps = [...phraseSlots];
-  while (picked.length < count && (ws.length || ps.length)) {
-    if (ws.length) picked.push(ws.shift()!);
-    if (picked.length >= count) break;
-    if (ps.length) picked.push(ps.shift()!);
+  const ws = shuffle(newWordIds).slice(0, Math.ceil(count * 0.6));
+  const ps = shuffle(newPhraseIds).slice(0, Math.ceil(count * 0.4));
+  const cs = newConjIds.slice(0, Math.max(1, Math.ceil(count * 0.15)));
+  let sinceConj = 0;
+  while (picked.length < count && (ws.length || ps.length || cs.length)) {
+    // Drop a conjugation cell roughly every ~6 picks so it's a seasoning,
+    // not the main course.
+    if (cs.length && sinceConj >= 5) {
+      picked.push(cs.shift()!);
+      sinceConj = 0;
+      if (picked.length >= count) break;
+    }
+    if (ws.length) {
+      picked.push(ws.shift()!);
+      sinceConj++;
+      if (picked.length >= count) break;
+    }
+    if (ps.length) {
+      picked.push(ps.shift()!);
+      sinceConj++;
+    }
+    if (!ws.length && !ps.length && cs.length) {
+      // Only conjugation left — flush it.
+      picked.push(cs.shift()!);
+    }
   }
   return picked.slice(0, count);
 }

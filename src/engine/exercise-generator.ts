@@ -588,6 +588,7 @@ const exerciseDifficultyTier: Record<ExerciseType, number> = {
   'word-recognize': 0,
   'word-produce': 1,
   'listen-choice': 1,
+  'conjugate': 1,
 };
 
 function getDirectionForBucket(bucket: number): 'sr-to-en' | 'en-to-sr' {

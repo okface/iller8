@@ -137,7 +137,8 @@ export type ExerciseType =
   | 'perspective-shift'
   | 'word-recognize'   // see a single Serbian word, pick the English gloss
   | 'word-produce'     // see an English gloss, pick the Serbian word
-  | 'listen-choice';   // HEAR Serbian (no text), pick the English meaning
+  | 'listen-choice'    // HEAR Serbian (no text), pick the English meaning
+  | 'conjugate';       // produce a verb's form for a given person (I eat / she eats)
 
 export interface Exercise {
   type: ExerciseType;
