@@ -120,7 +120,9 @@ async function collectStrings() {
     const lesson = JSON.parse(await readFile(join(lessonsDir, file), 'utf8'));
     for (const group of lesson.phraseGroups ?? []) {
       for (const phrase of group.phrases ?? []) {
-        add(phrase.sr_latin, phrase.sr_cyrillic);
+        // audio_cyrillic overrides what the voice speaks (abbreviations
+        // read literally are garbled) — file is still keyed by sr_latin.
+        add(phrase.sr_latin, phrase.audio_cyrillic ?? phrase.sr_cyrillic);
         for (const v of phrase.variations ?? []) add(v.sr_latin, v.sr_cyrillic);
       }
     }

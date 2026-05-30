@@ -36,6 +36,12 @@ export interface Phrase {
   sr_latin: string;
   sr_cyrillic: string;
   en: string;
+  /** TTS-only override (Cyrillic). When set, the audio generator speaks
+   *  THIS instead of `sr_cyrillic`, while the clip is still keyed by the
+   *  displayed `sr_latin`. For abbreviations the voice mangles when read
+   *  literally — e.g. "nmvz" → spoken "nema veze", "PR" → spoken "pe er".
+   *  The learner still SEES the abbreviation; they just HEAR it expanded. */
+  audio_cyrillic?: string;
   /** Optional disambiguating hint hidden until the answer is revealed.
    *  Carries the kind of context that used to live in `(lit. ...)` or
    *  `(to a woman)` parentheticals appended to `en`. Keep `en` clean. */

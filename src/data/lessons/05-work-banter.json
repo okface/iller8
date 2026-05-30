@@ -23,10 +23,20 @@
           "en": "I've got a bug and I can't figure out where it's coming from.",
           "context": "Classic dev frustration. 'Skontam' is slang for 'figure out'.",
           "wordRefs": [
-            { "id": "imati", "surface": "Imam", "surface_cyrillic": "Имам", "form": "1sg.pres" },
+            {
+              "id": "imati",
+              "surface": "Imam",
+              "surface_cyrillic": "Имам",
+              "form": "1sg.pres"
+            },
             "i",
             "ne",
-            { "id": "moci", "surface": "mogu", "surface_cyrillic": "могу", "form": "1sg.pres" },
+            {
+              "id": "moci",
+              "surface": "mogu",
+              "surface_cyrillic": "могу",
+              "form": "1sg.pres"
+            },
             "da-conj"
           ],
           "notes": "'Bag' is the Serbianized spelling of 'bug'. Tech loanwords are everywhere."
@@ -38,9 +48,19 @@
           "en": "It works on my machine.",
           "context": "The universal developer excuse, Serbian edition.",
           "wordRefs": [
-            { "id": "raditi", "surface": "Radi", "surface_cyrillic": "Ради", "form": "3sg.pres" },
+            {
+              "id": "raditi",
+              "surface": "Radi",
+              "surface_cyrillic": "Ради",
+              "form": "3sg.pres"
+            },
             "na",
-            { "id": "moj", "surface": "mom", "surface_cyrillic": "мом", "case": "loc" }
+            {
+              "id": "moj",
+              "surface": "mom",
+              "surface_cyrillic": "мом",
+              "case": "loc"
+            }
           ],
           "notes": "'Računar' = computer. This phrase transcends all languages."
         },
@@ -51,7 +71,12 @@
           "en": "Who wrote this?",
           "context": "Looking at terrible code and questioning humanity. Usually the answer is yourself, six months ago.",
           "wordRefs": [
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+            {
+              "id": "biti",
+              "surface": "je",
+              "surface_cyrillic": "је",
+              "form": "3sg.pres"
+            }
           ],
           "variations": [
             {
@@ -94,7 +119,12 @@
           "en": "Prod crashed on us.",
           "context": "Production is down. Panic mode activated.",
           "wordRefs": [
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+            {
+              "id": "biti",
+              "surface": "je",
+              "surface_cyrillic": "је",
+              "form": "3sg.pres"
+            }
           ],
           "notes": "'Pukao' literally means 'burst/exploded'. Very dramatic, very Serbian."
         },
@@ -105,7 +135,12 @@
           "en": "We need to roll back.",
           "context": "When the deploy goes wrong and you need to revert.",
           "wordRefs": [
-            { "id": "morati", "surface": "Moramo", "surface_cyrillic": "Морамо", "form": "1pl.pres" },
+            {
+              "id": "morati",
+              "surface": "Moramo",
+              "surface_cyrillic": "Морамо",
+              "form": "1pl.pres"
+            },
             "da-conj"
           ],
           "notes": "Serbian devs freely verb-ify English tech terms by adding Serbian verb endings."
@@ -123,9 +158,18 @@
           "en": "Let's grab a coffee.",
           "context": "The most important phrase in any Serbian workplace. Coffee breaks are sacred.",
           "wordRefs": [
-            { "id": "hajde", "surface": "Ajde", "surface_cyrillic": "Ајде" },
+            {
+              "id": "hajde",
+              "surface": "Ajde",
+              "surface_cyrillic": "Ајде"
+            },
             "na",
-            { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" }
+            {
+              "id": "kafa",
+              "surface": "kafu",
+              "surface_cyrillic": "кафу",
+              "case": "acc"
+            }
           ],
           "notes": "'Ajde' is the casual/shortened form of 'hajde'."
         },
@@ -147,7 +191,12 @@
           "context": "A statement of fact, not a complaint. Universal among Serbian devs.",
           "wordRefs": [
             "ne",
-            { "id": "moci", "surface": "mogu", "surface_cyrillic": "могу", "form": "1sg.pres" },
+            {
+              "id": "moci",
+              "surface": "mogu",
+              "surface_cyrillic": "могу",
+              "form": "1sg.pres"
+            },
             "da-conj"
           ]
         }
@@ -165,7 +214,12 @@
           "context": "Classic standup question.",
           "wordRefs": [
             "sta",
-            { "id": "raditi", "surface": "radiš", "surface_cyrillic": "радиш", "form": "2sg.pres" }
+            {
+              "id": "raditi",
+              "surface": "radiš",
+              "surface_cyrillic": "радиш",
+              "form": "2sg.pres"
+            }
           ]
         },
         {
@@ -175,7 +229,12 @@
           "en": "I'm working on that ticket from yesterday.",
           "context": "Standard standup update. 'Tiket' = ticket (Jira, etc.).",
           "wordRefs": [
-            { "id": "raditi", "surface": "Radim", "surface_cyrillic": "Радим", "form": "1sg.pres" },
+            {
+              "id": "raditi",
+              "surface": "Radim",
+              "surface_cyrillic": "Радим",
+              "form": "1sg.pres"
+            },
             "na",
             "od",
             "juce"
@@ -188,8 +247,18 @@
           "en": "I'm blocked, waiting for a review.",
           "context": "When you can't proceed without someone else's input.",
           "wordRefs": [
-            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
-            { "id": "cekati", "surface": "čekam", "surface_cyrillic": "чекам", "form": "1sg.pres" }
+            {
+              "id": "biti",
+              "surface": "sam",
+              "surface_cyrillic": "сам",
+              "form": "1sg.pres"
+            },
+            {
+              "id": "cekati",
+              "surface": "čekam",
+              "surface_cyrillic": "чекам",
+              "form": "1sg.pres"
+            }
           ]
         },
         {
@@ -200,10 +269,24 @@
           "context": "The universal developer complaint about too many meetings.",
           "wordRefs": [
             "pa",
-            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" },
-            { "id": "hteti", "surface": "ću", "surface_cyrillic": "ћу", "form": "1sg.fut.clitic" },
+            {
+              "id": "kada",
+              "surface": "kad",
+              "surface_cyrillic": "кад"
+            },
+            {
+              "id": "hteti",
+              "surface": "ću",
+              "surface_cyrillic": "ћу",
+              "form": "1sg.fut.clitic"
+            },
             "da-conj",
-            { "id": "raditi", "surface": "radim", "surface_cyrillic": "радим", "form": "1sg.pres" }
+            {
+              "id": "raditi",
+              "surface": "radim",
+              "surface_cyrillic": "радим",
+              "form": "1sg.pres"
+            }
           ],
           "notes": "'Pa' is a filler word like 'well' or 'so', used for emphasis here."
         }
@@ -220,7 +303,12 @@
           "en": "Does this work for you?",
           "context": "Asking a colleague to verify something works on their end.",
           "wordRefs": [
-            { "id": "raditi", "surface": "Radi", "surface_cyrillic": "Ради", "form": "3sg.pres" },
+            {
+              "id": "raditi",
+              "surface": "Radi",
+              "surface_cyrillic": "Ради",
+              "form": "3sg.pres"
+            },
             "ti-dat"
           ]
         },
@@ -231,9 +319,18 @@
           "en": "Try now, it should work.",
           "context": "After you've pushed a fix and you're hoping for the best.",
           "wordRefs": [
-            { "id": "sada", "surface": "sad", "surface_cyrillic": "сад" },
+            {
+              "id": "sada",
+              "surface": "sad",
+              "surface_cyrillic": "сад"
+            },
             "da-conj",
-            { "id": "raditi", "surface": "radi", "surface_cyrillic": "ради", "form": "3sg.pres" }
+            {
+              "id": "raditi",
+              "surface": "radi",
+              "surface_cyrillic": "ради",
+              "form": "3sg.pres"
+            }
           ],
           "notes": "'Trebalo bi' = 'it should' — beautifully noncommittal."
         },
@@ -245,7 +342,12 @@
           "context": "When the fix didn't fix it.",
           "wordRefs": [
             "ne",
-            { "id": "raditi", "surface": "radi", "surface_cyrillic": "ради", "form": "3sg.pres" }
+            {
+              "id": "raditi",
+              "surface": "radi",
+              "surface_cyrillic": "ради",
+              "form": "3sg.pres"
+            }
           ],
           "variations": [
             {
@@ -269,7 +371,12 @@
           "context": "Every weekday except Friday.",
           "wordRefs": [
             "jedva",
-            { "id": "cekati", "surface": "čekam", "surface_cyrillic": "чекам", "form": "1sg.pres" }
+            {
+              "id": "cekati",
+              "surface": "čekam",
+              "surface_cyrillic": "чекам",
+              "form": "1sg.pres"
+            }
           ],
           "notes": "'Jedva čekam' literally means 'I barely wait' — used for 'I can't wait'."
         },
@@ -280,7 +387,12 @@
           "en": "It's Friday, bro!",
           "context": "The Friday celebration announcement.",
           "wordRefs": [
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+            {
+              "id": "biti",
+              "surface": "je",
+              "surface_cyrillic": "је",
+              "form": "3sg.pres"
+            }
           ]
         },
         {
@@ -291,7 +403,12 @@
           "context": "The Monday dread that transcends all cultures.",
           "wordRefs": [
             "kako",
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            {
+              "id": "biti",
+              "surface": "je",
+              "surface_cyrillic": "је",
+              "form": "3sg.pres"
+            },
             "vec"
           ]
         },
@@ -302,7 +419,12 @@
           "en": "The weekend is always too short.",
           "context": "Monday morning wisdom.",
           "wordRefs": [
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            {
+              "id": "biti",
+              "surface": "je",
+              "surface_cyrillic": "је",
+              "form": "3sg.pres"
+            },
             "uvek"
           ]
         }
@@ -319,7 +441,12 @@
           "en": "Shall we go for lunch?",
           "context": "Suggesting a lunch break with colleagues.",
           "wordRefs": [
-            { "id": "ici", "surface": "Idemo", "surface_cyrillic": "Идемо", "form": "1pl.pres" },
+            {
+              "id": "ici",
+              "surface": "Idemo",
+              "surface_cyrillic": "Идемо",
+              "form": "1pl.pres"
+            },
             "na"
           ]
         },
@@ -340,9 +467,19 @@
           "en": "I brought food from home.",
           "context": "When you packed lunch. Use 'Donela sam' if female.",
           "wordRefs": [
-            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            {
+              "id": "biti",
+              "surface": "sam",
+              "surface_cyrillic": "сам",
+              "form": "1sg.pres"
+            },
             "od",
-            { "id": "kuca", "surface": "kuće", "surface_cyrillic": "куће", "case": "gen" }
+            {
+              "id": "kuca",
+              "surface": "kuće",
+              "surface_cyrillic": "куће",
+              "case": "gen"
+            }
           ],
           "variations": [
             {
@@ -384,10 +521,20 @@
           "en": "Who changed the schema without telling me?",
           "context": "Backend dev rage when someone modifies the database schema.",
           "wordRefs": [
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            {
+              "id": "biti",
+              "surface": "je",
+              "surface_cyrillic": "је",
+              "form": "3sg.pres"
+            },
             "da-conj",
             "mi-dat",
-            { "id": "reci", "surface": "kaže", "surface_cyrillic": "каже", "form": "3sg.pres" }
+            {
+              "id": "reci",
+              "surface": "kaže",
+              "surface_cyrillic": "каже",
+              "form": "3sg.pres"
+            }
           ]
         },
         {
@@ -397,7 +544,12 @@
           "en": "Did you finish the PIM integration?",
           "context": "Asking about product information management system integration.",
           "wordRefs": [
-            { "id": "biti", "surface": "Jesi", "surface_cyrillic": "Јеси", "form": "2sg.pres" },
+            {
+              "id": "biti",
+              "surface": "Jesi",
+              "surface_cyrillic": "Јеси",
+              "form": "2sg.pres"
+            },
             "sa"
           ],
           "notes": "'Sa PIM-om' — Serbian adds case endings even to acronyms."
@@ -415,7 +567,12 @@
           "en": "I'm done for today.",
           "context": "Signing off at the end of the work day. Use 'Gotova sam' if female.",
           "wordRefs": [
-            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            {
+              "id": "biti",
+              "surface": "sam",
+              "surface_cyrillic": "сам",
+              "form": "1sg.pres"
+            },
             "za"
           ]
         },
@@ -427,8 +584,14 @@
           "context": "Last thing before leaving — submit that pull request.",
           "wordRefs": [
             "pa",
-            { "id": "ici", "surface": "idem", "surface_cyrillic": "идем", "form": "1sg.pres" }
-          ]
+            {
+              "id": "ici",
+              "surface": "idem",
+              "surface_cyrillic": "идем",
+              "form": "1sg.pres"
+            }
+          ],
+          "audio_cyrillic": "Пуштам пе ер па идем."
         },
         {
           "id": "vidimo-se-sutra",
@@ -437,7 +600,12 @@
           "en": "See you tomorrow. If prod survives.",
           "context": "A darkly humorous goodbye after a sketchy deploy.",
           "wordRefs": [
-            { "id": "videti", "surface": "Vidimo", "surface_cyrillic": "Видимо", "form": "1pl.pres" },
+            {
+              "id": "videti",
+              "surface": "Vidimo",
+              "surface_cyrillic": "Видимо",
+              "form": "1pl.pres"
+            },
             "se",
             "sutra",
             "ako"
@@ -475,7 +643,12 @@
           "en": "Can you help me with something?",
           "context": "Asking a colleague for help.",
           "wordRefs": [
-            { "id": "moci", "surface": "Možeš", "surface_cyrillic": "Можеш", "form": "2sg.pres" },
+            {
+              "id": "moci",
+              "surface": "Možeš",
+              "surface_cyrillic": "Можеш",
+              "form": "2sg.pres"
+            },
             "da-conj",
             "mi-dat",
             "sa"
