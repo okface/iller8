@@ -44,7 +44,8 @@ export default function FamilyDrill({ progress, setProgress, script }: FamilyDri
     if (phase !== 'drill') return;
     const generated = generateFamilyDrillSession(progress.phrases, script, 10, lessonId);
     setExercises(generated);
-  }, [phase, script, lessonId]); // eslint-disable-line react-hooks/exhaustive-deps
+    // `script` intentionally excluded — prevents mid-session reshuffle/skip.
+  }, [phase, lessonId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const startDrill = () => {
     setPhase('drill');

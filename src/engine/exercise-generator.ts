@@ -462,8 +462,8 @@ function generatePatternMatch(
     correctAnswer,
     options: shuffle([correctAnswer, ...filteredDistractors]),
     context: phrase.context,
-    originalPhrase: { text: originalText, label: originalEn },
-    variantPhrase: { text: variantText, label: variantEn },
+    originalPhrase: { text: originalText, label: originalEn, textLatin: phrase.sr_latin },
+    variantPhrase: { text: variantText, label: variantEn, textLatin: variation.sr_latin },
     grammarNote,
   };
 }

@@ -78,7 +78,10 @@ export default function WordDrill({ progress, setProgress, script }: WordDrillPr
       12
     );
     setExercises(session);
-  }, [phase, script, posFilter]); // eslint-disable-line react-hooks/exhaustive-deps
+    // `script` intentionally excluded: toggling script mid-session must
+    // not regenerate (and thereby reshuffle / skip) the current item.
+    // The live script prop still updates DualScript prompt displays.
+  }, [phase, posFilter]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const startDrill = () => {
     setPhase('drill');

@@ -84,20 +84,9 @@ export default function MultipleChoice({ exercise, onAnswer, script }: MultipleC
             </div>
           )}
         </div>
-        {exercise.context && !result && (
-          <div
-            className="font-serif-sr"
-            style={{
-              fontStyle: 'italic',
-              fontSize: 13,
-              color: T.dim,
-              marginTop: 10,
-              lineHeight: 1.5,
-            }}
-          >
-            {exercise.context}
-          </div>
-        )}
+        {/* `context` is deliberately NOT shown pre-answer — it can leak the
+            answer (e.g. mentions a word that only the correct option uses).
+            Post-answer explanation lives in the WHY (notes) card below. */}
       </div>
 
       <MCOptionList
@@ -123,11 +112,36 @@ export default function MultipleChoice({ exercise, onAnswer, script }: MultipleC
               <AudioButton text={exercise.phrase.sr_latin} size={16} />
             )}
           </div>
+          {/* For en→sr, confirm what the correct Serbian means. */}
+          {optionsAreSerbian && (
+            <div style={{ fontSize: 13, color: T.dim, marginTop: 4 }}>
+              {exercise.phrase.en}
+            </div>
+          )}
           <GlossHint hint={exercise.phrase.gloss_hint} />
         </Card>
       )}
 
-      {result?.correct && exercise.phrase.gloss_hint && (
+      {/* Correct + en→sr: pair the Serbian answer with its meaning + audio. */}
+      {result?.correct && optionsAreSerbian && (
+        <Card pad={14}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <div
+              className="font-serif-sr"
+              style={{ fontSize: 17, color: T.green, fontWeight: 500, flex: 1 }}
+            >
+              {exercise.correctAnswer}
+            </div>
+            <AudioButton text={exercise.phrase.sr_latin} size={16} />
+          </div>
+          <div style={{ fontSize: 13, color: T.dim, marginTop: 4 }}>
+            {exercise.phrase.en}
+          </div>
+          <GlossHint hint={exercise.phrase.gloss_hint} />
+        </Card>
+      )}
+
+      {result?.correct && !optionsAreSerbian && exercise.phrase.gloss_hint && (
         <div style={{ textAlign: 'center' }}>
           <GlossHint hint={exercise.phrase.gloss_hint} />
         </div>

@@ -83,14 +83,7 @@ export default function TypeTranslation({ exercise, onAnswer, script = 'latin' }
             </div>
           )}
         </div>
-        {exercise.context && !result && (
-          <div
-            className="font-serif-sr"
-            style={{ fontStyle: 'italic', fontSize: 12, color: T.dim, marginTop: 10, lineHeight: 1.5 }}
-          >
-            {exercise.context}
-          </div>
-        )}
+        {/* `context` deliberately not shown pre-answer — can leak the answer. */}
       </div>
 
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>

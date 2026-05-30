@@ -6,6 +6,7 @@ import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
 import AutoplayAudio from '../ui/AutoplayAudio';
+import AudioButton from '../ui/AudioButton';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -84,23 +85,25 @@ export default function WordProduce({ exercise, onAnswer, script: _script = 'lat
         serifOptions
       />
 
-      {result && !result.correct && (
+      {result && (
         <Card pad={14}>
-          <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT</div>
-          <div
-            className="font-serif-sr"
-            style={{ fontSize: 18, color: T.green, fontWeight: 500 }}
-          >
-            {exercise.correctAnswer}
+          <div style={{ ...metaLabel, marginBottom: 6 }}>
+            {result.correct ? 'YOU SAID' : 'CORRECT'}
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <div
+              className="font-serif-sr"
+              style={{ fontSize: 18, color: T.green, fontWeight: 500, flex: 1 }}
+            >
+              {exercise.correctAnswer}
+            </div>
+            <AudioButton text={exercise.phrase.sr_latin} size={16} />
+          </div>
+          <div style={{ fontSize: 13, color: T.dim, marginTop: 4 }}>
+            {exercise.phrase.en}
           </div>
           <GlossHint hint={exercise.phrase.gloss_hint} />
         </Card>
-      )}
-
-      {result?.correct && exercise.phrase.gloss_hint && (
-        <div style={{ textAlign: 'center' }}>
-          <GlossHint hint={exercise.phrase.gloss_hint} />
-        </div>
       )}
 
       {result && exercise.phrase.notes && (

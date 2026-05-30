@@ -146,9 +146,11 @@ export interface Exercise {
   acceptedAnswers?: string[];
   dialogue?: string[];
   question?: string;
-  /** pattern-match specific fields */
-  originalPhrase?: { text: string; label: string };
-  variantPhrase?: { text: string; label: string };
+  /** pattern-match specific fields. `textLatin` carries the Latin form
+   *  for audio lookup (clips are hashed by the Latin string), since
+   *  `text` may be Cyrillic when the learner is in Cyrillic mode. */
+  originalPhrase?: { text: string; label: string; textLatin?: string };
+  variantPhrase?: { text: string; label: string; textLatin?: string };
   grammarNote?: string;
   /** perspective-shift specific fields */
   baseSr?: string;             // the script the learner is currently using

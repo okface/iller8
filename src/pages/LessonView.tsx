@@ -91,7 +91,9 @@ export default function LessonView({ progress, setProgress, script }: LessonView
       progress
     );
     setExercises(generated);
-  }, [lesson, script, phase]); // eslint-disable-line react-hooks/exhaustive-deps
+    // `script` intentionally excluded — see WordDrill: prevents the
+    // mid-session reshuffle/skip when the learner toggles script.
+  }, [lesson, phase]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleIntroComplete = useCallback(() => {
     if (!lesson) return;

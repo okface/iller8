@@ -58,7 +58,8 @@ export default function Hammer({ progress, setProgress, script }: HammerProps) {
       progress
     );
     setExercises(generated);
-  }, [phase, script, sessionSize, sessionSkipTyping]); // eslint-disable-line react-hooks/exhaustive-deps
+    // `script` intentionally excluded — prevents mid-session reshuffle/skip.
+  }, [phase, sessionSize, sessionSkipTyping]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const startDrill = (size: number, overrideSkipTyping?: boolean) => {
     setSessionSize(size);

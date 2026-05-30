@@ -55,8 +55,11 @@ export default function PerspectiveShift({ exercise, onAnswer, script = 'latin' 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 18 }}>
       <AutoplayAudio text={basePhrase} />
+      {/* Audio clips are hashed by the Latin form, so play the variant's
+          Latin (exercise.phrase.sr_latin) — exercise.correctAnswer is in
+          the learner's current script and would 404 in Cyrillic mode. */}
       <AutoplayAudio
-        text={result ? exercise.correctAnswer : undefined}
+        text={result ? exercise.phrase.sr_latin : undefined}
         delayMs={300}
       />
       <div>
@@ -242,11 +245,14 @@ export default function PerspectiveShift({ exercise, onAnswer, script = 'latin' 
             </div>
           )}
           <div style={{ ...metaLabel, marginBottom: 6 }}>CORRECT</div>
-          <div
-            className="font-serif-sr"
-            style={{ fontSize: 18, color: T.green, fontWeight: 500 }}
-          >
-            {exercise.correctAnswer}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <div
+              className="font-serif-sr"
+              style={{ fontSize: 18, color: T.green, fontWeight: 500, flex: 1 }}
+            >
+              {exercise.correctAnswer}
+            </div>
+            <AudioButton text={exercise.phrase.sr_latin} size={16} />
           </div>
           <GlossHint hint={exercise.phrase.gloss_hint} />
         </Card>

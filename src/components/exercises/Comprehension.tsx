@@ -15,22 +15,6 @@ interface ComprehensionProps {
   script?: 'latin' | 'cyrillic';
 }
 
-/**
- * Strip a `Speaker: "..."` prefix and surrounding quotes so AutoplayAudio
- * gets just the spoken Serbian. Falls through unchanged when the line
- * has no quotes.
- */
-function extractSpoken(line: string): string {
-  const quoteMatch = line.match(/[“"„](.+?)["”“]/);
-  if (quoteMatch) return quoteMatch[1];
-  // Fallback: drop leading "Speaker: " if present.
-  const colonIdx = line.indexOf(':');
-  if (colonIdx > 0 && colonIdx < 24) {
-    return line.slice(colonIdx + 1).trim();
-  }
-  return line;
-}
-
 export default function Comprehension({ exercise, onAnswer }: ComprehensionProps) {
   const [selected, setSelected] = useState<string | null>(null);
   const [result, setResult] = useState<{ correct: boolean } | null>(null);
@@ -48,13 +32,10 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-      {exercise.dialogue?.map((line, i) => (
-        <AutoplayAudio
-          key={i}
-          text={extractSpoken(line)}
-          delayMs={i * 700}
-        />
-      ))}
+      {/* Play the tested phrase (Latin-hashed clip). The synthesized
+          scaffolding lines have no generated clips, so we only voice the
+          real corpus phrase being comprehended. */}
+      <AutoplayAudio text={exercise.phrase.sr_latin} />
       {/* Dialogue */}
       <div>
         <div style={{ ...metaLabel, color: T.amber }}>SITUACIJA</div>

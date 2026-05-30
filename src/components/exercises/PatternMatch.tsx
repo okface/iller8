@@ -36,8 +36,8 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
-      <AutoplayAudio text={original?.text} delayMs={0} />
-      <AutoplayAudio text={variant?.text} delayMs={700} />
+      <AutoplayAudio text={original?.textLatin ?? original?.text} delayMs={0} />
+      <AutoplayAudio text={variant?.textLatin ?? variant?.text} delayMs={700} />
       {/* Header */}
       <div>
         <div style={{ ...metaLabel, color: T.amber }}>COMPARE THESE PHRASES</div>
