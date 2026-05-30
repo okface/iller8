@@ -7,6 +7,7 @@ import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
 import AutoplayAudio from '../ui/AutoplayAudio';
 import AudioButton from '../ui/AudioButton';
+import WordExampleCard from '../ui/WordExampleCard';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
 
@@ -32,14 +33,11 @@ interface WordProduceProps {
  *   context             = POS label
  *   phrase.notes        = optional grammar note
  */
-export default function WordProduce({ exercise, onAnswer, script: _script = 'latin' }: WordProduceProps) {
+export default function WordProduce({ exercise, onAnswer, script = 'latin' }: WordProduceProps) {
   const [selected, setSelected] = useState<string | null>(null);
   const [result, setResult] = useState<{ correct: boolean } | null>(null);
-
-  // _script is accepted for API consistency with sibling exercises;
-  // the actual rendered script is determined by what the generator
-  // put in `options` and `correctAnswer`.
-  void _script;
+  // `script` drives the in-context example card's dual-script display.
+  // (The option text itself is already baked into the generator output.)
 
   const handleSelect = (option: string) => {
     if (result) return;
@@ -118,6 +116,8 @@ export default function WordProduce({ exercise, onAnswer, script: _script = 'lat
           </div>
         </Card>
       )}
+
+      {result && <WordExampleCard phraseId={exercise.phrase.id} script={script} />}
 
       {result && (
         <ContinueButton correct={result.correct} onContinue={handleContinue} />

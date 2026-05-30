@@ -8,6 +8,7 @@ import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
 import AudioButton from '../ui/AudioButton';
 import AutoplayAudio from '../ui/AutoplayAudio';
+import WordExampleCard from '../ui/WordExampleCard';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain, IconAudio } from '../ui/Icons';
 
@@ -133,6 +134,8 @@ export default function ListenChoice({ exercise, onAnswer, script = 'latin' }: L
           </div>
         </Card>
       )}
+
+      {result && <WordExampleCard phraseId={exercise.phrase.id} script={script} />}
 
       {result && (
         <ContinueButton correct={result.correct} onContinue={handleContinue} />
