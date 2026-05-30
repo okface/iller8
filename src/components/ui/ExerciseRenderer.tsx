@@ -11,6 +11,7 @@ import PatternMatch from '../exercises/PatternMatch';
 import PerspectiveShift from '../exercises/PerspectiveShift';
 import WordRecognize from '../exercises/WordRecognize';
 import WordProduce from '../exercises/WordProduce';
+import ListenChoice from '../exercises/ListenChoice';
 
 /**
  * Single dispatcher over the `Exercise.type` union. Used to live as a
@@ -65,6 +66,8 @@ export default function ExerciseRenderer({
       return <WordRecognize key={itemKey} exercise={exercise} onAnswer={onAnswer} script={script} />;
     case 'word-produce':
       return <WordProduce key={itemKey} exercise={exercise} onAnswer={onAnswer} script={script} />;
+    case 'listen-choice':
+      return <ListenChoice key={itemKey} exercise={exercise} onAnswer={onAnswer} script={script} />;
     case 'match-pairs':
     default:
       return null;

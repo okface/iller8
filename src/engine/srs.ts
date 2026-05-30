@@ -38,9 +38,13 @@ export function recordAnswer(
     };
   }
   const bucketDrop = progress.bucket >= 3 ? 1 : 2;
+  // Floor at 0, not 1: a NEW item (bucket 0) answered wrong must stay at
+  // 0, not get promoted into the review pool (getDueItems filters
+  // bucket >= 1). Flooring at 1 meant failing a brand-new item advanced
+  // it — the weakest items were promoted by being missed.
   return {
     ...progress,
-    bucket: Math.max(1, progress.bucket - bucketDrop),
+    bucket: Math.max(0, progress.bucket - bucketDrop),
     lastReviewed: Date.now(),
     incorrectCount: progress.incorrectCount + 1,
     streak: 0,

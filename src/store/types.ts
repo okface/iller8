@@ -130,7 +130,8 @@ export type ExerciseType =
   | 'pattern-match'
   | 'perspective-shift'
   | 'word-recognize'   // see a single Serbian word, pick the English gloss
-  | 'word-produce';    // see an English gloss, pick the Serbian word
+  | 'word-produce'     // see an English gloss, pick the Serbian word
+  | 'listen-choice';   // HEAR Serbian (no text), pick the English meaning
 
 export interface Exercise {
   type: ExerciseType;

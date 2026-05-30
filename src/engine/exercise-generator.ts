@@ -73,6 +73,27 @@ function getDistractors(
   return result;
 }
 
+/**
+ * Listening comprehension: play the Serbian clip, pick the English
+ * meaning. Distractors are other English glosses (same-group-first).
+ * The component hides the Serbian text until after the answer.
+ */
+function generateListenChoice(
+  phrase: Phrase,
+  allPhrases: Phrase[],
+  lesson?: Lesson
+): Exercise {
+  const distractors = getDistractors(phrase.en, phrase, allPhrases, 'en', 3, lesson);
+  return {
+    type: 'listen-choice',
+    phrase,
+    direction: 'sr-to-en',
+    prompt: phrase.en,
+    correctAnswer: phrase.en,
+    options: shuffle([phrase.en, ...distractors]),
+  };
+}
+
 function generateMultipleChoice(
   phrase: Phrase,
   allPhrases: Phrase[],
@@ -500,10 +521,10 @@ function generateContextPick(
  */
 const exerciseTypesForBucket: Record<number, ExerciseType[]> = {
   0: ['multiple-choice'],
-  1: ['multiple-choice', 'context-pick'],
-  2: ['fill-in-blank', 'context-pick', 'multiple-choice', 'pattern-match'],
-  3: ['type-translation', 'word-tiles', 'fill-in-blank', 'sentence-builder', 'comprehension', 'pattern-match'],
-  4: ['type-translation', 'script-convert', 'sentence-builder', 'comprehension', 'pattern-match'],
+  1: ['multiple-choice', 'context-pick', 'listen-choice'],
+  2: ['fill-in-blank', 'context-pick', 'multiple-choice', 'pattern-match', 'listen-choice'],
+  3: ['type-translation', 'word-tiles', 'fill-in-blank', 'sentence-builder', 'comprehension', 'pattern-match', 'listen-choice'],
+  4: ['type-translation', 'script-convert', 'sentence-builder', 'comprehension', 'pattern-match', 'listen-choice'],
   5: ['type-translation', 'script-convert'],
 };
 
@@ -566,12 +587,19 @@ const exerciseDifficultyTier: Record<ExerciseType, number> = {
   'perspective-shift': 1,
   'word-recognize': 0,
   'word-produce': 1,
+  'listen-choice': 1,
 };
 
 function getDirectionForBucket(bucket: number): 'sr-to-en' | 'en-to-sr' {
-  if (bucket <= 1) return 'sr-to-en';
-  if (bucket === 2) return Math.random() < 0.7 ? 'sr-to-en' : 'en-to-sr';
-  return Math.random() < 0.5 ? 'sr-to-en' : 'en-to-sr';
+  // Production (en→sr) wins early — it's the harder, more valuable
+  // direction and the real test of knowing a word. Recognition (sr→en)
+  // only dominates at first contact, then production takes over fast.
+  // Matches ARCHITECTURE.md "Production > recognition" + pedagogy audit §3.4.
+  // (probability shown is for sr→en recognition.)
+  if (bucket === 0) return Math.random() < 0.7 ? 'sr-to-en' : 'en-to-sr';
+  if (bucket === 1) return Math.random() < 0.4 ? 'sr-to-en' : 'en-to-sr';
+  if (bucket === 2) return Math.random() < 0.25 ? 'sr-to-en' : 'en-to-sr';
+  return Math.random() < 0.15 ? 'sr-to-en' : 'en-to-sr';
 }
 
 export function generateExercise(
@@ -607,6 +635,8 @@ export function generateExercise(
       return generateSentenceBuilder(phrase, allPhrases, script);
     case 'comprehension':
       return generateComprehension(phrase, allPhrases, script);
+    case 'listen-choice':
+      return generateListenChoice(phrase, allPhrases, lesson);
     case 'pattern-match':
       // Only generate pattern-match for phrases with variations; fall back otherwise
       if (phrase.variations && phrase.variations.length > 0) {
