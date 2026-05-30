@@ -7,6 +7,7 @@ import { getWordBucket } from '../lib/word-progress';
 import { getDailySummary } from '../engine/daily-session';
 import LessonCard from '../components/LessonCard';
 import Card from '../components/ui/Card';
+import Btn from '../components/ui/Btn';
 import LinearProgress from '../components/ui/LinearProgress';
 import SectionHead from '../components/ui/SectionHead';
 import MonoBadge from '../components/ui/MonoBadge';
@@ -90,6 +91,19 @@ export default function Dashboard({ progress, script }: DashboardProps) {
   // now points at /daily, the unified front door.
   void nextLessonStats;
 
+  // Phrases the learner can now actually say (mastered, bucket >= 4).
+  // Words and family variants are excluded — this is about whole phrases
+  // they could speak. The emotional payoff for a solo learner.
+  const canSay = useMemo(() => {
+    return getAllPhrases()
+      .filter(({ phrase }) => (progress.phrases[phrase.id]?.bucket ?? 0) >= 4)
+      .map(({ phrase }) => phrase);
+  }, [progress.phrases]);
+
+  // Streak-at-risk: studied before, but not yet today.
+  const streakAtRisk =
+    progress.currentStreak > 0 && progress.lastActiveDate !== getToday();
+
   const now = new Date();
   const dateLabel = `${DAY_LABELS[now.getDay()]} · ${now
     .getHours()
@@ -97,6 +111,70 @@ export default function Dashboard({ progress, script }: DashboardProps) {
     .padStart(2, '0')}:${now.getMinutes().toString().padStart(2, '0')}`;
 
   const greetingText = script === 'cyrillic' ? greeting.sr_cyrillic : greeting.sr_latin;
+
+  // ── Day-1 experience ────────────────────────────────────────
+  // A brand-new learner (nothing studied) gets ONE clear action, not the
+  // full expert dashboard (5 drill modes, 11 filters, 10 lessons). The
+  // tester flagged the choice paralysis; the don't-do list forbids it.
+  if (totalLearned === 0) {
+    return (
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
+        <div style={metaLabel}>DAY 1</div>
+        <h1
+          style={{
+            fontSize: 30,
+            fontWeight: 700,
+            letterSpacing: -0.7,
+            margin: '8px 0 4px',
+            lineHeight: 1.1,
+            color: T.text,
+          }}
+        >
+          {greetingText}.
+        </h1>
+        <p style={{ fontSize: 14, color: T.dim, lineHeight: 1.55, maxWidth: 380, marginTop: 6 }}>
+          Welcome. Let's learn some Serbian — starting with the most common
+          words and a few easy phrases. About five minutes.
+        </p>
+
+        <Card warm pad={18} style={{ marginTop: 22 }}>
+          <div style={{ ...metaLabel, color: T.amber }}>START HERE</div>
+          <div style={{ fontSize: 18, fontWeight: 700, marginTop: 8, letterSpacing: -0.3 }}>
+            Your first session
+          </div>
+          <div style={{ fontSize: 13, color: T.dim, marginTop: 4, lineHeight: 1.5 }}>
+            Hear it, see both scripts, pick the meaning. We'll repeat what you
+            miss and remember what you know.
+          </div>
+          <div style={{ marginTop: 16 }}>
+            <Btn kind="primary" size="lg" full onClick={() => navigate('/daily')}>
+              Start learning
+            </Btn>
+          </div>
+        </Card>
+
+        {phraseOfDay && (
+          <Card style={{ marginTop: 16 }} pad={16}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+              <span style={metaLabel}>A TASTE</span>
+              <AudioButton text={phraseOfDay.phrase.sr_latin} size={14} />
+            </div>
+            <div
+              className="font-serif-sr"
+              style={{ fontSize: 24, fontWeight: 500, marginTop: 10, color: T.text }}
+            >
+              {script === 'cyrillic'
+                ? phraseOfDay.phrase.sr_cyrillic
+                : phraseOfDay.phrase.sr_latin}
+            </div>
+            <div style={{ fontSize: 13, color: T.amber, marginTop: 4 }}>
+              {phraseOfDay.phrase.en}
+            </div>
+          </Card>
+        )}
+      </div>
+    );
+  }
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
@@ -114,6 +192,30 @@ export default function Dashboard({ progress, script }: DashboardProps) {
         {greetingText}.
       </h1>
       <div style={{ fontSize: 13, color: T.dim }}>{greeting.en}.</div>
+
+      {/* Streak-at-risk banner — the cheapest daily-return hook for a
+          no-backend app. Only when there's a streak and today isn't done. */}
+      {streakAtRisk && (
+        <Card
+          warm
+          pad={12}
+          onClick={() => navigate('/daily')}
+          style={{ marginTop: 14, display: 'flex', alignItems: 'center', gap: 10 }}
+        >
+          <span style={{ fontSize: 18 }}>🔥</span>
+          <div style={{ flex: 1, minWidth: 0 }}>
+            <div style={{ fontSize: 13, fontWeight: 600, color: T.text }}>
+              {progress.currentStreak}-day streak
+            </div>
+            <div style={{ fontSize: 11, color: T.dim }}>
+              Do today's session to keep it alive.
+            </div>
+          </div>
+          <span style={{ color: T.amber, display: 'flex' }}>
+            <IconChev size={18} />
+          </span>
+        </Card>
+      )}
 
       {/* Stat row */}
       <div
@@ -368,6 +470,64 @@ export default function Dashboard({ progress, script }: DashboardProps) {
             </div>
           )}
         </Card>
+      )}
+
+      {/* Things you can say — mastered phrases, the emotional payoff.
+          Turns abstract bucket numbers into "I can actually say this." */}
+      {canSay.length > 0 && (
+        <div style={{ marginTop: 24 }}>
+          <SectionHead suffix={String(canSay.length)}>YOU CAN SAY</SectionHead>
+          <Card pad={0}>
+            {canSay.slice(0, 6).map((phrase, i) => (
+              <div
+                key={phrase.id}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: 10,
+                  padding: '10px 14px',
+                  borderTop: i === 0 ? 'none' : `0.5px solid ${T.border}`,
+                }}
+              >
+                <span
+                  style={{
+                    width: 6,
+                    height: 6,
+                    borderRadius: '50%',
+                    background: T.green,
+                    flexShrink: 0,
+                  }}
+                />
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div
+                    className="font-serif-sr"
+                    style={{ fontSize: 15, fontWeight: 500, color: T.text }}
+                  >
+                    {script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin}
+                  </div>
+                  <div style={{ fontSize: 11, color: T.dim, marginTop: 1 }}>{phrase.en}</div>
+                </div>
+                <AudioButton text={phrase.sr_latin} size={14} />
+              </div>
+            ))}
+            {canSay.length > 6 && (
+              <div
+                onClick={() => navigate('/catalog')}
+                style={{
+                  padding: '10px 14px',
+                  fontSize: 11,
+                  color: T.mute,
+                  fontFamily: T.mono,
+                  borderTop: `0.5px solid ${T.border}`,
+                  textAlign: 'center',
+                  cursor: 'pointer',
+                }}
+              >
+                +{canSay.length - 6} more — see all
+              </div>
+            )}
+          </Card>
+        </div>
       )}
 
       {/* Lesson list */}

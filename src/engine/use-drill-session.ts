@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Exercise, UserProgress } from '../store/types';
 import { createPhraseProgress, recordAnswer } from './srs';
 import {
@@ -32,6 +32,16 @@ export interface DrillSessionInput {
   onFinish?: (stats: { correct: number; total: number }) => void;
   /** Optional hook called after every answer. */
   onAnswer?: (correct: boolean, exercise: Exercise) => void;
+  /** Applied to the updated progress on every answer (idempotent).
+   *  Lets every session path award achievements without duplicating
+   *  the logic — the universal awards live in one place. Runs against
+   *  fresh post-answer state, avoiding stale-closure bugs. */
+  checkAchievements?: (progress: UserProgress) => UserProgress;
+  /** On a wrong answer, build a retry exercise to re-surface the item
+   *  ~4 questions later (capped at 2 retries per item). Returning null
+   *  skips. This is the "failed items reappear" mechanic, now on every
+   *  session path, not just the legacy lesson view. */
+  buildRetry?: (exercise: Exercise) => Exercise | null;
 }
 
 export interface DrillSessionState {
@@ -53,12 +63,14 @@ export interface DrillSessionState {
 }
 
 export function useDrillSession(input: DrillSessionInput): DrillSessionState {
-  const { generate, progress, setProgress, onFinish, onAnswer } = input;
+  const { generate, progress, setProgress, onFinish, onAnswer, checkAchievements, buildRetry } = input;
   const [phase, setPhase] = useState<Phase>('browse');
   const [exercises, setExercises] = useState<Exercise[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [correctCount, setCorrectCount] = useState(0);
   const [totalAnswered, setTotalAnswered] = useState(0);
+  // Per-item retry counter (phrase id → times re-queued). Reset on start.
+  const retryCountRef = useRef<Record<string, number>>({});
 
   // Regenerate exercises whenever we enter the drill phase. The
   // intentional eslint-disable: `generate` is by definition a fresh
@@ -70,6 +82,7 @@ export function useDrillSession(input: DrillSessionInput): DrillSessionState {
   }, [phase]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const start = useCallback(() => {
+    retryCountRef.current = {};
     setPhase('drill');
     setCurrentIndex(0);
     setCorrectCount(0);
@@ -103,12 +116,26 @@ export function useDrillSession(input: DrillSessionInput): DrillSessionState {
 
       let newProgress = updatePhraseProgress(progress, updated);
       newProgress = updateDailyStats(newProgress, correct);
+      // Award universal achievements on fresh post-answer state.
+      if (checkAchievements) newProgress = checkAchievements(newProgress);
 
       if (correct) setCorrectCount((c) => c + 1);
       setTotalAnswered((t) => t + 1);
 
       setProgress(newProgress);
       saveProgress(newProgress);
+
+      // Within-session retry: re-surface a missed item ~4 ahead, max 2x.
+      if (!correct && buildRetry) {
+        const retries = retryCountRef.current[phraseId] ?? 0;
+        if (retries < 2) {
+          const retryEx = buildRetry(exercise);
+          if (retryEx) {
+            retryCountRef.current[phraseId] = retries + 1;
+            insertExercise(4, retryEx);
+          }
+        }
+      }
 
       onAnswer?.(correct, exercise);
 
@@ -127,7 +154,7 @@ export function useDrillSession(input: DrillSessionInput): DrillSessionState {
     // invalidate the handler mid-session. Reading via closure is fine
     // because we always re-read `exercises[currentIndex]` at call time.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [currentIndex, progress, setProgress, exercises, onAnswer, onFinish, correctCount, totalAnswered]
+    [currentIndex, progress, setProgress, exercises, onAnswer, onFinish, correctCount, totalAnswered, checkAchievements, buildRetry, insertExercise]
   );
 
   const currentExercise = exercises[currentIndex];

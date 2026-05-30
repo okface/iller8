@@ -205,16 +205,50 @@ export function previewDailySession(
   input: SessionInput,
   count: number = 15
 ): DailySessionPicks {
-  const reviewSlots = Math.round(count * 0.4);
-  const newSlots = Math.round(count * 0.4);
-  const consolidationSlots = count - reviewSlots - newSlots;
+  const targetReview = Math.round(count * 0.4);
+  const targetNew = Math.round(count * 0.4);
 
-  const due = getDueItems(input.progress.phrases);
-  const reviewIds = shuffle(due)
-    .slice(0, reviewSlots)
-    .map((p) => p.phraseId);
-  const newIds = pickNewItems(input, newSlots);
-  const consolidationIds = pickConsolidationItems(input, consolidationSlots);
+  // Build full candidate pools, then allocate greedily with carry-over so
+  // the session always reaches `count` and the advertised mix is real:
+  // when one stream is thin (e.g. no reviews due in week 1), the others
+  // absorb its slots instead of silently padding with unweighted random.
+  const duePool = shuffle(getDueItems(input.progress.phrases)).map((p) => p.phraseId);
+  const newPool = pickNewItems(input, count); // frequency-ordered, word/phrase interleaved
+  const consolidationPool = pickConsolidationItems(input, count);
+
+  const used = new Set<string>();
+  const take = (pool: string[], n: number): string[] => {
+    const out: string[] = [];
+    for (const id of pool) {
+      if (out.length >= n) break;
+      if (!used.has(id)) {
+        used.add(id);
+        out.push(id);
+      }
+    }
+    return out;
+  };
+
+  const reviewIds = take(duePool, targetReview);
+  // New absorbs any review shortfall.
+  const newIds = take(newPool, targetNew + (targetReview - reviewIds.length));
+  // Consolidation gets whatever's left…
+  const consolidationIds = take(
+    consolidationPool,
+    count - reviewIds.length - newIds.length
+  );
+  // …and any remaining shortfall (thin consolidation pool) flows back to
+  // new — and then to review — so we hit `count` with real SRS picks.
+  let shortfall = count - reviewIds.length - newIds.length - consolidationIds.length;
+  if (shortfall > 0) {
+    const more = take(newPool, shortfall);
+    newIds.push(...more);
+    shortfall -= more.length;
+  }
+  if (shortfall > 0) {
+    const more = take(duePool, shortfall);
+    reviewIds.push(...more);
+  }
 
   return { reviewIds, newIds, consolidationIds };
 }
@@ -248,15 +282,31 @@ export function generateDailySession(
     if (!progressed) break;
   }
 
-  // If we still don't have enough (cold-start case), fill with random
-  // ready phrases so the session is never empty.
+  // Absolute last-resort filler (only if the greedy allocator still came
+  // up short). Prefer lowest-rank unseen WORDS first, then ready phrases —
+  // pedagogically ordered, never unweighted random.
   if (interleaved.length < count) {
     const seen = new Set(interleaved);
-    const filler = shuffle(allPhrases.filter((p) => isPhraseReady(p, input.progress)))
-      .filter((p) => !seen.has(p.id))
-      .slice(0, count - interleaved.length)
-      .map((p) => p.id);
-    interleaved.push(...filler);
+    const need = count - interleaved.length;
+
+    const unseenWordKeys = allWords
+      .filter((w) => (input.progress.phrases[`word:${w.id}`]?.bucket ?? 0) === 0)
+      .sort((a, b) => (a.rank ?? 999) - (b.rank ?? 999))
+      .map((w) => `word:${w.id}`)
+      .filter((k) => !seen.has(k));
+
+    const readyPhraseKeys = allPhrases
+      .filter((p) => isPhraseReady(p, input.progress))
+      .map((p) => p.id)
+      .filter((k) => !seen.has(k));
+
+    void need;
+    for (const k of [...unseenWordKeys, ...readyPhraseKeys]) {
+      if (interleaved.length >= count) break;
+      if (seen.has(k)) continue;
+      seen.add(k);
+      interleaved.push(k);
+    }
   }
 
   const exercises: Exercise[] = [];
@@ -266,6 +316,16 @@ export function generateDailySession(
     if (ex) exercises.push(ex);
   }
   return exercises;
+}
+
+/**
+ * Build a fresh recognition exercise for a missed item, to re-surface it
+ * later in the same session. The missed exercise's `phrase.id` IS the SRS
+ * key (word:/family:/plain), so we route it back through exerciseForKey at
+ * bucket 0 (recognition).
+ */
+export function buildRetryExercise(missed: Exercise, input: SessionInput): Exercise | null {
+  return exerciseForKey(missed.phrase.id, 0, input);
 }
 
 /** Summary counts surfaced on the Daily landing screen. */

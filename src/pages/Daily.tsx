@@ -1,7 +1,8 @@
 import { useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { generateDailySession, getDailySummary } from '../engine/daily-session';
+import { generateDailySession, getDailySummary, buildRetryExercise } from '../engine/daily-session';
 import { useDrillSession } from '../engine/use-drill-session';
+import { checkAchievements } from '../store/progress';
 import DrillFrame from '../components/ui/DrillFrame';
 import ExerciseRenderer from '../components/ui/ExerciseRenderer';
 import Card from '../components/ui/Card';
@@ -17,10 +18,8 @@ interface DailyProps {
   script: 'latin' | 'cyrillic';
 }
 
-const SESSION_SIZE = 15;
-
 /**
- * The unified daily session. One button → 15 items mixing new / review
+ * The unified daily session. One button → a session mixing new / review
  * / consolidation across words, phrases, and family variants. The
  * keystone of the unified-path vision (ARCHITECTURE.md §6).
  *
@@ -32,21 +31,28 @@ const SESSION_SIZE = 15;
 export default function Daily({ progress, setProgress, script }: DailyProps) {
   const navigate = useNavigate();
 
+  // Session length honours the learner's daily goal (clamped 5–25) rather
+  // than a hardcoded 15 — respects their stated time budget.
+  const sessionSize = Math.min(25, Math.max(5, progress.settings.dailyGoal || 15));
+
   // Compute today's mix preview (cheap, pure). Recompute when progress
   // changes so the "browse" landing always reflects current state.
   const summary = useMemo(
-    () => getDailySummary({ progress, script, skipTyping: progress.settings.skipTyping }, SESSION_SIZE),
-    [progress, script]
+    () => getDailySummary({ progress, script, skipTyping: progress.settings.skipTyping }, sessionSize),
+    [progress, script, sessionSize]
   );
 
   const session = useDrillSession({
     generate: () =>
       generateDailySession(
         { progress, script, skipTyping: progress.settings.skipTyping },
-        SESSION_SIZE
+        sessionSize
       ),
     progress,
     setProgress,
+    checkAchievements,
+    buildRetry: (ex) =>
+      buildRetryExercise(ex, { progress, script, skipTyping: progress.settings.skipTyping }),
   });
 
   // ────────────── Browse landing ──────────────
@@ -77,7 +83,7 @@ export default function Daily({ progress, setProgress, script }: DailyProps) {
             marginBottom: 8,
           }}
         >
-          Tap Start. The app picks {SESSION_SIZE} items mixing review (SRS-due),
+          Tap Start. The app picks {sessionSize} items mixing review (SRS-due),
           new vocabulary you're ready for, and recently-met items that need a
           second pass. You don't choose what to drill — the loop does.
         </p>
@@ -112,7 +118,7 @@ export default function Daily({ progress, setProgress, script }: DailyProps) {
               color={T.purple}
             />
           </div>
-          {summary.total < SESSION_SIZE && summary.total > 0 && (
+          {summary.total < sessionSize && summary.total > 0 && (
             <div
               style={{
                 ...metaLabel,

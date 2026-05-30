@@ -139,6 +139,35 @@ export function addAchievement(
   };
 }
 
+/**
+ * Award the achievements that depend only on overall progress + clock —
+ * the "universal" ones that any session path can earn. Idempotent.
+ * Lesson-specific badges (first-lesson, perfect-lesson, sweet-talker,
+ * brate, script-scholar, review-champion) stay with their own contexts.
+ *
+ * Centralized here so the unified `/daily` loop and word/family drills
+ * award them too — previously only LessonView/ReviewSession did, so the
+ * primary path earned nothing.
+ */
+export function checkAchievements(progress: UserProgress): UserProgress {
+  let p = progress;
+
+  const streak = p.currentStreak;
+  if (streak >= 3) p = addAchievement(p, 'streak-3');
+  if (streak >= 7) p = addAchievement(p, 'streak-7');
+  if (streak >= 14) p = addAchievement(p, 'streak-14');
+  if (streak >= 30) p = addAchievement(p, 'streak-30');
+
+  const learned = Object.values(p.phrases).filter((x) => x.bucket >= 1).length;
+  if (learned >= 100) p = addAchievement(p, 'polyglot');
+
+  const hour = new Date().getHours();
+  if (hour >= 23 || hour < 5) p = addAchievement(p, 'night-owl');
+  if (hour >= 5 && hour < 7) p = addAchievement(p, 'early-bird');
+
+  return p;
+}
+
 export function exportProgress(): string {
   return localStorage.getItem(STORAGE_KEY) ?? '{}';
 }
