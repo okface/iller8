@@ -1,5 +1,6 @@
 import type { Exercise, ExerciseType, Lesson, Phrase, PhraseGroup, PhraseProgress, UserProgress } from '../store/types';
 import { filterByReadiness } from './word-readiness';
+import { minimalPairDistractors, minimalPairWords } from './minimal-pair-distractors';
 
 /**
  * Sentence-construction exercise types. These get a flat weight bonus in
@@ -36,13 +37,26 @@ function terminalPunct(s: string): string {
 function tokenCount(s: string): number {
   return s.trim().replace(/[.!?,;:()"']/g, '').split(/\s+/).filter(Boolean).length;
 }
+function contentWords(s: string): string[] {
+  return s.toLowerCase().replace(/[.!?,;:()"']/g, '').split(/\s+/).filter((w) => w.length > 2);
+}
+/** How many content words (>2 chars) the candidate shares with the answer. */
+function sharedContentCount(candidate: string, correct: string): number {
+  const setB = new Set(contentWords(correct));
+  let n = 0;
+  for (const w of new Set(contentWords(candidate))) if (setB.has(w)) n++;
+  return n;
+}
 /** Lower = better distractor (more parallel to `correct`). */
 function parityScore(candidate: string, correct: string): number {
   const isQ = (x: string) => terminalPunct(x) === '?';
   const questionMismatch = isQ(candidate) !== isQ(correct) ? 100 : 0; // never mix Q with non-Q
   const wcDiff = Math.abs(tokenCount(candidate) - tokenCount(correct)) * 3;
   const charDiff = Math.abs(candidate.length - correct.length) / 8;
-  return questionMismatch + wcDiff + charDiff;
+  // Reward sharing content words with the answer: a distractor that reuses the
+  // answer's noun(s) forces real reading instead of keyword-spotting.
+  const overlapBonus = sharedContentCount(candidate, correct) * 6;
+  return questionMismatch + wcDiff + charDiff - overlapBonus;
 }
 
 function getAllPhrases(lesson: Lesson): Phrase[] {
@@ -72,13 +86,31 @@ function getDistractors(
   allPhrases: Phrase[],
   field: 'en' | 'sr_latin' | 'sr_cyrillic',
   count: number,
-  lesson?: Lesson
+  lesson?: Lesson,
+  bucket: number = 0
 ): string[] {
+  // Guardrail: never emit an option that is also a correct answer. Exclude the
+  // correct surface AND every variation surface for this field (variations are
+  // valid alternatives — a distractor equal to one would mark a right answer wrong).
   const seen = new Set<string>([correct]);
+  for (const v of phrase.variations ?? []) {
+    const surf = field === 'en' ? v.en : v[field];
+    if (surf) seen.add(surf);
+  }
   const result: string[] = [];
 
+  // Phase 0: minimal-pair distractors — same core noun, one axis changed.
+  // Preferred when available; the pool phases below top up the rest.
+  for (const t of minimalPairDistractors(phrase, field, count, bucket, seen)) {
+    if (result.length >= count) break;
+    if (!seen.has(t)) {
+      seen.add(t);
+      result.push(t);
+    }
+  }
+
   // Phase 1: same phrase group (semantically related distractors)
-  if (lesson) {
+  if (result.length < count && lesson) {
     const group = findPhraseGroup(phrase, lesson);
     if (group) {
       const groupCandidates = shuffle(group.phrases)
@@ -136,9 +168,10 @@ function getDistractors(
 function generateListenChoice(
   phrase: Phrase,
   allPhrases: Phrase[],
-  lesson?: Lesson
+  lesson?: Lesson,
+  bucket: number = 0
 ): Exercise {
-  const distractors = getDistractors(phrase.en, phrase, allPhrases, 'en', 3, lesson);
+  const distractors = getDistractors(phrase.en, phrase, allPhrases, 'en', 3, lesson, bucket);
   return {
     type: 'listen-choice',
     phrase,
@@ -154,11 +187,12 @@ function generateMultipleChoice(
   allPhrases: Phrase[],
   script: 'latin' | 'cyrillic',
   direction: 'sr-to-en' | 'en-to-sr',
-  lesson?: Lesson
+  lesson?: Lesson,
+  bucket: number = 0
 ): Exercise {
   if (direction === 'sr-to-en') {
     const prompt = script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin;
-    const distractors = getDistractors(phrase.en, phrase, allPhrases, 'en', 3, lesson);
+    const distractors = getDistractors(phrase.en, phrase, allPhrases, 'en', 3, lesson, bucket);
     return {
       type: 'multiple-choice',
       phrase,
@@ -171,7 +205,7 @@ function generateMultipleChoice(
   } else {
     const srField = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
     const correctSr = phrase[srField];
-    const distractors = getDistractors(correctSr, phrase, allPhrases, srField, 3, lesson);
+    const distractors = getDistractors(correctSr, phrase, allPhrases, srField, 3, lesson, bucket);
     return {
       type: 'multiple-choice',
       phrase,
@@ -342,12 +376,23 @@ function generateSentenceBuilder(
     }
   }
 
-  // Add 1-2 distractor words from other phrases. Lower-case their initials too,
-  // so no capitalised tile hints at the start (lowering only the answer's first
-  // word would otherwise invert the tell).
+  // Add 1-2 distractor words. Prefer minimal-pair tiles — wrong-form variants
+  // of the phrase's own words (verb in the wrong person, noun in the wrong
+  // case) — which are real grammatical traps; top up with random pool words.
+  // Lower-case their initials too so no capitalised tile hints at the start.
   const distractorCount = coreWords.length <= 2 ? 1 : 2;
-  const distractors = getDistractorWords(allPhrases, coreWords, script, distractorCount)
-    .map(lowerFirst);
+  const excludeWords = new Set(coreWords.map((w) => w.toLowerCase()));
+  const distractors = minimalPairWords(phrase, script, distractorCount, excludeWords).map(lowerFirst);
+  if (distractors.length < distractorCount) {
+    distractors.push(
+      ...getDistractorWords(
+        allPhrases,
+        [...coreWords, ...distractors],
+        script,
+        distractorCount - distractors.length
+      ).map(lowerFirst)
+    );
+  }
 
   const tiles = shuffle([...coreWords, ...distractors]);
 
@@ -432,7 +477,8 @@ function generateComprehension(
   phrase: Phrase,
   allPhrases: Phrase[],
   script: 'latin' | 'cyrillic',
-  lesson?: Lesson
+  lesson?: Lesson,
+  bucket: number = 0
 ): Exercise {
   const srField = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
   const phraseText = phrase[srField];
@@ -453,7 +499,7 @@ function generateComprehension(
   // dialogue to pick the meaning of the target line — the answer is never
   // visible on screen. Distractors are parity-matched English glosses.
   const correctAnswer = phrase.en;
-  const distractors = getDistractors(correctAnswer, phrase, allPhrases, 'en', 3, lesson);
+  const distractors = getDistractors(correctAnswer, phrase, allPhrases, 'en', 3, lesson, bucket);
   const options = shuffle([correctAnswer, ...distractors]);
 
   return {
@@ -617,11 +663,12 @@ function generateContextPick(
   phrase: Phrase,
   allPhrases: Phrase[],
   script: 'latin' | 'cyrillic',
-  lesson?: Lesson
+  lesson?: Lesson,
+  bucket: number = 0
 ): Exercise {
   const srField = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
   const correct = phrase[srField];
-  const distractors = getDistractors(correct, phrase, allPhrases, srField, 3, lesson);
+  const distractors = getDistractors(correct, phrase, allPhrases, srField, 3, lesson, bucket);
 
   return {
     type: 'context-pick',
@@ -748,7 +795,7 @@ export function generateExercise(
 
   switch (type) {
     case 'multiple-choice':
-      return generateMultipleChoice(phrase, allPhrases, script, direction, lesson);
+      return generateMultipleChoice(phrase, allPhrases, script, direction, lesson, clampedBucket);
     case 'type-translation':
       return generateTypeTranslation(phrase, script, direction);
     case 'fill-in-blank':
@@ -758,22 +805,22 @@ export function generateExercise(
     case 'script-convert':
       return generateScriptConvert(phrase);
     case 'context-pick':
-      return generateContextPick(phrase, allPhrases, script, lesson);
+      return generateContextPick(phrase, allPhrases, script, lesson, clampedBucket);
     case 'sentence-builder':
       return generateSentenceBuilder(phrase, allPhrases, script);
     case 'comprehension':
-      return generateComprehension(phrase, allPhrases, script, lesson);
+      return generateComprehension(phrase, allPhrases, script, lesson, clampedBucket);
     case 'listen-choice':
-      return generateListenChoice(phrase, allPhrases, lesson);
+      return generateListenChoice(phrase, allPhrases, lesson, clampedBucket);
     case 'pattern-match':
       // Only generate pattern-match for phrases with variations; fall back otherwise
       if (phrase.variations && phrase.variations.length > 0) {
         return generatePatternMatch(phrase, allPhrases, script, lesson);
       }
-      return generateMultipleChoice(phrase, allPhrases, script, direction, lesson);
+      return generateMultipleChoice(phrase, allPhrases, script, direction, lesson, clampedBucket);
     case 'match-pairs':
     default:
-      return generateMultipleChoice(phrase, allPhrases, script, 'sr-to-en', lesson);
+      return generateMultipleChoice(phrase, allPhrases, script, 'sr-to-en', lesson, clampedBucket);
   }
 }
 

@@ -1,0 +1,4148 @@
+{
+  "st-dusko": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-ljubavi": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-draga": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-maco": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-medo": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-sunce": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-zlato": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-srce": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-prelepa-si": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-lepo-stoji": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-ubila-si": {
+    "stage": 4,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "past",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-pametna-si": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-smesan": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-najbolja-si": {
+    "stage": 7,
+    "difficulty": 3.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-nedostajes": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-mislim-na-tebe": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-jedva-cekam": {
+    "stage": 2,
+    "difficulty": 3.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-volim-te": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-dobro-jutro-sunce": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-laku-noc-ljubavi": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-sanjaj-me": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "imp",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-spavaj-lepo": {
+    "stage": 2,
+    "difficulty": 2.2,
+    "isChunk": false,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "imp",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-za-tebe-uvek": {
+    "stage": 3,
+    "difficulty": 4.9,
+    "isChunk": false,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-rastuzi-me": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-ukrala-srce": {
+    "stage": 7,
+    "difficulty": 5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "past",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-srecan-sam": {
+    "stage": 7,
+    "difficulty": 4.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-sve-mi-znacis": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-ludim-za-tobom": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-tu-sam": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-sve-ce-biti-ok": {
+    "stage": 6,
+    "difficulty": 7.8,
+    "isChunk": false,
+    "caseSet": [
+      "loc"
+    ],
+    "tense": "fut",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-ne-brini": {
+    "stage": 2,
+    "difficulty": 2.2,
+    "isChunk": false,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "imp",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-izvini": {
+    "stage": 4,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "past",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-hajde-ne-svadjamo": {
+    "stage": 2,
+    "difficulty": 3.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "st-mrzim-svadje": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-stvarno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-ma-daj": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-nema-sanse": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-ozbiljno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-super": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-odlicno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-svaka-cast": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-ekstra": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-uzas": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-jao": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-katastrofa": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-ma-pusti": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "imp",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-boze-moj": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-joj-boze": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [
+      "voc"
+    ],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-boga-mi": {
+    "stage": 2,
+    "difficulty": 2.7,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-vazi": {
+    "stage": 0,
+    "difficulty": 0.9,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-slazem-se": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-naravno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-bas-tako": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-nema-veze": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-ma-kakvi": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-nista-to": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-ajde-bre": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-smori-me": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-dosadno": {
+    "stage": 7,
+    "difficulty": 3.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-dosta-vise": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-pa-ne-znam": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-ma-sta-znam": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-kako-da-ne": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-jadan": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-grozno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-zao-mi-je": {
+    "stage": 7,
+    "difficulty": 3.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-nije-lose": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-bas-dobro": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-ludilo": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rx-vrh": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-cao": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "tx-zdravo": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "tx-de-si": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-gde-si": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-sta-ima": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-kako-si": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-sta-radis": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-jesi-zauzet": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-ajde-na-kafu": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-vidimo-se": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-gde-se-nadjemo": {
+    "stage": 2,
+    "difficulty": 2.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-u-koliko-sati": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-vazi-dogovoreno": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-kasnim": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-ne-mogu": {
+    "stage": 2,
+    "difficulty": 2.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-otkazujem": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-jesi-dobro": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-sta-se-desava": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-javi-mi-se": {
+    "stage": 7,
+    "difficulty": 3.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-gde-si-nestao": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-evo-me": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-nista-posebno": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-sad-ne-mogu": {
+    "stage": 3,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-stigao-sam": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-sta-kodiras": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-radi-li-ti": {
+    "stage": 7,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-pukao-server": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-bagovi": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "tx-nmvz": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "tx-msm": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "tx-btj": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "tx-jbg": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "tx-ajde-cujemo-se": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-moram-da-idem": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-pricamo-se": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-laku-noc-brt": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-jesi-gladna": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-ajde-da-jedemo": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-gde-izlazimo": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tx-dosadno-ajde": {
+    "stage": 7,
+    "difficulty": 3.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hajde-da-kuvamo": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sta-pravimo-veceras": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ja-secam-ti-mesaj": {
+    "stage": 2,
+    "difficulty": 2.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ovo-je-odlicno": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ukusno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "bas-ti-dobro-ide-kuvanje": {
+    "stage": 2,
+    "difficulty": 3.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "moze-jos-malo": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hajde-cevape": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sarma-baka": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pljeskavica": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ajvar-domaci": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "burek-sa-mesom": {
+    "stage": 7,
+    "difficulty": 5.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "burek-za-dorucak": {
+    "stage": 2,
+    "difficulty": 2.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "treba-nam": {
+    "stage": 2,
+    "difficulty": 3.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "idi-do-prodavnice": {
+    "stage": 3,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "nemamo-nista-u-frizideru": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "probaj-ovo": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pazi-vruce": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "smanji-vatru": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gotovo-je": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sta-ima-za-jelo": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gladan-sam-ko-vuk": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "naruci-nesto": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "prijatno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "dodaj-mi-hleb": {
+    "stage": 7,
+    "difficulty": 3.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "najeo-sam-se": {
+    "stage": 7,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hoces-kafu": {
+    "stage": 2,
+    "difficulty": 2.5,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "skuvaj-kafu": {
+    "stage": 7,
+    "difficulty": 4.6,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "none",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "popijmo-kafu": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "zagorelo": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "previse-soli": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "naruci-picu": {
+    "stage": 2,
+    "difficulty": 2.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "imp",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "imam-bag": {
+    "stage": 3,
+    "difficulty": 4.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "radi-na-mom": {
+    "stage": 6,
+    "difficulty": 5.7,
+    "isChunk": false,
+    "caseSet": [
+      "loc"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ko-je-ovo-pisao": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pustam-deploy": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ne-diraj-petkom": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pukao-prod": {
+    "stage": 7,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rollback": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ajde-na-kafu": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pauza-pet-minuta": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bez-kafe-ne-radim": {
+    "stage": 2,
+    "difficulty": 2.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sta-radis-danas": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "radim-na-tiketu": {
+    "stage": 2,
+    "difficulty": 2.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "blokiram-se": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "opet-meeting": {
+    "stage": 4,
+    "difficulty": 5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "fut",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "radi-li-ti-ovo": {
+    "stage": 7,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "probaj-sad": {
+    "stage": 3,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ne-radi-opet": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "jedva-cekam-petak": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "petak-je-brate": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ponedeljak-opet": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "vikend-prekratak": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "idemo-na-rucak": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gde-jedemo": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "doneo-sam-od-kuce": {
+    "stage": 4,
+    "difficulty": 5.2,
+    "isChunk": false,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "erp-opet-pao": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "migracija-podataka": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ko-je-menjao-semu": {
+    "stage": 7,
+    "difficulty": 5.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pim-integracija": {
+    "stage": 2,
+    "difficulty": 2.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gotov-sam-za-danas": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pustam-pr": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "vidimo-se-sutra": {
+    "stage": 3,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "kako-napreduje": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "polako": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "treba-mi-pomoc": {
+    "stage": 3,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ubija-me-ovaj-task": {
+    "stage": 2,
+    "difficulty": 2.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hajde-da-izadjemo": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hajde-da-prošetamo": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hajde-da-popijemo": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hajde-da-gledamo": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hoces-da-izadjemo": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "mozemo-u-bioskop": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ima-dobar-restoran": {
+    "stage": 3,
+    "difficulty": 3.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "aj-na-pivo": {
+    "stage": 3,
+    "difficulty": 4.4,
+    "isChunk": false,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sta-radis-vikend": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "imas-planove": {
+    "stage": 3,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "nista-posebno": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "idemo-negde": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bleja-kod-mene": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "dodjite-kod-mene": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "samo-da-blejimo": {
+    "stage": 2,
+    "difficulty": 2.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "moze": {
+    "stage": 0,
+    "difficulty": 0.9,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "vazi": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "jedva-cekam": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "super-vidimo-se": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ne-mogu-danas": {
+    "stage": 2,
+    "difficulty": 2.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "morace-drugi-put": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "umoran-sam": {
+    "stage": 7,
+    "difficulty": 4.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sta-radis": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gde-si": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "jesi-slobodan": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "u-koliko-sati": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "recimo-u-osam": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "kasnim": {
+    "stage": 2,
+    "difficulty": 2.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gde-se-nadjemo": {
+    "stage": 2,
+    "difficulty": 2.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ajde-bre": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sta-cekas": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ma-hajde": {
+    "stage": 2,
+    "difficulty": 2.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "onda-dogovoreno": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "javim-ti": {
+    "stage": 2,
+    "difficulty": 2.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "javi-kad-stignes": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "vidimo-se": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "slazem-se": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "tacno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "bas-tako": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "u-pravu-si": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ma-kakvi": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "nije-bas-tako": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ne-slazem-se": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ma-daj-molim-te": {
+    "stage": 2,
+    "difficulty": 2.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "stvarno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ne-mogu-da-verujem": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ozbiljno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pa-dobro": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "smara-me": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ne-mogu-vise": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "nervira-me": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "odlicno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bas-mi-je-drago": {
+    "stage": 7,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ma-nemoj": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "svaka-cast": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bas-si-pametan": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "to-je-kul": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "to-je-smor": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ubija-me-u-pojam": {
+    "stage": 2,
+    "difficulty": 2.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "strava": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "uzas": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "srce-mi-se-topi": {
+    "stage": 7,
+    "difficulty": 3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "presrecna-sam": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bas-me-iznervirao": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "meni-se-svidja": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "nije-mi-nesto": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "po-meni": {
+    "stage": 2,
+    "difficulty": 2.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "boli-me-uvo": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ne-znam-bas": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "mozda-si-u-pravu": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "kako-da-ti-kazem": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "brate": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "brate-moj": {
+    "stage": 3,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "e-moj-brate": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bajo-moj": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "mrs": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "idi-bre": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "imp",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "budala-jedna": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "nemoj-da-smaras": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "de-bre": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "cao-bre": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pusti-to": {
+    "stage": 2,
+    "difficulty": 2.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "imp",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "nema-veze": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "umrecu": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pukao-sam": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ovo-je-ludnica": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ja-sam-majmun": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "klasican-ja": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "opet-sam-se-obrukao": {
+    "stage": 7,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "zasto-ja": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "to-se-samo-meni-desava": {
+    "stage": 2,
+    "difficulty": 2.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "koji-je-ovo-zivot": {
+    "stage": 2,
+    "difficulty": 3.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "propao-sam": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "smesno-mi-je": {
+    "stage": 7,
+    "difficulty": 5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 3,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ko-ce-ako-ne-mi": {
+    "stage": 7,
+    "difficulty": 4.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "fut",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bolje-da-cutim": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "teraj-to": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "lagano": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "nema-frke": {
+    "stage": 2,
+    "difficulty": 2.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "jao": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ajde": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ma-jok": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ej": {
+    "stage": 2,
+    "difficulty": 2.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "imp",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "inat": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bez-veze": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "to-je-to": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "samo-jako": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ustaj-kasno-je": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "jos-pet-minuta": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "napravi-mi-kafu": {
+    "stage": 7,
+    "difficulty": 4.6,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "none",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ko-prvi-u-kupatilo": {
+    "stage": 2,
+    "difficulty": 2.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pozuri-kasnim": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "sta-oblacis-danas": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sta-ima-za-dorucak": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gladan-sam-kao-vuk": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ja-kuham-ti-peres": {
+    "stage": 2,
+    "difficulty": 2.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ko-pere-sudove": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "treba-da-usisamo": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "iznesi-djubre": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ves-nece-sam-sebe": {
+    "stage": 2,
+    "difficulty": 3.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "mozes-li-da": {
+    "stage": 3,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pomozi-mi-malo": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "da-li-mozes-da-skuvas": {
+    "stage": 2,
+    "difficulty": 2.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ajde-da-gledamo": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sta-ces-da-gledas": {
+    "stage": 4,
+    "difficulty": 3.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "fut",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "daj-mi-daljinski": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ajde-da-spavamo": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "laku-noc": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ugasi-svetlo": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ne-mogu-da-spavam": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gde-su-moji-kljucevi": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "zakljucaj-vrata": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "kad-dolazis-kuci": {
+    "stage": 5,
+    "difficulty": 4.8,
+    "isChunk": false,
+    "caseSet": [
+      "dat"
+    ],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ponestalo-nam-je": {
+    "stage": 7,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ne-izlazim-danas": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ceo-dan-u-pidzami": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hoces-da-narucimo": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hajde-da-lezimo": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "kako-ti-je-bio-dan": {
+    "stage": 7,
+    "difficulty": 3.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sta-si-radio-danas": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bas-sam-se-smorio": {
+    "stage": 7,
+    "difficulty": 7.9,
+    "isChunk": false,
+    "caseSet": [
+      "loc"
+    ],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ziveli": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "u-zdravlje": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "na-zdravlje-posle-pica": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "za-nas": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "srecan-rodjendan": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "sve-najbolje": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ziveo-zivela": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "koliko-ti-godina-imas": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "srecna-slava": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "da-bog-da-slavili": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "kada-ti-je-slava": {
+    "stage": 7,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "koja-je-vasa-slava": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "srecna-nova-godina": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "hristos-se-rodi": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "srecni-praznici": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ajmo-jos-jednu": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "nece-ti-nista-biti": {
+    "stage": 2,
+    "difficulty": 2.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "dosta-mi-je": {
+    "stage": 7,
+    "difficulty": 4.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "rakija-domaca": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "dobro-dosli": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "izuj-se": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "jesi-gladan": {
+    "stage": 3,
+    "difficulty": 4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "osecaj-se-kao-kod-kuce": {
+    "stage": 4,
+    "difficulty": 5.1,
+    "isChunk": false,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gde-je-zurka": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "do-kad-ostajemo": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "odlicna-muzika": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "pojacaj-muziku": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ajde-svi-kod-mene": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "dolazi-ne-pravi-se-vazna": {
+    "stage": 2,
+    "difficulty": 3.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ko-sta-donosi": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "cestitam": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ponosan-sam-na-tebe": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "to-se-mora-proslaviti": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "moram-da-idem": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "gde-ces-rano-je": {
+    "stage": 7,
+    "difficulty": 3.5,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "bilo-je-odlicno": {
+    "stage": 3,
+    "difficulty": 3.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "vidimo-se-uskoro": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-hocu-da-spavam": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-necu-da-ustanem": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-hoces-da-jedemo": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-mogu-da-ti-pomognem": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-mozes-li-da-mi-pomognes": {
+    "stage": 7,
+    "difficulty": 3.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-moram-da-radim": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-moras-da-jedes": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-treba-da-idem": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-treba-mi-pomoc": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [
+      "nom"
+    ],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-treba-mi-voda": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [
+      "nom"
+    ],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-necu-nista": {
+    "stage": 2,
+    "difficulty": 2.5,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-daj-mi-vode": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-daj-mi-to": {
+    "stage": 3,
+    "difficulty": 4.1,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "imp",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-dodaj-mi-hleb": {
+    "stage": 2,
+    "difficulty": 3.1,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-donesi-mi-vode": {
+    "stage": 4,
+    "difficulty": 5.3,
+    "isChunk": false,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "imp",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-donesi-kafu": {
+    "stage": 2,
+    "difficulty": 3,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "imp",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-imas-li-vremena": {
+    "stage": 3,
+    "difficulty": 4.8,
+    "isChunk": false,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-imas-li-kafe": {
+    "stage": 3,
+    "difficulty": 4.8,
+    "isChunk": false,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-gde-je-voda": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [
+      "nom"
+    ],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-idemo-na-pivo": {
+    "stage": 2,
+    "difficulty": 2.9,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-mozes-li-da-doneses-vode": {
+    "stage": 4,
+    "difficulty": 5.6,
+    "isChunk": false,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-idem-u-grad": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-idem-kuci": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [
+      "dat"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-idem-da-jedem": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-idem-na-kafu": {
+    "stage": 2,
+    "difficulty": 2.9,
+    "isChunk": false,
+    "caseSet": [
+      "acc"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-hajde-da-jedemo": {
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-hajde-da-idemo": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-dolazis-li-kuci": {
+    "stage": 5,
+    "difficulty": 6,
+    "isChunk": false,
+    "caseSet": [
+      "dat"
+    ],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-stizem-za-pet-minuta": {
+    "stage": 3,
+    "difficulty": 4.5,
+    "isChunk": false,
+    "caseSet": [
+      "gen"
+    ],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-vracam-se-odmah": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-vidimo-se-kasnije": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-cekam-te": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-sta-hoces-da-radimo": {
+    "stage": 2,
+    "difficulty": 2.1,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-jesi-li-dobro": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-hoces-li-sa-mnom": {
+    "stage": 2,
+    "difficulty": 2.3,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-spavaj-lepo": {
+    "stage": 0,
+    "difficulty": 1.5,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "imp",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-volim-da-spavam": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-volim-kad-si-tu": {
+    "stage": 2,
+    "difficulty": 2.8,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-mrzim-kad-kasnis": {
+    "stage": 1,
+    "difficulty": 1.7,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-jesi-li-gladan": {
+    "stage": 1,
+    "difficulty": 1.9,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-vidimo-se-veceras": {
+    "stage": 2,
+    "difficulty": 2.4,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 1,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-moze": {
+    "stage": 0,
+    "difficulty": 0.9,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-samo-malo": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-nije-strasno": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-javi-mi-se": {
+    "stage": 7,
+    "difficulty": 2.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 2,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-bas-lepo": {
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-polako": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "heuristic"
+  },
+  "ef-naravno": {
+    "stage": 0,
+    "difficulty": 0.4,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-nema-problema": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  },
+  "ef-nemam-pojma": {
+    "stage": 0,
+    "difficulty": 1.3,
+    "isChunk": true,
+    "caseSet": [],
+    "tense": "pres",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
+  }
+}

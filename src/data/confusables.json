@@ -1,0 +1,254 @@
+{
+  "verbSets": [
+    {
+      "frame": "modal-da",
+      "members": [
+        {
+          "lemma": "hteti",
+          "en": "want",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "hoću", "sr_cyrillic": "хоћу" },
+            "2sg.pres": { "sr_latin": "hoćeš", "sr_cyrillic": "хоћеш" },
+            "3sg.pres": { "sr_latin": "hoće", "sr_cyrillic": "хоће" },
+            "1pl.pres": { "sr_latin": "hoćemo", "sr_cyrillic": "хоћемо" },
+            "1sg.pres.neg": { "sr_latin": "neću", "sr_cyrillic": "нећу" }
+          }
+        },
+        {
+          "lemma": "moci",
+          "en": "can",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "mogu", "sr_cyrillic": "могу" },
+            "2sg.pres": { "sr_latin": "možeš", "sr_cyrillic": "можеш" },
+            "3sg.pres": { "sr_latin": "može", "sr_cyrillic": "може" },
+            "1pl.pres": { "sr_latin": "možemo", "sr_cyrillic": "можемо" }
+          }
+        },
+        {
+          "lemma": "morati",
+          "en": "must",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "moram", "sr_cyrillic": "морам" },
+            "2sg.pres": { "sr_latin": "moraš", "sr_cyrillic": "мораш" },
+            "3sg.pres": { "sr_latin": "mora", "sr_cyrillic": "мора" },
+            "1pl.pres": { "sr_latin": "moramo", "sr_cyrillic": "морамо" }
+          }
+        },
+        {
+          "lemma": "trebati",
+          "en": "should",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "treba", "sr_cyrillic": "треба" },
+            "2sg.pres": { "sr_latin": "treba", "sr_cyrillic": "треба" },
+            "3sg.pres": { "sr_latin": "treba", "sr_cyrillic": "треба" },
+            "1pl.pres": { "sr_latin": "treba", "sr_cyrillic": "треба" }
+          }
+        }
+      ]
+    },
+    {
+      "frame": "consume-acc",
+      "members": [
+        {
+          "lemma": "hteti",
+          "en": "want",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "hoću", "sr_cyrillic": "хоћу" },
+            "2sg.pres": { "sr_latin": "hoćeš", "sr_cyrillic": "хоћеш" },
+            "3sg.pres": { "sr_latin": "hoće", "sr_cyrillic": "хоће" },
+            "1pl.pres": { "sr_latin": "hoćemo", "sr_cyrillic": "хоћемо" },
+            "1sg.pres.neg": { "sr_latin": "neću", "sr_cyrillic": "нећу" }
+          }
+        },
+        {
+          "lemma": "voleti",
+          "en": "like",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "volim", "sr_cyrillic": "волим" },
+            "2sg.pres": { "sr_latin": "voliš", "sr_cyrillic": "волиш" },
+            "3sg.pres": { "sr_latin": "voli", "sr_cyrillic": "воли" },
+            "1pl.pres": { "sr_latin": "volimo", "sr_cyrillic": "волимо" }
+          }
+        },
+        {
+          "lemma": "piti",
+          "en": "drink",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "pijem", "sr_cyrillic": "пијем" },
+            "2sg.pres": { "sr_latin": "piješ", "sr_cyrillic": "пијеш" },
+            "3sg.pres": { "sr_latin": "pije", "sr_cyrillic": "пије" },
+            "1pl.pres": { "sr_latin": "pijemo", "sr_cyrillic": "пијемо" }
+          }
+        },
+        {
+          "lemma": "jesti",
+          "en": "eat",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "jedem", "sr_cyrillic": "једем" },
+            "2sg.pres": { "sr_latin": "jedeš", "sr_cyrillic": "једеш" },
+            "3sg.pres": { "sr_latin": "jede", "sr_cyrillic": "једе" },
+            "1pl.pres": { "sr_latin": "jedemo", "sr_cyrillic": "једемо" }
+          }
+        },
+        {
+          "lemma": "praviti",
+          "en": "make",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "pravim", "sr_cyrillic": "правим" },
+            "2sg.pres": { "sr_latin": "praviš", "sr_cyrillic": "правиш" },
+            "3sg.pres": { "sr_latin": "pravi", "sr_cyrillic": "прави" },
+            "1pl.pres": { "sr_latin": "pravimo", "sr_cyrillic": "правимо" }
+          }
+        },
+        {
+          "lemma": "mrzeti",
+          "en": "hate",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "mrzim", "sr_cyrillic": "мрзим" },
+            "2sg.pres": { "sr_latin": "mrziš", "sr_cyrillic": "мрзиш" },
+            "3sg.pres": { "sr_latin": "mrzi", "sr_cyrillic": "мрзи" },
+            "1pl.pres": { "sr_latin": "mrzimo", "sr_cyrillic": "мрзимо" }
+          }
+        }
+      ]
+    },
+    {
+      "frame": "motion",
+      "members": [
+        {
+          "lemma": "ici",
+          "en": "go",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "idem", "sr_cyrillic": "идем" },
+            "2sg.pres": { "sr_latin": "ideš", "sr_cyrillic": "идеш" },
+            "3sg.pres": { "sr_latin": "ide", "sr_cyrillic": "иде" },
+            "1pl.pres": { "sr_latin": "idemo", "sr_cyrillic": "идемо" }
+          }
+        },
+        {
+          "lemma": "dolaziti",
+          "en": "come",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "dolazim", "sr_cyrillic": "долазим" },
+            "2sg.pres": { "sr_latin": "dolaziš", "sr_cyrillic": "долазиш" },
+            "3sg.pres": { "sr_latin": "dolazi", "sr_cyrillic": "долази" },
+            "1pl.pres": { "sr_latin": "dolazimo", "sr_cyrillic": "долазимо" }
+          }
+        },
+        {
+          "lemma": "odlaziti",
+          "en": "leave",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "odlazim", "sr_cyrillic": "одлазим" },
+            "2sg.pres": { "sr_latin": "odlaziš", "sr_cyrillic": "одлазиш" },
+            "3sg.pres": { "sr_latin": "odlazi", "sr_cyrillic": "одлази" },
+            "1pl.pres": { "sr_latin": "odlazimo", "sr_cyrillic": "одлазимо" }
+          }
+        }
+      ]
+    },
+    {
+      "frame": "communication",
+      "members": [
+        {
+          "lemma": "zvati",
+          "en": "call",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "zovem", "sr_cyrillic": "зовем" },
+            "2sg.pres": { "sr_latin": "zoveš", "sr_cyrillic": "зовеш" },
+            "3sg.pres": { "sr_latin": "zove", "sr_cyrillic": "зове" }
+          }
+        },
+        {
+          "lemma": "pisati",
+          "en": "write",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "pišem", "sr_cyrillic": "пишем" },
+            "2sg.pres": { "sr_latin": "pišeš", "sr_cyrillic": "пишеш" },
+            "3sg.pres": { "sr_latin": "piše", "sr_cyrillic": "пише" }
+          }
+        },
+        {
+          "lemma": "pitati",
+          "en": "ask",
+          "aspect": "impf",
+          "forms": {
+            "1sg.pres": { "sr_latin": "pitam", "sr_cyrillic": "питам" },
+            "2sg.pres": { "sr_latin": "pitaš", "sr_cyrillic": "питаш" },
+            "3sg.pres": { "sr_latin": "pita", "sr_cyrillic": "пита" }
+          }
+        }
+      ]
+    }
+  ],
+  "nouns": [
+    {
+      "lemma": "kafa",
+      "en": "coffee",
+      "gender": "f",
+      "forms": {
+        "nom": { "sr_latin": "kafa", "sr_cyrillic": "кафа" },
+        "acc": { "sr_latin": "kafu", "sr_cyrillic": "кафу" },
+        "gen": { "sr_latin": "kafe", "sr_cyrillic": "кафе" },
+        "ins": { "sr_latin": "kafom", "sr_cyrillic": "кафом" }
+      }
+    },
+    {
+      "lemma": "voda",
+      "en": "water",
+      "gender": "f",
+      "forms": {
+        "nom": { "sr_latin": "voda", "sr_cyrillic": "вода" },
+        "acc": { "sr_latin": "vodu", "sr_cyrillic": "воду" },
+        "gen": { "sr_latin": "vode", "sr_cyrillic": "воде" }
+      }
+    },
+    {
+      "lemma": "kuca",
+      "en": "house/home",
+      "gender": "f",
+      "forms": {
+        "nom": { "sr_latin": "kuća", "sr_cyrillic": "кућа" },
+        "acc": { "sr_latin": "kuću", "sr_cyrillic": "кућу" },
+        "gen": { "sr_latin": "kuće", "sr_cyrillic": "куће" },
+        "dat": { "sr_latin": "kući", "sr_cyrillic": "кући" },
+        "ins": { "sr_latin": "kućom", "sr_cyrillic": "кућом" }
+      }
+    },
+    {
+      "lemma": "muzika",
+      "en": "music",
+      "gender": "f",
+      "forms": {
+        "nom": { "sr_latin": "muzika", "sr_cyrillic": "музика" },
+        "acc": { "sr_latin": "muziku", "sr_cyrillic": "музику" },
+        "gen": { "sr_latin": "muzike", "sr_cyrillic": "музике" }
+      }
+    },
+    {
+      "lemma": "knjiga",
+      "en": "book",
+      "gender": "f",
+      "forms": {
+        "nom": { "sr_latin": "knjiga", "sr_cyrillic": "књига" },
+        "acc": { "sr_latin": "knjigu", "sr_cyrillic": "књигу" },
+        "gen": { "sr_latin": "knjige", "sr_cyrillic": "књиге" }
+      }
+    }
+  ]
+}

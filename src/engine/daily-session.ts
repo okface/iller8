@@ -4,6 +4,8 @@ import { words as allWords } from '../data/words';
 import { families } from '../data/phrase-families';
 import { getDueItems } from './srs';
 import { isPhraseReady } from './word-readiness';
+import { phraseStage, phraseDifficulty } from '../data/phrase-meta';
+import { getLearnerStage, isStageUnlocked } from './grammar-progress';
 import { generateExercise } from './exercise-generator';
 import { generateWordRecognize, generateWordProduce, generateWordListen } from './word-generator';
 import { generatePerspectiveShiftExercise } from './family-generator';
@@ -170,17 +172,28 @@ function pickNewItems(input: SessionInput, count: number): string[] {
     .sort((a, b) => (a.rank ?? 999) - (b.rank ?? 999))
     .map((w) => `word:${w.id}`);
 
+  // Difficulty ramp: only introduce phrases up to the learner's grammar
+  // frontier (chunks always flow), and order easy→hard by grammar stage.
+  const frontier = getLearnerStage(progress);
   const newPhraseIds = allPhrases
     .filter(
       (p) =>
         (progress.phrases[p.id]?.bucket ?? 0) === 0 &&
         isPhraseReady(p, progress) &&
-        !isDailyExcluded(p.id)
+        !isDailyExcluded(p.id) &&
+        isStageUnlocked(p.id, frontier)
     )
     .sort((a, b) => {
+      // Easier grammar stage first, then frames, then difficulty, then length.
+      const sa = phraseStage(a.id);
+      const sb = phraseStage(b.id);
+      if (sa !== sb) return sa - sb;
       const af = lessonIdForPhrase(a.id) === FRAME_LESSON_ID ? 0 : 1;
       const bf = lessonIdForPhrase(b.id) === FRAME_LESSON_ID ? 0 : 1;
       if (af !== bf) return af - bf;
+      const da = phraseDifficulty(a.id);
+      const db = phraseDifficulty(b.id);
+      if (da !== db) return da - db;
       return phraseWordCount(a) - phraseWordCount(b);
     })
     .map((p) => p.id);

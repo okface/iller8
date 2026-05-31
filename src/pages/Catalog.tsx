@@ -7,7 +7,23 @@ import SectionHead from '../components/ui/SectionHead';
 import MonoBadge from '../components/ui/MonoBadge';
 import AudioButton from '../components/ui/AudioButton';
 import { T, metaLabel } from '../lib/tokens';
+import { phraseDifficulty } from '../data/phrase-meta';
 import type { UserProgress } from '../store/types';
+
+/** Difficulty meter: 1–3 dots from the phrase's computed difficulty score. */
+function DifficultyDots({ phraseId }: { phraseId: string }) {
+  const d = phraseDifficulty(phraseId);
+  const level = d < 3 ? 1 : d < 6 ? 2 : 3;
+  return (
+    <span
+      title={`difficulty ${d}`}
+      style={{ fontFamily: T.mono, fontSize: 9, color: T.mute, letterSpacing: 1 }}
+    >
+      {'●'.repeat(level)}
+      <span style={{ opacity: 0.3 }}>{'●'.repeat(3 - level)}</span>
+    </span>
+  );
+}
 
 interface CatalogProps {
   progress: UserProgress;
@@ -263,8 +279,20 @@ export default function Catalog({ progress, script }: CatalogProps) {
                           >
                             {script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin}
                           </div>
-                          <div style={{ fontSize: 11, color: T.dim, marginTop: 1 }}>
-                            {phrase.en}
+                          <div
+                            style={{
+                              fontSize: 11,
+                              color: T.dim,
+                              marginTop: 1,
+                              display: 'flex',
+                              alignItems: 'center',
+                              gap: 8,
+                            }}
+                          >
+                            <span style={{ minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                              {phrase.en}
+                            </span>
+                            <DifficultyDots phraseId={phrase.id} />
                           </div>
                         </div>
                         <AudioButton text={phrase.sr_latin} size={14} />
