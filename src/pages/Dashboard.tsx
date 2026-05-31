@@ -6,6 +6,7 @@ import { words } from '../data/words';
 import { getWordBucket } from '../lib/word-progress';
 import { getDailySummary } from '../engine/daily-session';
 import LessonCard from '../components/LessonCard';
+import StageMap from '../components/StageMap';
 import Card from '../components/ui/Card';
 import Btn from '../components/ui/Btn';
 import LinearProgress from '../components/ui/LinearProgress';
@@ -360,6 +361,11 @@ export default function Dashboard({ progress, script }: DashboardProps) {
           </div>
         </Card>
       </div>
+
+      {/* Grammar path — the visible difficulty ramp */}
+      <Card style={{ marginTop: 16 }} pad={16}>
+        <StageMap progress={progress} />
+      </Card>
 
       {/* Quick-access tiles — Words / Hammer / Perspective / Catalog */}
       <div style={{ marginTop: 16 }}>
