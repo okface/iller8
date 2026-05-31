@@ -21,7 +21,7 @@
           "sr_latin": "Živeli!",
           "sr_cyrillic": "Живели!",
           "en": "Cheers!",
-          "context": "The standard Serbian toast. Used every time you clink glasses.",
+          "context": "Everyone's glass is raised around the table — what do you say as you clink?",
           "wordRefs": [],
           "notes": "Literally means 'may we live'. Always look people in the eyes when you say it."
         },
@@ -30,7 +30,7 @@
           "sr_latin": "U zdravlje!",
           "sr_cyrillic": "У здравље!",
           "en": "To health!",
-          "context": "A toast to good health. Can be used on its own or as part of a longer toast.",
+          "context": "Lift your glass and toast to everyone's good health — the two-word version.",
           "wordRefs": [
             "u"
           ],
@@ -41,7 +41,7 @@
           "sr_latin": "Na zdravlje!",
           "sr_cyrillic": "На здравље!",
           "en": "To your health! / Bless you!",
-          "context": "Used both as a toast and after someone sneezes. Also said after someone finishes eating.",
+          "context": "Someone next to you just sneezed — say the little blessing (it doubles as a toast).",
           "wordRefs": [
             "na"
           ],
@@ -52,7 +52,7 @@
           "sr_latin": "Za nas!",
           "sr_cyrillic": "За нас!",
           "en": "To us!",
-          "context": "A simple, intimate toast when drinking with your partner or close friends.",
+          "context": "Just you and your partner clinking glasses on a date — make the toast about the two of you.",
           "wordRefs": [
             "za"
           ],
@@ -69,7 +69,7 @@
           "sr_latin": "Srećan rođendan!",
           "sr_cyrillic": "Срећан рођендан!",
           "en": "Happy birthday!",
-          "context": "The standard birthday greeting.",
+          "context": "You walk in and hand your friend their gift on their big day — what do you say first?",
           "wordRefs": [
             "srecan"
           ],
@@ -80,7 +80,7 @@
           "sr_latin": "Sve najbolje!",
           "sr_cyrillic": "Све најбоље!",
           "en": "All the best!",
-          "context": "Often added after 'Srećan rođendan' or used on its own for any occasion.",
+          "context": "You've just wished a happy birthday and want to add a warm second line — wish them everything good.",
           "wordRefs": [
             "sve",
             { "id": "dobar", "surface": "najbolje", "surface_cyrillic": "најбоље" }
@@ -92,7 +92,7 @@
           "sr_latin": "Živeo!",
           "sr_cyrillic": "Живео!",
           "en": "Long live! / Cheers to you!",
-          "context": "Shouted at the birthday person, like 'hip hip hooray'. The crowd responds with this.",
+          "context": "Glasses up for the birthday guy — shout the 'hip hip hooray' cheer straight at him.",
           "wordRefs": [],
           "notes": "For a woman: 'Živela!' For a group: 'Živeli!'",
           "variations": [
@@ -124,7 +124,7 @@
           "sr_latin": "Srećna slava!",
           "sr_cyrillic": "Срећна слава!",
           "en": "Happy slava!",
-          "context": "The greeting when you visit someone's slava celebration.",
+          "context": "You arrive at a family's patron-saint feast — what do you say as you step through the door?",
           "wordRefs": [
             { "id": "srecan", "surface": "Srećna", "surface_cyrillic": "Срећна", "form": "f.sg" }
           ],
@@ -180,7 +180,7 @@
           "sr_latin": "Srećna Nova godina!",
           "sr_cyrillic": "Срећна Нова година!",
           "en": "Happy New Year!",
-          "context": "Standard New Year's greeting. Used from Dec 31 well into January.",
+          "context": "The clock strikes midnight on December 31st — what do you say to everyone around you?",
           "wordRefs": [
             { "id": "srecan", "surface": "Srećna", "surface_cyrillic": "Срећна", "form": "f.sg" }
           ],
@@ -210,7 +210,7 @@
           "sr_latin": "Srećni praznici!",
           "sr_cyrillic": "Срећни празници!",
           "en": "Happy holidays!",
-          "context": "A general holiday greeting that works for any celebration period.",
+          "context": "You're leaving the office before the holiday break — wish everyone well without naming a specific day.",
           "wordRefs": [],
           "notes": "'Praznici' = holidays (plural of 'praznik')."
         }
@@ -225,7 +225,7 @@
           "sr_latin": "Ajmo još jednu!",
           "sr_cyrillic": "Ајмо још једну!",
           "en": "Let's have one more!",
-          "context": "Suggesting another round. Warning: this phrase has no upper limit in Serbian culture.",
+          "context": "Everyone's glass is empty and the night is young — push for another round.",
           "wordRefs": [
             "jos"
           ],
@@ -282,7 +282,7 @@
           "sr_latin": "Dobro došli!",
           "sr_cyrillic": "Добро дошли!",
           "en": "Welcome!",
-          "context": "Greeting guests at the door. Essential hospitality phrase.",
+          "context": "Guests have arrived and you're opening the door for them — what's the first thing you say?",
           "wordRefs": [
             { "id": "dobar", "surface": "Dobro", "surface_cyrillic": "Добро", "form": "n.sg" }
           ],
@@ -472,7 +472,7 @@
           "sr_latin": "Čestitam!",
           "sr_cyrillic": "Честитам!",
           "en": "Congratulations!",
-          "context": "Universal congratulations — works for any achievement, milestone, or celebration.",
+          "context": "Your friend just told you they passed their driving test — congratulate them.",
           "wordRefs": [],
           "notes": "'Čestitati' = to congratulate. Can add what for: 'Čestitam ti na...' (I congratulate you on...)."
         },
@@ -481,7 +481,7 @@
           "sr_latin": "Svaka čast!",
           "sr_cyrillic": "Свака част!",
           "en": "Well done! / Respect!",
-          "context": "Expressing admiration or respect for something someone did. Very versatile.",
+          "context": "A friend pulled off something genuinely impressive — show them respect.",
           "wordRefs": [
             { "id": "svaki", "surface": "Svaka", "surface_cyrillic": "Свака", "form": "f.sg" },
             "cast"
@@ -514,7 +514,7 @@
           "sr_latin": "To se mora proslaviti!",
           "sr_cyrillic": "То се мора прославити!",
           "en": "That must be celebrated!",
-          "context": "When someone shares good news. Any excuse to celebrate is a good excuse.",
+          "context": "Your partner announces they got a raise — react by insisting this calls for a celebration.",
           "wordRefs": [
             "to",
             "se",

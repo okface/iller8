@@ -68,7 +68,7 @@
           "sr_latin": "Super!",
           "sr_cyrillic": "Супер!",
           "en": "Great! / Awesome!",
-          "context": "Universal positive reaction. Works in any casual conversation.",
+          "context": "Your friend says they got the job — what do you fire back?",
           "wordRefs": ["super"],
           "notes": "Borrowed from English/German. Pronounced 'SOO-per' with Serbian accent."
         },
@@ -77,7 +77,7 @@
           "sr_latin": "Odlično!",
           "sr_cyrillic": "Одлично!",
           "en": "Excellent! / Perfect!",
-          "context": "A step above 'super.' Shows genuine enthusiasm.",
+          "context": "Your plan comes together perfectly — react with a word stronger than 'super'.",
           "wordRefs": [
             { "id": "odlican", "surface": "Odlično", "surface_cyrillic": "Одлично", "form": "n.sg" }
           ],
@@ -88,7 +88,7 @@
           "sr_latin": "Svaka čast!",
           "sr_cyrillic": "Свака част!",
           "en": "Well done! / Respect! / Props!",
-          "context": "Acknowledging someone did something impressive. Very Serbian expression.",
+          "context": "Your friend nailed a hard exam — tip your hat to them.",
           "wordRefs": [
             "cast",
             { "id": "svaki", "surface": "Svaka", "surface_cyrillic": "Свака", "form": "f.sg" }
@@ -100,7 +100,7 @@
           "sr_latin": "Ekstra!",
           "sr_cyrillic": "Екстра!",
           "en": "Awesome! / Sick!",
-          "context": "Casual, upbeat reaction. Common among younger people.",
+          "context": "A friend shows you a clip of their weekend — react like it's awesome.",
           "wordRefs": ["ekstra-interj"],
           "notes": "Used as a standalone exclamation. Can also mean 'extra good' as an adjective."
         }
@@ -115,7 +115,7 @@
           "sr_latin": "Užas!",
           "sr_cyrillic": "Ужас!",
           "en": "Horrible! / Awful! / What a nightmare!",
-          "context": "When something is terrible. Can be about a situation, food, weather, anything.",
+          "context": "Your friend tells you their flight got cancelled again — react to the bad news.",
           "wordRefs": ["uzas"],
           "notes": "Literally 'horror.' Very commonly used as a standalone reaction."
         },
@@ -133,7 +133,7 @@
           "sr_latin": "Katastrofa!",
           "sr_cyrillic": "Катастрофа!",
           "en": "Disaster! / It's a catastrophe!",
-          "context": "Dramatic reaction to something going wrong. Serbs love a bit of dramatic flair.",
+          "context": "The bus is five minutes late again — react with maximum dramatic flair.",
           "wordRefs": ["katastrofa"],
           "notes": "Often used with playful exaggeration. Your bus is 5 minutes late? Katastrofa."
         },
@@ -213,7 +213,7 @@
           "sr_latin": "Slažem se.",
           "sr_cyrillic": "Слажем се.",
           "en": "I agree.",
-          "context": "When you're on the same page as someone. Clear, direct agreement.",
+          "context": "Your friend lays out a plan and asks what you think — tell them you're on board.",
           "wordRefs": [
             "se",
             { "id": "slagati-se", "surface": "Slažem", "surface_cyrillic": "Слажем", "form": "1sg.pres" }
@@ -225,7 +225,7 @@
           "sr_latin": "Naravno!",
           "sr_cyrillic": "Наравно!",
           "en": "Of course!",
-          "context": "Obvious agreement. 'Yes, obviously!'",
+          "context": "Someone asks if you're coming to the party — answer like it's totally obvious.",
           "wordRefs": ["naravno"],
           "notes": "Can be genuine or slightly sarcastic depending on delivery."
         },
@@ -234,7 +234,7 @@
           "sr_latin": "Baš tako!",
           "sr_cyrillic": "Баш тако!",
           "en": "Exactly! / That's right!",
-          "context": "Strong agreement. When someone says exactly what you were thinking.",
+          "context": "Your friend says out loud the exact thing you were thinking — snap back in agreement.",
           "wordRefs": ["bas", "tako"],
           "notes": "'Baš' = exactly/truly. 'Tako' = so/like that."
         }
@@ -302,7 +302,7 @@
           "sr_latin": "Smara me.",
           "sr_cyrillic": "Смара ме.",
           "en": "It's annoying me. / It's bugging me.",
-          "context": "When something or someone is getting on your nerves.",
+          "context": "Someone keeps repeating the same complaint — say it's really getting on your nerves.",
           "wordRefs": [
             "me-acc",
             { "id": "smarati", "surface": "Smara", "surface_cyrillic": "Смара", "form": "3sg.pres" }
@@ -326,7 +326,7 @@
           "sr_latin": "Dosta više!",
           "sr_cyrillic": "Доста више!",
           "en": "Enough already!",
-          "context": "You've reached your limit. Something needs to stop.",
+          "context": "The kids won't stop bickering — snap that it has to stop now.",
           "wordRefs": ["dosta", "vise"],
           "notes": "'Dosta' = enough. 'Više' = more/already. Together: 'enough already!'"
         }
@@ -400,7 +400,7 @@
           "sr_latin": "Grozno!",
           "sr_cyrillic": "Грозно!",
           "en": "That's terrible! / How awful!",
-          "context": "Reacting to bad news someone shares with you.",
+          "context": "Your friend says their car got broken into — react with sympathy.",
           "wordRefs": [
             { "id": "grozan", "surface": "Grozno", "surface_cyrillic": "Грозно", "form": "n.sg" }
           ],
@@ -430,7 +430,7 @@
           "sr_latin": "Nije loše!",
           "sr_cyrillic": "Није лоше!",
           "en": "Not bad!",
-          "context": "Serbian understatement. Often means 'actually pretty good.' Peak Balkan energy.",
+          "context": "You taste a friend's cooking and it's actually great — give understated Balkan praise.",
           "wordRefs": [
             { "id": "biti", "surface": "Nije", "surface_cyrillic": "Није", "form": "3sg.pres.neg" },
             { "id": "los", "surface": "loše", "surface_cyrillic": "лоше", "form": "n.sg" },
@@ -443,7 +443,7 @@
           "sr_latin": "Baš dobro!",
           "sr_cyrillic": "Баш добро!",
           "en": "Really good!",
-          "context": "Genuine appreciation. Works for food, news, someone's work — anything.",
+          "context": "You bite into the food a friend made and it's great — tell them sincerely.",
           "wordRefs": [
             "bas",
             { "id": "dobar", "surface": "dobro", "surface_cyrillic": "добро", "form": "n.sg" }
@@ -455,7 +455,7 @@
           "sr_latin": "Ludilo!",
           "sr_cyrillic": "Лудило!",
           "en": "Insane! / Unreal! / Wild!",
-          "context": "When something is so good or crazy it blows your mind. Very current slang.",
+          "context": "You just saw an unbelievable goal at the match — shout how wild that was.",
           "wordRefs": ["ludilo"],
           "notes": "Literally 'madness.' Used positively like English 'insane!' or 'crazy good!'"
         },
@@ -464,7 +464,7 @@
           "sr_latin": "Vrh!",
           "sr_cyrillic": "Врх!",
           "en": "Top! / The best! / Peak!",
-          "context": "Youth slang for something being amazing. Like saying 'fire' or 'peak.'",
+          "context": "A friend plays you a track they love — tell them it's absolutely top.",
           "wordRefs": ["vrh"],
           "notes": "Literally 'peak/top.' Very casual, mostly younger generation."
         }

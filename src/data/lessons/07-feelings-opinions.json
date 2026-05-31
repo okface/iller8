@@ -33,7 +33,7 @@
           "sr_latin": "Tačno.",
           "sr_cyrillic": "Тачно.",
           "en": "Exactly. / That's right.",
-          "context": "Quick confirmation, like nodding along emphatically.",
+          "context": "Your friend sums up the situation perfectly — confirm it with one quick word.",
           "wordRefs": []
         },
         {
@@ -41,7 +41,7 @@
           "sr_latin": "Baš tako.",
           "sr_cyrillic": "Баш тако.",
           "en": "Exactly like that. / Spot on.",
-          "context": "Stronger emphasis than just 'tačno' — you fully back what was said.",
+          "context": "Your friend nails your point even better than you did — back them up emphatically.",
           "wordRefs": [
             "bas",
             "tako"
@@ -70,7 +70,7 @@
           "sr_latin": "Ma kakvi!",
           "sr_cyrillic": "Ма какви!",
           "en": "No way! / As if!",
-          "context": "Dismissive disagreement. Like waving something off as ridiculous.",
+          "context": "Someone suggests something you find absurd — wave it off as ridiculous.",
           "wordRefs": [
             "ma",
             "kakvi"
@@ -94,7 +94,7 @@
           "sr_latin": "Ne slažem se.",
           "sr_cyrillic": "Не слажем се.",
           "en": "I disagree.",
-          "context": "Direct but not aggressive. Fine for normal conversation.",
+          "context": "Your friend states an opinion and you see it differently — say so directly but calmly.",
           "wordRefs": [
             "ne",
             { "id": "slagati-se", "surface": "slažem", "surface_cyrillic": "слажем", "form": "1sg.pres" },
@@ -124,7 +124,7 @@
           "sr_latin": "Stvarno?!",
           "sr_cyrillic": "Стварно?!",
           "en": "Really?! / Seriously?!",
-          "context": "The go-to reaction for surprise. Use it constantly.",
+          "context": "A friend drops some surprising news on you — ask whether it's really true.",
           "wordRefs": [
             "stvarno"
           ],
@@ -216,7 +216,7 @@
           "sr_latin": "Odlično!",
           "sr_cyrillic": "Одлично!",
           "en": "Excellent! / Awesome!",
-          "context": "Pure enthusiasm. Good news, great food, anything positive.",
+          "context": "Your friend shares some great news — react with pure enthusiasm.",
           "wordRefs": [
             { "id": "odlican", "surface": "Odlično", "surface_cyrillic": "Одлично", "form": "n.sg" }
           ]
@@ -308,7 +308,7 @@
           "sr_latin": "To je kul.",
           "sr_cyrillic": "То је кул.",
           "en": "That's cool.",
-          "context": "Casual approval. Yes, they use 'kul' borrowed from English.",
+          "context": "A friend tells you their plan for the weekend — give it a casual nod of approval.",
           "wordRefs": [
             "to",
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
@@ -320,7 +320,7 @@
           "sr_latin": "To je smor.",
           "sr_cyrillic": "То је смор.",
           "en": "That's boring. / That's a drag.",
-          "context": "When something is tediously dull. Very casual.",
+          "context": "A friend describes an event you'd find dull — tell them it sounds like a drag.",
           "wordRefs": [
             "to",
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
@@ -332,7 +332,7 @@
           "sr_latin": "Ubija me u pojam.",
           "sr_cyrillic": "Убија ме у појам.",
           "en": "It kills my vibe. / It's mind-numbing.",
-          "context": "Something is so boring or annoying it's draining your life force.",
+          "context": "You sat through an endless meeting — vent that it drained your whole soul.",
           "wordRefs": [
             "me-acc",
             "u"
@@ -344,7 +344,7 @@
           "sr_latin": "Strava!",
           "sr_cyrillic": "Страва!",
           "en": "Awesome! / Wicked!",
-          "context": "Something is impressively cool. Slightly retro slang but still used.",
+          "context": "A friend shows you something seriously cool — react like that's seriously cool.",
           "wordRefs": [],
           "notes": "Literally means 'horror/dread' — used positively, like English 'sick' or 'wicked'."
         }
@@ -359,7 +359,7 @@
           "sr_latin": "Užas!",
           "sr_cyrillic": "Ужас!",
           "en": "Horrible! / What a nightmare!",
-          "context": "Reacting to bad news, a terrible situation, or something awful.",
+          "context": "Your friend tells you their whole weekend got ruined — react with dramatic sympathy.",
           "wordRefs": [
             "uzas"
           ],
@@ -427,7 +427,7 @@
           "sr_latin": "Meni se sviđa.",
           "sr_cyrillic": "Мени се свиђа.",
           "en": "I like it.",
-          "context": "General approval — food, a movie, an idea, anything.",
+          "context": "Your partner asks what you think of the movie — say you're into it.",
           "wordRefs": [
             "se"
           ],
@@ -438,7 +438,7 @@
           "sr_latin": "Nije mi nešto.",
           "sr_cyrillic": "Није ми нешто.",
           "en": "It's not great. / Meh.",
-          "context": "Polite-ish way to say you're not impressed. Very understated.",
+          "context": "A friend asks how the restaurant was — say you weren't really impressed, diplomatically.",
           "wordRefs": [
             { "id": "biti", "surface": "Nije", "surface_cyrillic": "Није", "form": "3sg.pres.neg" },
             "mi-dat"
@@ -461,7 +461,7 @@
           "sr_latin": "Boli me uvo.",
           "sr_cyrillic": "Боли ме уво.",
           "en": "I don't care at all.",
-          "context": "You could not care less. Casual and slightly blunt.",
+          "context": "Someone keeps pushing their opinion on you — tell them bluntly you couldn't care less.",
           "wordRefs": [
             "me-acc"
           ],

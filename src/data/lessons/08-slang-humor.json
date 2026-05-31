@@ -72,7 +72,7 @@
           "sr_latin": "Mrš!",
           "sr_cyrillic": "Мрш!",
           "en": "Get out of here! / Scram!",
-          "context": "Dismissive shoo-away. Between friends it's playful; to strangers it's rude.",
+          "context": "Your buddy makes a ridiculous claim — playfully shoo him off with one sharp word.",
           "wordRefs": [],
           "notes": "Short, sharp, iconic. One of the first words every Serbian kid learns."
         },
@@ -104,7 +104,7 @@
           "sr_latin": "Nemoj da smaraš.",
           "sr_cyrillic": "Немој да смараш.",
           "en": "Don't be annoying. / Stop being a pain.",
-          "context": "Telling a friend they're being tedious. Standard friend-level banter.",
+          "context": "Your friend keeps nagging you about the same thing — tell him to quit being a pain.",
           "wordRefs": [
             "nemoj",
             "da-conj"
@@ -155,7 +155,7 @@
           "sr_latin": "Nema veze.",
           "sr_cyrillic": "Нема везе.",
           "en": "No worries. / It doesn't matter.",
-          "context": "One of the most used phrases in Serbian. Covers everything from 'it's fine' to 'who cares.'",
+          "context": "A friend apologizes for forgetting to call back — brush it off, it's fine.",
           "wordRefs": [
             { "id": "imati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres.neg" },
             { "id": "veza", "surface": "veze", "surface_cyrillic": "везе", "case": "gen" }
@@ -203,7 +203,7 @@
           "sr_latin": "Ovo je ludnica.",
           "sr_cyrillic": "Ово је лудница.",
           "en": "This is madness. / This is a madhouse.",
-          "context": "Chaotic situations — a wild party, a crazy day at work, Serbian traffic.",
+          "context": "You're stuck in chaotic gridlocked traffic — sum up the scene in one exasperated line.",
           "wordRefs": [
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
           ]
@@ -360,7 +360,7 @@
           "sr_latin": "Ma teraj to.",
           "sr_cyrillic": "Ма терај то.",
           "en": "Screw that. / Forget it.",
-          "context": "Giving up on something or dismissing it. Casual and mildly vulgar.",
+          "context": "A plan keeps falling apart and you're done with it — tell your friend to drop the whole thing.",
           "wordRefs": [
             "ma",
             "to"
@@ -372,7 +372,7 @@
           "sr_latin": "Lagano.",
           "sr_cyrillic": "Лагано.",
           "en": "Easy. / No stress. / Chill.",
-          "context": "Everything is relaxed. Use as a one-word answer to 'how's it going?' or to calm someone down.",
+          "context": "A friend asks how things are going — answer that it's all relaxed, with one chill word.",
           "wordRefs": [],
           "notes": "Literally 'lightly.' The Serbian equivalent of 'easy-peasy' or 'no worries.'"
         },
@@ -392,7 +392,7 @@
           "sr_latin": "Nema frke.",
           "sr_cyrillic": "Нема фрке.",
           "en": "No worries. / No stress.",
-          "context": "Slangy reassurance that everything's fine and there's nothing to stress about.",
+          "context": "Your friend is panicking about a small problem — reassure him there's nothing to stress about.",
           "wordRefs": [
             { "id": "imati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres.neg" }
           ],
@@ -409,7 +409,7 @@
           "sr_latin": "Jao!",
           "sr_cyrillic": "Јао!",
           "en": "Oh! / Oh no! / Oh my!",
-          "context": "Universal reaction — pain, surprise, sympathy, delight. Tone decides meaning.",
+          "context": "You stub your toe on the table leg — let out the natural little cry.",
           "wordRefs": [
             "jao"
           ],
@@ -431,7 +431,7 @@
           "sr_latin": "Ma jok.",
           "sr_cyrillic": "Ма јок.",
           "en": "Nah. / Not at all.",
-          "context": "Casual denial. Downplaying or negating something laid-back.",
+          "context": "A friend asks if you were upset about it — wave it off with a laid-back no.",
           "wordRefs": [
             "ma"
           ],
@@ -458,7 +458,7 @@
           "sr_latin": "To je čist inat.",
           "sr_cyrillic": "То је чист инат.",
           "en": "That's pure spite. / That's stubbornness out of principle.",
-          "context": "When someone does something just to prove a point or out of defiance. A deeply Serbian concept.",
+          "context": "Someone keeps doing the thing they were told not to, just to prove a point — name it for what it is.",
           "wordRefs": [
             "to",
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
@@ -470,7 +470,7 @@
           "sr_latin": "Bez veze.",
           "sr_cyrillic": "Без везе.",
           "en": "Pointless. / Lame. / Whatever.",
-          "context": "Something is stupid, useless, or not worth your time.",
+          "context": "A friend suggests something you think is a waste of time — dismiss it as lame.",
           "wordRefs": [
             { "id": "veza", "surface": "veze", "surface_cyrillic": "везе", "case": "gen" }
           ],
@@ -481,7 +481,7 @@
           "sr_latin": "To je to!",
           "sr_cyrillic": "То је то!",
           "en": "That's it! / That's the one!",
-          "context": "Confirmation, satisfaction, conclusion. 'This is what we're talking about.'",
+          "context": "Your friend finally picks the exact song you wanted — confirm that's the one.",
           "wordRefs": [
             "to",
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
@@ -494,7 +494,7 @@
           "sr_latin": "Samo jako!",
           "sr_cyrillic": "Само јако!",
           "en": "Go hard! / Full send!",
-          "context": "Encouragement to go all in. Before drinks, challenges, or any bold move.",
+          "context": "Your friend is hesitating before a bold move — egg him on to go all in.",
           "wordRefs": [
             "samo"
           ],

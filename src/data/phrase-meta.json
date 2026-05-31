@@ -1463,78 +1463,6 @@
     "idiomatic": false,
     "source": "wordrefs"
   },
-  "imam-bag": {
-    "stage": 3,
-    "difficulty": 4.1,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "radi-na-mom": {
-    "stage": 6,
-    "difficulty": 5.7,
-    "isChunk": false,
-    "caseSet": [
-      "loc"
-    ],
-    "tense": "pres",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "ko-je-ovo-pisao": {
-    "stage": 2,
-    "difficulty": 2.8,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 1,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "pustam-deploy": {
-    "stage": 0,
-    "difficulty": 0.8,
-    "isChunk": true,
-    "caseSet": [],
-    "tense": "none",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "heuristic"
-  },
-  "ne-diraj-petkom": {
-    "stage": 1,
-    "difficulty": 1.6,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "none",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "pukao-prod": {
-    "stage": 7,
-    "difficulty": 3.5,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 2,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "rollback": {
-    "stage": 1,
-    "difficulty": 1.7,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
   "ajde-na-kafu": {
     "stage": 2,
     "difficulty": 2.4,
@@ -1568,66 +1496,6 @@
     "source": "wordrefs"
   },
   "sta-radis-danas": {
-    "stage": 1,
-    "difficulty": 1.7,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "radim-na-tiketu": {
-    "stage": 2,
-    "difficulty": 2.9,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "blokiram-se": {
-    "stage": 2,
-    "difficulty": 2.8,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 1,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "opet-meeting": {
-    "stage": 4,
-    "difficulty": 5,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "fut",
-    "cliticCount": 1,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "radi-li-ti-ovo": {
-    "stage": 7,
-    "difficulty": 3.5,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 2,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "probaj-sad": {
-    "stage": 3,
-    "difficulty": 3.6,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 1,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "ne-radi-opet": {
     "stage": 1,
     "difficulty": 1.7,
     "isChunk": false,
@@ -1709,69 +1577,9 @@
     "idiomatic": false,
     "source": "wordrefs"
   },
-  "erp-opet-pao": {
-    "stage": 1,
-    "difficulty": 1.6,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "none",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "heuristic"
-  },
-  "migracija-podataka": {
-    "stage": 2,
-    "difficulty": 2.4,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "none",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "ko-je-menjao-semu": {
-    "stage": 7,
-    "difficulty": 5.1,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 2,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "pim-integracija": {
-    "stage": 2,
-    "difficulty": 2.5,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
   "gotov-sam-za-danas": {
     "stage": 2,
     "difficulty": 2.8,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 1,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "pustam-pr": {
-    "stage": 2,
-    "difficulty": 2.1,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "pres",
-    "cliticCount": 0,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "vidimo-se-sutra": {
-    "stage": 3,
-    "difficulty": 3.6,
     "isChunk": false,
     "caseSet": [],
     "tense": "pres",
@@ -1805,16 +1613,6 @@
     "isChunk": false,
     "caseSet": [],
     "tense": "pres",
-    "cliticCount": 1,
-    "idiomatic": false,
-    "source": "wordrefs"
-  },
-  "ubija-me-ovaj-task": {
-    "stage": 2,
-    "difficulty": 2.3,
-    "isChunk": false,
-    "caseSet": [],
-    "tense": "none",
     "cliticCount": 1,
     "idiomatic": false,
     "source": "wordrefs"

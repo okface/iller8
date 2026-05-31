@@ -126,7 +126,7 @@
           "sr_latin": "Gladan sam kao vuk.",
           "sr_cyrillic": "Гладан сам као вук.",
           "en": "I'm hungry as a wolf.",
-          "context": "Saying you're starving. Common Serbian expression.",
+          "context": "You shuffle into the kitchen first thing and there's nothing out yet — groan how ravenous you are.",
           "wordRefs": [
             "gladan",
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }

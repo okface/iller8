@@ -283,7 +283,10 @@ function generateFillInBlank(
 
 function generateWordTiles(
   phrase: Phrase,
-  script: 'latin' | 'cyrillic'
+  allPhrases: Phrase[],
+  script: 'latin' | 'cyrillic',
+  lesson?: Lesson,
+  bucket: number = 0
 ): Exercise {
   const text = script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin;
   // Lower-case the sentence-initial capital so the first tile doesn't betray
@@ -291,7 +294,13 @@ function generateWordTiles(
   const words = text
     .replace(/[.!?,]/g, '')
     .split(/\s+/)
+    .filter(Boolean)
     .map((w, i) => (i === 0 ? lowerFirst(w) : w));
+
+  // A single-tile "sentence" is pointless — fall back to a recognition choice.
+  if (words.length < 2) {
+    return generateMultipleChoice(phrase, allPhrases, script, 'en-to-sr', lesson, bucket);
+  }
 
   return {
     type: 'word-tiles',
@@ -371,7 +380,7 @@ function generateSentenceBuilder(
   if (coreWords.length < 3) {
     return coreWords.length < 2
       ? generateMultipleChoice(phrase, allPhrases, script, 'en-to-sr')
-      : generateWordTiles(phrase, script);
+      : generateWordTiles(phrase, allPhrases, script);
   }
 
   // Build accepted answers: include the main phrase and any variations
@@ -791,7 +800,7 @@ export function generateExercise(
     case 'fill-in-blank':
       return generateFillInBlank(phrase, script);
     case 'word-tiles':
-      return generateWordTiles(phrase, script);
+      return generateWordTiles(phrase, allPhrases, script, lesson, clampedBucket);
     case 'script-convert':
       return generateScriptConvert(phrase);
     case 'context-pick':
