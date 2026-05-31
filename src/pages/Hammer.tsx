@@ -81,7 +81,7 @@ export default function Hammer({ progress, setProgress, script }: HammerProps) {
       const updated = recordAnswer(existing, correct);
 
       let newProgress = updatePhraseProgress(progress, updated);
-      newProgress = updateDailyStats(newProgress, correct);
+      newProgress = updateDailyStats(newProgress, correct, phraseId);
 
       if (correct) setCorrectCount((c) => c + 1);
       setTotalAnswered((t) => t + 1);

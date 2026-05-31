@@ -49,8 +49,9 @@ export default function SentenceBuilder({ exercise, onAnswer, script = 'latin' }
       (ans) => normalizeForCheck(ans) === userAnswer
     );
 
-    // Also accept if the user placed all the correct words in the right
-    // relative order (ignoring distractor words they didn't pick)
+    // Also accept if the placed tiles exactly match the target word
+    // sequence — same length and same order. Any extra or distractor
+    // tile placed makes the length differ, so it counts as wrong.
     const correctWords = normalizeForCheck(exercise.correctAnswer).split(' ');
     const userWords = userAnswer.split(' ');
     const isSubsequenceMatch =

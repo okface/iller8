@@ -89,10 +89,17 @@ export interface PhraseProgress {
 
 export interface DailyStats {
   date: string;
+  /** Count of DISTINCT phrase ids studied today (== studiedPhraseIds.length).
+   *  Not a per-answer counter — repeats/retries of the same phrase in a
+   *  session do not inflate it. */
   phrasesStudied: number;
   correctAnswers: number;
   totalAnswers: number;
   timeSpentSeconds: number;
+  /** The set of distinct phrase ids studied today, persisted so the count
+   *  survives reloads. `phrasesStudied` is kept in sync with its length.
+   *  Optional for back-compat with stats saved before this field existed. */
+  studiedPhraseIds?: string[];
 }
 
 export interface UserSettings {

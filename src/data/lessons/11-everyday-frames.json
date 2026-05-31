@@ -1,0 +1,629 @@
+{
+  "id": "everyday-frames",
+  "title": {
+    "sr_latin": "Svakodnevne fraze",
+    "sr_cyrillic": "Свакодневне фразе",
+    "en": "Everyday Frames"
+  },
+  "description": {
+    "sr_latin": "Kratke, ponovljive rečenice koje pokazuju kako se sklapaju misli — hoću, mogu, moram, idem, daj mi.",
+    "en": "Short, reusable sentence frames that show how thoughts get assembled — want, can, must, go, give me. Swap the fillers and say almost anything."
+  },
+  "order": 11,
+  "prerequisites": [],
+  "phraseGroups": [
+    {
+      "id": "ef-wants-needs",
+      "theme": "Wants & Needs",
+      "phrases": [
+        {
+          "id": "ef-hocu-da-spavam",
+          "sr_latin": "Hoću da spavam.",
+          "sr_cyrillic": "Хоћу да спавам.",
+          "en": "I want to sleep.",
+          "context": "Tell your girlfriend you're ready to crash for the night.",
+          "wordRefs": [],
+          "notes": "The core frame: 'Hoću da' + verb in the present = 'I want to ___'. Serbian has no infinitive here — you literally say 'I want that I sleep'."
+        },
+        {
+          "id": "ef-necu-da-ustanem",
+          "sr_latin": "Neću da ustanem.",
+          "sr_cyrillic": "Нећу да устанем.",
+          "en": "I don't want to get up.",
+          "context": "Groan this to your girlfriend on a lazy weekend morning.",
+          "wordRefs": [
+            { "id": "hteti", "surface": "Neću", "surface_cyrillic": "Нећу", "form": "1sg.pres.neg" },
+            "da-conj"
+          ],
+          "notes": "'Neću' is the negated 'hoću' — one word, not 'ne hoću'. Same 'da' + verb frame."
+        },
+        {
+          "id": "ef-hoces-da-jedemo",
+          "sr_latin": "Hoćeš da jedemo?",
+          "sr_cyrillic": "Хоћеш да једемо?",
+          "en": "Do you want to eat?",
+          "context": "Ask your girlfriend if she's hungry too.",
+          "wordRefs": [
+            { "id": "hteti", "surface": "Hoćeš", "surface_cyrillic": "Хоћеш", "form": "2sg.pres" },
+            "da-conj",
+            { "id": "jesti", "surface": "jedemo", "surface_cyrillic": "једемо", "form": "1pl.pres" }
+          ],
+          "notes": "'Hoćeš da ...?' is the everyday way to suggest doing something together — softer than a command."
+        },
+        {
+          "id": "ef-mogu-da-ti-pomognem",
+          "sr_latin": "Mogu da ti pomognem.",
+          "sr_cyrillic": "Могу да ти помогнем.",
+          "en": "I can help you.",
+          "context": "Offer a hand to your friend who's stuck with something.",
+          "wordRefs": [
+            { "id": "moci", "surface": "Mogu", "surface_cyrillic": "Могу", "form": "1sg.pres" },
+            "da-conj",
+            "ti-dat",
+            { "id": "pomoci", "surface": "pomognem", "surface_cyrillic": "помогнем", "form": "1sg.pres" }
+          ],
+          "notes": "'Pomoći' takes the dative, so 'ti' (to you). Clitic order: 'da ti pomognem'."
+        },
+        {
+          "id": "ef-mozes-li-da-mi-pomognes",
+          "sr_latin": "Možeš li da mi pomogneš?",
+          "sr_cyrillic": "Можеш ли да ми помогнеш?",
+          "en": "Can you help me?",
+          "context": "Ask your friend for a hand carrying something.",
+          "wordRefs": [],
+          "notes": "'Možeš li ...?' = 'can you ...?'. The little 'li' makes it a question. 'Mi' (to me) is dative because 'pomoći' needs it."
+        },
+        {
+          "id": "ef-moram-da-radim",
+          "sr_latin": "Moram da radim.",
+          "sr_cyrillic": "Морам да радим.",
+          "en": "I have to work.",
+          "context": "Explain to your girlfriend why you can't hang out right now.",
+          "wordRefs": [],
+          "notes": "'Moram da' + verb = 'I have to ___'. Strong obligation."
+        },
+        {
+          "id": "ef-moras-da-jedes",
+          "sr_latin": "Moraš da jedeš.",
+          "sr_cyrillic": "Мораш да једеш.",
+          "en": "You have to eat.",
+          "context": "Nag your friend who skipped lunch again.",
+          "wordRefs": [
+            { "id": "morati", "surface": "Moraš", "surface_cyrillic": "Мораш", "form": "2sg.pres" },
+            "da-conj",
+            { "id": "jesti", "surface": "jedeš", "surface_cyrillic": "једеш", "form": "2sg.pres" }
+          ]
+        },
+        {
+          "id": "ef-treba-da-idem",
+          "sr_latin": "Treba da idem.",
+          "sr_cyrillic": "Треба да идем.",
+          "en": "I should go.",
+          "context": "Tell your friend it's time for you to head off.",
+          "wordRefs": [
+            { "id": "trebati", "surface": "Treba", "surface_cyrillic": "Треба", "form": "3sg.pres" },
+            "da-conj",
+            { "id": "ici", "surface": "idem", "surface_cyrillic": "идем", "form": "1sg.pres" }
+          ],
+          "notes": "'Treba da' + verb = 'I should / ought to ___'. 'Treba' stays in the 3rd person — it doesn't change for the subject."
+        },
+        {
+          "id": "ef-treba-mi-pomoc",
+          "sr_latin": "Treba mi pomoć.",
+          "sr_cyrillic": "Треба ми помоћ.",
+          "en": "I need help.",
+          "context": "Admit to your friend that you're stuck.",
+          "wordRefs": [
+            { "id": "trebati", "surface": "Treba", "surface_cyrillic": "Треба", "form": "3sg.pres" },
+            "mi-dat",
+            { "id": "pomoc", "surface": "pomoć", "surface_cyrillic": "помоћ", "case": "nom" }
+          ],
+          "notes": "Different frame: 'treba mi X' = 'I need X' (literally 'X is needed to me'). The thing you need is the subject; you are the dative 'mi'."
+        },
+        {
+          "id": "ef-treba-mi-voda",
+          "sr_latin": "Treba mi voda.",
+          "sr_cyrillic": "Треба ми вода.",
+          "en": "I need water.",
+          "context": "Tell your girlfriend you're parched.",
+          "wordRefs": [
+            { "id": "trebati", "surface": "Treba", "surface_cyrillic": "Треба", "form": "3sg.pres" },
+            "mi-dat",
+            { "id": "voda", "surface": "voda", "surface_cyrillic": "вода", "case": "nom" }
+          ]
+        },
+        {
+          "id": "ef-necu-nista",
+          "sr_latin": "Neću ništa.",
+          "sr_cyrillic": "Нећу ништа.",
+          "en": "I don't want anything.",
+          "context": "Wave off your girlfriend offering you food or drink.",
+          "wordRefs": [
+            { "id": "hteti", "surface": "Neću", "surface_cyrillic": "Нећу", "form": "1sg.pres.neg" },
+            { "id": "nista", "surface": "ništa", "surface_cyrillic": "ништа", "case": "acc" }
+          ],
+          "notes": "Here 'hteti' takes a direct object instead of 'da'. Double negative is normal: 'neću ništa' (lit. 'I-won't nothing')."
+        }
+      ]
+    },
+    {
+      "id": "ef-asking-offering",
+      "theme": "Asking & Offering",
+      "phrases": [
+        {
+          "id": "ef-daj-mi-vode",
+          "sr_latin": "Daj mi vode.",
+          "sr_cyrillic": "Дај ми воде.",
+          "en": "Give me some water.",
+          "context": "Ask your girlfriend to pass the water at dinner.",
+          "wordRefs": [],
+          "notes": "'Daj mi' + thing = 'give me ___'. 'Vode' is genitive ('some water', a partial amount) — very natural for food and drink."
+        },
+        {
+          "id": "ef-daj-mi-to",
+          "sr_latin": "Daj mi to.",
+          "sr_cyrillic": "Дај ми то.",
+          "en": "Give me that.",
+          "context": "Point at something and ask your friend to hand it over.",
+          "wordRefs": [
+            { "id": "dati", "surface": "Daj", "surface_cyrillic": "Дај", "form": "imp.2sg" },
+            "mi-dat",
+            { "id": "to", "surface": "to", "surface_cyrillic": "то", "case": "acc" }
+          ]
+        },
+        {
+          "id": "ef-dodaj-mi-hleb",
+          "sr_latin": "Dodaj mi hleb.",
+          "sr_cyrillic": "Додај ми хлеб.",
+          "en": "Pass me the bread.",
+          "context": "Ask your girlfriend to pass the bread across the table.",
+          "wordRefs": [
+            "mi-dat",
+            { "id": "hleb", "surface": "hleb", "surface_cyrillic": "хлеб", "case": "acc" }
+          ],
+          "notes": "'Dodaj' (from 'dodati') is specifically 'pass / hand over', perfect at the table."
+        },
+        {
+          "id": "ef-donesi-mi-vode",
+          "sr_latin": "Donesi mi vode.",
+          "sr_cyrillic": "Донеси ми воде.",
+          "en": "Bring me some water.",
+          "context": "Ask your girlfriend to bring you a glass from the kitchen.",
+          "wordRefs": [
+            { "id": "doneti", "surface": "Donesi", "surface_cyrillic": "Донеси", "form": "imp.2sg" },
+            "mi-dat",
+            { "id": "voda", "surface": "vode", "surface_cyrillic": "воде", "case": "gen" }
+          ],
+          "notes": "'Donesi' = bring (it here). Genitive 'vode' again signals 'some water'."
+        },
+        {
+          "id": "ef-donesi-kafu",
+          "sr_latin": "Donesi kafu.",
+          "sr_cyrillic": "Донеси кафу.",
+          "en": "Bring the coffee.",
+          "context": "Ask your friend to grab the coffees from the counter.",
+          "wordRefs": [
+            { "id": "doneti", "surface": "Donesi", "surface_cyrillic": "Донеси", "form": "imp.2sg" },
+            { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" }
+          ]
+        },
+        {
+          "id": "ef-imas-li-vremena",
+          "sr_latin": "Imaš li vremena?",
+          "sr_cyrillic": "Имаш ли времена?",
+          "en": "Do you have time?",
+          "context": "Check if your friend is free for a coffee.",
+          "wordRefs": [
+            { "id": "imati", "surface": "Imaš", "surface_cyrillic": "Имаш", "form": "2sg.pres" },
+            { "id": "vreme", "surface": "vremena", "surface_cyrillic": "времена", "case": "gen" }
+          ],
+          "notes": "'Imaš li ...?' = 'do you have ...?'. After this kind of question the noun often goes genitive: 'vremena'."
+        },
+        {
+          "id": "ef-imas-li-kafe",
+          "sr_latin": "Imaš li kafe?",
+          "sr_cyrillic": "Имаш ли кафе?",
+          "en": "Do you have any coffee?",
+          "context": "Ask your friend if there's coffee at his place.",
+          "wordRefs": [
+            { "id": "imati", "surface": "Imaš", "surface_cyrillic": "Имаш", "form": "2sg.pres" },
+            { "id": "kafa", "surface": "kafe", "surface_cyrillic": "кафе", "case": "gen" }
+          ]
+        },
+        {
+          "id": "ef-gde-je-voda",
+          "sr_latin": "Gde je voda?",
+          "sr_cyrillic": "Где је вода?",
+          "en": "Where's the water?",
+          "context": "Ask your girlfriend where she put the bottle.",
+          "wordRefs": [
+            { "id": "gde", "surface": "Gde", "surface_cyrillic": "Где" },
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            { "id": "voda", "surface": "voda", "surface_cyrillic": "вода", "case": "nom" }
+          ],
+          "notes": "'Gde je ___?' = 'where is ___?'. Swap in any noun."
+        },
+        {
+          "id": "ef-idemo-na-pivo",
+          "sr_latin": "Idemo na pivo?",
+          "sr_cyrillic": "Идемо на пиво?",
+          "en": "Shall we go for a beer?",
+          "context": "Suggest grabbing a drink with your friend after work.",
+          "wordRefs": [
+            { "id": "ici", "surface": "Idemo", "surface_cyrillic": "Идемо", "form": "1pl.pres" },
+            "na",
+            { "id": "pivo", "surface": "pivo", "surface_cyrillic": "пиво", "case": "acc" }
+          ],
+          "notes": "'Idemo na ___?' = 'shall we go for ___?'. Use 'na' + accusative for activities: 'na pivo', 'na kafu', 'na ručak'."
+        },
+        {
+          "id": "ef-mozes-li-da-doneses-vode",
+          "sr_latin": "Možeš li da doneseš vode?",
+          "sr_cyrillic": "Можеш ли да донесеш воде?",
+          "en": "Can you bring some water?",
+          "context": "Ask your girlfriend nicely from the couch.",
+          "wordRefs": [
+            { "id": "moci", "surface": "Možeš", "surface_cyrillic": "Можеш", "form": "2sg.pres" },
+            "da-conj",
+            { "id": "doneti", "surface": "doneseš", "surface_cyrillic": "донесеш", "form": "2sg.pres" },
+            { "id": "voda", "surface": "vode", "surface_cyrillic": "воде", "case": "gen" }
+          ],
+          "notes": "Politer than the bare imperative 'donesi'. Combines 'možeš li da' with the bring-frame."
+        }
+      ]
+    },
+    {
+      "id": "ef-coming-going",
+      "theme": "Coming & Going",
+      "phrases": [
+        {
+          "id": "ef-idem-u-grad",
+          "sr_latin": "Idem u grad.",
+          "sr_cyrillic": "Идем у град.",
+          "en": "I'm going into town.",
+          "context": "Tell your girlfriend you're heading out for a bit.",
+          "wordRefs": [],
+          "notes": "'Idem u' + place (accusative) = 'I'm going to ___'. Motion toward a place uses 'u' + accusative."
+        },
+        {
+          "id": "ef-idem-kuci",
+          "sr_latin": "Idem kući.",
+          "sr_cyrillic": "Идем кући.",
+          "en": "I'm going home.",
+          "context": "Tell your friend you're heading home for the night.",
+          "wordRefs": [
+            { "id": "ici", "surface": "Idem", "surface_cyrillic": "Идем", "form": "1sg.pres" },
+            { "id": "kuca", "surface": "kući", "surface_cyrillic": "кући", "case": "dat" }
+          ],
+          "notes": "'Kući' is a fixed form meaning 'home(ward)' — no preposition needed."
+        },
+        {
+          "id": "ef-idem-da-jedem",
+          "sr_latin": "Idem da jedem.",
+          "sr_cyrillic": "Идем да једем.",
+          "en": "I'm going to eat.",
+          "context": "Tell your girlfriend you're off to grab some food.",
+          "wordRefs": [
+            { "id": "ici", "surface": "Idem", "surface_cyrillic": "Идем", "form": "1sg.pres" },
+            "da-conj",
+            { "id": "jesti", "surface": "jedem", "surface_cyrillic": "једем", "form": "1sg.pres" }
+          ],
+          "notes": "'Idem da' + verb = 'I'm going (in order) to ___'. Expresses purpose."
+        },
+        {
+          "id": "ef-idem-na-kafu",
+          "sr_latin": "Idem na kafu.",
+          "sr_cyrillic": "Идем на кафу.",
+          "en": "I'm going for a coffee.",
+          "context": "Tell your friend you're heading to the café.",
+          "wordRefs": [
+            { "id": "ici", "surface": "Idem", "surface_cyrillic": "Идем", "form": "1sg.pres" },
+            "na",
+            { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" }
+          ],
+          "notes": "For activities and events Serbian uses 'na' + accusative: 'na kafu', 'na pivo', 'na ručak'."
+        },
+        {
+          "id": "ef-hajde-da-jedemo",
+          "sr_latin": "Hajde da jedemo.",
+          "sr_cyrillic": "Хајде да једемо.",
+          "en": "Let's eat.",
+          "context": "Call your girlfriend to the table.",
+          "wordRefs": [],
+          "notes": "'Hajde da' + we-form = 'let's ___'. The verb takes the 'we' ending ('jedemo')."
+        },
+        {
+          "id": "ef-hajde-da-idemo",
+          "sr_latin": "Hajde da idemo.",
+          "sr_cyrillic": "Хајде да идемо.",
+          "en": "Let's go.",
+          "context": "Nudge your friend that it's time to leave.",
+          "wordRefs": [
+            { "id": "hajde", "surface": "Hajde", "surface_cyrillic": "Хајде" },
+            "da-conj",
+            { "id": "ici", "surface": "idemo", "surface_cyrillic": "идемо", "form": "1pl.pres" }
+          ]
+        },
+        {
+          "id": "ef-dolazis-li-kuci",
+          "sr_latin": "Dolaziš li kući?",
+          "sr_cyrillic": "Долазиш ли кући?",
+          "en": "Are you coming home?",
+          "context": "Text your girlfriend to ask when she'll be back.",
+          "wordRefs": [
+            { "id": "dolaziti", "surface": "Dolaziš", "surface_cyrillic": "Долазиш", "form": "2sg.pres" },
+            { "id": "kuca", "surface": "kući", "surface_cyrillic": "кући", "case": "dat" }
+          ],
+          "notes": "Imperfective 'dolaziš' fits a general 'are you coming (tonight)?' question."
+        },
+        {
+          "id": "ef-stizem-za-pet-minuta",
+          "sr_latin": "Stižem za pet minuta.",
+          "sr_cyrillic": "Стижем за пет минута.",
+          "en": "I'll be there in five minutes.",
+          "context": "Text your friend that you're almost at the meeting spot.",
+          "wordRefs": [
+            { "id": "stici", "surface": "Stižem", "surface_cyrillic": "Стижем", "form": "1sg.pres" },
+            "za",
+            { "id": "pet", "surface": "pet", "surface_cyrillic": "пет" },
+            { "id": "minut", "surface": "minuta", "surface_cyrillic": "минута", "case": "gen" }
+          ],
+          "notes": "'Za' + time = 'in / within (that much time)'. After 'pet' (5+) the noun goes genitive plural: 'minuta'."
+        },
+        {
+          "id": "ef-vracam-se-odmah",
+          "sr_latin": "Vraćam se odmah.",
+          "sr_cyrillic": "Враћам се одмах.",
+          "en": "I'll be right back.",
+          "context": "Tell your girlfriend you're just stepping out for a second.",
+          "wordRefs": [
+            { "id": "vratiti-se", "surface": "Vraćam se", "surface_cyrillic": "Враћам се", "form": "1sg.pres" }
+          ],
+          "notes": "Reflexive 'se' stays attached. 'Odmah' = right away / immediately."
+        },
+        {
+          "id": "ef-vidimo-se-kasnije",
+          "sr_latin": "Vidimo se kasnije.",
+          "sr_cyrillic": "Видимо се касније.",
+          "en": "See you later.",
+          "context": "Sign off with your friend after a chat.",
+          "wordRefs": [],
+          "notes": "'Vidimo se' = 'we'll see each other' (reflexive). Add 'kasnije' (later), 'sutra' (tomorrow), 'veceras' (tonight)."
+        },
+        {
+          "id": "ef-cekam-te",
+          "sr_latin": "Čekam te.",
+          "sr_cyrillic": "Чекам те.",
+          "en": "I'm waiting for you.",
+          "context": "Text your girlfriend that you're already at the restaurant.",
+          "wordRefs": [
+            { "id": "cekati", "surface": "Čekam", "surface_cyrillic": "Чекам", "form": "1sg.pres" },
+            "te-acc"
+          ],
+          "notes": "'Čekati' takes a direct object (accusative), so 'te' (you) — no preposition, unlike English 'wait FOR'."
+        }
+      ]
+    },
+    {
+      "id": "ef-affection-checkins",
+      "theme": "Affection & Check-ins",
+      "phrases": [
+        {
+          "id": "ef-sta-hoces-da-radimo",
+          "sr_latin": "Šta hoćeš da radimo?",
+          "sr_cyrillic": "Шта хоћеш да радимо?",
+          "en": "What do you want to do?",
+          "context": "Ask your girlfriend how she wants to spend the evening.",
+          "wordRefs": [
+            "sta",
+            { "id": "hteti", "surface": "hoćeš", "surface_cyrillic": "хоћеш", "form": "2sg.pres" },
+            "da-conj",
+            { "id": "raditi", "surface": "radimo", "surface_cyrillic": "радимо", "form": "1pl.pres" }
+          ],
+          "notes": "'Šta hoćeš da ...?' = 'what do you want (us/me) to ...?'. The verb after 'da' takes a personal ending — here 'radimo' (we)."
+        },
+        {
+          "id": "ef-jesi-li-dobro",
+          "sr_latin": "Jesi li dobro?",
+          "sr_cyrillic": "Јеси ли добро?",
+          "en": "Are you okay?",
+          "context": "Check in on your girlfriend who seems off.",
+          "wordRefs": [],
+          "notes": "'Jesi li ...?' is the full-verb question form of 'si'. 'Jesi li dobro?' = 'are you okay/well?'."
+        },
+        {
+          "id": "ef-hoces-li-sa-mnom",
+          "sr_latin": "Hoćeš li sa mnom?",
+          "sr_cyrillic": "Хоћеш ли са мном?",
+          "en": "Do you want to come with me?",
+          "context": "Invite your girlfriend along when you're heading out.",
+          "wordRefs": [],
+          "notes": "'Hoćeš li ...?' = 'do you want ...?'. 'Sa mnom' = 'with me' (instrumental of 'ja'). 'Sa' takes the instrumental case."
+        },
+        {
+          "id": "ef-spavaj-lepo",
+          "sr_latin": "Spavaj lepo.",
+          "sr_cyrillic": "Спавај лепо.",
+          "en": "Sleep well.",
+          "context": "Wish your girlfriend goodnight.",
+          "wordRefs": [
+            { "id": "spavati", "surface": "Spavaj", "surface_cyrillic": "Спавај", "form": "imp.2sg" },
+            { "id": "lep", "surface": "lepo", "surface_cyrillic": "лепо" }
+          ],
+          "notes": "'Lepo' here is the adverb 'nicely / well'. A warm bedtime line."
+        },
+        {
+          "id": "ef-volim-da-spavam",
+          "sr_latin": "Volim da spavam.",
+          "sr_cyrillic": "Волим да спавам.",
+          "en": "I love sleeping.",
+          "context": "Joke with your friend about being a heavy sleeper.",
+          "wordRefs": [
+            { "id": "voleti", "surface": "Volim", "surface_cyrillic": "Волим", "form": "1sg.pres" },
+            "da-conj",
+            { "id": "spavati", "surface": "spavam", "surface_cyrillic": "спавам", "form": "1sg.pres" }
+          ],
+          "notes": "'Volim da' + verb = 'I love (doing) ___'. A habit or general liking."
+        },
+        {
+          "id": "ef-volim-kad-si-tu",
+          "sr_latin": "Volim kad si tu.",
+          "sr_cyrillic": "Волим кад си ту.",
+          "en": "I love it when you're here.",
+          "context": "Tell your girlfriend something sweet at home.",
+          "wordRefs": [
+            { "id": "voleti", "surface": "Volim", "surface_cyrillic": "Волим", "form": "1sg.pres" },
+            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" },
+            { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
+            { "id": "tu", "surface": "tu", "surface_cyrillic": "ту" }
+          ],
+          "notes": "'Volim kad ...' = 'I love it when ...'. 'Kad' (when) introduces the situation; 'tu' = here/around."
+        },
+        {
+          "id": "ef-mrzim-kad-kasnis",
+          "sr_latin": "Mrzim kad kasniš.",
+          "sr_cyrillic": "Мрзим кад касниш.",
+          "en": "I hate it when you're late.",
+          "context": "Tease your friend who always shows up late.",
+          "wordRefs": [
+            { "id": "mrzeti", "surface": "Mrzim", "surface_cyrillic": "Мрзим", "form": "1sg.pres" },
+            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" },
+            { "id": "kasniti", "surface": "kasniš", "surface_cyrillic": "касниш", "form": "2sg.pres" }
+          ],
+          "notes": "Mirror of 'volim kad'. 'Kasniš' = 'you're (running) late' (from 'kasniti')."
+        },
+        {
+          "id": "ef-jesi-li-gladan",
+          "sr_latin": "Jesi li gladan?",
+          "sr_cyrillic": "Јеси ли гладан?",
+          "en": "Are you hungry?",
+          "context": "Ask your friend if he wants to grab food.",
+          "wordRefs": [
+            { "id": "gladan", "surface": "gladan", "surface_cyrillic": "гладан", "form": "m.sg" }
+          ],
+          "notes": "Say 'gladna' to a woman: 'Jesi li gladna?'. Adjective agrees with the listener's gender.",
+          "variations": [
+            {
+              "sr_latin": "Jesi li gladna?",
+              "sr_cyrillic": "Јеси ли гладна?",
+              "en": "Are you hungry?",
+              "gloss_hint": "to a woman"
+            }
+          ]
+        },
+        {
+          "id": "ef-vidimo-se-veceras",
+          "sr_latin": "Vidimo se večeras.",
+          "sr_cyrillic": "Видимо се вечерас.",
+          "en": "See you tonight.",
+          "context": "Confirm evening plans with your girlfriend.",
+          "wordRefs": [
+            { "id": "videti", "surface": "Vidimo", "surface_cyrillic": "Видимо", "form": "1pl.pres" },
+            "se",
+            { "id": "veceras", "surface": "večeras", "surface_cyrillic": "вечерас" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ef-quick-replies",
+      "theme": "Quick Replies",
+      "phrases": [
+        {
+          "id": "ef-moze",
+          "sr_latin": "Može.",
+          "sr_cyrillic": "Може.",
+          "en": "Okay. / Sure.",
+          "context": "Agree to your friend's suggestion.",
+          "wordRefs": [
+            { "id": "moci", "surface": "Može", "surface_cyrillic": "Може", "form": "3sg.pres" }
+          ],
+          "notes": "Literally 'it's possible', but used constantly as 'okay / works for me / sure'."
+        },
+        {
+          "id": "ef-samo-malo",
+          "sr_latin": "Samo malo.",
+          "sr_cyrillic": "Само мало.",
+          "en": "Just a moment. / Hold on.",
+          "context": "Ask your girlfriend to wait a second while you finish something.",
+          "wordRefs": [
+            "samo",
+            "malo"
+          ],
+          "notes": "'Samo malo' literally 'only a little' — the everyday 'hang on a sec / one moment'."
+        },
+        {
+          "id": "ef-nije-strasno",
+          "sr_latin": "Nije strašno.",
+          "sr_cyrillic": "Није страшно.",
+          "en": "It's not a big deal.",
+          "context": "Reassure your girlfriend after a tiny mix-up.",
+          "wordRefs": [],
+          "notes": "Lit. 'it's not terrible'. A warm 'no big deal / don't worry about it'. 'Nije' is the negative of 'je' (is)."
+        },
+        {
+          "id": "ef-javi-mi-se",
+          "sr_latin": "Javi mi se.",
+          "sr_cyrillic": "Јави ми се.",
+          "en": "Get in touch. / Let me know.",
+          "context": "Tell your friend to message you when he's free.",
+          "wordRefs": [],
+          "notes": "'Javiti se' = to get in touch / drop a line. 'Javi mi se' = 'let me know / hit me up'. The 'se' belongs to the verb; 'mi' = to me."
+        },
+        {
+          "id": "ef-bas-lepo",
+          "sr_latin": "Baš lepo.",
+          "sr_cyrillic": "Баш лепо.",
+          "en": "How nice. / Really nice.",
+          "context": "React warmly to good news from your girlfriend.",
+          "wordRefs": [
+            { "id": "bas", "surface": "Baš", "surface_cyrillic": "Баш" },
+            { "id": "lep", "surface": "lepo", "surface_cyrillic": "лепо" }
+          ],
+          "notes": "'Baš' intensifies — 'really / so'. 'Baš lepo' = 'that's really nice'."
+        },
+        {
+          "id": "ef-polako",
+          "sr_latin": "Polako.",
+          "sr_cyrillic": "Полако.",
+          "en": "Easy. / Take it slow.",
+          "context": "Tell your friend to slow down and relax.",
+          "wordRefs": [],
+          "notes": "Quintessentially Serbian — 'polako' means 'slowly / easy / no rush'. Both a reply and a whole philosophy."
+        },
+        {
+          "id": "ef-naravno",
+          "sr_latin": "Naravno.",
+          "sr_cyrillic": "Наравно.",
+          "en": "Of course.",
+          "context": "Answer your girlfriend's 'will you?' with an easy yes.",
+          "wordRefs": [
+            { "id": "naravno", "surface": "Naravno", "surface_cyrillic": "Наравно" }
+          ]
+        },
+        {
+          "id": "ef-nema-problema",
+          "sr_latin": "Nema problema.",
+          "sr_cyrillic": "Нема проблема.",
+          "en": "No problem.",
+          "context": "Brush off your friend's apology for being late.",
+          "wordRefs": [
+            { "id": "nemati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres" }
+          ],
+          "notes": "'Nema' = 'there isn't'. The thing that isn't there goes genitive: 'problema'."
+        },
+        {
+          "id": "ef-nemam-pojma",
+          "sr_latin": "Nemam pojma.",
+          "sr_cyrillic": "Немам појма.",
+          "en": "I have no idea.",
+          "context": "Shrug at your friend's question.",
+          "wordRefs": [
+            { "id": "nemati", "surface": "Nemam", "surface_cyrillic": "Немам", "form": "1sg.pres" }
+          ],
+          "notes": "Very common shrug. 'Pojma' (of a clue/idea) is genitive after the negative 'nemam'."
+        }
+      ]
+    }
+  ]
+}

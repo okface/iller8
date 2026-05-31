@@ -10,6 +10,7 @@ import lesson07 from './07-feelings-opinions.json';
 import lesson08 from './08-slang-humor.json';
 import lesson09 from './09-daily-routines.json';
 import lesson10 from './10-celebrations.json';
+import lesson11 from './11-everyday-frames.json';
 
 export const lessons: Lesson[] = [
   lesson01,
@@ -22,6 +23,7 @@ export const lessons: Lesson[] = [
   lesson08,
   lesson09,
   lesson10,
+  lesson11,
 ] as Lesson[];
 
 export function getLessonById(id: string): Lesson | undefined {

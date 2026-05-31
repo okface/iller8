@@ -1,6 +1,15 @@
 import type { Exercise, ExerciseType, Lesson, Phrase, PhraseGroup, PhraseProgress, UserProgress } from '../store/types';
 import { filterByReadiness } from './word-readiness';
 
+/**
+ * Sentence-construction exercise types. These get a flat weight bonus in
+ * `pickExerciseType` so building stays a live option even early in a
+ * session (not just at the back-loaded "harder" end).
+ */
+const CONSTRUCTION_TYPES = new Set<ExerciseType>([
+  'word-tiles', 'fill-in-blank', 'sentence-builder', 'pattern-match',
+]);
+
 function shuffle<T>(array: T[]): T[] {
   const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
@@ -12,6 +21,23 @@ function shuffle<T>(array: T[]): T[] {
 
 function pickRandom<T>(array: T[], count: number): T[] {
   return shuffle(array).slice(0, count);
+}
+
+function terminalPunct(s: string): string {
+  const t = s.trim();
+  const last = t.charAt(t.length - 1);
+  return last === '?' || last === '!' ? last : '';
+}
+function tokenCount(s: string): number {
+  return s.trim().replace(/[.!?,;:()"']/g, '').split(/\s+/).filter(Boolean).length;
+}
+/** Lower = better distractor (more parallel to `correct`). */
+function parityScore(candidate: string, correct: string): number {
+  const isQ = (x: string) => terminalPunct(x) === '?';
+  const questionMismatch = isQ(candidate) !== isQ(correct) ? 100 : 0; // never mix Q with non-Q
+  const wcDiff = Math.abs(tokenCount(candidate) - tokenCount(correct)) * 3;
+  const charDiff = Math.abs(candidate.length - correct.length) / 8;
+  return questionMismatch + wcDiff + charDiff;
 }
 
 function getAllPhrases(lesson: Lesson): Phrase[] {
@@ -27,8 +53,13 @@ function findPhraseGroup(phrase: Phrase, lesson: Lesson): PhraseGroup | undefine
 
 /**
  * Get distractors preferring same phrase group (semantically related), then
- * falling back to the rest of the lesson. Always returns exactly `count`
- * unique distractors (or fewer only if there aren't enough candidates at all).
+ * falling back to the rest of the lesson, then to the global phrase pool.
+ * Always returns exactly `count` unique distractors (or fewer only if there
+ * aren't enough distinct candidates in the entire catalog).
+ *
+ * The global top-up matters now that short generalized frames sit in the
+ * MC pools: a tiny same-group could otherwise leave MC with < `count`
+ * options. `allPhrases` is already the global pool every caller passes in.
  */
 function getDistractors(
   correct: string,
@@ -48,7 +79,8 @@ function getDistractors(
       const groupCandidates = shuffle(group.phrases)
         .filter((p) => p.id !== phrase.id)
         .map((p) => p[field])
-        .filter((t) => !seen.has(t));
+        .filter((t) => !seen.has(t))
+        .sort((a, b) => parityScore(a, correct) - parityScore(b, correct));
       for (const t of groupCandidates) {
         if (result.length >= count) break;
         seen.add(t);
@@ -57,12 +89,14 @@ function getDistractors(
     }
   }
 
-  // Phase 2: pad with other phrases from the lesson
-  if (result.length < count) {
-    const remaining = shuffle(allPhrases)
+  // Phase 2: pad with other phrases from the same lesson (when known)
+  if (result.length < count && lesson) {
+    const lessonPhrases = getAllPhrases(lesson);
+    const remaining = shuffle(lessonPhrases)
       .filter((p) => p.id !== phrase.id)
       .map((p) => p[field])
-      .filter((t) => !seen.has(t));
+      .filter((t) => !seen.has(t))
+      .sort((a, b) => parityScore(a, correct) - parityScore(b, correct));
     for (const t of remaining) {
       if (result.length >= count) break;
       seen.add(t);
@@ -70,7 +104,23 @@ function getDistractors(
     }
   }
 
-  return result;
+  // Phase 3: distractor guard — top up from the GLOBAL pool (the
+  // `allPhrases` param) so callers always get `count` DISTINCT distractors,
+  // even when same-group / lesson pools are tiny (short frames).
+  if (result.length < count) {
+    const global = shuffle(allPhrases)
+      .filter((p) => p.id !== phrase.id)
+      .map((p) => p[field])
+      .filter((t) => !seen.has(t))
+      .sort((a, b) => parityScore(a, correct) - parityScore(b, correct));
+    for (const t of global) {
+      if (result.length >= count) break;
+      seen.add(t);
+      result.push(t);
+    }
+  }
+
+  return result.slice(0, count);
 }
 
 /**
@@ -296,79 +346,64 @@ function generateSentenceBuilder(
 }
 
 // Dialogue templates for comprehension exercises.
-// Each template wraps a Serbian phrase into a short dialogue and generates
-// a comprehension question — all entirely in Serbian (no English).
+//
+// Each template wraps the target Serbian phrase into a short, natural
+// 2-line Serbian dialogue. The dialogue stays entirely Serbian; the
+// learner must COMPREHEND it to answer. The scaffolding lines are
+// proper Serbian orthography (with diacritics) in both scripts.
+//
+// The OPTIONS are English meanings (built by `generateComprehension`),
+// so the target line never appears as a visible answer — the answer is
+// not on screen. Each template only embeds the phrase and reports which
+// speaker uttered it (`speakerName`), used in the English question.
 interface DialogueTemplate {
   build: (
     phraseText: string,
-    phrase: Phrase,
     script: 'latin' | 'cyrillic'
   ) => {
     dialogue: string[];
-    question: string;
-    correct: string;
-    distractors: string[];
+    /** Name of the speaker who utters the target phrase. */
+    speakerName: string;
   };
 }
 
 const dialogueTemplates: DialogueTemplate[] = [
   {
-    // Pattern: A asks what B is doing, B responds with the phrase
-    build: (phraseText, _phrase, script) => {
+    // Pattern: A asks what B is doing, B responds with the target phrase.
+    build: (phraseText, script) => {
       const names = shuffle(['Ana', 'Marko', 'Jelena', 'Stefan', 'Milica', 'Nikola']);
       const a = names[0];
       const b = names[1];
+      const ask = script === 'cyrillic' ? 'Шта радиш?' : 'Šta radiš?';
       return {
         dialogue: [
-          `${a}: "${script === 'cyrillic' ? 'Шта радиш?' : 'Sta radis?'}"`,
+          `${a}: "${ask}"`,
           `${b}: "${phraseText}"`,
         ],
-        question: `${script === 'cyrillic' ? 'Шта каже' : 'Sta kaze'} ${b}?`,
-        correct: phraseText,
-        distractors: [], // filled from other phrases
+        speakerName: b,
       };
     },
   },
   {
-    // Pattern: B declines an invitation, question about why
-    build: (phraseText, _phrase, script) => {
+    // Pattern: A invites B out, B declines using the target phrase.
+    build: (phraseText, script) => {
       const names = shuffle(['Ana', 'Marko', 'Jelena', 'Stefan', 'Milica', 'Nikola']);
       const a = names[0];
       const b = names[1];
       const invite =
         script === 'cyrillic'
           ? 'Хајде да изађемо вечерас?'
-          : 'Hajde da izadjemo veceras?';
+          : 'Hajde da izađemo večeras?';
       const decline =
         script === 'cyrillic'
-          ? 'Не могу, морам да'
-          : 'Ne mogu, moram da';
+          ? 'Не могу, морам да…'
+          : 'Ne mogu, moram da…';
       return {
         dialogue: [
           `${a}: "${invite}"`,
-          `${b}: "${decline} — ${phraseText}"`,
+          `${b}: "${decline} ${phraseText}"`,
         ],
-        question: `${script === 'cyrillic' ? 'Зашто' : 'Zasto'} ${b} ${script === 'cyrillic' ? 'не може' : 'ne moze'}?`,
-        correct: phraseText,
-        distractors: [],
-      };
-    },
-  },
-  {
-    // Pattern: identify who says the phrase
-    build: (phraseText, _phrase, script) => {
-      const names = shuffle(['Ana', 'Marko', 'Jelena', 'Stefan', 'Milica', 'Nikola']);
-      const a = names[0];
-      const b = names[1];
-      const ok = script === 'cyrillic' ? 'Важи!' : 'Vazi!';
-      return {
-        dialogue: [
-          `${a}: "${phraseText}"`,
-          `${b}: "${ok}"`,
-        ],
-        question: `${script === 'cyrillic' ? 'Ко каже' : 'Ko kaze'}: "${phraseText}"?`,
-        correct: a,
-        distractors: [b, names[2]],
+        speakerName: b,
       };
     },
   },
@@ -377,35 +412,40 @@ const dialogueTemplates: DialogueTemplate[] = [
 function generateComprehension(
   phrase: Phrase,
   allPhrases: Phrase[],
-  script: 'latin' | 'cyrillic'
+  script: 'latin' | 'cyrillic',
+  lesson?: Lesson
 ): Exercise {
   const srField = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
   const phraseText = phrase[srField];
 
-  const template = dialogueTemplates[Math.floor(Math.random() * dialogueTemplates.length)];
-  const result = template.build(phraseText, phrase, script);
+  // Template choice. Templates[1] (T2) declines an invitation with
+  // "Ne mogu, moram da… {phrase}". That only reads as natural Serbian when
+  // the target phrase can follow "moram da" — i.e. it's NOT itself a
+  // question (a "?" line after "moram da…" is ungrammatical and confusing,
+  // e.g. "…moram da… Možeš li…?"). When the phrase is a question, force T1
+  // ("Šta radiš?" / "{phrase}"), which embeds any standalone line cleanly.
+  const phraseIsQuestion = terminalPunct(phrase.sr_latin) === '?';
+  let templateIndex = Math.floor(Math.random() * dialogueTemplates.length);
+  if (phraseIsQuestion) templateIndex = 0;
+  const template = dialogueTemplates[templateIndex];
+  const { dialogue, speakerName } = template.build(phraseText, script);
 
-  // If the template produced an empty distractors array, build distractors
-  // from other phrases in the lesson
-  let distractors = result.distractors;
-  if (distractors.length === 0) {
-    const others = allPhrases
-      .filter((p) => p.id !== phrase.id)
-      .map((p) => p[srField]);
-    distractors = pickRandom(others, 2);
-  }
-
-  const options = shuffle([result.correct, ...distractors.slice(0, 2)]);
+  // Options are ENGLISH meanings. The learner must comprehend the Serbian
+  // dialogue to pick the meaning of the target line — the answer is never
+  // visible on screen. Distractors are parity-matched English glosses.
+  const correctAnswer = phrase.en;
+  const distractors = getDistractors(correctAnswer, phrase, allPhrases, 'en', 3, lesson);
+  const options = shuffle([correctAnswer, ...distractors]);
 
   return {
     type: 'comprehension',
     phrase,
     direction: 'sr-to-en',
-    prompt: result.dialogue.join('\n'),
-    correctAnswer: result.correct,
+    prompt: dialogue.join('\n'),
+    correctAnswer,
     options,
-    dialogue: result.dialogue,
-    question: result.question,
+    dialogue,
+    question: `What does ${speakerName} mean?`,
   };
 }
 
@@ -435,6 +475,36 @@ function describeChanges(original: string, variant: string): string {
   return changes.join(', ') || 'same words, different form';
 }
 
+/**
+ * How much vocabulary two phrases share, by leading-stem overlap (so
+ * inflected pairs like gladan/gladna or radio/radila still count as
+ * "the same word"). Returns 0..1 over the larger token set.
+ *
+ * This lets us tell a genuine MORPHOLOGICAL transform (gender/case swap,
+ * same words) apart from a wholly different ALTERNATIVE phrasing that a
+ * lesson happens to list as a `variation` (e.g. "Najeo sam se, hvala." →
+ * "Ne mogu više."). For the latter, the token-count/question signals
+ * would mislabel it ("a word was removed", "endings changed") and the
+ * symbolic diff is nonsense — so we route those to a neutral label.
+ */
+function sharedStemRatio(a: string, b: string): number {
+  const toStems = (s: string) =>
+    new Set(
+      s
+        .replace(/[.!?,;:'"]/g, '')
+        .toLowerCase()
+        .split(/\s+/)
+        .filter(Boolean)
+        .map((w) => (w.length > 4 ? w.slice(0, 4) : w))
+    );
+  const sa = toStems(a);
+  const sb = toStems(b);
+  if (sa.size === 0 || sb.size === 0) return 0;
+  let shared = 0;
+  for (const s of sa) if (sb.has(s)) shared++;
+  return shared / Math.max(sa.size, sb.size);
+}
+
 function generatePatternMatch(
   phrase: Phrase,
   allPhrases: Phrase[],
@@ -455,24 +525,59 @@ function generatePatternMatch(
   const originalEn = phrase.en;
   const variantEn = variation.en;
 
-  // Build the correct answer: describe what changed
-  const correctAnswer = describeChanges(originalText, variantText);
+  // Categorise the transformation using ONLY safely-detectable signals
+  // (word-count delta + question punctuation + vocabulary overlap). We
+  // deliberately do NOT guess gender vs case from endings — that's
+  // unreliable. All labels are parallel natural-language phrases, so the
+  // correct one can't be picked off by odd format.
+  const origWordCount = tokenCount(originalText);
+  const varWordCount = tokenCount(variantText);
+  const origIsQ = terminalPunct(originalText) === '?';
+  const varIsQ = terminalPunct(variantText) === '?';
+  // Below this overlap the variant is a different phrasing, not a tweak
+  // of the original — so add/remove/endings would all be a lie. (Genuine
+  // gender/case pairs share leading stems and score >= 0.5; only wholly
+  // different alternatives fall under it. See sharedStemRatio.)
+  const isAlternativePhrasing = sharedStemRatio(originalText, variantText) < 0.5;
 
-  // Build distractor options
-  const distractors = [
-    'The word order changed',
-    'A new word was added',
-    'A word was removed',
-    'The verb tense changed',
-    'The sentence became a question',
-  ];
-  // Pick 2 distractors that don't overlap with the correct answer
-  const filteredDistractors = shuffle(distractors).slice(0, 2);
+  const ADDED = 'A word was added';
+  const REMOVED = 'A word was removed';
+  const QUESTION = 'It became a question';
+  const ENDINGS = 'The word endings changed';
+  const DIFFERENT = "It's another way to say it";
+  const ALL_LABELS = [ADDED, REMOVED, QUESTION, ENDINGS, DIFFERENT];
 
-  // Build the grammar note from phrase notes or context
+  let correctAnswer: string;
+  if (isAlternativePhrasing) {
+    // Different words entirely — a synonym/rephrasing, not a transform.
+    correctAnswer = DIFFERENT;
+  } else if (varWordCount > origWordCount) {
+    correctAnswer = ADDED;
+  } else if (varWordCount < origWordCount) {
+    correctAnswer = REMOVED;
+  } else if (!origIsQ && varIsQ) {
+    correctAnswer = QUESTION;
+  } else {
+    correctAnswer = ENDINGS;
+  }
+
+  // Two parallel distractor labels, never equal to the correct one.
+  const distractors = shuffle(ALL_LABELS.filter((l) => l !== correctAnswer)).slice(0, 2);
+
+  // The precise symbolic diff moves to the POST-ANSWER explanation,
+  // shown via `context` (rendered as "WHAT CHANGED" in PatternMatch.tsx).
+  // A position-by-position diff only makes sense for a real transform; for
+  // an alternative phrasing we just show both full phrases.
+  const changeDiff = isAlternativePhrasing
+    ? `${originalText} = ${variantText}`
+    : describeChanges(originalText, variantText);
+
+  // Build the grammar note from phrase notes or a generated fallback.
   let grammarNote = phrase.notes || '';
   if (!grammarNote) {
-    grammarNote = `The original says "${originalEn}" and the variant says "${variantEn}". Notice how the word endings change.`;
+    grammarNote = isAlternativePhrasing
+      ? `Both mean the same thing: "${originalEn}" and "${variantEn}" are two different ways to say it.`
+      : `The original says "${originalEn}" and the variant says "${variantEn}". Notice how the word endings change.`;
   }
 
   return {
@@ -481,8 +586,8 @@ function generatePatternMatch(
     direction: 'sr-to-en',
     prompt: `${originalText}  |  ${variantText}`,
     correctAnswer,
-    options: shuffle([correctAnswer, ...filteredDistractors]),
-    context: phrase.context,
+    options: shuffle([correctAnswer, ...distractors]),
+    context: changeDiff,
     originalPhrase: { text: originalText, label: originalEn, textLatin: phrase.sr_latin },
     variantPhrase: { text: variantText, label: variantEn, textLatin: variation.sr_latin },
     grammarNote,
@@ -510,22 +615,25 @@ function generateContextPick(
 }
 
 /**
- * Pedagogically-ordered exercise types per SRS bucket.
+ * Pedagogically-ordered exercise types per SRS bucket. Tilted toward
+ * sentence construction: tile/build types enter at bucket 1 and become a
+ * core part of the mix at bucket 2, so daily practice teaches assembling
+ * sentences rather than just recognising them.
  *
- * Bucket 0 (New):      pure recognition — see Serbian, pick English
- * Bucket 1 (Learning): multiple-choice both directions, context-pick
- * Bucket 2 (Familiar): guided production — fill-in-blank, context-pick, MC en-to-sr
- * Bucket 3 (Known):    free recall — type-translation, word-tiles, fill-in-blank, sentence-builder, comprehension
- * Bucket 4 (Strong):   hardest production — type-translation, script-convert, sentence-builder, comprehension
- * Bucket 5 (Mastered): maintenance — type-translation, script-convert only
+ * Bucket 0 (New):      recognition — see Serbian pick English, or pick by context
+ * Bucket 1 (Learning): construction enters — word-tiles alongside recognition
+ * Bucket 2 (Familiar): construction is core — word-tiles, fill-in-blank, sentence-builder
+ * Bucket 3 (Known):    free recall — building plus comprehension + type-translation
+ * Bucket 4 (Strong):   hardest production — building, script-convert, comprehension
+ * Bucket 5 (Mastered): maintenance — type-translation, script-convert, sentence-builder
  */
 const exerciseTypesForBucket: Record<number, ExerciseType[]> = {
-  0: ['multiple-choice'],
-  1: ['multiple-choice', 'context-pick', 'listen-choice'],
-  2: ['fill-in-blank', 'context-pick', 'multiple-choice', 'pattern-match', 'listen-choice'],
-  3: ['type-translation', 'word-tiles', 'fill-in-blank', 'sentence-builder', 'comprehension', 'pattern-match', 'listen-choice'],
-  4: ['type-translation', 'script-convert', 'sentence-builder', 'comprehension', 'pattern-match', 'listen-choice'],
-  5: ['type-translation', 'script-convert'],
+  0: ['multiple-choice', 'context-pick'],
+  1: ['multiple-choice', 'context-pick', 'word-tiles', 'listen-choice'],
+  2: ['multiple-choice', 'context-pick', 'word-tiles', 'fill-in-blank', 'sentence-builder', 'pattern-match', 'listen-choice'],
+  3: ['context-pick', 'word-tiles', 'fill-in-blank', 'sentence-builder', 'comprehension', 'type-translation', 'pattern-match', 'listen-choice'],
+  4: ['word-tiles', 'fill-in-blank', 'sentence-builder', 'comprehension', 'type-translation', 'script-convert', 'pattern-match', 'listen-choice'],
+  5: ['type-translation', 'script-convert', 'sentence-builder'],
 };
 
 /**
@@ -555,9 +663,9 @@ function applySkipTyping(type: ExerciseType, skipTyping: boolean): ExerciseType 
 function pickExerciseType(types: ExerciseType[], sessionPosition: number): ExerciseType {
   if (types.length <= 1) return types[0];
 
-  const weights = types.map((_, idx) => {
+  const weights = types.map((t, idx) => {
     const normalizedIdx = idx / (types.length - 1);
-    return 1 + sessionPosition * normalizedIdx * 2;
+    return 1 + sessionPosition * normalizedIdx * 2 + (CONSTRUCTION_TYPES.has(t) ? 0.8 : 0);
   });
 
   const totalWeight = weights.reduce((a, b) => a + b, 0);
@@ -635,7 +743,7 @@ export function generateExercise(
     case 'sentence-builder':
       return generateSentenceBuilder(phrase, allPhrases, script);
     case 'comprehension':
-      return generateComprehension(phrase, allPhrases, script);
+      return generateComprehension(phrase, allPhrases, script, lesson);
     case 'listen-choice':
       return generateListenChoice(phrase, allPhrases, lesson);
     case 'pattern-match':

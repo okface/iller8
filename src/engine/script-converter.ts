@@ -107,8 +107,6 @@ export function normalizeForComparison(text: string): string {
     .replace(/š/g, 's')
     .replace(/ž/g, 'z')
     .replace(/đ/g, 'dj')
-    .replace(/lj/g, 'lj')
-    .replace(/nj/g, 'nj')
     .replace(/dž/g, 'dz')
     .trim();
 }

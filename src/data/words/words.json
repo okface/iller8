@@ -8556,5 +8556,377 @@
       }
     ],
     "notes": "The neuter 'sporo' doubles as the adverb 'slowly'; comparative 'sporije' (slower)."
+  },
+  {
+    "id": "pomoci",
+    "lemma_sr_latin": "pomoći",
+    "lemma_sr_cyrillic": "помоћи",
+    "gloss_en": "to help",
+    "gloss_hint": "perf",
+    "pos": "verb",
+    "aspect": "perf",
+    "rank": 5,
+    "forms": [
+      {
+        "tag": "1sg.pres",
+        "sr_latin": "pomognem",
+        "sr_cyrillic": "помогнем",
+        "en": "I'll help"
+      },
+      {
+        "tag": "2sg.pres",
+        "sr_latin": "pomogneš",
+        "sr_cyrillic": "помогнеш",
+        "en": "you'll help"
+      },
+      {
+        "tag": "imp.2sg",
+        "sr_latin": "pomozi",
+        "sr_cyrillic": "помози",
+        "en": "help!"
+      },
+      {
+        "tag": "past.m.sg",
+        "sr_latin": "pomogao",
+        "sr_cyrillic": "помогао",
+        "en": "helped (m)"
+      }
+    ],
+    "examples": [
+      {
+        "sr_latin": "Možeš li da mi pomogneš?",
+        "sr_cyrillic": "Можеш ли да ми помогнеш?",
+        "en": "Can you help me?"
+      },
+      {
+        "sr_latin": "Pomozi mi malo.",
+        "sr_cyrillic": "Помози ми мало.",
+        "en": "Help me a little."
+      }
+    ],
+    "appearsIn": [
+      "everyday-frames"
+    ],
+    "notes": "Takes the dative: 'pomoći nekome' = to help someone. Imperfective counterpart 'pomagati'."
+  },
+  {
+    "id": "pomoc",
+    "lemma_sr_latin": "pomoć",
+    "lemma_sr_cyrillic": "помоћ",
+    "gloss_en": "help",
+    "pos": "noun",
+    "gender": "f",
+    "rank": 5,
+    "forms": [
+      {
+        "tag": "nom.sg",
+        "sr_latin": "pomoć",
+        "sr_cyrillic": "помоћ",
+        "en": "help"
+      },
+      {
+        "tag": "acc.sg",
+        "sr_latin": "pomoć",
+        "sr_cyrillic": "помоћ",
+        "en": "help (acc)"
+      }
+    ],
+    "examples": [
+      {
+        "sr_latin": "Treba mi pomoć.",
+        "sr_cyrillic": "Треба ми помоћ.",
+        "en": "I need help."
+      },
+      {
+        "sr_latin": "Hvala na pomoći.",
+        "sr_cyrillic": "Хвала на помоћи.",
+        "en": "Thanks for the help."
+      }
+    ],
+    "appearsIn": [
+      "everyday-frames"
+    ],
+    "notes": "Feminine i-stem noun; nominative and accusative are identical."
+  },
+  {
+    "id": "dolaziti",
+    "lemma_sr_latin": "dolaziti",
+    "lemma_sr_cyrillic": "долазити",
+    "gloss_en": "to come / arrive",
+    "gloss_hint": "impf",
+    "pos": "verb",
+    "aspect": "impf",
+    "rank": 5,
+    "forms": [
+      {
+        "tag": "1sg.pres",
+        "sr_latin": "dolazim",
+        "sr_cyrillic": "долазим",
+        "en": "I come / I'm coming"
+      },
+      {
+        "tag": "2sg.pres",
+        "sr_latin": "dolaziš",
+        "sr_cyrillic": "долазиш",
+        "en": "you come / you're coming"
+      },
+      {
+        "tag": "3sg.pres",
+        "sr_latin": "dolazi",
+        "sr_cyrillic": "долази",
+        "en": "he/she comes"
+      }
+    ],
+    "examples": [
+      {
+        "sr_latin": "Dolaziš li kući?",
+        "sr_cyrillic": "Долазиш ли кући?",
+        "en": "Are you coming home?"
+      },
+      {
+        "sr_latin": "Dolazim za pet minuta.",
+        "sr_cyrillic": "Долазим за пет минута.",
+        "en": "I'm coming in five minutes."
+      }
+    ],
+    "appearsIn": [
+      "everyday-frames"
+    ],
+    "notes": "Imperfective (ongoing/repeated). The perfective 'doći' is for a single completed arrival."
+  },
+  {
+    "id": "doneti",
+    "lemma_sr_latin": "doneti",
+    "lemma_sr_cyrillic": "донети",
+    "gloss_en": "to bring",
+    "gloss_hint": "perf",
+    "pos": "verb",
+    "aspect": "perf",
+    "rank": 5,
+    "forms": [
+      {
+        "tag": "1sg.pres",
+        "sr_latin": "donesem",
+        "sr_cyrillic": "донесем",
+        "en": "I'll bring"
+      },
+      {
+        "tag": "2sg.pres",
+        "sr_latin": "doneseš",
+        "sr_cyrillic": "донесеш",
+        "en": "you'll bring"
+      },
+      {
+        "tag": "imp.2sg",
+        "sr_latin": "donesi",
+        "sr_cyrillic": "донеси",
+        "en": "bring!"
+      },
+      {
+        "tag": "past.m.sg",
+        "sr_latin": "doneo",
+        "sr_cyrillic": "донео",
+        "en": "brought (m)"
+      }
+    ],
+    "examples": [
+      {
+        "sr_latin": "Donesi mi vode.",
+        "sr_cyrillic": "Донеси ми воде.",
+        "en": "Bring me some water."
+      },
+      {
+        "sr_latin": "Doneću ti kafu.",
+        "sr_cyrillic": "Донећу ти кафу.",
+        "en": "I'll bring you coffee."
+      }
+    ],
+    "appearsIn": [
+      "everyday-frames"
+    ],
+    "notes": "Perfective. Imperfective counterpart 'donositi'."
+  },
+  {
+    "id": "vratiti-se",
+    "lemma_sr_latin": "vratiti se",
+    "lemma_sr_cyrillic": "вратити се",
+    "gloss_en": "to come back / return",
+    "gloss_hint": "perf, reflexive",
+    "pos": "verb",
+    "aspect": "perf",
+    "rank": 6,
+    "forms": [
+      {
+        "tag": "1sg.pres",
+        "sr_latin": "vratim se",
+        "sr_cyrillic": "вратим се",
+        "en": "I'll come back"
+      },
+      {
+        "tag": "2sg.pres",
+        "sr_latin": "vratiš se",
+        "sr_cyrillic": "вратиш се",
+        "en": "you'll come back"
+      },
+      {
+        "tag": "imp.2sg",
+        "sr_latin": "vrati se",
+        "sr_cyrillic": "врати се",
+        "en": "come back!"
+      }
+    ],
+    "examples": [
+      {
+        "sr_latin": "Vraćam se odmah.",
+        "sr_cyrillic": "Враћам се одмах.",
+        "en": "I'll be right back."
+      },
+      {
+        "sr_latin": "Vrati se kući.",
+        "sr_cyrillic": "Врати се кући.",
+        "en": "Come back home."
+      }
+    ],
+    "appearsIn": [
+      "everyday-frames"
+    ],
+    "notes": "Reflexive (always with 'se'). The imperfective 'vraćati se' gives the everyday 'vraćam se' = 'I'm on my way back'."
+  },
+  {
+    "id": "stici",
+    "lemma_sr_latin": "stići",
+    "lemma_sr_cyrillic": "стићи",
+    "gloss_en": "to arrive / make it",
+    "gloss_hint": "perf",
+    "pos": "verb",
+    "aspect": "perf",
+    "rank": 6,
+    "forms": [
+      {
+        "tag": "1sg.pres",
+        "sr_latin": "stignem",
+        "sr_cyrillic": "стигнем",
+        "en": "I'll arrive / make it"
+      },
+      {
+        "tag": "2sg.pres",
+        "sr_latin": "stigneš",
+        "sr_cyrillic": "стигнеш",
+        "en": "you'll arrive / make it"
+      },
+      {
+        "tag": "past.m.sg",
+        "sr_latin": "stigao",
+        "sr_cyrillic": "стигао",
+        "en": "arrived (m)"
+      }
+    ],
+    "examples": [
+      {
+        "sr_latin": "Stižem za pet minuta.",
+        "sr_cyrillic": "Стижем за пет минута.",
+        "en": "I'll be there in five minutes."
+      },
+      {
+        "sr_latin": "Ne mogu da stignem.",
+        "sr_cyrillic": "Не могу да стигнем.",
+        "en": "I can't make it in time."
+      }
+    ],
+    "appearsIn": [
+      "everyday-frames"
+    ],
+    "notes": "'Stići' also means 'to have time to do something'. Everyday present 'stižem' (I'm arriving / on my way) uses the imperfective 'stizati'."
+  },
+  {
+    "id": "nemati",
+    "lemma_sr_latin": "nemati",
+    "lemma_sr_cyrillic": "немати",
+    "gloss_en": "to not have",
+    "pos": "verb",
+    "aspect": "impf",
+    "rank": 4,
+    "forms": [
+      {
+        "tag": "1sg.pres",
+        "sr_latin": "nemam",
+        "sr_cyrillic": "немам",
+        "en": "I don't have"
+      },
+      {
+        "tag": "2sg.pres",
+        "sr_latin": "nemaš",
+        "sr_cyrillic": "немаш",
+        "en": "you don't have"
+      },
+      {
+        "tag": "3sg.pres",
+        "sr_latin": "nema",
+        "sr_cyrillic": "нема",
+        "en": "there isn't / he/she doesn't have"
+      }
+    ],
+    "examples": [
+      {
+        "sr_latin": "Nemam vremena.",
+        "sr_cyrillic": "Немам времена.",
+        "en": "I don't have time."
+      },
+      {
+        "sr_latin": "Nema veze.",
+        "sr_cyrillic": "Нема везе.",
+        "en": "It doesn't matter."
+      }
+    ],
+    "appearsIn": [
+      "everyday-frames"
+    ],
+    "notes": "The negative of 'imati'. 'Nema' alone means 'there is none / there isn't'."
+  },
+  {
+    "id": "kasniti",
+    "lemma_sr_latin": "kasniti",
+    "lemma_sr_cyrillic": "каснити",
+    "gloss_en": "to be late / running late",
+    "gloss_hint": "impf",
+    "pos": "verb",
+    "aspect": "impf",
+    "rank": 5,
+    "forms": [
+      {
+        "tag": "1sg.pres",
+        "sr_latin": "kasnim",
+        "sr_cyrillic": "касним",
+        "en": "I'm late"
+      },
+      {
+        "tag": "2sg.pres",
+        "sr_latin": "kasniš",
+        "sr_cyrillic": "касниш",
+        "en": "you're late"
+      },
+      {
+        "tag": "3sg.pres",
+        "sr_latin": "kasni",
+        "sr_cyrillic": "касни",
+        "en": "he/she is late"
+      }
+    ],
+    "examples": [
+      {
+        "sr_latin": "Mrzim kad kasniš.",
+        "sr_cyrillic": "Мрзим кад касниш.",
+        "en": "I hate it when you're late."
+      },
+      {
+        "sr_latin": "Izvini, kasnim malo.",
+        "sr_cyrillic": "Извини, касним мало.",
+        "en": "Sorry, I'm running a bit late."
+      }
+    ],
+    "appearsIn": [
+      "everyday-frames"
+    ],
+    "notes": "Imperfective. Related to the adverb 'kasnije' (later)."
   }
 ]

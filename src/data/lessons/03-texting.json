@@ -39,7 +39,7 @@
           "sr_latin": "De si?",
           "sr_cyrillic": "Де си?",
           "en": "What's up? / Where you at?",
-          "context": "Super casual. Short for 'gde si?' Used as a greeting, not a literal question.",
+          "context": "Super casual texting greeting. Fire it off to a friend instead of a full hello — you're not really asking for a location.",
           "wordRefs": [
             {
               "id": "biti",
@@ -55,7 +55,7 @@
           "sr_latin": "Gde si, brate?",
           "sr_cyrillic": "Где си, брате?",
           "en": "What's up, bro?",
-          "context": "How guys greet each other. 'Brate' (brother) is used constantly between male friends.",
+          "context": "How guys greet each other — a casual hello to a male buddy, with the 'bro' tacked on.",
           "wordRefs": [
             "gde",
             {
@@ -195,7 +195,7 @@
           "sr_latin": "Vidimo se posle.",
           "sr_cyrillic": "Видимо се после.",
           "en": "See you later.",
-          "context": "Casual sign-off when you have plans to meet. 'Posle' = later/afterwards.",
+          "context": "Casual sign-off when you'll catch each other again the same day.",
           "wordRefs": [
             {
               "id": "videti",
@@ -281,7 +281,7 @@
           "sr_latin": "Ne mogu danas, jel može sutra?",
           "sr_cyrillic": "Не могу данас, јел може сутра?",
           "en": "I can't today, is tomorrow okay?",
-          "context": "Rescheduling plans casually. 'Jel može' = is it possible / is that okay.",
+          "context": "Rescheduling plans casually — you can't make today and float the next day instead.",
           "wordRefs": [
             "ne",
             {
@@ -305,7 +305,7 @@
           "sr_latin": "Moram da otkažem, izvini.",
           "sr_cyrillic": "Морам да откажем, извини.",
           "en": "I have to cancel, sorry.",
-          "context": "Canceling plans. Adding 'izvini' shows you feel bad about it.",
+          "context": "Calling off plans you'd already made, while showing you feel bad about it.",
           "wordRefs": [
             {
               "id": "morati",
@@ -648,7 +648,7 @@
           "sr_latin": "Pričamo se posle.",
           "sr_cyrillic": "Причамо се после.",
           "en": "We'll talk later.",
-          "context": "Casual sign-off. 'Posle' = later/afterwards.",
+          "context": "Casual sign-off promising to pick the conversation back up another time.",
           "wordRefs": [
             {
               "id": "pricati",

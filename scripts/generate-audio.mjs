@@ -115,6 +115,7 @@ async function collectStrings() {
     '08-slang-humor.json',
     '09-daily-routines.json',
     '10-celebrations.json',
+    '11-everyday-frames.json',
   ];
   for (const file of lessonFiles) {
     const lesson = JSON.parse(await readFile(join(lessonsDir, file), 'utf8'));

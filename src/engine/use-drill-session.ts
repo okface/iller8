@@ -115,7 +115,7 @@ export function useDrillSession(input: DrillSessionInput): DrillSessionState {
       const updated = recordAnswer(existing, correct);
 
       let newProgress = updatePhraseProgress(progress, updated);
-      newProgress = updateDailyStats(newProgress, correct);
+      newProgress = updateDailyStats(newProgress, correct, phraseId);
       // Award universal achievements on fresh post-answer state.
       if (checkAchievements) newProgress = checkAchievements(newProgress);
 

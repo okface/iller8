@@ -168,7 +168,7 @@
           "sr_latin": "Jel' ovo domaći ajvar?",
           "sr_cyrillic": "Јел' ово домаћи ајвар?",
           "en": "Is this homemade ajvar?",
-          "context": "Asking if the ajvar (roasted red pepper spread) is homemade, which is a big deal.",
+          "context": "Checking whether that roasted red pepper spread on the table was made at home — a big compliment if it was.",
           "wordRefs": [],
           "notes": "Domaći (homemade) ajvar is infinitely better than store-bought, and families make it in huge batches every autumn."
         },
@@ -349,7 +349,7 @@
           "sr_latin": "Prijatno!",
           "sr_cyrillic": "Пријатно!",
           "en": "Bon appétit! / Enjoy your meal!",
-          "context": "Said before eating, like the Serbian equivalent of 'bon appétit'.",
+          "context": "Said to everyone at the table right before you start eating.",
           "wordRefs": [],
           "notes": "You can also hear 'Dobar tek!' which means the same thing."
         },
@@ -407,7 +407,7 @@
           "sr_latin": "Skuvaj mi kafu, molim te.",
           "sr_cyrillic": "Скувај ми кафу, молим те.",
           "en": "Make me a coffee, please.",
-          "context": "Asking your partner to make coffee. 'Skuvaj' literally means 'boil' because Turkish coffee is boiled.",
+          "context": "Asking your partner to put on a fresh pot — Turkish-style coffee is literally boiled.",
           "wordRefs": [
             "mi-dat",
             { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" },

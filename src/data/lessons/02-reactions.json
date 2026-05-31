@@ -160,7 +160,7 @@
           "sr_latin": "Bože moj!",
           "sr_cyrillic": "Боже мој!",
           "en": "Oh my God!",
-          "context": "Exactly like English 'oh my god.' Surprise, shock, exasperation.",
+          "context": "Your all-purpose exclamation for surprise, shock, or exasperation — used by everyone, religious or not.",
           "wordRefs": [
             { "id": "bog", "surface": "Bože", "surface_cyrillic": "Боже", "case": "voc" },
             "moj"

@@ -2,9 +2,11 @@ import { useState } from 'react';
 import type { Exercise } from '../../store/types';
 import Card from '../ui/Card';
 import MonoBadge from '../ui/MonoBadge';
+import DualScript from '../ui/DualScript';
 import ContinueButton from '../ui/ContinueButton';
 import GlossHint from '../ui/GlossHint';
 import MCOptionList from '../ui/MCOptionList';
+import AudioButton from '../ui/AudioButton';
 import AutoplayAudio from '../ui/AutoplayAudio';
 import { T, metaLabel } from '../../lib/tokens';
 import { IconBrain } from '../ui/Icons';
@@ -15,7 +17,7 @@ interface ComprehensionProps {
   script?: 'latin' | 'cyrillic';
 }
 
-export default function Comprehension({ exercise, onAnswer }: ComprehensionProps) {
+export default function Comprehension({ exercise, onAnswer, script = 'latin' }: ComprehensionProps) {
   const [selected, setSelected] = useState<string | null>(null);
   const [result, setResult] = useState<{ correct: boolean } | null>(null);
 
@@ -65,15 +67,13 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
         </div>
       </div>
 
-      {/* Question */}
+      {/* Question — now English (the dialogue stays Serbian above). */}
       <Card warm pad={14}>
-        <div style={{ ...metaLabel, color: T.amber, marginBottom: 6 }}>PITANJE</div>
+        <div style={{ ...metaLabel, color: T.amber, marginBottom: 6 }}>QUESTION</div>
         <div
-          className="font-serif-sr"
           style={{
-            fontSize: 18,
+            fontSize: 16,
             fontWeight: 500,
-            letterSpacing: -0.2,
             color: T.text,
             lineHeight: 1.4,
           }}
@@ -82,14 +82,15 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
         </div>
       </Card>
 
-      {/* Options */}
+      {/* Options — English meanings. The learner must comprehend the
+          Serbian dialogue; the answer is never visible on screen. */}
       <MCOptionList
         options={exercise.options ?? []}
         correctAnswer={exercise.correctAnswer}
         selected={selected}
         revealed={!!result}
         onSelect={handleSelect}
-        serifOptions
+        serifOptions={false}
       />
 
       {result?.correct && (
@@ -97,17 +98,26 @@ export default function Comprehension({ exercise, onAnswer }: ComprehensionProps
           <div style={{ fontSize: 15, color: T.green, fontWeight: 600 }}>
             Odlično ✓
           </div>
-          <GlossHint hint={exercise.phrase.gloss_hint} />
         </div>
       )}
 
-      {result && !result.correct && (
+      {/* Post-answer reveal: the correct answer is now English, so also
+          surface the target Serbian line (what was said) and its meaning. */}
+      {result && (
         <Card pad={14}>
-          <div style={{ ...metaLabel, marginBottom: 6 }}>TAČAN ODGOVOR</div>
-          <div
-            className="font-serif-sr"
-            style={{ fontSize: 18, color: T.green, fontWeight: 500 }}
-          >
+          <div style={{ ...metaLabel, marginBottom: 6 }}>THE LINE</div>
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
+            <div style={{ flex: 1, minWidth: 0 }}>
+              <DualScript
+                srLatin={exercise.phrase.sr_latin}
+                srCyrillic={exercise.phrase.sr_cyrillic}
+                script={script}
+                size="lg"
+              />
+            </div>
+            <AudioButton text={exercise.phrase.sr_latin} size={16} />
+          </div>
+          <div style={{ fontSize: 13, color: T.green, fontWeight: 500, marginTop: 6 }}>
             {exercise.correctAnswer}
           </div>
           <GlossHint hint={exercise.phrase.gloss_hint} />

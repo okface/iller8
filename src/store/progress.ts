@@ -73,27 +73,43 @@ export function getTodayStats(progress: UserProgress): DailyStats {
       correctAnswers: 0,
       totalAnswers: 0,
       timeSpentSeconds: 0,
+      studiedPhraseIds: [],
     }
   );
 }
 
 export function updateDailyStats(
   progress: UserProgress,
-  correct: boolean
+  correct: boolean,
+  phraseId?: string
 ): UserProgress {
   const today = new Date().toISOString().split('T')[0];
   const existing = progress.dailyStats.find((s) => s.date === today);
+  // When the day rolls over `existing` is undefined, so the fresh record
+  // below resets every daily counter — including studiedPhraseIds — to empty.
   const stats: DailyStats = existing
-    ? { ...existing }
+    ? { ...existing, studiedPhraseIds: [...(existing.studiedPhraseIds ?? [])] }
     : {
         date: today,
         phrasesStudied: 0,
         correctAnswers: 0,
         totalAnswers: 0,
         timeSpentSeconds: 0,
+        studiedPhraseIds: [],
       };
 
-  stats.phrasesStudied += 1;
+  // phrasesStudied counts DISTINCT phrase ids studied today. Dedupe the id
+  // into the set and mirror its size; repeats/retries don't inflate it.
+  if (phraseId && !stats.studiedPhraseIds!.includes(phraseId)) {
+    stats.studiedPhraseIds!.push(phraseId);
+  }
+  // NOTE: callers without a phrase id (e.g. the MatchPairs loop in
+  // LessonView) fall back to incrementing by 1, preserving prior behavior.
+  if (phraseId) {
+    stats.phrasesStudied = stats.studiedPhraseIds!.length;
+  } else {
+    stats.phrasesStudied += 1;
+  }
   stats.totalAnswers += 1;
   if (correct) stats.correctAnswers += 1;
 

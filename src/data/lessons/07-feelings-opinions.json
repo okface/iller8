@@ -450,7 +450,7 @@
           "sr_latin": "Po meni, to nema smisla.",
           "sr_cyrillic": "По мени, то нема смисла.",
           "en": "In my opinion, that makes no sense.",
-          "context": "Starting a sentence with your take. 'Po meni' = 'according to me.'",
+          "context": "Leading with your own take before saying you think something doesn't add up.",
           "wordRefs": [
             "to",
             { "id": "imati", "surface": "nema", "surface_cyrillic": "нема", "form": "3sg.pres.neg" }

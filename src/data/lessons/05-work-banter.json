@@ -21,7 +21,7 @@
           "sr_latin": "Imam bag i ne mogu da skontam odakle dolazi.",
           "sr_cyrillic": "Имам баг и не могу да сконтам одакле долази.",
           "en": "I've got a bug and I can't figure out where it's coming from.",
-          "context": "Classic dev frustration. 'Skontam' is slang for 'figure out'.",
+          "context": "Classic dev frustration — a bug you can't trace to its source.",
           "wordRefs": [
             {
               "id": "imati",
@@ -97,7 +97,7 @@
           "sr_latin": "Puštam deploy.",
           "sr_cyrillic": "Пуштам deploy.",
           "en": "I'm pushing a deploy.",
-          "context": "Letting the team know you're deploying. 'Puštam' literally means 'I'm releasing/letting go'.",
+          "context": "Letting the team know you're shipping a release right now.",
           "wordRefs": [],
           "notes": "'Deploy' stays in English in most Serbian dev teams."
         },

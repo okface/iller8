@@ -21,7 +21,7 @@
           "sr_latin": "Hajde da izađemo večeras.",
           "sr_cyrillic": "Хајде да изађемо вечерас.",
           "en": "Let's go out tonight.",
-          "context": "Suggesting a night out. 'Hajde da' + verb is the standard way to say 'let's'.",
+          "context": "Suggesting a night out to your partner or friend.",
           "wordRefs": [
             "hajde",
             "da-conj"
@@ -91,7 +91,7 @@
           "sr_latin": "Možemo u bioskop?",
           "sr_cyrillic": "Можемо у биоскоп?",
           "en": "Can we go to the cinema?",
-          "context": "Suggesting a movie. 'Bioskop' = cinema/movie theater.",
+          "context": "Floating the idea of catching a movie at the theater.",
           "wordRefs": [
             { "id": "moci", "surface": "Možemo", "surface_cyrillic": "Можемо", "form": "1pl.pres" },
             "u"
@@ -186,7 +186,7 @@
           "sr_latin": "Bleja kod mene?",
           "sr_cyrillic": "Блеја код мене?",
           "en": "Hang at my place?",
-          "context": "Inviting friends over to chill. 'Bleja' is slang for hanging out/chilling.",
+          "context": "Inviting friends over to your place to do nothing in particular.",
           "wordRefs": [
             "kod"
           ],
@@ -197,7 +197,7 @@
           "sr_latin": "Dođite kod mene, chill.",
           "sr_cyrillic": "Дођите код мене, chill.",
           "en": "Come to my place, chill.",
-          "context": "Inviting a group of friends over. 'Dođite' is plural/polite 'come'.",
+          "context": "Inviting a whole group of friends over to relax.",
           "wordRefs": [
             "kod"
           ],
@@ -244,7 +244,7 @@
           "sr_latin": "Važi, dogovoreno.",
           "sr_cyrillic": "Важи, договорено.",
           "en": "Cool, it's a deal.",
-          "context": "Confirming plans. 'Važi' = 'it's valid/agreed' but used casually like 'cool/alright'.",
+          "context": "Sealing plans once you've both settled on them — a casual 'cool, done'.",
           "wordRefs": [
             { "id": "vaziti", "surface": "Važi", "surface_cyrillic": "Важи", "form": "3sg.pres" }
           ],
@@ -388,7 +388,7 @@
           "sr_latin": "Recimo u osam?",
           "sr_cyrillic": "Рецимо у осам?",
           "en": "Let's say eight?",
-          "context": "Suggesting a time. 'Recimo' = 'let's say'.",
+          "context": "Floating a specific meeting time to lock things down.",
           "wordRefs": [
             "u"
           ],
@@ -460,7 +460,7 @@
           "sr_latin": "Ma hajde, šta ti fali.",
           "sr_cyrillic": "Ма хајде, шта ти фали.",
           "en": "Oh come on, what's stopping you.",
-          "context": "Persuading someone who's on the fence. 'Šta ti fali' = 'what are you missing/lacking'.",
+          "context": "Nudging someone who's hesitating, with a touch of mock exasperation.",
           "wordRefs": [
             "ma",
             "hajde",

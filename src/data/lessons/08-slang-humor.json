@@ -21,7 +21,7 @@
           "sr_latin": "Brate, nećeš verovati.",
           "sr_cyrillic": "Брате, нећеш веровати.",
           "en": "Bro, you won't believe this.",
-          "context": "Opening any story or piece of gossip. 'Brate' is the universal sentence starter.",
+          "context": "Kicking off a juicy story or piece of gossip to a friend.",
           "wordRefs": [],
           "notes": "'Brate' is vocative of 'brat' (brother). Used constantly regardless of actual relation. Women use it too."
         },
@@ -121,7 +121,7 @@
           "sr_latin": "De si bre?",
           "sr_cyrillic": "Де си бре?",
           "en": "Where you at, man? / What's up?",
-          "context": "Casual greeting between friends. Short for 'Gde si bre?'",
+          "context": "Street-casual greeting between friends — the dropped-consonant, extra-relaxed version of 'where you at'.",
           "wordRefs": [
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
             "bre"
@@ -133,7 +133,7 @@
           "sr_latin": "Ćao bre!",
           "sr_cyrillic": "Ћао бре!",
           "en": "Hey man! / Yo!",
-          "context": "Informal greeting. 'Ćao' is from Italian 'ciao' — adding 'bre' makes it fully Serbian.",
+          "context": "Informal hello to a friend, dressed up with the all-purpose Serbian particle for extra flavor.",
           "wordRefs": [
             "bre"
           ]
@@ -392,7 +392,7 @@
           "sr_latin": "Nema frke.",
           "sr_cyrillic": "Нема фрке.",
           "en": "No worries. / No stress.",
-          "context": "Reassurance that everything's fine. More casual/slangier than 'nema veze.'",
+          "context": "Slangy reassurance that everything's fine and there's nothing to stress about.",
           "wordRefs": [
             { "id": "imati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres.neg" }
           ],

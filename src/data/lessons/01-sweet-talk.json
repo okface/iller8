@@ -258,7 +258,7 @@
           "sr_latin": "Nedostaješ mi.",
           "sr_cyrillic": "Недостајеш ми.",
           "en": "I miss you.",
-          "context": "The go-to 'I miss you.' Natural over text or in person.",
+          "context": "The go-to line when you wish someone you love were with you. Natural over text or in person.",
           "wordRefs": [
             "mi-dat",
             { "id": "nedostajati", "surface": "Nedostaješ", "surface_cyrillic": "Недостајеш", "form": "2sg.pres" }

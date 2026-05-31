@@ -235,6 +235,25 @@ export default function PatternMatch({ exercise, onAnswer }: PatternMatchProps) 
         </Card>
       )}
 
+      {/* Precise symbolic diff — shown only after answering. */}
+      {result && exercise.context && (
+        <Card pad={14}>
+          <div style={{ ...metaLabel, marginBottom: 6 }}>WHAT CHANGED</div>
+          <div
+            className="font-serif-sr"
+            style={{
+              fontSize: 16,
+              color: T.text,
+              fontWeight: 500,
+              letterSpacing: -0.2,
+              lineHeight: 1.4,
+            }}
+          >
+            {exercise.context}
+          </div>
+        </Card>
+      )}
+
       {/* Grammar note shown after answering */}
       {result && exercise.grammarNote && (
         <Card pad={14}>

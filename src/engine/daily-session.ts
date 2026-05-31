@@ -7,6 +7,7 @@ import { isPhraseReady } from './word-readiness';
 import { generateExercise } from './exercise-generator';
 import { generateWordRecognize, generateWordProduce, generateWordListen } from './word-generator';
 import { generatePerspectiveShiftExercise } from './family-generator';
+import { isDailyExcluded } from './daily-exclusions';
 import {
   generateConjugateFromKey,
   conjugationCellsForProgress,
@@ -139,6 +140,22 @@ function findLessonForPhrase(phraseId: string) {
   return undefined;
 }
 
+/** Like findLessonForPhrase but returns just the lesson id (for the new-stream tilt). */
+function lessonIdForPhrase(phraseId: string): string | undefined {
+  for (const lesson of lessons) {
+    for (const group of lesson.phraseGroups) {
+      if (group.phrases.some((p) => p.id === phraseId)) return lesson.id;
+    }
+  }
+  return undefined;
+}
+
+/** The short generalized-frames lesson — promoted first in the new stream. */
+const FRAME_LESSON_ID = 'everyday-frames';
+
+const phraseWordCount = (p: Phrase) =>
+  p.sr_latin.replace(/[.!?,]/g, '').split(/\s+/).filter(Boolean).length;
+
 /**
  * Pick new items the learner is ready for.
  *   - New words: bucket 0, ranked by frequency (rank ascending = more common first)
@@ -157,8 +174,15 @@ function pickNewItems(input: SessionInput, count: number): string[] {
     .filter(
       (p) =>
         (progress.phrases[p.id]?.bucket ?? 0) === 0 &&
-        isPhraseReady(p, progress)
+        isPhraseReady(p, progress) &&
+        !isDailyExcluded(p.id)
     )
+    .sort((a, b) => {
+      const af = lessonIdForPhrase(a.id) === FRAME_LESSON_ID ? 0 : 1;
+      const bf = lessonIdForPhrase(b.id) === FRAME_LESSON_ID ? 0 : 1;
+      if (af !== bf) return af - bf;
+      return phraseWordCount(a) - phraseWordCount(b);
+    })
     .map((p) => p.id);
 
   // New conjugation cells: lemma met (gated inside), cell itself unseen.
@@ -170,8 +194,8 @@ function pickNewItems(input: SessionInput, count: number): string[] {
   // Interleave word, phrase, word, phrase… with ~15% conjugation woven in
   // (only once the learner has met some verbs — early on this is empty).
   const picked: string[] = [];
-  const ws = shuffle(newWordIds).slice(0, Math.ceil(count * 0.6));
-  const ps = shuffle(newPhraseIds).slice(0, Math.ceil(count * 0.4));
+  const ws = shuffle(newWordIds).slice(0, Math.ceil(count * 0.5));
+  const ps = newPhraseIds.slice(0, Math.ceil(count * 0.5)); // already sorted — do NOT shuffle
   const cs = newConjIds.slice(0, Math.max(1, Math.ceil(count * 0.15)));
   let sinceConj = 0;
   while (picked.length < count && (ws.length || ps.length || cs.length)) {
@@ -207,6 +231,7 @@ function pickNewItems(input: SessionInput, count: number): string[] {
 function pickConsolidationItems(input: SessionInput, count: number): string[] {
   const { progress } = input;
   const candidates = Object.values(progress.phrases)
+    .filter((p) => !isDailyExcluded(p.phraseId))
     .filter((p) => p.bucket >= 1 && p.bucket <= 2)
     .filter((p) => {
       const total = p.correctCount + p.incorrectCount;
@@ -245,7 +270,9 @@ export function previewDailySession(
   // the session always reaches `count` and the advertised mix is real:
   // when one stream is thin (e.g. no reviews due in week 1), the others
   // absorb its slots instead of silently padding with unweighted random.
-  const duePool = shuffle(getDueItems(input.progress.phrases)).map((p) => p.phraseId);
+  const duePool = shuffle(getDueItems(input.progress.phrases))
+    .map((p) => p.phraseId)
+    .filter((id) => !isDailyExcluded(id));
   const newPool = pickNewItems(input, count); // frequency-ordered, word/phrase interleaved
   const consolidationPool = pickConsolidationItems(input, count);
 
@@ -329,7 +356,7 @@ export function generateDailySession(
       .filter((k) => !seen.has(k));
 
     const readyPhraseKeys = allPhrases
-      .filter((p) => isPhraseReady(p, input.progress))
+      .filter((p) => isPhraseReady(p, input.progress) && !isDailyExcluded(p.id))
       .map((p) => p.id)
       .filter((k) => !seen.has(k));
 
