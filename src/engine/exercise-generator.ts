@@ -23,6 +23,11 @@ function pickRandom<T>(array: T[], count: number): T[] {
   return shuffle(array).slice(0, count);
 }
 
+/** Lower-case the first character of a word (the rest is left untouched). */
+function lowerFirst(w: string): string {
+  return w.length ? w.charAt(0).toLowerCase() + w.slice(1) : w;
+}
+
 function terminalPunct(s: string): string {
   const t = s.trim();
   const last = t.charAt(t.length - 1);
@@ -247,7 +252,12 @@ function generateWordTiles(
   script: 'latin' | 'cyrillic'
 ): Exercise {
   const text = script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin;
-  const words = text.replace(/[.!?,]/g, '').split(/\s+/);
+  // Lower-case the sentence-initial capital so the first tile doesn't betray
+  // where the sentence starts once the tiles are shuffled.
+  const words = text
+    .replace(/[.!?,]/g, '')
+    .split(/\s+/)
+    .map((w, i) => (i === 0 ? lowerFirst(w) : w));
 
   return {
     type: 'word-tiles',
@@ -313,7 +323,13 @@ function generateSentenceBuilder(
 ): Exercise {
   const field = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
   const text = phrase[field];
-  const coreWords = text.replace(/[.!?,;:'"]/g, '').split(/\s+/).filter(Boolean);
+  // Lower-case the sentence-initial capital so the first tile doesn't reveal
+  // the start when the tiles are shuffled (checking is case-insensitive).
+  const coreWords = text
+    .replace(/[.!?,;:'"]/g, '')
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((w, i) => (i === 0 ? lowerFirst(w) : w));
   const correctAnswer = coreWords.join(' ');
 
   // Build accepted answers: include the main phrase and any variations
@@ -326,9 +342,12 @@ function generateSentenceBuilder(
     }
   }
 
-  // Add 1-2 distractor words from other phrases
+  // Add 1-2 distractor words from other phrases. Lower-case their initials too,
+  // so no capitalised tile hints at the start (lowering only the answer's first
+  // word would otherwise invert the tell).
   const distractorCount = coreWords.length <= 2 ? 1 : 2;
-  const distractors = getDistractorWords(allPhrases, coreWords, script, distractorCount);
+  const distractors = getDistractorWords(allPhrases, coreWords, script, distractorCount)
+    .map(lowerFirst);
 
   const tiles = shuffle([...coreWords, ...distractors]);
 
