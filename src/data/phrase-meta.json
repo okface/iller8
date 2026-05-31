@@ -1790,14 +1790,14 @@
     "source": "wordrefs"
   },
   "polako": {
-    "stage": 1,
-    "difficulty": 1.6,
-    "isChunk": false,
+    "stage": 0,
+    "difficulty": 0.8,
+    "isChunk": true,
     "caseSet": [],
     "tense": "none",
     "cliticCount": 0,
     "idiomatic": false,
-    "source": "wordrefs"
+    "source": "heuristic"
   },
   "treba-mi-pomoc": {
     "stage": 3,
@@ -2802,6 +2802,16 @@
     "cliticCount": 0,
     "idiomatic": false,
     "source": "heuristic"
+  },
+  "polako-slang": {
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
+    "caseSet": [],
+    "tense": "none",
+    "cliticCount": 0,
+    "idiomatic": false,
+    "source": "wordrefs"
   },
   "nema-frke": {
     "stage": 2,

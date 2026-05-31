@@ -3,7 +3,7 @@ import { lessons } from '../data/lessons';
 import { words as allWords } from '../data/words';
 import { families } from '../data/phrase-families';
 import { getDueItems } from './srs';
-import { isPhraseReady } from './word-readiness';
+import { isPhraseReady, isPhrasePreviewable } from './word-readiness';
 import { phraseStage, phraseDifficulty } from '../data/phrase-meta';
 import { getLearnerStage, isStageUnlocked } from './grammar-progress';
 import { generateExercise } from './exercise-generator';
@@ -179,9 +179,14 @@ function pickNewItems(input: SessionInput, count: number): string[] {
     .filter(
       (p) =>
         (progress.phrases[p.id]?.bucket ?? 0) === 0 &&
-        isPhraseReady(p, progress) &&
         !isDailyExcluded(p.id) &&
-        isStageUnlocked(p.id, frontier)
+        isStageUnlocked(p.id, frontier) &&
+        // Normally a phrase waits until its words are met (readiness). But for
+        // the CURRENT frontier stage we also let "previewable" phrases through
+        // so the learner meets stage material directly instead of being forced
+        // to grind isolated words first (that was starving progression).
+        (isPhraseReady(p, progress) ||
+          (phraseStage(p.id) === frontier && isPhrasePreviewable(p, progress)))
     )
     .sort((a, b) => {
       // Easier grammar stage first, then frames, then difficulty, then length.
@@ -207,8 +212,11 @@ function pickNewItems(input: SessionInput, count: number): string[] {
   // Interleave word, phrase, word, phrase… with ~15% conjugation woven in
   // (only once the learner has met some verbs — early on this is empty).
   const picked: string[] = [];
-  const ws = shuffle(newWordIds).slice(0, Math.ceil(count * 0.5));
-  const ps = newPhraseIds.slice(0, Math.ceil(count * 0.5)); // already sorted — do NOT shuffle
+  // Phrase-forward: phrases are the point; words are pulled mainly to unlock
+  // them. (The old 50/50 split spent half the new budget on words, which —
+  // combined with stage-clearing now counting words — is plenty.)
+  const ps = newPhraseIds.slice(0, Math.ceil(count * 0.6)); // already sorted — do NOT shuffle
+  const ws = shuffle(newWordIds).slice(0, Math.max(0, count - ps.length));
   const cs = newConjIds.slice(0, Math.max(1, Math.ceil(count * 0.15)));
   let sinceConj = 0;
   while (picked.length < count && (ws.length || ps.length || cs.length)) {
@@ -219,13 +227,13 @@ function pickNewItems(input: SessionInput, count: number): string[] {
       sinceConj = 0;
       if (picked.length >= count) break;
     }
-    if (ws.length) {
-      picked.push(ws.shift()!);
+    if (ps.length) {
+      picked.push(ps.shift()!);
       sinceConj++;
       if (picked.length >= count) break;
     }
-    if (ps.length) {
-      picked.push(ps.shift()!);
+    if (ws.length) {
+      picked.push(ws.shift()!);
       sinceConj++;
     }
     if (!ws.length && !ps.length && cs.length) {
@@ -286,6 +294,15 @@ export function previewDailySession(
   const duePool = shuffle(getDueItems(input.progress.phrases))
     .map((p) => p.phraseId)
     .filter((id) => !isDailyExcluded(id));
+  // Keep-sharp maintenance: strong items (bucket ≥ 3) not currently due, oldest
+  // first. Appended after due items so thin-review days still refresh OLD
+  // material across ALL layers (words/phrases/families) instead of going
+  // all-new — this bakes "hammering old stuff" into every session.
+  const keepSharp = Object.values(input.progress.phrases)
+    .filter((p) => p.bucket >= 3 && !isDailyExcluded(p.phraseId))
+    .sort((a, b) => a.lastReviewed - b.lastReviewed)
+    .map((p) => p.phraseId);
+  const reviewPool = [...duePool, ...keepSharp.filter((id) => !duePool.includes(id))];
   const newPool = pickNewItems(input, count); // frequency-ordered, word/phrase interleaved
   const consolidationPool = pickConsolidationItems(input, count);
 
@@ -302,7 +319,7 @@ export function previewDailySession(
     return out;
   };
 
-  const reviewIds = take(duePool, targetReview);
+  const reviewIds = take(reviewPool, targetReview);
   // New absorbs any review shortfall.
   const newIds = take(newPool, targetNew + (targetReview - reviewIds.length));
   // Consolidation gets whatever's left…
@@ -319,7 +336,7 @@ export function previewDailySession(
     shortfall -= more.length;
   }
   if (shortfall > 0) {
-    const more = take(duePool, shortfall);
+    const more = take(reviewPool, shortfall);
     reviewIds.push(...more);
   }
 
@@ -384,6 +401,37 @@ export function generateDailySession(
 
   const exercises: Exercise[] = [];
   for (const key of interleaved.slice(0, count)) {
+    const bucket = input.progress.phrases[key]?.bucket ?? 0;
+    const ex = exerciseForKey(key, bucket, input);
+    if (ex) exercises.push(ex);
+  }
+  return exercises;
+}
+
+/**
+ * A pure SRS-maintenance session: due items across ALL layers (words,
+ * phrases, family variants, conjugations) plus a keep-sharp tail of strong
+ * items, each routed through `exerciseForKey` so word:/family:/conj: keys
+ * actually render. This replaces the old phrase-only `generateReviewExercises`
+ * (which silently dropped non-phrase due items — the real reason "Hammer/Review
+ * didn't update"). Used by the path's maintenance node.
+ */
+export function generateMaintenanceSession(
+  input: SessionInput,
+  count: number = 15
+): Exercise[] {
+  const due = shuffle(getDueItems(input.progress.phrases))
+    .map((p) => p.phraseId)
+    .filter((id) => !isDailyExcluded(id));
+  const keepSharp = Object.values(input.progress.phrases)
+    .filter((p) => p.bucket >= 3 && !isDailyExcluded(p.phraseId))
+    .sort((a, b) => a.lastReviewed - b.lastReviewed)
+    .map((p) => p.phraseId)
+    .filter((id) => !due.includes(id));
+  const keys = [...due, ...keepSharp].slice(0, count);
+
+  const exercises: Exercise[] = [];
+  for (const key of keys) {
     const bucket = input.progress.phrases[key]?.bucket ?? 0;
     const ex = exerciseForKey(key, bucket, input);
     if (ex) exercises.push(ex);

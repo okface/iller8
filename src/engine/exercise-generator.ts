@@ -366,6 +366,14 @@ function generateSentenceBuilder(
     .map((w, i) => (i === 0 ? lowerFirst(w) : w));
   const correctAnswer = coreWords.join(' ');
 
+  // A 1–2 word "sentence" isn't worth building (one tile is trivial). Fall
+  // back to a tap-to-order or a recognition choice instead.
+  if (coreWords.length < 3) {
+    return coreWords.length < 2
+      ? generateMultipleChoice(phrase, allPhrases, script, 'en-to-sr')
+      : generateWordTiles(phrase, script);
+  }
+
   // Build accepted answers: include the main phrase and any variations
   const acceptedAnswers = [correctAnswer];
   if (phrase.variations) {
@@ -433,40 +441,21 @@ interface DialogueTemplate {
 
 const dialogueTemplates: DialogueTemplate[] = [
   {
-    // Pattern: A asks what B is doing, B responds with the target phrase.
+    // A neutral attention-getter opener — "Hey." / "Listen." / "You know what?"
+    // — can precede ANY statement, so the dialogue never turns into nonsense
+    // like "Ne mogu, moram da… Živeo!". The old invite/decline template that
+    // prepended "moram da…" is gone (it broke on toasts/greetings/exclamations).
     build: (phraseText, script) => {
       const names = shuffle(['Ana', 'Marko', 'Jelena', 'Stefan', 'Milica', 'Nikola']);
       const a = names[0];
       const b = names[1];
-      const ask = script === 'cyrillic' ? 'Шта радиш?' : 'Šta radiš?';
-      return {
-        dialogue: [
-          `${a}: "${ask}"`,
-          `${b}: "${phraseText}"`,
-        ],
-        speakerName: b,
-      };
-    },
-  },
-  {
-    // Pattern: A invites B out, B declines using the target phrase.
-    build: (phraseText, script) => {
-      const names = shuffle(['Ana', 'Marko', 'Jelena', 'Stefan', 'Milica', 'Nikola']);
-      const a = names[0];
-      const b = names[1];
-      const invite =
+      const openers =
         script === 'cyrillic'
-          ? 'Хајде да изађемо вечерас?'
-          : 'Hajde da izađemo večeras?';
-      const decline =
-        script === 'cyrillic'
-          ? 'Не могу, морам да…'
-          : 'Ne mogu, moram da…';
+          ? ['Хеј.', 'Чуј.', 'Слушај.', 'Знаш шта?']
+          : ['Hej.', 'Čuj.', 'Slušaj.', 'Znaš šta?'];
+      const opener = openers[Math.floor(Math.random() * openers.length)];
       return {
-        dialogue: [
-          `${a}: "${invite}"`,
-          `${b}: "${decline} ${phraseText}"`,
-        ],
+        dialogue: [`${a}: "${opener}"`, `${b}: "${phraseText}"`],
         speakerName: b,
       };
     },
@@ -483,16 +472,17 @@ function generateComprehension(
   const srField = script === 'cyrillic' ? 'sr_cyrillic' : 'sr_latin';
   const phraseText = phrase[srField];
 
-  // Template choice. Templates[1] (T2) declines an invitation with
-  // "Ne mogu, moram da… {phrase}". That only reads as natural Serbian when
-  // the target phrase can follow "moram da" — i.e. it's NOT itself a
-  // question (a "?" line after "moram da…" is ungrammatical and confusing,
-  // e.g. "…moram da… Možeš li…?"). When the phrase is a question, force T1
-  // ("Šta radiš?" / "{phrase}"), which embeds any standalone line cleanly.
-  const phraseIsQuestion = terminalPunct(phrase.sr_latin) === '?';
-  let templateIndex = Math.floor(Math.random() * dialogueTemplates.length);
-  if (phraseIsQuestion) templateIndex = 0;
-  const template = dialogueTemplates[templateIndex];
+  // Comprehension only makes sense for multi-word STATEMENTS. Toasts,
+  // greetings, one-word reactions, exclamations and questions read as nonsense
+  // once wrapped in a mini-dialogue (the old "Ne mogu, moram da… Živeo!" bug)
+  // or have no informative meaning to decode — those fall back to a plain
+  // recognition MC (read the Serbian, pick the English).
+  const term = terminalPunct(phrase.sr_latin);
+  const eligible = tokenCount(phrase.sr_latin) >= 3 && term !== '!' && term !== '?';
+  if (!eligible) {
+    return generateMultipleChoice(phrase, allPhrases, script, 'sr-to-en', lesson, bucket);
+  }
+  const template = dialogueTemplates[Math.floor(Math.random() * dialogueTemplates.length)];
   const { dialogue, speakerName } = template.build(phraseText, script);
 
   // Options are ENGLISH meanings. The learner must comprehend the Serbian

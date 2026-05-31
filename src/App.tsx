@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Dashboard from './pages/Dashboard';
+import Path from './pages/Path';
 import LessonView from './pages/LessonView';
 import ReviewSession from './pages/ReviewSession';
 import Stats from './pages/Stats';
 import Settings from './pages/Settings';
 import CustomContent from './pages/CustomContent';
-import Hammer from './pages/Hammer';
 import Catalog from './pages/Catalog';
 import FamilyDrill from './pages/FamilyDrill';
 import WordDrill from './pages/WordDrill';
@@ -66,93 +65,52 @@ export default function App() {
               />
             }
           >
-          <Route
-            index
-            element={<Dashboard progress={progress} script={script} />}
-          />
-          <Route
-            path="daily"
-            element={
-              <Daily progress={progress} setProgress={setProgress} script={script} />
-            }
-          />
-          <Route
-            path="hammer"
-            element={
-              <Hammer progress={progress} setProgress={setProgress} script={script} />
-            }
-          />
-          <Route
-            path="words"
-            element={
-              <WordDrill progress={progress} setProgress={setProgress} script={script} />
-            }
-          />
-          <Route
-            path="catalog"
-            element={<Catalog progress={progress} script={script} />}
-          />
-          <Route
-            path="families"
-            element={
-              <FamilyDrill
-                progress={progress}
-                setProgress={setProgress}
-                script={script}
-              />
-            }
-          />
-          <Route
-            path="families/:lessonId"
-            element={
-              <FamilyDrill
-                progress={progress}
-                setProgress={setProgress}
-                script={script}
-              />
-            }
-          />
-          <Route
-            path="lesson/:id"
-            element={
-              <LessonView
-                progress={progress}
-                setProgress={setProgress}
-                script={script}
-              />
-            }
-          />
-          <Route
-            path="review"
-            element={
-              <ReviewSession
-                progress={progress}
-                setProgress={setProgress}
-                script={script}
-              />
-            }
-          />
-          <Route
-            path="stats"
-            element={<Stats progress={progress} script={script} />}
-          />
-          <Route
-            path="settings"
-            element={
-              <Settings
-                progress={progress}
-                setProgress={setProgress}
-                script={script}
-              />
-            }
-          />
-          <Route
-            path="custom"
-            element={<CustomContent progress={progress} script={script} />}
-          />
-        </Route>
-      </Routes>
-    </HashRouter>
+            {/* Home = the learning path */}
+            <Route index element={<Path progress={progress} script={script} />} />
+
+            {/* Practice = the unified smart session */}
+            <Route
+              path="daily"
+              element={<Daily progress={progress} setProgress={setProgress} script={script} />}
+            />
+
+            {/* Browse = look anything up (categories, words, families) */}
+            <Route path="browse" element={<Catalog progress={progress} script={script} />} />
+
+            {/* Keep-sharp maintenance (launched from the path) */}
+            <Route
+              path="review"
+              element={<ReviewSession progress={progress} setProgress={setProgress} script={script} />}
+            />
+
+            {/* Deep links (no tab): focused drills + a single lesson */}
+            <Route
+              path="words"
+              element={<WordDrill progress={progress} setProgress={setProgress} script={script} />}
+            />
+            <Route
+              path="families"
+              element={<FamilyDrill progress={progress} setProgress={setProgress} script={script} />}
+            />
+            <Route
+              path="families/:lessonId"
+              element={<FamilyDrill progress={progress} setProgress={setProgress} script={script} />}
+            />
+            <Route
+              path="lesson/:id"
+              element={<LessonView progress={progress} setProgress={setProgress} script={script} />}
+            />
+
+            {/* Me = settings + stats + custom content */}
+            <Route
+              path="settings"
+              element={<Settings progress={progress} setProgress={setProgress} script={script} />}
+            />
+            <Route path="stats" element={<Stats progress={progress} script={script} />} />
+            <Route path="custom" element={<CustomContent progress={progress} script={script} />} />
+          </Route>
+        </Routes>
+      </HashRouter>
     </AudioSettingsProvider>
   );
 }

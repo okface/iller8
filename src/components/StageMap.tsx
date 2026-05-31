@@ -25,8 +25,7 @@ export default function StageMap({ progress }: StageMapProps) {
           const isCurrent = st.id === frontier;
           const isLocked = st.id > frontier && st.id !== 0;
           const isDone = sp.cleared && !isCurrent;
-          const need = Math.min(8, sp.total || 1);
-          const pct = sp.total === 0 ? 0 : Math.min(1, sp.mastered / need);
+          const pct = sp.pct;
 
           const accent = isDone ? T.green : isCurrent ? T.amber : T.mute;
           const titleColor = isLocked ? T.mute : T.text;
@@ -131,7 +130,7 @@ export default function StageMap({ progress }: StageMapProps) {
                   whiteSpace: 'nowrap',
                 }}
               >
-                {st.id === 0 ? `${sp.total}` : `${sp.mastered}/${sp.total}`}
+                {st.id === 0 ? `${sp.total}` : `${sp.met}/${sp.need}`}
               </div>
             </div>
           );

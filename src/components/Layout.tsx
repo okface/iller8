@@ -18,8 +18,10 @@ interface LayoutProps {
 }
 
 const SECTION_MAP: Record<string, string> = {
-  '/': 'home',
-  '/review': 'review',
+  '/': 'path',
+  '/daily': 'practice',
+  '/browse': 'browse',
+  '/review': 'keep sharp',
   '/stats': 'stats',
   '/settings': 'me',
   '/custom': 'custom',
@@ -27,11 +29,15 @@ const SECTION_MAP: Record<string, string> = {
 
 function getSectionLabel(pathname: string): string {
   if (pathname.startsWith('/lesson/')) return 'lesson';
-  if (pathname.startsWith('/review')) return 'review';
+  if (pathname.startsWith('/daily')) return 'practice';
+  if (pathname.startsWith('/browse')) return 'browse';
+  if (pathname.startsWith('/words')) return 'words';
+  if (pathname.startsWith('/families')) return 'perspective';
+  if (pathname.startsWith('/review')) return 'keep sharp';
   if (pathname.startsWith('/stats')) return 'stats';
   if (pathname.startsWith('/settings')) return 'me';
   if (pathname.startsWith('/custom')) return 'custom';
-  return SECTION_MAP[pathname] ?? 'home';
+  return SECTION_MAP[pathname] ?? 'path';
 }
 
 export default function Layout({
@@ -151,10 +157,9 @@ export default function Layout({
             padding: '8px 12px 14px',
           }}
         >
-          <TabItem to="/" label="Home" icon={<IconBook size={16} />} />
-          <TabItem to="/daily" label="Daily" icon={<IconBolt size={16} />} />
-          <TabItem to="/words" label="Words" icon={<IconBook size={16} />} />
-          <TabItem to="/review" label="Review" icon={<IconRefresh size={16} />} />
+          <TabItem to="/" label="Path" icon={<IconBolt size={16} />} />
+          <TabItem to="/daily" label="Practice" icon={<IconRefresh size={16} />} />
+          <TabItem to="/browse" label="Browse" icon={<IconBook size={16} />} />
           <TabItem to="/settings" label="Me" icon={<IconUser size={16} />} />
         </div>
       </nav>
