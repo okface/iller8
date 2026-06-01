@@ -21,51 +21,61 @@
           "sr_latin": "Hajde da izađemo večeras.",
           "sr_cyrillic": "Хајде да изађемо вечерас.",
           "en": "Let's go out tonight.",
-          "context": "Suggesting a night out to your partner or friend.",
+          "context": "It's evening and you want to pull your partner off the couch and out into town.",
           "wordRefs": [
             "hajde",
-            "da-conj"
+            "da-conj",
+            { "id": "izaci", "surface": "izađemo", "surface_cyrillic": "изађемо", "form": "1pl.pres" },
+            "veceras"
           ],
-          "notes": "'Izađemo' comes from 'izaći' (to go out). Very common for suggesting plans."
+          "notes": "'Hajde da' + present = 'let's'; 'izađemo' is from 'izaći' (to go out). The everyday way to float a plan."
         },
         {
           "id": "hajde-da-prošetamo",
           "sr_latin": "Hajde da prošetamo.",
           "sr_cyrillic": "Хајде да прошетамо.",
           "en": "Let's go for a walk.",
-          "context": "Suggesting a casual walk. Šetnja (a walk) is a big part of Serbian social life.",
+          "context": "The weather's nice and you'd rather stroll somewhere than sit; suggest it to whoever's with you.",
           "wordRefs": [
             "hajde",
-            "da-conj"
+            "da-conj",
+            { "id": "prosetati", "surface": "prošetamo", "surface_cyrillic": "прошетамо", "form": "1pl.pres" }
           ],
-          "notes": "'Prošetamo' = 'take a stroll'. Serbians love evening walks, especially along the river or through town."
+          "notes": "'Prošetamo' = 'take a stroll'. An evening 'šetnja' along the river or through town is a real Serbian ritual."
         },
         {
           "id": "hajde-da-popijemo",
           "sr_latin": "Hajde da popijemo nešto.",
           "sr_cyrillic": "Хајде да попијемо нешто.",
           "en": "Let's grab a drink.",
-          "context": "Suggesting drinks. Deliberately vague about whether it's coffee, beer, or rakija.",
+          "context": "You want to get someone out for a drink without committing to coffee, beer, or rakija yet.",
           "wordRefs": [
             "hajde",
-            "da-conj"
-          ]
+            "da-conj",
+            { "id": "popiti", "surface": "popijemo", "surface_cyrillic": "попијемо", "form": "1pl.pres" },
+            "nesto"
+          ],
+          "notes": "'Popijemo' (perfective of 'piti') = down a drink; 'nešto' = 'something', left vague on purpose."
         },
         {
           "id": "hajde-da-gledamo",
           "sr_latin": "Hajde da gledamo nešto.",
           "sr_cyrillic": "Хајде да гледамо нешто.",
           "en": "Let's watch something.",
-          "context": "Suggesting a movie or show at home.",
+          "context": "You're both staying in tonight and you want to pick a film or show to put on together.",
           "wordRefs": [
             "hajde",
-            "da-conj"
+            "da-conj",
+            { "id": "gledati", "surface": "gledamo", "surface_cyrillic": "гледамо", "form": "1pl.pres" },
+            "nesto"
           ],
+          "notes": "'Gledamo' (from 'gledati') stays imperfective here — the watching is the activity, not a finished act.",
           "variations": [
             {
               "sr_latin": "Hajde da gledamo seriju.",
               "sr_cyrillic": "Хајде да гледамо серију.",
-              "en": "Let's watch a series."
+              "en": "Let's watch a series.",
+              "gloss_hint": "another way to say it"
             }
           ]
         }
@@ -80,49 +90,59 @@
           "sr_latin": "Hoćeš da izađemo?",
           "sr_cyrillic": "Хоћеш да изађемо?",
           "en": "Do you want to go out?",
-          "context": "Asking someone if they want to go out — works for both a date and hanging with friends.",
+          "context": "You're texting someone you like and want to ask, low-key, whether they're up for going out.",
           "wordRefs": [
             { "id": "hteti", "surface": "Hoćeš", "surface_cyrillic": "Хоћеш", "form": "2sg.pres" },
-            "da-conj"
-          ]
+            "da-conj",
+            { "id": "izaci", "surface": "izađemo", "surface_cyrillic": "изађемо", "form": "1pl.pres" }
+          ],
+          "notes": "'Hoćeš da' + present = 'do you want to…'; works for a date or just hanging out, tone decides which."
         },
         {
           "id": "mozemo-u-bioskop",
           "sr_latin": "Možemo u bioskop?",
           "sr_cyrillic": "Можемо у биоскоп?",
           "en": "Can we go to the cinema?",
-          "context": "Floating the idea of catching a movie at the theater.",
+          "context": "Something good is on the big screen and you want to nudge a friend into catching it with you.",
           "wordRefs": [
             { "id": "moci", "surface": "Možemo", "surface_cyrillic": "Можемо", "form": "1pl.pres" },
-            "u"
-          ]
+            "u",
+            { "id": "bioskop", "surface": "bioskop", "surface_cyrillic": "биоскоп", "case": "acc" }
+          ],
+          "notes": "The verb of motion is dropped — 'možemo u bioskop' literally 'can we to the cinema'. 'U' + accusative marks the destination."
         },
         {
           "id": "ima-dobar-restoran",
           "sr_latin": "Ima jedan dobar restoran blizu, hoćeš da probamo?",
           "sr_cyrillic": "Има један добар ресторан близу, хоћеш да пробамо?",
-          "en": "There's a good restaurant nearby, want to try it?",
-          "context": "Suggesting a new place to eat.",
+          "en": "There's a good place nearby, want to try it?",
+          "context": "You've spotted a new restaurant near you and want to talk someone into eating there.",
           "wordRefs": [
             { "id": "imati", "surface": "Ima", "surface_cyrillic": "Има", "form": "3sg.pres" },
             "jedan",
             "dobar",
+            { "id": "restoran", "surface": "restoran", "surface_cyrillic": "ресторан", "case": "acc" },
+            "blizu",
             { "id": "hteti", "surface": "hoćeš", "surface_cyrillic": "хоћеш", "form": "2sg.pres" },
-            "da-conj"
-          ]
+            "da-conj",
+            { "id": "probati", "surface": "probamo", "surface_cyrillic": "пробамо", "form": "1pl.pres" }
+          ],
+          "notes": "'Ima' here = 'there is'; 'jedan' softens it to 'a certain', not the number 'one'. 'Probamo' = 'let's try'."
         },
         {
           "id": "aj-na-pivo",
           "sr_latin": "Aj na pivo posle posla?",
           "sr_cyrillic": "Ај на пиво после посла?",
           "en": "Beer after work?",
-          "context": "Quick, casual invite for after-work drinks. 'Aj' is the ultra-casual form of 'hajde'.",
+          "context": "It's late afternoon and you want to toss a colleague a quick, throwaway invite for one drink.",
           "wordRefs": [
             { "id": "hajde", "surface": "Aj", "surface_cyrillic": "Ај" },
             "na",
+            { "id": "pivo", "surface": "pivo", "surface_cyrillic": "пиво", "case": "acc" },
+            "posle",
             { "id": "posao", "surface": "posla", "surface_cyrillic": "посла", "case": "gen" }
           ],
-          "notes": "'Aj' is even shorter than 'ajde'. Peak casual Serbian."
+          "notes": "'Aj' is 'hajde' worn down to one syllable — peak-casual. 'Posle' takes the genitive, so 'posao' becomes 'posla'."
         }
       ]
     },
@@ -135,45 +155,55 @@
           "sr_latin": "Šta radiš za vikend?",
           "sr_cyrillic": "Шта радиш за викенд?",
           "en": "What are you doing this weekend?",
-          "context": "The classic Friday question to friends or your partner.",
+          "context": "It's Friday and you want to find out what a friend has going on before you propose anything.",
           "wordRefs": [
             "sta",
             { "id": "raditi", "surface": "radiš", "surface_cyrillic": "радиш", "form": "2sg.pres" },
-            "za"
-          ]
+            "za",
+            { "id": "vikend", "surface": "vikend", "surface_cyrillic": "викенд", "case": "acc" }
+          ],
+          "notes": "'Za vikend' = 'for/over the weekend'. The classic opener before you suggest a plan."
         },
         {
           "id": "imas-planove",
           "sr_latin": "Imaš li neke planove za vikend?",
           "sr_cyrillic": "Имаш ли неке планове за викенд?",
           "en": "Do you have any plans for the weekend?",
-          "context": "A slightly more formal way to ask about weekend plans.",
+          "context": "You want to ask a colleague about their weekend in a fuller, slightly more polished way.",
           "wordRefs": [
             { "id": "imati", "surface": "Imaš", "surface_cyrillic": "Имаш", "form": "2sg.pres" },
-            "za"
-          ]
+            { "id": "plan", "surface": "planove", "surface_cyrillic": "планове", "case": "acc" },
+            "za",
+            { "id": "vikend", "surface": "vikend", "surface_cyrillic": "викенд", "case": "acc" }
+          ],
+          "notes": "'Li' after the verb forms a neutral yes/no question; 'planove' is accusative plural of 'plan' (the object)."
         },
         {
           "id": "nista-posebno",
           "sr_latin": "Ništa posebno, ti?",
           "sr_cyrillic": "Ништа посебно, ти?",
           "en": "Nothing special, you?",
-          "context": "The standard non-answer to weekend plan questions.",
+          "context": "A friend has just asked about your weekend and you want to shrug it off and bounce it back.",
           "wordRefs": [
             "nista",
+            { "id": "poseban", "surface": "posebno", "surface_cyrillic": "посебно", "form": "n.sg" },
             "ti-nom"
-          ]
+          ],
+          "notes": "'Posebno' = 'special' in neuter, agreeing with 'ništa'. The standard low-key reply."
         },
         {
           "id": "idemo-negde",
           "sr_latin": "Idemo negde za vikend?",
           "sr_cyrillic": "Идемо негде за викенд?",
           "en": "Shall we go somewhere this weekend?",
-          "context": "Open-ended suggestion for a weekend trip or outing.",
+          "context": "You're itching to get out of town and want to pitch a vague weekend trip to your partner.",
           "wordRefs": [
             { "id": "ici", "surface": "Idemo", "surface_cyrillic": "Идемо", "form": "1pl.pres" },
-            "za"
-          ]
+            "negde",
+            "za",
+            { "id": "vikend", "surface": "vikend", "surface_cyrillic": "викенд", "case": "acc" }
+          ],
+          "notes": "Present tense 'idemo' here reads as a proposal — 'shall we go'. 'Negde' = 'somewhere', left open."
         }
       ]
     },
@@ -186,26 +216,32 @@
           "sr_latin": "Bleja kod mene?",
           "sr_cyrillic": "Блеја код мене?",
           "en": "Hang at my place?",
-          "context": "Inviting friends over to your place to do nothing in particular.",
+          "context": "You want to ask a friend over to do absolutely nothing in particular at yours tonight.",
           "wordRefs": [
-            "kod"
+            { "id": "bleja", "surface": "Bleja", "surface_cyrillic": "Блеја", "case": "nom" },
+            "kod",
+            "mene"
           ],
-          "notes": "'Bleja' comes from 'blejati' which literally means 'to bleat' (like a sheep). It's evolved into the most common word for just hanging out and doing nothing."
+          "notes": "'Bleja' is from 'blejati' (to bleat, like a sheep) — now the go-to slang for lazing around. 'Kod mene' = 'at my place' (gen)."
         },
         {
           "id": "dodjite-kod-mene",
           "sr_latin": "Dođite kod mene, chill.",
           "sr_cyrillic": "Дођите код мене, chill.",
           "en": "Come to my place, chill.",
-          "context": "Inviting a whole group of friends over to relax.",
+          "context": "You want to tell a whole group of friends to come over and just relax at yours.",
           "wordRefs": [
-            "kod"
+            { "id": "doci", "surface": "Dođite", "surface_cyrillic": "Дођите", "form": "imp.2pl" },
+            "kod",
+            "mene"
           ],
+          "notes": "'Dođite' is the plural/formal imperative of 'doći'; 'dođi' for one person. 'Chill' is borrowed straight from English.",
           "variations": [
             {
               "sr_latin": "Dođi kod mene.",
               "sr_cyrillic": "Дођи код мене.",
-              "en": "Come to my place."
+              "en": "Come to my place.",
+              "gloss_hint": "to one person"
             }
           ]
         },
@@ -214,13 +250,15 @@
           "sr_latin": "Samo da blejimo i pričamo.",
           "sr_cyrillic": "Само да блејимо и причамо.",
           "en": "Just chill and talk.",
-          "context": "When you don't need a plan — just hanging out is the plan.",
+          "context": "Someone asks what the plan is and you want to say there isn't one — being together is enough.",
           "wordRefs": [
             "samo",
             "da-conj",
+            { "id": "blejati", "surface": "blejimo", "surface_cyrillic": "блејимо", "form": "1pl.pres" },
             "i",
             { "id": "pricati", "surface": "pričamo", "surface_cyrillic": "причамо", "form": "1pl.pres" }
-          ]
+          ],
+          "notes": "'Blejimo' (from 'blejati') = 'we hang out / do nothing'. 'Samo da' = 'just to', framing it as the whole plan."
         }
       ]
     },
@@ -233,45 +271,49 @@
           "sr_latin": "Može!",
           "sr_cyrillic": "Може!",
           "en": "Sure! / Works for me!",
-          "context": "The most common way to accept any plan or invitation. Short and enthusiastic.",
+          "context": "A friend just suggested a plan and you want to say yes to it in a single, eager word.",
           "wordRefs": [
             { "id": "moci", "surface": "Može", "surface_cyrillic": "Може", "form": "3sg.pres" }
           ],
-          "notes": "'Može' is probably the most useful single word in Serbian. It means 'okay', 'sure', 'can do', 'deal'."
+          "notes": "Literally '(it) can', from 'moći', but used as all-purpose 'okay / sure / deal'. One of the most useful words you'll learn."
         },
         {
           "id": "vazi",
           "sr_latin": "Važi, dogovoreno.",
           "sr_cyrillic": "Важи, договорено.",
           "en": "Cool, it's a deal.",
-          "context": "Sealing plans once you've both settled on them — a casual 'cool, done'.",
+          "context": "You've both landed on a plan and you want to lock it in with a casual 'done'.",
           "wordRefs": [
-            { "id": "vaziti", "surface": "Važi", "surface_cyrillic": "Важи", "form": "3sg.pres" }
+            { "id": "vaziti", "surface": "Važi", "surface_cyrillic": "Важи", "form": "3sg.pres" },
+            "dogovoreno"
           ],
-          "notes": "'Važi' is another essential word. You'll hear it constantly."
+          "notes": "'Važi' (from 'važiti', to hold/apply) = 'OK / deal'; 'dogovoreno' = 'agreed'. You'll hear 'važi' constantly."
         },
         {
           "id": "jedva-cekam",
           "sr_latin": "Jedva čekam!",
           "sr_cyrillic": "Једва чекам!",
           "en": "I can't wait!",
-          "context": "Expressing excitement about upcoming plans.",
+          "context": "Plans are set for something you're genuinely excited about and you want to show it.",
           "wordRefs": [
             "jedva",
             { "id": "cekati", "surface": "čekam", "surface_cyrillic": "чекам", "form": "1sg.pres" }
-          ]
+          ],
+          "notes": "Literally 'I barely wait' — 'jedva' = 'barely', so together it's 'I can hardly wait'."
         },
         {
           "id": "super-vidimo-se",
           "sr_latin": "Super, vidimo se tamo.",
           "sr_cyrillic": "Супер, видимо се тамо.",
           "en": "Great, see you there.",
-          "context": "Confirming you'll meet at the agreed location.",
+          "context": "The meeting spot is settled and you want to wrap the chat with an upbeat confirmation.",
           "wordRefs": [
             "super",
             { "id": "videti", "surface": "vidimo", "surface_cyrillic": "видимо", "form": "1pl.pres" },
-            "se"
-          ]
+            "se",
+            "tamo"
+          ],
+          "notes": "'Vidimo se' = 'we see each other / see you'; the reflexive 'se' makes it mutual. 'Tamo' = 'there'."
         }
       ]
     },
@@ -284,39 +326,54 @@
           "sr_latin": "Ne mogu danas, jel' može sutra?",
           "sr_cyrillic": "Не могу данас, јел' може сутра?",
           "en": "I can't today, how about tomorrow?",
-          "context": "Declining but offering an alternative. Keeps the door open.",
+          "context": "You can't make it today but you still want to see the person, so offer another day.",
           "wordRefs": [
             "ne",
             { "id": "moci", "surface": "mogu", "surface_cyrillic": "могу", "form": "1sg.pres" },
+            "danas",
             { "id": "moci", "surface": "može", "surface_cyrillic": "може", "form": "3sg.pres" },
             "sutra"
-          ]
+          ],
+          "notes": "'Ne mogu' = 'I can't' (1sg of 'moći'). 'Jel' može' = 'is it OK', a colloquial spoken 'da li je'."
         },
         {
           "id": "morace-drugi-put",
           "sr_latin": "Moraće drugi put.",
           "sr_cyrillic": "Мораће други пут.",
           "en": "It'll have to be another time.",
-          "context": "Politely declining when you're not available.",
-          "wordRefs": [],
-          "notes": "'Drugi put' = 'another time' or literally 'second time'."
+          "context": "You can't join and want to bow out gently without proposing a specific replacement day.",
+          "wordRefs": [
+            { "id": "morati", "surface": "Moraće", "surface_cyrillic": "Мораће", "form": "3sg.fut" },
+            "drugi",
+            { "id": "put", "surface": "put", "surface_cyrillic": "пут", "case": "acc" }
+          ],
+          "notes": "'Moraće' = future of 'morati' (will have to). 'Drugi put' = 'another time', literally 'a second time'."
         },
         {
           "id": "umoran-sam",
           "sr_latin": "Umoran sam, ostajem kući.",
           "sr_cyrillic": "Уморан сам, остајем кући.",
           "en": "I'm tired, I'm staying home.",
-          "context": "The honest excuse. Use 'Umorna sam' if female.",
+          "context": "You're worn out and want to honestly beg off and tell a friend you're not leaving the house.",
           "wordRefs": [
             "umoran",
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            { "id": "ostati", "surface": "ostajem", "surface_cyrillic": "остајем", "form": "1sg.pres" },
             { "id": "kuca", "surface": "kući", "surface_cyrillic": "кући", "case": "dat" }
           ],
+          "notes": "'Umoran' = tired (masculine); 'umorna' if you're a woman. 'Kući' (dative) = 'at home / homeward'.",
           "variations": [
+            {
+              "sr_latin": "Umorna sam, ostajem kući.",
+              "sr_cyrillic": "Уморна сам, остајем кући.",
+              "en": "I'm tired, I'm staying home.",
+              "gloss_hint": "said by a woman"
+            },
             {
               "sr_latin": "Mrzi me da izlazim.",
               "sr_cyrillic": "Мрзи ме да излазим.",
-              "en": "I can't be bothered to go out."
+              "en": "I can't be bothered to go out.",
+              "gloss_hint": "another way to say it"
             }
           ]
         }
@@ -336,7 +393,7 @@
             "sta",
             { "id": "raditi", "surface": "radiš", "surface_cyrillic": "радиш", "form": "2sg.pres" }
           ],
-          "notes": "This is often used as a greeting, not just a literal question."
+          "notes": "'Radiš' = 'you do' (from 'raditi'). Often just a conversation-opener, not a literal question."
         },
         {
           "id": "gde-si",
@@ -348,22 +405,32 @@
             "gde",
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" }
           ],
-          "notes": "When used as a greeting, it doesn't actually require you to state your location."
+          "notes": "'Si' = 'you are' (2sg of 'biti'). As a greeting it's like 'hey there' and expects no real location."
         },
         {
           "id": "jesi-slobodan",
           "sr_latin": "Jesi slobodan večeras?",
           "sr_cyrillic": "Јеси слободан вечерас?",
           "en": "Are you free tonight?",
-          "context": "Checking availability before suggesting plans. Use 'slobodna' for female.",
+          "context": "Before you suggest anything, you want to check whether someone's actually open this evening.",
           "wordRefs": [
-            { "id": "biti", "surface": "Jesi", "surface_cyrillic": "Јеси", "form": "2sg.pres" }
+            { "id": "biti", "surface": "Jesi", "surface_cyrillic": "Јеси", "form": "2sg.pres" },
+            "slobodan",
+            "veceras"
           ],
+          "notes": "'Jesi' is the emphatic 'are you' (from 'biti'). 'Slobodan' = free (masculine); 'slobodna' for a woman.",
           "variations": [
+            {
+              "sr_latin": "Jesi slobodna večeras?",
+              "sr_cyrillic": "Јеси слободна вечерас?",
+              "en": "Are you free tonight?",
+              "gloss_hint": "to a woman"
+            },
             {
               "sr_latin": "Jesi zauzet?",
               "sr_cyrillic": "Јеси заузет?",
-              "en": "Are you busy?"
+              "en": "Are you busy?",
+              "gloss_hint": "another way to say it"
             }
           ]
         }
@@ -378,50 +445,60 @@
           "sr_latin": "U koliko sati?",
           "sr_cyrillic": "У колико сати?",
           "en": "At what time?",
-          "context": "Asking when to meet.",
+          "context": "A plan is set but no hour was named, so you want to pin down when exactly to meet.",
           "wordRefs": [
-            "u"
-          ]
+            "u",
+            "koliko",
+            { "id": "sat", "surface": "sati", "surface_cyrillic": "сати", "case": "gen" }
+          ],
+          "notes": "'Koliko' = 'how much/many'; 'sati' is the genitive plural of 'sat' (hour) after a quantity word."
         },
         {
           "id": "recimo-u-osam",
           "sr_latin": "Recimo u osam?",
           "sr_cyrillic": "Рецимо у осам?",
           "en": "Let's say eight?",
-          "context": "Floating a specific meeting time to lock things down.",
+          "context": "You want to propose a concrete hour to settle the meeting time without sounding rigid.",
           "wordRefs": [
-            "u"
+            { "id": "reci", "surface": "Recimo", "surface_cyrillic": "Рецимо", "form": "imp.1pl" },
+            "u",
+            "osam"
           ],
-          "notes": "Serbians tend to run late, so 'u osam' might mean 8:15-8:30."
+          "notes": "'Recimo' = 'let's say' (1pl imperative of 'reći'). Heads up: 'u osam' often means 8:15–8:30 in practice."
         },
         {
           "id": "kasnim",
           "sr_latin": "Kasnim malo, sačekaj me.",
           "sr_cyrillic": "Касним мало, сачекај ме.",
-          "en": "I'm running a bit late, wait for me.",
-          "context": "The text you'll send when you're already supposed to be there.",
+          "en": "Running a bit late, wait for me.",
+          "context": "You're supposed to be there already and want to tell whoever's waiting to hold on.",
           "wordRefs": [
+            { "id": "kasniti", "surface": "Kasnim", "surface_cyrillic": "Касним", "form": "1sg.pres" },
             "malo",
+            { "id": "sacekati", "surface": "sačekaj", "surface_cyrillic": "сачекај", "form": "imp.2sg" },
             "me-acc"
           ],
-          "notes": "'Malo' = 'a little'. Could mean 5 minutes, could mean 30."
+          "notes": "'Sačekaj' = 'wait a bit' (imperative of 'sačekati'). 'Malo' = 'a little' — could mean 5 minutes or 30."
         },
         {
           "id": "gde-se-nadjemo",
           "sr_latin": "Gde da se nađemo?",
           "sr_cyrillic": "Где да се нађемо?",
           "en": "Where should we meet?",
-          "context": "Deciding on a meeting point.",
+          "context": "The time is agreed but not the spot, so you want to ask where to actually meet up.",
           "wordRefs": [
             "gde",
             "da-conj",
-            "se"
+            "se",
+            { "id": "naci", "surface": "nađemo", "surface_cyrillic": "нађемо", "form": "1pl.pres" }
           ],
+          "notes": "'Da se nađemo' = 'should we meet'; the reflexive 'se' makes 'naći' (to find) into 'find each other'.",
           "variations": [
             {
               "sr_latin": "Nađemo se ispred?",
               "sr_cyrillic": "Нађемо се испред?",
-              "en": "Meet out front?"
+              "en": "Meet out front?",
+              "gloss_hint": "another way to say it"
             }
           ]
         }
@@ -436,38 +513,42 @@
           "sr_latin": "Ajde bre, biće zabavno!",
           "sr_cyrillic": "Ајде бре, биће забавно!",
           "en": "Come on, it'll be fun!",
-          "context": "Convincing someone to come along. 'Bre' is a uniquely Serbian exclamation — an all-purpose interjection.",
+          "context": "A friend is dragging their feet about coming and you want to talk them into it.",
           "wordRefs": [
             { "id": "hajde", "surface": "Ajde", "surface_cyrillic": "Ајде" },
-            "bre"
+            "bre",
+            { "id": "biti", "surface": "biće", "surface_cyrillic": "биће", "form": "3sg.fut" },
+            { "id": "zabavan", "surface": "zabavno", "surface_cyrillic": "забавно", "form": "n.sg" }
           ],
-          "notes": "'Bre' (Turkish in origin) has no direct translation. It adds emphasis, like 'man', 'dude', or just raw energy. Quintessentially Serbian."
+          "notes": "'Biće' = 'it will be' (future of 'biti'). 'Bre' comes from Turkish — an emphatic 'man / dude', deeply Serbian."
         },
         {
           "id": "sta-cekas",
           "sr_latin": "Šta čekaš? Idemo!",
           "sr_cyrillic": "Шта чекаш? Идемо!",
           "en": "What are you waiting for? Let's go!",
-          "context": "Pushing someone to stop thinking and just go.",
+          "context": "Someone's overthinking it and you want to snap them into just getting up and leaving.",
           "wordRefs": [
             "sta",
             { "id": "cekati", "surface": "čekaš", "surface_cyrillic": "чекаш", "form": "2sg.pres" },
             { "id": "ici", "surface": "Idemo", "surface_cyrillic": "Идемо", "form": "1pl.pres" }
-          ]
+          ],
+          "notes": "'Čekaš' = 'you wait' (from 'čekati'); 'idemo' = 'we go / let's go', the all-purpose 'let's move'."
         },
         {
           "id": "ma-hajde",
           "sr_latin": "Ma hajde, šta ti fali.",
           "sr_cyrillic": "Ма хајде, шта ти фали.",
           "en": "Oh come on, what's stopping you.",
-          "context": "Nudging someone who's hesitating, with a touch of mock exasperation.",
+          "context": "A friend keeps hesitating and you want to wave off their excuses with mock exasperation.",
           "wordRefs": [
             "ma",
             "hajde",
             "sta",
-            "ti-dat"
+            "ti-dat",
+            { "id": "faliti", "surface": "fali", "surface_cyrillic": "фали", "form": "3sg.pres" }
           ],
-          "notes": "'Ma' before 'hajde' adds an insistent, almost exasperated tone."
+          "notes": "'Ma' before 'hajde' adds an insistent, fed-up tone. 'Šta ti fali' = 'what's wrong with you / what's missing'."
         }
       ]
     },
@@ -480,46 +561,57 @@
           "sr_latin": "Onda dogovoreno.",
           "sr_cyrillic": "Онда договорено.",
           "en": "Then it's settled.",
-          "context": "Finalizing plans. Clean, definitive.",
-          "wordRefs": []
+          "context": "Everything's been agreed and you want to close the conversation cleanly and definitively.",
+          "wordRefs": [
+            "onda",
+            "dogovoreno"
+          ],
+          "notes": "'Onda' = 'then'; 'dogovoreno' = 'agreed/settled', a past passive form used as a one-word 'it's a deal'."
         },
         {
           "id": "javim-ti",
           "sr_latin": "Javim ti kad krenem.",
           "sr_cyrillic": "Јавим ти кад кренем.",
           "en": "I'll text you when I leave.",
-          "context": "Letting someone know you'll update them when you're on your way.",
+          "context": "You want to tell a friend you'll send word the moment you're actually heading out.",
           "wordRefs": [
+            { "id": "javiti", "surface": "Javim", "surface_cyrillic": "Јавим", "form": "1sg.pres" },
             "ti-dat",
-            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" }
+            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" },
+            { "id": "krenuti", "surface": "krenem", "surface_cyrillic": "кренем", "form": "1sg.pres" }
           ],
-          "notes": "'Javim' = 'I'll let you know/inform'. Very commonly used for coordination."
+          "notes": "'Javim' (from 'javiti') = 'I'll let you know'; 'ti' is dative 'to you'. Present tense reads as future here."
         },
         {
           "id": "javi-kad-stignes",
           "sr_latin": "Javi kad stigneš.",
           "sr_cyrillic": "Јави кад стигнеш.",
           "en": "Text me when you arrive.",
-          "context": "Asking someone to let you know when they get there.",
+          "context": "Someone's heading to meet you and you want to ask them to ping you once they get there.",
           "wordRefs": [
-            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" }
-          ]
+            { "id": "javiti", "surface": "Javi", "surface_cyrillic": "Јави", "form": "imp.2sg" },
+            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" },
+            { "id": "stici", "surface": "stigneš", "surface_cyrillic": "стигнеш", "form": "2sg.pres" }
+          ],
+          "notes": "'Javi' = 'let me know' (imperative of 'javiti'); 'stigneš' = 'you arrive' (from 'stići')."
         },
         {
           "id": "vidimo-se",
           "sr_latin": "Vidimo se!",
           "sr_cyrillic": "Видимо се!",
           "en": "See you!",
-          "context": "The standard casual goodbye when you have plans to meet.",
+          "context": "You've got plans to meet and want to sign off the chat with a casual goodbye.",
           "wordRefs": [
             { "id": "videti", "surface": "Vidimo", "surface_cyrillic": "Видимо", "form": "1pl.pres" },
             "se"
           ],
+          "notes": "'Vidimo se' = 'we see each other'; the reflexive 'se' makes it 'see you'. The default casual sign-off.",
           "variations": [
             {
               "sr_latin": "Čujemo se!",
               "sr_cyrillic": "Чујемо се!",
-              "en": "Talk later! / We'll be in touch!"
+              "en": "Talk later! / We'll be in touch!",
+              "gloss_hint": "another way to say it"
             }
           ]
         }

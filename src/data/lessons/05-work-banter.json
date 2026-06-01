@@ -1,13 +1,13 @@
 {
   "id": "work-banter",
   "title": {
-    "sr_latin": "Posao i Dev priča",
-    "sr_cyrillic": "Посао и Dev прича",
-    "en": "Work Banter & Dev Talk"
+    "sr_latin": "Posao i kancelarija",
+    "sr_cyrillic": "Посао и канцеларија",
+    "en": "Work & Office Chat"
   },
   "description": {
-    "sr_latin": "Kancelarijski razgovori, programerski humor, i kako da preživiš standup na srpskom.",
-    "en": "Office chat, developer humor, and how to survive standup in Serbian."
+    "sr_latin": "Kancelarijski razgovori: kafa, pauze, ručak i kraj radnog dana na srpskom.",
+    "en": "Office small-talk: coffee, breaks, lunch, and clocking off in Serbian."
   },
   "order": 5,
   "prerequisites": [],
@@ -21,7 +21,7 @@
           "sr_latin": "Ajde na kafu.",
           "sr_cyrillic": "Ајде на кафу.",
           "en": "Let's grab a coffee.",
-          "context": "The most important phrase in any Serbian workplace. Coffee breaks are sacred.",
+          "context": "It's mid-morning and you want to pull a colleague away from their desk for a break.",
           "wordRefs": [
             {
               "id": "hajde",
@@ -36,24 +36,32 @@
               "case": "acc"
             }
           ],
-          "notes": "'Ajde' is the casual/shortened form of 'hajde'."
+          "notes": "'Ajde' is the relaxed spoken form of 'hajde' = come on/let's. 'Kafu' is accusative after 'na'. 'Kafa' is the domaća, Turkish-style coffee; Bosnians say 'kahva'."
         },
         {
           "id": "pauza-pet-minuta",
           "sr_latin": "Pauza pet minuta.",
           "sr_cyrillic": "Пауза пет минута.",
           "en": "Break, five minutes.",
-          "context": "Announcing a quick break. Will inevitably last 20 minutes.",
+          "context": "You've been heads-down for hours and want to call a quick pause for the team.",
           "wordRefs": [
-            "pet"
-          ]
+            "pauza",
+            "pet",
+            {
+              "id": "minut",
+              "surface": "minuta",
+              "surface_cyrillic": "минута",
+              "case": "gen"
+            }
+          ],
+          "notes": "'Minuta' is genitive plural after 'pet' — numbers above four take the genitive. 'Pauza' comes from German 'Pause'."
         },
         {
           "id": "bez-kafe-ne-radim",
           "sr_latin": "Bez kafe ne mogu da funkcionišem.",
           "sr_cyrillic": "Без кафе не могу да функционишем.",
           "en": "I can't function without coffee.",
-          "context": "A statement of fact, not a complaint. Universal among Serbian devs.",
+          "context": "A colleague offers you a task before you've had your morning cup — wave it off.",
           "wordRefs": [
             "ne",
             {
@@ -62,21 +70,28 @@
               "surface_cyrillic": "могу",
               "form": "1sg.pres"
             },
-            "da-conj"
-          ]
+            "da-conj",
+            {
+              "id": "funkcionisati",
+              "surface": "funkcionišem",
+              "surface_cyrillic": "функционишем",
+              "form": "1sg.pres"
+            }
+          ],
+          "notes": "'Bez kafe' = without coffee — 'bez' takes the genitive. 'Funkcionišem' = I function, from the Latin/German root, used jokingly for 'I can't get going'."
         }
       ]
     },
     {
       "id": "standup-meeting",
-      "theme": "Standup & Meetings",
+      "theme": "Catching Up at Work",
       "phrases": [
         {
           "id": "sta-radis-danas",
           "sr_latin": "Šta radiš danas?",
           "sr_cyrillic": "Шта радиш данас?",
           "en": "What are you working on today?",
-          "context": "Classic standup question.",
+          "context": "You sit down beside a colleague in the morning and ask what's on their plate.",
           "wordRefs": [
             "sta",
             {
@@ -84,8 +99,10 @@
               "surface": "radiš",
               "surface_cyrillic": "радиш",
               "form": "2sg.pres"
-            }
-          ]
+            },
+            "danas"
+          ],
+          "notes": "'Radiš' = you do/work (2nd person). 'Raditi' covers both 'to work' and 'to do', so this also just means 'what are you up to today'."
         }
       ]
     },
@@ -98,7 +115,7 @@
           "sr_latin": "Jedva čekam petak.",
           "sr_cyrillic": "Једва чекам петак.",
           "en": "I can't wait for Friday.",
-          "context": "Every weekday except Friday.",
+          "context": "It's only Tuesday and a colleague asks how you're holding up — admit you're counting down.",
           "wordRefs": [
             "jedva",
             {
@@ -106,31 +123,49 @@
               "surface": "čekam",
               "surface_cyrillic": "чекам",
               "form": "1sg.pres"
+            },
+            {
+              "id": "petak",
+              "surface": "petak",
+              "surface_cyrillic": "петак",
+              "case": "acc"
             }
           ],
-          "notes": "'Jedva čekam' literally means 'I barely wait' — used for 'I can't wait'."
+          "notes": "'Jedva čekam' literally = 'I barely wait', the set phrase for 'I can't wait'. 'Petak' is accusative here as the object of waiting."
         },
         {
           "id": "petak-je-brate",
           "sr_latin": "Petak je, brate!",
           "sr_cyrillic": "Петак је, брате!",
           "en": "It's Friday, bro!",
-          "context": "The Friday celebration announcement.",
+          "context": "You walk into the office on the last workday and greet a close colleague with relief.",
           "wordRefs": [
+            {
+              "id": "petak",
+              "surface": "Petak",
+              "surface_cyrillic": "Петак"
+            },
             {
               "id": "biti",
               "surface": "je",
               "surface_cyrillic": "је",
               "form": "3sg.pres"
+            },
+            {
+              "id": "brate",
+              "surface": "brate",
+              "surface_cyrillic": "брате",
+              "case": "voc"
             }
-          ]
+          ],
+          "notes": "'Brate' = bro (vocative of 'brat') — a filler of warmth between guys, said to friends who aren't actually brothers."
         },
         {
           "id": "ponedeljak-opet",
           "sr_latin": "Kako je već ponedeljak?",
           "sr_cyrillic": "Како је већ понедељак?",
           "en": "How is it Monday already?",
-          "context": "The Monday dread that transcends all cultures.",
+          "context": "You drag into work after the weekend and a colleague catches your tired face.",
           "wordRefs": [
             "kako",
             {
@@ -139,24 +174,33 @@
               "surface_cyrillic": "је",
               "form": "3sg.pres"
             },
-            "vec"
-          ]
+            "vec",
+            "ponedeljak"
+          ],
+          "notes": "'Već' = already, the word doing the disbelief here. Bosnians say 'ponedjeljak' (ijekavian) for 'ponedeljak'."
         },
         {
           "id": "vikend-prekratak",
           "sr_latin": "Vikend je uvek prekratak.",
           "sr_cyrillic": "Викенд је увек прекратак.",
           "en": "The weekend is always too short.",
-          "context": "Monday morning wisdom.",
+          "context": "Back at your desk on Monday, you sigh to a colleague about how fast the days off went.",
           "wordRefs": [
+            "vikend",
             {
               "id": "biti",
               "surface": "je",
               "surface_cyrillic": "је",
               "form": "3sg.pres"
             },
-            "uvek"
-          ]
+            "uvek",
+            {
+              "id": "prekratak",
+              "surface": "prekratak",
+              "surface_cyrillic": "прекратак"
+            }
+          ],
+          "notes": "'Prekratak' = too short — the prefix 'pre-' adds 'too/excessively', like 'kratak' (short) → 'prekratak'. 'Vikend' is from English 'weekend'."
         }
       ]
     },
@@ -169,7 +213,7 @@
           "sr_latin": "Idemo na ručak?",
           "sr_cyrillic": "Идемо на ручак?",
           "en": "Shall we go for lunch?",
-          "context": "Suggesting a lunch break with colleagues.",
+          "context": "It's around noon and you want to round up a colleague or two before heading out to eat.",
           "wordRefs": [
             {
               "id": "ici",
@@ -177,26 +221,47 @@
               "surface_cyrillic": "Идемо",
               "form": "1pl.pres"
             },
-            "na"
-          ]
+            "na",
+            {
+              "id": "rucak",
+              "surface": "ručak",
+              "surface_cyrillic": "ручак",
+              "case": "acc"
+            }
+          ],
+          "notes": "'Idemo' = we go/let's go (1st person plural), used as a casual suggestion. 'Ručak' is accusative after 'na'."
         },
         {
           "id": "gde-jedemo",
           "sr_latin": "Gde jedemo danas?",
           "sr_cyrillic": "Где једемо данас?",
           "en": "Where are we eating today?",
-          "context": "The daily lunch debate.",
+          "context": "The group is heading out and nobody's decided on a spot — open the daily debate.",
           "wordRefs": [
-            "gde"
-          ]
+            "gde",
+            {
+              "id": "jesti",
+              "surface": "jedemo",
+              "surface_cyrillic": "једемо",
+              "form": "1pl.pres"
+            },
+            "danas"
+          ],
+          "notes": "'Jedemo' = we eat (1st person plural of 'jesti'). Serbian uses the plain present where English wants the continuous 'are eating'."
         },
         {
           "id": "doneo-sam-od-kuce",
           "sr_latin": "Doneo sam od kuće.",
           "sr_cyrillic": "Донео сам од куће.",
           "en": "I brought food from home.",
-          "context": "A colleague asks if you're coming to the bakery — tell them you packed your own lunch today.",
+          "context": "A colleague asks if you're coming to the bakery — tell them you packed your own meal today.",
           "wordRefs": [
+            {
+              "id": "doneti",
+              "surface": "Doneo",
+              "surface_cyrillic": "Донео",
+              "form": "past.m.sg"
+            },
             {
               "id": "biti",
               "surface": "sam",
@@ -211,12 +276,13 @@
               "case": "gen"
             }
           ],
-          "notes": "Feminine speaker: 'Donela sam.' Past participle changes by gender.",
+          "notes": "'Doneo sam' = I brought (past, masculine speaker); a woman says 'donela sam'. 'Od kuće' = from home, genitive after 'od'.",
           "variations": [
             {
-              "sr_latin": "Danas sam štedljiv, jedem od kuće.",
-              "sr_cyrillic": "Данас сам штедљив, једем од куће.",
-              "en": "I'm being frugal today, eating from home."
+              "sr_latin": "Donela sam od kuće.",
+              "sr_cyrillic": "Донела сам од куће.",
+              "en": "I brought food from home.",
+              "gloss_hint": "said by a woman"
             }
           ]
         }
@@ -231,17 +297,31 @@
           "sr_latin": "Gotov sam za danas.",
           "sr_cyrillic": "Готов сам за данас.",
           "en": "I'm done for today.",
-          "context": "Signing off at the end of the work day, ready to head home.",
+          "context": "It's late afternoon, your tasks are wrapped, and you're letting a colleague know you're heading home.",
           "wordRefs": [
+            {
+              "id": "gotov",
+              "surface": "Gotov",
+              "surface_cyrillic": "Готов"
+            },
             {
               "id": "biti",
               "surface": "sam",
               "surface_cyrillic": "сам",
               "form": "1sg.pres"
             },
-            "za"
+            "za",
+            "danas"
           ],
-          "notes": "Feminine speaker: 'Gotova sam.' The adjective agrees with the speaker's gender."
+          "notes": "'Gotov' = done/finished (masculine speaker); a woman says 'gotova sam'. The adjective agrees with the speaker's gender.",
+          "variations": [
+            {
+              "sr_latin": "Gotova sam za danas.",
+              "sr_cyrillic": "Готова сам за данас.",
+              "en": "I'm done for today.",
+              "gloss_hint": "said by a woman"
+            }
+          ]
         }
       ]
     },
@@ -253,27 +333,42 @@
           "id": "kako-napreduje",
           "sr_latin": "Kako napreduje?",
           "sr_cyrillic": "Како напредује?",
-          "en": "How's it going? / How's progress?",
-          "context": "Checking in on someone's work without being pushy.",
+          "en": "How's it coming along?",
+          "context": "A colleague is buried in a task and you want to check in on their progress without nagging.",
           "wordRefs": [
-            "kako"
-          ]
+            "kako",
+            {
+              "id": "napredovati",
+              "surface": "napreduje",
+              "surface_cyrillic": "напредује",
+              "form": "3sg.pres"
+            }
+          ],
+          "notes": "'Napreduje' = it's progressing (3rd person of 'napredovati', to advance). The subject is left unspoken, as Serbian often does."
         },
         {
           "id": "polako",
           "sr_latin": "Polako, stižem.",
           "sr_cyrillic": "Полако, стижем.",
           "en": "Easy, I'm getting there.",
-          "context": "Reassuring someone you're making progress at your own pace.",
-          "wordRefs": [],
-          "notes": "'Polako' is quintessentially Serbian — it means 'slowly/easy/chill'. It's both a philosophy and a response."
+          "context": "Someone is hovering over a task you're handling — tell them to relax, you're on it.",
+          "wordRefs": [
+            "polako",
+            {
+              "id": "stici",
+              "surface": "stižem",
+              "surface_cyrillic": "стижем",
+              "form": "1sg.pres"
+            }
+          ],
+          "notes": "'Polako' = slowly/easy/chill, a quintessentially Serbian word that's half philosophy. 'Stižem' = I'm arriving/getting there (1st person of 'stići')."
         },
         {
           "id": "treba-mi-pomoc",
           "sr_latin": "Možeš da mi pomogneš sa nečim?",
           "sr_cyrillic": "Можеш да ми помогнеш са нечим?",
           "en": "Can you help me with something?",
-          "context": "Asking a colleague for help.",
+          "context": "You're stuck on a task and want to lean on a colleague for a hand.",
           "wordRefs": [
             {
               "id": "moci",
@@ -283,8 +378,21 @@
             },
             "da-conj",
             "mi-dat",
-            "sa"
-          ]
+            {
+              "id": "pomoci",
+              "surface": "pomogneš",
+              "surface_cyrillic": "помогнеш",
+              "form": "2sg.pres"
+            },
+            "sa",
+            {
+              "id": "nesto",
+              "surface": "nečim",
+              "surface_cyrillic": "нечим",
+              "case": "ins"
+            }
+          ],
+          "notes": "'Mi' = to me (dative), the one being helped. 'Sa nečim' = with something, instrumental after 'sa'. 'Pomoći' takes a dative object: you help 'to' someone."
         }
       ]
     }

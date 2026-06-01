@@ -22,23 +22,23 @@
           "sr_cyrillic": "Душо моја.",
           "en": "My darling.",
           "gloss_hint": "lit. 'my soul'",
-          "context": "Your partner walks in after a long day — greet them with the default, everyday term of endearment.",
+          "context": "Your partner walks in after a long day and you want to greet them with the everyday term of endearment.",
           "wordRefs": [
             { "id": "dusa", "surface": "Dušo", "surface_cyrillic": "Душо", "case": "voc" },
-            { "id": "moj", "surface": "moja", "surface_cyrillic": "моја" }
+            { "id": "moj", "surface": "moja", "surface_cyrillic": "моја", "form": "f.sg" }
           ],
-          "notes": "'Duša' means soul — calling someone 'dušo' is like saying they are your soul. Vocative case."
+          "notes": "'Dušo' is the vocative of 'duša' = soul; calling someone this says they are your soul. The default, most natural pet name."
         },
         {
           "id": "st-ljubavi",
           "sr_latin": "Ljubavi.",
           "sr_cyrillic": "Љубави.",
           "en": "My love.",
-          "context": "Very warm and natural. Used freely in conversation, not just romantic moments.",
+          "context": "You answer the phone to your girlfriend and want to open with a warm, everyday name, not just hello.",
           "wordRefs": [
             { "id": "ljubav", "surface": "Ljubavi", "surface_cyrillic": "Љубави", "case": "voc" }
           ],
-          "notes": "Vocative of 'ljubav' (love). Can be used on its own or combined: 'Ljubavi moja.'"
+          "notes": "'Ljubavi' is the vocative of 'ljubav' = love. Stands alone or combines: 'Ljubavi moja.' Used freely, not only in romantic moments."
         },
         {
           "id": "st-draga",
@@ -46,12 +46,12 @@
           "sr_cyrillic": "Драга моја.",
           "en": "My dear.",
           "gloss_hint": "to a woman",
-          "context": "Affectionate but slightly more formal than 'dušo'. Works in public without being too cheesy.",
+          "context": "You're out in public with your girlfriend and want something affectionate but a touch more reserved than 'dušo'.",
           "wordRefs": [
-            { "id": "drag", "surface": "Draga", "surface_cyrillic": "Драга" },
-            { "id": "moj", "surface": "moja", "surface_cyrillic": "моја" }
+            { "id": "drag", "surface": "Draga", "surface_cyrillic": "Драга", "form": "f.sg" },
+            { "id": "moj", "surface": "moja", "surface_cyrillic": "моја", "form": "f.sg" }
           ],
-          "notes": "Use 'dragi' when speaking to a man.",
+          "notes": "'Draga' = dear (feminine); 'dragi' for a man. The adjective agrees with the person you're addressing, not the speaker.",
           "variations": [
             {
               "sr_latin": "Dragi moj.",
@@ -65,13 +65,13 @@
           "id": "st-maco",
           "sr_latin": "Maco moja.",
           "sr_cyrillic": "Мацо моја.",
-          "en": "My kitten / kitty.",
-          "context": "Playful and flirty. Like calling someone 'babe' in English but cuter.",
+          "en": "My kitten.",
+          "context": "You're being flirty and cute with your girlfriend and reach for the playful 'babe'-style nickname.",
           "wordRefs": [
             { "id": "maca", "surface": "Maco", "surface_cyrillic": "Мацо", "case": "voc" },
-            { "id": "moj", "surface": "moja", "surface_cyrillic": "моја" }
+            { "id": "moj", "surface": "moja", "surface_cyrillic": "моја", "form": "f.sg" }
           ],
-          "notes": "From 'maca' (female cat). Very common among younger couples."
+          "notes": "'Maco' is the vocative of 'maca' = (female) kitty. Flirty and very common among younger couples."
         }
       ]
     },
@@ -84,48 +84,49 @@
           "sr_latin": "Medo moj.",
           "sr_cyrillic": "Медо мој.",
           "en": "My teddy bear.",
-          "context": "Cute and playful. Usually for guys but not exclusively.",
+          "context": "Your boyfriend or guy you're dating is being adorable and you want a cute, cuddly nickname for him.",
           "wordRefs": [
             { "id": "medo", "surface": "Medo", "surface_cyrillic": "Медо", "case": "voc" },
-            "moj"
+            { "id": "moj", "surface": "moj", "surface_cyrillic": "мој", "form": "m.sg" }
           ],
-          "notes": "From 'medved' (bear). 'Medo' is the diminutive — think teddy bear, not grizzly."
+          "notes": "'Medo' is the diminutive of 'medved' = bear — a teddy bear, not a grizzly. Usually for guys, but not exclusively."
         },
         {
           "id": "st-sunce",
           "sr_latin": "Sunce moje.",
           "sr_cyrillic": "Сунце моје.",
           "en": "My sunshine.",
-          "context": "Very sweet and warm. Also used for kids. Not cheesy — Serbs actually say this a lot.",
+          "context": "You want to tell your partner they brighten your day, with a warm name Serbs genuinely use.",
           "wordRefs": [
-            { "id": "moj", "surface": "moje", "surface_cyrillic": "моје" },
-            { "id": "sunce", "surface": "Sunce", "surface_cyrillic": "Сунце", "case": "voc" }
+            { "id": "sunce", "surface": "Sunce", "surface_cyrillic": "Сунце", "case": "voc" },
+            { "id": "moj", "surface": "moje", "surface_cyrillic": "моје", "form": "n.sg" }
           ],
-          "notes": "Sunce = sun. The possessive 'moje' makes it personal."
+          "notes": "'Sunce' = sun, a neuter noun, so the possessive is 'moje'. Used for partners and kids alike, and never sounds cheesy."
         },
         {
           "id": "st-zlato",
           "sr_latin": "Zlato moje.",
           "sr_cyrillic": "Злато моје.",
-          "en": "My gold / my precious.",
-          "context": "Common term of endearment. Not over the top — parents use it for kids too.",
+          "en": "My precious.",
+          "gloss_hint": "lit. 'my gold'",
+          "context": "Your partner did something thoughtful and you want a warm, everyday name that parents also use for kids.",
           "wordRefs": [
-            { "id": "moj", "surface": "moje", "surface_cyrillic": "моје" },
-            { "id": "zlato", "surface": "Zlato", "surface_cyrillic": "Злато", "case": "voc" }
+            { "id": "zlato", "surface": "Zlato", "surface_cyrillic": "Злато", "case": "voc" },
+            { "id": "moj", "surface": "moje", "surface_cyrillic": "моје", "form": "n.sg" }
           ],
-          "notes": "Zlato = gold. Very natural in everyday Serbian."
+          "notes": "'Zlato' = gold, a neuter noun, hence 'moje'. Very natural and not over the top in everyday Serbian."
         },
         {
           "id": "st-srce",
           "sr_latin": "Srce moje.",
           "sr_cyrillic": "Срце моје.",
           "en": "My heart.",
-          "context": "Deeply affectionate. Feels sincere, not performative.",
+          "context": "You're having a tender, sincere moment with your partner and want one of the most heartfelt names.",
           "wordRefs": [
-            { "id": "moj", "surface": "moje", "surface_cyrillic": "моје" },
-            { "id": "srce", "surface": "Srce", "surface_cyrillic": "Срце", "case": "voc" }
+            { "id": "srce", "surface": "Srce", "surface_cyrillic": "Срце", "case": "voc" },
+            { "id": "moj", "surface": "moje", "surface_cyrillic": "моје", "form": "n.sg" }
           ],
-          "notes": "Srce = heart. One of the most emotionally loaded pet names."
+          "notes": "'Srce' = heart, neuter, so the possessive is 'moje'. One of the most emotionally loaded pet names, sincere rather than playful."
         }
       ]
     },
@@ -138,12 +139,13 @@
           "sr_latin": "Prelepa si.",
           "sr_cyrillic": "Прелепа си.",
           "en": "You're gorgeous.",
-          "context": "Direct and sincere. Use when she's dressed up or you just feel it.",
+          "gloss_hint": "to a woman",
+          "context": "Your girlfriend just got dressed up for a night out and you want to tell her sincerely how she looks.",
           "wordRefs": [
-            { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
-            { "id": "lep", "surface": "Prelepa", "surface_cyrillic": "Прелепа", "form": "f.sg.intens" }
+            { "id": "lep", "surface": "Prelepa", "surface_cyrillic": "Прелепа", "form": "f.sg.intens" },
+            { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" }
           ],
-          "notes": "'Pre-' is an intensifier prefix. 'Lepa' = pretty, 'prelepa' = stunning/gorgeous.",
+          "notes": "The prefix 'pre-' intensifies: 'lepa' = pretty, 'prelepa' = stunning. 'Prelepa' for a woman, 'prelep' for a man.",
           "variations": [
             {
               "sr_latin": "Prelep si.",
@@ -158,25 +160,34 @@
           "sr_latin": "Lepo ti stoji.",
           "sr_cyrillic": "Лепо ти стоји.",
           "en": "That looks good on you.",
-          "context": "When she's trying on clothes, wearing something new, or got a haircut.",
+          "context": "Your partner is trying on a new outfit, or just got a haircut, and asks what you think.",
           "wordRefs": [
             { "id": "lep", "surface": "Lepo", "surface_cyrillic": "Лепо", "form": "n.sg" },
-            { "id": "stajati", "surface": "stoji", "surface_cyrillic": "стоји", "form": "3sg.pres" },
-            "ti-dat"
+            "ti-dat",
+            { "id": "stajati", "surface": "stoji", "surface_cyrillic": "стоји", "form": "3sg.pres" }
           ],
-          "notes": "Literally 'it stands nicely on you.' Works for clothes, hair, accessories — anything."
+          "notes": "Literally 'it stands nicely on you' — 'ti' is the dative of the person it suits. Works for clothes, hair, glasses, anything."
         },
         {
           "id": "st-ubila-si",
           "sr_latin": "Ubila si!",
           "sr_cyrillic": "Убила си!",
-          "en": "You killed it! / You look amazing!",
-          "context": "Casual, high-energy compliment. Like 'slaaay' vibes.",
+          "en": "You killed it!",
+          "gloss_hint": "to a woman",
+          "context": "Your girlfriend walks in looking incredible and you want a high-energy, slangy reaction.",
           "wordRefs": [
-            { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
-            { "id": "ubiti", "surface": "Ubila", "surface_cyrillic": "Убила", "form": "past.f.sg" }
+            { "id": "ubiti", "surface": "Ubila", "surface_cyrillic": "Убила", "form": "past.f.sg" },
+            { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" }
           ],
-          "notes": "Literally 'you killed (it).' Slang but widely used. Very natural among young people."
+          "notes": "Literally 'you killed (it)' in the past tense; 'ubila' for a woman, 'ubio' for a man. Slang, but very natural among young people.",
+          "variations": [
+            {
+              "sr_latin": "Ubio si!",
+              "sr_cyrillic": "Убио си!",
+              "en": "You killed it!",
+              "gloss_hint": "to a man"
+            }
+          ]
         }
       ]
     },
@@ -189,13 +200,14 @@
           "sr_latin": "Baš si pametna.",
           "sr_cyrillic": "Баш си паметна.",
           "en": "You're really smart.",
-          "context": "Genuine compliment. 'Baš' adds emphasis — like 'really' or 'truly.'",
+          "gloss_hint": "to a woman",
+          "context": "Your girlfriend just figured something out cleverly and you want to praise her mind sincerely.",
           "wordRefs": [
             "bas",
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
             { "id": "pametan", "surface": "pametna", "surface_cyrillic": "паметна", "form": "f.sg" }
           ],
-          "notes": "'Baš' is one of the most useful Serbian words. It adds sincerity or emphasis.",
+          "notes": "'Baš' adds emphasis and sincerity, like 'really' or 'truly'. 'Pametna' for a woman, 'pametan' for a man.",
           "variations": [
             {
               "sr_latin": "Baš si pametan.",
@@ -210,13 +222,14 @@
           "sr_latin": "Mnogo si smešna.",
           "sr_cyrillic": "Много си смешна.",
           "en": "You're so funny.",
-          "context": "When she makes you laugh. 'Mnogo' = very/so much.",
+          "gloss_hint": "to a woman",
+          "context": "Your girlfriend just cracked you up and you want to tell her how funny she is.",
           "wordRefs": [
-            { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
             "mnogo",
+            { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
             { "id": "smesan", "surface": "smešna", "surface_cyrillic": "смешна", "form": "f.sg" }
           ],
-          "notes": "'Smešna' for a woman, 'smešan' for a man.",
+          "notes": "'Mnogo' literally means 'a lot' but here works as 'so/very'. 'Smešna' for a woman, 'smešan' for a man.",
           "variations": [
             {
               "sr_latin": "Mnogo si smešan.",
@@ -231,13 +244,14 @@
           "sr_latin": "Ti si najbolja.",
           "sr_cyrillic": "Ти си најбоља.",
           "en": "You're the best.",
-          "context": "Simple but powerful. Good after she does something nice or just because.",
+          "gloss_hint": "to a woman",
+          "context": "Your girlfriend just did something kind and you want to tell her she's the best, plainly and warmly.",
           "wordRefs": [
+            "ti-nom",
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
-            { "id": "dobar", "surface": "najbolja", "surface_cyrillic": "најбоља", "form": "sup.f" },
-            "ti-nom"
+            { "id": "dobar", "surface": "najbolja", "surface_cyrillic": "најбоља", "form": "sup.f.sg" }
           ],
-          "notes": "'Naj-' prefix makes superlatives. Dobar → najbolji/najbolja.",
+          "notes": "The prefix 'naj-' builds superlatives: 'dobar' = good becomes 'najbolji/najbolja' = best. 'Najbolja' for a woman, 'najbolji' for a man.",
           "variations": [
             {
               "sr_latin": "Ti si najbolji.",
@@ -258,52 +272,52 @@
           "sr_latin": "Nedostaješ mi.",
           "sr_cyrillic": "Недостајеш ми.",
           "en": "I miss you.",
-          "context": "The go-to line when you wish someone you love were with you. Natural over text or in person.",
+          "context": "You're apart from someone you love and want to send the simple, go-to line saying you wish they were here.",
           "wordRefs": [
-            "mi-dat",
-            { "id": "nedostajati", "surface": "Nedostaješ", "surface_cyrillic": "Недостајеш", "form": "2sg.pres" }
+            { "id": "nedostajati", "surface": "Nedostaješ", "surface_cyrillic": "Недостајеш", "form": "2sg.pres" },
+            "mi-dat"
           ],
-          "notes": "Literally 'you are missing to me.' The subject is the person you miss, not you."
+          "notes": "An inverse construction: literally 'you are missing to me', so the person missed is the subject and 'mi' (to me) is dative."
         },
         {
           "id": "st-mislim-na-tebe",
           "sr_latin": "Mislim na tebe.",
           "sr_cyrillic": "Мислим на тебе.",
           "en": "I'm thinking about you.",
-          "context": "Sweet mid-day text. Not too heavy, just right.",
+          "context": "It's the middle of the day, someone crosses your mind, and you want a light, sweet text to send them.",
           "wordRefs": [
             { "id": "misliti", "surface": "Mislim", "surface_cyrillic": "Мислим", "form": "1sg.pres" },
             "na",
             "tebe"
           ],
-          "notes": "'Mislim' = I think. 'Na tebe' = about you."
+          "notes": "'Misliti na' = to think about; the preposition 'na' takes the accusative, so 'ti' becomes 'tebe'. Not heavy, just affectionate."
         },
         {
           "id": "st-jedva-cekam",
           "sr_latin": "Jedva čekam da te vidim.",
           "sr_cyrillic": "Једва чекам да те видим.",
           "en": "I can't wait to see you.",
-          "context": "Before a date or when you haven't seen each other in a while.",
+          "context": "You have a date coming up, or haven't seen them in a while, and want to show your excitement.",
           "wordRefs": [
+            "jedva",
             { "id": "cekati", "surface": "čekam", "surface_cyrillic": "чекам", "form": "1sg.pres" },
             "da-conj",
-            "jedva",
             "te-acc",
             { "id": "videti", "surface": "vidim", "surface_cyrillic": "видим", "form": "1sg.pres" }
           ],
-          "notes": "'Jedva čekam' literally means 'I barely wait' — used for eager anticipation."
+          "notes": "'Jedva čekam' is literally 'I barely wait' — the set phrase for eager anticipation. 'Da te vidim' = to see you."
         },
         {
           "id": "st-volim-te",
           "sr_latin": "Volim te.",
           "sr_cyrillic": "Волим те.",
           "en": "I love you.",
-          "context": "The big one. Serbs don't throw this around casually — it carries weight.",
+          "context": "You're ready to say the big three words to your partner for the first time and mean every bit of it.",
           "wordRefs": [
-            "te-acc",
-            { "id": "voleti", "surface": "Volim", "surface_cyrillic": "Волим", "form": "1sg.pres" }
+            { "id": "voleti", "surface": "Volim", "surface_cyrillic": "Волим", "form": "1sg.pres" },
+            "te-acc"
           ],
-          "notes": "Unlike English, there's no casual 'love ya.' This is always sincere."
+          "notes": "'Te' is the accusative clitic 'you'. Unlike English, there's no casual 'love ya' — this always carries weight. The ekavian infinitive is 'voleti'; Bosnians use ijekavian 'voljeti'."
         }
       ]
     },
@@ -316,51 +330,51 @@
           "sr_latin": "Dobro jutro, sunce.",
           "sr_cyrillic": "Добро јутро, сунце.",
           "en": "Good morning, sunshine.",
-          "context": "Perfect morning text. Warm without being over the top.",
+          "context": "Your partner just woke up, or you want the first text they read today to be a warm one.",
           "wordRefs": [
             { "id": "dobar", "surface": "Dobro", "surface_cyrillic": "Добро", "form": "n.sg" },
             "jutro",
             { "id": "sunce", "surface": "sunce", "surface_cyrillic": "сунце", "case": "voc" }
           ],
-          "notes": "'Jutro' = morning. Can swap 'sunce' for any pet name."
+          "notes": "'Jutro' = morning, neuter, so the greeting is 'dobro jutro'. Swap 'sunce' for any other pet name you like."
         },
         {
           "id": "st-laku-noc-ljubavi",
           "sr_latin": "Laku noć, ljubavi.",
           "sr_cyrillic": "Лаку ноћ, љубави.",
           "en": "Good night, my love.",
-          "context": "Classic goodnight text. Feels natural and caring.",
+          "context": "It's bedtime and you want to send your partner an affectionate goodnight before they sleep.",
           "wordRefs": [
             { "id": "lak", "surface": "Laku", "surface_cyrillic": "Лаку", "form": "acc.f.sg" },
-            { "id": "ljubav", "surface": "ljubavi", "surface_cyrillic": "љубави", "case": "voc" },
-            "noc"
+            "noc",
+            { "id": "ljubav", "surface": "ljubavi", "surface_cyrillic": "љубави", "case": "voc" }
           ],
-          "notes": "'Laku noć' is the standard goodnight. Adding a pet name makes it personal."
+          "notes": "'Laku noć' = lit. 'easy night', the fixed goodnight (accusative 'laku' agrees with feminine 'noć'). Adding 'ljubavi' makes it personal."
         },
         {
           "id": "st-sanjaj-me",
           "sr_latin": "Sanjaj me.",
           "sr_cyrillic": "Сањај ме.",
           "en": "Dream of me.",
-          "context": "Flirty goodnight message. Playful, not desperate.",
+          "context": "You're saying goodnight to someone you're into and want to end on a flirty, playful note.",
           "wordRefs": [
-            "me-acc",
-            { "id": "sanjati", "surface": "Sanjaj", "surface_cyrillic": "Сањај", "form": "imp.2sg" }
+            { "id": "sanjati", "surface": "Sanjaj", "surface_cyrillic": "Сањај", "form": "imp.2sg" },
+            "me-acc"
           ],
-          "notes": "'Sanjati' = to dream. Imperative form here."
+          "notes": "'Sanjaj' is the imperative of 'sanjati' = to dream; 'me' is the accusative clitic. Playful, not desperate."
         },
         {
           "id": "st-spavaj-lepo",
           "sr_latin": "Spavaj lepo, dušo.",
           "sr_cyrillic": "Спавај лепо, душо.",
           "en": "Sleep well, darling.",
-          "context": "Caring goodnight. Feels warm and protective.",
+          "context": "Your partner is heading to bed tired and you want a caring, protective way to wish them a good rest.",
           "wordRefs": [
-            { "id": "dusa", "surface": "dušo", "surface_cyrillic": "душо", "case": "voc" },
+            { "id": "spavati", "surface": "Spavaj", "surface_cyrillic": "Спавај", "form": "imp.2sg" },
             { "id": "lep", "surface": "lepo", "surface_cyrillic": "лепо", "form": "n.sg" },
-            { "id": "spavati", "surface": "Spavaj", "surface_cyrillic": "Спавај", "form": "imp.2sg" }
+            { "id": "dusa", "surface": "dušo", "surface_cyrillic": "душо", "case": "voc" }
           ],
-          "notes": "'Spavaj' = sleep (imperative). 'Lepo' = nicely/well."
+          "notes": "'Spavaj' is the imperative of 'spavati' = to sleep; 'lepo' = nicely here works as 'well'. The pet name softens it."
         }
       ]
     },
@@ -373,43 +387,52 @@
           "sr_latin": "Za tebe uvek imam vremena.",
           "sr_cyrillic": "За тебе увек имам времена.",
           "en": "I always have time for you.",
-          "context": "Smooth and genuine. Works as a text reply when she asks if you're busy.",
+          "context": "Your girlfriend asks if you're too busy to talk, and you want a smooth, genuine reply over text.",
           "wordRefs": [
-            { "id": "imati", "surface": "imam", "surface_cyrillic": "имам", "form": "1sg.pres" },
+            "za",
             "tebe",
             "uvek",
-            { "id": "vreme", "surface": "vremena", "surface_cyrillic": "времена", "case": "gen" },
-            "za"
+            { "id": "imati", "surface": "imam", "surface_cyrillic": "имам", "form": "1sg.pres" },
+            { "id": "vreme", "surface": "vremena", "surface_cyrillic": "времена", "case": "gen" }
           ],
-          "notes": "'Uvek' = always. 'Vremena' = time (genitive case)."
+          "notes": "'Uvek' = always. After 'imam' the amount is partitive, so 'vreme' = time takes the genitive 'vremena'."
         },
         {
           "id": "st-rastuzi-me",
           "sr_latin": "Nemoj da me rastužiš.",
           "sr_cyrillic": "Немој да ме растужиш.",
           "en": "Don't make me sad.",
-          "context": "Playful guilt trip. Used when she's teasing or might cancel plans.",
+          "context": "Your partner is teasing you or hinting they might cancel, and you want a light, playful guilt trip.",
           "wordRefs": [
+            "nemoj",
             "da-conj",
             "me-acc",
-            "nemoj",
             { "id": "rastuziti", "surface": "rastužiš", "surface_cyrillic": "растужиш", "form": "2sg.pres" }
           ],
-          "notes": "'Nemoj' = don't (informal imperative). Keeps it light."
+          "notes": "'Nemoj da...' is the standard negative command, softer than a bare imperative. 'Rastužiti' = to make sad, with 'me' as the object."
         },
         {
           "id": "st-ukrala-srce",
           "sr_latin": "Ukrala si mi srce.",
           "sr_cyrillic": "Украла си ми срце.",
           "en": "You stole my heart.",
-          "context": "A bit cheesy but delivered with a smile, it works. Serbs appreciate directness.",
+          "gloss_hint": "to a woman",
+          "context": "You're being a little cheesy on purpose with your girlfriend and deliver it with a grin.",
           "wordRefs": [
+            { "id": "ukrasti", "surface": "Ukrala", "surface_cyrillic": "Украла", "form": "past.f.sg" },
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
             "mi-dat",
-            "srce",
-            { "id": "ukrasti", "surface": "Ukrala", "surface_cyrillic": "Украла", "form": "past.f.sg" }
+            "srce"
           ],
-          "notes": "'Ukrala' = stole (feminine past tense). 'Ukrao' for masculine."
+          "notes": "Past tense agrees with the doer: 'ukrala' (she), 'ukrao' (he). 'Mi' = from me (dative of disadvantage), 'srce' = heart is the object.",
+          "variations": [
+            {
+              "sr_latin": "Ukrao si mi srce.",
+              "sr_cyrillic": "Украо си ми срце.",
+              "en": "You stole my heart.",
+              "gloss_hint": "to a man"
+            }
+          ]
         }
       ]
     },
@@ -422,15 +445,16 @@
           "sr_latin": "Srećan sam kad sam s tobom.",
           "sr_cyrillic": "Срећан сам кад сам с тобом.",
           "en": "I'm happy when I'm with you.",
-          "context": "Sincere and simple. Good for a quiet moment together.",
+          "gloss_hint": "said by a man",
+          "context": "You're having a quiet moment together and want to tell your partner plainly how they make you feel.",
           "wordRefs": [
+            "srecan",
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
             { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" },
             { "id": "sa", "surface": "s", "surface_cyrillic": "с" },
-            "srecan",
             "tobom"
           ],
-          "notes": "'Srećan' = happy (masculine). 'Srećna' for a woman saying this.",
+          "notes": "'Srećan' is the masculine form; a woman says 'srećna'. 'S tobom' = with you uses the instrumental 'tobom' after 's/sa'.",
           "variations": [
             {
               "sr_latin": "Srećna sam kad sam s tobom.",
@@ -445,26 +469,26 @@
           "sr_latin": "Sve mi značiš.",
           "sr_cyrillic": "Све ми значиш.",
           "en": "You mean everything to me.",
-          "context": "Heavy but genuine. Save for real moments.",
+          "context": "You're in a real, serious moment with your partner and want to say how much they matter to you.",
           "wordRefs": [
-            "mi-dat",
             "sve",
+            "mi-dat",
             { "id": "znaciti", "surface": "značiš", "surface_cyrillic": "значиш", "form": "2sg.pres" }
           ],
-          "notes": "'Sve' = everything. 'Značiti' = to mean."
+          "notes": "'Značiti' = to mean; 'mi' is the dative 'to me'. Word order keeps the clitic 'mi' in second position. Save it for genuine moments."
         },
         {
           "id": "st-ludim-za-tobom",
           "sr_latin": "Ludim za tobom.",
           "sr_cyrillic": "Лудим за тобом.",
           "en": "I'm crazy about you.",
-          "context": "Passionate but casual. Common expression, not as intense as it sounds in English.",
+          "context": "You want to tell your partner how into them you are, in a passionate but everyday way.",
           "wordRefs": [
             { "id": "luditi", "surface": "Ludim", "surface_cyrillic": "Лудим", "form": "1sg.pres" },
-            "tobom",
-            "za"
+            "za",
+            "tobom"
           ],
-          "notes": "'Luditi' = to go crazy. 'Za tobom' = for/after you."
+          "notes": "'Luditi' = to go crazy; 'za' here takes the instrumental 'tobom', giving 'crazy after/about you'. Common and lighter than it sounds."
         }
       ]
     },
@@ -477,42 +501,42 @@
           "sr_latin": "Tu sam za tebe.",
           "sr_cyrillic": "Ту сам за тебе.",
           "en": "I'm here for you.",
-          "context": "When she's stressed or upset. Simple and comforting.",
+          "context": "Your partner is stressed or upset and you want to reassure them that you've got their back.",
           "wordRefs": [
-            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
-            "tebe",
             "tu",
-            "za"
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            "za",
+            "tebe"
           ],
-          "notes": "'Tu' = here. Direct and supportive."
+          "notes": "'Tu' = here (right by you), warmer than the more distant 'tamo'. 'Za tebe' = for you uses the accusative after 'za'."
         },
         {
           "id": "st-sve-ce-biti-ok",
           "sr_latin": "Sve će biti u redu.",
           "sr_cyrillic": "Све ће бити у реду.",
           "en": "Everything will be okay.",
-          "context": "Comforting someone who's worried or going through something tough.",
+          "context": "Your partner is worried about something tough ahead and you want to calm them and offer hope.",
           "wordRefs": [
-            "biti",
-            { "id": "hteti", "surface": "će", "surface_cyrillic": "ће", "form": "3sg.fut.clitic" },
-            { "id": "red", "surface": "redu", "surface_cyrillic": "реду", "case": "loc" },
             "sve",
-            "u"
+            { "id": "hteti", "surface": "će", "surface_cyrillic": "ће", "form": "3sg.fut.clitic" },
+            "biti",
+            "u",
+            { "id": "red", "surface": "redu", "surface_cyrillic": "реду", "case": "loc" }
           ],
-          "notes": "'Će' = will (future tense marker). 'U redu' = in order / okay."
+          "notes": "Future tense: clitic 'će' + infinitive 'biti' = will be. 'U redu' = lit. 'in order', the everyday way to say 'okay'."
         },
         {
           "id": "st-ne-brini",
           "sr_latin": "Ne brini, dušo.",
           "sr_cyrillic": "Не брини, душо.",
           "en": "Don't worry, darling.",
-          "context": "Gentle reassurance. The pet name softens it.",
+          "context": "Your partner is anxious over something small and you want to gently tell them to let it go.",
           "wordRefs": [
+            "ne",
             { "id": "brinuti", "surface": "brini", "surface_cyrillic": "брини", "form": "imp.2sg" },
-            { "id": "dusa", "surface": "dušo", "surface_cyrillic": "душо", "case": "voc" },
-            "ne"
+            { "id": "dusa", "surface": "dušo", "surface_cyrillic": "душо", "case": "voc" }
           ],
-          "notes": "'Brinuti' = to worry. 'Ne brini' = don't worry (informal)."
+          "notes": "'Ne' + imperative 'brini' negates the command: 'don't worry'. The pet name 'dušo' softens the whole line."
         }
       ]
     },
@@ -525,15 +549,15 @@
           "sr_latin": "Izvini, nisam mislio tako.",
           "sr_cyrillic": "Извини, нисам мислио тако.",
           "en": "Sorry, I didn't mean it like that.",
-          "context": "After you said something wrong or it came out badly.",
+          "gloss_hint": "said by a man",
+          "context": "Something you said came out wrong and hurt your partner, so you walk it back right away.",
           "wordRefs": [
-            { "id": "biti", "surface": "nisam", "surface_cyrillic": "нисам", "form": "1sg.pres.neg" },
             { "id": "izviniti", "surface": "Izvini", "surface_cyrillic": "Извини", "form": "imp.2sg" },
+            { "id": "biti", "surface": "nisam", "surface_cyrillic": "нисам", "form": "1sg.pres.neg" },
             { "id": "misliti", "surface": "mislio", "surface_cyrillic": "мислио", "form": "past.m.sg" },
-            "ne",
             "tako"
           ],
-          "notes": "'Izvini' = sorry/excuse me (informal). 'Nisam mislio' = I didn't think/mean.",
+          "notes": "'Izvini' is the informal 'sorry'. Past tense agrees with the speaker: 'mislio' (m), 'mislila' (f); 'nisam mislio' = I didn't mean.",
           "variations": [
             {
               "sr_latin": "Izvini, nisam mislila tako.",
@@ -548,29 +572,29 @@
           "sr_latin": "Hajde da se ne svađamo.",
           "sr_cyrillic": "Хајде да се не свађамо.",
           "en": "Let's not fight.",
-          "context": "De-escalation move. Shows you'd rather be close than right.",
+          "context": "A disagreement with your partner is heating up and you want to defuse it and stay close.",
           "wordRefs": [
-            "da-conj",
             "hajde",
-            "ne",
+            "da-conj",
             "se",
+            "ne",
             { "id": "svadjati-se", "surface": "svađamo", "surface_cyrillic": "свађамо", "form": "1pl.pres" }
           ],
-          "notes": "'Hajde' = come on / let's. 'Svađati se' = to argue/fight."
+          "notes": "'Hajde da...' = let's, forms a suggestion with the present tense. 'Svađati se' = to argue is reflexive, hence 'se'."
         },
         {
           "id": "st-mrzim-svadje",
           "sr_latin": "Mrzim kad se svađamo.",
           "sr_cyrillic": "Мрзим кад се свађамо.",
           "en": "I hate when we fight.",
-          "context": "Vulnerable and honest. Good way to break a tense silence.",
+          "context": "After a tense silence with your partner, you want to open up honestly and break the ice.",
           "wordRefs": [
-            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" },
             { "id": "mrzeti", "surface": "Mrzim", "surface_cyrillic": "Мрзим", "form": "1sg.pres" },
+            { "id": "kada", "surface": "kad", "surface_cyrillic": "кад" },
             "se",
             { "id": "svadjati-se", "surface": "svađamo", "surface_cyrillic": "свађамо", "form": "1pl.pres" }
           ],
-          "notes": "'Mrzim' = I hate. 'Kad' = when."
+          "notes": "'Mrzim' = I hate; 'kad' = when introduces the clause. 'Svađati se' is reflexive, so 'se' stays with it."
         }
       ]
     }

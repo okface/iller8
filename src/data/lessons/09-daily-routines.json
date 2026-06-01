@@ -21,48 +21,50 @@
           "sr_latin": "Ustaj, kasno je!",
           "sr_cyrillic": "Устај, касно је!",
           "en": "Get up, it's late!",
-          "context": "Waking up your partner or friend who's oversleeping.",
+          "context": "Your partner has slept through the alarm and you shake them awake with a sharp nudge.",
           "wordRefs": [
+            { "id": "ustati", "surface": "Ustaj", "surface_cyrillic": "Устај", "form": "imp.2sg" },
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
           ],
-          "notes": "'Ustaj' is the imperative of 'ustati' (to get up). Casual and direct."
+          "notes": "'Ustaj' = get up (imperative of 'ustati'). Direct and casual — the everyday wake-up bark."
         },
         {
           "id": "jos-pet-minuta",
           "sr_latin": "Još pet minuta...",
           "sr_cyrillic": "Још пет минута...",
           "en": "Five more minutes...",
-          "context": "The universal reply when someone tries to wake you up.",
+          "context": "Someone is trying to drag you out of bed and you bargain for a little more sleep.",
           "wordRefs": [
             "jos",
             "pet"
           ],
-          "notes": "'Još' means 'more/still'. You'll hear this constantly."
+          "notes": "'Još' = more/still. 'Minuta' is genitive plural after 'pet' — numbers above four take the genitive."
         },
         {
           "id": "hoces-kafu",
           "sr_latin": "Hoćeš kafu?",
           "sr_cyrillic": "Хоћеш кафу?",
           "en": "Want a coffee?",
-          "context": "Offering to make coffee in the morning. This is practically a love language in Serbia.",
+          "context": "You're up first and you offer to put the morning coffee on for your partner.",
           "wordRefs": [
             { "id": "hteti", "surface": "Hoćeš", "surface_cyrillic": "Хоћеш", "form": "2sg.pres" },
             { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" }
           ],
-          "notes": "'Kafa' (from Turkish) is sacred — domaća, Turkish-style coffee, not espresso. Croatians say 'kava', Bosnians 'kahva'."
+          "notes": "'Kafu' is the accusative object of 'hoćeš'. 'Kafa' comes from Turkish; Croatians say 'kava', Bosnians 'kahva'."
         },
         {
           "id": "napravi-mi-kafu",
           "sr_latin": "Napravi mi kafu, molim te.",
           "sr_cyrillic": "Направи ми кафу, молим те.",
           "en": "Make me a coffee, please.",
-          "context": "Asking your partner to make coffee. Add 'molim te' to keep it sweet.",
+          "context": "You're still buried in the blanket and you sweetly ask your partner to bring you coffee.",
           "wordRefs": [
+            { "id": "napraviti", "surface": "Napravi", "surface_cyrillic": "Направи", "form": "imp.2sg" },
             "mi-dat",
             { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" },
             "te-acc"
           ],
-          "notes": "'Napravi' = imperative of 'napraviti' (to make). Works for food/drinks."
+          "notes": "'Napravi' = make (imperative of 'napraviti'). 'Mi' is the dative 'for me'; 'molim te' keeps it soft."
         }
       ]
     },
@@ -75,32 +77,38 @@
           "sr_latin": "Ko ide prvi u kupatilo?",
           "sr_cyrillic": "Ко иде први у купатило?",
           "en": "Who's going to the bathroom first?",
-          "context": "The daily negotiation when you share one bathroom.",
+          "context": "You both need to get ready and there's one bathroom, so you sort out the order.",
           "wordRefs": [
             { "id": "ici", "surface": "ide", "surface_cyrillic": "иде", "form": "3sg.pres" },
+            { "id": "kupatilo", "surface": "kupatilo", "surface_cyrillic": "купатило", "case": "acc" },
             "u"
           ],
-          "notes": "'Kupatilo' = bathroom. In Bosnia you might also hear 'kupaonica'."
+          "notes": "'U kupatilo' takes the accusative for motion 'into'. Bosnians often say 'kupaonica' instead of 'kupatilo'."
         },
         {
           "id": "pozuri-kasnim",
           "sr_latin": "Požuri, kasnim!",
           "sr_cyrillic": "Пожури, касним!",
           "en": "Hurry up, I'm running late!",
-          "context": "When your partner is taking forever in the bathroom.",
-          "wordRefs": [],
-          "notes": "'Požuri' = hurry (imperative). 'Kasnim' = I'm late (from 'kasniti')."
+          "context": "Your partner is dawdling and you're about to miss the bus, so you push them to speed up.",
+          "wordRefs": [
+            { "id": "pozuriti", "surface": "Požuri", "surface_cyrillic": "Пожури", "form": "imp.2sg" },
+            { "id": "kasniti", "surface": "kasnim", "surface_cyrillic": "касним", "form": "1sg.pres" }
+          ],
+          "notes": "'Požuri' = hurry (imperative). 'Kasnim' = I'm late, present tense of 'kasniti' used for right now."
         },
         {
           "id": "sta-oblacis-danas",
           "sr_latin": "Šta oblačiš danas?",
           "sr_cyrillic": "Шта облачиш данас?",
           "en": "What are you wearing today?",
-          "context": "Casual morning conversation about outfits.",
+          "context": "You're both getting dressed and you ask your partner what they're putting on.",
           "wordRefs": [
-            "sta"
+            "sta",
+            { "id": "oblaciti", "surface": "oblačiš", "surface_cyrillic": "облачиш", "form": "2sg.pres" },
+            "danas"
           ],
-          "notes": "'Oblačiti' = to put on (clothes). Present tense used for 'going to wear'."
+          "notes": "'Oblačiti' = to put on (clothes). The present tense covers 'are you going to wear' here."
         }
       ]
     },
@@ -113,31 +121,34 @@
           "sr_latin": "Šta ima za doručak?",
           "sr_cyrillic": "Шта има за доручак?",
           "en": "What's for breakfast?",
-          "context": "Asking what's available to eat in the morning.",
+          "context": "You wander into the kitchen and ask what there is to eat first thing.",
           "wordRefs": [
             "sta",
             { "id": "imati", "surface": "ima", "surface_cyrillic": "има", "form": "3sg.pres" },
+            { "id": "dorucak", "surface": "doručak", "surface_cyrillic": "доручак", "case": "acc" },
             "za"
           ],
-          "notes": "'Doručak' = breakfast. 'Ručak' = lunch. 'Večera' = dinner."
+          "notes": "Impersonal 'ima' = 'there is'. 'Doručak' = breakfast; 'ručak' = lunch, 'večera' = dinner."
         },
         {
           "id": "gladan-sam-kao-vuk",
           "sr_latin": "Gladan sam kao vuk.",
           "sr_cyrillic": "Гладан сам као вук.",
           "en": "I'm hungry as a wolf.",
-          "context": "You shuffle into the kitchen first thing and there's nothing out yet — groan how ravenous you are.",
+          "context": "You shuffle in starving before anything's on the table and groan how ravenous you are.",
           "wordRefs": [
             "gladan",
-            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            "kao",
+            { "id": "vuk", "surface": "vuk", "surface_cyrillic": "вук", "case": "nom" }
           ],
-          "notes": "If you're female, say 'Gladna sam kao vuk.' Adjective changes gender.",
+          "notes": "'Gladan' is the masculine form; a woman says 'gladna'. The adjective agrees with the speaker's gender.",
           "variations": [
             {
               "sr_latin": "Gladna sam kao vuk.",
               "sr_cyrillic": "Гладна сам као вук.",
               "en": "I'm hungry as a wolf.",
-              "gloss_hint": "feminine"
+              "gloss_hint": "said by a woman"
             }
           ]
         },
@@ -146,12 +157,15 @@
           "sr_latin": "Ja kuham, ti pereš sudove.",
           "sr_cyrillic": "Ја кухам, ти переш судове.",
           "en": "I cook, you wash the dishes.",
-          "context": "Dividing kitchen duties fairly (or trying to).",
+          "context": "You're splitting kitchen duty with your partner and you call who does what.",
           "wordRefs": [
             "ja",
-            "ti-nom"
+            { "id": "kuhati", "surface": "kuham", "surface_cyrillic": "кухам", "form": "1sg.pres" },
+            "ti-nom",
+            { "id": "prati", "surface": "pereš", "surface_cyrillic": "переш", "form": "2sg.pres" },
+            { "id": "sud", "surface": "sudove", "surface_cyrillic": "судове", "case": "acc" }
           ],
-          "notes": "'Kuhati' = to cook (in Serbia you'll more often hear 'kuvati / kuvam' — the v/h swap is a classic Serbian vs Bosnian/Croatian tell). 'Prati sudove' = to wash dishes."
+          "notes": "'Pereš sudove' = you wash the dishes (accusative plural). The 'kuham/kuhati' h-form is Bosnian/Croatian; in Serbia it's 'kuvam/kuvati'."
         }
       ]
     },
@@ -164,40 +178,51 @@
           "sr_latin": "Ko pere sudove?",
           "sr_cyrillic": "Ко пере судове?",
           "en": "Who's doing the dishes?",
-          "context": "The eternal household debate.",
-          "wordRefs": [],
-          "notes": "'Prati/perati sudove' = to wash dishes. 'Sudovi' = dishes (plural)."
+          "context": "A pile of plates is sitting in the sink and you ask whose turn it is tonight.",
+          "wordRefs": [
+            { "id": "prati", "surface": "pere", "surface_cyrillic": "пере", "form": "3sg.pres" },
+            { "id": "sud", "surface": "sudove", "surface_cyrillic": "судове", "case": "acc" }
+          ],
+          "notes": "'Prati sudove' = to wash the dishes; 'pere' is the 3sg present. 'Sudove' is accusative plural of 'sud'."
         },
         {
           "id": "treba-da-usisamo",
           "sr_latin": "Treba da usisamo.",
           "sr_cyrillic": "Треба да усисамо.",
           "en": "We need to vacuum.",
-          "context": "Suggesting it's time to clean up.",
+          "context": "The floor is covered in crumbs and you tell your partner it's time to clean up.",
           "wordRefs": [
-            "da-conj"
+            "da-conj",
+            { "id": "usisati", "surface": "usisamo", "surface_cyrillic": "усисамо", "form": "1pl.pres" }
           ],
-          "notes": "'Treba da' + present tense = 'need to'. Very common construction. 'Usisati' = to vacuum."
+          "notes": "'Treba da' + present = 'we need to'. 'Usisati' = to vacuum, from 'sisati' (to suck)."
         },
         {
           "id": "iznesi-djubre",
           "sr_latin": "Iznesi đubre.",
           "sr_cyrillic": "Изнеси ђубре.",
           "en": "Take out the trash.",
-          "context": "Asking someone to take the garbage out.",
-          "wordRefs": [],
-          "notes": "'Đubre' = trash/garbage (a Turkish loanword, originally 'manure'). 'Izneti' = to take out."
+          "context": "The bin is overflowing on your way out and you ask your partner to deal with it.",
+          "wordRefs": [
+            { "id": "izneti", "surface": "Iznesi", "surface_cyrillic": "Изнеси", "form": "imp.2sg" },
+            { "id": "djubre", "surface": "đubre", "surface_cyrillic": "ђубре", "case": "acc" }
+          ],
+          "notes": "'Iznesi' = take out (imperative of 'izneti'). 'Đubre' is a Turkish loanword that originally meant 'manure'."
         },
         {
           "id": "ves-nece-sam-sebe",
           "sr_latin": "Veš neće sam sebe da opere.",
           "sr_cyrillic": "Веш неће сам себе да опере.",
           "en": "The laundry won't wash itself.",
-          "context": "A passive-aggressive nudge to get someone to do laundry.",
+          "context": "A full basket has sat untouched for days and you drop a pointed hint to your partner.",
           "wordRefs": [
-            "da-conj"
+            { "id": "ves", "surface": "Veš", "surface_cyrillic": "Веш", "case": "nom" },
+            { "id": "hteti", "surface": "neće", "surface_cyrillic": "неће", "form": "3sg.pres.neg" },
+            "sebe",
+            "da-conj",
+            { "id": "prati", "surface": "opere", "surface_cyrillic": "опере", "form": "3sg.pres" }
           ],
-          "notes": "'Veš' = laundry. This sarcastic phrasing is very natural in Serbian."
+          "notes": "'Neće' = won't (negative of 'hoće'). 'Sam sebe' = itself; this dry sarcasm is very natural in Serbian. 'Veš' is from German 'Wäsche'."
         }
       ]
     },
@@ -210,38 +235,43 @@
           "sr_latin": "Možeš li da odeš do prodavnice?",
           "sr_cyrillic": "Можеш ли да одеш до продавнице?",
           "en": "Can you go to the store?",
-          "context": "Asking your partner to run an errand.",
+          "context": "You realize you're out of something and ask your partner to pop out for it.",
           "wordRefs": [
             { "id": "moci", "surface": "Možeš", "surface_cyrillic": "Можеш", "form": "2sg.pres" },
             "da-conj",
+            { "id": "prodavnica", "surface": "prodavnice", "surface_cyrillic": "продавнице", "case": "gen" },
             "do"
           ],
-          "notes": "'Možeš li da...' = 'Can you...' Polite but casual way to ask for something."
+          "notes": "'Možeš li da...' = 'can you...'. 'Do prodavnice' takes the genitive after 'do' (up to/as far as)."
         },
         {
           "id": "pomozi-mi-malo",
           "sr_latin": "Pomozi mi malo.",
           "sr_cyrillic": "Помози ми мало.",
           "en": "Help me out a bit.",
-          "context": "Asking for a hand with something around the house.",
+          "context": "You're wrestling with something around the flat and you ask your partner to lend a hand.",
           "wordRefs": [
+            { "id": "pomoci", "surface": "Pomozi", "surface_cyrillic": "Помози", "form": "imp.2sg" },
             "mi-dat",
             "malo"
           ],
-          "notes": "'Pomozi' = help (imperative of 'pomoći'). 'Malo' softens the request."
+          "notes": "'Pomozi' = help (imperative of 'pomoći'). 'Pomoći' takes the dative — you help 'to' someone, 'mi'."
         },
         {
           "id": "da-li-mozes-da-skuvas",
           "sr_latin": "Može da skuvaš nešto za večeru?",
           "sr_cyrillic": "Може да скуваш нешто за вечеру?",
           "en": "Could you cook something for dinner?",
-          "context": "Gently asking your partner to handle dinner.",
+          "context": "You're swamped and you nudge your partner to take over the cooking tonight.",
           "wordRefs": [
             { "id": "moci", "surface": "Može", "surface_cyrillic": "Може", "form": "3sg.pres" },
             "da-conj",
+            { "id": "skuvati", "surface": "skuvaš", "surface_cyrillic": "скуваш", "form": "2sg.pres" },
+            "nesto",
+            { "id": "vecera", "surface": "večeru", "surface_cyrillic": "вечеру", "case": "acc" },
             "za"
           ],
-          "notes": "'Može da...' is a softer, more colloquial way to ask than 'Možeš li da...'"
+          "notes": "'Može da...' is softer and more colloquial than 'možeš li da...'. 'Skuvati' (Serbian) vs Bosnian/Croatian 'skuhati'."
         }
       ]
     },
@@ -254,44 +284,49 @@
           "sr_latin": "Ajde da gledamo nešto.",
           "sr_cyrillic": "Ајде да гледамо нешто.",
           "en": "Let's watch something.",
-          "context": "Suggesting you watch a show or movie together in the evening.",
+          "context": "You've both collapsed on the couch after dinner and you suggest putting a show on.",
           "wordRefs": [
             { "id": "hajde", "surface": "Ajde", "surface_cyrillic": "Ајде" },
-            "da-conj"
+            "da-conj",
+            { "id": "gledati", "surface": "gledamo", "surface_cyrillic": "гледамо", "form": "1pl.pres" },
+            "nesto"
           ],
-          "notes": "'Ajde da...' = 'Let's...' — one of the most useful constructions in casual Serbian."
+          "notes": "'Ajde da' + 1pl present = 'let's...', one of the most useful casual frames. 'Ajde' is a clipped 'hajde'."
         },
         {
           "id": "sta-ces-da-gledas",
           "sr_latin": "Šta ćeš da gledaš?",
           "sr_cyrillic": "Шта ћеш да гледаш?",
           "en": "What do you want to watch?",
-          "context": "Letting the other person pick what to watch.",
+          "context": "The remote is in your partner's hands and you let them pick tonight's show.",
           "wordRefs": [
             "sta",
-            "da-conj"
+            { "id": "hteti", "surface": "ćeš", "surface_cyrillic": "ћеш", "form": "2sg.fut.clitic" },
+            "da-conj",
+            { "id": "gledati", "surface": "gledaš", "surface_cyrillic": "гледаш", "form": "2sg.pres" }
           ],
-          "notes": "'Šta ćeš da...' = 'What will you / what do you want to...'"
+          "notes": "'Ćeš da...' uses the future clitic 'ćeš' — literally 'what will you watch', meaning 'what do you feel like watching'."
         },
         {
           "id": "umoran-sam",
           "sr_latin": "Umoran sam, ceo dan sam radio.",
           "sr_cyrillic": "Уморан сам, цео дан сам радио.",
           "en": "I'm tired, I worked all day.",
-          "context": "Explaining why you just want to crash on the couch.",
+          "context": "You flop onto the couch and explain to your partner why you've got nothing left tonight.",
           "wordRefs": [
             "umoran",
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            "ceo",
             "dan",
-            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }
+            { "id": "raditi", "surface": "radio", "surface_cyrillic": "радио", "form": "past.m.sg" }
           ],
-          "notes": "Feminine: 'Umorna sam, ceo dan sam radila.' Adjective and past tense change.",
+          "notes": "'Radio' is the masculine past participle; 'sam radio' = I worked. A woman says 'umorna sam... radila'.",
           "variations": [
             {
               "sr_latin": "Umorna sam, ceo dan sam radila.",
               "sr_cyrillic": "Уморна сам, цео дан сам радила.",
               "en": "I'm tired, I worked all day.",
-              "gloss_hint": "feminine"
+              "gloss_hint": "said by a woman"
             }
           ]
         },
@@ -300,11 +335,13 @@
           "sr_latin": "Daj mi daljinski.",
           "sr_cyrillic": "Дај ми даљински.",
           "en": "Give me the remote.",
-          "context": "The classic couch battle.",
+          "context": "Your partner has been hogging the channels and you reach out for the remote.",
           "wordRefs": [
-            "mi-dat"
+            { "id": "dati", "surface": "Daj", "surface_cyrillic": "Дај", "form": "imp.2sg" },
+            "mi-dat",
+            { "id": "daljinski", "surface": "daljinski", "surface_cyrillic": "даљински", "case": "acc" }
           ],
-          "notes": "'Daljinski' = remote control (short for 'daljinski upravljač')."
+          "notes": "'Daj mi' = give me ('mi' is dative). 'Daljinski' is short for 'daljinski upravljač' (remote control)."
         }
       ]
     },
@@ -317,46 +354,51 @@
           "sr_latin": "Ajde da spavamo.",
           "sr_cyrillic": "Ајде да спавамо.",
           "en": "Let's go to sleep.",
-          "context": "Suggesting it's time for bed.",
+          "context": "It's late and you're both yawning, so you suggest calling it a night.",
           "wordRefs": [
             { "id": "hajde", "surface": "Ajde", "surface_cyrillic": "Ајде" },
-            "da-conj"
+            "da-conj",
+            { "id": "spavati", "surface": "spavamo", "surface_cyrillic": "спавамо", "form": "1pl.pres" }
           ],
-          "notes": "'Spavati' = to sleep. 'Ajde da spavamo' is the natural way to say 'let's go to bed'."
+          "notes": "'Ajde da spavamo' = let's go to sleep (literally 'let's sleep'). 'Spavati' = to sleep."
         },
         {
           "id": "laku-noc",
           "sr_latin": "Laku noć.",
           "sr_cyrillic": "Лаку ноћ.",
           "en": "Good night.",
-          "context": "You're turning in for the night and say the plain bedtime line that works with anyone.",
+          "context": "You're heading off to bed and you say the plain bedtime line that works with anyone.",
           "wordRefs": [
             { "id": "lak", "surface": "Laku", "surface_cyrillic": "Лаку", "form": "acc.f.sg" },
-            "noc"
-          ]
+            { "id": "noc", "surface": "noć", "surface_cyrillic": "ноћ", "case": "acc" }
+          ],
+          "notes": "Frozen accusative wish — 'laku noć' literally '(I wish you) an easy night', like 'dobar dan'."
         },
         {
           "id": "ugasi-svetlo",
           "sr_latin": "Ugasi svetlo.",
           "sr_cyrillic": "Угаси светло.",
           "en": "Turn off the light.",
-          "context": "Asking someone to kill the lights before sleep.",
-          "wordRefs": [],
-          "notes": "'Ugasiti' = to turn off / extinguish. Also used for TV, phone, etc."
+          "context": "You're already tucked in and you ask your partner to kill the lights before sleep.",
+          "wordRefs": [
+            { "id": "ugasiti", "surface": "Ugasi", "surface_cyrillic": "Угаси", "form": "imp.2sg" },
+            { "id": "svetlo", "surface": "svetlo", "surface_cyrillic": "светло", "case": "acc" }
+          ],
+          "notes": "'Ugasiti' = to turn off / extinguish; also used for the TV or phone. 'Svetlo' (Serbian) vs Bosnian/Croatian 'svjetlo'."
         },
         {
           "id": "ne-mogu-da-spavam",
           "sr_latin": "Ne mogu da spavam.",
           "sr_cyrillic": "Не могу да спавам.",
           "en": "I can't sleep.",
-          "context": "When you're tossing and turning at night.",
+          "context": "You're lying awake tossing and turning and tell your partner sleep just won't come.",
           "wordRefs": [
             "ne",
             { "id": "moci", "surface": "mogu", "surface_cyrillic": "могу", "form": "1sg.pres" },
             "da-conj",
             { "id": "spavati", "surface": "spavam", "surface_cyrillic": "спавам", "form": "1sg.pres" }
           ],
-          "notes": "'Ne mogu da...' = 'I can't...' Very common pattern."
+          "notes": "'Ne mogu da...' = 'I can't...', a very common frame: negate 'mogu' and follow with 'da' + present."
         }
       ]
     },
@@ -369,45 +411,53 @@
           "sr_latin": "Gde su moji ključevi?",
           "sr_cyrillic": "Где су моји кључеви?",
           "en": "Where are my keys?",
-          "context": "The daily panic before leaving the house.",
+          "context": "You're already late and patting your pockets in a panic by the front door.",
           "wordRefs": [
             "gde",
             { "id": "biti", "surface": "su", "surface_cyrillic": "су", "form": "3pl.pres" },
-            { "id": "moj", "surface": "moji", "surface_cyrillic": "моји" }
+            { "id": "moj", "surface": "moji", "surface_cyrillic": "моји", "form": "m.pl" },
+            { "id": "kljuc", "surface": "ključevi", "surface_cyrillic": "кључеви", "case": "nom" }
           ],
-          "notes": "'Ključevi' = keys (plural of 'ključ')."
+          "notes": "'Ključevi' is the nominative plural of 'ključ' (key); short masculine nouns add '-ev-' in the plural."
         },
         {
           "id": "zakljucaj-vrata",
           "sr_latin": "Zaključaj vrata.",
           "sr_cyrillic": "Закључај врата.",
           "en": "Lock the door.",
-          "context": "Reminding someone to lock up when leaving or before bed.",
-          "wordRefs": [],
-          "notes": "'Vrata' is neuter plural — always plural in Serbian, even for one door."
+          "context": "Your partner is heading out last and you remind them to secure the front door.",
+          "wordRefs": [
+            { "id": "zakljucati", "surface": "Zaključaj", "surface_cyrillic": "Закључај", "form": "imp.2sg" },
+            { "id": "vrata", "surface": "vrata", "surface_cyrillic": "врата", "case": "acc" }
+          ],
+          "notes": "'Zaključaj' = lock (imperative). 'Vrata' is neuter plural — always plural, even for a single door."
         },
         {
           "id": "kad-dolazis-kuci",
           "sr_latin": "Kad dolaziš kući?",
           "sr_cyrillic": "Кад долазиш кући?",
           "en": "When are you coming home?",
-          "context": "Texting your partner or asking when they'll be back.",
+          "context": "Your partner is still out and you text to find out when they'll be back.",
           "wordRefs": [
             { "id": "kada", "surface": "Kad", "surface_cyrillic": "Кад" },
+            { "id": "dolaziti", "surface": "dolaziš", "surface_cyrillic": "долазиш", "form": "2sg.pres" },
             { "id": "kuca", "surface": "kući", "surface_cyrillic": "кући", "case": "dat" }
           ],
-          "notes": "'Kući' = home (dative, used for direction). 'Kod kuće' = at home."
+          "notes": "'Kući' (dative) means 'homeward' for motion. 'Kod kuće' would be 'at home', no motion."
         },
         {
           "id": "ponestalo-nam-je",
           "sr_latin": "Ponestalo nam je mleka.",
           "sr_cyrillic": "Понестало нам је млека.",
           "en": "We're out of milk.",
-          "context": "Letting someone know you need to restock something.",
+          "context": "You open the fridge, find the carton empty, and flag that you need to restock.",
           "wordRefs": [
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+            { "id": "ponestati", "surface": "Ponestalo", "surface_cyrillic": "Понестало", "form": "past.n.sg" },
+            "nam-dat",
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            { "id": "mleko", "surface": "mleka", "surface_cyrillic": "млека", "case": "gen" }
           ],
-          "notes": "'Ponestati' = to run out of. Swap 'mleka' for whatever's gone — 'hleba' (bread), 'kafe' (coffee). In Bosnia it's 'mlijeko' (and 'hljeb')."
+          "notes": "'Ponestati' takes the dative experiencer ('nam' = to us) and a genitive of what ran out ('mleka'). Bosnians say 'mlijeko' / 'mlijeka'."
         }
       ]
     },
@@ -420,49 +470,58 @@
           "sr_latin": "Ne izlazim danas nigde.",
           "sr_cyrillic": "Не излазим данас нигде.",
           "en": "I'm not going anywhere today.",
-          "context": "Declaring a full lazy day at home.",
+          "context": "Your friend asks if you're up for plans and you declare a full day parked at home.",
           "wordRefs": [
-            "ne"
+            "ne",
+            { "id": "izlaziti", "surface": "izlazim", "surface_cyrillic": "излазим", "form": "1sg.pres" },
+            "danas",
+            "nigde"
           ],
-          "notes": "'Nigde' = nowhere. Double negatives are standard and required in Serbian."
+          "notes": "Double negative is required: 'ne... nigde' = not... nowhere. 'Izlaziti' = to go out."
         },
         {
           "id": "ceo-dan-u-pidzami",
           "sr_latin": "Ceo dan u pidžami.",
           "sr_cyrillic": "Цео дан у пиџами.",
           "en": "All day in pajamas.",
-          "context": "The lazy Sunday lifestyle declaration.",
+          "context": "Your partner asks the plan and you announce the dress code is staying in your PJs.",
           "wordRefs": [
+            "ceo",
             "dan",
+            { "id": "pidzama", "surface": "pidžami", "surface_cyrillic": "пиџами", "case": "loc" },
             "u"
           ],
-          "notes": "'Pidžama' = pajamas. 'Ceo dan' = all day."
+          "notes": "'U pidžami' is locative (state of being in), not motion. 'Pidžama' comes ultimately from Persian via Turkish."
         },
         {
           "id": "hoces-da-narucimo",
           "sr_latin": "Hoćeš da naručimo nešto?",
           "sr_cyrillic": "Хоћеш да наручимо нешто?",
           "en": "Want to order something?",
-          "context": "Suggesting you order food delivery instead of cooking.",
+          "context": "Neither of you feels like cooking, so you float the idea of getting food delivered.",
           "wordRefs": [
             { "id": "hteti", "surface": "Hoćeš", "surface_cyrillic": "Хоћеш", "form": "2sg.pres" },
-            "da-conj"
+            "da-conj",
+            { "id": "naruciti", "surface": "naručimo", "surface_cyrillic": "наручимо", "form": "1pl.pres" },
+            "nesto"
           ],
-          "notes": "'Naručiti' = to order. Works for food delivery, in a restaurant, online shopping."
+          "notes": "'Naručiti' = to order; works for delivery, a restaurant, or online shopping. 'Hoćeš da...' invites the other person in."
         },
         {
           "id": "hajde-da-lezimo",
           "sr_latin": "Ma hajde da ležimo ceo dan.",
           "sr_cyrillic": "Ма хајде да лежимо цео дан.",
           "en": "Let's just lie around all day.",
-          "context": "Peak lazy Sunday energy. No plans, no obligations.",
+          "context": "There's nothing on the calendar and you talk your partner into doing absolutely nothing.",
           "wordRefs": [
             "ma",
             "hajde",
             "da-conj",
+            { "id": "leci", "surface": "ležimo", "surface_cyrillic": "лежимо", "form": "1pl.pres" },
+            "ceo",
             "dan"
           ],
-          "notes": "'Ma' at the start adds a dismissive/carefree tone, like 'oh just' or 'come on'."
+          "notes": "'Ležati' = to lie down/around. Opening 'ma' adds a breezy, dismissive 'oh come on' tone."
         }
       ]
     },
@@ -475,26 +534,29 @@
           "sr_latin": "Kako ti je bio dan?",
           "sr_cyrillic": "Како ти је био дан?",
           "en": "How was your day?",
-          "context": "Asking your partner about their day when you reconnect in the evening.",
+          "context": "Your partner walks in the door at the end of the day and you want to hear how it went.",
           "wordRefs": [
             "kako",
             "ti-dat",
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            { "id": "biti", "surface": "bio", "surface_cyrillic": "био", "form": "past.m.sg" },
             "dan"
           ],
-          "notes": "'Dan' is masculine, so 'bio' (m. past participle). Natural and warm."
+          "notes": "'Dan' is masculine, so the past participle is 'bio'. 'Ti' here is the dative 'to you' — literally 'how was the day to you'."
         },
         {
           "id": "sta-si-radio-danas",
           "sr_latin": "Šta si radio danas?",
           "sr_cyrillic": "Шта си радио данас?",
           "en": "What did you do today?",
-          "context": "Casual follow-up about someone's day.",
+          "context": "You're catching up over dinner and ask your partner what filled their day.",
           "wordRefs": [
             "sta",
-            { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" }
+            { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
+            { "id": "raditi", "surface": "radio", "surface_cyrillic": "радио", "form": "past.m.sg" },
+            "danas"
           ],
-          "notes": "Feminine form: 'Šta si radila danas?'",
+          "notes": "Past tense: 'si radio' = you did/were doing. 'Radio' is the masculine participle; to a woman it's 'radila'.",
           "variations": [
             {
               "sr_latin": "Šta si radila danas?",
@@ -509,21 +571,22 @@
           "sr_latin": "Baš sam se smorio na poslu.",
           "sr_cyrillic": "Баш сам се сморио на послу.",
           "en": "I was so bored at work.",
-          "context": "Complaining about a boring day at work.",
+          "context": "You drop onto the sofa and vent to your partner about a deadly dull day at the office.",
           "wordRefs": [
             "bas",
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
             "se",
+            { "id": "smoriti", "surface": "smorio", "surface_cyrillic": "сморио", "form": "past.m.sg" },
             "na",
             { "id": "posao", "surface": "poslu", "surface_cyrillic": "послу", "case": "loc" }
           ],
-          "notes": "'Smoriti se' = to get bored/fed up. Very colloquial. Feminine: 'smorila'.",
+          "notes": "'Smoriti se' = to get bored/fed up, very colloquial; 'smorio' is masculine, 'smorila' feminine. 'Na poslu' is locative.",
           "variations": [
             {
               "sr_latin": "Baš sam se smorila na poslu.",
               "sr_cyrillic": "Баш сам се сморила на послу.",
               "en": "I was so bored at work.",
-              "gloss_hint": "feminine"
+              "gloss_hint": "said by a woman"
             }
           ]
         }

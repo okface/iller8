@@ -20,26 +20,26 @@
           "id": "tx-cao",
           "sr_latin": "Ćao!",
           "sr_cyrillic": "Ћао!",
-          "en": "Hey! / Hi! / Bye!",
-          "context": "The most common informal greeting AND farewell. Works for both hello and goodbye.",
+          "en": "Hey! / Bye!",
+          "context": "You bump into a friend, or you're heading off — toss them the all-purpose casual word.",
           "wordRefs": [],
-          "notes": "From Italian 'ciao.' Used universally among friends. Can also be used when leaving."
+          "notes": "Serves as both hello and goodbye among friends. 'Ćao' comes from Italian 'ciao'."
         },
         {
           "id": "tx-zdravo",
           "sr_latin": "Zdravo!",
           "sr_cyrillic": "Здраво!",
           "en": "Hello! / Hi!",
-          "context": "Slightly more neutral than 'ćao' but still casual. Safe for most situations.",
+          "context": "You're greeting someone you don't know that well and want a safe, friendly opener.",
           "wordRefs": [],
-          "notes": "Literally related to 'zdravlje' (health). A friendly, all-purpose greeting."
+          "notes": "A bit more neutral than 'ćao' but still casual. Related to 'zdravlje' = health."
         },
         {
           "id": "tx-de-si",
           "sr_latin": "De si?",
           "sr_cyrillic": "Де си?",
           "en": "What's up? / Where you at?",
-          "context": "Super casual texting greeting. Fire it off to a friend instead of a full hello — you're not really asking for a location.",
+          "context": "You're firing off a quick hello to a close friend over text, not really asking anything.",
           "wordRefs": [
             {
               "id": "biti",
@@ -48,14 +48,14 @@
               "form": "2sg.pres"
             }
           ],
-          "notes": "You don't actually need to answer where you are. It's just 'what's up.' Very common in texts."
+          "notes": "Clipped from 'gde si' = where are you, but it just means 'what's up'. No location answer expected."
         },
         {
           "id": "tx-gde-si",
           "sr_latin": "Gde si, brate?",
           "sr_cyrillic": "Где си, брате?",
           "en": "What's up, bro?",
-          "context": "How guys greet each other — a casual hello to a male buddy, with the 'bro' tacked on.",
+          "context": "You're greeting a male buddy and want the easy, blokey tone guys use with each other.",
           "wordRefs": [
             "gde",
             {
@@ -63,14 +63,21 @@
               "surface": "si",
               "surface_cyrillic": "си",
               "form": "2sg.pres"
+            },
+            {
+              "id": "brat",
+              "surface": "brate",
+              "surface_cyrillic": "брате",
+              "case": "voc"
             }
           ],
-          "notes": "'Brate' is vocative of 'brat' (brother). Not literal — it's like English 'bro' or 'dude.'",
+          "notes": "'Brate' = vocative of 'brat' (brother), used like 'bro' or 'dude', not literally.",
           "variations": [
             {
               "sr_latin": "Gde si, druže?",
               "sr_cyrillic": "Где си, друже?",
-              "en": "What's up, buddy?"
+              "en": "What's up, buddy?",
+              "gloss_hint": "another way to say it"
             }
           ]
         }
@@ -85,7 +92,7 @@
           "sr_latin": "Šta ima?",
           "sr_cyrillic": "Шта има?",
           "en": "What's up? / What's new?",
-          "context": "Casual conversation opener. Expect 'ništa posebno' (nothing special) as a response.",
+          "context": "You've said hi and want to keep it going — nudge your friend for whatever's new.",
           "wordRefs": [
             "sta",
             {
@@ -95,14 +102,14 @@
               "form": "3sg.pres"
             }
           ],
-          "notes": "Literally 'what is there?' The standard follow-up to a greeting."
+          "notes": "Literally 'what is there' (impersonal 'ima'). The standard follow-up to a greeting."
         },
         {
           "id": "tx-kako-si",
           "sr_latin": "Kako si?",
           "sr_cyrillic": "Како си?",
           "en": "How are you?",
-          "context": "More direct than 'šta ima.' Actually asking how someone is doing.",
+          "context": "You genuinely want to know how your friend is doing, not just throw out a quick hi.",
           "wordRefs": [
             "kako",
             {
@@ -112,14 +119,14 @@
               "form": "2sg.pres"
             }
           ],
-          "notes": "Unlike in English, people might actually tell you how they're doing. Be ready."
+          "notes": "More direct than 'šta ima'. Unlike in English, people often actually answer it."
         },
         {
           "id": "tx-sta-radis",
           "sr_latin": "Šta radiš?",
           "sr_cyrillic": "Шта радиш?",
-          "en": "What are you doing? / What are you up to?",
-          "context": "Common text opener. Checking if someone is free or just making conversation.",
+          "en": "What are you up to?",
+          "context": "You're texting to see if your friend is free right now, or just making conversation.",
           "wordRefs": [
             "sta",
             {
@@ -129,23 +136,29 @@
               "form": "2sg.pres"
             }
           ],
-          "notes": "'Raditi' = to do/work. This is the present tense — 'what are you doing right now.'"
+          "notes": "'Radiš' = present of 'raditi' (to do/work), so this asks what you're doing right now."
         },
         {
           "id": "tx-jesi-zauzet",
           "sr_latin": "Jesi zauzet?",
           "sr_cyrillic": "Јеси заузет?",
           "en": "Are you busy?",
-          "context": "Checking availability before asking something or making plans.",
+          "context": "You want to ask a male friend something but first check he isn't tied up.",
           "wordRefs": [
             {
               "id": "biti",
               "surface": "Jesi",
               "surface_cyrillic": "Јеси",
               "form": "2sg.pres"
+            },
+            {
+              "id": "zauzet",
+              "surface": "zauzet",
+              "surface_cyrillic": "заузет",
+              "form": "m.sg"
             }
           ],
-          "notes": "'Zauzet' = busy/occupied (masculine). 'Zauzeta' for feminine.",
+          "notes": "'Zauzet' = busy/occupied (masculine); 'zauzeta' for a woman. 'Jesi' is the stressed question form of 'si'.",
           "variations": [
             {
               "sr_latin": "Jesi zauzeta?",
@@ -166,7 +179,7 @@
           "sr_latin": "Ajde na kafu?",
           "sr_cyrillic": "Ајде на кафу?",
           "en": "Wanna grab coffee?",
-          "context": "THE Serbian hangout invitation. Coffee culture is sacred. This doesn't always literally mean coffee.",
+          "context": "You want to hang out with a friend, so you float the classic Serbian coffee invite.",
           "wordRefs": [
             {
               "id": "hajde",
@@ -181,12 +194,13 @@
               "case": "acc"
             }
           ],
-          "notes": "'Ajde' = come on / let's go. 'Kafa' (from Turkish) means domaća, Turkish-style coffee — and 'na kafu' is really an invitation to hang out. Bosnians say 'kahva'.",
+          "notes": "'Kafu' = accusative of 'kafa'; 'na kafu' is really 'let's hang out'. 'Kafa' is from Turkish — Bosnians say 'kahva'.",
           "variations": [
             {
               "sr_latin": "Ajde na pivo?",
               "sr_cyrillic": "Ајде на пиво?",
-              "en": "Wanna grab a beer?"
+              "en": "Wanna grab a beer?",
+              "gloss_hint": "another way to say it"
             }
           ]
         },
@@ -195,7 +209,7 @@
           "sr_latin": "Vidimo se posle.",
           "sr_cyrillic": "Видимо се после.",
           "en": "See you later.",
-          "context": "Casual sign-off when you'll catch each other again the same day.",
+          "context": "You're wrapping up with a friend you'll catch again the same day.",
           "wordRefs": [
             {
               "id": "videti",
@@ -203,19 +217,22 @@
               "surface_cyrillic": "Видимо",
               "form": "1pl.pres"
             },
-            "se"
+            "se",
+            "posle"
           ],
-          "notes": "'Vidimo se' = we see each other (reflexive). Very natural farewell.",
+          "notes": "'Vidimo se' = lit. 'we see each other' (reflexive 'se'). A very natural sign-off.",
           "variations": [
             {
               "sr_latin": "Vidimo se sutra.",
               "sr_cyrillic": "Видимо се сутра.",
-              "en": "See you tomorrow."
+              "en": "See you tomorrow.",
+              "gloss_hint": "another way to say it"
             },
             {
               "sr_latin": "Vidimo se večeras.",
               "sr_cyrillic": "Видимо се вечерас.",
-              "en": "See you tonight."
+              "en": "See you tonight.",
+              "gloss_hint": "another way to say it"
             }
           ]
         },
@@ -224,24 +241,37 @@
           "sr_latin": "Gde da se nađemo?",
           "sr_cyrillic": "Где да се нађемо?",
           "en": "Where should we meet?",
-          "context": "Sorting out logistics for a meetup. Natural follow-up to making plans.",
+          "context": "Plans are on and now you're sorting out the spot to meet your friend.",
           "wordRefs": [
             "gde",
             "da-conj",
-            "se"
+            "se",
+            {
+              "id": "naci",
+              "surface": "nađemo",
+              "surface_cyrillic": "нађемо",
+              "form": "1pl.pres"
+            }
           ],
-          "notes": "'Naći se' = to meet up / to find each other."
+          "notes": "'Naći se' = to meet up / find each other; 'da se nađemo' = 'that we meet'."
         },
         {
           "id": "tx-u-koliko-sati",
           "sr_latin": "U koliko sati?",
           "sr_cyrillic": "У колико сати?",
           "en": "At what time?",
-          "context": "Getting the specific time for plans.",
+          "context": "You've agreed to meet your friend and now you need to pin down the time.",
           "wordRefs": [
-            "u"
+            "u",
+            "koliko",
+            {
+              "id": "sat",
+              "surface": "sati",
+              "surface_cyrillic": "сати",
+              "case": "gen"
+            }
           ],
-          "notes": "'Koliko' = how much/many. 'Sati' = hours/o'clock."
+          "notes": "'Sati' = genitive plural of 'sat' after 'koliko' (how much). Lit. 'at how many of hours'."
         }
       ]
     },
@@ -253,35 +283,47 @@
           "id": "tx-vazi-dogovoreno",
           "sr_latin": "Važi, dogovoreno!",
           "sr_cyrillic": "Важи, договорено!",
-          "en": "Okay, it's a deal! / Done!",
-          "context": "Confirming plans. Sealing the agreement.",
+          "en": "Okay, it's a deal!",
+          "context": "A friend proposes a time and place and you want to lock the plan in.",
           "wordRefs": [
             {
               "id": "vaziti",
               "surface": "Važi",
               "surface_cyrillic": "Важи",
               "form": "3sg.pres"
+            },
+            {
+              "id": "dogovoriti",
+              "surface": "dogovoreno",
+              "surface_cyrillic": "договорено",
+              "form": "ptcp.n.sg"
             }
           ],
-          "notes": "'Dogovoreno' = agreed/arranged. From 'dogovoriti se' = to agree/arrange."
+          "notes": "'Važi' = lit. 'it holds/applies', used as 'okay'. 'Dogovoreno' = agreed, from 'dogovoriti se'."
         },
         {
           "id": "tx-kasnim",
           "sr_latin": "Kasnim malo.",
           "sr_cyrillic": "Касним мало.",
           "en": "I'm running a bit late.",
-          "context": "Very useful text. Serbs are famously relaxed about time, so expect to use this... and receive it.",
+          "context": "You're on your way to meet someone but won't make it on time — give them a heads-up.",
           "wordRefs": [
+            {
+              "id": "kasniti",
+              "surface": "Kasnim",
+              "surface_cyrillic": "Касним",
+              "form": "1sg.pres"
+            },
             "malo"
           ],
-          "notes": "'Kasniti' = to be late. 'Malo' = a little. The 'malo' is doing heavy lifting — it might be 20 minutes."
+          "notes": "'Kasnim' = 1sg of 'kasniti' (to be late); 'malo' = a little, often doing a lot of work here."
         },
         {
           "id": "tx-ne-mogu",
           "sr_latin": "Ne mogu danas, jel može sutra?",
           "sr_cyrillic": "Не могу данас, јел може сутра?",
           "en": "I can't today, is tomorrow okay?",
-          "context": "Rescheduling plans casually — you can't make today and float the next day instead.",
+          "context": "Today no longer works for you, so you bail on it and float the next day instead.",
           "wordRefs": [
             "ne",
             {
@@ -290,6 +332,7 @@
               "surface_cyrillic": "могу",
               "form": "1sg.pres"
             },
+            "danas",
             {
               "id": "moci",
               "surface": "može",
@@ -298,14 +341,14 @@
             },
             "sutra"
           ],
-          "notes": "'Jel' is short for 'da li je' (is it). Very common in casual speech."
+          "notes": "'Jel' is casual for 'da li je' (is it). 'Može?' = lit. 'is it possible?', i.e. 'is that okay?'."
         },
         {
           "id": "tx-otkazujem",
           "sr_latin": "Moram da otkažem, izvini.",
           "sr_cyrillic": "Морам да откажем, извини.",
           "en": "I have to cancel, sorry.",
-          "context": "Calling off plans you'd already made, while showing you feel bad about it.",
+          "context": "Something came up and you have to call off plans you'd already made with a friend.",
           "wordRefs": [
             {
               "id": "morati",
@@ -315,13 +358,19 @@
             },
             "da-conj",
             {
+              "id": "otkazati",
+              "surface": "otkažem",
+              "surface_cyrillic": "откажем",
+              "form": "1sg.pres"
+            },
+            {
               "id": "izviniti",
               "surface": "izvini",
               "surface_cyrillic": "извини",
               "form": "imp.2sg"
             }
           ],
-          "notes": "'Moram' = I must. 'Otkazati' = to cancel."
+          "notes": "'Moram da' = I have to; 'otkažem' = 1sg of 'otkazati' (to cancel). 'Izvini' = sorry (imperative)."
         }
       ]
     },
@@ -334,7 +383,7 @@
           "sr_latin": "Jesi li dobro?",
           "sr_cyrillic": "Јеси ли добро?",
           "en": "Are you okay?",
-          "context": "Genuine concern. When someone seems off or went through something.",
+          "context": "A friend seems off or just went through something rough and you want to check on them.",
           "wordRefs": [
             {
               "id": "biti",
@@ -349,7 +398,7 @@
               "form": "n.sg"
             }
           ],
-          "notes": "'Jesi li' = are you. 'Dobro' = good/well. The 'li' makes it a question.",
+          "notes": "The particle 'li' marks the yes/no question; 'dobro' = the neuter form used here for 'well'.",
           "variations": [
             {
               "sr_latin": "Jesi okej?",
@@ -363,37 +412,55 @@
           "id": "tx-sta-se-desava",
           "sr_latin": "Šta se dešava?",
           "sr_cyrillic": "Шта се дешава?",
-          "en": "What's going on? / What's happening?",
-          "context": "When you sense something's up or someone messaged something vague.",
+          "en": "What's going on?",
+          "context": "A friend sends something vague or cryptic and you want them to spell out what's happening.",
           "wordRefs": [
             "sta",
-            "se"
+            "se",
+            {
+              "id": "desavati",
+              "surface": "dešava",
+              "surface_cyrillic": "дешава",
+              "form": "3sg.pres"
+            }
           ],
-          "notes": "'Dešavati se' = to happen/occur. Present tense — asking about right now."
+          "notes": "'Dešavati se' = to happen/occur (reflexive 'se'). Present tense — asking about right now."
         },
         {
           "id": "tx-javi-mi-se",
           "sr_latin": "Javi mi se kad stigneš.",
           "sr_cyrillic": "Јави ми се кад стигнеш.",
           "en": "Text me when you arrive.",
-          "context": "Asking someone to let you know when they get there. Common caring gesture.",
+          "context": "A friend is travelling to you and you want to know the moment they get there safely.",
           "wordRefs": [
+            {
+              "id": "javiti",
+              "surface": "Javi",
+              "surface_cyrillic": "Јави",
+              "form": "imp.2sg"
+            },
             "mi-dat",
             "se",
             {
               "id": "kada",
               "surface": "kad",
               "surface_cyrillic": "кад"
+            },
+            {
+              "id": "stici",
+              "surface": "stigneš",
+              "surface_cyrillic": "стигнеш",
+              "form": "2sg.pres"
             }
           ],
-          "notes": "'Javiti se' = to get in touch / to message. 'Stignuti' = to arrive."
+          "notes": "'Javi se' = get in touch (imperative + reflexive); 'mi' = to me (dative clitic). 'Stigneš' = you arrive."
         },
         {
           "id": "tx-gde-si-nestao",
           "sr_latin": "Gde si nestao?",
           "sr_cyrillic": "Где си нестао?",
           "en": "Where did you disappear to?",
-          "context": "When a friend hasn't been in touch for a while. Half joking, half calling them out.",
+          "context": "A male friend has gone quiet for a while and you want to call him out, half joking.",
           "wordRefs": [
             "gde",
             {
@@ -401,9 +468,15 @@
               "surface": "si",
               "surface_cyrillic": "си",
               "form": "2sg.pres"
+            },
+            {
+              "id": "nestati",
+              "surface": "nestao",
+              "surface_cyrillic": "нестао",
+              "form": "past.m.sg"
             }
           ],
-          "notes": "'Nestati' = to disappear. 'Nestao' = masculine past. 'Nestala' for feminine.",
+          "notes": "'Nestao' = past of 'nestati' (to disappear), masculine; 'nestala' for a woman. 'Si' is the past auxiliary.",
           "variations": [
             {
               "sr_latin": "Gde si nestala?",
@@ -424,29 +497,29 @@
           "sr_latin": "Evo me.",
           "sr_cyrillic": "Ево ме.",
           "en": "Here I am. / I'm here.",
-          "context": "Response to 'gde si' or when arriving somewhere. Also used when answering a call/text.",
+          "context": "A friend asks where you are or you've just walked up — let them know you've shown up.",
           "wordRefs": [
             "me-acc"
           ],
-          "notes": "'Evo' = here is. Extremely common in daily conversation."
+          "notes": "'Evo' = here is/here's, paired with the accusative clitic 'me' = lit. 'here me'. Extremely common."
         },
         {
           "id": "tx-nista-posebno",
           "sr_latin": "Ništa posebno.",
           "sr_cyrillic": "Ништа посебно.",
           "en": "Nothing special. / Not much.",
-          "context": "The default answer to 'šta ima?' Even if something IS happening.",
+          "context": "A friend texts 'šta ima' and you give the default low-key answer, even if plenty is going on.",
           "wordRefs": [
             "nista"
           ],
-          "notes": "Classic Serbian response. Even if you just won the lottery, you might still say this first."
+          "notes": "'Ništa' = nothing; 'posebno' = especially/special. The classic understated Serbian reply."
         },
         {
           "id": "tx-sad-ne-mogu",
           "sr_latin": "Sad ne mogu, javim se posle.",
           "sr_cyrillic": "Сад не могу, јавим се после.",
           "en": "Can't right now, I'll text you later.",
-          "context": "Quick brush-off when you're busy. Common and not rude.",
+          "context": "Someone messages while you're tied up — wave them off for now and promise to circle back.",
           "wordRefs": [
             {
               "id": "sada",
@@ -460,17 +533,30 @@
               "surface_cyrillic": "могу",
               "form": "1sg.pres"
             },
-            "se"
+            {
+              "id": "javiti",
+              "surface": "javim",
+              "surface_cyrillic": "јавим",
+              "form": "1sg.pres"
+            },
+            "se",
+            "posle"
           ],
-          "notes": "'Sad' = now. 'Javim se' = I'll get in touch. Note: no 'ću' — future tense often dropped in casual texting."
+          "notes": "'Javim se' = present standing in for the future; the 'ću' is dropped, as often happens in casual texting."
         },
         {
           "id": "tx-stigao-sam",
           "sr_latin": "Stigao sam.",
           "sr_cyrillic": "Стигао сам.",
           "en": "I arrived. / I'm here.",
-          "context": "Letting someone know you've reached the destination.",
+          "context": "You've just reached the meeting spot and want to let your friend know you're there.",
           "wordRefs": [
+            {
+              "id": "stici",
+              "surface": "stigao",
+              "surface_cyrillic": "стигао",
+              "form": "past.m.sg"
+            },
             {
               "id": "biti",
               "surface": "sam",
@@ -478,7 +564,7 @@
               "form": "1sg.pres"
             }
           ],
-          "notes": "'Stigao' = arrived (masculine). 'Stigla' for feminine.",
+          "notes": "'Stigao' = past of 'stići' (to arrive), masculine; 'stigla' for a woman. 'Sam' is the past auxiliary.",
           "variations": [
             {
               "sr_latin": "Stigla sam.",
@@ -491,56 +577,87 @@
       ]
     },
     {
-      "id": "dev-friend-chat",
-      "theme": "Chatting With Your Dev Friend",
+      "id": "quick-check-ins",
+      "theme": "Quick Check-ins",
       "phrases": [
         {
-          "id": "tx-sta-kodiras",
-          "sr_latin": "Šta kodiraš?",
-          "sr_cyrillic": "Шта кодираш?",
-          "en": "What are you coding?",
-          "context": "Checking what your dev friend is working on. 'Kodirati' is commonly used in Serbian tech circles.",
-          "wordRefs": [
-            "sta"
-          ],
-          "notes": "'Kodirati' = to code. Serbian tech vocabulary borrows heavily from English."
-        },
-        {
-          "id": "tx-radi-li-ti",
-          "sr_latin": "Radi li ti ovo?",
-          "sr_cyrillic": "Ради ли ти ово?",
-          "en": "Does this work for you?",
-          "context": "Asking if something works — code, a link, a plan. Very versatile.",
+          "id": "tx-je-uspelo",
+          "sr_latin": "Je l' uspelo?",
+          "sr_cyrillic": "Је л' успело?",
+          "en": "Did it work out?",
+          "context": "A friend tried to sort something out and you want to know whether it came together.",
           "wordRefs": [
             {
-              "id": "raditi",
-              "surface": "Radi",
-              "surface_cyrillic": "Ради",
-              "form": "3sg.pres"
-            },
-            "ti-dat"
+              "id": "uspeti",
+              "surface": "uspelo",
+              "surface_cyrillic": "успело",
+              "form": "past.n.sg"
+            }
           ],
-          "notes": "'Raditi' = to work. 'Li' turns it into a question. Works for code AND life."
+          "notes": "'Uspelo' = past of 'uspeti' (to succeed), neuter for an unnamed 'it'. 'Je l'' is casual for 'da li'."
         },
         {
-          "id": "tx-pukao-server",
-          "sr_latin": "Pukao mi server.",
-          "sr_cyrillic": "Пукао ми сервер.",
-          "en": "My server crashed.",
-          "context": "Developer pain in Serbian. 'Pući' literally means to burst/crack — used for anything breaking.",
+          "id": "tx-probaj-sad",
+          "sr_latin": "Probaj sad.",
+          "sr_cyrillic": "Пробај сад.",
+          "en": "Try it now.",
+          "context": "You've just fixed or changed something for a friend and want them to give it another go.",
           "wordRefs": [
-            "mi-dat"
+            {
+              "id": "probati",
+              "surface": "Probaj",
+              "surface_cyrillic": "Пробај",
+              "form": "imp.2sg"
+            },
+            {
+              "id": "sada",
+              "surface": "sad",
+              "surface_cyrillic": "сад"
+            }
           ],
-          "notes": "'Pući' = to burst/break. Serbians use this for everything: 'pukao mi telefon' (phone broke), 'pukao mi mozak' (my brain broke)."
+          "notes": "'Probaj' = imperative of 'probati' (to try); 'sad' is the clipped, everyday form of 'sada' (now)."
         },
         {
-          "id": "tx-bagovi",
-          "sr_latin": "Pun bagova.",
-          "sr_cyrillic": "Пун багова.",
-          "en": "Full of bugs.",
-          "context": "Describing buggy code. 'Bag' is the Serbianized version of 'bug.'",
-          "wordRefs": [],
-          "notes": "'Pun' = full. 'Bagova' = of bugs (genitive plural). Serbian devs mix English tech terms into Serbian grammar."
+          "id": "tx-opet-ne-radi",
+          "sr_latin": "Opet ne radi.",
+          "sr_cyrillic": "Опет не ради.",
+          "en": "It's not working again.",
+          "context": "Something you thought was sorted has broken once more and you're flagging it to a friend.",
+          "wordRefs": [
+            "opet",
+            "ne",
+            {
+              "id": "raditi",
+              "surface": "radi",
+              "surface_cyrillic": "ради",
+              "form": "3sg.pres"
+            }
+          ],
+          "notes": "'Radi' = 3sg of 'raditi', used for things working/functioning; 'ne radi' = it doesn't work. 'Opet' = again."
+        },
+        {
+          "id": "tx-u-guzvi-sam",
+          "sr_latin": "Danas sam u gužvi.",
+          "sr_cyrillic": "Данас сам у гужви.",
+          "en": "I'm swamped today.",
+          "context": "A friend wants your time but you're slammed and need them to know it'll have to wait.",
+          "wordRefs": [
+            "danas",
+            {
+              "id": "biti",
+              "surface": "sam",
+              "surface_cyrillic": "сам",
+              "form": "1sg.pres"
+            },
+            "u",
+            {
+              "id": "guzva",
+              "surface": "gužvi",
+              "surface_cyrillic": "гужви",
+              "case": "loc"
+            }
+          ],
+          "notes": "'U gužvi' = lit. 'in a crowd/crush' (locative of 'gužva'), an idiom for being swamped or rushed off your feet."
         }
       ]
     },
@@ -599,7 +716,7 @@
           "sr_latin": "Ajde, čujemo se!",
           "sr_cyrillic": "Ајде, чујемо се!",
           "en": "Alright, talk later!",
-          "context": "The standard casual goodbye over text or phone. Literally 'we hear each other.'",
+          "context": "You're winding down a call or chat with a friend and want the standard easy goodbye.",
           "wordRefs": [
             {
               "id": "hajde",
@@ -614,14 +731,14 @@
             },
             "se"
           ],
-          "notes": "'Čujemo se' = we hear each other. Used for phone/text sign-off. Very natural."
+          "notes": "'Čujemo se' = lit. 'we hear each other' (reflexive 'se'). The go-to phone and text sign-off."
         },
         {
           "id": "tx-moram-da-idem",
           "sr_latin": "Moram da idem.",
           "sr_cyrillic": "Морам да идем.",
           "en": "I gotta go.",
-          "context": "When you need to leave a conversation or a place. Direct but not rude.",
+          "context": "You need to leave a chat or a place and want to bow out directly but not rudely.",
           "wordRefs": [
             {
               "id": "morati",
@@ -637,14 +754,14 @@
               "form": "1sg.pres"
             }
           ],
-          "notes": "'Moram' = I must. 'Da idem' = to go. Standard sign-off."
+          "notes": "'Moram da idem' = lit. 'I must that I go'; Serbian uses 'da' + present where English uses the infinitive."
         },
         {
           "id": "tx-pricamo-se",
           "sr_latin": "Pričamo se posle.",
           "sr_cyrillic": "Причамо се после.",
           "en": "We'll talk later.",
-          "context": "Casual sign-off promising to pick the conversation back up another time.",
+          "context": "You're signing off with a friend and want to promise to pick the chat back up another time.",
           "wordRefs": [
             {
               "id": "pricati",
@@ -652,16 +769,17 @@
               "surface_cyrillic": "Причамо",
               "form": "1pl.pres"
             },
-            "se"
+            "se",
+            "posle"
           ],
-          "notes": "'Pričati se' = to talk (to each other). Very casual."
+          "notes": "Present 'pričamo' stands in for the future here. 'Posle' = later/afterwards."
         },
         {
           "id": "tx-laku-noc-brt",
           "sr_latin": "Laku noć, brt.",
           "sr_cyrillic": "Лаку ноћ, брт.",
           "en": "Good night, bro.",
-          "context": "Casual goodnight to a friend. 'Brt' is the texting abbreviation of 'brate.'",
+          "context": "You're saying goodnight to a close friend over text and want the relaxed, matey tone.",
           "wordRefs": [
             {
               "id": "lak",
@@ -669,9 +787,14 @@
               "surface_cyrillic": "Лаку",
               "form": "acc.f.sg"
             },
-            "noc"
+            {
+              "id": "noc",
+              "surface": "noć",
+              "surface_cyrillic": "ноћ",
+              "case": "acc"
+            }
           ],
-          "notes": "'Brt' = short for 'brate' (brother/bro). You'll see this everywhere in Serbian texts.",
+          "notes": "'Laku noć' is fixed in the accusative ('laku' agrees with 'noć'). 'Brt' is texting shorthand for 'brate' (bro).",
           "audio_cyrillic": "Лаку ноћ, брате."
         }
       ]
@@ -686,7 +809,7 @@
           "sr_cyrillic": "Јеси гладна?",
           "en": "Are you hungry?",
           "gloss_hint": "to a woman",
-          "context": "Important question in Serbia, where food is central to socializing.",
+          "context": "You're with a female friend around mealtime and want to check if she fancies eating.",
           "wordRefs": [
             {
               "id": "biti",
@@ -701,7 +824,7 @@
               "form": "f.sg"
             }
           ],
-          "notes": "'Gladna' = hungry (feminine). 'Gladan' for masculine.",
+          "notes": "'Gladna' = hungry (feminine); 'gladan' for a man. 'Jesi' is the stressed question form of 'si'.",
           "variations": [
             {
               "sr_latin": "Jesi gladan?",
@@ -716,35 +839,55 @@
           "sr_latin": "Ajde da jedemo nešto.",
           "sr_cyrillic": "Ајде да једемо нешто.",
           "en": "Let's eat something.",
-          "context": "Suggesting food. In Serbia, this is always a good idea.",
+          "context": "You're hanging out with a friend and getting peckish, so you suggest grabbing some food.",
           "wordRefs": [
             {
               "id": "hajde",
               "surface": "Ajde",
               "surface_cyrillic": "Ајде"
             },
-            "da-conj"
+            "da-conj",
+            {
+              "id": "jesti",
+              "surface": "jedemo",
+              "surface_cyrillic": "једемо",
+              "form": "1pl.pres"
+            },
+            "nesto"
           ],
-          "notes": "'Jesti' = to eat. 'Nešto' = something."
+          "notes": "'Jedemo' = 1pl of 'jesti' (to eat); 'da jedemo' = 'let's eat'. 'Nešto' = something."
         },
         {
           "id": "tx-gde-izlazimo",
           "sr_latin": "Gde izlazimo večeras?",
           "sr_cyrillic": "Где излазимо вечерас?",
           "en": "Where are we going out tonight?",
-          "context": "Planning a night out. Serbian nightlife culture is strong.",
+          "context": "It's evening and you're sorting out with friends where the night will actually take you.",
           "wordRefs": [
-            "gde"
+            "gde",
+            {
+              "id": "izlaziti",
+              "surface": "izlazimo",
+              "surface_cyrillic": "излазимо",
+              "form": "1pl.pres"
+            },
+            "veceras"
           ],
-          "notes": "'Izlaziti' = to go out. 'Večeras' = tonight."
+          "notes": "'Izlaziti' = to go out (for a night out); 'izlazimo' is the 1pl present. 'Večeras' = tonight."
         },
         {
           "id": "tx-dosadno-ajde",
           "sr_latin": "Dosadno mi je, ajde negde.",
           "sr_cyrillic": "Досадно ми је, ајде негде.",
           "en": "I'm bored, let's go somewhere.",
-          "context": "The classic 'I'm bored' text that leads to spontaneous plans.",
+          "context": "You're restless at home and text a friend to drag them into some spontaneous plan.",
           "wordRefs": [
+            {
+              "id": "dosadan",
+              "surface": "dosadno",
+              "surface_cyrillic": "досадно",
+              "form": "n.sg"
+            },
             "mi-dat",
             {
               "id": "biti",
@@ -756,9 +899,10 @@
               "id": "hajde",
               "surface": "ajde",
               "surface_cyrillic": "ајде"
-            }
+            },
+            "negde"
           ],
-          "notes": "'Negde' = somewhere. Serbians are great at spontaneous plans."
+          "notes": "'Dosadno mi je' = lit. 'it is boring to me', an experiencer construction with dative 'mi'. 'Negde' = somewhere."
         }
       ]
     }

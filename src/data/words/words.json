@@ -8928,5 +8928,2328 @@
       "everyday-frames"
     ],
     "notes": "Imperfective. Related to the adverb 'kasnije' (later)."
+  },
+  {
+    "id": "ajvar",
+    "lemma_sr_latin": "ajvar",
+    "lemma_sr_cyrillic": "ајвар",
+    "gloss_en": "roasted red pepper relish",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Domaći ajvar je najbolji.",
+        "sr_cyrillic": "Домаћи ајвар је најбољи.",
+        "en": "Homemade ajvar is the best."
+      }
+    ],
+    "notes": "From Turkish. A classic Balkan condiment."
+  },
+  {
+    "id": "bajo",
+    "lemma_sr_latin": "bajo",
+    "lemma_sr_cyrillic": "бајо",
+    "gloss_en": "buddy, pal",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Šta ima, bajo?",
+        "sr_cyrillic": "Шта има, бајо?",
+        "en": "What’s up, pal?"
+      }
+    ],
+    "notes": "Affectionate, folksy address for a man; common in Bosnian speech."
+  },
+  {
+    "id": "bez",
+    "lemma_sr_latin": "bez",
+    "lemma_sr_cyrillic": "без",
+    "gloss_en": "without",
+    "pos": "prep",
+    "examples": [
+      {
+        "sr_latin": "Kafa bez šećera.",
+        "sr_cyrillic": "Кафа без шећера.",
+        "en": "Coffee without sugar."
+      }
+    ],
+    "notes": "Takes the genitive."
+  },
+  {
+    "id": "bioskop",
+    "lemma_sr_latin": "bioskop",
+    "lemma_sr_cyrillic": "биоскоп",
+    "gloss_en": "cinema, movie theater",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Idemo u bioskop?",
+        "sr_cyrillic": "Идемо у биоскоп?",
+        "en": "Shall we go to the cinema?"
+      }
+    ],
+    "notes": "From Greek. In Croatian/Bosnian usually “kino”."
+  },
+  {
+    "id": "bleja",
+    "lemma_sr_latin": "bleja",
+    "lemma_sr_cyrillic": "блеја",
+    "gloss_en": "chilling, hanging out",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Danas je samo bleja.",
+        "sr_cyrillic": "Данас је само блеја.",
+        "en": "Today is just chilling."
+      }
+    ],
+    "notes": "Slang for relaxed doing-nothing."
+  },
+  {
+    "id": "blejati",
+    "lemma_sr_latin": "blejati",
+    "lemma_sr_cyrillic": "блејати",
+    "gloss_en": "to laze around, hang out",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Blejimo kod mene.",
+        "sr_cyrillic": "Блејимо код мене.",
+        "en": "Let’s hang out at my place."
+      }
+    ],
+    "notes": "Slang; literally “to bleat”."
+  },
+  {
+    "id": "budala",
+    "lemma_sr_latin": "budala",
+    "lemma_sr_cyrillic": "будала",
+    "gloss_en": "fool, idiot",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Ne budi budala.",
+        "sr_cyrillic": "Не буди будала.",
+        "en": "Don’t be a fool."
+      }
+    ],
+    "notes": "From Turkish. Used for any gender despite feminine form."
+  },
+  {
+    "id": "burek",
+    "lemma_sr_latin": "burek",
+    "lemma_sr_cyrillic": "бурек",
+    "gloss_en": "meat or cheese pastry",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Daj mi burek sa mesom.",
+        "sr_cyrillic": "Дај ми бурек са месом.",
+        "en": "Give me a burek with meat."
+      }
+    ],
+    "notes": "From Turkish. Phyllo pastry, a breakfast staple."
+  },
+  {
+    "id": "ceo",
+    "lemma_sr_latin": "ceo",
+    "lemma_sr_cyrillic": "цео",
+    "gloss_en": "whole, entire",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Ceo dan sam radio.",
+        "sr_cyrillic": "Цео дан сам радио.",
+        "en": "I worked the whole day."
+      }
+    ]
+  },
+  {
+    "id": "cestitati",
+    "lemma_sr_latin": "čestitati",
+    "lemma_sr_cyrillic": "честитати",
+    "gloss_en": "to congratulate",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Čestitam ti!",
+        "sr_cyrillic": "Честитам ти!",
+        "en": "Congratulations!"
+      }
+    ]
+  },
+  {
+    "id": "cevapi",
+    "lemma_sr_latin": "ćevapi",
+    "lemma_sr_cyrillic": "ћевапи",
+    "gloss_en": "grilled minced-meat fingers",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Naručili smo ćevape.",
+        "sr_cyrillic": "Наручили смо ћевапе.",
+        "en": "We ordered ćevapi."
+      }
+    ],
+    "notes": "From Turkish. Usually plural; singular ćevap."
+  },
+  {
+    "id": "cist",
+    "lemma_sr_latin": "čist",
+    "lemma_sr_cyrillic": "чист",
+    "gloss_en": "clean, pure",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Stan je čist.",
+        "sr_cyrillic": "Стан је чист.",
+        "en": "The apartment is clean."
+      }
+    ]
+  },
+  {
+    "id": "cutati",
+    "lemma_sr_latin": "ćutati",
+    "lemma_sr_cyrillic": "ћутати",
+    "gloss_en": "to be silent",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Zašto ćutiš?",
+        "sr_cyrillic": "Зашто ћутиш?",
+        "en": "Why are you silent?"
+      }
+    ]
+  },
+  {
+    "id": "daljinski",
+    "lemma_sr_latin": "daljinski",
+    "lemma_sr_cyrillic": "даљински",
+    "gloss_en": "remote control",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Gde je daljinski?",
+        "sr_cyrillic": "Где је даљински?",
+        "en": "Where is the remote?"
+      }
+    ],
+    "notes": "Short for “daljinski upravljač”; literally “remote” as an adjective."
+  },
+  {
+    "id": "desavati-se",
+    "lemma_sr_latin": "dešavati se",
+    "lemma_sr_cyrillic": "дешавати се",
+    "gloss_en": "to happen",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Šta se dešava?",
+        "sr_cyrillic": "Шта се дешава?",
+        "en": "What’s happening?"
+      }
+    ]
+  },
+  {
+    "id": "desavati",
+    "lemma_sr_latin": "dešavati",
+    "lemma_sr_cyrillic": "дешавати",
+    "gloss_en": "to happen, go on",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Nešto se loše dešava.",
+        "sr_cyrillic": "Нешто се лоше дешава.",
+        "en": "Something bad is going on."
+      }
+    ],
+    "notes": "Almost always used reflexively as “dešavati se”."
+  },
+  {
+    "id": "djubre",
+    "lemma_sr_latin": "đubre",
+    "lemma_sr_cyrillic": "ђубре",
+    "gloss_en": "trash, garbage",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      {
+        "sr_latin": "Baci đubre.",
+        "sr_cyrillic": "Баци ђубре.",
+        "en": "Take out the trash."
+      }
+    ],
+    "notes": "From Turkish (manure). Also an insult for a vile person."
+  },
+  {
+    "id": "dodati",
+    "lemma_sr_latin": "dodati",
+    "lemma_sr_cyrillic": "додати",
+    "gloss_en": "to pass, hand over",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Dodaj mi so.",
+        "sr_cyrillic": "Додај ми со.",
+        "en": "Pass me the salt."
+      }
+    ]
+  },
+  {
+    "id": "dogovoreno",
+    "lemma_sr_latin": "dogovoreno",
+    "lemma_sr_cyrillic": "договорено",
+    "gloss_en": "agreed, settled, deal",
+    "pos": "particle",
+    "examples": [
+      {
+        "sr_latin": "U pet sati? Dogovoreno!",
+        "sr_cyrillic": "У пет сати? Договорено!",
+        "en": "At five? Deal!"
+      }
+    ],
+    "notes": "Fixed expression sealing an agreement."
+  },
+  {
+    "id": "dogovoriti",
+    "lemma_sr_latin": "dogovoriti",
+    "lemma_sr_cyrillic": "договорити",
+    "gloss_en": "to arrange, agree on",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Hajde da se dogovorimo.",
+        "sr_cyrillic": "Хајде да се договоримо.",
+        "en": "Let’s come to an agreement."
+      }
+    ],
+    "notes": "Often reflexive: dogovoriti se."
+  },
+  {
+    "id": "domaci",
+    "lemma_sr_latin": "domaći",
+    "lemma_sr_cyrillic": "домаћи",
+    "gloss_en": "homemade, domestic",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Domaća rakija.",
+        "sr_cyrillic": "Домаћа ракија.",
+        "en": "Homemade rakija."
+      }
+    ]
+  },
+  {
+    "id": "donositi",
+    "lemma_sr_latin": "donositi",
+    "lemma_sr_cyrillic": "доносити",
+    "gloss_en": "to bring",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Ko donosi piće?",
+        "sr_cyrillic": "Ко доноси пиће?",
+        "en": "Who’s bringing the drinks?"
+      }
+    ]
+  },
+  {
+    "id": "dosadan",
+    "lemma_sr_latin": "dosadan",
+    "lemma_sr_cyrillic": "досадан",
+    "gloss_en": "boring",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Film je dosadan.",
+        "sr_cyrillic": "Филм је досадан.",
+        "en": "The movie is boring."
+      }
+    ]
+  },
+  {
+    "id": "dosadno",
+    "lemma_sr_latin": "dosadno",
+    "lemma_sr_cyrillic": "досадно",
+    "gloss_en": "boring, boringly",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "Dosadno mi je.",
+        "sr_cyrillic": "Досадно ми је.",
+        "en": "I’m bored."
+      }
+    ]
+  },
+  {
+    "id": "ej",
+    "lemma_sr_latin": "ej",
+    "lemma_sr_cyrillic": "еј",
+    "gloss_en": "hey",
+    "pos": "interj",
+    "examples": [
+      {
+        "sr_latin": "Ej, čekaj me!",
+        "sr_cyrillic": "Еј, чекај ме!",
+        "en": "Hey, wait for me!"
+      }
+    ]
+  },
+  {
+    "id": "faliti",
+    "lemma_sr_latin": "faliti",
+    "lemma_sr_cyrillic": "фалити",
+    "gloss_en": "to be missing, to lack",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Fališ mi.",
+        "sr_cyrillic": "Фалиш ми.",
+        "en": "I miss you."
+      }
+    ],
+    "notes": "Dative-experiencer: the missed thing is the subject."
+  },
+  {
+    "id": "frizider",
+    "lemma_sr_latin": "frižider",
+    "lemma_sr_cyrillic": "фрижидер",
+    "gloss_en": "fridge",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Mleko je u frižideru.",
+        "sr_cyrillic": "Млеко је у фрижидеру.",
+        "en": "The milk is in the fridge."
+      }
+    ]
+  },
+  {
+    "id": "frka",
+    "lemma_sr_latin": "frka",
+    "lemma_sr_cyrillic": "фрка",
+    "gloss_en": "fuss, rush, stress",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Velika frka na poslu.",
+        "sr_cyrillic": "Велика фрка на послу.",
+        "en": "Big rush at work."
+      }
+    ],
+    "notes": "Slang."
+  },
+  {
+    "id": "funkcionisati",
+    "lemma_sr_latin": "funkcionisati",
+    "lemma_sr_cyrillic": "функционисати",
+    "gloss_en": "to function, work",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Ovo ne funkcioniše.",
+        "sr_cyrillic": "Ово не функционише.",
+        "en": "This doesn’t work."
+      }
+    ]
+  },
+  {
+    "id": "gotov",
+    "lemma_sr_latin": "gotov",
+    "lemma_sr_cyrillic": "готов",
+    "gloss_en": "done, finished, ready",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Ručak je gotov.",
+        "sr_cyrillic": "Ручак је готов.",
+        "en": "Lunch is ready."
+      }
+    ]
+  },
+  {
+    "id": "guzva",
+    "lemma_sr_latin": "gužva",
+    "lemma_sr_cyrillic": "гужва",
+    "gloss_en": "crowd, rush",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Velika gužva u gradu.",
+        "sr_cyrillic": "Велика гужва у граду.",
+        "en": "Big crowd in town."
+      }
+    ]
+  },
+  {
+    "id": "hristos",
+    "lemma_sr_latin": "Hristos",
+    "lemma_sr_cyrillic": "Христос",
+    "gloss_en": "Christ",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Hristos se rodi!",
+        "sr_cyrillic": "Христос се роди!",
+        "en": "Christ is born!"
+      }
+    ],
+    "notes": "Used in the Orthodox holiday greeting."
+  },
+  {
+    "id": "inat",
+    "lemma_sr_latin": "inat",
+    "lemma_sr_cyrillic": "инат",
+    "gloss_en": "spite, stubborn defiance",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Radi to iz inata.",
+        "sr_cyrillic": "Ради то из ината.",
+        "en": "He does it out of spite."
+      }
+    ],
+    "notes": "From Turkish. A culturally loaded notion of stubborn pride."
+  },
+  {
+    "id": "izaci",
+    "lemma_sr_latin": "izaći",
+    "lemma_sr_cyrillic": "изаћи",
+    "gloss_en": "to go out, exit",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Hajde da izađemo večeras.",
+        "sr_cyrillic": "Хајде да изађемо вечерас.",
+        "en": "Let’s go out tonight."
+      }
+    ]
+  },
+  {
+    "id": "izlaziti",
+    "lemma_sr_latin": "izlaziti",
+    "lemma_sr_cyrillic": "излазити",
+    "gloss_en": "to go out",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Često izlazimo vikendom.",
+        "sr_cyrillic": "Често излазимо викендом.",
+        "en": "We often go out on weekends."
+      }
+    ]
+  },
+  {
+    "id": "iznervirati",
+    "lemma_sr_latin": "iznervirati",
+    "lemma_sr_cyrillic": "изнервирати",
+    "gloss_en": "to irritate, annoy",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Iznervirao me je.",
+        "sr_cyrillic": "Изнервирао ме је.",
+        "en": "He annoyed me."
+      }
+    ]
+  },
+  {
+    "id": "izneti",
+    "lemma_sr_latin": "izneti",
+    "lemma_sr_cyrillic": "изнети",
+    "gloss_en": "to take out, carry out",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Iznesi đubre.",
+        "sr_cyrillic": "Изнеси ђубре.",
+        "en": "Take out the trash."
+      }
+    ]
+  },
+  {
+    "id": "izuti-se",
+    "lemma_sr_latin": "izuti se",
+    "lemma_sr_cyrillic": "изути се",
+    "gloss_en": "to take off one’s shoes",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Izuj se kod vrata.",
+        "sr_cyrillic": "Изуј се код врата.",
+        "en": "Take off your shoes at the door."
+      }
+    ]
+  },
+  {
+    "id": "jako",
+    "lemma_sr_latin": "jako",
+    "lemma_sr_cyrillic": "јако",
+    "gloss_en": "strongly, very",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "Jako te volim.",
+        "sr_cyrillic": "Јако те волим.",
+        "en": "I love you very much."
+      }
+    ]
+  },
+  {
+    "id": "javiti-se",
+    "lemma_sr_latin": "javiti se",
+    "lemma_sr_cyrillic": "јавити се",
+    "gloss_en": "to get in touch, answer",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Javi se kad stigneš.",
+        "sr_cyrillic": "Јави се кад стигнеш.",
+        "en": "Get in touch when you arrive."
+      }
+    ]
+  },
+  {
+    "id": "javiti",
+    "lemma_sr_latin": "javiti",
+    "lemma_sr_cyrillic": "јавити",
+    "gloss_en": "to let know, inform",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Javi mi ako kasniš.",
+        "sr_cyrillic": "Јави ми ако касниш.",
+        "en": "Let me know if you’re late."
+      }
+    ]
+  },
+  {
+    "id": "jelo",
+    "lemma_sr_latin": "jelo",
+    "lemma_sr_cyrillic": "јело",
+    "gloss_en": "dish, meal, food",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      {
+        "sr_latin": "Omiljeno jelo mi je sarma.",
+        "sr_cyrillic": "Омиљено јело ми је сарма.",
+        "en": "My favorite dish is sarma."
+      }
+    ]
+  },
+  {
+    "id": "jok",
+    "lemma_sr_latin": "jok",
+    "lemma_sr_cyrillic": "јок",
+    "gloss_en": "nope",
+    "pos": "particle",
+    "examples": [
+      {
+        "sr_latin": "Jok, ne danas.",
+        "sr_cyrillic": "Јок, не данас.",
+        "en": "Nope, not today."
+      }
+    ],
+    "notes": "From Turkish. Casual, emphatic “no”."
+  },
+  {
+    "id": "kao",
+    "lemma_sr_latin": "kao",
+    "lemma_sr_cyrillic": "као",
+    "gloss_en": "like, as",
+    "pos": "conj",
+    "examples": [
+      {
+        "sr_latin": "Lep kao slika.",
+        "sr_cyrillic": "Леп као слика.",
+        "en": "Pretty as a picture."
+      }
+    ],
+    "notes": "Also a filler particle (“sort of”) in speech."
+  },
+  {
+    "id": "klasican",
+    "lemma_sr_latin": "klasičan",
+    "lemma_sr_cyrillic": "класичан",
+    "gloss_en": "classic, typical",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Klasična greška.",
+        "sr_cyrillic": "Класична грешка.",
+        "en": "A classic mistake."
+      }
+    ]
+  },
+  {
+    "id": "kljuc",
+    "lemma_sr_latin": "ključ",
+    "lemma_sr_cyrillic": "кључ",
+    "gloss_en": "key",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Zaboravio sam ključ.",
+        "sr_cyrillic": "Заборавио сам кључ.",
+        "en": "I forgot the key."
+      }
+    ]
+  },
+  {
+    "id": "krenuti",
+    "lemma_sr_latin": "krenuti",
+    "lemma_sr_cyrillic": "кренути",
+    "gloss_en": "to set off, start moving",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Kreni sad!",
+        "sr_cyrillic": "Крени сад!",
+        "en": "Set off now!"
+      }
+    ]
+  },
+  {
+    "id": "kuhati",
+    "lemma_sr_latin": "kuhati",
+    "lemma_sr_cyrillic": "кухати",
+    "gloss_en": "to cook",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Ona kuha ručak.",
+        "sr_cyrillic": "Она куха ручак.",
+        "en": "She’s cooking lunch."
+      }
+    ],
+    "notes": "Bosnian/Croatian variant; Serbian usually “kuvati”."
+  },
+  {
+    "id": "kul",
+    "lemma_sr_latin": "kul",
+    "lemma_sr_cyrillic": "кул",
+    "gloss_en": "cool",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "To je baš kul.",
+        "sr_cyrillic": "То је баш кул.",
+        "en": "That’s really cool."
+      }
+    ],
+    "notes": "From English; slang, indeclinable."
+  },
+  {
+    "id": "kupatilo",
+    "lemma_sr_latin": "kupatilo",
+    "lemma_sr_cyrillic": "купатило",
+    "gloss_en": "bathroom",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      {
+        "sr_latin": "Gde je kupatilo?",
+        "sr_cyrillic": "Где је купатило?",
+        "en": "Where is the bathroom?"
+      }
+    ]
+  },
+  {
+    "id": "kuvati",
+    "lemma_sr_latin": "kuvati",
+    "lemma_sr_cyrillic": "кувати",
+    "gloss_en": "to cook",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Volim da kuvam.",
+        "sr_cyrillic": "Волим да кувам.",
+        "en": "I like to cook."
+      }
+    ]
+  },
+  {
+    "id": "lagano",
+    "lemma_sr_latin": "lagano",
+    "lemma_sr_cyrillic": "лагано",
+    "gloss_en": "lightly, easy, gently",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "Lagano, bez žurbe.",
+        "sr_cyrillic": "Лагано, без журбе.",
+        "en": "Easy, no rush."
+      }
+    ]
+  },
+  {
+    "id": "leci",
+    "lemma_sr_latin": "leći",
+    "lemma_sr_cyrillic": "лећи",
+    "gloss_en": "to lie down",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Hoću da legnem.",
+        "sr_cyrillic": "Хоћу да легнем.",
+        "en": "I want to lie down."
+      }
+    ]
+  },
+  {
+    "id": "ludnica",
+    "lemma_sr_latin": "ludnica",
+    "lemma_sr_cyrillic": "лудница",
+    "gloss_en": "madhouse",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Napolju je ludnica.",
+        "sr_cyrillic": "Напољу је лудница.",
+        "en": "It’s a madhouse outside."
+      }
+    ]
+  },
+  {
+    "id": "luk",
+    "lemma_sr_latin": "luk",
+    "lemma_sr_cyrillic": "лук",
+    "gloss_en": "onion",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Iseckaj luk.",
+        "sr_cyrillic": "Исецкај лук.",
+        "en": "Chop the onion."
+      }
+    ],
+    "notes": "“Beli luk” is garlic."
+  },
+  {
+    "id": "majmun",
+    "lemma_sr_latin": "majmun",
+    "lemma_sr_cyrillic": "мајмун",
+    "gloss_en": "monkey",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Ponaša se kao majmun.",
+        "sr_cyrillic": "Понаша се као мајмун.",
+        "en": "He acts like a monkey."
+      }
+    ],
+    "notes": "From Turkish. Also a playful insult."
+  },
+  {
+    "id": "mesati",
+    "lemma_sr_latin": "mešati",
+    "lemma_sr_cyrillic": "мешати",
+    "gloss_en": "to stir, mix",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Mešaj da ne zagori.",
+        "sr_cyrillic": "Мешај да не загори.",
+        "en": "Stir so it doesn’t burn."
+      }
+    ]
+  },
+  {
+    "id": "mozda",
+    "lemma_sr_latin": "možda",
+    "lemma_sr_cyrillic": "можда",
+    "gloss_en": "maybe",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "Možda dođem.",
+        "sr_cyrillic": "Можда дођем.",
+        "en": "Maybe I’ll come."
+      }
+    ]
+  },
+  {
+    "id": "naci",
+    "lemma_sr_latin": "naći",
+    "lemma_sr_cyrillic": "наћи",
+    "gloss_en": "to find",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Ne mogu da nađem ključ.",
+        "sr_cyrillic": "Не могу да нађем кључ.",
+        "en": "I can’t find the key."
+      }
+    ]
+  },
+  {
+    "id": "najesti-se",
+    "lemma_sr_latin": "najesti se",
+    "lemma_sr_cyrillic": "најести се",
+    "gloss_en": "to eat one’s fill",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Najeo sam se.",
+        "sr_cyrillic": "Најео сам се.",
+        "en": "I’m full."
+      }
+    ]
+  },
+  {
+    "id": "nam-dat",
+    "lemma_sr_latin": "nam",
+    "lemma_sr_cyrillic": "нам",
+    "gloss_en": "to us",
+    "pos": "pron",
+    "examples": [
+      {
+        "sr_latin": "Daj nam vremena.",
+        "sr_cyrillic": "Дај нам времена.",
+        "en": "Give us time."
+      }
+    ],
+    "notes": "Dative clitic of “mi”; unstressed."
+  },
+  {
+    "id": "napraviti",
+    "lemma_sr_latin": "napraviti",
+    "lemma_sr_cyrillic": "направити",
+    "gloss_en": "to make, do",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Napravio sam kafu.",
+        "sr_cyrillic": "Направио сам кафу.",
+        "en": "I made coffee."
+      }
+    ]
+  },
+  {
+    "id": "napredovati",
+    "lemma_sr_latin": "napredovati",
+    "lemma_sr_cyrillic": "напредовати",
+    "gloss_en": "to progress, advance",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Lepo napreduješ.",
+        "sr_cyrillic": "Лепо напредујеш.",
+        "en": "You’re progressing nicely."
+      }
+    ]
+  },
+  {
+    "id": "naruciti",
+    "lemma_sr_latin": "naručiti",
+    "lemma_sr_cyrillic": "наручити",
+    "gloss_en": "to order",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Naručićemo picu.",
+        "sr_cyrillic": "Наручићемо пицу.",
+        "en": "We’ll order pizza."
+      }
+    ]
+  },
+  {
+    "id": "nervirati",
+    "lemma_sr_latin": "nervirati",
+    "lemma_sr_cyrillic": "нервирати",
+    "gloss_en": "to annoy, irritate",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Ne nerviraj me.",
+        "sr_cyrillic": "Не нервирај ме.",
+        "en": "Don’t annoy me."
+      }
+    ]
+  },
+  {
+    "id": "nestati",
+    "lemma_sr_latin": "nestati",
+    "lemma_sr_cyrillic": "нестати",
+    "gloss_en": "to disappear",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Nestao je bez traga.",
+        "sr_cyrillic": "Нестао је без трага.",
+        "en": "He disappeared without a trace."
+      }
+    ]
+  },
+  {
+    "id": "oblaciti",
+    "lemma_sr_latin": "oblačiti",
+    "lemma_sr_cyrillic": "облачити",
+    "gloss_en": "to put on, get dressed",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Oblači se, idemo.",
+        "sr_cyrillic": "Облачи се, идемо.",
+        "en": "Get dressed, we’re going."
+      }
+    ],
+    "notes": "Reflexive “oblačiti se” = to get dressed."
+  },
+  {
+    "id": "obrukati-se",
+    "lemma_sr_latin": "obrukati se",
+    "lemma_sr_cyrillic": "обрукати се",
+    "gloss_en": "to embarrass oneself",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Baš sam se obrukao.",
+        "sr_cyrillic": "Баш сам се обрукао.",
+        "en": "I really embarrassed myself."
+      }
+    ]
+  },
+  {
+    "id": "odmah",
+    "lemma_sr_latin": "odmah",
+    "lemma_sr_cyrillic": "одмах",
+    "gloss_en": "right away, immediately",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "Dolazim odmah.",
+        "sr_cyrillic": "Долазим одмах.",
+        "en": "I’m coming right away."
+      }
+    ]
+  },
+  {
+    "id": "onda",
+    "lemma_sr_latin": "onda",
+    "lemma_sr_cyrillic": "онда",
+    "gloss_en": "then",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "I šta onda?",
+        "sr_cyrillic": "И шта онда?",
+        "en": "And then what?"
+      }
+    ]
+  },
+  {
+    "id": "opet",
+    "lemma_sr_latin": "opet",
+    "lemma_sr_cyrillic": "опет",
+    "gloss_en": "again",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "Opet kasniš.",
+        "sr_cyrillic": "Опет касниш.",
+        "en": "You’re late again."
+      }
+    ]
+  },
+  {
+    "id": "ostajati",
+    "lemma_sr_latin": "ostajati",
+    "lemma_sr_cyrillic": "остајати",
+    "gloss_en": "to stay, remain",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Ostajem kod kuće.",
+        "sr_cyrillic": "Остајем код куће.",
+        "en": "I’m staying home."
+      }
+    ]
+  },
+  {
+    "id": "ostati",
+    "lemma_sr_latin": "ostati",
+    "lemma_sr_cyrillic": "остати",
+    "gloss_en": "to stay, remain",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Ostani još malo.",
+        "sr_cyrillic": "Остани још мало.",
+        "en": "Stay a bit longer."
+      }
+    ]
+  },
+  {
+    "id": "otkazati",
+    "lemma_sr_latin": "otkazati",
+    "lemma_sr_cyrillic": "отказати",
+    "gloss_en": "to cancel",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Moram da otkažem.",
+        "sr_cyrillic": "Морам да откажем.",
+        "en": "I have to cancel."
+      }
+    ]
+  },
+  {
+    "id": "paprika",
+    "lemma_sr_latin": "paprika",
+    "lemma_sr_cyrillic": "паприка",
+    "gloss_en": "pepper (vegetable)",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Punjena paprika.",
+        "sr_cyrillic": "Пуњена паприка.",
+        "en": "Stuffed peppers."
+      }
+    ]
+  },
+  {
+    "id": "pauza",
+    "lemma_sr_latin": "pauza",
+    "lemma_sr_cyrillic": "пауза",
+    "gloss_en": "break, pause",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Hajde na pauzu.",
+        "sr_cyrillic": "Хајде на паузу.",
+        "en": "Let’s take a break."
+      }
+    ],
+    "notes": "From German “Pause”."
+  },
+  {
+    "id": "paziti",
+    "lemma_sr_latin": "paziti",
+    "lemma_sr_cyrillic": "пазити",
+    "gloss_en": "to watch out, take care",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Pazi se!",
+        "sr_cyrillic": "Пази се!",
+        "en": "Take care of yourself!"
+      }
+    ]
+  },
+  {
+    "id": "pica",
+    "lemma_sr_latin": "pica",
+    "lemma_sr_cyrillic": "пица",
+    "gloss_en": "pizza",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Naručimo picu.",
+        "sr_cyrillic": "Наручимо пицу.",
+        "en": "Let’s order pizza."
+      }
+    ]
+  },
+  {
+    "id": "pidzama",
+    "lemma_sr_latin": "pidžama",
+    "lemma_sr_cyrillic": "пиџама",
+    "gloss_en": "pajamas",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "U pidžami sam ceo dan.",
+        "sr_cyrillic": "У пиџами сам цео дан.",
+        "en": "I’m in pajamas all day."
+      }
+    ],
+    "notes": "From Persian via Turkish."
+  },
+  {
+    "id": "plan",
+    "lemma_sr_latin": "plan",
+    "lemma_sr_cyrillic": "план",
+    "gloss_en": "plan",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Koji je plan za večeras?",
+        "sr_cyrillic": "Који је план за вечерас?",
+        "en": "What’s the plan for tonight?"
+      }
+    ]
+  },
+  {
+    "id": "pljeskavica",
+    "lemma_sr_latin": "pljeskavica",
+    "lemma_sr_cyrillic": "пљескавица",
+    "gloss_en": "spiced meat patty",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Pljeskavica sa svime.",
+        "sr_cyrillic": "Пљескавица са свиме.",
+        "en": "A patty with everything."
+      }
+    ],
+    "notes": "A Balkan burger; grill staple."
+  },
+  {
+    "id": "po",
+    "lemma_sr_latin": "po",
+    "lemma_sr_cyrillic": "по",
+    "gloss_en": "by, according to, per",
+    "pos": "prep",
+    "examples": [
+      {
+        "sr_latin": "Po meni, to je dobro.",
+        "sr_cyrillic": "По мени, то је добро.",
+        "en": "In my opinion, that’s good."
+      }
+    ],
+    "notes": "Many uses; takes dative or locative."
+  },
+  {
+    "id": "pojacati",
+    "lemma_sr_latin": "pojačati",
+    "lemma_sr_cyrillic": "појачати",
+    "gloss_en": "to turn up, amplify",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Pojačaj muziku.",
+        "sr_cyrillic": "Појачај музику.",
+        "en": "Turn up the music."
+      }
+    ]
+  },
+  {
+    "id": "pojam",
+    "lemma_sr_latin": "pojam",
+    "lemma_sr_cyrillic": "појам",
+    "gloss_en": "concept, clue",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Nemam pojma.",
+        "sr_cyrillic": "Немам појма.",
+        "en": "I have no clue."
+      }
+    ]
+  },
+  {
+    "id": "polako",
+    "lemma_sr_latin": "polako",
+    "lemma_sr_cyrillic": "полако",
+    "gloss_en": "slowly, easy, take it easy",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "Polako, stići ćemo.",
+        "sr_cyrillic": "Полако, стићи ћемо.",
+        "en": "Take it easy, we’ll make it."
+      }
+    ]
+  },
+  {
+    "id": "ponestati",
+    "lemma_sr_latin": "ponestati",
+    "lemma_sr_cyrillic": "понестати",
+    "gloss_en": "to run out of",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Ponestalo nam je mleka.",
+        "sr_cyrillic": "Понестало нам је млека.",
+        "en": "We ran out of milk."
+      }
+    ]
+  },
+  {
+    "id": "ponosan",
+    "lemma_sr_latin": "ponosan",
+    "lemma_sr_cyrillic": "поносан",
+    "gloss_en": "proud",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Ponosan sam na tebe.",
+        "sr_cyrillic": "Поносан сам на тебе.",
+        "en": "I’m proud of you."
+      }
+    ]
+  },
+  {
+    "id": "popiti",
+    "lemma_sr_latin": "popiti",
+    "lemma_sr_cyrillic": "попити",
+    "gloss_en": "to drink up",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Popij vodu.",
+        "sr_cyrillic": "Попиј воду.",
+        "en": "Drink up the water."
+      }
+    ]
+  },
+  {
+    "id": "poseban",
+    "lemma_sr_latin": "poseban",
+    "lemma_sr_cyrillic": "посебан",
+    "gloss_en": "special",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Ti si poseban.",
+        "sr_cyrillic": "Ти си посебан.",
+        "en": "You’re special."
+      }
+    ]
+  },
+  {
+    "id": "pozuriti",
+    "lemma_sr_latin": "požuriti",
+    "lemma_sr_cyrillic": "пожурити",
+    "gloss_en": "to hurry",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Požuri, kasnimo.",
+        "sr_cyrillic": "Пожури, каснимо.",
+        "en": "Hurry, we’re late."
+      }
+    ]
+  },
+  {
+    "id": "prati",
+    "lemma_sr_latin": "prati",
+    "lemma_sr_cyrillic": "прати",
+    "gloss_en": "to wash",
+    "pos": "verb",
+    "aspect": "impf",
+    "forms": [
+      {
+        "tag": "1sg.pres",
+        "sr_latin": "perem",
+        "sr_cyrillic": "перем",
+        "en": "I wash"
+      }
+    ],
+    "examples": [
+      {
+        "sr_latin": "Perem suđe.",
+        "sr_cyrillic": "Перем суђе.",
+        "en": "I’m washing the dishes."
+      }
+    ]
+  },
+  {
+    "id": "praviti",
+    "lemma_sr_latin": "praviti",
+    "lemma_sr_cyrillic": "правити",
+    "gloss_en": "to make, do",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Pravim večeru.",
+        "sr_cyrillic": "Правим вечеру.",
+        "en": "I’m making dinner."
+      }
+    ]
+  },
+  {
+    "id": "praznik",
+    "lemma_sr_latin": "praznik",
+    "lemma_sr_cyrillic": "празник",
+    "gloss_en": "holiday",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Sutra je praznik.",
+        "sr_cyrillic": "Сутра је празник.",
+        "en": "Tomorrow is a holiday."
+      }
+    ]
+  },
+  {
+    "id": "prekratak",
+    "lemma_sr_latin": "prekratak",
+    "lemma_sr_cyrillic": "прекратак",
+    "gloss_en": "too short",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Dan je prekratak.",
+        "sr_cyrillic": "Дан је прекратак.",
+        "en": "The day is too short."
+      }
+    ]
+  },
+  {
+    "id": "presrecan",
+    "lemma_sr_latin": "presrećan",
+    "lemma_sr_cyrillic": "пресрећан",
+    "gloss_en": "overjoyed",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Presrećna sam!",
+        "sr_cyrillic": "Пресрећна сам!",
+        "en": "I’m overjoyed!"
+      }
+    ]
+  },
+  {
+    "id": "probati",
+    "lemma_sr_latin": "probati",
+    "lemma_sr_cyrillic": "пробати",
+    "gloss_en": "to try, taste",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Probaj ovo.",
+        "sr_cyrillic": "Пробај ово.",
+        "en": "Try this."
+      }
+    ]
+  },
+  {
+    "id": "problem",
+    "lemma_sr_latin": "problem",
+    "lemma_sr_cyrillic": "проблем",
+    "gloss_en": "problem",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Nema problema.",
+        "sr_cyrillic": "Нема проблема.",
+        "en": "No problem."
+      }
+    ]
+  },
+  {
+    "id": "propasti",
+    "lemma_sr_latin": "propasti",
+    "lemma_sr_cyrillic": "пропасти",
+    "gloss_en": "to fall through, fail",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Plan je propao.",
+        "sr_cyrillic": "План је пропао.",
+        "en": "The plan fell through."
+      }
+    ]
+  },
+  {
+    "id": "prosetati",
+    "lemma_sr_latin": "prošetati",
+    "lemma_sr_cyrillic": "прошетати",
+    "gloss_en": "to take a stroll",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Hajde da prošetamo.",
+        "sr_cyrillic": "Хајде да прошетамо.",
+        "en": "Let’s take a stroll."
+      }
+    ]
+  },
+  {
+    "id": "proslaviti",
+    "lemma_sr_latin": "proslaviti",
+    "lemma_sr_cyrillic": "прославити",
+    "gloss_en": "to celebrate",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Proslavili smo rođendan.",
+        "sr_cyrillic": "Прославили смо рођендан.",
+        "en": "We celebrated the birthday."
+      }
+    ]
+  },
+  {
+    "id": "pukati",
+    "lemma_sr_latin": "pukati",
+    "lemma_sr_cyrillic": "пукати",
+    "gloss_en": "to burst, crack",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Pukao mi je telefon.",
+        "sr_cyrillic": "Пукао ми је телефон.",
+        "en": "My phone’s screen cracked."
+      }
+    ]
+  },
+  {
+    "id": "puniti",
+    "lemma_sr_latin": "puniti",
+    "lemma_sr_cyrillic": "пунити",
+    "gloss_en": "to fill; to turn (an age)",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Punim trideset godina.",
+        "sr_cyrillic": "Пуним тридесет година.",
+        "en": "I’m turning thirty."
+      }
+    ]
+  },
+  {
+    "id": "put",
+    "lemma_sr_latin": "put",
+    "lemma_sr_cyrillic": "пут",
+    "gloss_en": "time, occasion; road",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Prvi put sam ovde.",
+        "sr_cyrillic": "Први пут сам овде.",
+        "en": "It’s my first time here."
+      }
+    ],
+    "notes": "“Put” also means road/way."
+  },
+  {
+    "id": "roditi",
+    "lemma_sr_latin": "roditi",
+    "lemma_sr_cyrillic": "родити",
+    "gloss_en": "to give birth; be born",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Hristos se rodi.",
+        "sr_cyrillic": "Христос се роди.",
+        "en": "Christ is born."
+      }
+    ],
+    "notes": "Reflexive “roditi se” = to be born."
+  },
+  {
+    "id": "sacekati",
+    "lemma_sr_latin": "sačekati",
+    "lemma_sr_cyrillic": "сачекати",
+    "gloss_en": "to wait a moment",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Sačekaj me ovde.",
+        "sr_cyrillic": "Сачекај ме овде.",
+        "en": "Wait for me here."
+      }
+    ]
+  },
+  {
+    "id": "sarma",
+    "lemma_sr_latin": "sarma",
+    "lemma_sr_cyrillic": "сарма",
+    "gloss_en": "cabbage rolls",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Baba pravi najbolju sarmu.",
+        "sr_cyrillic": "Баба прави најбољу сарму.",
+        "en": "Grandma makes the best sarma."
+      }
+    ],
+    "notes": "From Turkish. Minced meat in cabbage leaves."
+  },
+  {
+    "id": "sebe",
+    "lemma_sr_latin": "sebe",
+    "lemma_sr_cyrillic": "себе",
+    "gloss_en": "oneself",
+    "pos": "pron",
+    "examples": [
+      {
+        "sr_latin": "Pazi na sebe.",
+        "sr_cyrillic": "Пази на себе.",
+        "en": "Take care of yourself."
+      }
+    ],
+    "notes": "Reflexive pronoun; no nominative."
+  },
+  {
+    "id": "seci",
+    "lemma_sr_latin": "seći",
+    "lemma_sr_cyrillic": "сећи",
+    "gloss_en": "to cut",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Seci hleb.",
+        "sr_cyrillic": "Сеци хлеб.",
+        "en": "Cut the bread."
+      }
+    ]
+  },
+  {
+    "id": "skociti",
+    "lemma_sr_latin": "skočiti",
+    "lemma_sr_cyrillic": "скочити",
+    "gloss_en": "to jump; nip over",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Skočiću do prodavnice.",
+        "sr_cyrillic": "Скочићу до продавнице.",
+        "en": "I’ll nip over to the shop."
+      }
+    ]
+  },
+  {
+    "id": "skuvati",
+    "lemma_sr_latin": "skuvati",
+    "lemma_sr_cyrillic": "скувати",
+    "gloss_en": "to cook up",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Skuvaj kafu.",
+        "sr_cyrillic": "Скувај кафу.",
+        "en": "Make some coffee."
+      }
+    ]
+  },
+  {
+    "id": "slava",
+    "lemma_sr_latin": "slava",
+    "lemma_sr_cyrillic": "слава",
+    "gloss_en": "family patron-saint feast",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Sutra nam je slava.",
+        "sr_cyrillic": "Сутра нам је слава.",
+        "en": "Tomorrow is our slava."
+      }
+    ],
+    "notes": "A Serbian Orthodox family tradition; also means “glory”."
+  },
+  {
+    "id": "slaviti",
+    "lemma_sr_latin": "slaviti",
+    "lemma_sr_cyrillic": "славити",
+    "gloss_en": "to celebrate",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Slavimo zajedno.",
+        "sr_cyrillic": "Славимо заједно.",
+        "en": "We celebrate together."
+      }
+    ]
+  },
+  {
+    "id": "slobodan",
+    "lemma_sr_latin": "slobodan",
+    "lemma_sr_cyrillic": "слободан",
+    "gloss_en": "free, available",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Jesi li slobodan večeras?",
+        "sr_cyrillic": "Јеси ли слободан вечерас?",
+        "en": "Are you free tonight?"
+      }
+    ]
+  },
+  {
+    "id": "smanjiti",
+    "lemma_sr_latin": "smanjiti",
+    "lemma_sr_cyrillic": "смањити",
+    "gloss_en": "to reduce, lower",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Smanji ton.",
+        "sr_cyrillic": "Смањи тон.",
+        "en": "Turn down the volume."
+      }
+    ]
+  },
+  {
+    "id": "smeh",
+    "lemma_sr_latin": "smeh",
+    "lemma_sr_cyrillic": "смех",
+    "gloss_en": "laughter",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Prsnuli smo u smeh.",
+        "sr_cyrillic": "Прснули смо у смех.",
+        "en": "We burst into laughter."
+      }
+    ]
+  },
+  {
+    "id": "smisao",
+    "lemma_sr_latin": "smisao",
+    "lemma_sr_cyrillic": "смисао",
+    "gloss_en": "sense, meaning",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "U čemu je smisao?",
+        "sr_cyrillic": "У чему је смисао?",
+        "en": "What’s the point?"
+      }
+    ]
+  },
+  {
+    "id": "smor",
+    "lemma_sr_latin": "smor",
+    "lemma_sr_cyrillic": "смор",
+    "gloss_en": "a bore, a drag",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Ovo je totalni smor.",
+        "sr_cyrillic": "Ово је тотални смор.",
+        "en": "This is a total drag."
+      }
+    ],
+    "notes": "Slang."
+  },
+  {
+    "id": "smoriti",
+    "lemma_sr_latin": "smoriti",
+    "lemma_sr_cyrillic": "сморити",
+    "gloss_en": "to bore; be fed up",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Smorio sam se.",
+        "sr_cyrillic": "Сморио сам се.",
+        "en": "I’m bored stiff."
+      }
+    ],
+    "notes": "Slang; reflexive “smoriti se” = to get fed up."
+  },
+  {
+    "id": "staviti",
+    "lemma_sr_latin": "staviti",
+    "lemma_sr_cyrillic": "ставити",
+    "gloss_en": "to put, place",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Stavi to na sto.",
+        "sr_cyrillic": "Стави то на сто.",
+        "en": "Put that on the table."
+      }
+    ]
+  },
+  {
+    "id": "strasno",
+    "lemma_sr_latin": "strašno",
+    "lemma_sr_cyrillic": "страшно",
+    "gloss_en": "terribly, scary",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "Strašno mi nedostaješ.",
+        "sr_cyrillic": "Страшно ми недостајеш.",
+        "en": "I miss you terribly."
+      }
+    ]
+  },
+  {
+    "id": "strava",
+    "lemma_sr_latin": "strava",
+    "lemma_sr_cyrillic": "страва",
+    "gloss_en": "horror; awesome (slang)",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Žurka je bila strava.",
+        "sr_cyrillic": "Журка је била страва.",
+        "en": "The party was awesome."
+      }
+    ],
+    "notes": "Literally “horror”; in slang means “awesome”."
+  },
+  {
+    "id": "sud",
+    "lemma_sr_latin": "sud",
+    "lemma_sr_cyrillic": "суд",
+    "gloss_en": "dish, vessel",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Operi sudove.",
+        "sr_cyrillic": "Опери судове.",
+        "en": "Wash the dishes."
+      }
+    ],
+    "notes": "Plural “sudovi” (dishes). Also means “court”."
+  },
+  {
+    "id": "svetlo",
+    "lemma_sr_latin": "svetlo",
+    "lemma_sr_cyrillic": "светло",
+    "gloss_en": "light",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      {
+        "sr_latin": "Ugasi svetlo.",
+        "sr_cyrillic": "Угаси светло.",
+        "en": "Turn off the light."
+      }
+    ]
+  },
+  {
+    "id": "svidjati-se",
+    "lemma_sr_latin": "sviđati se",
+    "lemma_sr_cyrillic": "свиђати се",
+    "gloss_en": "to like, to please",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Sviđaš mi se.",
+        "sr_cyrillic": "Свиђаш ми се.",
+        "en": "I like you."
+      }
+    ],
+    "notes": "Dative-experiencer: the liked thing is the subject."
+  },
+  {
+    "id": "tacan",
+    "lemma_sr_latin": "tačan",
+    "lemma_sr_cyrillic": "тачан",
+    "gloss_en": "exact, correct",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Tačan odgovor.",
+        "sr_cyrillic": "Тачан одговор.",
+        "en": "The correct answer."
+      }
+    ]
+  },
+  {
+    "id": "terati",
+    "lemma_sr_latin": "terati",
+    "lemma_sr_cyrillic": "терати",
+    "gloss_en": "to drive, push",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Ne teraj me.",
+        "sr_cyrillic": "Не терај ме.",
+        "en": "Don’t push me."
+      }
+    ]
+  },
+  {
+    "id": "topiti-se",
+    "lemma_sr_latin": "topiti se",
+    "lemma_sr_cyrillic": "топити се",
+    "gloss_en": "to melt",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Sneg se topi.",
+        "sr_cyrillic": "Снег се топи.",
+        "en": "The snow is melting."
+      }
+    ]
+  },
+  {
+    "id": "tuzan",
+    "lemma_sr_latin": "tužan",
+    "lemma_sr_cyrillic": "тужан",
+    "gloss_en": "sad",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Zašto si tužan?",
+        "sr_cyrillic": "Зашто си тужан?",
+        "en": "Why are you sad?"
+      }
+    ]
+  },
+  {
+    "id": "ubijati",
+    "lemma_sr_latin": "ubijati",
+    "lemma_sr_cyrillic": "убијати",
+    "gloss_en": "to kill",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Vrućina me ubija.",
+        "sr_cyrillic": "Врућина ме убија.",
+        "en": "The heat is killing me."
+      }
+    ]
+  },
+  {
+    "id": "ugasiti",
+    "lemma_sr_latin": "ugasiti",
+    "lemma_sr_cyrillic": "угасити",
+    "gloss_en": "to turn off",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Ugasi televizor.",
+        "sr_cyrillic": "Угаси телевизор.",
+        "en": "Turn off the TV."
+      }
+    ]
+  },
+  {
+    "id": "ukusan",
+    "lemma_sr_latin": "ukusan",
+    "lemma_sr_cyrillic": "укусан",
+    "gloss_en": "tasty",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Ručak je bio ukusan.",
+        "sr_cyrillic": "Ручак је био укусан.",
+        "en": "Lunch was tasty."
+      }
+    ]
+  },
+  {
+    "id": "umreti",
+    "lemma_sr_latin": "umreti",
+    "lemma_sr_cyrillic": "умрети",
+    "gloss_en": "to die",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Umreću od smeha.",
+        "sr_cyrillic": "Умрећу од смеха.",
+        "en": "I’ll die laughing."
+      }
+    ]
+  },
+  {
+    "id": "usisati",
+    "lemma_sr_latin": "usisati",
+    "lemma_sr_cyrillic": "усисати",
+    "gloss_en": "to vacuum",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Treba usisati sobu.",
+        "sr_cyrillic": "Треба усисати собу.",
+        "en": "The room needs vacuuming."
+      }
+    ]
+  },
+  {
+    "id": "uskoro",
+    "lemma_sr_latin": "uskoro",
+    "lemma_sr_cyrillic": "ускоро",
+    "gloss_en": "soon",
+    "pos": "adv",
+    "examples": [
+      {
+        "sr_latin": "Vidimo se uskoro.",
+        "sr_cyrillic": "Видимо се ускоро.",
+        "en": "See you soon."
+      }
+    ]
+  },
+  {
+    "id": "uspeti",
+    "lemma_sr_latin": "uspeti",
+    "lemma_sr_cyrillic": "успети",
+    "gloss_en": "to succeed, manage",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Uspeo sam!",
+        "sr_cyrillic": "Успео сам!",
+        "en": "I made it!"
+      }
+    ]
+  },
+  {
+    "id": "ustati",
+    "lemma_sr_latin": "ustati",
+    "lemma_sr_cyrillic": "устати",
+    "gloss_en": "to get up, stand up",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Ustani, kasno je.",
+        "sr_cyrillic": "Устани, касно је.",
+        "en": "Get up, it’s late."
+      }
+    ]
+  },
+  {
+    "id": "uvo",
+    "lemma_sr_latin": "uvo",
+    "lemma_sr_cyrillic": "уво",
+    "gloss_en": "ear",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      {
+        "sr_latin": "Boli me uvo.",
+        "sr_cyrillic": "Боли ме уво.",
+        "en": "My ear hurts."
+      }
+    ]
+  },
+  {
+    "id": "vatra",
+    "lemma_sr_latin": "vatra",
+    "lemma_sr_cyrillic": "ватра",
+    "gloss_en": "fire, heat",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Smanji vatru.",
+        "sr_cyrillic": "Смањи ватру.",
+        "en": "Lower the heat."
+      }
+    ]
+  },
+  {
+    "id": "vazan",
+    "lemma_sr_latin": "važan",
+    "lemma_sr_cyrillic": "важан",
+    "gloss_en": "important",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "To mi je važno.",
+        "sr_cyrillic": "То ми је важно.",
+        "en": "That’s important to me."
+      }
+    ]
+  },
+  {
+    "id": "verovati",
+    "lemma_sr_latin": "verovati",
+    "lemma_sr_cyrillic": "веровати",
+    "gloss_en": "to believe",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Ne mogu da verujem.",
+        "sr_cyrillic": "Не могу да верујем.",
+        "en": "I can’t believe it."
+      }
+    ]
+  },
+  {
+    "id": "ves",
+    "lemma_sr_latin": "veš",
+    "lemma_sr_cyrillic": "веш",
+    "gloss_en": "laundry",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Moram da operem veš.",
+        "sr_cyrillic": "Морам да оперем веш.",
+        "en": "I have to do the laundry."
+      }
+    ],
+    "notes": "From German “Wäsche”. Also means underwear."
+  },
+  {
+    "id": "vrata",
+    "lemma_sr_latin": "vrata",
+    "lemma_sr_cyrillic": "врата",
+    "gloss_en": "door",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      {
+        "sr_latin": "Zatvori vrata.",
+        "sr_cyrillic": "Затвори врата.",
+        "en": "Close the door."
+      }
+    ],
+    "notes": "Plurale tantum: always plural in form."
+  },
+  {
+    "id": "vruc",
+    "lemma_sr_latin": "vruć",
+    "lemma_sr_cyrillic": "врућ",
+    "gloss_en": "hot",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Čaj je vruć.",
+        "sr_cyrillic": "Чај је врућ.",
+        "en": "The tea is hot."
+      }
+    ]
+  },
+  {
+    "id": "vuk",
+    "lemma_sr_latin": "vuk",
+    "lemma_sr_cyrillic": "вук",
+    "gloss_en": "wolf",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Gladan kao vuk.",
+        "sr_cyrillic": "Гладан као вук.",
+        "en": "Hungry as a wolf."
+      }
+    ]
+  },
+  {
+    "id": "zabavan",
+    "lemma_sr_latin": "zabavan",
+    "lemma_sr_cyrillic": "забаван",
+    "gloss_en": "fun, entertaining",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Baš si zabavan.",
+        "sr_cyrillic": "Баш си забаван.",
+        "en": "You’re really fun."
+      }
+    ]
+  },
+  {
+    "id": "zagoreti",
+    "lemma_sr_latin": "zagoreti",
+    "lemma_sr_cyrillic": "загорети",
+    "gloss_en": "to burn, scorch",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Ručak je zagoreo.",
+        "sr_cyrillic": "Ручак је загорео.",
+        "en": "Lunch got burned."
+      }
+    ]
+  },
+  {
+    "id": "zakljucati",
+    "lemma_sr_latin": "zaključati",
+    "lemma_sr_cyrillic": "закључати",
+    "gloss_en": "to lock",
+    "pos": "verb",
+    "aspect": "perf",
+    "examples": [
+      {
+        "sr_latin": "Zaključaj vrata.",
+        "sr_cyrillic": "Закључај врата.",
+        "en": "Lock the door."
+      }
+    ]
+  },
+  {
+    "id": "zao",
+    "lemma_sr_latin": "zao",
+    "lemma_sr_cyrillic": "зао",
+    "gloss_en": "sorry, grievous",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Žao mi je.",
+        "sr_cyrillic": "Жао ми је.",
+        "en": "I’m sorry."
+      }
+    ],
+    "notes": "Mostly in “žao mi je” (I’m sorry); also means “evil”."
+  },
+  {
+    "id": "zauzet",
+    "lemma_sr_latin": "zauzet",
+    "lemma_sr_cyrillic": "заузет",
+    "gloss_en": "busy, occupied",
+    "pos": "adj",
+    "examples": [
+      {
+        "sr_latin": "Zauzet sam danas.",
+        "sr_cyrillic": "Заузет сам данас.",
+        "en": "I’m busy today."
+      }
+    ]
+  },
+  {
+    "id": "zdravlje",
+    "lemma_sr_latin": "zdravlje",
+    "lemma_sr_cyrillic": "здравље",
+    "gloss_en": "health",
+    "pos": "noun",
+    "gender": "n",
+    "examples": [
+      {
+        "sr_latin": "Živeli, za zdravlje!",
+        "sr_cyrillic": "Живели, за здравље!",
+        "en": "Cheers, to health!"
+      }
+    ]
+  },
+  {
+    "id": "zivot",
+    "lemma_sr_latin": "život",
+    "lemma_sr_cyrillic": "живот",
+    "gloss_en": "life",
+    "pos": "noun",
+    "gender": "m",
+    "examples": [
+      {
+        "sr_latin": "Život je lep.",
+        "sr_cyrillic": "Живот је леп.",
+        "en": "Life is beautiful."
+      }
+    ]
+  },
+  {
+    "id": "zuriti",
+    "lemma_sr_latin": "žuriti",
+    "lemma_sr_cyrillic": "журити",
+    "gloss_en": "to hurry, rush",
+    "pos": "verb",
+    "aspect": "impf",
+    "examples": [
+      {
+        "sr_latin": "Ne žuri.",
+        "sr_cyrillic": "Не жури.",
+        "en": "Don’t rush."
+      }
+    ]
+  },
+  {
+    "id": "zurka",
+    "lemma_sr_latin": "žurka",
+    "lemma_sr_cyrillic": "журка",
+    "gloss_en": "party",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Idemo na žurku.",
+        "sr_cyrillic": "Идемо на журку.",
+        "en": "We’re going to a party."
+      }
+    ]
+  },
+  {
+    "id": "muzika",
+    "lemma_sr_latin": "muzika",
+    "lemma_sr_cyrillic": "музика",
+    "gloss_en": "music",
+    "pos": "noun",
+    "gender": "f",
+    "examples": [
+      {
+        "sr_latin": "Pojačaj muziku.",
+        "sr_cyrillic": "Појачај музику.",
+        "en": "Turn up the music."
+      }
+    ]
   }
 ]

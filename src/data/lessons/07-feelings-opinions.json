@@ -21,43 +21,48 @@
           "sr_latin": "Slažem se.",
           "sr_cyrillic": "Слажем се.",
           "en": "I agree.",
-          "context": "Standard way to agree with someone's point.",
+          "context": "Your friend lays out a plan and you're fully on board — give the plain, standard yes.",
           "wordRefs": [
             { "id": "slagati-se", "surface": "Slažem", "surface_cyrillic": "Слажем", "form": "1sg.pres" },
             "se"
           ],
-          "notes": "Reflexive verb — the 'se' is mandatory."
+          "notes": "'Slagati se' is reflexive — the 'se' is mandatory and can never be dropped."
         },
         {
           "id": "tacno",
           "sr_latin": "Tačno.",
           "sr_cyrillic": "Тачно.",
           "en": "Exactly. / That's right.",
-          "context": "Your friend sums up the situation perfectly — confirm it with one quick word.",
-          "wordRefs": []
+          "context": "Your friend sums up the situation perfectly and you want to confirm it in one quick word.",
+          "wordRefs": [
+            { "id": "tacan", "surface": "Tačno", "surface_cyrillic": "Тачно", "form": "n.sg" }
+          ],
+          "notes": "'Tačno' = exact/correct (neuter adverb here). Same root as 'tačka' = dot/point."
         },
         {
           "id": "bas-tako",
           "sr_latin": "Baš tako.",
           "sr_cyrillic": "Баш тако.",
           "en": "Exactly like that. / Spot on.",
-          "context": "Your friend nails your point even better than you did — back them up emphatically.",
+          "context": "Your friend phrases your own point even sharper than you did — back them up emphatically.",
           "wordRefs": [
             "bas",
             "tako"
           ],
-          "notes": "'Baš' is an intensifier you'll hear constantly. It means 'really/exactly/just'."
+          "notes": "'Baš' = exactly/really, an intensifier you'll hear constantly; 'tako' = like that."
         },
         {
           "id": "u-pravu-si",
           "sr_latin": "U pravu si.",
           "sr_cyrillic": "У праву си.",
           "en": "You're right.",
-          "context": "Telling someone they're correct. Works in arguments too when you're conceding.",
+          "context": "Your friend makes a fair point in a disagreement and you want to concede that they've got it.",
           "wordRefs": [
             "u",
+            { "id": "pravo", "surface": "pravu", "surface_cyrillic": "праву", "case": "loc" },
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" }
-          ]
+          ],
+          "notes": "Fixed phrase 'biti u pravu' = to be right, with 'pravo' in the locative. Word order: clitic 'si' sits second."
         }
       ]
     },
@@ -70,48 +75,51 @@
           "sr_latin": "Ma kakvi!",
           "sr_cyrillic": "Ма какви!",
           "en": "No way! / As if!",
-          "context": "Someone suggests something you find absurd — wave it off as ridiculous.",
+          "context": "Your friend floats an idea you find totally absurd and you want to wave it off on the spot.",
           "wordRefs": [
             "ma",
             "kakvi"
           ],
-          "notes": "Very common in casual speech. Tone matters — can be lighthearted or firm."
+          "notes": "'Ma' is a dismissive particle; 'kakvi' is literally 'what kind' turned into a flat rejection. Tone can be playful or firm."
         },
         {
           "id": "nije-bas-tako",
           "sr_latin": "Nije baš tako.",
           "sr_cyrillic": "Није баш тако.",
           "en": "It's not really like that.",
-          "context": "Softer disagreement — you're correcting without starting a fight.",
+          "context": "Your friend describes how something went, but they've got a detail off and you gently correct them.",
           "wordRefs": [
             { "id": "biti", "surface": "Nije", "surface_cyrillic": "Није", "form": "3sg.pres.neg" },
             "bas",
             "tako"
-          ]
+          ],
+          "notes": "'Nije' is the negative of 'je' (a separate word, not 'ne' + 'je'). Soft, non-confrontational correction."
         },
         {
           "id": "ne-slazem-se",
           "sr_latin": "Ne slažem se.",
           "sr_cyrillic": "Не слажем се.",
           "en": "I disagree.",
-          "context": "Your friend states an opinion and you see it differently — say so directly but calmly.",
+          "context": "Your friend states an opinion you see completely differently — say so directly but stay calm.",
           "wordRefs": [
             "ne",
             { "id": "slagati-se", "surface": "slažem", "surface_cyrillic": "слажем", "form": "1sg.pres" },
             "se"
-          ]
+          ],
+          "notes": "Negation by 'ne' before the verb; the reflexive 'se' stays attached. The direct opposite of 'slažem se'."
         },
         {
           "id": "ma-daj-molim-te",
           "sr_latin": "Ma daj, molim te.",
           "sr_cyrillic": "Ма дај, молим те.",
           "en": "Oh come on, please.",
-          "context": "When someone says something you think is nonsense. Eye-roll energy.",
+          "context": "Your friend says something you think is total nonsense — push back with full eye-roll energy.",
           "wordRefs": [
             "ma",
+            "molim",
             "te-acc"
           ],
-          "notes": "'Ma daj' on its own is already a classic dismissal."
+          "notes": "'Ma daj' alone is already a classic dismissal; 'molim te' (lit. 'I beg you') adds exasperation, not politeness here."
         }
       ]
     },
@@ -124,33 +132,36 @@
           "sr_latin": "Stvarno?!",
           "sr_cyrillic": "Стварно?!",
           "en": "Really?! / Seriously?!",
-          "context": "A friend drops some surprising news on you — ask whether they're for real.",
+          "context": "Your friend drops some surprising news on you and you want to check they're actually for real.",
           "wordRefs": [
             "stvarno"
           ],
-          "notes": "Also works as a statement: 'Stvarno.' = 'For real.'"
+          "notes": "'Stvarno' = really/truly. Said flat as a statement, 'Stvarno.', it means 'for real'."
         },
         {
           "id": "ne-mogu-da-verujem",
           "sr_latin": "Ne mogu da verujem.",
           "sr_cyrillic": "Не могу да верујем.",
           "en": "I can't believe it.",
-          "context": "Genuine shock or disbelief. Also used sarcastically.",
+          "context": "Your friend tells you something so shocking that it knocks the wind out of you for a second.",
           "wordRefs": [
             "ne",
             { "id": "moci", "surface": "mogu", "surface_cyrillic": "могу", "form": "1sg.pres" },
-            "da-conj"
-          ]
+            "da-conj",
+            { "id": "verovati", "surface": "verujem", "surface_cyrillic": "верујем", "form": "1sg.pres" }
+          ],
+          "notes": "'Mogu da + present' renders English 'can + infinitive'; Serbian avoids the bare infinitive here. Also lands sarcastically."
         },
         {
           "id": "ozbiljno",
           "sr_latin": "Ozbiljno?",
           "sr_cyrillic": "Озбиљно?",
           "en": "Seriously?",
-          "context": "Slightly more intense than 'stvarno' — you're checking if they're joking.",
+          "context": "Your friend says something you half-suspect is a joke and you want to make sure they mean it.",
           "wordRefs": [
             { "id": "ozbiljan", "surface": "Ozbiljno", "surface_cyrillic": "Озбиљно", "form": "n.sg" }
-          ]
+          ],
+          "notes": "'Ozbiljno' = seriously (neuter adverb of 'ozbiljan'). A touch more pointed than 'stvarno'."
         }
       ]
     },
@@ -163,47 +174,50 @@
           "sr_latin": "Pa dobro...",
           "sr_cyrillic": "Па добро...",
           "en": "Well, fine... / Okay then...",
-          "context": "Exasperated acceptance. You don't love it but you'll deal.",
+          "context": "A plan changes in a way you don't love, but you give in and signal you'll go along with it.",
           "wordRefs": [
             "pa",
             { "id": "dobar", "surface": "dobro", "surface_cyrillic": "добро", "form": "n.sg" }
           ],
-          "notes": "Tone is everything. Can range from mild annoyance to barely contained rage."
+          "notes": "'Pa' is a filler 'well'; 'dobro' = fine/good (neuter). Tone carries it, from mild resignation to barely held-in anger."
         },
         {
           "id": "smara-me",
           "sr_latin": "Smara me.",
           "sr_cyrillic": "Смара ме.",
           "en": "It's annoying me. / It's boring me.",
-          "context": "Something or someone is getting on your nerves or boring you to death.",
+          "context": "Some task or person keeps grinding at your patience and you want to grumble about it.",
           "wordRefs": [
             { "id": "smarati", "surface": "Smara", "surface_cyrillic": "Смара", "form": "3sg.pres" },
             "me-acc"
           ],
-          "notes": "'Smaranje' (noun) = annoyance/boredom. Very common casual word."
+          "notes": "'Me' is the accusative clitic — the thing is the subject, you're the object. Noun 'smaranje' = the annoyance itself. Very casual."
         },
         {
           "id": "ne-mogu-vise",
           "sr_latin": "Ne mogu više.",
           "sr_cyrillic": "Не могу више.",
           "en": "I can't anymore. / I've had enough.",
-          "context": "You're done. Fed up. Over it. Works for anything from a bad day to a long meeting.",
+          "context": "A long, draining day or task has worn you all the way down and you want to say you're done.",
           "wordRefs": [
             "ne",
             { "id": "moci", "surface": "mogu", "surface_cyrillic": "могу", "form": "1sg.pres" },
             "vise"
-          ]
+          ],
+          "notes": "'Više' = more/anymore; with negation it means 'no longer'. Works for anything you're fed up with."
         },
         {
           "id": "nervira-me",
           "sr_latin": "Nervira me to.",
           "sr_cyrillic": "Нервира ме то.",
           "en": "That irritates me.",
-          "context": "Straightforward — something is getting under your skin.",
+          "context": "One specific thing keeps getting under your skin and you want to name it plainly.",
           "wordRefs": [
+            { "id": "nervirati", "surface": "Nervira", "surface_cyrillic": "Нервира", "form": "3sg.pres" },
             "me-acc",
             "to"
-          ]
+          ],
+          "notes": "'To' (that) is the subject, 'me' the accusative object — lit. 'that irritates me'. From the same root as 'nervi' = nerves."
         }
       ]
     },
@@ -216,35 +230,37 @@
           "sr_latin": "Odlično!",
           "sr_cyrillic": "Одлично!",
           "en": "Excellent! / Awesome!",
-          "context": "Your friend shares some great news — react with pure enthusiasm.",
+          "context": "Your friend shares news that genuinely thrills you and you react with full enthusiasm.",
           "wordRefs": [
             { "id": "odlican", "surface": "Odlično", "surface_cyrillic": "Одлично", "form": "n.sg" }
-          ]
+          ],
+          "notes": "'Odlično' = excellent (neuter adverb). Also the top school grade (a 5), so it carries real 'top marks' weight."
         },
         {
           "id": "bas-mi-je-drago",
           "sr_latin": "Baš mi je drago.",
           "sr_cyrillic": "Баш ми је драго.",
-          "en": "I'm really glad. / That makes me really happy.",
-          "context": "Genuine warmth. Use when hearing good news about someone you care about.",
+          "en": "I'm really glad.",
+          "context": "You hear good news about someone you care about and you want to show real warmth.",
           "wordRefs": [
             "bas",
             "mi-dat",
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
-            { "id": "drag", "surface": "drago", "surface_cyrillic": "драго" }
-          ]
+            { "id": "drag", "surface": "drago", "surface_cyrillic": "драго", "form": "n.sg" }
+          ],
+          "notes": "Dative-experiencer: lit. 'it is dear to me', with 'mi' (to me) as the clitic experiencer. 'Drago mi je' is also 'nice to meet you'."
         },
         {
           "id": "jedva-cekam",
           "sr_latin": "Jedva čekam!",
           "sr_cyrillic": "Једва чекам!",
           "en": "I can't wait!",
-          "context": "Excited anticipation — a trip, seeing someone, an event.",
+          "context": "A trip, an event, or seeing someone is coming up and you're buzzing with anticipation.",
           "wordRefs": [
             "jedva",
             { "id": "cekati", "surface": "čekam", "surface_cyrillic": "чекам", "form": "1sg.pres" }
           ],
-          "notes": "Literally 'I barely wait.' Natural and very common."
+          "notes": "Literally 'I barely wait' — 'jedva' = barely/hardly. The everyday way to say you can't wait."
         }
       ]
     },
@@ -257,37 +273,37 @@
           "sr_latin": "Ma nemoj!",
           "sr_cyrillic": "Ма немој!",
           "en": "You don't say! / No kidding!",
-          "context": "Dripping sarcasm when someone states the obvious.",
+          "context": "Your friend announces something painfully obvious and you want to mock it with fake amazement.",
           "wordRefs": [
             "ma",
             "nemoj"
           ],
-          "notes": "Literally 'Don't!' but used purely sarcastically in this context."
+          "notes": "'Nemoj' is literally the prohibitive 'don't', but paired with 'ma' it flips fully sarcastic."
         },
         {
           "id": "svaka-cast",
           "sr_latin": "Svaka čast.",
           "sr_cyrillic": "Свака част.",
           "en": "Well done. / Hats off.",
-          "context": "Can be genuine praise OR devastating sarcasm depending on tone. Context is king.",
+          "context": "Someone pulls off something impressive — or botches it badly — and you respond with this, tone deciding which.",
           "wordRefs": [
             { "id": "svaki", "surface": "Svaka", "surface_cyrillic": "Свака", "form": "f.sg" },
             "cast"
           ],
-          "notes": "Literally 'every honor.' One of the most versatile Serbian expressions."
+          "notes": "Literally 'every honor'; 'čast' = honor. One of the most versatile phrases — pure praise or pure sarcasm by tone alone."
         },
         {
           "id": "bas-si-pametan",
           "sr_latin": "Baš si pametan.",
           "sr_cyrillic": "Баш си паметан.",
           "en": "You're so smart.",
-          "context": "Almost always sarcastic. When someone does or says something dumb.",
+          "context": "Your friend does or says something genuinely dumb and you needle them about how clever they are.",
           "wordRefs": [
             "bas",
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
             "pametan"
           ],
-          "notes": "For a female target: 'Baš si pametna.' Adjective changes by gender.",
+          "notes": "'Pametan' = smart (masculine); for a woman it's 'pametna'. Nearly always sarcastic in this frame.",
           "variations": [
             {
               "sr_latin": "Baš si pametna.",
@@ -308,45 +324,51 @@
           "sr_latin": "To je kul.",
           "sr_cyrillic": "То је кул.",
           "en": "That's cool.",
-          "context": "A friend tells you their plan for the weekend — give it a casual nod of approval.",
+          "context": "Your friend tells you their weekend plan and you give it a relaxed nod of approval.",
           "wordRefs": [
             "to",
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "kul"
           ],
-          "notes": "'Kul' is the English 'cool', spelled phonetically. Also hear 'ekstra' or 'do jaja' for cool/awesome (the latter vulgar but very common)."
+          "notes": "'Kul' is English 'cool' spelled phonetically. You'll also hear 'ekstra' for the same casual approval."
         },
         {
           "id": "to-je-smor",
           "sr_latin": "To je smor.",
           "sr_cyrillic": "То је смор.",
           "en": "That's boring. / That's a drag.",
-          "context": "A friend describes an event you'd find dull — tell them it sounds like a drag.",
+          "context": "Your friend describes an outing that sounds deadly dull and you want to call it a snooze.",
           "wordRefs": [
             "to",
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "smor"
           ],
-          "notes": "From 'smoriti se' — to get bored/fed up."
+          "notes": "'Smor' = a bore/drag, from 'smoriti se' (to get bored). Slangy and very common among younger speakers."
         },
         {
           "id": "ubija-me-u-pojam",
           "sr_latin": "Ubija me u pojam.",
           "sr_cyrillic": "Убија ме у појам.",
-          "en": "It kills my vibe. / It's mind-numbing.",
-          "context": "You sat through an endless meeting — vent that it drained your whole soul.",
+          "en": "It's mind-numbing.",
+          "context": "You just sat through an endless, soul-draining meeting and you want to vent how dead it left you.",
           "wordRefs": [
+            { "id": "ubijati", "surface": "Ubija", "surface_cyrillic": "Убија", "form": "3sg.pres" },
             "me-acc",
-            "u"
+            "u",
+            { "id": "pojam", "surface": "pojam", "surface_cyrillic": "појам", "case": "acc" }
           ],
-          "notes": "Literally 'kills me into concept.' A very expressive, very Serbian complaint."
+          "notes": "Literally 'it kills me into concept' — 'pojam' = concept. An expressive, very Serbian way to say something is brutally tedious."
         },
         {
           "id": "strava",
           "sr_latin": "Strava!",
           "sr_cyrillic": "Страва!",
           "en": "Awesome! / Wicked!",
-          "context": "A friend shows you something seriously cool — react like that's seriously cool.",
-          "wordRefs": [],
-          "notes": "Literally means 'horror/dread' — used positively, like English 'sick' or 'wicked'."
+          "context": "Your friend shows you something seriously cool and you want to react like it's seriously cool.",
+          "wordRefs": [
+            "strava"
+          ],
+          "notes": "'Strava' literally means horror/dread, but it's flipped positive in slang — like English 'sick' or 'wicked'."
         }
       ]
     },
@@ -359,41 +381,44 @@
           "sr_latin": "Užas!",
           "sr_cyrillic": "Ужас!",
           "en": "Horrible! / What a nightmare!",
-          "context": "Your friend tells you their whole weekend got ruined — react with dramatic sympathy.",
+          "context": "Your friend tells you their whole weekend fell apart and you react with dramatic sympathy.",
           "wordRefs": [
             "uzas"
           ],
-          "notes": "Literally 'horror.' Can also be used for dramatic effect over minor things."
+          "notes": "'Užas' = horror/terror, but tossed out freely for everyday disasters, big or small."
         },
         {
           "id": "srce-mi-se-topi",
           "sr_latin": "Srce mi se topi.",
           "sr_cyrillic": "Срце ми се топи.",
           "en": "My heart is melting.",
-          "context": "Seeing something adorable — a baby, a puppy, or your girlfriend doing something cute.",
+          "context": "You spot something unbearably adorable — a puppy, a baby, your girlfriend doing something cute.",
           "wordRefs": [
             "srce",
             "mi-dat",
-            "se"
-          ]
+            "se",
+            { "id": "topiti-se", "surface": "topi", "surface_cyrillic": "топи", "form": "3sg.pres" }
+          ],
+          "notes": "Dative 'mi' marks whose heart: lit. 'the heart melts to me'. 'Topiti se' = to melt (reflexive)."
         },
         {
           "id": "presrecna-sam",
           "sr_latin": "Presrećan sam.",
           "sr_cyrillic": "Пресрећан сам.",
           "en": "I'm overjoyed.",
-          "gloss_hint": "male speaker",
-          "context": "Big happiness — engagement, promotion, great news.",
+          "gloss_hint": "said by a man",
+          "context": "Something wonderful just happened — an engagement, a promotion — and you're bursting with it.",
           "wordRefs": [
+            "presrecan",
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }
           ],
-          "notes": "Female speaker: 'Presrećna sam.' The prefix 'pre-' intensifies the adjective.",
+          "notes": "'Presrećan' = overjoyed (masculine); a woman says 'presrećna'. The prefix 'pre-' means 'overly', intensifying 'srećan' = happy.",
           "variations": [
             {
               "sr_latin": "Presrećna sam.",
               "sr_cyrillic": "Пресрећна сам.",
               "en": "I'm overjoyed.",
-              "gloss_hint": "female speaker"
+              "gloss_hint": "said by a woman"
             }
           ]
         },
@@ -402,17 +427,19 @@
           "sr_latin": "Baš me iznervirao.",
           "sr_cyrillic": "Баш ме изнервирао.",
           "en": "He really pissed me off.",
-          "context": "Venting about someone who got under your skin.",
+          "context": "You're venting to a friend about a guy who got right under your skin earlier today.",
           "wordRefs": [
             "bas",
-            "me-acc"
+            "me-acc",
+            { "id": "iznervirati", "surface": "iznervirao", "surface_cyrillic": "изнервирао", "form": "past.m.sg" }
           ],
-          "notes": "Change ending for gender: 'iznervirala' (she), 'iznerviralo' (it/situation).",
+          "notes": "Past tense agrees with the subject's gender: 'iznervirao' (he), 'iznervirala' (she), 'iznerviralo' (it).",
           "variations": [
             {
               "sr_latin": "Baš me iznervirala.",
               "sr_cyrillic": "Баш ме изнервирала.",
-              "en": "She really pissed me off."
+              "en": "She really pissed me off.",
+              "gloss_hint": "about a woman"
             }
           ]
         }
@@ -427,45 +454,54 @@
           "sr_latin": "Meni se sviđa.",
           "sr_cyrillic": "Мени се свиђа.",
           "en": "I like it.",
-          "context": "Your partner asks what you think of the movie — say you're into it.",
+          "context": "Your partner asks what you thought of the movie you just watched and you tell them you're into it.",
           "wordRefs": [
-            "se"
+            { "id": "ja", "surface": "Meni", "surface_cyrillic": "Мени", "case": "dat" },
+            "se",
+            { "id": "svidjati-se", "surface": "sviđa", "surface_cyrillic": "свиђа", "form": "3sg.pres" }
           ],
-          "notes": "Emphasizing 'meni' (to me) is optional but natural in conversation."
+          "notes": "Dative-experiencer: the thing 'sviđa se' (pleases) and you're the dative 'meni' (to me). Fronting 'meni' adds emphasis but is optional."
         },
         {
           "id": "nije-mi-nesto",
           "sr_latin": "Nije mi nešto.",
           "sr_cyrillic": "Није ми нешто.",
           "en": "It's not great. / Meh.",
-          "context": "A friend asks how the restaurant was — say you weren't really impressed, diplomatically.",
+          "context": "A friend asks how the restaurant was and you want to say you weren't impressed without trashing it.",
           "wordRefs": [
             { "id": "biti", "surface": "Nije", "surface_cyrillic": "Није", "form": "3sg.pres.neg" },
-            "mi-dat"
+            "mi-dat",
+            "nesto"
           ],
-          "notes": "Literally 'It's not something to me.' Perfectly diplomatic."
+          "notes": "Dative 'mi' again: lit. 'it's not something to me'. A perfectly diplomatic, very common way to underwhelm."
         },
         {
           "id": "po-meni",
           "sr_latin": "Po meni, to nema smisla.",
           "sr_cyrillic": "По мени, то нема смисла.",
           "en": "In my opinion, that makes no sense.",
-          "context": "Leading with your own take before saying you think something doesn't add up.",
+          "context": "You want to flag a take as your own before saying something just doesn't add up to you.",
           "wordRefs": [
+            "po",
+            { "id": "ja", "surface": "meni", "surface_cyrillic": "мени", "case": "dat" },
             "to",
-            { "id": "imati", "surface": "nema", "surface_cyrillic": "нема", "form": "3sg.pres.neg" }
-          ]
+            { "id": "imati", "surface": "nema", "surface_cyrillic": "нема", "form": "3sg.pres.neg" },
+            { "id": "smisao", "surface": "smisla", "surface_cyrillic": "смисла", "case": "gen" }
+          ],
+          "notes": "'Po meni' = in my view, with 'po' + dative. 'Nema' forces the genitive 'smisla' — negated 'imati' always takes the genitive."
         },
         {
           "id": "boli-me-uvo",
           "sr_latin": "Boli me uvo.",
           "sr_cyrillic": "Боли ме уво.",
           "en": "I don't care at all.",
-          "context": "Someone keeps pushing their opinion on you — tell them bluntly you couldn't care less.",
+          "context": "Someone keeps pushing their opinion on you and you want to tell them bluntly you couldn't care less.",
           "wordRefs": [
-            "me-acc"
+            { "id": "boleti", "surface": "Boli", "surface_cyrillic": "Боли", "form": "3sg.pres" },
+            "me-acc",
+            "uvo"
           ],
-          "notes": "Literally 'my ear hurts.' There's a vulgar version with a different body part that's even more common."
+          "notes": "Literally 'my ear hurts' — 'uvo' = ear. There's a cruder body-part version that's even more common."
         }
       ]
     },
@@ -478,37 +514,41 @@
           "sr_latin": "Ne znam baš.",
           "sr_cyrillic": "Не знам баш.",
           "en": "I'm not so sure about that.",
-          "context": "You have doubts but don't want to be confrontational.",
+          "context": "You have real doubts about what your friend just claimed but you'd rather not pick a fight.",
           "wordRefs": [
             "ne",
             { "id": "znati", "surface": "znam", "surface_cyrillic": "знам", "form": "1sg.pres" },
             "bas"
-          ]
+          ],
+          "notes": "Lit. 'I don't really know'; 'baš' here softens it into polite skepticism rather than a flat 'no'."
         },
         {
           "id": "mozda-si-u-pravu",
           "sr_latin": "Možda si u pravu.",
           "sr_cyrillic": "Можда си у праву.",
           "en": "Maybe you're right.",
-          "context": "Halfway conceding. You're not fully convinced but you'll give ground.",
+          "context": "You're half-persuaded by your friend's argument and willing to give a little ground without fully folding.",
           "wordRefs": [
+            "mozda",
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
-            "u"
-          ]
+            "u",
+            { "id": "pravo", "surface": "pravu", "surface_cyrillic": "праву", "case": "loc" }
+          ],
+          "notes": "'Možda' = maybe softens the concession; 'u pravu' keeps 'pravo' in the locative as in 'u pravu si'."
         },
         {
           "id": "kako-da-ti-kazem",
           "sr_latin": "Kako da ti kažem...",
           "sr_cyrillic": "Како да ти кажем...",
           "en": "How do I put this...",
-          "context": "Stalling before delivering an opinion you know they won't love.",
+          "context": "You're stalling for a beat before delivering an opinion you know your friend won't want to hear.",
           "wordRefs": [
             "kako",
             "da-conj",
             "ti-dat",
             { "id": "reci", "surface": "kažem", "surface_cyrillic": "кажем", "form": "1sg.pres" }
           ],
-          "notes": "Classic hedge. Everyone will recognize you're about to say something uncomfortable."
+          "notes": "Dative 'ti' = to you. Lit. 'how should I tell you'; a classic hedge that signals something awkward is coming."
         }
       ]
     }

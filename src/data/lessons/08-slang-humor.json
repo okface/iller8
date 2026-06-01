@@ -21,45 +21,52 @@
           "sr_latin": "Brate, nećeš verovati.",
           "sr_cyrillic": "Брате, нећеш веровати.",
           "en": "Bro, you won't believe this.",
-          "context": "Kicking off a juicy story or piece of gossip to a friend.",
-          "wordRefs": [],
-          "notes": "'Brate' is vocative of 'brat' (brother). Used constantly regardless of actual relation. Women use it too."
+          "context": "You're bursting to share juicy gossip — open the story to your friend before the details.",
+          "wordRefs": [
+            "brate",
+            { "id": "verovati", "surface": "nećeš verovati", "surface_cyrillic": "нећеш веровати", "form": "2sg.fut.neg" }
+          ],
+          "notes": "'Brate' = vocative of 'brat' (brother), but it's a filler said to anyone — even women use it."
         },
         {
           "id": "brate-moj",
           "sr_latin": "Brate moj, šta da ti kažem.",
           "sr_cyrillic": "Брате мој, шта да ти кажем.",
           "en": "My brother, what can I tell you.",
-          "context": "Exasperated resignation. When life is being life and there are no solutions.",
+          "context": "Your friend asks how you're holding up after a rough week — sigh out a resigned non-answer.",
           "wordRefs": [
+            "brate",
             "moj",
             "sta",
             "da-conj",
             "ti-dat",
             { "id": "reci", "surface": "kažem", "surface_cyrillic": "кажем", "form": "1sg.pres" }
-          ]
+          ],
+          "notes": "'Šta da ti kažem' = 'what should I tell you' (da + present) — a verbal shrug, not a real question."
         },
         {
           "id": "e-moj-brate",
           "sr_latin": "E moj brate...",
           "sr_cyrillic": "Е мој брате...",
           "en": "Oh brother... / Well, my friend...",
-          "context": "Sympathetic but resigned. When someone tells you their problems and you feel for them but can't help.",
+          "context": "Your friend lays out their troubles and you feel for them but can't fix any of it — sigh.",
           "wordRefs": [
-            "moj"
+            "moj",
+            "brate"
           ],
-          "notes": "The 'e' at the start adds a wistful, philosophical tone."
+          "notes": "The opening 'e' adds a wistful, philosophical weight — the tone of someone who's seen it all."
         },
         {
           "id": "bajo-moj",
           "sr_latin": "Bajo moj!",
           "sr_cyrillic": "Бајо мој!",
           "en": "My dude! / My man!",
-          "context": "Affectionate greeting or exclamation between close friends.",
+          "context": "Your best friend walks in and you greet him with a big, warm, folksy welcome.",
           "wordRefs": [
+            "bajo",
             "moj"
           ],
-          "notes": "Very warm and folksy. Has a Bosnian flavor — your best friend will appreciate this one."
+          "notes": "'Bajo' = an affectionate term for a man, common in Bosnia and western Serbia — folksy and warm."
         }
       ]
     },
@@ -72,32 +79,33 @@
           "sr_latin": "Mrš!",
           "sr_cyrillic": "Мрш!",
           "en": "Get out of here! / Scram!",
-          "context": "Your buddy makes a ridiculous claim — playfully shoo him away, like 'oh, get lost'.",
+          "context": "Your buddy makes a ridiculous claim — playfully shoo him away like you don't believe a word.",
           "wordRefs": [],
-          "notes": "Short, sharp, iconic. One of the first words every Serbian kid learns."
+          "notes": "Clipped from 'marš' (march off!). Sharp and iconic — softened to teasing among friends by tone."
         },
         {
           "id": "idi-bre",
           "sr_latin": "Idi bre!",
           "sr_cyrillic": "Иди бре!",
           "en": "Get outta here! / Go on!",
-          "context": "Dismissal with a smile. 'Bre' is the quintessential Serbian particle — it softens or intensifies everything.",
+          "context": "Your friend tells you something hard to believe and you wave it off with a grinning dismissal.",
           "wordRefs": [
             { "id": "ici", "surface": "Idi", "surface_cyrillic": "Иди", "form": "imp.2sg" },
             "bre"
           ],
-          "notes": "'Bre' has no direct translation — it's pure Balkan flavor, borrowed long ago from Turkish. Add it to anything for authenticity."
+          "notes": "'Idi' = go (imperative). 'Bre' has no translation — it just adds heat. 'Bre' came in from Turkish."
         },
         {
           "id": "budala-jedna",
           "sr_latin": "Budala jedna.",
           "sr_cyrillic": "Будала једна.",
           "en": "You fool. / You dummy.",
-          "context": "Affectionate ribbing among friends. Tone makes it loving, not hurtful.",
+          "context": "Your friend does something silly and you ruffle his hair and call him a name with a grin.",
           "wordRefs": [
+            "budala",
             { "id": "jedan", "surface": "jedna", "surface_cyrillic": "једна", "form": "f.sg" }
           ],
-          "notes": "'Budala' is a Turkish loanword, and grammatically feminine even when aimed at a man."
+          "notes": "'Budala' is grammatically feminine even aimed at a man, so 'jedna' agrees. 'Budala' came from Turkish."
         },
         {
           "id": "nemoj-da-smaras",
@@ -107,8 +115,10 @@
           "context": "Your friend keeps nagging you about the same thing — tell him to quit being a pain.",
           "wordRefs": [
             "nemoj",
-            "da-conj"
-          ]
+            "da-conj",
+            { "id": "smarati", "surface": "smaraš", "surface_cyrillic": "смараш", "form": "2sg.pres" }
+          ],
+          "notes": "'Nemoj da' + present = 'don't' (negative imperative). 'Smarati' = to bore/annoy — peak teen slang."
         }
       ]
     },
@@ -126,41 +136,44 @@
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
             "bre"
           ],
-          "notes": "The 'g' gets dropped in casual speech. Very natural, very street."
+          "notes": "'De' is clipped from 'gde' (where) — the dropped 'g' is what makes it sound street and casual."
         },
         {
           "id": "cao-bre",
           "sr_latin": "Ćao bre!",
           "sr_cyrillic": "Ћао бре!",
           "en": "Hey man! / Yo!",
-          "context": "Informal hello to a friend, dressed up with the all-purpose Serbian particle for extra flavor.",
+          "context": "You greet a close friend and pile on a little extra warmth for good measure.",
           "wordRefs": [
+            "cao",
             "bre"
-          ]
+          ],
+          "notes": "'Ćao' came from Italian 'ciao'. Tacking 'bre' on the end makes the hello unmistakably Serbian."
         },
         {
           "id": "pusti-to",
           "sr_latin": "Ma pusti to.",
           "sr_cyrillic": "Ма пусти то.",
           "en": "Forget about it. / Drop it.",
-          "context": "Dismissing a topic. Can be comforting ('don't worry about it') or dismissive ('it's not worth discussing').",
+          "context": "Your friend keeps stewing over something small — tell him to let the whole thing go.",
           "wordRefs": [
             "ma",
             { "id": "pustiti", "surface": "pusti", "surface_cyrillic": "пусти", "form": "imp.2sg" },
             "to"
-          ]
+          ],
+          "notes": "'Pusti' = let go (imperative). The lead-in 'ma' adds a dismissive 'oh, come on' shrug."
         },
         {
           "id": "nema-veze",
           "sr_latin": "Nema veze.",
           "sr_cyrillic": "Нема везе.",
           "en": "No worries. / It doesn't matter.",
-          "context": "A friend apologizes for forgetting to call back — brush it off, it's fine.",
+          "context": "A friend apologizes for forgetting to call back — brush it off, it's totally fine.",
           "wordRefs": [
             { "id": "imati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres.neg" },
             { "id": "veza", "surface": "veze", "surface_cyrillic": "везе", "case": "gen" }
           ],
-          "notes": "Literally 'there's no connection.' The Serbian attitude toward problems in two words."
+          "notes": "Literally 'there's no connection' — 'nema' forces 'veza' into the genitive 'veze'."
         }
       ]
     },
@@ -173,28 +186,31 @@
           "sr_latin": "Umreću od smeha.",
           "sr_cyrillic": "Умрећу од смеха.",
           "en": "I'm going to die laughing.",
-          "context": "Something is hilarious. Serbians exaggerate emotions as a lifestyle.",
+          "context": "Your friend says something so funny you can barely breathe — react to the joke.",
           "wordRefs": [
-            "od"
+            { "id": "umreti", "surface": "Umreću", "surface_cyrillic": "Умрећу", "form": "1sg.fut" },
+            "od",
+            { "id": "smeh", "surface": "smeha", "surface_cyrillic": "смеха", "case": "gen" }
           ],
-          "notes": "'Umreću od...' works with anything: 'gladi' (hunger), 'dosade' (boredom), 'vrućine' (heat)."
+          "notes": "'Od' (from) takes the genitive 'smeha'. Swap in 'gladi' (hunger) or 'dosade' (boredom) the same way."
         },
         {
           "id": "pukao-sam",
           "sr_latin": "Pukao sam.",
           "sr_cyrillic": "Пукао сам.",
           "en": "I'm done. / I'm spent. / I cracked.",
-          "context": "Exhaustion, laughter, or being overwhelmed. Literally 'I burst.'",
+          "context": "You're wrung out after a brutal day or laughing too hard — say you've got nothing left.",
           "wordRefs": [
+            { "id": "pukati", "surface": "Pukao", "surface_cyrillic": "Пукао", "form": "past.m.sg" },
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }
           ],
-          "notes": "Female speaker: 'Pukla sam.' Extremely versatile slang.",
+          "notes": "Literally 'I burst' (past tense, masculine 'pukao'). A woman says 'Pukla sam'.",
           "variations": [
             {
               "sr_latin": "Pukla sam.",
               "sr_cyrillic": "Пукла сам.",
               "en": "I'm done. / I cracked.",
-              "gloss_hint": "female speaker"
+              "gloss_hint": "said by a woman"
             }
           ]
         },
@@ -205,8 +221,11 @@
           "en": "This is madness. / This is a madhouse.",
           "context": "You're stuck in chaotic gridlocked traffic — sum up the scene in one exasperated line.",
           "wordRefs": [
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
-          ]
+            "ovo",
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "ludnica"
+          ],
+          "notes": "'Ludnica' = madhouse/asylum, from 'lud' (crazy). Used for any scene of happy or stressful chaos."
         }
       ]
     },
@@ -219,22 +238,33 @@
           "sr_latin": "Ja sam majmun.",
           "sr_cyrillic": "Ја сам мајмун.",
           "en": "I'm an idiot.",
-          "gloss_hint": "lit: I'm a monkey",
-          "context": "When you do something stupid and own it. Self-roasting is a Serbian art form.",
+          "gloss_hint": "lit. 'I'm a monkey'",
+          "context": "You just did something genuinely dumb and you own it out loud to your friend.",
           "wordRefs": [
             "ja",
-            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }
+            { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
+            "majmun"
           ],
-          "notes": "'Majmun' (monkey) came in from Turkish. Calling yourself one is gentle self-mockery."
+          "notes": "Calling yourself a 'majmun' (monkey) is gentle self-mockery. 'Majmun' came in from Turkish."
         },
         {
           "id": "klasican-ja",
           "sr_latin": "Klasičan ja.",
           "sr_cyrillic": "Класичан ја.",
           "en": "Classic me. / Typical me.",
-          "context": "When you mess up in a way that's completely on-brand for you.",
+          "context": "You mess up in a way that's so completely on-brand for you that it's almost funny.",
           "wordRefs": [
+            { "id": "klasican", "surface": "Klasičan", "surface_cyrillic": "Класичан" },
             "ja"
+          ],
+          "notes": "'Klasičan' = classic/typical (masculine). A woman says 'Klasična ja'.",
+          "variations": [
+            {
+              "sr_latin": "Klasična ja.",
+              "sr_cyrillic": "Класична ја.",
+              "en": "Classic me. / Typical me.",
+              "gloss_hint": "said by a woman"
+            }
           ]
         },
         {
@@ -242,18 +272,20 @@
           "sr_latin": "Opet sam se obrukao.",
           "sr_cyrillic": "Опет сам се обрукао.",
           "en": "I embarrassed myself again.",
-          "context": "After doing something cringeworthy. Delivered with a resigned sigh.",
+          "context": "You did something cringeworthy in public and you're confessing it with a resigned sigh.",
           "wordRefs": [
+            "opet",
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" },
-            "se"
+            "se",
+            { "id": "obrukati-se", "surface": "obrukao", "surface_cyrillic": "обрукао", "form": "past.m.sg" }
           ],
-          "notes": "Female speaker: 'Opet sam se obrukala.' 'Obrukati se' = to make a fool of yourself.",
+          "notes": "'Obrukati se' = to make a fool of yourself (reflexive 'se'); past 'obrukao' is masculine.",
           "variations": [
             {
               "sr_latin": "Opet sam se obrukala.",
               "sr_cyrillic": "Опет сам се обрукала.",
               "en": "I embarrassed myself again.",
-              "gloss_hint": "female speaker"
+              "gloss_hint": "said by a woman"
             }
           ]
         }
@@ -268,45 +300,62 @@
           "sr_latin": "Zašto ja?",
           "sr_cyrillic": "Зашто ја?",
           "en": "Why me?",
-          "context": "Theatrical self-pity. Delivered with maximum drama over minimum inconvenience.",
+          "context": "Some tiny inconvenience lands on you and you throw your hands up in theatrical self-pity.",
           "wordRefs": [
             "zasto",
             "ja"
-          ]
+          ],
+          "notes": "Played for laughs over trivial things — the bigger the drama over the smaller the problem, the better."
         },
         {
           "id": "to-se-samo-meni-desava",
           "sr_latin": "To se samo meni dešava.",
           "sr_cyrillic": "То се само мени дешава.",
           "en": "This only happens to me.",
-          "context": "When the universe is conspiring against you personally. Usually about trivial things.",
+          "context": "Another small thing goes wrong for you and you're sure the universe has a personal grudge.",
           "wordRefs": [
             "to",
             "se",
-            "samo"
-          ]
+            "samo",
+            { "id": "mene", "surface": "meni", "surface_cyrillic": "мени", "case": "dat" },
+            { "id": "desavati-se", "surface": "dešava", "surface_cyrillic": "дешава", "form": "3sg.pres" }
+          ],
+          "notes": "'Meni' = to me (dative), the one experiencing it. 'Dešavati se' = to happen (reflexive 'se')."
         },
         {
           "id": "koji-je-ovo-zivot",
           "sr_latin": "Koji je ovo život, brate.",
           "sr_cyrillic": "Који је ово живот, брате.",
           "en": "What kind of life is this, bro.",
-          "context": "Philosophical despair meets dark humor. The Serbian national mood in one sentence.",
+          "context": "One more thing goes sideways and you let out a half-joking lament about your whole existence.",
           "wordRefs": [
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+            "koji",
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            "ovo",
+            "zivot",
+            "brate"
           ],
-          "notes": "Can be genuinely bleak or hilariously overdramatic. Usually the latter."
+          "notes": "'Koji' = what/which here. Usually hilariously overdramatic rather than genuinely bleak."
         },
         {
           "id": "propao-sam",
           "sr_latin": "Propao sam.",
           "sr_cyrillic": "Пропао сам.",
           "en": "I'm ruined. / I'm finished.",
-          "context": "Dramatic declaration over minor setbacks — missed bus, phone battery at 5%, forgot wallet.",
+          "context": "You miss the bus or your phone dies and you declare total catastrophe over the minor setback.",
           "wordRefs": [
+            { "id": "propasti", "surface": "Propao", "surface_cyrillic": "Пропао", "form": "past.m.sg" },
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }
           ],
-          "notes": "Female: 'Propala sam.' Literally 'I have fallen through/perished.'"
+          "notes": "Literally 'I've fallen through' (past, masculine 'propao'). A woman says 'Propala sam'.",
+          "variations": [
+            {
+              "sr_latin": "Propala sam.",
+              "sr_cyrillic": "Пропала сам.",
+              "en": "I'm ruined. / I'm finished.",
+              "gloss_hint": "said by a woman"
+            }
+          ]
         }
       ]
     },
@@ -319,36 +368,41 @@
           "sr_latin": "Smešno mi je što je tužno.",
           "sr_cyrillic": "Смешно ми је што је тужно.",
           "en": "It's funny because it's sad.",
-          "context": "The core of Serbian humor — dark comedy about real life. Use after any depressing-but-relatable observation.",
+          "context": "Your friend shares a depressing-but-relatable observation and you laugh at exactly how true it is.",
           "wordRefs": [
             { "id": "smesan", "surface": "Smešno", "surface_cyrillic": "Смешно" },
             "mi-dat",
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
-          ]
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            { "id": "tuzan", "surface": "tužno", "surface_cyrillic": "тужно" }
+          ],
+          "notes": "'Smešno mi je' = it's funny to me (dative 'mi'). 'Što' = because here — the heart of Balkan dark humor."
         },
         {
           "id": "ko-ce-ako-ne-mi",
           "sr_latin": "Ko će ako ne mi?",
           "sr_cyrillic": "Ко ће ако не ми?",
           "en": "If not us, then who?",
-          "context": "Ironic rallying cry before doing something stupid, unnecessary, or both.",
+          "context": "You and your friend are about to do something pointless or reckless — rally him to commit anyway.",
           "wordRefs": [
+            "ko",
             { "id": "hteti", "surface": "će", "surface_cyrillic": "ће", "form": "3sg.fut.clitic" },
             "ako",
             "ne",
             "mi-nom"
-          ]
+          ],
+          "notes": "'Će' is the future clitic of 'hteti', here standing in for the verb. An ironic rallying cry."
         },
         {
           "id": "bolje-da-cutim",
           "sr_latin": "Bolje da ćutim.",
           "sr_cyrillic": "Боље да ћутим.",
           "en": "Better if I stay quiet.",
-          "context": "When you have an opinion but sharing it would cause problems. Everyone knows you have thoughts.",
+          "context": "You clearly have a strong opinion but saying it out loud would only cause trouble right now.",
           "wordRefs": [
-            "da-conj"
+            "da-conj",
+            { "id": "cutati", "surface": "ćutim", "surface_cyrillic": "ћутим", "form": "1sg.pres" }
           ],
-          "notes": "'Ćutati' = to be silent. Saying this is the opposite of being silent, which is the joke."
+          "notes": "'Ćutati' = to keep quiet; 'ćutim' = I stay silent (present). Saying it loudly is, of course, the joke."
         }
       ]
     },
@@ -364,9 +418,10 @@
           "context": "A plan keeps falling apart and you're done with it — tell your friend to drop the whole thing.",
           "wordRefs": [
             "ma",
+            { "id": "terati", "surface": "teraj", "surface_cyrillic": "терај", "form": "imp.2sg" },
             "to"
           ],
-          "notes": "'Terati' = to drive/push. There's a much more vulgar version everyone actually uses."
+          "notes": "'Terati' = to drive/push; 'teraj to' literally 'drive that off'. A milder cousin of cruder versions."
         },
         {
           "id": "lagano",
@@ -374,19 +429,23 @@
           "sr_cyrillic": "Лагано.",
           "en": "Easy. / No stress. / Chill.",
           "context": "A friend asks how things are going — answer in one laid-back word that it's all relaxed.",
-          "wordRefs": [],
-          "notes": "Literally 'lightly.' The Serbian equivalent of 'easy-peasy' or 'no worries.'"
+          "wordRefs": [
+            "lagano"
+          ],
+          "notes": "Literally 'lightly', from 'lak' (light/easy). The Serbian 'easy-peasy', used for taking it slow."
         },
         {
           "id": "polako-slang",
           "sr_latin": "Polako, brate. Šta žuriš?",
           "sr_cyrillic": "Полако, брате. Шта журиш?",
           "en": "Easy, bro. What's the rush?",
-          "context": "Telling someone to slow down and relax. Very Balkan philosophy — life is not a race.",
+          "context": "Your friend is rushing around stressed — tell him to slow down, life isn't a race.",
           "wordRefs": [
-            "sta"
+            "brate",
+            "sta",
+            { "id": "zuriti", "surface": "žuriš", "surface_cyrillic": "журиш", "form": "2sg.pres" }
           ],
-          "notes": "'Polako' = slowly/easy. Core Balkan concept: rushing is suspicious."
+          "notes": "'Žuriš' = you're rushing (present). 'Polako' (slowly/easy) is a core Balkan value: rushing is suspect."
         },
         {
           "id": "nema-frke",
@@ -395,9 +454,10 @@
           "en": "No worries. / No stress.",
           "context": "Your friend is panicking about a small problem — reassure him there's nothing to stress about.",
           "wordRefs": [
-            { "id": "imati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres.neg" }
+            { "id": "imati", "surface": "Nema", "surface_cyrillic": "Нема", "form": "3sg.pres.neg" },
+            { "id": "frka", "surface": "frke", "surface_cyrillic": "фрке", "case": "gen" }
           ],
-          "notes": "'Frka' = panic/stress. Very common among younger speakers."
+          "notes": "'Nema' forces 'frka' (panic/stress) into the genitive 'frke'. Very common among younger speakers."
         }
       ]
     },
@@ -414,18 +474,18 @@
           "wordRefs": [
             "jao"
           ],
-          "notes": "The Swiss Army knife of Serbian exclamations. You'll hear it dozens of times a day."
+          "notes": "The all-purpose Serbian exclamation — pain, surprise, pity, delight. You'll hear it constantly."
         },
         {
           "id": "ajde",
           "sr_latin": "Ajde!",
           "sr_cyrillic": "Ајде!",
           "en": "Come on! / Let's go! / Alright!",
-          "context": "Encouragement, impatience, agreement, farewell — depends on context. Possibly the most versatile Serbian word.",
+          "context": "You're nudging your friend to get moving, or wrapping up a chat — toss out the all-purpose nudge.",
           "wordRefs": [
             { "id": "hajde", "surface": "Ajde", "surface_cyrillic": "Ајде" }
           ],
-          "notes": "As goodbye: 'Ajde, ćao!' As encouragement: 'Ajde, možeš ti to!' As impatience: 'Ajde, požuri!'"
+          "notes": "'Ajde' = let's/come on. Flips by tone: encouragement, impatience, agreement, even goodbye."
         },
         {
           "id": "ma-jok",
@@ -434,19 +494,23 @@
           "en": "Nah. / Not at all.",
           "context": "A friend asks if you were upset about it — wave it off with a laid-back no.",
           "wordRefs": [
-            "ma"
+            "ma",
+            "jok"
           ],
-          "notes": "'Jok' comes from Turkish. Short, punchy, very natural sounding."
+          "notes": "'Jok' = a punchy, casual 'nope', warmer than plain 'ne'. 'Jok' came in from Turkish."
         },
         {
           "id": "ej",
           "sr_latin": "Ej, čuj ovo.",
           "sr_cyrillic": "Еј, чуј ово.",
           "en": "Hey, listen to this.",
-          "context": "Getting someone's attention before sharing news, gossip, or a joke.",
+          "context": "You've got news or a joke and you grab your friend's attention before launching in.",
           "wordRefs": [
-            { "id": "cuti", "surface": "čuj", "surface_cyrillic": "чуј", "form": "imp.2sg" }
-          ]
+            "ej",
+            { "id": "cuti", "surface": "čuj", "surface_cyrillic": "чуј", "form": "imp.2sg" },
+            "ovo"
+          ],
+          "notes": "'Čuj' = listen (imperative of 'čuti'); 'čuj ovo' = 'hear this'. 'Ej' is just an attention-grabber."
         }
       ]
     },
@@ -458,24 +522,27 @@
           "id": "inat",
           "sr_latin": "To je čist inat.",
           "sr_cyrillic": "То је чист инат.",
-          "en": "That's pure spite. / That's stubbornness out of principle.",
-          "context": "Someone keeps doing the thing they were told not to, just to prove a point — name it for what it is.",
+          "en": "That's pure spite.",
+          "context": "Someone keeps doing the forbidden thing just to prove a point — name it for what it is.",
           "wordRefs": [
             "to",
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
+            { "id": "cist", "surface": "čist", "surface_cyrillic": "чист" },
+            "inat"
           ],
-          "notes": "'Inat' (from Turkish) is an almost untranslatable concept — stubborn defiance, doing something precisely because you were told not to. A point of national pride."
+          "notes": "'Inat' = stubborn defiance, doing a thing precisely because you were told not to. From Turkish; a point of pride."
         },
         {
           "id": "bez-veze",
           "sr_latin": "Bez veze.",
           "sr_cyrillic": "Без везе.",
           "en": "Pointless. / Lame. / Whatever.",
-          "context": "A friend suggests something you think is a waste of time — dismiss it as lame.",
+          "context": "A friend suggests something you think is a total waste of time — dismiss it as lame.",
           "wordRefs": [
+            "bez",
             { "id": "veza", "surface": "veze", "surface_cyrillic": "везе", "case": "gen" }
           ],
-          "notes": "Literally 'without connection.' Opposite of good. Very commonly used dismissal."
+          "notes": "Literally 'without connection' — 'bez' (without) forces 'veza' into the genitive 'veze'."
         },
         {
           "id": "to-je-to",
@@ -485,10 +552,9 @@
           "context": "Your friend finally lands on the exact song you wanted — light up and confirm it.",
           "wordRefs": [
             "to",
-            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },
-            "to"
+            { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
           ],
-          "notes": "Also used to wrap up a conversation or declare something finished."
+          "notes": "Confirms you've nailed the right thing; also used to wrap a conversation or declare something done."
         },
         {
           "id": "samo-jako",
@@ -497,9 +563,10 @@
           "en": "Go hard! / Full send!",
           "context": "Your friend is hesitating before a bold move — egg him on to go all in.",
           "wordRefs": [
-            "samo"
+            "samo",
+            { "id": "jako", "surface": "jako", "surface_cyrillic": "јако" }
           ],
-          "notes": "Literally 'only strong.' The Serbian version of 'YOLO' but with more conviction."
+          "notes": "Literally 'only strong', from 'jak' (strong). The Serbian 'send it' — pure go-for-it encouragement."
         }
       ]
     }
