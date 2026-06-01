@@ -100,7 +100,7 @@
           "sr_latin": "Ekstra!",
           "sr_cyrillic": "Екстра!",
           "en": "Awesome! / Sick!",
-          "context": "A friend shows you a clip of their weekend — react like it's awesome.",
+          "context": "A friend shows you a clip of their weekend — fire back a one-word rave.",
           "wordRefs": ["ekstra-interj"],
           "notes": "Used as a standalone exclamation. Can also mean 'extra good' as an adjective."
         }
@@ -124,7 +124,7 @@
           "sr_latin": "Jao!",
           "sr_cyrillic": "Јао!",
           "en": "Oh no! / Oh! / Ugh!",
-          "context": "The Serbian 'oh no.' Used for pain, surprise, exasperation — extremely versatile.",
+          "context": "You hear bad news and let out a quick gut reaction — the all-purpose cry for pain, shock, or dismay.",
           "wordRefs": ["jao"],
           "notes": "One of the most common Serbian exclamations. Pronunciation can change the meaning — short and sharp for pain, drawn out for exasperation."
         },
@@ -202,7 +202,7 @@
           "sr_latin": "Važi.",
           "sr_cyrillic": "Важи.",
           "en": "Okay. / Deal. / Sounds good.",
-          "context": "The most common casual 'okay' in Serbian. Used to confirm plans, agree to something.",
+          "context": "Someone proposes a time to meet and you want to lock it in with a quick casual yes.",
           "wordRefs": [
             { "id": "vaziti", "surface": "Važi", "surface_cyrillic": "Важи", "form": "3sg.pres" }
           ],

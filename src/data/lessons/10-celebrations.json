@@ -30,7 +30,7 @@
           "sr_latin": "U zdravlje!",
           "sr_cyrillic": "У здравље!",
           "en": "To health!",
-          "context": "Lift your glass and toast to everyone's good health — the two-word version.",
+          "context": "Glasses are up and you want to toast to everyone's good health rather than just say cheers.",
           "wordRefs": [
             "u"
           ],
@@ -481,7 +481,7 @@
           "sr_latin": "Svaka čast!",
           "sr_cyrillic": "Свака част!",
           "en": "Well done! / Respect!",
-          "context": "A friend pulled off something genuinely impressive — show them respect.",
+          "context": "A friend pulled off something genuinely impressive — tip your hat to them.",
           "wordRefs": [
             { "id": "svaki", "surface": "Svaka", "surface_cyrillic": "Свака", "form": "f.sg" },
             "cast"

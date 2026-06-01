@@ -331,7 +331,7 @@
           "sr_latin": "Šta radiš?",
           "sr_cyrillic": "Шта радиш?",
           "en": "What are you doing? / What's up?",
-          "context": "The most common conversation opener in Serbian. Can mean 'what are you doing right now' or just 'hey, what's up'.",
+          "context": "You message a friend out of the blue to open a chat and see if they're around.",
           "wordRefs": [
             "sta",
             { "id": "raditi", "surface": "radiš", "surface_cyrillic": "радиш", "form": "2sg.pres" }
@@ -343,7 +343,7 @@
           "sr_latin": "Gde si?",
           "sr_cyrillic": "Где си?",
           "en": "Where are you? / Hey, what's up?",
-          "context": "Can be literal ('where are you?') or a casual greeting meaning 'hey!'.",
+          "context": "You're trying to find a friend in a crowd, or just tossing them a casual hello.",
           "wordRefs": [
             "gde",
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" }

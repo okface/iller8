@@ -372,7 +372,7 @@
           "sr_latin": "Lagano.",
           "sr_cyrillic": "Лагано.",
           "en": "Easy. / No stress. / Chill.",
-          "context": "A friend asks how things are going — answer that it's all relaxed, with one chill word.",
+          "context": "A friend asks how things are going — answer in one laid-back word that it's all relaxed.",
           "wordRefs": [],
           "notes": "Literally 'lightly.' The Serbian equivalent of 'easy-peasy' or 'no worries.'"
         },
@@ -481,7 +481,7 @@
           "sr_latin": "To je to!",
           "sr_cyrillic": "То је то!",
           "en": "That's it! / That's the one!",
-          "context": "Your friend finally picks the exact song you wanted — confirm that's the one.",
+          "context": "Your friend finally lands on the exact song you wanted — light up and confirm it.",
           "wordRefs": [
             "to",
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" },

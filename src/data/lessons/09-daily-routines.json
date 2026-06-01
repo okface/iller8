@@ -329,7 +329,7 @@
           "sr_latin": "Laku noć.",
           "sr_cyrillic": "Лаку ноћ.",
           "en": "Good night.",
-          "context": "Standard good night, used with everyone — partner, friends, family.",
+          "context": "You're turning in for the night and say the plain bedtime line that works with anyone.",
           "wordRefs": [
             { "id": "lak", "surface": "Laku", "surface_cyrillic": "Лаку", "form": "acc.f.sg" },
             "noc"

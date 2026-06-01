@@ -22,7 +22,7 @@
           "sr_cyrillic": "Душо моја.",
           "en": "My darling.",
           "gloss_hint": "lit. 'my soul'",
-          "context": "The most common Serbian pet name. You'll hear this constantly between couples.",
+          "context": "The default sweet nickname for your partner — the one built from the word for 'soul'.",
           "wordRefs": [
             { "id": "dusa", "surface": "Dušo", "surface_cyrillic": "Душо", "case": "voc" },
             { "id": "moj", "surface": "moja", "surface_cyrillic": "моја" }
