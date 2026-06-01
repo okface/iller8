@@ -2,23 +2,22 @@ import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { lessons } from '../data/lessons';
 import { families } from '../data/phrase-families';
+import { words } from '../data/words';
+import { getWordBucket } from '../lib/word-progress';
 import Card from '../components/ui/Card';
 import SectionHead from '../components/ui/SectionHead';
 import MonoBadge from '../components/ui/MonoBadge';
 import AudioButton from '../components/ui/AudioButton';
 import { T, metaLabel } from '../lib/tokens';
 import { phraseDifficulty } from '../data/phrase-meta';
-import type { UserProgress } from '../store/types';
+import type { Phrase, UserProgress } from '../store/types';
 
 /** Difficulty meter: 1–3 dots from the phrase's computed difficulty score. */
 function DifficultyDots({ phraseId }: { phraseId: string }) {
   const d = phraseDifficulty(phraseId);
   const level = d < 3 ? 1 : d < 6 ? 2 : 3;
   return (
-    <span
-      title={`difficulty ${d}`}
-      style={{ fontFamily: T.mono, fontSize: 9, color: T.mute, letterSpacing: 1 }}
-    >
+    <span title={`difficulty ${d}`} style={{ fontFamily: T.mono, fontSize: 9, color: T.mute, letterSpacing: 1 }}>
       {'●'.repeat(level)}
       <span style={{ opacity: 0.3 }}>{'●'.repeat(3 - level)}</span>
     </span>
@@ -35,26 +34,51 @@ type Filter = 'all' | 'unseen' | 'learning' | 'mastered';
 export default function Catalog({ progress, script }: CatalogProps) {
   const navigate = useNavigate();
   const [filter, setFilter] = useState<Filter>('all');
+  const [query, setQuery] = useState('');
   const [openLessons, setOpenLessons] = useState<Set<string>>(new Set([lessons[0]?.id ?? '']));
 
+  // Flat phrase index (with lessonId) for search.
+  const flatPhrases = useMemo(
+    () =>
+      lessons.flatMap((l) =>
+        l.phraseGroups.flatMap((g) => g.phrases.map((p) => ({ phrase: p, lessonId: l.id }))),
+      ),
+    [],
+  );
+
   const totals = useMemo(() => {
-    let total = 0;
-    let unseen = 0;
-    let learning = 0;
-    let mastered = 0;
-    for (const lesson of lessons) {
-      for (const group of lesson.phraseGroups) {
-        for (const phrase of group.phrases) {
-          total++;
-          const bucket = progress.phrases[phrase.id]?.bucket ?? 0;
-          if (bucket === 0) unseen++;
-          else if (bucket < 4) learning++;
-          else mastered++;
-        }
-      }
+    let total = 0, unseen = 0, learning = 0, mastered = 0;
+    for (const { phrase } of flatPhrases) {
+      total++;
+      const bucket = progress.phrases[phrase.id]?.bucket ?? 0;
+      if (bucket === 0) unseen++;
+      else if (bucket < 4) learning++;
+      else mastered++;
     }
     return { total, unseen, learning, mastered };
-  }, [progress.phrases]);
+  }, [progress.phrases, flatPhrases]);
+
+  const q = query.trim().toLowerCase();
+  const searching = q.length >= 2;
+
+  const phraseResults = useMemo(() => {
+    if (!searching) return [] as { phrase: Phrase; lessonId: string }[];
+    return flatPhrases
+      .filter(({ phrase }) => {
+        const hay = `${phrase.sr_latin} ${phrase.sr_cyrillic} ${phrase.en} ${phrase.context ?? ''}`.toLowerCase();
+        return hay.includes(q);
+      })
+      .slice(0, 60);
+  }, [q, searching, flatPhrases]);
+
+  const wordResults = useMemo(() => {
+    if (!searching) return [];
+    return words
+      .filter((w) =>
+        `${w.lemma_sr_latin} ${w.lemma_sr_cyrillic} ${w.gloss_en}`.toLowerCase().includes(q),
+      )
+      .slice(0, 40);
+  }, [q, searching]);
 
   const passesFilter = (bucket: number) => {
     if (filter === 'all') return true;
@@ -72,299 +96,316 @@ export default function Catalog({ progress, script }: CatalogProps) {
     });
   };
 
+  const wordLabel = (latin: string, cyr: string) => (script === 'cyrillic' ? cyr : latin);
+
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
-      <div style={metaLabel}>EVERY PHRASE · EVERY LESSON</div>
-      <h1
-        style={{
-          fontSize: 28,
-          fontWeight: 700,
-          letterSpacing: -0.6,
-          margin: '8px 0 4px',
-          color: T.text,
-        }}
-      >
-        Catalog
+      <div style={metaLabel}>LOOK ANYTHING UP</div>
+      <h1 style={{ fontSize: 28, fontWeight: 700, letterSpacing: -0.6, margin: '8px 0 4px', color: T.text }}>
+        Browse
       </h1>
       <p style={{ fontSize: 13, color: T.dim, lineHeight: 1.55, maxWidth: 440 }}>
-        The whole map. Tap a lesson to expand. Tap a phrase to drill it in context.
+        Search every phrase and word, or scroll the categories. Tap a phrase to drill it in context.
       </p>
 
-      {/* Stat row */}
-      <div
+      {/* Search */}
+      <input
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search phrases & words…"
         style={{
           marginTop: 16,
-          display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: 1,
-          background: T.border,
-          borderRadius: T.r2,
-          overflow: 'hidden',
+          width: '100%',
+          boxSizing: 'border-box',
+          padding: '11px 14px',
+          background: T.surfaceWarm,
           border: `1px solid ${T.border}`,
+          borderRadius: T.r2,
+          color: T.text,
+          fontSize: 14,
+          outline: 'none',
         }}
-      >
-        {[
-          { k: 'TOTAL', v: totals.total, c: T.text, filter: 'all' as Filter },
-          { k: 'UNSEEN', v: totals.unseen, c: T.mute, filter: 'unseen' as Filter },
-          { k: 'LEARNING', v: totals.learning, c: T.amber, filter: 'learning' as Filter },
-          { k: 'MASTERED', v: totals.mastered, c: T.green, filter: 'mastered' as Filter },
-        ].map(({ k, v, c, filter: f }) => {
-          const active = filter === f;
-          return (
-            <button
-              key={k}
-              onClick={() => setFilter(f)}
-              style={{
-                background: active ? T.surfaceWarm : T.bg,
-                padding: '12px 10px',
-                border: 'none',
-                cursor: 'pointer',
-                textAlign: 'left',
-                color: T.text,
-                transition: `all ${T.fast} ${T.ease}`,
-              }}
-            >
-              <div
-                style={{
-                  ...metaLabel,
-                  color: active ? T.amber : T.mute,
-                }}
-              >
-                {k}
-              </div>
-              <div
-                style={{
-                  fontFamily: T.mono,
-                  fontSize: 18,
-                  fontWeight: 500,
-                  marginTop: 2,
-                  letterSpacing: -0.5,
-                  color: c,
-                }}
-              >
-                {v}
-              </div>
-            </button>
-          );
-        })}
-      </div>
+      />
 
-      {/* Lessons */}
-      <div style={{ marginTop: 22 }}>
-        <SectionHead suffix={`${lessons.length} lessons`}>LESSONS</SectionHead>
-        {lessons.map((lesson) => {
-          const isOpen = openLessons.has(lesson.id);
-          const allPhrases = lesson.phraseGroups.flatMap((g) => g.phrases);
-          const lessonStats = allPhrases.reduce(
-            (acc, p) => {
-              const bucket = progress.phrases[p.id]?.bucket ?? 0;
-              if (bucket === 0) acc.unseen++;
-              else if (bucket < 4) acc.learning++;
-              else acc.mastered++;
-              return acc;
-            },
-            { unseen: 0, learning: 0, mastered: 0 }
-          );
-          const phrasesInFilter = allPhrases.filter((p) => {
-            const bucket = progress.phrases[p.id]?.bucket ?? 0;
-            return passesFilter(bucket);
-          });
-
-          if (filter !== 'all' && phrasesInFilter.length === 0) return null;
-
-          return (
-            <div
-              key={lesson.id}
-              style={{
-                borderTop: `0.5px solid ${T.border}`,
-                paddingTop: 12,
-                paddingBottom: 12,
-              }}
-            >
-              <button
-                onClick={() => toggleLesson(lesson.id)}
-                style={{
-                  background: 'transparent',
-                  border: 'none',
-                  cursor: 'pointer',
-                  padding: 0,
-                  width: '100%',
-                  display: 'grid',
-                  gridTemplateColumns: '32px 1fr auto',
-                  gap: 12,
-                  alignItems: 'center',
-                  color: T.text,
-                  textAlign: 'left',
-                }}
-              >
-                <span style={{ fontFamily: T.mono, fontSize: 11, color: T.mute }}>
-                  {String(lesson.order).padStart(2, '0')}
-                </span>
-                <div style={{ minWidth: 0 }}>
-                  <div style={{ fontSize: 15, fontWeight: 500, letterSpacing: -0.2 }}>
-                    {script === 'cyrillic' ? lesson.title.sr_cyrillic : lesson.title.sr_latin}
-                  </div>
-                  <div
-                    style={{
-                      fontFamily: T.mono,
-                      fontSize: 11,
-                      color: T.dim,
-                      marginTop: 1,
-                    }}
-                  >
-                    {allPhrases.length} phrases · {lessonStats.mastered} mastered
-                  </div>
-                </div>
-                <span style={{ color: T.dim, fontFamily: T.mono, fontSize: 12 }}>
-                  {isOpen ? '−' : '+'}
-                </span>
-              </button>
-
-              {isOpen && (
-                <Card pad={0} style={{ marginTop: 10 }}>
-                  {phrasesInFilter.map((phrase, i) => {
-                    const bucket = progress.phrases[phrase.id]?.bucket ?? 0;
-                    const dotColor =
-                      bucket === 0
-                        ? T.border
-                        : bucket >= 4
-                          ? T.green
-                          : T.amber;
-                    return (
-                      <div
-                        key={phrase.id}
-                        role="button"
-                        tabIndex={0}
-                        onClick={() => navigate(`/lesson/${lesson.id}`)}
-                        onKeyDown={(e) => {
-                          if (e.key === 'Enter' || e.key === ' ') {
-                            e.preventDefault();
-                            navigate(`/lesson/${lesson.id}`);
-                          }
-                        }}
-                        style={{
-                          width: '100%',
-                          textAlign: 'left',
-                          background: 'transparent',
-                          border: 'none',
-                          padding: '10px 14px',
-                          borderTop: i === 0 ? 'none' : `0.5px solid ${T.border}`,
-                          cursor: 'pointer',
-                          display: 'grid',
-                          gridTemplateColumns: 'auto 1fr auto auto',
-                          gap: 12,
-                          alignItems: 'center',
-                          color: T.text,
-                          transition: `background ${T.fast} ${T.ease}`,
-                        }}
-                      >
-                        <span
-                          style={{
-                            width: 8,
-                            height: 8,
-                            borderRadius: '50%',
-                            background: dotColor,
-                            flexShrink: 0,
-                          }}
-                        />
-                        <div style={{ minWidth: 0 }}>
-                          <div
-                            className="font-serif-sr"
-                            style={{
-                              fontSize: 15,
-                              fontWeight: 500,
-                              color: T.text,
-                              letterSpacing: -0.2,
-                            }}
-                          >
-                            {script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin}
-                          </div>
-                          <div
-                            style={{
-                              fontSize: 11,
-                              color: T.dim,
-                              marginTop: 1,
-                              display: 'flex',
-                              alignItems: 'center',
-                              gap: 8,
-                            }}
-                          >
-                            <span style={{ minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                              {phrase.en}
-                            </span>
-                            <DifficultyDots phraseId={phrase.id} />
-                          </div>
+      {/* Search results */}
+      {searching && (
+        <div style={{ marginTop: 18 }}>
+          {wordResults.length > 0 && (
+            <div style={{ marginBottom: 18 }}>
+              <SectionHead suffix={String(wordResults.length)}>WORDS</SectionHead>
+              <Card pad={0}>
+                {wordResults.map((w, i) => {
+                  const bucket = getWordBucket(progress, w.id);
+                  return (
+                    <div
+                      key={w.id}
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => navigate('/words')}
+                      onKeyDown={(e) => { if (e.key === 'Enter') navigate('/words'); }}
+                      style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1fr auto auto',
+                        gap: 12,
+                        alignItems: 'center',
+                        padding: '10px 14px',
+                        borderTop: i === 0 ? 'none' : `0.5px solid ${T.border}`,
+                        cursor: 'pointer',
+                      }}
+                    >
+                      <div style={{ minWidth: 0 }}>
+                        <div className="font-serif-sr" style={{ fontSize: 15, fontWeight: 500, color: T.text }}>
+                          {wordLabel(w.lemma_sr_latin, w.lemma_sr_cyrillic)}
+                          <span style={{ fontFamily: T.mono, fontSize: 9, color: T.mute, marginLeft: 8 }}>{w.pos}</span>
                         </div>
-                        <AudioButton text={phrase.sr_latin} size={14} />
-                        <span
-                          style={{
-                            fontFamily: T.mono,
-                            fontSize: 10,
-                            color: T.mute,
-                          }}
-                        >
-                          {bucket > 0 ? `B${bucket}` : 'new'}
-                        </span>
+                        <div style={{ fontSize: 11, color: T.dim, marginTop: 1 }}>{w.gloss_en}</div>
                       </div>
-                    );
-                  })}
-                </Card>
-              )}
+                      <AudioButton text={w.lemma_sr_latin} size={14} />
+                      <span style={{ fontFamily: T.mono, fontSize: 10, color: T.mute }}>
+                        {bucket > 0 ? `B${bucket}` : 'new'}
+                      </span>
+                    </div>
+                  );
+                })}
+              </Card>
             </div>
-          );
-        })}
-      </div>
+          )}
 
-      {/* Phrase families row */}
-      {families.length > 0 && (
-        <div style={{ marginTop: 28 }}>
-          <SectionHead suffix={String(families.length)}>PHRASE FAMILIES</SectionHead>
-          <p style={{ fontSize: 12, color: T.dim, marginBottom: 12 }}>
-            Curated clusters that drill perspective shifts — formality, gender, tense,
-            aspect. The most efficient way to learn how Serbian bends.
-          </p>
+          {phraseResults.length > 0 ? (
+            <div>
+              <SectionHead suffix={String(phraseResults.length)}>PHRASES</SectionHead>
+              <Card pad={0}>
+                {phraseResults.map(({ phrase, lessonId }, i) => {
+                  const bucket = progress.phrases[phrase.id]?.bucket ?? 0;
+                  return (
+                    <div
+                      key={phrase.id}
+                      role="button"
+                      tabIndex={0}
+                      onClick={() => navigate(`/lesson/${lessonId}`)}
+                      onKeyDown={(e) => { if (e.key === 'Enter') navigate(`/lesson/${lessonId}`); }}
+                      style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1fr auto auto',
+                        gap: 12,
+                        alignItems: 'center',
+                        padding: '10px 14px',
+                        borderTop: i === 0 ? 'none' : `0.5px solid ${T.border}`,
+                        cursor: 'pointer',
+                      }}
+                    >
+                      <div style={{ minWidth: 0 }}>
+                        <div className="font-serif-sr" style={{ fontSize: 15, fontWeight: 500, color: T.text }}>
+                          {script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin}
+                        </div>
+                        <div style={{ fontSize: 11, color: T.dim, marginTop: 1 }}>{phrase.en}</div>
+                      </div>
+                      <AudioButton text={phrase.sr_latin} size={14} />
+                      <span style={{ fontFamily: T.mono, fontSize: 10, color: T.mute }}>
+                        {bucket > 0 ? `B${bucket}` : 'new'}
+                      </span>
+                    </div>
+                  );
+                })}
+              </Card>
+            </div>
+          ) : wordResults.length === 0 ? (
+            <p style={{ fontSize: 13, color: T.dim, marginTop: 8 }}>No matches for “{query}”.</p>
+          ) : null}
+        </div>
+      )}
+
+      {/* Browse (hidden while searching) */}
+      {!searching && (
+        <>
+          {/* Stat row */}
           <div
             style={{
+              marginTop: 16,
               display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
-              gap: 8,
+              gridTemplateColumns: 'repeat(4, 1fr)',
+              gap: 1,
+              background: T.border,
+              borderRadius: T.r2,
+              overflow: 'hidden',
+              border: `1px solid ${T.border}`,
             }}
           >
-            {families.map((family) => {
-              const masteredVariants = family.variants.filter((v) => {
-                const key = `family:${family.id}:${v.id}`;
-                return (progress.phrases[key]?.bucket ?? 0) >= 4;
-              }).length;
+            {[
+              { k: 'TOTAL', v: totals.total, c: T.text, filter: 'all' as Filter },
+              { k: 'UNSEEN', v: totals.unseen, c: T.mute, filter: 'unseen' as Filter },
+              { k: 'LEARNING', v: totals.learning, c: T.amber, filter: 'learning' as Filter },
+              { k: 'MASTERED', v: totals.mastered, c: T.green, filter: 'mastered' as Filter },
+            ].map(({ k, v, c, filter: f }) => {
+              const active = filter === f;
               return (
-                <Card
-                  key={family.id}
-                  pad={12}
-                  onClick={() => navigate('/families')}
-                  style={{ display: 'flex', flexDirection: 'column', gap: 6 }}
+                <button
+                  key={k}
+                  onClick={() => setFilter(f)}
+                  style={{
+                    background: active ? T.surfaceWarm : T.bg,
+                    padding: '12px 10px',
+                    border: 'none',
+                    cursor: 'pointer',
+                    textAlign: 'left',
+                    color: T.text,
+                    transition: `all ${T.fast} ${T.ease}`,
+                  }}
                 >
-                  <div style={{ fontSize: 13, fontWeight: 600, color: T.text }}>
-                    {family.theme}
+                  <div style={{ ...metaLabel, color: active ? T.amber : T.mute }}>{k}</div>
+                  <div style={{ fontFamily: T.mono, fontSize: 18, fontWeight: 500, marginTop: 2, letterSpacing: -0.5, color: c }}>
+                    {v}
                   </div>
-                  <div
-                    className="font-serif-sr"
-                    style={{ fontSize: 13, fontStyle: 'italic', color: T.dim }}
-                  >
-                    {script === 'cyrillic' ? family.base.sr_cyrillic : family.base.sr_latin}
-                  </div>
-                  <div>
-                    {masteredVariants > 0 ? (
-                      <MonoBadge kind="green">
-                        {masteredVariants}/{family.variants.length}
-                      </MonoBadge>
-                    ) : (
-                      <MonoBadge>{family.variants.length} forms</MonoBadge>
-                    )}
-                  </div>
-                </Card>
+                </button>
               );
             })}
           </div>
-        </div>
+
+          {/* Lessons */}
+          <div style={{ marginTop: 22 }}>
+            <SectionHead suffix={`${lessons.length} lessons`}>CATEGORIES</SectionHead>
+            {lessons.map((lesson) => {
+              const isOpen = openLessons.has(lesson.id);
+              const allPhrasesInLesson = lesson.phraseGroups.flatMap((g) => g.phrases);
+              const lessonStats = allPhrasesInLesson.reduce(
+                (acc, p) => {
+                  const bucket = progress.phrases[p.id]?.bucket ?? 0;
+                  if (bucket === 0) acc.unseen++;
+                  else if (bucket < 4) acc.learning++;
+                  else acc.mastered++;
+                  return acc;
+                },
+                { unseen: 0, learning: 0, mastered: 0 }
+              );
+              const phrasesInFilter = allPhrasesInLesson.filter((p) => {
+                const bucket = progress.phrases[p.id]?.bucket ?? 0;
+                return passesFilter(bucket);
+              });
+
+              if (filter !== 'all' && phrasesInFilter.length === 0) return null;
+
+              return (
+                <div key={lesson.id} style={{ borderTop: `0.5px solid ${T.border}`, paddingTop: 12, paddingBottom: 12 }}>
+                  <button
+                    onClick={() => toggleLesson(lesson.id)}
+                    style={{
+                      background: 'transparent',
+                      border: 'none',
+                      cursor: 'pointer',
+                      padding: 0,
+                      width: '100%',
+                      display: 'grid',
+                      gridTemplateColumns: '32px 1fr auto',
+                      gap: 12,
+                      alignItems: 'center',
+                      color: T.text,
+                      textAlign: 'left',
+                    }}
+                  >
+                    <span style={{ fontFamily: T.mono, fontSize: 11, color: T.mute }}>
+                      {String(lesson.order).padStart(2, '0')}
+                    </span>
+                    <div style={{ minWidth: 0 }}>
+                      <div style={{ fontSize: 15, fontWeight: 500, letterSpacing: -0.2 }}>
+                        {script === 'cyrillic' ? lesson.title.sr_cyrillic : lesson.title.sr_latin}
+                      </div>
+                      <div style={{ fontFamily: T.mono, fontSize: 11, color: T.dim, marginTop: 1 }}>
+                        {allPhrasesInLesson.length} phrases · {lessonStats.mastered} mastered
+                      </div>
+                    </div>
+                    <span style={{ color: T.dim, fontFamily: T.mono, fontSize: 12 }}>{isOpen ? '−' : '+'}</span>
+                  </button>
+
+                  {isOpen && (
+                    <Card pad={0} style={{ marginTop: 10 }}>
+                      {phrasesInFilter.map((phrase, i) => {
+                        const bucket = progress.phrases[phrase.id]?.bucket ?? 0;
+                        const dotColor = bucket === 0 ? T.border : bucket >= 4 ? T.green : T.amber;
+                        return (
+                          <div
+                            key={phrase.id}
+                            role="button"
+                            tabIndex={0}
+                            onClick={() => navigate(`/lesson/${lesson.id}`)}
+                            onKeyDown={(e) => {
+                              if (e.key === 'Enter' || e.key === ' ') {
+                                e.preventDefault();
+                                navigate(`/lesson/${lesson.id}`);
+                              }
+                            }}
+                            style={{
+                              width: '100%',
+                              textAlign: 'left',
+                              background: 'transparent',
+                              border: 'none',
+                              padding: '10px 14px',
+                              borderTop: i === 0 ? 'none' : `0.5px solid ${T.border}`,
+                              cursor: 'pointer',
+                              display: 'grid',
+                              gridTemplateColumns: 'auto 1fr auto auto',
+                              gap: 12,
+                              alignItems: 'center',
+                              color: T.text,
+                              transition: `background ${T.fast} ${T.ease}`,
+                            }}
+                          >
+                            <span style={{ width: 8, height: 8, borderRadius: '50%', background: dotColor, flexShrink: 0 }} />
+                            <div style={{ minWidth: 0 }}>
+                              <div className="font-serif-sr" style={{ fontSize: 15, fontWeight: 500, color: T.text, letterSpacing: -0.2 }}>
+                                {script === 'cyrillic' ? phrase.sr_cyrillic : phrase.sr_latin}
+                              </div>
+                              <div style={{ fontSize: 11, color: T.dim, marginTop: 1, display: 'flex', alignItems: 'center', gap: 8 }}>
+                                <span style={{ minWidth: 0, overflow: 'hidden', textOverflow: 'ellipsis' }}>{phrase.en}</span>
+                                <DifficultyDots phraseId={phrase.id} />
+                              </div>
+                            </div>
+                            <AudioButton text={phrase.sr_latin} size={14} />
+                            <span style={{ fontFamily: T.mono, fontSize: 10, color: T.mute }}>
+                              {bucket > 0 ? `B${bucket}` : 'new'}
+                            </span>
+                          </div>
+                        );
+                      })}
+                    </Card>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Phrase families */}
+          {families.length > 0 && (
+            <div style={{ marginTop: 28 }}>
+              <SectionHead suffix={String(families.length)}>PHRASE FAMILIES</SectionHead>
+              <p style={{ fontSize: 12, color: T.dim, marginBottom: 12 }}>
+                Curated clusters that show how one phrase bends — gender, tense, formality, aspect.
+              </p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 8 }}>
+                {families.map((family) => {
+                  const masteredVariants = family.variants.filter((v) => {
+                    const key = `family:${family.id}:${v.id}`;
+                    return (progress.phrases[key]?.bucket ?? 0) >= 4;
+                  }).length;
+                  return (
+                    <Card key={family.id} pad={12} onClick={() => navigate('/families')} style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
+                      <div style={{ fontSize: 13, fontWeight: 600, color: T.text }}>{family.theme}</div>
+                      <div className="font-serif-sr" style={{ fontSize: 13, fontStyle: 'italic', color: T.dim }}>
+                        {script === 'cyrillic' ? family.base.sr_cyrillic : family.base.sr_latin}
+                      </div>
+                      <div>
+                        {masteredVariants > 0 ? (
+                          <MonoBadge kind="green">{masteredVariants}/{family.variants.length}</MonoBadge>
+                        ) : (
+                          <MonoBadge>{family.variants.length} forms</MonoBadge>
+                        )}
+                      </div>
+                    </Card>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+        </>
       )}
     </div>
   );
