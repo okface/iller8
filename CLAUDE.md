@@ -17,7 +17,7 @@ A personal Serbian language learning SPA. Teaches practical, modern Serbian thro
 - No backend
 
 ## Architecture
-- `src/data/lessons/*.json` — 10 lesson files with ~360 total phrases
+- `src/data/lessons/*.json` — 11 lesson files (~390 phrases). Authoring standard: `src/data/CONTENT_SPEC.md`
 - `src/engine/srs.ts` — SRS algorithm: 8 buckets (0-7), intervals from 1h to 30d
 - `src/engine/exercise-generator.ts` — Generates exercises, handles direction locking by bucket
 - `src/engine/script-converter.ts` — Cyrillic ↔ Latin conversion
@@ -58,6 +58,7 @@ A personal Serbian language learning SPA. Teaches practical, modern Serbian thro
 4. Completion screen — Accuracy stats, phrase review summary
 
 ## Adding New Lessons
+**Read `src/data/CONTENT_SPEC.md` first** — the authoring standard (field rules, situational-cue style, etymology/Bosnian note conventions, the grammar-stage difficulty progression and which stages to fill next, and the minimal-pair option philosophy). Keep new/edited content — including subagent-generated — consistent with it.
 1. Create a JSON file in `src/data/lessons/` following the existing format
 2. Import it in `src/data/lessons/index.ts` and add to the `lessons` array
 3. Each phrase needs `id`, `sr_latin`, `sr_cyrillic`, `en`, and `context`

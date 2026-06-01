@@ -49,7 +49,7 @@
             { "id": "hteti", "surface": "Hoćeš", "surface_cyrillic": "Хоћеш", "form": "2sg.pres" },
             { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" }
           ],
-          "notes": "'Kafa' (not 'kava' like in Croatian) is sacred. Domestic Turkish coffee is the default, not espresso."
+          "notes": "'Kafa' (from Turkish) is sacred — domaća, Turkish-style coffee, not espresso. Croatians say 'kava', Bosnians 'kahva'."
         },
         {
           "id": "napravi-mi-kafu",
@@ -151,7 +151,7 @@
             "ja",
             "ti-nom"
           ],
-          "notes": "'Kuhati' = to cook. 'Prati sudove' / 'perati sudove' = to wash dishes."
+          "notes": "'Kuhati' = to cook (in Serbia you'll more often hear 'kuvati / kuvam' — the v/h swap is a classic Serbian vs Bosnian/Croatian tell). 'Prati sudove' = to wash dishes."
         }
       ]
     },
@@ -186,7 +186,7 @@
           "en": "Take out the trash.",
           "context": "Asking someone to take the garbage out.",
           "wordRefs": [],
-          "notes": "'Đubre' = trash/garbage. 'Izneti' = to take out."
+          "notes": "'Đubre' = trash/garbage (a Turkish loanword, originally 'manure'). 'Izneti' = to take out."
         },
         {
           "id": "ves-nece-sam-sebe",
@@ -407,7 +407,7 @@
           "wordRefs": [
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
           ],
-          "notes": "'Ponestati' = to run out of. Replace 'mleka' with whatever you're out of — 'hleba' (bread), 'kafe' (coffee)."
+          "notes": "'Ponestati' = to run out of. Swap 'mleka' for whatever's gone — 'hleba' (bread), 'kafe' (coffee). In Bosnia it's 'mlijeko' (and 'hljeb')."
         }
       ]
     },

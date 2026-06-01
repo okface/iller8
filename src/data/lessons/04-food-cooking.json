@@ -85,7 +85,7 @@
           "sr_latin": "Ukusno!",
           "sr_cyrillic": "Укусно!",
           "en": "Delicious!",
-          "context": "First bite of a meal your partner cooked — blurt out the one-word verdict.",
+          "context": "First bite of a meal your partner cooked — blurt out an instant verdict that it's delicious.",
           "wordRefs": [],
           "notes": "Short and sweet. You can also say 'Mnogo je ukusno!' for emphasis."
         },
@@ -132,7 +132,7 @@
             "da-conj",
             "na"
           ],
-          "notes": "Ćevapi (plural) are THE Serbian street food. Served in lepinja (flatbread) with onions and kajmak."
+          "notes": "Ćevapi (plural) are THE Balkan street food. Served in lepinja (flatbread) with onions and kajmak. The name, like the dish, is Turkish (kebab)."
         },
         {
           "id": "sarma-baka",
@@ -144,7 +144,7 @@
             "ne",
             { "id": "tvoj", "surface": "tvoja", "surface_cyrillic": "твоја" }
           ],
-          "notes": "This will score you huge points. Serbian grandmas take sarma very seriously."
+          "notes": "This will score you huge points — Serbian grandmas take sarma very seriously. 'Sarma' is Turkish, from 'sarmak' (to wrap)."
         },
         {
           "id": "pljeskavica",
@@ -170,7 +170,7 @@
           "en": "Is this homemade ajvar?",
           "context": "Checking whether that roasted red pepper spread on the table was made at home — a big compliment if it was.",
           "wordRefs": [],
-          "notes": "Domaći (homemade) ajvar is infinitely better than store-bought, and families make it in huge batches every autumn."
+          "notes": "Domaći (homemade) ajvar beats store-bought, and families make it in huge batches every autumn. The word is Turkish in origin."
         },
         {
           "id": "burek-sa-mesom",
@@ -196,7 +196,8 @@
             { "id": "ici", "surface": "Idemo", "surface_cyrillic": "Идемо", "form": "1pl.pres" },
             "na",
             "za"
-          ]
+          ],
+          "notes": "'Burek' is a Turkish loanword (börek). In Bosnia it's a beloved staple too — but there 'burek' can mean any filled pastry, the opposite of the Serbian meat-only rule."
         }
       ]
     },
@@ -363,7 +364,7 @@
             "mi-dat",
             "te-acc"
           ],
-          "notes": "Bread is sacred in Serbian culture. There's always bread on the table."
+          "notes": "Bread is sacred — there's always bread on the table. Serbian 'hleb', but your Bosnian friend says 'hljeb'."
         },
         {
           "id": "najeo-sam-se",
@@ -400,7 +401,7 @@
             { "id": "hteti", "surface": "Hoćeš", "surface_cyrillic": "Хоћеш", "form": "2sg.pres" },
             { "id": "kafa", "surface": "kafu", "surface_cyrillic": "кафу", "case": "acc" }
           ],
-          "notes": "In Serbia, 'kafa' usually means domaća kafa (Turkish-style coffee), not espresso."
+          "notes": "'Kafa' (from Turkish, via the coffeehouse culture) usually means domaća, Turkish-style coffee, not espresso. Croatians say 'kava', Bosnians 'kahva'."
         },
         {
           "id": "skuvaj-kafu",

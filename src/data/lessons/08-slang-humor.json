@@ -72,7 +72,7 @@
           "sr_latin": "Mrš!",
           "sr_cyrillic": "Мрш!",
           "en": "Get out of here! / Scram!",
-          "context": "Your buddy makes a ridiculous claim — playfully shoo him off with one sharp word.",
+          "context": "Your buddy makes a ridiculous claim — playfully shoo him away, like 'oh, get lost'.",
           "wordRefs": [],
           "notes": "Short, sharp, iconic. One of the first words every Serbian kid learns."
         },
@@ -86,7 +86,7 @@
             { "id": "ici", "surface": "Idi", "surface_cyrillic": "Иди", "form": "imp.2sg" },
             "bre"
           ],
-          "notes": "'Bre' has no direct translation. It's pure Serbian flavor. Add it to anything for authenticity."
+          "notes": "'Bre' has no direct translation — it's pure Balkan flavor, borrowed long ago from Turkish. Add it to anything for authenticity."
         },
         {
           "id": "budala-jedna",
@@ -97,7 +97,7 @@
           "wordRefs": [
             { "id": "jedan", "surface": "jedna", "surface_cyrillic": "једна", "form": "f.sg" }
           ],
-          "notes": "'Budala' is grammatically feminine even when referring to a man."
+          "notes": "'Budala' is a Turkish loanword, and grammatically feminine even when aimed at a man."
         },
         {
           "id": "nemoj-da-smaras",
@@ -121,7 +121,7 @@
           "sr_latin": "De si bre?",
           "sr_cyrillic": "Де си бре?",
           "en": "Where you at, man? / What's up?",
-          "context": "Street-casual greeting between friends — the dropped-consonant, extra-relaxed version of 'where you at'.",
+          "context": "You spot a buddy across the street and call out an extra-relaxed, slangy hello.",
           "wordRefs": [
             { "id": "biti", "surface": "si", "surface_cyrillic": "си", "form": "2sg.pres" },
             "bre"
@@ -224,7 +224,8 @@
           "wordRefs": [
             "ja",
             { "id": "biti", "surface": "sam", "surface_cyrillic": "сам", "form": "1sg.pres" }
-          ]
+          ],
+          "notes": "'Majmun' (monkey) came in from Turkish. Calling yourself one is gentle self-mockery."
         },
         {
           "id": "klasican-ja",
@@ -463,7 +464,7 @@
             "to",
             { "id": "biti", "surface": "je", "surface_cyrillic": "је", "form": "3sg.pres" }
           ],
-          "notes": "'Inat' is an untranslatable concept — stubborn defiance, doing something specifically because someone told you not to. National trait."
+          "notes": "'Inat' (from Turkish) is an almost untranslatable concept — stubborn defiance, doing something precisely because you were told not to. A point of national pride."
         },
         {
           "id": "bez-veze",

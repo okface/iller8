@@ -195,7 +195,7 @@
           "sr_latin": "Doneo sam od kuće.",
           "sr_cyrillic": "Донео сам од куће.",
           "en": "I brought food from home.",
-          "context": "When you packed lunch. Use 'Donela sam' if female.",
+          "context": "A colleague asks if you're coming to the bakery — tell them you packed your own lunch today.",
           "wordRefs": [
             {
               "id": "biti",
@@ -211,6 +211,7 @@
               "case": "gen"
             }
           ],
+          "notes": "Feminine speaker: 'Donela sam.' Past participle changes by gender.",
           "variations": [
             {
               "sr_latin": "Danas sam štedljiv, jedem od kuće.",
@@ -230,7 +231,7 @@
           "sr_latin": "Gotov sam za danas.",
           "sr_cyrillic": "Готов сам за данас.",
           "en": "I'm done for today.",
-          "context": "Signing off at the end of the work day. Use 'Gotova sam' if female.",
+          "context": "Signing off at the end of the work day, ready to head home.",
           "wordRefs": [
             {
               "id": "biti",
@@ -239,7 +240,8 @@
               "form": "1sg.pres"
             },
             "za"
-          ]
+          ],
+          "notes": "Feminine speaker: 'Gotova sam.' The adjective agrees with the speaker's gender."
         }
       ]
     },

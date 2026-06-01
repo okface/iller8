@@ -22,7 +22,7 @@
           "sr_cyrillic": "Душо моја.",
           "en": "My darling.",
           "gloss_hint": "lit. 'my soul'",
-          "context": "The default sweet nickname for your partner — the one built from the word for 'soul'.",
+          "context": "Your partner walks in after a long day — greet them with the default, everyday term of endearment.",
           "wordRefs": [
             { "id": "dusa", "surface": "Dušo", "surface_cyrillic": "Душо", "case": "voc" },
             { "id": "moj", "surface": "moja", "surface_cyrillic": "моја" }

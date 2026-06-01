@@ -1,3 +1,11 @@
+/**
+ * Lesson content. BEFORE adding or editing phrases — including with subagents —
+ * read the authoring standard: src/data/CONTENT_SPEC.md. It defines every field's
+ * rules, the situational-cue style, etymology / Bosnian-difference note conventions,
+ * the grammar-stage difficulty progression (what "harder" means + which stages to
+ * fill next), and the minimal-pair option philosophy. Following it keeps new content
+ * pristine and consistent with what's already here.
+ */
 import type { Lesson } from '../../store/types';
 
 import lesson01 from './01-sweet-talk.json';

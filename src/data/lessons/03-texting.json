@@ -181,7 +181,7 @@
               "case": "acc"
             }
           ],
-          "notes": "'Ajde' = come on / let's go. 'Na kafu' = for coffee. This is how Serbs make plans — over coffee.",
+          "notes": "'Ajde' = come on / let's go. 'Kafa' (from Turkish) means domaća, Turkish-style coffee — and 'na kafu' is really an invitation to hang out. Bosnians say 'kahva'.",
           "variations": [
             {
               "sr_latin": "Ajde na pivo?",
@@ -550,47 +550,43 @@
       "phrases": [
         {
           "id": "tx-nmvz",
-          "sr_latin": "nmvz",
-          "sr_cyrillic": "нмвз",
-          "en": "nvm / no worries",
-          "gloss_hint": "nema veze",
-          "context": "Short for 'nema veze.' Used in chat constantly.",
+          "sr_latin": "Nema veze (nmvz)",
+          "sr_cyrillic": "Нема везе (нмвз)",
+          "en": "No worries / It doesn't matter",
+          "context": "A small mix-up happens over text and you want to wave it off — no big deal.",
           "wordRefs": [],
-          "notes": "Just the first letters of 'nema veze.' Everyone understands it.",
-          "audio_cyrillic": "нема везе"
+          "notes": "Texted 'nmvz' — the first letters of 'nema veze' (lit. 'no connection'). The Serbian shrug.",
+          "audio_cyrillic": "Нема везе"
         },
         {
           "id": "tx-msm",
-          "sr_latin": "msm",
-          "sr_cyrillic": "мсм",
-          "en": "I mean",
-          "gloss_hint": "mislim",
-          "context": "Texting shorthand you tack on mid-message to walk back or clarify what you just said.",
+          "sr_latin": "Mislim (msm)",
+          "sr_cyrillic": "Мислим (мсм)",
+          "en": "I mean / I think",
+          "context": "Mid-message, you want to walk back or clarify what you just said.",
           "wordRefs": [],
-          "notes": "Like English 'tbh' or 'I mean.' Serbians text in abbreviations a lot.",
-          "audio_cyrillic": "мислим"
+          "notes": "Texted 'msm', short for 'mislim' (I think / I mean). Tacked on to soften or correct.",
+          "audio_cyrillic": "Мислим"
         },
         {
           "id": "tx-btj",
-          "sr_latin": "btj",
-          "sr_cyrillic": "бтј",
-          "en": "btw",
-          "gloss_hint": "bilo to jest / by the way",
-          "context": "Some people use 'btj' as the Serbian version of 'btw.' Others just use 'btw.'",
+          "sr_latin": "Bilo to jest (btj)",
+          "sr_cyrillic": "Било то јест (бтј)",
+          "en": "By the way",
+          "context": "You want to tack a side note onto your message — the Serbian 'by the way'.",
           "wordRefs": [],
-          "notes": "Younger Serbians often just use English abbreviations in texts: 'btw', 'lol', 'omg.'",
-          "audio_cyrillic": "било то јест"
+          "notes": "Texted 'btj' for 'bilo to jest'. Honestly, most young Serbians just text the English 'btw'.",
+          "audio_cyrillic": "Било то јест"
         },
         {
           "id": "tx-jbg",
-          "sr_latin": "jbg",
-          "sr_cyrillic": "јбг",
+          "sr_latin": "Jebiga (jbg)",
+          "sr_cyrillic": "Јебига (јбг)",
           "en": "Oh well / It is what it is",
-          "gloss_hint": "mild swear",
-          "context": "Short for a mildly vulgar expression meaning 'well, too bad.' Extremely common.",
+          "context": "Plans fall through and there's nothing to be done — text the resigned 'oh well'.",
           "wordRefs": [],
-          "notes": "Short for 'jebiga.' It's technically a swear word but so normalized that everyone uses it, like 'damn' in English. Very useful for expressing resigned acceptance.",
-          "audio_cyrillic": "јебига"
+          "notes": "Texted 'jbg', short for 'jebiga'. Technically a swear but as normalized as 'damn' — pure resigned acceptance.",
+          "audio_cyrillic": "Јебига"
         }
       ]
     },

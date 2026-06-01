@@ -1018,9 +1018,9 @@
     "source": "heuristic"
   },
   "tx-nmvz": {
-    "stage": 0,
-    "difficulty": 0.4,
-    "isChunk": true,
+    "stage": 1,
+    "difficulty": 1.2,
+    "isChunk": false,
     "caseSet": [],
     "tense": "none",
     "cliticCount": 0,
@@ -1029,7 +1029,7 @@
   },
   "tx-msm": {
     "stage": 0,
-    "difficulty": 0.4,
+    "difficulty": 0.8,
     "isChunk": true,
     "caseSet": [],
     "tense": "none",
@@ -1038,9 +1038,9 @@
     "source": "heuristic"
   },
   "tx-btj": {
-    "stage": 0,
-    "difficulty": 0.4,
-    "isChunk": true,
+    "stage": 1,
+    "difficulty": 1.6,
+    "isChunk": false,
     "caseSet": [],
     "tense": "none",
     "cliticCount": 0,
@@ -1049,7 +1049,7 @@
   },
   "tx-jbg": {
     "stage": 0,
-    "difficulty": 0.4,
+    "difficulty": 0.8,
     "isChunk": true,
     "caseSet": [],
     "tense": "none",

@@ -77,7 +77,7 @@
           "sr_latin": "Odlično!",
           "sr_cyrillic": "Одлично!",
           "en": "Excellent! / Perfect!",
-          "context": "Your plan comes together perfectly — react with a word stronger than 'super'.",
+          "context": "Your plan comes together perfectly — react with strong, genuine enthusiasm.",
           "wordRefs": [
             { "id": "odlican", "surface": "Odlično", "surface_cyrillic": "Одлично", "form": "n.sg" }
           ],
@@ -100,7 +100,7 @@
           "sr_latin": "Ekstra!",
           "sr_cyrillic": "Екстра!",
           "en": "Awesome! / Sick!",
-          "context": "A friend shows you a clip of their weekend — fire back a one-word rave.",
+          "context": "A friend shows you a clip of their weekend — fire back something that says it's awesome.",
           "wordRefs": ["ekstra-interj"],
           "notes": "Used as a standalone exclamation. Can also mean 'extra good' as an adjective."
         }
@@ -287,7 +287,7 @@
           "en": "Come on, man!",
           "context": "Impatience, frustration, or urging someone. 'Bre' is the most Serbian word ever.",
           "wordRefs": ["bre", "hajde"],
-          "notes": "'Bre' is an untranslatable Serbian particle. It adds emphasis, frustration, or camaraderie. Use it and you'll sound instantly more Serbian.",
+          "notes": "'Bre' is an untranslatable particle (Turkish origin) that adds emphasis, frustration, or camaraderie. Use it and you'll sound instantly more Serbian.",
           "variations": [
             {
               "sr_latin": "Bre!",
