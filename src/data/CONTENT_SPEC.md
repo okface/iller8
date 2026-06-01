@@ -131,6 +131,11 @@ Bosnian):
 **Gender:** when a form changes for m/f speaker/listener, say so briefly ("'Gladna'
 = hungry (feminine); 'gladan' for masculine.") and add a `variations` entry (§9).
 
+> The exact, checkable version of all of this — length bounds, the `notes` ordering
+> law, the `gloss_hint` closed vocabulary, the `wordRefs` completeness rules, and the
+> per‑entry QA checklist — is in the **RIGID RULES appendix** at the end of this file.
+> The appendix wins when there's any ambiguity.
+
 ---
 
 ## 6. Writing `en`
@@ -255,6 +260,126 @@ For every phrase ask:
 ---
 
 ### Exemplary phrases to imitate
-`tx-de-si`, `tx-kasnim`, `nema-veze`, `rx-uzas`, `ef-mogu-da-ti-pomognem`,
-`gladan-sam-ko-vuk`, and the abbreviation pattern in `tx-jbg`. Read those, then write
-to the same standard.
+- **notes ordering + etymology + Bosnian:** `tx-ajde-na-kafu`
+- **wordRefs completeness:** any `ef-` frame in `11-everyday-frames.json`
+- **context as a clean situation:** `rx-uzas`, `tx-de-si`, `gde-si-nestao`
+- **abbreviation pattern:** `tx-jbg`
+- **gender variation:** `tx-jesi-gladna`
+
+Read those, then write to the same standard.
+
+---
+
+# APPENDIX — RIGID RULES (the mechanical law)
+
+§1–§12 above are the philosophy. This appendix is the **checkable law**: exact
+bounds and formats so two different writers produce near‑identical‑shaped output.
+When in doubt, the appendix wins. Every rule here is mechanically verifiable, and
+`scripts/lint-content.mjs` enforces the hard ones.
+
+## R1. Field bounds & format (hard)
+
+| field | length | format law |
+|---|---|---|
+| `en` | ≤ 60 chars, ≤ 8 words per alternative, ≤ 3 `/`‑alternatives | Sentence case. Terminal `.`/`!`/`?` **only if** the Serbian has one, and it must MATCH the Serbian's terminal mark (parity — the option engine blocks mixing `?` with non‑`?`). ` / ` separates equally‑valid renderings, ordered literal→idiomatic, all the **same grammatical shape** (all questions or all statements). No parentheticals — those go to `gloss_hint`. Lowercase only genuinely‑lowercase items (`nvm`, `btw`). |
+| `context` | 60–120 chars (hard cap 120) | ONE second‑person situation, present tense ("You…/Your friend…/Tell your…/Ask your…"). **Ends with `.`** — never `?`. **Never starts with "When"** (that's a definition frame). Points at exactly this phrase; leaks no answer word / form / register. |
+| `notes` | ≤ 220 chars, 1–2 sentences (never 3) | Sentence case, full sentences. Serbian words/forms in **single quotes** always; **no double quotes ever**. `=` for glosses (`'X' = meaning`). Em‑dash `—` for an appositive aside (hyphen only inside words). Ordered grammar → usage → origin/Bosnian (R3). |
+| `gloss_hint` | ≤ 28 chars | lowercase fragment, **no surrounding parentheses** (the UI adds them), no terminal punctuation. Use the **closed vocabulary** (R2). |
+| `wordRefs` | non‑empty for any teachable phrase | every non‑nominative noun carries `case`; every non‑lemma verb/adjective carries `form`; grammar‑bearing clitics tagged (R4). |
+
+Micro‑templates:
+- `en`: `Natural English` or `Literal / Idiomatic / Casual`
+- `context`: `[2nd‑person trigger situation] — [speech‑act instruction].`
+- `notes`: `'<sr word>' = <gloss>; <one grammar or usage fact>.[ <Origin/Bosnian flag.>]`
+
+## R2. `gloss_hint` closed vocabulary (do NOT invent variants)
+
+The UI renders it as `(value)` italic — store the bare fragment only.
+- addressee gender: `to a man` · `to a woman`
+- speaker gender: `said by a man` · `said by a woman`  *(never `male speaker`/`female speaker`)*
+- literal gloss: `lit. 'my soul'`  *(always `lit.` + space + single‑quoted gloss; never `lit:`)*
+- register: `very casual` · `slang` · `formal`
+- alternative phrasing: `another way to say it`
+- role: `the required response`
+
+If a needed hint isn't here, prefer rephrasing to fit; only extend the vocabulary
+via a spec edit (not ad‑hoc in a lesson).
+
+## R3. `notes` taxonomy & ordering (rigid)
+
+A note is **at most one** sentence from each bucket, **in this order**:
+1. **Grammar** (default first): a case/tense/gender/clitic point.
+   `'<sr form>' = <gloss> (<case/tense>).` or `Literally '<gloss>' — <structural note>.`
+2. **Usage** (optional): when/how it's really used, register, frequency.
+3. **Origin / Bosnian** (optional, **always last**): foreign root worth flagging
+   (Turkish, Russian/Church‑Slavonic, Italian/German/Greek, English) OR a SUBSTANTIAL
+   Bosnian difference (`kafa`/`kahva`, `hleb`/`hljeb`, ijekavian `mlijeko`/`mleko`).
+   `'<word>' comes from <language>.` / `Bosnians say '<form>'.`
+
+Forbidden in notes: restating the English translation as the whole note; trivial
+Bosnian diffs ("'e' is just 'je'"); obvious etymologies on native words; meta
+("great phrase to learn"). Gender point states the shown form's gender and gives the
+other inline AND gets a `variations` entry (never prose‑only, never variation‑only).
+
+## R4. `wordRefs` law (highest‑leverage — sets gating AND stage)
+
+- **`wordRefs: []` is harmful, not neutral.** Empty ⇒ readiness forced to 1.0 (no
+  gating, the words are never taught) AND the phrase falls to the heuristic tagger.
+  Ship `[]` ONLY for a phrase with zero teachable lemmas (a bare loanword interjection
+  like `Super!`). Otherwise tag at least the head word.
+- **Bare string** only when surface == lemma and it's nominative/neutral (`"sutra"`,
+  `"da-conj"`, `"baš"`).
+- **Object form** otherwise, carrying `surface` + `surface_cyrillic` + (`case` OR `form`):
+  - noun in any non‑nominative case → `case` (`nom|acc|gen|dat|loc|ins|voc`)
+  - verb/adjective not in lemma form → `form` (`1sg.pres`, `past.m.sg`, `past.f.sg`,
+    `imp.2sg`, `1pl.pres`, `3sg.pres.neg`, `1sg.fut`, `3sg.fut.clitic`, …; dot‑separated, lowercase)
+- **Tag grammar‑bearing clitics** even though they're small: dative `mi-dat`/`ti-dat`,
+  future `će`/`ću`, past auxiliaries — they set the stage.
+- Every `id` must exist in `src/data/words/words.json`. If you reference a new lemma,
+  DO NOT edit `words.json` from a lesson agent — **emit the new lemma id in your report**
+  for the Wave‑4 pass to add. (Unknown ids are dropped silently: no gate, no teaching.)
+- After any `wordRefs` change: `node scripts/tag-phrases.mjs`.
+
+## R5. `variations` law
+
+- Trigger: same idea bent by gender (speaker or listener), formality, or a single
+  near‑equivalent rephrasing.
+- Every variation MUST carry `gloss_hint` from R2 (`to a man`, `said by a woman`,
+  `another way to say it`, `formal`, …). `en` matches the base unless meaning shifts.
+- Variation surfaces are auto‑excluded from distractors, so they can never be marked
+  wrong — keep them genuinely valid.
+
+## R6. Per‑entry QA checklist (every item must be YES)
+
+- [ ] `id` unchanged, unique, lesson‑prefixed kebab.
+- [ ] `sr_latin` ⇄ `sr_cyrillic` exact 1:1 transliteration (abbreviation exception per §7 with matching `audio_cyrillic`). Not edited unless fixing a transliteration error (flag it).
+- [ ] `en` obeys R1 (≤60 chars, ≤3 parallel slash‑alternatives, no parentheticals, punctuation parity).
+- [ ] `context` obeys R1 (60–120 chars, one 2nd‑person situation, ends `.`, no "When" opener, no leak).
+- [ ] `notes` present (target 100%), obeys R1+R3 (≤220 chars, single quotes only, grammar→usage→origin, flags origin/Bosnian when real, no translation‑restate).
+- [ ] `gloss_hint` (if any) obeys R1+R2 (≤28 chars, no parens, closed vocabulary).
+- [ ] `wordRefs` obeys R4 (non‑empty, case/form complete, clitics tagged, lemmas exist or are reported).
+- [ ] Gender/formality/person variants captured in `variations`, each with a `gloss_hint`.
+- [ ] No dev/coding/office jargon.
+- [ ] No option‑collision: not a valid answer to a neighbour's `context` in the same group.
+
+## R7. Distractor reality (so content stays option‑safe)
+
+Minimal‑pair options only fire when the phrase's verb/noun is in
+`src/data/confusables.json` (`distractors.json` is currently empty). Covered today:
+verbs `hteti, moci, morati, trebati, voleti, piti, jesti, praviti, mrzeti, ici,
+dolaziti, odlaziti, zvati, pisati, pitati`; nouns `kafa, voda, kuća, muzika, knjiga`.
+Everything else tops up from the pool by parity (length/punctuation/word‑overlap).
+**Therefore:** keep `en` and `sr` parity‑friendly (R1), and never let a phrase be an
+also‑correct answer to a neighbour. Adding new confusable verb sets/noun cases is a
+Wave‑4 / spec task, not a lesson‑agent task.
+
+## R8. Cross‑file policy (decisions, so agents don't diverge)
+
+- **No dev jargon, anywhere.** The `dev-friend-chat` group in `03-texting.json`
+  (`tx-sta-kodiras`, `tx-radi-li-ti`, `tx-pukao-server`, `tx-bagovi`) is removed/rethemed
+  by the texting agent. (The contrived work‑banter dev phrases were already removed.)
+- **Near‑duplicate phrases across lessons are allowed** (e.g. `rx-jao`/`jao`,
+  `tx-moram-da-idem`/`ef-moram-da-idem`) — they reinforce across topics and have
+  distinct ids. Do NOT delete them; just make each pristine in its own file.
+- **Shared files (`words.json`, `confusables.json`, `phrase-meta.json`) are touched only
+  in Wave 0 / Wave 4.** Lesson agents are read‑only on them and write only their lesson.
