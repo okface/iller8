@@ -1,0 +1,2765 @@
+[
+  {
+    "id": "kor-extra-001",
+    "topic": "extra_fragor",
+    "tags": [
+      "Vägmärken",
+      "Varning",
+      "Vilt"
+    ],
+    "question": "Vad betyder detta vägmärke?",
+    "image": "varning_for_alg.svg",
+    "options": [
+      {
+        "text": "Varning för älg — älgar kan plötsligt korsa vägen, särskilt i skymning och gryning.",
+        "correct": true,
+        "feedback": "Skylten A19-1 varnar för älg, en av de farligaste viltolyckorna i Sverige."
+      },
+      {
+        "text": "Varning för hjortdjur som rådjur och kronhjort.",
+        "correct": false,
+        "feedback": "Hjortdjur har ett eget märke (A19-2) med annan siluett; älgmärket visar specifikt en älg."
+      },
+      {
+        "text": "Det är förbjudet att jaga i området.",
+        "correct": false,
+        "feedback": "Vägmärken reglerar trafik, inte jakt. Detta är ett varningsmärke."
+      },
+      {
+        "text": "Djurreservat — stanna inte med fordon.",
+        "correct": false,
+        "feedback": "Det finns inget sådant vägmärke; detta varnar föraren för älg på eller nära vägen."
+      }
+    ],
+    "explanation": "Varningsmärket A19-1 \"Varning för älg\" används där det finns förhöjd risk för älgolyckor. Sänk hastigheten, håll uppsikt mot vägkanterna och var extra uppmärksam i gryning och skymning då älgar är som mest aktiva. Om en älg syns ska du sänka hastigheten betydligt och vara beredd på att fler djur kan följa efter."
+  },
+  {
+    "id": "kor-extra-002",
+    "topic": "extra_fragor",
+    "tags": [
+      "Vägmärken",
+      "Varning",
+      "Cirkulationsplats"
+    ],
+    "question": "Vad innebär denna varningsskylt?",
+    "image": "varning_for_cirkulationsplats.svg",
+    "options": [
+      {
+        "text": "Varning för cirkulationsplats — förbered dig på att lämna företräde åt fordon i rondellen.",
+        "correct": true,
+        "feedback": "Märket A30 varnar för att en cirkulationsplats kommer och att fordon i rondellen har företräde."
+      },
+      {
+        "text": "Påbjuden cirkulationsplats — du måste köra runt i rondellen.",
+        "correct": false,
+        "feedback": "Detta är ett varningsmärke (gul triangel), inte ett påbudsmärke (blå rund)."
+      },
+      {
+        "text": "Rondellen är avstängd — välj annan väg.",
+        "correct": false,
+        "feedback": "En avstängningsskylt skulle ha rött kryss eller orange färg; detta är en varning."
+      },
+      {
+        "text": "Upplysning om motorvägsavfart.",
+        "correct": false,
+        "feedback": "Motorvägsavfart markeras med blå anvisningsmärken, inte med varningstriangel."
+      }
+    ],
+    "explanation": "Varningsmärket A30 \"Varning för cirkulationsplats\" sätts upp före cirkulationsplatser där föraren behöver förbereda sig. Kom ihåg att du har väjningsplikt mot fordon som redan befinner sig i rondellen och att du ska blinka höger när du lämnar den."
+  },
+  {
+    "id": "kor-extra-003",
+    "topic": "extra_fragor",
+    "tags": [
+      "Vägmärken",
+      "Anvisning",
+      "Enkelriktat"
+    ],
+    "question": "Vad betyder denna skylt?",
+    "image": "vagmarke_anvisning_enkelriktad_trafik.svg",
+    "options": [
+      {
+        "text": "Enkelriktad trafik — fordon får endast köra i pilens riktning.",
+        "correct": true,
+        "feedback": "Skylten E16 anger att vägen är enkelriktad och trafik går endast i den anvisade riktningen."
+      },
+      {
+        "text": "Påbjuden körriktning — alla fordon måste svänga åt det hållet.",
+        "correct": false,
+        "feedback": "Påbudspilar är runda blå skyltar; denna rektangulära skylt upplyser om enkelriktning."
+      },
+      {
+        "text": "Förbud att köra åt andra hållet — men endast för motorfordon.",
+        "correct": false,
+        "feedback": "Enkelriktning gäller all fordonstrafik i motsatt riktning, inte bara motorfordon."
+      },
+      {
+        "text": "Rekommenderad körriktning i en tvåvägsgata.",
+        "correct": false,
+        "feedback": "Skylten anger en absolut regel, inte en rekommendation, och gatan är inte tvåvägs."
+      }
+    ],
+    "explanation": "Anvisningsmärket E16 \"Enkelriktad trafik\" visar att vägen är enkelriktad i pilens riktning. Att köra mot trafikens riktning på en enkelriktad gata är en allvarlig överträdelse. Observera att cykel ibland får färdas i båda riktningar om en tilläggstavla anger det."
+  },
+  {
+    "id": "kor-extra-004",
+    "topic": "extra_fragor",
+    "tags": [
+      "Vägmärken",
+      "Anvisning",
+      "Parkering"
+    ],
+    "question": "Vad anger denna skylt?",
+    "image": "vagmarke_anvisning_parkering.svg",
+    "options": [
+      {
+        "text": "Parkering tillåten — närmare villkor anges av eventuella tilläggstavlor.",
+        "correct": true,
+        "feedback": "Skylten E19 visar att parkering är tillåten på den plats där skylten är uppsatt."
+      },
+      {
+        "text": "Förbud mot parkering i området.",
+        "correct": false,
+        "feedback": "Förbud mot parkering har röd cirkel med blå botten och rött kryss/snedstreck."
+      },
+      {
+        "text": "Endast boende får parkera här.",
+        "correct": false,
+        "feedback": "Boendeparkering kräver en tilläggstavla; grundskylten betyder bara \"Parkering\"."
+      },
+      {
+        "text": "Infartsparkering för pendlare med tåg.",
+        "correct": false,
+        "feedback": "Infartsparkering markeras normalt med tilläggstavla; grundskylten betyder bara parkering."
+      }
+    ],
+    "explanation": "Anvisningsmärket E19 \"Parkering\" upplyser om var parkering är tillåten. Villkor som tidsbegränsning, avgift eller vilka fordon som får parkera anges på tilläggstavlor under skylten. Om ingen tilläggstavla finns gäller allmänna parkeringsregler."
+  },
+  {
+    "id": "kor-extra-005",
+    "topic": "extra_fragor",
+    "tags": [
+      "Vägmärken",
+      "Förbud",
+      "Hastighet"
+    ],
+    "question": "Vad betyder denna skylt?",
+    "image": "vagmarke_hastighetsbegransning_70.svg",
+    "options": [
+      {
+        "text": "Högsta tillåtna hastighet är 70 km/h från skylten tills annan hastighetsskylt visas.",
+        "correct": true,
+        "feedback": "Skylten C31 anger högsta tillåtna hastighet på 70 km/h."
+      },
+      {
+        "text": "Rekommenderad hastighet 70 km/h — men det är tillåtet att köra fortare vid behov.",
+        "correct": false,
+        "feedback": "Röd cirkel innebär absolut förbud att överskrida hastigheten, inte en rekommendation."
+      },
+      {
+        "text": "Minsta tillåtna hastighet är 70 km/h.",
+        "correct": false,
+        "feedback": "Skylt för lägsta hastighet är blå med vit siffra, inte vit med röd ring."
+      },
+      {
+        "text": "Gäller endast på motorväg.",
+        "correct": false,
+        "feedback": "Hastighetsgränsen gäller den väg där skylten är uppsatt, oavsett vägtyp."
+      }
+    ],
+    "explanation": "Förbudsmärket C31 \"Hastighetsbegränsning\" anger maximal tillåten hastighet på vägsträckan efter skylten. Gränsen gäller tills en ny hastighetsskylt, tättbebyggtsskylt eller vägtyp ändrar den. Det är ditt ansvar att alltid anpassa hastigheten även lägre om väglag, sikt eller trafik kräver det."
+  },
+  {
+    "id": "kor-extra-006",
+    "topic": "extra_fragor",
+    "tags": [
+      "Alkohol",
+      "Trafikregler"
+    ],
+    "question": "Vilken är den lägsta alkoholhalten i blodet som räknas som rattfylleri i Sverige?",
+    "image": null,
+    "options": [
+      {
+        "text": "0,2 promille",
+        "correct": true,
+        "feedback": "Rattfylleri börjar vid 0,2 promille i blodet, en av de strängaste gränserna i EU."
+      },
+      {
+        "text": "0,5 promille",
+        "correct": false,
+        "feedback": "0,5 promille är gränsen i vissa andra länder men i Sverige gäller 0,2 promille."
+      },
+      {
+        "text": "0,1 promille",
+        "correct": false,
+        "feedback": "Gränsen är 0,2 promille, inte 0,1. Vid 0,1 räknas det inte som rattfylleri."
+      },
+      {
+        "text": "1,0 promille",
+        "correct": false,
+        "feedback": "1,0 promille är gränsen för grovt rattfylleri, inte för vanligt rattfylleri."
+      }
+    ],
+    "explanation": "I Sverige är gränsen för rattfylleri 0,2 promille alkohol i blodet (0,10 mg/liter i utandningsluft). Vid 1,0 promille eller mer räknas det som grovt rattfylleri med strängare påföljd. Tänk på att även dagen efter kan alkohol finnas kvar i kroppen."
+  },
+  {
+    "id": "kor-extra-007",
+    "topic": "extra_fragor",
+    "tags": [
+      "Stoppsträcka",
+      "Hastighet",
+      "Säkerhet"
+    ],
+    "question": "Vad består stoppsträckan av?",
+    "image": null,
+    "options": [
+      {
+        "text": "Reaktionssträcka plus bromssträcka.",
+        "correct": true,
+        "feedback": "Stoppsträckan är summan av den sträcka bilen hinner köra under förarens reaktionstid och själva bromssträckan."
+      },
+      {
+        "text": "Enbart bromssträckan från det att bromsen trampas.",
+        "correct": false,
+        "feedback": "Bromssträckan är bara en del av stoppsträckan; reaktionssträckan räknas också."
+      },
+      {
+        "text": "Reaktionssträcka plus säkerhetsavstånd till framförvarande fordon.",
+        "correct": false,
+        "feedback": "Säkerhetsavstånd är en separat rekommendation; stoppsträcka är reaktion plus bromsning."
+      },
+      {
+        "text": "Bromssträcka plus tid att växla ned till neutralläge.",
+        "correct": false,
+        "feedback": "Växling ingår inte i stoppsträckans definition."
+      }
+    ],
+    "explanation": "Stoppsträckan är den totala sträcka fordonet rör sig från det att föraren upptäcker faran till dess att fordonet står still. Den består av reaktionssträckan (vanligtvis ca 1 sekund) och bromssträckan. Bromssträckan fyrdubblas vid dubbel hastighet, vilket gör att höga hastigheter ökar stoppsträckan dramatiskt."
+  },
+  {
+    "id": "kor-extra-008",
+    "topic": "extra_fragor",
+    "tags": [
+      "Däck",
+      "Vinter",
+      "Säkerhet"
+    ],
+    "question": "Vad är minsta tillåtna mönsterdjup på vinterdäck när vinterväglag råder?",
+    "image": null,
+    "options": [
+      {
+        "text": "3,0 mm",
+        "correct": true,
+        "feedback": "Vid vinterväglag måste vinterdäck ha minst 3,0 mm mönsterdjup."
+      },
+      {
+        "text": "1,6 mm",
+        "correct": false,
+        "feedback": "1,6 mm är minimikravet för sommardäck året runt, men vinterdäck kräver mer."
+      },
+      {
+        "text": "4,0 mm",
+        "correct": false,
+        "feedback": "4,0 mm är en rekommendation från däckbranschen men inte lagkravet (3,0 mm)."
+      },
+      {
+        "text": "5,0 mm",
+        "correct": false,
+        "feedback": "5,0 mm är över lagkravet; lagen kräver minst 3,0 mm vid vinterväglag."
+      }
+    ],
+    "explanation": "Enligt svensk lag ska vinterdäck ha minst 3,0 mm mönsterdjup när vinterväglag råder. Sommardäck måste alltid ha minst 1,6 mm. Med mindre mönsterdjup försämras greppet markant, särskilt i snö, slask och på is."
+  },
+  {
+    "id": "kor-extra-009",
+    "topic": "extra_fragor",
+    "tags": [
+      "Vinterdäck",
+      "Trafikregler"
+    ],
+    "question": "Under vilken period krävs vinterdäck i Sverige vid vinterväglag?",
+    "image": null,
+    "options": [
+      {
+        "text": "1 december till 31 mars",
+        "correct": true,
+        "feedback": "Vinterdäck är obligatoriskt mellan 1 december och 31 mars när det är vinterväglag."
+      },
+      {
+        "text": "1 november till 31 mars",
+        "correct": false,
+        "feedback": "Kravet börjar 1 december, inte 1 november. Däremot är det tillåtet att använda vinterdäck tidigare."
+      },
+      {
+        "text": "1 december till 15 april",
+        "correct": false,
+        "feedback": "Perioden slutar 31 mars. Dubbdäck får dock användas fram till 15 april."
+      },
+      {
+        "text": "Året runt",
+        "correct": false,
+        "feedback": "Vinterdäck krävs endast vintertid vid vinterväglag; sommartid får man välja."
+      }
+    ],
+    "explanation": "I Sverige ska bilar ha vinterdäck från 1 december till 31 mars när vinterväglag råder. Dubbdäck är tillåtna 1 oktober till 15 april, men även utanför dessa datum om vinterväglag råder. Friktionsdäck (odubbade vinterdäck) får användas året runt."
+  },
+  {
+    "id": "kor-extra-010",
+    "topic": "extra_fragor",
+    "tags": [
+      "Barn",
+      "Säkerhet",
+      "Bilbälte"
+    ],
+    "question": "En 4-årig passagerare som är 105 cm lång ska i bilen skyddas av",
+    "image": null,
+    "options": [
+      {
+        "text": "En särskild bilbarnstol eller bälteskudde anpassad för barnets längd och vikt.",
+        "correct": true,
+        "feedback": "Barn under 135 cm ska använda särskild skyddsanordning som passar barnets storlek."
+      },
+      {
+        "text": "Endast vanligt bilbälte över axeln.",
+        "correct": false,
+        "feedback": "Bilbältet sitter fel på korta barn utan kudde och kan orsaka skador."
+      },
+      {
+        "text": "Inget skydd behövs i baksätet för barn över 3 år.",
+        "correct": false,
+        "feedback": "Alla barn under 135 cm måste använda skyddsanordning, även i baksätet."
+      },
+      {
+        "text": "Airbag räcker som skydd om barnet sitter fram.",
+        "correct": false,
+        "feedback": "Airbag i framsätet är farlig för små barn och ska i vissa fall stängas av."
+      }
+    ],
+    "explanation": "Barn under 135 cm längd måste använda en särskild skyddsanordning (bilbarnstol, bältesstol eller bälteskudde) anpassad efter barnets vikt och längd. Barn under 3 år får inte åka i fordon utan skyddsanordning. I framsätet får små barn sitta bakåtvänt endast om krockkudden är avstängd."
+  },
+  {
+    "id": "kor-extra-011",
+    "topic": "extra_fragor",
+    "tags": [
+      "Körning",
+      "Scenario",
+      "Landsväg"
+    ],
+    "question": "Du kör på en 90-väg och ser långt framför dig en traktor som kör ca 30 km/h. Vad är lämpligast?",
+    "image": null,
+    "options": [
+      {
+        "text": "Sänk hastigheten i god tid, håll avstånd och kör om endast när sikten är fri och heldragen linje inte hindrar.",
+        "correct": true,
+        "feedback": "Anpassad hastighet och säker omkörning är grundprincipen vid möte med långsamma fordon."
+      },
+      {
+        "text": "Behåll 90 km/h och kör om direkt innan du hinner ikapp.",
+        "correct": false,
+        "feedback": "Att inte anpassa hastigheten i tid kan tvinga fram en riskabel omkörning."
+      },
+      {
+        "text": "Tuta och blinka med helljuset tills traktorn flyttar sig åt sidan.",
+        "correct": false,
+        "feedback": "Traktorföraren har rätt att använda vägen; aggressiv signalering är farligt och olagligt."
+      },
+      {
+        "text": "Kör ikapp tätt bakom och vänta på att traktorn svänger av.",
+        "correct": false,
+        "feedback": "Tätt avstånd ger ingen möjlighet att bromsa eller se förbi; farligt och olagligt."
+      }
+    ],
+    "explanation": "Långsamtgående fordon som traktorer har rätt att använda allmän väg. Sänk hastigheten i god tid, håll tillräckligt avstånd så du ser förbi fordonet, och kör om endast när sikten är fri, när ingen heldragen mittlinje hindrar och när det går att passera utan risk för möte."
+  },
+  {
+    "id": "kor-extra-012",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Korsning",
+      "Väjningsplikt"
+    ],
+    "question": "Du närmar dig en korsning utan skyltar på en liten väg. Från höger kommer en bil i samma hastighet. Vad gäller?",
+    "image": null,
+    "options": [
+      {
+        "text": "Högerregeln — du har väjningsplikt mot bilen från höger.",
+        "correct": true,
+        "feedback": "Vid korsning utan skyltar eller signaler gäller högerregeln."
+      },
+      {
+        "text": "Den som kör på störst väg har företräde, oavsett riktning.",
+        "correct": false,
+        "feedback": "Om inga skyltar anger huvudled eller väjningsplikt gäller alltid högerregeln."
+      },
+      {
+        "text": "Den som kommer först till korsningen har företräde.",
+        "correct": false,
+        "feedback": "\"Först till kvarn\" är ingen trafikregel; högerregeln styr."
+      },
+      {
+        "text": "Den som kör snabbast har företräde eftersom det är svårare att stanna.",
+        "correct": false,
+        "feedback": "Hastighet ger aldrig företräde, utan kräver att man anpassar den."
+      }
+    ],
+    "explanation": "När två fordon närmar sig en korsning där ingen är reglerad med skyltar, signaler eller vägmarkeringar gäller högerregeln — du har väjningsplikt mot fordon som kommer från höger. Sänk hastigheten i tid och var beredd att stanna."
+  },
+  {
+    "id": "kor-extra-013",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Motorväg",
+      "Körfält"
+    ],
+    "question": "Du kör på motorvägen i vänster körfält efter en omkörning. Vad bör du göra?",
+    "image": null,
+    "options": [
+      {
+        "text": "Återgå till höger körfält så snart det är möjligt och säkert.",
+        "correct": true,
+        "feedback": "Vänster körfält är ett omkörningsfält, inte ett körfält att stanna i."
+      },
+      {
+        "text": "Stanna kvar i vänster körfält för att undvika fler körfältsbyten.",
+        "correct": false,
+        "feedback": "Man ska inte hindra snabbare trafik bakifrån; återgå till höger."
+      },
+      {
+        "text": "Sakta ner till 90 km/h för att hålla säkerhetsavståndet.",
+        "correct": false,
+        "feedback": "Att hålla avsevärt lägre hastighet i vänster fält är farligt och kan straffas."
+      },
+      {
+        "text": "Blinka höger och stanna i vägrenen.",
+        "correct": false,
+        "feedback": "Vägrenen används bara vid nödläge, inte för att återvända till höger fält."
+      }
+    ],
+    "explanation": "På motorvägar och motortrafikleder är vänster körfält i första hand ett omkörningsfält. Efter avslutad omkörning ska man återgå till höger körfält så snart det kan ske utan risk, så att snabbare trafik bakifrån kan passera."
+  },
+  {
+    "id": "kor-extra-014",
+    "topic": "extra_fragor",
+    "tags": [
+      "Belysning",
+      "Bil"
+    ],
+    "question": "Vilket ljus ska du alltid ha tänt när du kör bil i Sverige?",
+    "image": null,
+    "options": [
+      {
+        "text": "Minst halvljus eller varselljus, dygnet runt.",
+        "correct": true,
+        "feedback": "Sverige har krav på tänt ljus hela dygnet, även dagtid."
+      },
+      {
+        "text": "Endast helljus, och bara i mörker.",
+        "correct": false,
+        "feedback": "Helljus får bara användas när det inte bländar andra trafikanter."
+      },
+      {
+        "text": "Endast positionsljus (parkeringsljus).",
+        "correct": false,
+        "feedback": "Positionsljus räcker inte; minst varselljus eller halvljus krävs."
+      },
+      {
+        "text": "Ljuset krävs endast från solnedgång till soluppgång.",
+        "correct": false,
+        "feedback": "I Sverige gäller ljuskravet dygnet runt, även i dagsljus."
+      }
+    ],
+    "explanation": "I Sverige måste bilar ha minst halvljus eller varselljus tänt under hela dygnet. I mörker, skymning, gryning eller vid nedsatt sikt (regn, dimma, snö) krävs halvljus. Helljus används där det inte bländar mötande eller framförvarande trafik."
+  },
+  {
+    "id": "kor-extra-015",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Tätort",
+      "Oskyddade"
+    ],
+    "question": "Du kör i 40 km/h i tätort och ser en boll rulla ut på gatan från en parkerad bil. Vad är viktigast?",
+    "image": null,
+    "options": [
+      {
+        "text": "Bromsa direkt och var beredd på att ett barn kan springa efter bollen.",
+        "correct": true,
+        "feedback": "Barn följer ofta efter bollar utan att titta; förutse det oväntade."
+      },
+      {
+        "text": "Behåll hastigheten och väj åt vänster förbi bollen.",
+        "correct": false,
+        "feedback": "Att väja ut i mötande körfält kan orsaka en allvarligare olycka."
+      },
+      {
+        "text": "Tuta och öka farten för att snabbt passera området.",
+        "correct": false,
+        "feedback": "Högre hastighet minskar möjligheten att stanna om ett barn springer ut."
+      },
+      {
+        "text": "Kör över bollen eftersom det bara är ett föremål.",
+        "correct": false,
+        "feedback": "Problemet är inte bollen utan att det kan finnas ett barn bakom."
+      }
+    ],
+    "explanation": "En boll som rullar ut i gatan är en klassisk signal om att ett barn kan komma efter. Bromsa i tid, vara beredd att stanna helt, och håll alltid extra låg hastighet där barn kan finnas i närheten. \"Förutse det oväntade\" är en grundsten i defensiv körning."
+  },
+  {
+    "id": "kor-extra-016",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Halka",
+      "Bromsning"
+    ],
+    "question": "Du kör på en rak väg och upptäcker plötsligt en isfläck rakt framför dig. Vad är säkrast?",
+    "image": null,
+    "options": [
+      {
+        "text": "Släpp gasen, undvik att bromsa eller styra kraftigt och håll ratten rakt.",
+        "correct": true,
+        "feedback": "Mjuk körning över isen minskar risken för sladd."
+      },
+      {
+        "text": "Bromsa hårt med ABS precis innan isen.",
+        "correct": false,
+        "feedback": "Hård inbromsning på eller precis vid is ökar sladdrisken; bromsa före om möjligt."
+      },
+      {
+        "text": "Sväng snabbt undan till vägrenen.",
+        "correct": false,
+        "feedback": "Plötsliga styrutslag på is orsakar lätt sladd."
+      },
+      {
+        "text": "Koppla ur och växla upp för att spara bränsle.",
+        "correct": false,
+        "feedback": "Att koppla ur på halt underlag minskar kontrollen över bilen."
+      }
+    ],
+    "explanation": "Vid plötslig halka ska du undvika tvära rörelser. Släpp gasen, låt motorbromsen verka mjukt och håll ratten stabil tills du är förbi den hala fläcken. Bromsa eller sväng först när fordonet åter har grepp. Sänk alltid hastigheten i tid när isrisk finns."
+  },
+  {
+    "id": "kor-extra-017",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Cykel",
+      "Omkörning"
+    ],
+    "question": "Du ska köra om en cyklist på landsväg. Vilket sidoavstånd är lämpligast?",
+    "image": null,
+    "options": [
+      {
+        "text": "Minst 1,5 meter i sidoavstånd, gärna mer vid högre hastighet.",
+        "correct": true,
+        "feedback": "Rekommendationen är minst 1,5 meter för att ge cyklisten säker marginal."
+      },
+      {
+        "text": "Cirka 0,5 meter om du kör sakta.",
+        "correct": false,
+        "feedback": "Ett så smalt avstånd är farligt och kan skrämma cyklisten ut i kanten."
+      },
+      {
+        "text": "Det räcker att tuta så cyklisten flyttar sig närmare kanten.",
+        "correct": false,
+        "feedback": "Tutning är för fara; omkörning ska ske med sidoavstånd, inte genom att tränga undan."
+      },
+      {
+        "text": "Avståndet spelar ingen roll om cyklisten har hjälm.",
+        "correct": false,
+        "feedback": "Sidoavståndet gäller alltid oavsett utrustning."
+      }
+    ],
+    "explanation": "Vid omkörning av cyklist, gående eller ryttare ska du hålla betryggande sidoavstånd — i praktiken minst 1,5 meter och mer vid högre hastighet. Vänta hellre med omkörningen tills det är säkert att passera brett. Oskyddade trafikanter är sårbara för vinddrag och oförutsedda rörelser."
+  },
+  {
+    "id": "kor-extra-018",
+    "topic": "extra_fragor",
+    "tags": [
+      "Parkering",
+      "Regler"
+    ],
+    "question": "Vad är skillnaden mellan att \"stanna\" och att \"parkera\" enligt trafiklagstiftningen?",
+    "image": null,
+    "options": [
+      {
+        "text": "Stanna är kortare uppehåll för av- och påstigning eller av- och pålastning; parkering är längre uppehåll eller uppehåll av andra skäl.",
+        "correct": true,
+        "feedback": "Definitionen bygger på syfte och varaktighet — passagerare/gods eller inte."
+      },
+      {
+        "text": "Stanna får man göra högst 30 sekunder, parkering högst 2 timmar.",
+        "correct": false,
+        "feedback": "Det finns ingen sådan tidsgräns; det är syftet med uppehållet som räknas."
+      },
+      {
+        "text": "Det är samma sak — begreppen har samma betydelse i trafiklagen.",
+        "correct": false,
+        "feedback": "Reglerna skiljer sig åt, bland annat genom olika skyltar."
+      },
+      {
+        "text": "Stanna är tillåtet överallt, parkering endast på parkeringsplatser.",
+        "correct": false,
+        "feedback": "Stannandeförbud finns också på många platser, exempelvis i korsningar."
+      }
+    ],
+    "explanation": "Att stanna innebär ett kort uppehåll för av- och påstigning eller av- och pålastning av gods. Att parkera är ett längre uppehåll eller uppehåll av annat skäl, t.ex. att lämna fordonet. \"Förbud att stanna\" är strängare än \"Förbud att parkera\" — stanna-skylt förbjuder även korta uppehåll."
+  },
+  {
+    "id": "kor-extra-019",
+    "topic": "extra_fragor",
+    "tags": [
+      "Miljö",
+      "Ecodriving"
+    ],
+    "question": "Vilket körsätt sparar mest bränsle i en modern personbil?",
+    "image": null,
+    "options": [
+      {
+        "text": "Mjuk acceleration, hög växel vid låga varvtal och att utnyttja motorbromsen.",
+        "correct": true,
+        "feedback": "Sparsam körning bygger på jämnt flöde och låga varvtal."
+      },
+      {
+        "text": "Snabb acceleration upp till högsta tillåtna hastighet och sedan frikoppling utför.",
+        "correct": false,
+        "feedback": "Frikoppling utför kan stänga av bränsleavstängningen i moderna bilar."
+      },
+      {
+        "text": "Att ofta låta motorn gå på tomgång för att hålla den varm.",
+        "correct": false,
+        "feedback": "Tomgång är rent bränslespill; moderna motorer värms upp under körning."
+      },
+      {
+        "text": "Att köra i lägre växlar för att ha mer kraft.",
+        "correct": false,
+        "feedback": "Lägre växel ger högre varvtal och ökad förbrukning."
+      }
+    ],
+    "explanation": "Eco-driving innebär att hålla jämn fart, accelerera mjukt, välja hög växel med lågt varvtal och använda motorbromsning genom utrullning i hög växel (moderna bilar stänger då av bränsletillförseln). Undvik onödig tomgång och planera körningen för att slippa kraftiga inbromsningar."
+  },
+  {
+    "id": "kor-extra-020",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Utryckningsfordon"
+    ],
+    "question": "Du kör i en stad och bakifrån hör du sirener och ser blåljus från en ambulans. Vad är rätt?",
+    "image": null,
+    "options": [
+      {
+        "text": "Lämna fri väg genom att försiktigt köra åt höger och stanna om nödvändigt, men utan att bryta mot trafikregler som riskerar andra.",
+        "correct": true,
+        "feedback": "Rätt princip — ge fri väg, men utan att själv skapa farliga situationer."
+      },
+      {
+        "text": "Kör ut i mötande körfält direkt för att ge plats.",
+        "correct": false,
+        "feedback": "Det kan orsaka en frontalkrock; väj åt höger, inte vänster."
+      },
+      {
+        "text": "Kör mot röd signal för att snabbt ge plats.",
+        "correct": false,
+        "feedback": "Du får inte bryta mot trafikregler som utsätter andra för fara."
+      },
+      {
+        "text": "Fortsätt som vanligt — utryckningsfordon får väja själva.",
+        "correct": false,
+        "feedback": "Alla trafikanter är skyldiga att underlätta framkomligheten för utryckning."
+      }
+    ],
+    "explanation": "Vid utryckningsfordon med larm ska du underlätta framkomligheten. Kör försiktigt åt höger, stanna vid behov, men du får inte bryta mot trafikregler på ett sätt som är farligt för andra — exempelvis köra mot rött eller upp på en trottoar där gångtrafikanter befinner sig."
+  },
+  {
+    "id": "kor-extra-021",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Övergångsställe",
+      "Tätort"
+    ],
+    "question": "Du närmar dig ett obevakat övergångsställe i tätort och ser en person stå vid kanten och titta mot gatan. Hur agerar du?",
+    "image": null,
+    "options": [
+      {
+        "text": "Sänker hastigheten och är beredd att stanna eftersom personen kan vara på väg ut.",
+        "correct": true,
+        "feedback": "Fordonsförare ska ge gående tillfälle att passera på obevakat övergångsställe."
+      },
+      {
+        "text": "Behåller hastigheten eftersom gående inte har satt foten på övergångsstället än.",
+        "correct": false,
+        "feedback": "Företräde gäller även den som tydligt avser att gå ut."
+      },
+      {
+        "text": "Tutar så att personen väntar tills du passerat.",
+        "correct": false,
+        "feedback": "Du ska ge företräde, inte kräva att gående står still."
+      },
+      {
+        "text": "Accelererar förbi för att snabbt lämna platsen fri.",
+        "correct": false,
+        "feedback": "Ökad fart vid övergångsställen är farligt och lagstridigt."
+      }
+    ],
+    "explanation": "På ett obevakat övergångsställe har förare väjningsplikt mot gående som går ut på eller tydligt förbereder sig att gå ut på övergångsstället. Sänk hastigheten i god tid så att du kan stanna säkert. Regeln skyddar de mest sårbara trafikanterna."
+  },
+  {
+    "id": "kor-extra-022",
+    "topic": "extra_fragor",
+    "tags": [
+      "Motorväg",
+      "Start",
+      "Påfart"
+    ],
+    "question": "Hur ska du bete dig vid påfart till motorväg?",
+    "image": null,
+    "options": [
+      {
+        "text": "Accelerera på accelerationsfältet till en hastighet som motsvarar trafikens och smyg in i luckan när det är säkert.",
+        "correct": true,
+        "feedback": "Matchande hastighet gör det lätt och säkert att smälta in i trafikrytmen."
+      },
+      {
+        "text": "Stanna i slutet av accelerationsfältet och vänta på en lucka.",
+        "correct": false,
+        "feedback": "Stopp i accelerationsfältet är farligt och hindrar bakomvarande påfartstrafik."
+      },
+      {
+        "text": "Tuta för att tvinga fordon i högerfältet att bromsa.",
+        "correct": false,
+        "feedback": "Trafiken på motorvägen har företräde — du ska anpassa dig, inte tvärtom."
+      },
+      {
+        "text": "Håll 50 km/h så att du hinner titta dig om.",
+        "correct": false,
+        "feedback": "Så låg hastighet gör det nästan omöjligt att flyta in säkert i motorvägstrafiken."
+      }
+    ],
+    "explanation": "Vid påfart ska du anpassa hastigheten till trafiken på motorvägen och flätas in när det finns en lämplig lucka. Trafiken i höger körfält har företräde, men brukar i god körkultur underlätta infogningen. Undvik att stanna i accelerationsfältet annat än i nödläge."
+  },
+  {
+    "id": "kor-extra-023",
+    "topic": "extra_fragor",
+    "tags": [
+      "Säkerhet",
+      "Trötthet"
+    ],
+    "question": "Vilka är typiska tecken på körtrötthet?",
+    "image": null,
+    "options": [
+      {
+        "text": "Gäspningar, svårighet att hålla blicken i fokus, missade skyltar och försämrad reaktionsförmåga.",
+        "correct": true,
+        "feedback": "Tidiga tecken på trötthet ska tas på allvar — stanna och vila."
+      },
+      {
+        "text": "Högre puls och starkare koncentration än vanligt.",
+        "correct": false,
+        "feedback": "Trötthet sänker uppmärksamheten; en känsla av extra skärpa är inte ett faresignal."
+      },
+      {
+        "text": "Att radion låter tydligare.",
+        "correct": false,
+        "feedback": "Detta är inte ett etablerat tecken på trötthet."
+      },
+      {
+        "text": "Att du känner dig kall om fötterna.",
+        "correct": false,
+        "feedback": "Kalla fötter är inte ett specifikt trötthetstecken."
+      }
+    ],
+    "explanation": "Körtrötthet visar sig genom gäspningar, tunga ögonlock, svårighet att hålla koncentrationen, missade skyltar eller att man plötsligt inte minns de senaste kilometrarna. Stanna och vila (power nap, sträck på benen, frisk luft, koffein hjälper kortvarigt). Trötthet är en av de största orsakerna till singelolyckor."
+  },
+  {
+    "id": "kor-extra-024",
+    "topic": "extra_fragor",
+    "tags": [
+      "Last",
+      "Säkerhet"
+    ],
+    "question": "Du ska frakta en stor låda i baksätet på en personbil. Vad är viktigast?",
+    "image": null,
+    "options": [
+      {
+        "text": "Spänna fast lasten så att den inte kan slungas framåt vid en kraftig inbromsning.",
+        "correct": true,
+        "feedback": "Osäkrad last blir en farlig projektil vid kollision eller tvärbroms."
+      },
+      {
+        "text": "Lägga lasten så högt det går för bättre sikt ut bak.",
+        "correct": false,
+        "feedback": "Hög last är mer instabil och kan skymma sikten bakåt."
+      },
+      {
+        "text": "Det räcker att stänga dörrarna ordentligt.",
+        "correct": false,
+        "feedback": "Dörrar hindrar inte lasten från att flyga framåt inuti kupén."
+      },
+      {
+        "text": "Det behövs ingen säkring om lasten väger under 10 kg.",
+        "correct": false,
+        "feedback": "Även lätta föremål kan orsaka allvarliga skador vid tvärbroms."
+      }
+    ],
+    "explanation": "Lasten i en bil måste alltid säkras så att den inte kan förskjutas vid hastig inbromsning eller krock. Vid 50 km/h kan en oförankrad 10-kilos låda få en tyngd motsvarande flera hundra kilo. Använd lastsäkringsband, nät eller lastgaller mot kupén."
+  },
+  {
+    "id": "kor-extra-025",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Dimma",
+      "Belysning"
+    ],
+    "question": "Du kör in i tät dimma i dagsljus. Vilken belysning är lämpligast?",
+    "image": null,
+    "options": [
+      {
+        "text": "Halvljus och dimljus fram (samt dimbakljus om sikten blir mycket dålig).",
+        "correct": true,
+        "feedback": "Halvljus plus dimljus ger bäst sikt framåt utan att bländas av återspeglingar."
+      },
+      {
+        "text": "Helljus så att du ser längre framåt.",
+        "correct": false,
+        "feedback": "Helljus reflekteras av dimmans vattendroppar och försämrar sikten kraftigt."
+      },
+      {
+        "text": "Endast positionsljus för att synas utan att blända andra.",
+        "correct": false,
+        "feedback": "Positionsljus räcker inte för att vara synlig i tät dimma."
+      },
+      {
+        "text": "Ingen belysning alls — det är ju dagsljus.",
+        "correct": false,
+        "feedback": "I Sverige krävs alltid minst varselljus, och i dimma mer."
+      }
+    ],
+    "explanation": "I tät dimma bländar helljus dig själv genom att ljuset reflekteras i vattendropparna. Använd halvljus och dimljus fram. Dimbakljus ska bara användas vid kraftigt nedsatt sikt och släckas när bakomvarande trafik kommer nära, eftersom det är mycket starkt och bländar."
+  },
+  {
+    "id": "kor-extra-026",
+    "topic": "extra_fragor",
+    "tags": [
+      "Oskyddade",
+      "Tätort"
+    ],
+    "question": "Vilka räknas som oskyddade trafikanter?",
+    "image": null,
+    "options": [
+      {
+        "text": "Gående, cyklister, mopedister och motorcyklister.",
+        "correct": true,
+        "feedback": "Dessa saknar yttre karosseri och är mest utsatta vid kollision."
+      },
+      {
+        "text": "Endast gående och personer med rullator.",
+        "correct": false,
+        "feedback": "Även cyklister, mopedister och motorcyklister räknas som oskyddade."
+      },
+      {
+        "text": "Bilister utan bilbälte.",
+        "correct": false,
+        "feedback": "Bilister är skyddade av karossen även om bälte saknas — men bälte är lag."
+      },
+      {
+        "text": "Barn under 15 år oavsett färdmedel.",
+        "correct": false,
+        "feedback": "Kategorin oskyddade handlar om skyddet vid kollision, inte ålder."
+      }
+    ],
+    "explanation": "Oskyddade trafikanter är sådana som saknar yttre skydd vid en olycka — gående, cyklister, mopedister och motorcyklister. Som bilförare har du ett extra ansvar att visa hänsyn, hålla sidoavstånd vid omkörning och anpassa hastigheten där de förekommer."
+  },
+  {
+    "id": "kor-extra-027",
+    "topic": "extra_fragor",
+    "tags": [
+      "Övningskörning",
+      "Körkort"
+    ],
+    "question": "Vilka krav ställs på en handledare vid privat övningskörning med personbil?",
+    "image": null,
+    "options": [
+      {
+        "text": "Minst 24 år gammal, giltigt körkort för fordonsslaget i minst 5 av de senaste 10 åren och godkänt handledartillstånd.",
+        "correct": true,
+        "feedback": "Dessa krav gäller för handledare vid privat övningskörning av B-behörighet."
+      },
+      {
+        "text": "Minst 21 år och körkort sedan minst 2 år.",
+        "correct": false,
+        "feedback": "Åldersgränsen är 24 år och kravet på körkort är 5 av de senaste 10 åren."
+      },
+      {
+        "text": "Endast giltigt körkort — inga andra krav.",
+        "correct": false,
+        "feedback": "Handledartillstånd krävs, liksom åldersgräns och erfarenhet."
+      },
+      {
+        "text": "Minst 30 år och yrkesförarbevis.",
+        "correct": false,
+        "feedback": "Yrkesförarbevis krävs inte för privat övningskörning."
+      }
+    ],
+    "explanation": "För att vara handledare vid privat övningskörning krävs ett handledartillstånd från Transportstyrelsen. Handledaren ska vara minst 24 år, ha haft körkort för fordonsslaget under minst 5 av de senaste 10 åren och ha gått obligatorisk introduktionsutbildning tillsammans med eleven."
+  },
+  {
+    "id": "kor-extra-028",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Korsning",
+      "Höger"
+    ],
+    "question": "Du står vid rödljus i en T-korsning. Ljuset slår om till grönt samtidigt som en gående fortfarande går över övergångsstället framför dig. Vad gör du?",
+    "image": null,
+    "options": [
+      {
+        "text": "Väntar tills den gående har passerat helt innan du kör vidare.",
+        "correct": true,
+        "feedback": "Grönt ljus betyder \"kör om fri väg finns\", inte ovillkorlig rätt att köra."
+      },
+      {
+        "text": "Kör långsamt förbi eftersom du har grönt.",
+        "correct": false,
+        "feedback": "Grönt ljus ger inte rätt att köra om gående eller annat hinder finns i vägen."
+      },
+      {
+        "text": "Tutar försiktigt för att skynda på den gående.",
+        "correct": false,
+        "feedback": "Gående har rätt att slutföra sin passage; tuta är bara vid fara."
+      },
+      {
+        "text": "Blinkar med helljuset tills den gående springer.",
+        "correct": false,
+        "feedback": "Detta är olagligt och trakasserande beteende mot en oskyddad trafikant."
+      }
+    ],
+    "explanation": "Grönt ljus innebär att du får köra men endast om vägen är fri. En gående som redan är ute på övergångsstället har rätt att avsluta sin passage. Vänta tills vägen är fri och kör vidare med försiktighet."
+  },
+  {
+    "id": "kor-extra-029",
+    "topic": "extra_fragor",
+    "tags": [
+      "Vägmarkeringar",
+      "Körfält"
+    ],
+    "question": "Vad betyder en heldragen vit linje mellan två körfält i samma riktning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Linjen får inte korsas eller överskridas — körfältsbyte är förbjudet.",
+        "correct": true,
+        "feedback": "Heldragna linjer mellan körfält är förbud mot körfältsbyte där linjen är heldragen."
+      },
+      {
+        "text": "Linjen är endast en rekommendation — det är tillåtet att byta fil vid behov.",
+        "correct": false,
+        "feedback": "Heldragna markeringar är tvingande, inte rekommendationer."
+      },
+      {
+        "text": "Linjen markerar motsatt körriktning.",
+        "correct": false,
+        "feedback": "Motsatt riktning markeras med gul linje, inte vit."
+      },
+      {
+        "text": "Den gäller endast nattetid.",
+        "correct": false,
+        "feedback": "Vägmarkeringar gäller dygnet runt om inte annat anges."
+      }
+    ],
+    "explanation": "En heldragen vit linje mellan körfält i samma riktning betyder att linjen inte får korsas eller överskridas — körfältsbyte är inte tillåtet där den är heldragen. Streckad linje tillåter byte när det är säkert. Heldragen linje används ofta i korsningar, backkrön och andra platser med dålig sikt."
+  },
+  {
+    "id": "kor-extra-030",
+    "topic": "extra_fragor",
+    "tags": [
+      "Scenario",
+      "Backkrön",
+      "Omkörning"
+    ],
+    "question": "Du närmar dig ett backkrön på landsväg. En långsam bil kör framför. Vad gäller?",
+    "image": null,
+    "options": [
+      {
+        "text": "Omkörning är förbjuden om sikten över krönet är skymd och det inte finns extra körfält.",
+        "correct": true,
+        "feedback": "Skymd sikt över krön är en av de klassiska platserna där omkörning är förbjuden."
+      },
+      {
+        "text": "Omkörning är tillåten så länge du är snabb och använder helljuset.",
+        "correct": false,
+        "feedback": "Hastighet och ljus ersätter inte kravet på fri sikt under hela omkörningen."
+      },
+      {
+        "text": "Omkörning är alltid tillåten på landsväg om ingen skylt förbjuder det.",
+        "correct": false,
+        "feedback": "Trafikreglerna förbjuder omkörning där sikten är skymd, även utan skylt."
+      },
+      {
+        "text": "Det räcker att tuta så vet mötande trafik att du kör om.",
+        "correct": false,
+        "feedback": "Tuta är för fara, inte signal för omkörning."
+      }
+    ],
+    "explanation": "Omkörning är förbjuden bland annat vid skymd sikt i backar och kurvor, strax före obevakat övergångsställe, i korsningar och där skylt eller heldragen linje förbjuder. Även utan uttrycklig skylt gäller att omkörning bara får ske när det kan göras utan fara — fri sikt över hela omkörningssträckan är avgörande."
+  },
+  {
+    "id": "kor-sample-001",
+    "topic": "trafik_och_vagmarken",
+    "tags": [
+      "Vägmärken",
+      "Varning",
+      "Barn"
+    ],
+    "question": "Du ser denna varningsskylt. Vad innebär den?",
+    "image": "varning_for_barn.svg",
+    "options": [
+      {
+        "text": "Varning för lekplats inom 50 meter",
+        "correct": false,
+        "feedback": "Skylten anger inte något specifikt avstånd, utan varnar generellt för barn."
+      },
+      {
+        "text": "Förare ska vara uppmärksam på barn som kan befinna sig på vägen",
+        "correct": true,
+        "feedback": "Skylten varnar om att barn kan vistas i området och förare ska vara extra försiktig."
+      },
+      {
+        "text": "Fartbegränsning 30 km/h gäller här",
+        "correct": false,
+        "feedback": "Skylten anger ingen fartbegränsning, det är ett varningsmärke."
+      },
+      {
+        "text": "Endast barn får färdas på denna väg",
+        "correct": false,
+        "feedback": "Detta är inte ett påbudsmärke, utan ett varningsmärke för alla trafikanter."
+      }
+    ],
+    "explanation": "Varningsmärket med triangel och barn indikerar att förare ska vara extra uppmärksam eftersom barn kan befinna sig på eller nära vägen. Skylten sätts ofta upp vid lekplatser, skolor eller bostadsområden."
+  },
+  {
+    "id": "kor-sample-002",
+    "topic": "trafik_och_vagmarken",
+    "tags": [
+      "Vägmärken",
+      "Förbud",
+      "Stopplikt"
+    ],
+    "question": "Vid en stoppskylt måste du alltid:",
+    "image": "vagmarke_stopplikt.svg",
+    "options": [
+      {
+        "text": "Stanna om du ser andra fordon",
+        "correct": false,
+        "feedback": "Du måste alltid stanna helt vid stoppskylt, oavsett om andra fordon syns."
+      },
+      {
+        "text": "Sakta ner till 10 km/h och titta åt sidorna",
+        "correct": false,
+        "feedback": "Stoppskylt kräver fullständigt stopp, inte bara sakta ner."
+      },
+      {
+        "text": "Stanna helt och ge företräde innan du kör vidare",
+        "correct": true,
+        "feedback": "Vid stoppskylt måste fordonet stanna helt innan stoplinjen och ge företräde åt korsande trafik."
+      },
+      {
+        "text": "Tuta för att varna andra trafikanter",
+        "correct": false,
+        "feedback": "Stoppskylt kräver stopp, inte att tuta. Tuta används bara vid fara."
+      }
+    ],
+    "explanation": "Stoppskylt (åttkantigt rött märke med texten STOPP) kräver att föraren stannar helt vid stoplinjen eller framför korsningen. Efter stopp ska föraren ge företräde åt korsande trafik innan fortsättning."
+  },
+  {
+    "id": "kor-sample-003",
+    "topic": "trafik_och_vagmarken",
+    "tags": [
+      "Trafikregler",
+      "Övergångsställe",
+      "Säkerhet"
+    ],
+    "question": "Vid ett obevakat övergångsställe utan ljussignaler:",
+    "image": null,
+    "options": [
+      {
+        "text": "Har gående alltid företräde framför motorfordon",
+        "correct": true,
+        "feedback": "Gående som befinner sig på eller ska gå ut på övergångsstället har företräde."
+      },
+      {
+        "text": "Har fordon alltid företräde framför gående",
+        "correct": false,
+        "feedback": "Detta är fel - gående har företräde vid övergångsställen."
+      },
+      {
+        "text": "Måste gående vänta tills alla fordon passerat",
+        "correct": false,
+        "feedback": "Gående har företräde och fordon ska ge plats."
+      },
+      {
+        "text": "Gäller väjningsplikt bara om gående redan korsar",
+        "correct": false,
+        "feedback": "Gående har företräde även när de är på väg att gå ut på övergångsstället."
+      }
+    ],
+    "explanation": "Vid obevakade övergångsställen har gående företräde framför fordonstrafik. Fordon ska anpassa hastigheten och vara beredda att stanna för gående som befinner sig på eller är på väg ut på övergångsstället."
+  },
+  {
+    "id": "kor-sample-004",
+    "topic": "trafik_och_vagmarken",
+    "tags": [
+      "Hastighet",
+      "Säkerhet",
+      "Väglag"
+    ],
+    "question": "När väglaget är halt på vintern ska du:",
+    "image": null,
+    "options": [
+      {
+        "text": "Köra i den högsta tillåtna hastigheten för att spara tid",
+        "correct": false,
+        "feedback": "Vid halt väglag ska hastigheten alltid anpassas till förhållandena, inte maxgränsen."
+      },
+      {
+        "text": "Anpassa hastigheten efter väglaget för att kunna stanna säkert",
+        "correct": true,
+        "feedback": "Hastigheten ska alltid anpassas så att fordonet kan stanna inom synbart avstånd."
+      },
+      {
+        "text": "Bara använda ABS-bromsar istället för vanliga bromsar",
+        "correct": false,
+        "feedback": "ABS är ett hjälpmedel men ersätter inte anpassad hastighet och körsätt."
+      },
+      {
+        "text": "Köra mycket nära framförvarande bil för bättre sikt",
+        "correct": false,
+        "feedback": "Vid halt väglag behövs LÄNGRE avstånd, inte kortare, eftersom bromssträckan ökar."
+      }
+    ],
+    "explanation": "Vid halt väglag ökar bromssträckan betydligt. Föraren måste alltid anpassa hastigheten efter väglaget så att fordonet kan stanna inom synbart avstånd och ha tillräckligt säkerhetsavstånd till framförvarande fordon."
+  },
+  {
+    "id": "kor-sample-005",
+    "topic": "trafik_och_vagmarken",
+    "tags": [
+      "Miljö",
+      "Bränsle",
+      "Körning"
+    ],
+    "question": "För att minska bränsleförbrukningen och miljöpåverkan bör du:",
+    "image": null,
+    "options": [
+      {
+        "text": "Accelerera hårt och bromsa kraftigt för att spara tid",
+        "correct": false,
+        "feedback": "Hård acceleration och kraftig bromsning ökar bränsleförbrukningen betydligt."
+      },
+      {
+        "text": "Köra i så hög växel som möjligt och undvika tomgång",
+        "correct": true,
+        "feedback": "Att köra i hög växel med lågt varvtal och undvika onödig tomgång minskar förbrukningen."
+      },
+      {
+        "text": "Alltid köra i maximal hastighet på motorvägen",
+        "correct": false,
+        "feedback": "Högre hastighet ökar luftmotståndet och därmed bränsleförbrukningen."
+      },
+      {
+        "text": "Låta motorn gå på tomgång för att den ska vara varm",
+        "correct": false,
+        "feedback": "Modern motor värms upp bäst under körning, tomgång slösar bränsle."
+      }
+    ],
+    "explanation": "Miljövänlig körning innebär mjuk acceleration, att hålla jämn hastighet, köra i hög växel med lågt varvtal och undvika onödig tomgång. Detta minskar både bränsleförbrukning och miljöpåverkan."
+  },
+  {
+    "id": "kor-auto-2541c8",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Förbud"
+    ],
+    "question": "Vad betyder denna skylt?",
+    "image": "vagmarke_forbud_infart.svg",
+    "options": [
+      {
+        "text": "Infart förbjuden för alla fordon från din riktning.",
+        "correct": true,
+        "feedback": "Skylten förbjuder att köra in med fordon från den riktningen utan särskilt tillstånd."
+      },
+      {
+        "text": "Endast motorfordon får inte köra in, cyklar är tillåtna.",
+        "correct": false,
+        "feedback": "Skylten omfattar alla fordon, inte bara motorfordon."
+      },
+      {
+        "text": "Privat väg — endast boende får köra in.",
+        "correct": false,
+        "feedback": "Skylten anger inte privat vägsstatus eller särskilda behörigheter."
+      },
+      {
+        "text": "Gäller endast lastbilar över viss vikt.",
+        "correct": false,
+        "feedback": "Det finns ingen viktbegränsning på denna skylt; den förbjuder all infart."
+      }
+    ],
+    "explanation": "Denna förbudsskylt betyder att fordon inte får köra in i det område skylten avser från den riktningen. Undantag kan finnas om en tilläggstavla anger särskilda fordon eller tider, men i grund gäller förbudet för alla fordon."
+  },
+  {
+    "id": "kor-auto-31b832",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Väjningsplikt"
+    ],
+    "question": "Vad anger denna skylt i trafiksituationen?",
+    "image": "vagmarke_huvudled.svg",
+    "options": [
+      {
+        "text": "Du kör på en väg där du har företräde i korsningar fram till slutet av huvudleden.",
+        "correct": true,
+        "feedback": "Huvudledsskylt visar att trafiken på huvudleden har företräde i korsningar tills huvudledens slutskylt syns."
+      },
+      {
+        "text": "Du måste alltid väja för trafik på den korsande vägen.",
+        "correct": false,
+        "feedback": "Motsatsen gäller; huvudleden har företräde, inte den korsande vägen."
+      },
+      {
+        "text": "Det är en rekommenderad körväg för tunga fordon.",
+        "correct": false,
+        "feedback": "Skylten anger inte rekommendation för tung trafik utan visar prioritet i korsningar."
+      },
+      {
+        "text": "Gäller endast vid dagtid på vardagar.",
+        "correct": false,
+        "feedback": "Huvudledsskyltens betydelse är oberoende av tid på dygnet och gäller tills ett slutmärke upphäver den."
+      }
+    ],
+    "explanation": "Huvudledsskylten visar att du har företräde i korsningar mot dem som kommer från sido­vägar under den tid huvudleden gäller. Företrädet gäller tills en skylt som upphäver huvudleden syns eller tills annan trafikreglering anges."
+  },
+  {
+    "id": "kor-auto-9fccd1",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Förbud"
+    ],
+    "question": "Vad innebär denna skylt?",
+    "image": "vagmarke_forbud_trafik.svg",
+    "options": [
+      {
+        "text": "Alla fordon är förbjudna att köra in på vägen där skylten sitter.",
+        "correct": true,
+        "feedback": "Skylten förbjuder all trafik med fordon på den vägsträckan."
+      },
+      {
+        "text": "Endast motorfordon är förbjudna, cyklar är tillåtna.",
+        "correct": false,
+        "feedback": "Skylten omfattar alla fordon, inklusive cyklar och mopeder."
+      },
+      {
+        "text": "Gäller endast fordon över viss bredd eller vikt.",
+        "correct": false,
+        "feedback": "Ingen vikt- eller breddbegränsning anges på denna skylt; den är generellt för alla fordon."
+      },
+      {
+        "text": "Skylten anger en gågata där gångtrafik prioriteras.",
+        "correct": false,
+        "feedback": "Gågata har en särskild symbol; denna förbudsskylt förbjuder fordonstrafik generellt."
+      }
+    ],
+    "explanation": "Denna skylt förbjuder trafik med fordon på den aktuella vägsträckan, vilket ofta används för områden reserverade för gående. Gående får normalt vistas där, men fordon får inte köra in om inte en tilläggstavla anger särskilda undantag."
+  },
+  {
+    "id": "kor-auto-f44585",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Anvisning"
+    ],
+    "question": "Vilka regler gäller på en gågata?",
+    "image": "vagmarke_gagata.svg",
+    "options": [
+      {
+        "text": "Gående har företräde, men fordon får köra sakta och endast om det är tillåtet.",
+        "correct": true,
+        "feedback": "Gågata innebär att gående har företräde; fordon får endast köra om det är tillåtet och i låg hastighet."
+      },
+      {
+        "text": "Fordon får inte köra alls; gatan är helt stängd för motorfordon.",
+        "correct": false,
+        "feedback": "En gågata kan tillåta viss motorfordonstrafik, så totalförbud gäller inte automatiskt."
+      },
+      {
+        "text": "Det är förbjudet att stanna eller parkera för gående.",
+        "correct": false,
+        "feedback": "Skyltens huvudsyfte är att prioritera gående, inte att förbjuda dem att vistas där."
+      },
+      {
+        "text": "Cykling är alltid förbjudet på gågata.",
+        "correct": false,
+        "feedback": "Cykling kan vara reglerad lokalt med tilläggsskylt, men gågateskylten i sig förbjuder inte automatiskt cykling."
+      }
+    ],
+    "explanation": "På en gågata har gående företräde och får röra sig fritt över hela körbanan; fordon som är tillåtna måste anpassa hastighet och visad hänsyn. Lokala tilläggstavlor kan reglera vilka fordon som får köra och om cykling är tillåten."
+  },
+  {
+    "id": "kor-auto-9baa56",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad varnar denna skylt för?",
+    "image": "vagmarke_varning_cyklande.svg",
+    "options": [
+      {
+        "text": "Det kan förekomma cyklister och mopedförare på eller nära vägen — visa särskild försiktighet.",
+        "correct": true,
+        "feedback": "Skyltens syfte är att uppmärksamma förare på trafik med cyklar och mopeder i närheten så att de tar det försiktigt."
+      },
+      {
+        "text": "Det finns en separat cykelbana som du måste använda.",
+        "correct": false,
+        "feedback": "Varningsskylten visar inte att en cykelbana finns eller är obligatorisk att använda."
+      },
+      {
+        "text": "Cykling och mopedkörning är förbjudna framöver.",
+        "correct": false,
+        "feedback": "En förbudsskylt skulle ange sådant; varningsskylten varnar endast för närvaro."
+      },
+      {
+        "text": "Det är en rekommendation att parkera för cyklister.",
+        "correct": false,
+        "feedback": "Skylten handlar om varning för trafikanter, inte om parkering eller rekommendationer."
+      }
+    ],
+    "explanation": "Varningsskylten talar om att cyklister och mopedförare kan befinna sig på eller nära vägbanan och att du därför bör sänka hastigheten och vara beredd på oväntade rörelser. Anpassa avstånd och omkörningar så att det är säkert för de oskyddade trafikanterna."
+  },
+  {
+    "id": "kor-auto-5c80d5",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "varning_for_stenras.svg",
+    "options": [
+      {
+        "text": "Varning för risk för stenras eller stenfall på vägbanan.",
+        "correct": true,
+        "feedback": "Skyltens syfte är att uppmärksamma förare på att sten kan falla ner eller ligga på vägen, så försiktighet krävs."
+      },
+      {
+        "text": "Varning för lösa grus- eller singelpartier på vägbanan.",
+        "correct": false,
+        "feedback": "Denna skylt varnar specifikt för stenras, inte generellt för löst grus."
+      },
+      {
+        "text": "Anvisning om alternativ väg på grund av arbete framför.",
+        "correct": false,
+        "feedback": "Detta är en varningsskylt, inte en anvisningsskylt för omledning eller arbete."
+      },
+      {
+        "text": "Varning för fallande träd eller skogsarbete i närheten.",
+        "correct": false,
+        "feedback": "Symboliken på skylten visar sten/klippor, inte träd eller skogsarbete."
+      }
+    ],
+    "explanation": "Skylten varnar för stenras eller stenfall som kan förekomma nära eller på vägen, så du ska sänka hastigheten och vara beredd att stanna. Håll extra uppsikt och undvik att svänga ut på skuldran om den är lös eller fylld med stenar."
+  },
+  {
+    "id": "kor-auto-7a661a",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Väjningsplikt"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vajningsplikt_mot_motande_trafik.svg",
+    "options": [
+      {
+        "text": "Du måste ge företräde åt mötande trafik innan du kör ut.",
+        "correct": true,
+        "feedback": "Skyltens innebörd är att du ska lämna företräde åt mötande fordon på den smala sträckan."
+      },
+      {
+        "text": "Du har företräde över mötande trafik på den smala vägsträckan.",
+        "correct": false,
+        "feedback": "Denna skylt betyder motsatsen; du ska inte ta företräde utan vänta på mötande."
+      },
+      {
+        "text": "Du måste stanna helt även om ingen mötande trafik syns.",
+        "correct": false,
+        "feedback": "Skylt ger väjningsplikt, inte automatisk stopplikt; stanna bara om det behövs för att lämna företräde."
+      },
+      {
+        "text": "Endast tunga fordon måste ge företräde åt mötande trafik.",
+        "correct": false,
+        "feedback": "Skyltens regler gäller alla fordon, inte bara tunga fordon."
+      }
+    ],
+    "explanation": "Skylten markerar att du ska lämna företräde åt mötande trafik, ofta på smal väg eller bro där två fordon inte kan passera samtidigt. Anpassa hastigheten och välj lämplig plats att stanna eller backa om det behövs för att släppa fram motsatt sida."
+  },
+  {
+    "id": "kor-auto-64d1a5",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Väjningsplikt"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vagmarke_stopplikt.svg",
+    "options": [
+      {
+        "text": "Du måste göra full stopp vid stopplinjen eller vägkanten innan du fortsätter.",
+        "correct": true,
+        "feedback": "Skyltens krav är fullständigt stopp följt av att lämna företräde där det behövs innan fortsatt färd."
+      },
+      {
+        "text": "Du behöver bara sakta ner och ge företräde om annan trafik närmar sig.",
+        "correct": false,
+        "feedback": "Stoppskylten kräver alltid ett helt stopp, inte bara att sakta ner."
+      },
+      {
+        "text": "Skylt anger att korsningen har väjningspliktsskyltar för alla håll.",
+        "correct": false,
+        "feedback": "Stoppskylten innebär individuell stopplikt, inte att hela korsningen är försedd med väjningspliktsskyltar."
+      },
+      {
+        "text": "Gäller endast fordonstyper över viss vikt.",
+        "correct": false,
+        "feedback": "Stopplikt gäller alla fordon oavsett vikt om skylten är riktad mot din riktning."
+      }
+    ],
+    "explanation": "Stoppskylten innebär att du alltid ska stanna helt vid stopplinjen eller, om sådan saknas, vid vägen kant och sedan väja för korsande trafik och fotgängare innan du kör vidare. Det är viktigt att stanna så att du tydligt kan bedöma om det är fritt att köra."
+  },
+  {
+    "id": "kor-auto-d8e6af",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "varning_for_flerfargssignal.svg",
+    "options": [
+      {
+        "text": "Varning för trafiksignal (flerfärgad ljussignal) längre fram.",
+        "correct": true,
+        "feedback": "Skylten varnar för att du snart möter trafikljus och bör vara beredd att stanna eller anpassa hastigheten."
+      },
+      {
+        "text": "Varning för järnvägskorsning med bommar.",
+        "correct": false,
+        "feedback": "Skylten visar en trafiksignal, inte en järnväg eller bommar."
+      },
+      {
+        "text": "Anvisning att du måste följa en särskild signal för gångtrafikanter.",
+        "correct": false,
+        "feedback": "Detta är en varningsskylt, inte en anvisning som reglerar enbart gångtrafik."
+      },
+      {
+        "text": "Varning för ett automatiskt vägtullsystem längre fram.",
+        "correct": false,
+        "feedback": "Symbolen visar trafikljus och har ingen koppling till vägtullar."
+      }
+    ],
+    "explanation": "Skylten informerar om att trafiksignaler finns längre fram, så att du ska vara beredd att stanna vid rött ljus och följa signalernas anvisningar. Anpassa fart och håll uppsikt för att undvika stopp i korsningen."
+  },
+  {
+    "id": "kor-auto-7bdfb3",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "varning_for_far.svg",
+    "options": [
+      {
+        "text": "Varning för får eller tamdjur i eller nära vägen.",
+        "correct": true,
+        "feedback": "Skylten varnar för att får kan finnas på eller nära vägbanan, så du bör sänka farten och vara uppmärksam."
+      },
+      {
+        "text": "Varning för vilda djur som hjort och älg.",
+        "correct": false,
+        "feedback": "Symbolen visar får specifikt; vilda djur anges med en annan symbol."
+      },
+      {
+        "text": "Anvisning om att gårdsträdgård ligger intill vägen.",
+        "correct": false,
+        "feedback": "Detta är en varningsskylt för djur på vägen, inte en vägvisning till gårdar."
+      },
+      {
+        "text": "Förbud mot att mata djur vid vägkanten.",
+        "correct": false,
+        "feedback": "Det är inte ett förbudsmärke utan en varning om djur i trafiken."
+      }
+    ],
+    "explanation": "Skylten varnar för förekomst av får eller andra tamdjur som kan gå fritt över eller nära vägen, särskilt i landsbygd. Sänk farten och var beredd att stanna för att undvika kollision med djur."
+  },
+  {
+    "id": "kor-auto-76994c",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Anvisning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vagmarke_anvisning_motorvag.svg",
+    "options": [
+      {
+        "text": "Motorväg börjar — särskilda regler och begränsningar för fordonstyp gäller.",
+        "correct": true,
+        "feedback": "Skylten anger att du nu kör på en motorväg, vilket innebär trafikregler som t.ex. förbjudna trafikanter och högre hastighetsnivåer."
+      },
+      {
+        "text": "Gång- och cykelbana börjar.",
+        "correct": false,
+        "feedback": "Symboliken för motorväg skiljer sig tydligt från gång- och cykelskyltar."
+      },
+      {
+        "text": "Motorväg upphör omedelbart.",
+        "correct": false,
+        "feedback": "Denna skylt visar början av motorväg, inte slutet."
+      },
+      {
+        "text": "Tillåtet att parkera vid vägkanten på motorvägen.",
+        "correct": false,
+        "feedback": "Parkering på motorväg är vanligtvis förbjuden; skylten anvisar att motorväg påbörjas."
+      }
+    ],
+    "explanation": "Skylten markerar att en motorväg börjar, vilket medför särskilda trafikregler, begränsningar för vissa fordon och ofta högre hastighetsgränser. Använd rätt körfält och var medveten om att gående, cyklister och vissa fordon inte får köra där."
+  },
+  {
+    "id": "kor-auto-4e3619",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "varning_for_svag_vagkant.svg",
+    "options": [
+      {
+        "text": "Varning för svag eller bräcklig vägkant där vägrenen kan rasa under fordon.",
+        "correct": true,
+        "feedback": "Skylten varnar för att vägrenen eller vägkanten inte bär upp fordon, så du bör hålla hjulen på körbanan."
+      },
+      {
+        "text": "Varning för att vägen har dålig bärighet överlag (tunn asfalt).",
+        "correct": false,
+        "feedback": "Skylten specificerar svag vägkant, inte generellt dålig vägkonstruktion över hela körbanan."
+      },
+      {
+        "text": "Anvisning om att parkering endast är tillåten på vägkanten.",
+        "correct": false,
+        "feedback": "Detta är en varningsskylt och inte en anvisning för parkering."
+      },
+      {
+        "text": "Varning för att vägen är extra smal framöver.",
+        "correct": false,
+        "feedback": "Symbolen visar svag kant snarare än att vägen blir smal."
+      }
+    ],
+    "explanation": "Skylten varnar för att vägkanten kan vara svag eller brant, vilket ökar risken för att fordon tippar eller får sänkta däck om man försöker köra ut på vägrenen. Håll därför hjulen på körbanan och sänk hastigheten vid behov."
+  },
+  {
+    "id": "kor-auto-cbac9b",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "varning_for_overgangsstalle.svg",
+    "options": [
+      {
+        "text": "Varning för övergångsställe för gående längre fram.",
+        "correct": true,
+        "feedback": "Skylten påminner om att korsande gående kan finnas vid övergångsstället, så du ska vara beredd att stanna."
+      },
+      {
+        "text": "Anvisning att det finns en gång- och cykelbana parallellt med vägen.",
+        "correct": false,
+        "feedback": "Denna skylt varnar för ett övergångsställe, inte att en separat gång- och cykelbana börjar."
+      },
+      {
+        "text": "Varning för barn som leker i vägkanten, utan samband med övergångsställe.",
+        "correct": false,
+        "feedback": "Symbolen visar en gående över ett övergångsställe, inte lekande barn."
+      },
+      {
+        "text": "Förbud mot att stanna eller parkera vid nästa korsning.",
+        "correct": false,
+        "feedback": "Detta är en varningsskylt, inte en parkeringsföreskrift."
+      }
+    ],
+    "explanation": "Skylten varnar för ett övergångsställe längre fram, så du bör sänka hastigheten och vara extra uppmärksam på gående som avser att korsa vägen. Ge företräde åt gående som befinner sig på eller tydligt avser att gå ut på övergångsstället."
+  },
+  {
+    "id": "kor-auto-607fab",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "varning_for_cyklande_och_mopedforare.svg",
+    "options": [
+      {
+        "text": "Varning för cyklister och mopedförare i eller nära vägbanan framöver.",
+        "correct": true,
+        "feedback": "Skylten signalerar att du kan möta cyklar och mopeder och bör anpassa hastighet och avstånd."
+      },
+      {
+        "text": "Förbjudet att cykla eller köra moped på denna väg.",
+        "correct": false,
+        "feedback": "Detta är en varningsskylt, inte ett förbud mot cykel eller moped."
+      },
+      {
+        "text": "Anvisning om att cykel- och gångbana börjar här.",
+        "correct": false,
+        "feedback": "Skylten varnar för förekomst av cyklister och mopedister, den anvisar inte en separat bana."
+      },
+      {
+        "text": "Vägavsnittet är endast avsett för motorfordon med hög hastighet.",
+        "correct": false,
+        "feedback": "Symboliken visar cyklister/mopeder; skylten uppmanar till försiktighet, inte hög hastighet."
+      }
+    ],
+    "explanation": "Skylten varnar för att cyklister och mopedförare kan finnas i närheten av eller på vägen, ofta där sikten är begränsad eller trafikmiljön förändras. Anpassa hastighet och håll säkerhetsavstånd vid omkörning."
+  },
+  {
+    "id": "kor-auto-0818c7",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Väjningsplikt"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vagmarke_cykeloverfart.svg",
+    "options": [
+      {
+        "text": "Du måste lämna företräde åt cyklister som korsar vägen vid överfarten.",
+        "correct": true,
+        "feedback": "Skylten markerar en cykelöverfart där fordon på vägen ska ge företräde åt cyklister."
+      },
+      {
+        "text": "Cyklar måste alltid ge företräde åt biltrafiken på denna plats.",
+        "correct": false,
+        "feedback": "Detta märke ger cyklister företräde, inte tvärtom."
+      },
+      {
+        "text": "Förbud mot cykeltrafik över vägen; cyklister ska ledas av.",
+        "correct": false,
+        "feedback": "Skyltens syfte är att markera en överfart där cyklister har företräde, inte att förbjuda dem."
+      },
+      {
+        "text": "Anvisning om att cykelbana slutar och fortsätter som körbana.",
+        "correct": false,
+        "feedback": "Detta är ett väjningspliktsmärke för cykelöverfart, inte en anvisning om banans slut."
+      }
+    ],
+    "explanation": "Skyltens funktion är att markera en cykelöverfart där cyklister har företräde framför korsande motorfordon. Som bilförare ska du sakta ner och lämna företräde åt cyklister på överfarten."
+  },
+  {
+    "id": "kor-auto-226ddf",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "varning_for_flera_farliga_kurvor.svg",
+    "options": [
+      {
+        "text": "Varning för flera farliga kurvor i följd längre fram.",
+        "correct": true,
+        "feedback": "Skylten visar att flera skarpa kurvor väntar, så du bör anpassa hastigheten och köra försiktigt."
+      },
+      {
+        "text": "Varning för en enda, mycket tvär kurva.",
+        "correct": false,
+        "feedback": "Symbolen indikerar flera kurvor i följd, inte endast en enstaka tvär kurva."
+      },
+      {
+        "text": "Varning för ojämn väg med gupp.",
+        "correct": false,
+        "feedback": "Det finns en särskild skylt för gupp; denna visar kurvor."
+      },
+      {
+        "text": "Anvisning om att en rondell kommer längre fram.",
+        "correct": false,
+        "feedback": "Rondellsymbol ser annorlunda ut; denna skylt varnar för kurvor."
+      }
+    ],
+    "explanation": "Skylten varnar för att flera farliga kurvor kommer i följd, vilket kräver nedsatt hastighet och uppmärksam körning. Håll ett tryggt avstånd till framförvarande fordon och undvik plötsliga manövrer."
+  },
+  {
+    "id": "kor-auto-f3e0ce",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "varning_for_kaj.svg",
+    "options": [
+      {
+        "text": "Varning för kaj eller vattenkant där det finns risk att åka i vattnet.",
+        "correct": true,
+        "feedback": "Skylten varnar för att vägen gränsar till vatten eller kaj, så extra försiktighet krävs."
+      },
+      {
+        "text": "Varning för att en bro eller färjelägesinfart kommer längre fram.",
+        "correct": false,
+        "feedback": "Detta märke indikerar kaj/vattenkant snarare än ett färjeläge eller broinfart."
+      },
+      {
+        "text": "Anvisning om att det finns parkeringsmöjligheter vid hamnen.",
+        "correct": false,
+        "feedback": "Skyltens syfte är varning för vattenkant, inte att visa parkering."
+      },
+      {
+        "text": "Varning för kraftig sidvind vid öppna vattendrag.",
+        "correct": false,
+        "feedback": "Sidvind varnas med en annan symbol; denna visar en kajkant."
+      }
+    ],
+    "explanation": "Skylten varnar för att vägen går nära kaj eller vatten och att det finns risk att köra i vattnet om man kör av vägen. Sänk farten, håll avstånd och undvik att köra ut på vägrenen där den är osäker."
+  },
+  {
+    "id": "kor-auto-1fc989",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Förbud"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "forbud_mot_omkorning.svg",
+    "options": [
+      {
+        "text": "Omkörning är förbjuden för alla fordon på sträckan.",
+        "correct": true,
+        "feedback": "Skylten markerar ett generellt omkörningsförbud, vilket gäller alla fordon tills annat märke visar upphörande."
+      },
+      {
+        "text": "Endast omkörning med tung trafik är förbjuden.",
+        "correct": false,
+        "feedback": "Denna skylt förbjuder omkörning för alla fordon, inte bara tung trafik."
+      },
+      {
+        "text": "Omkörning är tillåten men endast på höger sida.",
+        "correct": false,
+        "feedback": "Skyltens innebörd är att omkörning inte är tillåten alls, inte att reglera sidan för omkörning."
+      },
+      {
+        "text": "Förbudet gäller endast under dagtid.",
+        "correct": false,
+        "feedback": "Om skylten gäller, så gäller förbudet normalt dygnet runt tills annan skylt anger annat."
+      }
+    ],
+    "explanation": "Denna förbudsskylt förbjuder omkörning på den följande vägsträckan för alla fordon, tills ett märke visar att förbudet upphör. Respektera förbudet och avvakta till rätt plats för säker omkörning."
+  },
+  {
+    "id": "kor-auto-e3c566",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Förbud"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "forbud_mot_trafik_med_fordon.svg",
+    "options": [
+      {
+        "text": "Trafik med fordon är förbjuden; endast gående eller annan specifik trafik kan få företräde.",
+        "correct": true,
+        "feedback": "Skylten förbjuder motorfordon och ofta cyklar beroende på utförande, vilket innebär att fordon inte får köra in."
+      },
+      {
+        "text": "Tillåtet för alla fordon att köra men hastigheten är begränsad.",
+        "correct": false,
+        "feedback": "Detta är ett förbudsmärke, inte en hastighetsbegränsning eller anvisning om tillåten trafik."
+      },
+      {
+        "text": "Endast tunga transporter är förbjudna i området.",
+        "correct": false,
+        "feedback": "Skylten förbjuder trafik med fordon generellt, inte bara tunga transporter."
+      },
+      {
+        "text": "Detta markerar enbart början på en gågata utan trafik under vissa tider.",
+        "correct": false,
+        "feedback": "Gågata regleras med andra skyltar; denna är ett generellt förbud mot fordonstrafik."
+      }
+    ],
+    "explanation": "Skylten innebär ett förbud mot trafik med fordon på den aktuella sträckan, vilket innebär att motorfordon och ofta andra fordon inte får köra där. Kontrollera kompletterande skyltar för undantag eller tidsangivelser."
+  },
+  {
+    "id": "kor-auto-1a3d90",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Påbud"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vagmarke_pabjuden_gang_och_cykelbana.svg",
+    "options": [
+      {
+        "text": "Både gående och cyklister ska använda den anvisade banan; den är avsedd för båda trafikantgrupperna.",
+        "correct": true,
+        "feedback": "Skylten visar att banan är avsedd att användas av både gående och cyklister, ofta i delade eller separata delar."
+      },
+      {
+        "text": "Endast cyklister får använda banan, gångtrafik är förbjuden.",
+        "correct": false,
+        "feedback": "Denna skylt inkluderar både gående och cyklister; det är inte en ren cykelbana."
+      },
+      {
+        "text": "Banans användning är frivillig för gång- och cykeltrafik.",
+        "correct": false,
+        "feedback": "Detta är ett påbudsmärke vilket innebär att banan ska användas av de angivna trafikantgrupperna när den finns."
+      },
+      {
+        "text": "Endast motortrafik är tillåten på banan.",
+        "correct": false,
+        "feedback": "Symboliken visar gående och cykel, inte motortrafik."
+      }
+    ],
+    "explanation": "Skylten anger att en särskild bana är avsedd för både gående och cyklister, och att dessa trafikantgrupper ska använda den. I vissa utföranden kan banan vara uppdelad; som förare ska du vara uppmärksam där korsningar med denna bana förekommer."
+  },
+  {
+    "id": "kor-auto-89c0d4",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Förbud"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "forbud_mot_omkorning_med_tung_lastbil.svg",
+    "options": [
+      {
+        "text": "Omkörning är förbjuden för tunga lastbilar men kan vara tillåten för lättare fordon.",
+        "correct": true,
+        "feedback": "Skylten förbjuder specifikt omkörning för tung lastbilstrafik, medan andra fordon kan omfattas av andra regler."
+      },
+      {
+        "text": "Inget fordon får köra om på denna sträcka, oavsett typ.",
+        "correct": false,
+        "feedback": "Denna skylt gäller vanligtvis specifikt tunga lastbilar, inte alla fordon."
+      },
+      {
+        "text": "Tunga lastbilar måste alltid köra i vänster körfält.",
+        "correct": false,
+        "feedback": "Skyltens innebörd rör omkörningsförbud, inte anvisning om körfält för tunga lastbilar."
+      },
+      {
+        "text": "Förbudet gäller endast under rusningstid.",
+        "correct": false,
+        "feedback": "Eventuell tidsbegränsning skulle anges med tilläggstavla; grundskylten saknar tidsangivelse."
+      }
+    ],
+    "explanation": "Skylten anger ett omkörningsförbud som riktar sig mot tunga lastbilar, vilket förbättrar trafiksäkerheten och framkomligheten på smalare eller kurviga sträckor. Andra trafikantgrupper måste följa separata regler eller eventuella kompletterande skyltar."
+  },
+  {
+    "id": "kor-auto-f5cd23",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Anvisning"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vagmarke_anvisning_motorvag_upphor.svg",
+    "options": [
+      {
+        "text": "Motorväg upphör — de särskilda motorvägsreglerna gäller inte längre längre fram.",
+        "correct": true,
+        "feedback": "Skylten visar att du lämnar motorväg och att dess speciella trafikregler upphör."
+      },
+      {
+        "text": "Motorväg börjar omedelbart.",
+        "correct": false,
+        "feedback": "Denna skylt anger slutet på motorväg, inte början."
+      },
+      {
+        "text": "Endast personalfordon får fortsätta framåt.",
+        "correct": false,
+        "feedback": "Detta är en anvisningsskylt som visar att motorvägen upphör, inte ett förbud för andra fordon."
+      },
+      {
+        "text": "Snöröjning sker inte längre efter denna punkt.",
+        "correct": false,
+        "feedback": "Skylten har ingen koppling till snöröjning; den avser motorvägens slut."
+      }
+    ],
+    "explanation": "När du ser skylten betyder det att motorvägen slutar och att tidigare regler för motorväg inte längre gäller, t.ex. vissa fordonsbegränsningar eller släppt av farter. Anpassa körning efter de nya förhållandena och följ eventuella nya skyltar."
+  },
+  {
+    "id": "kor-auto-6eccaf",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Påbud"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vagmarke_pabjuden_gangbana.svg",
+    "options": [
+      {
+        "text": "Banan är avsedd för gående och ska användas av dem.",
+        "correct": true,
+        "feedback": "Skylten visar att det är en påbjuden gångbana, där gående ska vistas och andra trafikslag inte är tillåtna."
+      },
+      {
+        "text": "Cykling är obligatorisk på denna bana.",
+        "correct": false,
+        "feedback": "Symbolen visar en gående figur och innebär gångbana, inte cykelbana."
+      },
+      {
+        "text": "Banan är delad och går att använda både som bilväg och gångbana.",
+        "correct": false,
+        "feedback": "Detta är en specifik gångbanemarkering; den är inte avsedd för biltrafik."
+      },
+      {
+        "text": "Det är förbjudet att gå på denna bana.",
+        "correct": false,
+        "feedback": "Skylten uppmuntrar tillgång för gående, inte förbud."
+      }
+    ],
+    "explanation": "Skylten anger att en särskild bana är avsedd för gående och att de ska använda den, ofta för att separera fotgängare från cyklar och motorfordon. Som förare ska du visa hänsyn där denna bana korsar körbanan."
+  },
+  {
+    "id": "kor-auto-b90435",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Påbud"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vagmarke_pabjuden_cykelbana.svg",
+    "options": [
+      {
+        "text": "Banan är avsedd för cyklister och ska användas av dem.",
+        "correct": true,
+        "feedback": "Skylten markerar en påbjuden cykelbana där cyklister ska färdas och gångtrafik oftast är förbjuden."
+      },
+      {
+        "text": "Gående har alltid företräde på denna bana framför cyklister.",
+        "correct": false,
+        "feedback": "Detta är en cykelbana; gående får normalt inte använda den och har inte företräde här."
+      },
+      {
+        "text": "Banan är en rekommenderad rutt men användning är frivillig.",
+        "correct": false,
+        "feedback": "Som påbudsskylt innebär den obligatorisk användning för angiven trafikgrupp, inte rekommendation."
+      },
+      {
+        "text": "Motorfordon får köra på banan om det finns plats.",
+        "correct": false,
+        "feedback": "Cykelbana är avsedd för cyklar; motorfordon får normalt inte vistas där."
+      }
+    ],
+    "explanation": "Skylten anger en påbjuden cykelbana där cyklister ska färdas, vilket separerar dem från motorfordon och oftast från gående. Respektera banans regler och var försiktig vid korsningar där bilar och cyklar möts."
+  },
+  {
+    "id": "kor-auto-e697dd",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Väjningsplikt"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vajningsplikt.svg",
+    "options": [
+      {
+        "text": "Du måste lämna företräde för trafik på den korsande vägen.",
+        "correct": true,
+        "feedback": "Visar att du ska ge företräde åt trafiken på den andra vägen innan du kör ut."
+      },
+      {
+        "text": "Du måste stanna helt och vänta på tecken från polis eller trafikljus.",
+        "correct": false,
+        "feedback": "Det krävs inte alltid full stopp; endast om det behövs för att lämna företräde."
+      },
+      {
+        "text": "Du har företräde före korsande trafik.",
+        "correct": false,
+        "feedback": "Märket betyder tvärtom; du har inte företräde."
+      },
+      {
+        "text": "Maximal hastighet är nedsatt vid korsningen.",
+        "correct": false,
+        "feedback": "Skyltens funktion handlar om företräde, inte om hastighetsbegränsning."
+      }
+    ],
+    "explanation": "Detta märke visar att du måste lämna företräde för trafik på den korsande vägen om det behövs. Du behöver inte alltid stanna helt, men du får inte köra in förrän det är klart."
+  },
+  {
+    "id": "kor-auto-97c565",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Anvisning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vagmarke_anvisning_kameraovervakning.svg",
+    "options": [
+      {
+        "text": "Området är kameraövervakat, vilket kan gälla trafikövervakning eller säkerhet.",
+        "correct": true,
+        "feedback": "Markerar att kameror används för övervakning i området, ofta för trafik eller säkerhet."
+      },
+      {
+        "text": "Det är förbjudet att parkera här på grund av kameror.",
+        "correct": false,
+        "feedback": "Själva märket förbjuder inte parkering utan informerar om övervakning."
+      },
+      {
+        "text": "Endast fordon med kamera får köra i området.",
+        "correct": false,
+        "feedback": "Detta är inte en tillståndsskylt; den informerar om övervakning, inte om vilka fordon som får vara där."
+      },
+      {
+        "text": "Det finns automatisk hastighetskontroll med fotoböter.",
+        "correct": false,
+        "feedback": "Kameraskylt kan indikera övervakning men specificerar inte alltid hastighetskontroll."
+      }
+    ],
+    "explanation": "Skyltar för kameraövervakning informerar att området bevakas med kameror, ofta av säkerhets- eller trafikövervakningsskäl. Skyltningen påverkar inte automatiskt regler som parkeringsförbud om det inte anges separat."
+  },
+  {
+    "id": "kor-auto-f8c12c",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Väjningsplikt"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vagmarke_motande_trafik_har_vajningsplikt.svg",
+    "options": [
+      {
+        "text": "Mötande trafik har väjningsplikt, du har alltså företräde framför mötande fordon.",
+        "correct": true,
+        "feedback": "Visar att du har företräde och att mötande fordon ska lämna företräde åt dig."
+      },
+      {
+        "text": "Du måste lämna företräde för mötande trafik.",
+        "correct": false,
+        "feedback": "Detta är motsatsen; märket anger att mötande har väjningsplikt."
+      },
+      {
+        "text": "Ingen trafik får mötas på denna vägsträcka.",
+        "correct": false,
+        "feedback": "Märket reglerar företräde, inte ett generellt mötesförbud."
+      },
+      {
+        "text": "Vägen smalnar av och båda trafikriktningarna ska följa växelvis inpassning.",
+        "correct": false,
+        "feedback": "Sammanvävning visas med annat märke; detta anger företräde åt dig."
+      }
+    ],
+    "explanation": "Märket visar att mötande trafik måste lämna företräde, vilket innebär att du har rätt att passera först. Anpassa hastigheten och håll utkik efter mötande fordon som kan avvakta."
+  },
+  {
+    "id": "kor-auto-d21ea7",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Förbud"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "forbud_mot_trafik_med_tung_lastbil.svg",
+    "options": [
+      {
+        "text": "Tunga lastbilar är förbjudna att köra på sträckan (gäller vanligen fordon över viss vikt).",
+        "correct": true,
+        "feedback": "Anger att tunga lastbilar inte får köra där, vanligtvis baserat på vagnviktsgräns."
+      },
+      {
+        "text": "Alla lastbilar är förbjudna, oavsett vikt.",
+        "correct": false,
+        "feedback": "Skyltens text gäller tunga lastbilar specifikt, inte alla lastbilar."
+      },
+      {
+        "text": "Förbudet gäller endast under nattetid.",
+        "correct": false,
+        "feedback": "Ingen tidsbegränsning anges av detta märke; sådant skulle vara separat angivet."
+      },
+      {
+        "text": "Endast transport av farligt gods är förbjuden.",
+        "correct": false,
+        "feedback": "Märket förbjuder tunga lastbilar generellt, inte enbart farligt gods."
+      }
+    ],
+    "explanation": "Detta förbudsmärke anger att tunga lastbilar inte får köra på den aktuella vägsträckan, ofta för att skydda vägar eller boendemiljö. Kontrollera ibland om tillstånd ges för leveranser eller undantag anges på kompletterande skyltar."
+  },
+  {
+    "id": "kor-auto-5b2809",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_jarnvagskorsning_utan_bommar.svg",
+    "options": [
+      {
+        "text": "Varning för järnvägskorsning utan bommar—du ska vara extra uppmärksam och stanna vid behov.",
+        "correct": true,
+        "feedback": "Markerar en järnvägskorsning som saknar bommar, vilket kräver särskild försiktighet."
+      },
+      {
+        "text": "Det finns tåg som kör på vägen och du får inte passera alls.",
+        "correct": false,
+        "feedback": "Du får passera när det är fritt; skylten varnar och kräver försiktighet, inte förbud."
+      },
+      {
+        "text": "Korsningen har automatisk bom som öppnar och stänger.",
+        "correct": false,
+        "feedback": "Skyltens betydelse är att bommar saknas, inte att de finns."
+      },
+      {
+        "text": "Det är en gång- och cykelöverfart med särskild prioritet.",
+        "correct": false,
+        "feedback": "Detta gäller järnvägskorsning, inte en gång- och cykelöverfart."
+      }
+    ],
+    "explanation": "Märket varnar för en järnvägskorsning utan bommar, så du måste sänka hastigheten och se efter tåg i båda riktningar. Var beredd att stanna om sikten är dålig eller om ett tåg närmar sig."
+  },
+  {
+    "id": "kor-auto-e2e8ae",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_vagarbete.svg",
+    "options": [
+      {
+        "text": "Varning för vägarbete—sänk hastigheten och var beredd på hinder eller arbetare på vägen.",
+        "correct": true,
+        "feedback": "Skyltar för vägarbete uppmanar till försiktighet och sänkt hastighet på grund av arbete på vägbanan."
+      },
+      {
+        "text": "Vägen är avstängd för all trafik tills arbetet är klart.",
+        "correct": false,
+        "feedback": "Märket varnar, det förbjuder inte automatiskt passage; avstängning meddelas separat."
+      },
+      {
+        "text": "Endast byggfordon får passera under arbetstiden.",
+        "correct": false,
+        "feedback": "Ingen inskränkning av fordonsslag anges; skylten varnar generellt för arbete."
+      },
+      {
+        "text": "Det är förbjudet att stanna eller parkera i arbetsområdet.",
+        "correct": false,
+        "feedback": "Parkeringsförbud måste anges separat; varningsskylten informerar primärt om arbete."
+      }
+    ],
+    "explanation": "Varningsskylten indikerar vägarbete framöver så du bör minska hastigheten och vara uppmärksam på förändrade körfält eller arbetare. Följ eventuella tillfälliga anvisningar och vägmärken i arbetsområdet."
+  },
+  {
+    "id": "kor-auto-4d0d1d",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_ko.svg",
+    "options": [
+      {
+        "text": "Varning för kö—det kan bildas stillastående eller långsamt rörlig trafik längre fram.",
+        "correct": true,
+        "feedback": "Skyltar för kö varnar om risk för köbildning och att du bör vara beredd på köande fordon."
+      },
+      {
+        "text": "Farlig kurva finns längre fram och omkörning är förbjuden.",
+        "correct": false,
+        "feedback": "Detta märke varnar för kö, inte specifikt för kurvor eller omkörningsförbud."
+      },
+      {
+        "text": "Det finns boskap på vägen som kan orsaka köbildning.",
+        "correct": false,
+        "feedback": "Boskap varnas med annan skylt; här avser man oftast trafikstockning."
+      },
+      {
+        "text": "Vägen är enkelriktad framöver för att undvika köer.",
+        "correct": false,
+        "feedback": "Skylt för kö informerar om trafikläge, inte om enkelriktning."
+      }
+    ],
+    "explanation": "Märket varnar för att kö kan förekomma framöver, vilket kräver uppmärksamhet och anpassad hastighet. Håll avstånd och undvik onödiga filbyten som kan förvärra köbildningen."
+  },
+  {
+    "id": "kor-auto-cf48c7",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Anvisning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vagmarke_anvisning_tatort.svg",
+    "options": [
+      {
+        "text": "Du kör in i en tätort, vilket normalt innebär lägre hastighetsstandard och tätare trafikmiljö.",
+        "correct": true,
+        "feedback": "Anger att du är på väg in i en tätbebyggd ort där trafikmiljön förändras och hastighetsgränser ofta är lägre."
+      },
+      {
+        "text": "Du lämnar tätort och får fria hastigheter enligt landsväg.",
+        "correct": false,
+        "feedback": "Detta märke markerar inträde i tätort, inte utgång."
+      },
+      {
+        "text": "Det är obligatoriskt att använda helljus inom området.",
+        "correct": false,
+        "feedback": "Helljusanvändning regleras inte av denna skylt; den informerar om tätort."
+      },
+      {
+        "text": "Parkering är förbjuden i hela den kommande zonen.",
+        "correct": false,
+        "feedback": "Parkeringsregler anges separat; denna skylt meddelar att du kör in i tätort."
+      }
+    ],
+    "explanation": "Skylt för tätort visar att du kommer in i en bebyggd område där trafikmiljön ofta är mer komplex och hastighetsbegränsningar vanligtvis är lägre (ofta 50 km/h). Var uppmärksam på fotgängare och lokala trafikregler."
+  },
+  {
+    "id": "kor-auto-2b6870",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_skidakare.svg",
+    "options": [
+      {
+        "text": "Varning för skidåkare i eller nära vägbanan—sänk hastigheten och var beredd att stanna.",
+        "correct": true,
+        "feedback": "Skyltar för skidåkare varnar för att skidåkare kan befinna sig på eller nära vägen."
+      },
+      {
+        "text": "Det är cykelbana för vinterbruk och endast cyklar får användas.",
+        "correct": false,
+        "feedback": "Detta är en varningsskylt och avser skidåkare, inte en cykelbana."
+      },
+      {
+        "text": "Vägen är avstängd vintertid på grund av skidåkning.",
+        "correct": false,
+        "feedback": "Skylt varnar men innebär inte nödvändigtvis avstängning."
+      },
+      {
+        "text": "Parkeringsförbud gäller för att ge plats åt skidåkare.",
+        "correct": false,
+        "feedback": "Parkeringsregler kommuniceras med andra skyltar; denna varnar för skidåkare."
+      }
+    ],
+    "explanation": "Märket varnar för att skidåkare kan korsa eller vistas nära vägen, särskilt i vinterområden. Anpassa hastigheten och var beredd att ge företräde eller stanna om det behövs."
+  },
+  {
+    "id": "kor-auto-c284f5",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_barn.svg",
+    "options": [
+      {
+        "text": "Varning för barn—sänk farten och var extra uppmärksam på lekande eller gående barn nära vägen.",
+        "correct": true,
+        "feedback": "Skyltar för barn varnar för att barn kan befinna sig i eller nära körbanan och kräver extra försiktighet."
+      },
+      {
+        "text": "Skolområde där skolbussar har ensamrätt att stanna.",
+        "correct": false,
+        "feedback": "Märket varnar generellt för barn, skolrutiner och bussregler kommuniceras separat."
+      },
+      {
+        "text": "Det är förbjudet att köra på morgnar och eftermiddagar när barn är ute.",
+        "correct": false,
+        "feedback": "Inga tidsbegränsningar anges av den här varningen; det uppmanar till försiktighet."
+      },
+      {
+        "text": "Gångfartsområde börjar här och maxhastighet är 5 km/h.",
+        "correct": false,
+        "feedback": "Gångfartsområde markeras med annan skylt och specifik hastighet."
+      }
+    ],
+    "explanation": "Varningsskylten indikerar att barn kan vistas i närheten av vägen, så du bör minska hastigheten och vara beredd att stanna. Visa särskild uppmärksamhet vid skolor och lekplatser."
+  },
+  {
+    "id": "kor-auto-a61d8e",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_tunnel.svg",
+    "options": [
+      {
+        "text": "Varning för tunnel—förbered dig för sänkt ljusnivå och eventuellt annorlunda trafikförhållanden.",
+        "correct": true,
+        "feedback": "Informerar om att en tunnel närmar sig och att du bör anpassa körning och ljusbruk."
+      },
+      {
+        "text": "Tunneln är avstängd för personbilar och endast lastbilar får köra.",
+        "correct": false,
+        "feedback": "Märket varnar för tunnel; eventuella fordonsspecifika förbud anges separat."
+      },
+      {
+        "text": "Stopplikt gäller innan tunneln, stanna alltid helt.",
+        "correct": false,
+        "feedback": "Tunnelvarningen kräver inte alltid stopp; separata stoppskyltar skulle kräva det."
+      },
+      {
+        "text": "Vägavgift tas ut i tunneln.",
+        "correct": false,
+        "feedback": "Vägavgifter markeras med andra skyltar; detta är endast en varning för tunnel."
+      }
+    ],
+    "explanation": "Märket varnar för att en tunnel kommer längre fram, vilket kan påverka ljusförhållanden och sikt. Släck/ändra helljus enligt rekommendationer och håll avstånd till andra fordon."
+  },
+  {
+    "id": "kor-auto-d06063",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Anvisning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vagmarke_anvisning_motortrafikled.svg",
+    "options": [
+      {
+        "text": "Vägen är avsedd för motortrafik—gångtrafikanter, cyklar och vissa långsamtgående fordon är inte tillåtna.",
+        "correct": true,
+        "feedback": "Anger att vägen är avsedd för motorfordon och att svagare trafikanter normalt är förbjudna."
+      },
+      {
+        "text": "Vägen är en motorväg med fyrfälts trafik och högsta hastighet automatiskt 130 km/h.",
+        "correct": false,
+        "feedback": "Motortrafikled är inte samma som motorväg och har andra regler och hastighetsgränser."
+      },
+      {
+        "text": "Det finns vägtull på denna väg och betalning krävs.",
+        "correct": false,
+        "feedback": "Vägtullar anges med separat skylt; detta märke anger vägtyp, inte betalning."
+      },
+      {
+        "text": "Väjningsplikt gäller vid alla påfarter på denna väg.",
+        "correct": false,
+        "feedback": "Väjningsplikt regleras på plats av särskilda märken; motortrafikled anger inte automatiskt väjningsregler."
+      }
+    ],
+    "explanation": "Skylt för motortrafikled visar att vägen är reserverad för motorfordon och att svagare trafikanter som gående och cyklister normalt inte får vistas där. Regler och hastighetsgränser kan skilja sig från motorväg och anges ofta separat."
+  },
+  {
+    "id": "kor-auto-9c928a",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Anvisning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vagmarke_anvisning_sammanvavning.svg",
+    "options": [
+      {
+        "text": "Körfält eller vägar förenas—förbered på att trafiken måste växla in och att fordon kan behöva släppa in varandra.",
+        "correct": true,
+        "feedback": "Indikerar att körfält eller vägar smalnar och att förare behöver samordna inpassning."
+      },
+      {
+        "text": "Omkörning förbjuden tills skylt förbudet upphör.",
+        "correct": false,
+        "feedback": "Sammanvävning varnar för förening av filer, men förbjuder inte per automatik omkörning."
+      },
+      {
+        "text": "Väjningsplikt gäller för alla fordon som kommer från höger.",
+        "correct": false,
+        "feedback": "Väjningsregler specificeras vanligtvis av andra skyltar; detta är en anvisning om sammanslagning."
+      },
+      {
+        "text": "Cykeltrafik prioriteras i den kommande sträckan.",
+        "correct": false,
+        "feedback": "Sammanvävningsmärke behandlar sammanslagning av motorfordonsfält, inte cykelprioritet."
+      }
+    ],
+    "explanation": "Märket varnar för att körfält eller vägar kommer att gå ihop, så trafikanter måste anpassa farten och låta trafik från andra filer sluta in. Ett gott samspel minskar risk för köer och olyckor."
+  },
+  {
+    "id": "kor-auto-719a56",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_nedforslutning.svg",
+    "options": [
+      {
+        "text": "Varning för brant nedförsbacke—sänk växeln och var beredd på ökad fart nedåt.",
+        "correct": true,
+        "feedback": "Skyltar för nedförslutning varnar för en lång eller brant backe där farten kan öka snabbt."
+      },
+      {
+        "text": "Vägen lutar uppför och du bör öka farten.",
+        "correct": false,
+        "feedback": "Detta märke varnar för utförsbacke, inte uppförsbacke."
+      },
+      {
+        "text": "Det är stoppförbud i nedförsbacken.",
+        "correct": false,
+        "feedback": "Stoppskyltar eller parkeringsregler anges separat; varningsmärke bara informerar om lutning."
+      },
+      {
+        "text": "Fordon med automatisk växellåda rekommenderas att stanna innan backen.",
+        "correct": false,
+        "feedback": "Varningsskylten ger ingen rekommendation om växellåda, bara varnar för lutningen."
+      }
+    ],
+    "explanation": "Märket varnar för en utförsbacke där fordonets hastighet lätt kan öka; det är lämpligt att välja lägre växel och motorbromsa. Håll avstånd till fordon framför och var extra försiktig med tung last."
+  },
+  {
+    "id": "kor-auto-630d79",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_ojamn_vag.svg",
+    "options": [
+      {
+        "text": "Varning för ojämn väg eller gupp—sänk hastigheten för att undvika skador och dålig kontroll.",
+        "correct": true,
+        "feedback": "Skyltar för ojämn väg varnar för dålig vägstandard som kan påverka fordonshantering."
+      },
+      {
+        "text": "Vägen är avstängd för tung trafik på grund av dålig brunnslock.",
+        "correct": false,
+        "feedback": "Detta märke informerar generellt om ojämnheter, inte om avstängning för tung trafik."
+      },
+      {
+        "text": "Det finns hastighetskameror som mäter ojämnheter i körfältet.",
+        "correct": false,
+        "feedback": "Ojämn väg-märket har inget att göra med kameror; det varnar för vägytan."
+      },
+      {
+        "text": "Endast fyrhjulsdrivna fordon får passera här.",
+        "correct": false,
+        "feedback": "Ingen fordonsbegränsning anges av denna varning; det gäller alla trafikanter att vara försiktiga."
+      }
+    ],
+    "explanation": "Märket varnar för ojämn väg eller gupp där du bör sänka hastigheten för att bibehålla kontroll och undvika skador. Anpassa körningen och var särskilt försiktig vid dålig sikt eller vått väglag."
+  },
+  {
+    "id": "kor-auto-207639",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_langsamtgaende_fordon.svg",
+    "options": [
+      {
+        "text": "Varning för långsamtgående fordon—sänk farten och var beredd på möte med fordon som rör sig mycket långsammare.",
+        "correct": true,
+        "feedback": "Skyltar för långsamtgående fordon varnar för fordon som kan hålla mycket lägre hastighet än normal trafik."
+      },
+      {
+        "text": "Alla fordon måste köra i lägsta möjliga växel under sträckan.",
+        "correct": false,
+        "feedback": "Märket varnar för typen av fordon, det föreskriver inte växelanvändning."
+      },
+      {
+        "text": "Vägen är endast avsedd för traktorer och jordbruksmaskiner.",
+        "correct": false,
+        "feedback": "Det är en varning för att sådana fordon kan förekomma, men vägen är inte nödvändigtvis reserverad för dem."
+      },
+      {
+        "text": "Du får inte köra om under någon omständighet.",
+        "correct": false,
+        "feedback": "Omkörningsregler bedöms separat; varningsmärke begränsar inte automatiskt omkörning."
+      }
+    ],
+    "explanation": "Märket varnar för att långsamtgående fordon som traktorer kan förekomma på vägen och att du därför bör anpassa hastighet och avstånd. Planera omkörning försiktigt och endast när det är säkert."
+  },
+  {
+    "id": "kor-auto-208825",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_ren.svg",
+    "options": [
+      {
+        "text": "Varning för renar i området—var beredd att stanna om djur korsar vägen.",
+        "correct": true,
+        "feedback": "Markerar att renar kan förekomma på eller nära vägen och att extra försiktighet krävs."
+      },
+      {
+        "text": "Det är förbjudet att ta med husdjur längs denna vägsträcka.",
+        "correct": false,
+        "feedback": "Skylt varnar för vilda djur, den förbjuder inte att ha husdjur i bilen."
+      },
+      {
+        "text": "Omkörning av större fordon är förbjuden för att skydda renarnas habitat.",
+        "correct": false,
+        "feedback": "Detta är inte en regel om omkörning; det varnar för djur närvarande."
+      },
+      {
+        "text": "Det finns ett specifikt stängsel för att hålla renarna borta från vägen.",
+        "correct": false,
+        "feedback": "Om stängsel finns visas det inte genom denna varningsskylt; du måste fortfarande vara uppmärksam."
+      }
+    ],
+    "explanation": "Märket varnar för renar som kan finnas på eller nära vägen, särskilt i norra delar av landet. Anpassa hastigheten och var beredd att stanna för att undvika kollisioner med djur."
+  },
+  {
+    "id": "kor-auto-410b11",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_lagt_flygande_flygplan.svg",
+    "options": [
+      {
+        "text": "Varning för lågt flygande flygplan—var uppmärksam på plötsligt buller eller distraktioner.",
+        "correct": true,
+        "feedback": "Skyltar för lågt flygande flygplan varnar för att plan kan passera nära marknivå och störa trafiken."
+      },
+      {
+        "text": "Flygplatsen kräver att alla fordon stannar vid kontrollpunkt.",
+        "correct": false,
+        "feedback": "Skylt varnar om lågt flygande plan, den kräver inte stopp i sig."
+      },
+      {
+        "text": "Det är förbjudet att stanna eller parkera inom flygplatsens omedelbara närområde.",
+        "correct": false,
+        "feedback": "Parkering regleras separat; varningen informerar om flygaktivitet."
+      },
+      {
+        "text": "Det finns fallande föremål från flygplan i området.",
+        "correct": false,
+        "feedback": "Märket varnar generellt för flygplanens närhet och eventuella distraktioner, inte specifikt fallande föremål."
+      }
+    ],
+    "explanation": "Märket varnar för att flygplan kan passera lågt över området, vilket kan orsaka ljudstörning eller plötsliga ljus- och vindpåverkan. Håll fokus på vägen och undvik att låta distraktioner påverka körningen."
+  },
+  {
+    "id": "kor-auto-e78115",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Förbud"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vagmarke_datumparkering.svg",
+    "options": [
+      {
+        "text": "Datumparkering—parkering sker enligt datumprincip (t.ex. sida för jämna/udda dagar), följ lokal anvisning.",
+        "correct": true,
+        "feedback": "Visar att parkering är reglerad enligt datum och att du ska följa de angivna reglerna för sidan."
+      },
+      {
+        "text": "Gratis parkering gäller endast vissa datum i månaden.",
+        "correct": false,
+        "feedback": "Märket reglerar vilken sida eller dag som gäller, inte nödvändigtvis avgiftens existens."
+      },
+      {
+        "text": "Parkering är förbjuden varje månad på den dag som anges i kalendern.",
+        "correct": false,
+        "feedback": "Datumparkering handlar om växelvis parkering enligt datum, inte ett allmänt parkeringsförbud."
+      },
+      {
+        "text": "Endast fordon med särskilt datumtillstånd får parkera här.",
+        "correct": false,
+        "feedback": "Det handlar om datumstyrd parkering för alla fordon, inte ett särskilt tillståndsbehov."
+      }
+    ],
+    "explanation": "Datumparkering innebär att parkering regleras efter dag i månaden (ofta jämna/udda dagar) så att bilar flyttas för gatustädning eller snöröjning. Följ de lokala skyltarna noga för att undvika böter eller bogsering."
+  },
+  {
+    "id": "kor-auto-4b492f",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Förbud"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vagmarke_vandplats.svg",
+    "options": [
+      {
+        "text": "Här finns en anvisad vändplats där du får vända ditt fordon.",
+        "correct": true,
+        "feedback": "Anger att platsen är avsedd för att vända fordon och att det är tillåtet där."
+      },
+      {
+        "text": "Det är förbjudet att vända fordon på hela vägsträckan.",
+        "correct": false,
+        "feedback": "Märket markerar tvärtom en plats där vändning är tillåten."
+      },
+      {
+        "text": "Endast bussar får använda vändplatsen.",
+        "correct": false,
+        "feedback": "Skylt för vändplats gäller generellt och begränsar inte per automatik till bussar."
+      },
+      {
+        "text": "Det är en angiven parkeringsplats för korttidsparkering.",
+        "correct": false,
+        "feedback": "Vändplats är för vändning, inte för parkering; parkering regleras separat."
+      }
+    ],
+    "explanation": "Märket visar att en särskild plats är avsedd för vändning av fordon, vilket kan underlätta återvändande på enkelriktade eller smala vägar. Använd platsen korrekt och undvik att blockera om du stannar kort."
+  },
+  {
+    "id": "kor-auto-bfd434",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_notkreatur.svg",
+    "options": [
+      {
+        "text": "Varning för nötkreatur i eller nära vägen—sänk hastigheten och var beredd att stanna.",
+        "correct": true,
+        "feedback": "Markerar att kor eller annan nötkreatur kan finnas på vägen, vilket kräver försiktighet."
+      },
+      {
+        "text": "Det är förbjudet att köra lastat med nötboskap i området.",
+        "correct": false,
+        "feedback": "Märket varnar för närvaro av nötkreatur, det förbjuder inte transport av sådana djur."
+      },
+      {
+        "text": "Gårdsarbete pågår, men djur är instängda bakom stängsel.",
+        "correct": false,
+        "feedback": "Skylt indikerar att djur kan röra sig fritt; det säger inget om stängselstatus."
+      },
+      {
+        "text": "Det är säkerhetszon för djurpark där fordon måste stanna till för biljettkontroll.",
+        "correct": false,
+        "feedback": "Detta är en varningsskylt snarare än en anvisning om biljettkontroll eller entré."
+      }
+    ],
+    "explanation": "Märket varnar för att nötkreatur kan vistas på eller nära vägen, vilket innebär risk för plötsliga hinder. Använd låg hastighet och var beredd att stanna för att undvika olyckor med djur."
+  },
+  {
+    "id": "kor-auto-ecbacf",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Väjningsplikt"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vagmarke_overgangsstalle.svg",
+    "options": [
+      {
+        "text": "Markerar ett övergångsställe där gående har företräde när de är på väg över.",
+        "correct": true,
+        "feedback": "Visar ett övergångsställe där gående har prioritet när de går över vägen."
+      },
+      {
+        "text": "Gående måste vänta på fordon innan de får korsa här.",
+        "correct": false,
+        "feedback": "Vid ett övergångsställe har gående normalt företräde, inte tvärtom."
+      },
+      {
+        "text": "Det är en cykelöverfart där cyklister alltid har företräde.",
+        "correct": false,
+        "feedback": "Denna skylt visar ett övergångsställe för gående, inte en särskild cykelöverfart."
+      },
+      {
+        "text": "Stopplikt gäller för fordon på båda sidor av övergångsstället vid alla tider.",
+        "correct": false,
+        "feedback": "Stopplikt gäller inte automatiskt; fordon måste lämna företräde när gående är på väg att korsa."
+      }
+    ],
+    "explanation": "Skylt för övergångsställe visar att gående ska ges företräde när de befinner sig på eller har avsikt att gå ut på övergångsstället. Sänk farten och var beredd att stanna för gående."
+  },
+  {
+    "id": "kor-auto-b5f8c9",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Anvisning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "vagmarke_anvisning_nodutgang.svg",
+    "options": [
+      {
+        "text": "Anger riktningen till en nödutgång eller utrymningsväg som ska användas vid fara.",
+        "correct": true,
+        "feedback": "Visar var en nödutgång finns och i vilken riktning man ska gå för att evakuera."
+      },
+      {
+        "text": "Markerar en lucka för rengöring av vägen.",
+        "correct": false,
+        "feedback": "Skyltens syfte är att peka ut en nödutgång, inte vägunderhåll."
+      },
+      {
+        "text": "Det är en anvisning för var ambulansparkering finns.",
+        "correct": false,
+        "feedback": "Nödutgångsskyltar visar utrymningsvägar, inte parkeringsplatser för utryckningsfordon."
+      },
+      {
+        "text": "Anger att det finns ett närliggande sjukvårdsutrymme som allmänheten får använda.",
+        "correct": false,
+        "feedback": "Nödutgångsskyltar pekar på utrymningsvägar, inte medicinska mottagningar."
+      }
+    ],
+    "explanation": "Nödutgångsskylten visar var en utrymningsväg finns och i vilken riktning man ska röra sig vid en nödsituation. Följ skyltens riktning för att säkert lämna området."
+  },
+  {
+    "id": "kor-auto-d9425c",
+    "topic": "vagmarken_auto",
+    "tags": [
+      "Vägmärken",
+      "Varning"
+    ],
+    "question": "Vad innebär detta märke?",
+    "image": "varning_for_farlig_kurva.svg",
+    "options": [
+      {
+        "text": "Varning för farlig kurva—sänk hastigheten och anpassa körningen inför kurvan.",
+        "correct": true,
+        "feedback": "Markerar att en skarp eller riskfylld kurva ligger framför och att försiktighet krävs."
+      },
+      {
+        "text": "Vägen svänger lätt och du kan bibehålla samma hastighet som innan.",
+        "correct": false,
+        "feedback": "Märket antyder att kurvan kan vara farlig och att sänkt hastighet ofta är nödvändig."
+      },
+      {
+        "text": "Omkörning krävs innan kurvan för att undvika köbildning.",
+        "correct": false,
+        "feedback": "Omkörning rekommenderas inte i farliga kurvor; det är ofta olämpligt eller förbjudet."
+      },
+      {
+        "text": "Det är en enkelriktad kurva där endast fordon i ena riktningen får köra.",
+        "correct": false,
+        "feedback": "Skylt för farlig kurva varnar för vägformen, inte för enkelriktning."
+      }
+    ],
+    "explanation": "Märket varnar för en kurva som kan vara särskilt farlig om hastigheten är för hög, så sänk farten i god tid. Håll rätt spårval och undvik plötsliga styr- eller bromsrörelser."
+  }
+]

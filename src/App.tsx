@@ -11,6 +11,8 @@ import Catalog from './pages/Catalog';
 import FamilyDrill from './pages/FamilyDrill';
 import WordDrill from './pages/WordDrill';
 import Daily from './pages/Daily';
+import DrivingHome from './pages/DrivingHome';
+import DrivingQuiz from './pages/DrivingQuiz';
 import { loadProgress, saveProgress, updateSettings } from './store/progress';
 import { AudioSettingsProvider } from './lib/audio-context';
 import type { UserProgress } from './store/types';
@@ -108,6 +110,10 @@ export default function App() {
             />
             <Route path="stats" element={<Stats progress={progress} script={script} />} />
             <Route path="custom" element={<CustomContent progress={progress} script={script} />} />
+
+            {/* Körkortsteori — separate Swedish driving-theory track */}
+            <Route path="driving" element={<DrivingHome />} />
+            <Route path="driving/quiz" element={<DrivingQuiz />} />
           </Route>
         </Routes>
       </HashRouter>

@@ -19,10 +19,13 @@ export const T = {
   amberSoft:   'rgba(255,193,7,0.25)',
   green:       '#22c55e',
   greenDim:    'rgba(34,197,94,0.12)',
+  greenBorder: 'rgba(34,197,94,0.3)',
   red:         '#ef4444',
   redDim:      'rgba(239,68,68,0.12)',
+  redBorder:   'rgba(239,68,68,0.3)',
   purple:      '#a78bfa',
   purpleDim:   'rgba(167,139,250,0.12)',
+  signPlate:   '#f7f7f5',   // light tile behind SVG road signs (assume light bg)
   miraGrad:    'linear-gradient(135deg, #ffc107 0%, #ff8f00 100%)',
 
   r1: 4, r2: 6, r3: 10, r4: 14, r5: 20, rPill: 999,

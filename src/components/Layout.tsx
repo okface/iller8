@@ -37,6 +37,7 @@ function getSectionLabel(pathname: string): string {
   if (pathname.startsWith('/stats')) return 'stats';
   if (pathname.startsWith('/settings')) return 'me';
   if (pathname.startsWith('/custom')) return 'custom';
+  if (pathname.startsWith('/driving')) return 'körkort';
   return SECTION_MAP[pathname] ?? 'path';
 }
 

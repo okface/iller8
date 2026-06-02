@@ -84,6 +84,17 @@ export default function Path({ progress, script }: PathProps) {
         </div>
         <span style={{ color: T.mute, display: 'flex' }}><IconChev size={18} /></span>
       </Card>
+
+      {/* Separate track: Swedish driving-theory quiz */}
+      <Card pad={12} onClick={() => navigate('/driving')} style={{ marginTop: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div>
+          <div style={{ fontSize: 13, fontWeight: 600, color: T.text }}>🚗 Körkortsteori</div>
+          <div style={{ fontSize: 11, color: T.dim, marginTop: 2 }}>
+            Swedish driving theory — a separate quiz track.
+          </div>
+        </div>
+        <span style={{ color: T.mute, display: 'flex' }}><IconChev size={18} /></span>
+      </Card>
     </div>
   );
 }
