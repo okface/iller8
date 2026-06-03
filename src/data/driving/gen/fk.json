@@ -1,0 +1,282 @@
+[
+  {
+    "id": "kor-fk-001",
+    "topic": "fordonskannedom",
+    "tags": ["Däck", "Vinter"],
+    "question": "Vilket är minsta tillåtna mönsterdjup för vinterdäck vid vinterväglag?",
+    "image": null,
+    "options": [
+      {"text": "3,0 mm", "correct": true, "feedback": "Rätt – vid vinterväglag måste vinterdäck ha minst 3,0 mm mönsterdjup."},
+      {"text": "1,6 mm", "correct": false, "feedback": "1,6 mm är minimikravet för sommardäck, inte för vinterdäck vid vinterväglag."},
+      {"text": "2,0 mm", "correct": false, "feedback": "Det räcker inte – kravet vid vinterväglag är 3,0 mm."},
+      {"text": "4,0 mm", "correct": false, "feedback": "Mer mönsterdjup är bra men lagkravet är 3,0 mm."}
+    ],
+    "explanation": "Vid vinterväglag krävs vinterdäck med minst 3,0 mm mönsterdjup. För sommardäck är minimikravet 1,6 mm. Gott mönsterdjup minskar risken för vattenplaning och förbättrar greppet på snö och is."
+  },
+  {
+    "id": "kor-fk-002",
+    "topic": "fordonskannedom",
+    "tags": ["Däck", "Sommar"],
+    "question": "Vilket är minsta tillåtna mönsterdjup för sommardäck?",
+    "image": null,
+    "options": [
+      {"text": "1,6 mm", "correct": true, "feedback": "Rätt – sommardäck måste ha minst 1,6 mm mönsterdjup."},
+      {"text": "3,0 mm", "correct": false, "feedback": "3,0 mm gäller för vinterdäck vid vinterväglag, inte sommardäck."},
+      {"text": "1,0 mm", "correct": false, "feedback": "Det är för lågt och otillåtet."},
+      {"text": "2,5 mm", "correct": false, "feedback": "Rekommenderas ibland, men lagkravet är 1,6 mm."}
+    ],
+    "explanation": "Lagens minimikrav för sommardäck är 1,6 mm mönsterdjup. Med slitna däck försämras greppet, särskilt på vått underlag där risken för vattenplaning ökar."
+  },
+  {
+    "id": "kor-fk-003",
+    "topic": "fordonskannedom",
+    "tags": ["Däck", "Vinter"],
+    "question": "Under vilken period är vinterdäck obligatoriskt om det råder vinterväglag?",
+    "image": null,
+    "options": [
+      {"text": "1 december–31 mars", "correct": true, "feedback": "Rätt – vid vinterväglag under denna period krävs vinterdäck."},
+      {"text": "1 oktober–15 april", "correct": false, "feedback": "Det är perioden då dubbdäck är tillåtna, inte kravperioden för vinterdäck."},
+      {"text": "1 november–31 mars", "correct": false, "feedback": "Fel startdatum – kravet gäller från 1 december."},
+      {"text": "Hela året vid kyla", "correct": false, "feedback": "Kravet är knutet till perioden 1 december–31 mars och vinterväglag."}
+    ],
+    "explanation": "Mellan 1 december och 31 mars måste personbilen ha vinterdäck när det råder vinterväglag, det vill säga snö, is, snömodd eller frost på vägen. Råder inte vinterväglag är det tillåtet att köra på sommardäck även under denna period."
+  },
+  {
+    "id": "kor-fk-004",
+    "topic": "fordonskannedom",
+    "tags": ["Däck", "Dubbdäck"],
+    "question": "När är dubbdäck normalt tillåtna att använda?",
+    "image": null,
+    "options": [
+      {"text": "1 oktober–15 april", "correct": true, "feedback": "Rätt – dubbdäck får normalt användas under denna period."},
+      {"text": "1 december–31 mars", "correct": false, "feedback": "Det är kravperioden för vinterdäck vid vinterväglag, inte dubbdäcksperioden."},
+      {"text": "Hela året utan begränsning", "correct": false, "feedback": "Fel – utanför perioden krävs vinterväglag eller förväntat vinterväglag."},
+      {"text": "1 november–1 mars", "correct": false, "feedback": "Perioden är längre än så, från 1 oktober till 15 april."}
+    ],
+    "explanation": "Dubbdäck får normalt användas 1 oktober–15 april. Utanför den perioden får de bara användas om det är eller förväntas bli vinterväglag. Dubbar sliter på vägbanan, därför är användningen tidsbegränsad."
+  },
+  {
+    "id": "kor-fk-005",
+    "topic": "fordonskannedom",
+    "tags": ["Däck", "Vinter"],
+    "question": "Vad gäller sedan 1 december 2024 för odubbade vinterdäck?",
+    "image": null,
+    "options": [
+      {"text": "De måste ha 3PMSF-märket (alptopp med snöflinga)", "correct": true, "feedback": "Rätt – odubbade vinterdäck ska vara märkta med alptoppssymbolen 3PMSF."},
+      {"text": "Det räcker att de är märkta med M+S", "correct": false, "feedback": "Fel – enbart M+S räcker inte längre, 3PMSF krävs."},
+      {"text": "De måste ha dubbar", "correct": false, "feedback": "Nej, kravet gäller just odubbade vinterdäck."},
+      {"text": "Inget särskilt märke krävs", "correct": false, "feedback": "Fel – alptoppssymbolen 3PMSF är ett krav."}
+    ],
+    "explanation": "Sedan 1 december 2024 måste odubbade vinterdäck vara märkta med 3PMSF, en symbol som visar en alptopp med en snöflinga. Den gamla M+S-märkningen räcker inte längre, eftersom 3PMSF garanterar verklig vinterprestanda."
+  },
+  {
+    "id": "kor-fk-006",
+    "topic": "fordonskannedom",
+    "tags": ["Däck", "Däcktryck"],
+    "question": "Hur påverkas bilen av för lågt däcktryck?",
+    "image": null,
+    "options": [
+      {"text": "Ökad bränsleförbrukning och ökat slitage", "correct": true, "feedback": "Rätt – lågt tryck ger högre rullmotstånd, mer bränsle och slitage samt sämre köregenskaper."},
+      {"text": "Lägre bränsleförbrukning", "correct": false, "feedback": "Tvärtom – lågt tryck ökar rullmotståndet och därmed förbrukningen."},
+      {"text": "Förbättrat grepp i alla lägen", "correct": false, "feedback": "Fel – greppet och köregenskaperna försämras med fel tryck."},
+      {"text": "Ingen märkbar effekt alls", "correct": false, "feedback": "Fel – däcktrycket påverkar både ekonomi, slitage och säkerhet."}
+    ],
+    "explanation": "För lågt däcktryck ökar rullmotståndet, vilket höjer bränsleförbrukningen och slitaget samt försämrar köregenskaperna. Däcktrycket ska kontrolleras när däcken är kalla för att få ett korrekt värde."
+  },
+  {
+    "id": "kor-fk-007",
+    "topic": "fordonskannedom",
+    "tags": ["Däck", "Däcktryck"],
+    "question": "När bör du kontrollera däcktrycket för att få ett korrekt värde?",
+    "image": null,
+    "options": [
+      {"text": "När däcken är kalla", "correct": true, "feedback": "Rätt – kalla däck ger ett rättvisande mätvärde."},
+      {"text": "Direkt efter en längre körning", "correct": false, "feedback": "Fel – varma däck visar ett för högt tryck."},
+      {"text": "Mitt på sommaren oavsett temperatur", "correct": false, "feedback": "Det är däckens temperatur som spelar roll, inte årstiden."},
+      {"text": "Endast vid besiktningen", "correct": false, "feedback": "Trycket bör kontrolleras regelbundet, inte bara vid besiktning."}
+    ],
+    "explanation": "Däcktrycket ska kontrolleras på kalla däck eftersom luften expanderar och trycket stiger när däcken värms upp av körning. Mätning på varma däck ger ett felaktigt högt värde."
+  },
+  {
+    "id": "kor-fk-008",
+    "topic": "fordonskannedom",
+    "tags": ["Bromsar", "ABS"],
+    "question": "Vad är huvudsyftet med ABS-bromsar?",
+    "image": null,
+    "options": [
+      {"text": "Att hindra hjulen från att låsa sig så att du kan styra under hård inbromsning", "correct": true, "feedback": "Rätt – med ABS kan du behålla styrförmågan även när du bromsar hårt."},
+      {"text": "Att alltid förkorta bromssträckan oavsett underlag", "correct": false, "feedback": "Fel – ABS förkortar inte nödvändigtvis sträckan och kan förlänga den på grus och snö."},
+      {"text": "Att låsa hjulen snabbare vid nödbromsning", "correct": false, "feedback": "Tvärtom – ABS förhindrar att hjulen låser sig."},
+      {"text": "Att ersätta motorbromsen", "correct": false, "feedback": "Fel – ABS har inget med motorbroms att göra."}
+    ],
+    "explanation": "ABS förhindrar att hjulen låser sig vid hård inbromsning, vilket gör att du kan fortsätta styra undan för hinder. ABS förkortar inte alltid bromssträckan, och på grus eller snö kan sträckan till och med bli något längre."
+  },
+  {
+    "id": "kor-fk-009",
+    "topic": "fordonskannedom",
+    "tags": ["Bromsar", "ABS"],
+    "question": "På vilket underlag kan ABS-bromsar ge en något längre bromssträcka?",
+    "image": null,
+    "options": [
+      {"text": "På grus och lös snö", "correct": true, "feedback": "Rätt – på löst underlag kan ABS ge en något längre bromssträcka."},
+      {"text": "På torr asfalt", "correct": false, "feedback": "På torr asfalt ger ABS normalt likvärdig eller kortare sträcka."},
+      {"text": "På våt asfalt", "correct": false, "feedback": "På våt asfalt är ABS oftast en fördel."},
+      {"text": "ABS förkortar alltid sträckan på alla underlag", "correct": false, "feedback": "Fel – det stämmer inte på löst underlag."}
+    ],
+    "explanation": "På grus och lös snö kan låsta hjul bygga upp en kil av material framför däcket som bromsar fordonet. Eftersom ABS hindrar låsning kan bromssträckan därför bli något längre på sådant underlag, men du behåller alltid styrförmågan."
+  },
+  {
+    "id": "kor-fk-010",
+    "topic": "fordonskannedom",
+    "tags": ["Bromsar", "Motorbroms"],
+    "question": "Varför bör du använda motorbroms i långa, branta nedförsbackar?",
+    "image": null,
+    "options": [
+      {"text": "För att avlasta bromsarna och undvika överhettning", "correct": true, "feedback": "Rätt – motorbromsen sparar färdbromsen så att den inte överhettas."},
+      {"text": "För att spara på däcken", "correct": false, "feedback": "Motorbroms handlar om bromsarna, inte däcken."},
+      {"text": "För att öka hastigheten kontrollerat", "correct": false, "feedback": "Fel – motorbroms minskar hastigheten."},
+      {"text": "Det har ingen praktisk betydelse", "correct": false, "feedback": "Fel – det minskar tydligt risken för överhettade bromsar."}
+    ],
+    "explanation": "Genom att växla ner och bromsa med motorn avlastar du färdbromsen i långa nedförsbackar. Annars riskerar bromsarna att överhettas och tappa verkan, så kallad bromsfädning eller bromsar som 'slår vågor'."
+  },
+  {
+    "id": "kor-fk-011",
+    "topic": "fordonskannedom",
+    "tags": ["Bromsar", "Motorbroms"],
+    "question": "Vad menas med att använda motorbroms?",
+    "image": null,
+    "options": [
+      {"text": "Att växla ner så att motorn bromsar fordonet", "correct": true, "feedback": "Rätt – vid nedväxling bromsar motorn fordonet."},
+      {"text": "Att trampa hårdare på färdbromsen", "correct": false, "feedback": "Det är vanlig fotbroms, inte motorbroms."},
+      {"text": "Att dra åt parkeringsbromsen under färd", "correct": false, "feedback": "Fel och farligt – det är inte motorbroms."},
+      {"text": "Att stänga av motorn i nedförsbackar", "correct": false, "feedback": "Fel – att stänga av motorn under färd är farligt och slår ut styrservo och bromsservo."}
+    ],
+    "explanation": "Motorbroms innebär att du växlar ner så att motorns interna motstånd hjälper till att bromsa fordonet. Det är ett bra sätt att hålla hastigheten nere i nedförsbackar utan att slita på färdbromsen."
+  },
+  {
+    "id": "kor-fk-012",
+    "topic": "fordonskannedom",
+    "tags": ["Varningslampor", "Olja"],
+    "question": "En röd varningslampa formad som en oljekanna tänds under färd. Vad bör du göra?",
+    "image": null,
+    "options": [
+      {"text": "Stanna så snart det är säkert – det kan vara fel på oljetrycket", "correct": true, "feedback": "Rätt – röd oljekanna signalerar lågt oljetryck och du bör stanna direkt."},
+      {"text": "Fortsätta köra som vanligt, det är bara information", "correct": false, "feedback": "Fel – en röd lampa är allvarlig och kräver att du stannar."},
+      {"text": "Fylla på spolarvätska", "correct": false, "feedback": "Symbolen avser oljetryck, inte spolarvätska."},
+      {"text": "Öka varvtalet för att bygga upp trycket", "correct": false, "feedback": "Fel – det kan skada motorn ytterligare. Stanna i stället."}
+    ],
+    "explanation": "En röd oljekanna varnar för lågt oljetryck, vilket snabbt kan förstöra motorn. Röda varningslampor betyder allvarligt fel – stanna så snart det går på ett säkert sätt och stäng av motorn."
+  },
+  {
+    "id": "kor-fk-013",
+    "topic": "fordonskannedom",
+    "tags": ["Varningslampor", "Färg"],
+    "question": "Vad innebär en röd varningslampa generellt?",
+    "image": null,
+    "options": [
+      {"text": "Allvarligt fel – stanna och åtgärda", "correct": true, "feedback": "Rätt – rött betyder allvarligt och att du bör stanna."},
+      {"text": "Information om en aktiv funktion", "correct": false, "feedback": "Det gäller gröna och blå lampor, inte röda."},
+      {"text": "Kontrollera vid tillfälle, ingen brådska", "correct": false, "feedback": "Det gäller snarare gula/orange lampor."},
+      {"text": "Att helljuset är på", "correct": false, "feedback": "Helljus visas med en blå lampa, inte röd."}
+    ],
+    "explanation": "Röda varningslampor signalerar allvarliga fel, till exempel lågt oljetryck, hög motortemperatur, bromsfel eller laddningsfel. Du bör stanna så snart det är säkert. Gula/orange lampor betyder kontrollera snart, och gröna/blå är information."
+  },
+  {
+    "id": "kor-fk-014",
+    "topic": "fordonskannedom",
+    "tags": ["Varningslampor", "Färg"],
+    "question": "Vad betyder en gul eller orange varningslampa oftast?",
+    "image": null,
+    "options": [
+      {"text": "Kontrollera eller åtgärda snart, men oftast inte akut", "correct": true, "feedback": "Rätt – gult/orange betyder att något bör kontrolleras inom kort."},
+      {"text": "Allvarligt fel – stanna omedelbart", "correct": false, "feedback": "Det gäller röda lampor."},
+      {"text": "En funktion är aktiverad, ren information", "correct": false, "feedback": "Det gäller gröna eller blå lampor."},
+      {"text": "Att blinkers är på", "correct": false, "feedback": "Blinkers visas med grönt sken."}
+    ],
+    "explanation": "Gula eller orange lampor betyder att du bör kontrollera eller åtgärda något snart, till exempel ABS-fel, motorlampan ('check engine'), lågt däcktryck eller låg bränslenivå. Det är sällan akut, men ska inte ignoreras."
+  },
+  {
+    "id": "kor-fk-015",
+    "topic": "fordonskannedom",
+    "tags": ["Varningslampor", "Symboler"],
+    "question": "Vilket fel signalerar en röd symbol med ett utropstecken (!) inuti en cirkel?",
+    "image": null,
+    "options": [
+      {"text": "Fel i bromssystemet", "correct": true, "feedback": "Rätt – (!) i en cirkel varnar för fel i bromssystemet."},
+      {"text": "Lågt oljetryck", "correct": false, "feedback": "Oljetryck visas med en oljekanna."},
+      {"text": "Laddningsfel", "correct": false, "feedback": "Laddningsfel visas med en batterisymbol."},
+      {"text": "Hög motortemperatur", "correct": false, "feedback": "Motortemperatur visas med en termometer- eller kylarsymbol."}
+    ],
+    "explanation": "En röd cirkel med ett utropstecken inuti varnar för fel i bromssystemet, till exempel låg bromsvätskenivå. Eftersom det rör bromsarna är det allvarligt – stanna och kontrollera så snart det går."
+  },
+  {
+    "id": "kor-fk-016",
+    "topic": "fordonskannedom",
+    "tags": ["Varningslampor", "Symboler"],
+    "question": "Vad varnar en röd batterisymbol på instrumentpanelen för?",
+    "image": null,
+    "options": [
+      {"text": "Fel i laddningssystemet", "correct": true, "feedback": "Rätt – batterisymbolen visar att batteriet inte laddas som det ska."},
+      {"text": "Att motortemperaturen är för hög", "correct": false, "feedback": "Det visas med en termometer- eller kylarsymbol."},
+      {"text": "Att oljetrycket är lågt", "correct": false, "feedback": "Lågt oljetryck visas med en oljekanna."},
+      {"text": "Att bränslet är slut", "correct": false, "feedback": "Låg bränslenivå är en gul bensinpumpssymbol."}
+    ],
+    "explanation": "En röd batterisymbol betyder att laddningssystemet inte fungerar, exempelvis ett trasigt drivrem till generatorn. Bilen drivs då på batteriets reservkapacitet och kan snart stanna – åtgärda snarast."
+  },
+  {
+    "id": "kor-fk-017",
+    "topic": "fordonskannedom",
+    "tags": ["Last", "Säkring"],
+    "question": "Hur ska last i och på fordonet hanteras?",
+    "image": null,
+    "options": [
+      {"text": "Den ska säkras så att den inte kan glida eller falla av", "correct": true, "feedback": "Rätt – lasten måste säkras mot glidning och förskjutning."},
+      {"text": "Den får ligga löst om den är tung", "correct": false, "feedback": "Fel – även tung last kan förskjutas och måste säkras."},
+      {"text": "Den behöver bara säkras vid motorvägskörning", "correct": false, "feedback": "Lasten ska alltid vara säkrad, oavsett vägtyp."},
+      {"text": "Den ska placeras så högt som möjligt", "correct": false, "feedback": "Tvärtom – hög placering höjer tyngdpunkten och försämrar köregenskaperna."}
+    ],
+    "explanation": "All last ska säkras så att den inte kan glida, falla av eller förskjutas vid inbromsning eller i kurvor. Tung last bör placeras lågt och centralt, eftersom hög last höjer tyngdpunkten och försämrar köregenskaperna."
+  },
+  {
+    "id": "kor-fk-018",
+    "topic": "fordonskannedom",
+    "tags": ["Last", "Märkning"],
+    "question": "Hur ska last som skjuter ut mer än 1 meter bakom bilen märkas i dagsljus?",
+    "image": null,
+    "options": [
+      {"text": "Med en röd flagga eller skylt", "correct": true, "feedback": "Rätt – i dagsljus märks utskjutande last med rött tygstycke eller skylt."},
+      {"text": "Med ett blått ljus", "correct": false, "feedback": "Fel – blått ljus används inte för lastmärkning."},
+      {"text": "Med en grön reflex", "correct": false, "feedback": "Märkningen ska vara röd, inte grön."},
+      {"text": "Ingen märkning behövs i dagsljus", "correct": false, "feedback": "Fel – utskjutande last måste märkas även i dagsljus."}
+    ],
+    "explanation": "Last som skjuter ut mer än 1 meter bakom fordonet ska märkas. I dagsljus används ett rött tygstycke eller skylt, och i mörker ett rött ljus bakåt samt reflex, så att andra trafikanter uppmärksammar lasten."
+  },
+  {
+    "id": "kor-fk-019",
+    "topic": "fordonskannedom",
+    "tags": ["Last", "Tyngdpunkt"],
+    "question": "Hur påverkar taklast bilens köregenskaper?",
+    "image": null,
+    "options": [
+      {"text": "Tyngdpunkten höjs och köregenskaperna försämras", "correct": true, "feedback": "Rätt – taklast höjer tyngdpunkten och gör bilen mer instabil i kurvor."},
+      {"text": "Bilen blir stabilare i kurvor", "correct": false, "feedback": "Tvärtom – hög last gör bilen mer vältbenägen."},
+      {"text": "Bromssträckan blir kortare", "correct": false, "feedback": "Mer vikt och högre tyngdpunkt förbättrar inte bromssträckan."},
+      {"text": "Det påverkar inte körningen alls", "correct": false, "feedback": "Fel – taklast har tydlig effekt på stabiliteten."}
+    ],
+    "explanation": "Taklast höjer fordonets tyngdpunkt, vilket gör bilen mer instabil och vältbenägen, särskilt i kurvor och vid undanmanövrar. Anpassa hastigheten och kör mjukt när du har last på taket, och överskrid aldrig tillåten taklast."
+  },
+  {
+    "id": "kor-fk-020",
+    "topic": "fordonskannedom",
+    "tags": ["Underhåll", "Servostyrning"],
+    "question": "Vad krävs för att servostyrningen och bromsservon ska fungera?",
+    "image": null,
+    "options": [
+      {"text": "Att motorn är igång", "correct": true, "feedback": "Rätt – servofunktionerna behöver en motor som är igång."},
+      {"text": "Att handbromsen är åtdragen", "correct": false, "feedback": "Handbromsen har inget med servofunktionerna att göra."},
+      {"text": "Att bilen står still", "correct": false, "feedback": "Fel – servon fungerar oavsett om bilen rör sig, så länge motorn går."},
+      {"text": "Att ABS är aktiverat", "correct": false, "feedback": "ABS är ett separat system och styr inte servofunktionerna."}
+    ],
+    "explanation": "Servostyrning och bromsservo får sin hjälpkraft från motorn. Om motorn stannar under färd blir styrningen mycket tung och bromspedalen hård, vilket är en viktig anledning att aldrig stänga av motorn under körning."
+  }
+]

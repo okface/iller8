@@ -1,0 +1,282 @@
+[
+  {
+    "id": "kor-ts-a-001",
+    "topic": "trafiksakerhet",
+    "tags": ["Stoppsträcka", "Fysik"],
+    "question": "Vad händer ungefär med bromssträckan om du dubblar hastigheten?",
+    "image": null,
+    "options": [
+      {"text": "Den fyrdubblas", "correct": true, "feedback": "Rätt – bromssträckan växer med kvadraten på hastigheten, så dubbel fart ger ungefär fyra gånger längre bromssträcka."},
+      {"text": "Den fördubblas", "correct": false, "feedback": "Bromssträckan ökar mer än så – sambandet är kvadratiskt, inte linjärt."},
+      {"text": "Den blir tre gånger längre", "correct": false, "feedback": "Sambandet är kvadratiskt, så det blir ungefär fyrdubbelt, inte tredubbelt."},
+      {"text": "Den påverkas inte", "correct": false, "feedback": "Hastigheten har mycket stor effekt på bromssträckan."}
+    ],
+    "explanation": "Bromssträckan är proportionell mot hastigheten i kvadrat. Dubblad hastighet ger därför ungefär fyrdubbel bromssträcka, medan reaktionssträckan bara fördubblas."
+  },
+  {
+    "id": "kor-ts-a-002",
+    "topic": "trafiksakerhet",
+    "tags": ["Stoppsträcka"],
+    "question": "Vad består den totala stoppsträckan av?",
+    "image": null,
+    "options": [
+      {"text": "Reaktionssträcka plus bromssträcka", "correct": true, "feedback": "Rätt – stoppsträckan är summan av den sträcka du hinner köra under din reaktionstid och den sträcka det tar att bromsa in fordonet."},
+      {"text": "Endast bromssträckan", "correct": false, "feedback": "Du måste också räkna med sträckan du kör innan du hinner reagera och börja bromsa."},
+      {"text": "Endast reaktionssträckan", "correct": false, "feedback": "Själva inbromsningen står för en stor del av stoppsträckan och får inte glömmas bort."},
+      {"text": "Bromssträcka minus reaktionssträcka", "correct": false, "feedback": "Sträckorna ska adderas, inte subtraheras."}
+    ],
+    "explanation": "Stoppsträckan är reaktionssträcka plus bromssträcka. Reaktionssträckan är vad du kör innan du börjar bromsa, bromssträckan är vad det tar att stanna när bromsen väl griper."
+  },
+  {
+    "id": "kor-ts-a-003",
+    "topic": "trafiksakerhet",
+    "tags": ["Reaktionssträcka", "Beräkning"],
+    "question": "Hur lång blir reaktionssträckan ungefär vid 70 km/h med 1 sekunds reaktionstid?",
+    "image": null,
+    "options": [
+      {"text": "21 meter", "correct": true, "feedback": "Rätt – 7 × 1 × 3 = 21 meter, enligt tumregeln (hastigheten utan sista siffran gånger reaktionstid gånger 3)."},
+      {"text": "15 meter", "correct": false, "feedback": "15 meter är reaktionssträckan vid 50 km/h, inte vid 70 km/h."},
+      {"text": "27 meter", "correct": false, "feedback": "27 meter gäller ungefär vid 90 km/h, inte 70 km/h."},
+      {"text": "35 meter", "correct": false, "feedback": "Det är för långt – tumregeln ger 21 meter vid 70 km/h."}
+    ],
+    "explanation": "Reaktionssträckan beräknas ungefär som hastigheten utan sista siffran gånger reaktionstiden gånger 3. Vid 70 km/h blir det 7 × 1 × 3 = 21 meter."
+  },
+  {
+    "id": "kor-ts-a-004",
+    "topic": "trafiksakerhet",
+    "tags": ["Reaktionssträcka", "Beräkning"],
+    "question": "Hur lång blir reaktionssträckan ungefär vid 50 km/h med 1 sekunds reaktionstid?",
+    "image": null,
+    "options": [
+      {"text": "15 meter", "correct": true, "feedback": "Rätt – 5 × 1 × 3 = 15 meter enligt tumregeln."},
+      {"text": "10 meter", "correct": false, "feedback": "10 meter är snarare bromssträckan vid 50 km/h på torr asfalt."},
+      {"text": "21 meter", "correct": false, "feedback": "21 meter motsvarar 70 km/h, inte 50 km/h."},
+      {"text": "25 meter", "correct": false, "feedback": "25 meter är hela stoppsträckan vid 50 km/h, inte bara reaktionssträckan."}
+    ],
+    "explanation": "Reaktionssträckan vid 50 km/h med en sekunds reaktionstid är cirka 5 × 1 × 3 = 15 meter. Lägger man till bromssträckan på cirka 10 meter blir stoppsträckan ungefär 25 meter."
+  },
+  {
+    "id": "kor-ts-a-005",
+    "topic": "trafiksakerhet",
+    "tags": ["Stoppsträcka", "Beräkning"],
+    "question": "Hur lång blir den totala stoppsträckan ungefär vid 50 km/h på torr asfalt med bra däck?",
+    "image": null,
+    "options": [
+      {"text": "Cirka 25 meter", "correct": true, "feedback": "Rätt – 15 meter reaktionssträcka plus 10 meter bromssträcka blir ungefär 25 meter."},
+      {"text": "Cirka 10 meter", "correct": false, "feedback": "10 meter är bara bromssträckan – reaktionssträckan tillkommer."},
+      {"text": "Cirka 15 meter", "correct": false, "feedback": "15 meter är bara reaktionssträckan – inbromsningen tillkommer."},
+      {"text": "Cirka 40 meter", "correct": false, "feedback": "40 meter är för långt vid 50 km/h på torr asfalt."}
+    ],
+    "explanation": "Vid 50 km/h är reaktionssträckan cirka 15 meter och bromssträckan cirka 10 meter. Tillsammans blir stoppsträckan ungefär 25 meter på torr asfalt med bra däck."
+  },
+  {
+    "id": "kor-ts-a-006",
+    "topic": "trafiksakerhet",
+    "tags": ["Bromssträcka", "Beräkning"],
+    "question": "Hur lång blir bromssträckan ungefär vid 100 km/h på torr asfalt med bra däck och bromsar?",
+    "image": null,
+    "options": [
+      {"text": "Cirka 40 meter", "correct": true, "feedback": "Rätt – (100/10)² × 0,4 = 100 × 0,4 = 40 meter."},
+      {"text": "Cirka 20 meter", "correct": false, "feedback": "20 meter motsvarar ungefär 70 km/h, inte 100 km/h."},
+      {"text": "Cirka 10 meter", "correct": false, "feedback": "10 meter gäller vid 50 km/h – vid 100 km/h är bromssträckan mycket längre."},
+      {"text": "Cirka 60 meter", "correct": false, "feedback": "Det är för långt på torr asfalt – formeln ger cirka 40 meter."}
+    ],
+    "explanation": "Bromssträckan kan uppskattas som (hastighet/10)² × 0,4. Vid 100 km/h blir det 10² × 0,4 = 40 meter på torr asfalt med bra däck."
+  },
+  {
+    "id": "kor-ts-a-007",
+    "topic": "trafiksakerhet",
+    "tags": ["Bromssträcka", "Beräkning"],
+    "question": "Hur lång blir bromssträckan ungefär vid 50 km/h på torr asfalt med bra däck?",
+    "image": null,
+    "options": [
+      {"text": "Cirka 10 meter", "correct": true, "feedback": "Rätt – (50/10)² × 0,4 = 25 × 0,4 = 10 meter."},
+      {"text": "Cirka 5 meter", "correct": false, "feedback": "Det är för kort – formeln ger cirka 10 meter vid 50 km/h."},
+      {"text": "Cirka 15 meter", "correct": false, "feedback": "15 meter är reaktionssträckan vid 50 km/h, inte bromssträckan."},
+      {"text": "Cirka 25 meter", "correct": false, "feedback": "25 meter är hela stoppsträckan vid 50 km/h, inte enbart bromssträckan."}
+    ],
+    "explanation": "Bromssträckan uppskattas som (hastighet/10)² × 0,4. Vid 50 km/h blir det 5² × 0,4 = 10 meter på torr asfalt med bra däck och bromsar."
+  },
+  {
+    "id": "kor-ts-a-008",
+    "topic": "trafiksakerhet",
+    "tags": ["Reaktionssträcka", "Risk"],
+    "question": "Vilket av följande ökar din reaktionssträcka men påverkar inte själva bromssträckan?",
+    "image": null,
+    "options": [
+      {"text": "Trötthet", "correct": true, "feedback": "Rätt – trötthet förlänger reaktionstiden och därmed reaktionssträckan, men det fysiska bromsförloppet påverkas inte."},
+      {"text": "Vått väglag", "correct": false, "feedback": "Vått väglag förlänger främst bromssträckan, inte reaktionssträckan."},
+      {"text": "Slitna bromsbelägg", "correct": false, "feedback": "Slitna bromsar påverkar bromssträckan, inte din reaktionstid."},
+      {"text": "Dåligt mönsterdjup", "correct": false, "feedback": "Mönsterdjupet påverkar greppet och därmed bromssträckan, inte reaktionssträckan."}
+    ],
+    "explanation": "Reaktionssträckan beror på din reaktionstid, som förlängs av trötthet, alkohol och distraktion. Bromssträckan beror i stället på fart, väglag, däck och bromsar."
+  },
+  {
+    "id": "kor-ts-a-009",
+    "topic": "trafiksakerhet",
+    "tags": ["Reaktionssträcka", "Alkohol"],
+    "question": "Hur påverkar alkohol i blodet din körning när det gäller stoppsträckan?",
+    "image": null,
+    "options": [
+      {"text": "Reaktionstiden blir längre, vilket förlänger reaktionssträckan", "correct": true, "feedback": "Rätt – alkohol gör att du reagerar långsammare, så du hinner köra längre innan du börjar bromsa."},
+      {"text": "Bromssträckan blir kortare", "correct": false, "feedback": "Alkohol kan inte förkorta bromssträckan – tvärtom blir hela stoppsträckan längre."},
+      {"text": "Bara bromssträckan förlängs", "correct": false, "feedback": "Det är främst reaktionssträckan som förlängs eftersom reaktionstiden blir längre."},
+      {"text": "Inget påverkas så länge du kör långsamt", "correct": false, "feedback": "Alkohol förlänger reaktionstiden oavsett hastighet och försämrar omdömet."}
+    ],
+    "explanation": "Alkohol förlänger reaktionstiden, vilket gör reaktionssträckan längre och hela stoppsträckan ökar. Dessutom försämras omdöme och precision, vilket gör körningen farligare."
+  },
+  {
+    "id": "kor-ts-a-010",
+    "topic": "trafiksakerhet",
+    "tags": ["Bromssträcka", "Väglag"],
+    "question": "Hur mycket längre kan bromssträckan bli på is jämfört med på torr asfalt?",
+    "image": null,
+    "options": [
+      {"text": "Ungefär tio gånger så lång", "correct": true, "feedback": "Rätt – på blank is kan bromssträckan bli ungefär tio gånger längre på grund av det dåliga greppet."},
+      {"text": "Ungefär lika lång", "correct": false, "feedback": "Greppet på is är mycket sämre, så bromssträckan blir betydligt längre."},
+      {"text": "Ungefär dubbelt så lång", "correct": false, "feedback": "På is blir skillnaden mycket större än så – upp till cirka tio gånger."},
+      {"text": "Något kortare", "correct": false, "feedback": "Bromssträckan blir aldrig kortare på halt underlag – den blir mycket längre."}
+    ],
+    "explanation": "På is är friktionen mellan däck och väg mycket låg. Därför kan bromssträckan bli ungefär tio gånger längre än på torr asfalt, vilket kräver mycket lägre fart och större avstånd."
+  },
+  {
+    "id": "kor-ts-a-011",
+    "topic": "trafiksakerhet",
+    "tags": ["Avstånd", "Tresekundersregeln"],
+    "question": "Vad innebär tresekundersregeln?",
+    "image": null,
+    "options": [
+      {"text": "Du ska ha minst tre sekunders avstånd till fordonet framför", "correct": true, "feedback": "Rätt – tiden mellan att framförvarande passerar en punkt och att du gör det bör vara minst tre sekunder."},
+      {"text": "Du ska blinka i minst tre sekunder före varje sväng", "correct": false, "feedback": "Det handlar om avstånd till fordonet framför, inte om blinkers."},
+      {"text": "Du ska titta i backspegeln var tredje sekund", "correct": false, "feedback": "Regeln gäller avståndet framåt, inte hur ofta du tittar bakåt."},
+      {"text": "Du får stanna högst tre sekunder vid stopplikt", "correct": false, "feedback": "Det har inget med stopplikt att göra – regeln gäller avstånd till fordonet framför."}
+    ],
+    "explanation": "Tresekundersregeln innebär att det ska ta minst tre sekunder från att fordonet framför passerar en punkt tills du själv når den. I dåligt väglag bör avståndet ökas ytterligare."
+  },
+  {
+    "id": "kor-ts-a-012",
+    "topic": "trafiksakerhet",
+    "tags": ["Avstånd", "Väglag"],
+    "question": "Hur bör du anpassa avståndet till fordonet framför i halt väglag?",
+    "image": null,
+    "options": [
+      {"text": "Öka avståndet eftersom bromssträckan blir längre", "correct": true, "feedback": "Rätt – på halt underlag blir bromssträckan längre, så du behöver betydligt större avstånd för att hinna stanna."},
+      {"text": "Minska avståndet för att hänga med i trafiken", "correct": false, "feedback": "Att ligga närmare i halt väglag är farligt eftersom du inte hinner stanna i tid."},
+      {"text": "Behåll exakt samma avstånd som på torr väg", "correct": false, "feedback": "Samma avstånd räcker inte när bromssträckan är längre på halt underlag."},
+      {"text": "Avståndet spelar ingen roll om du kör sakta", "correct": false, "feedback": "Avståndet är alltid viktigt, och på halt underlag krävs extra marginal."}
+    ],
+    "explanation": "I halt väglag blir bromssträckan mycket längre. Därför bör avståndet till fordonet framför ökas rejält, ofta långt mer än de tre sekunder som gäller vid normalt väglag."
+  },
+  {
+    "id": "kor-ts-a-013",
+    "topic": "trafiksakerhet",
+    "tags": ["Vattenplaning", "Väglag"],
+    "question": "Vad ökar risken för vattenplaning?",
+    "image": null,
+    "options": [
+      {"text": "Hög hastighet, mycket vatten och dåligt mönsterdjup", "correct": true, "feedback": "Rätt – ju högre fart och ju mindre mönsterdjup, desto sämre kan däcken leda bort vattnet och greppet försvinner."},
+      {"text": "Låg hastighet på torr väg", "correct": false, "feedback": "På torr väg och vid låg fart finns ingen risk för vattenplaning."},
+      {"text": "Nya däck med djupt mönster", "correct": false, "feedback": "Bra mönsterdjup minskar tvärtom risken för vattenplaning."},
+      {"text": "Att bromsa mjukt i en uppförsbacke", "correct": false, "feedback": "Det som styr risken är fart, vattenmängd och däckens mönsterdjup."}
+    ],
+    "explanation": "Vattenplaning uppstår när däcken inte hinner pressa undan vattnet och i stället glider på en vattenfilm. Risken ökar med hög fart, mycket vatten och slitna däck med litet mönsterdjup."
+  },
+  {
+    "id": "kor-ts-a-014",
+    "topic": "trafiksakerhet",
+    "tags": ["Vattenplaning"],
+    "question": "Vad är lämpligast att göra för att minska risken för vattenplaning?",
+    "image": null,
+    "options": [
+      {"text": "Sänka hastigheten", "correct": true, "feedback": "Rätt – vid lägre fart hinner däcken leda bort vattnet och greppet behålls bättre."},
+      {"text": "Öka hastigheten för att 'plana ovanpå' vattnet", "correct": false, "feedback": "Högre fart ökar tvärtom risken för vattenplaning."},
+      {"text": "Bromsa kraftigt och tvärt", "correct": false, "feedback": "Kraftig inbromsning kan låsa hjulen och förvärra situationen – sänk farten i god tid i stället."},
+      {"text": "Släppa ratten en stund", "correct": false, "feedback": "Du ska alltid behålla kontrollen över fordonet med båda händerna på ratten."}
+    ],
+    "explanation": "Den viktigaste åtgärden mot vattenplaning är att sänka hastigheten, eftersom risken ökar kraftigt med farten. Bra mönsterdjup på däcken är också avgörande."
+  },
+  {
+    "id": "kor-ts-a-015",
+    "topic": "trafiksakerhet",
+    "tags": ["Kurva", "Fysik"],
+    "question": "Hur påverkas centrifugalkraften i en kurva om du ökar hastigheten?",
+    "image": null,
+    "options": [
+      {"text": "Den ökar med kvadraten på hastigheten", "correct": true, "feedback": "Rätt – dubblad fart i en kurva ger ungefär fyra gånger så stor sidokraft, vilket kraftigt ökar risken att glida ut."},
+      {"text": "Den minskar med högre fart", "correct": false, "feedback": "Tvärtom – kraften som vill dra fordonet utåt växer med farten."},
+      {"text": "Den är oberoende av hastigheten", "correct": false, "feedback": "Hastigheten har stor betydelse; kraften växer med kvadraten på farten."},
+      {"text": "Den ökar exakt i takt med hastigheten", "correct": false, "feedback": "Sambandet är kvadratiskt, inte linjärt – dubbel fart ger cirka fyrdubbel kraft."}
+    ],
+    "explanation": "Centrifugalkraften i en kurva växer med kvadraten på hastigheten. Dubblad fart ger ungefär fyrdubbel sidokraft, vilket är varför man ska sänka farten innan kurvan, inte i den."
+  },
+  {
+    "id": "kor-ts-a-016",
+    "topic": "trafiksakerhet",
+    "tags": ["Kurva"],
+    "question": "När är det lämpligast att anpassa hastigheten inför en kurva?",
+    "image": null,
+    "options": [
+      {"text": "Innan du kör in i kurvan", "correct": true, "feedback": "Rätt – sänk farten före kurvan så att du kan rulla eller gasa lätt igenom den med god kontroll."},
+      {"text": "Mitt inne i kurvan genom kraftig inbromsning", "correct": false, "feedback": "Att bromsa hårt mitt i kurvan kan göra att greppet släpper och fordonet glider ut."},
+      {"text": "Först när du ser kurvans utgång", "correct": false, "feedback": "Då är det ofta för sent – farten måste vara anpassad redan vid infarten."},
+      {"text": "Efter kurvan, vid behov", "correct": false, "feedback": "Anpassningen måste ske före kurvan eftersom sidokraften är som störst inne i den."}
+    ],
+    "explanation": "Hastigheten ska anpassas innan kurvan eftersom centrifugalkraften ökar med farten. Bromsar du hårt inne i kurvan riskerar du att tappa greppet och glida ur kurvan."
+  },
+  {
+    "id": "kor-ts-a-017",
+    "topic": "trafiksakerhet",
+    "tags": ["Tunga fordon", "Bromssträcka"],
+    "question": "Hur skiljer sig ett tungt lastat fordons bromssträcka jämfört med en personbils?",
+    "image": null,
+    "options": [
+      {"text": "Den är längre på grund av den större massan", "correct": true, "feedback": "Rätt – ett tungt fordon har mer rörelseenergi och behöver längre sträcka för att stanna."},
+      {"text": "Den är kortare eftersom tyngden ger bättre grepp", "correct": false, "feedback": "Trots mer tyngd blir bromssträckan längre eftersom den stora massan ska bromsas in."},
+      {"text": "Den är exakt densamma", "correct": false, "feedback": "Massan har stor betydelse och gör tunga fordons bromssträcka längre."},
+      {"text": "Den beror bara på däcken, inte på vikten", "correct": false, "feedback": "Vikten har stor betydelse för bromssträckan, även om däcken också spelar roll."}
+    ],
+    "explanation": "Ett tungt lastat fordon har stor rörelseenergi och behöver därför längre bromssträcka. Det är ett skäl att hålla extra avstånd både framför och bakom tunga fordon."
+  },
+  {
+    "id": "kor-ts-a-018",
+    "topic": "trafiksakerhet",
+    "tags": ["Reaktionssträcka", "Distraktion"],
+    "question": "Hur långt hinner du köra vid 90 km/h under en sekunds reaktionstid?",
+    "image": null,
+    "options": [
+      {"text": "Cirka 27 meter", "correct": true, "feedback": "Rätt – 9 × 1 × 3 = 27 meter, en sträcka du kör 'blint' om du tittar bort en sekund."},
+      {"text": "Cirka 9 meter", "correct": false, "feedback": "9 meter är för kort – tumregeln ger 27 meter vid 90 km/h."},
+      {"text": "Cirka 18 meter", "correct": false, "feedback": "18 meter motsvarar ungefär 60 km/h, inte 90 km/h."},
+      {"text": "Cirka 40 meter", "correct": false, "feedback": "40 meter är för långt – tumregeln ger 27 meter vid 90 km/h."}
+    ],
+    "explanation": "Vid 90 km/h kör du cirka 9 × 1 × 3 = 27 meter under en sekunds reaktionstid. Att exempelvis titta på mobilen en sekund innebär alltså att du kör en lång sträcka utan uppmärksamhet."
+  },
+  {
+    "id": "kor-ts-a-019",
+    "topic": "trafiksakerhet",
+    "tags": ["Stoppsträcka", "Fysik"],
+    "question": "Varför blir stoppsträckan så mycket längre vid högre hastighet?",
+    "image": null,
+    "options": [
+      {"text": "Bromssträckan växer med kvadraten på hastigheten medan reaktionssträckan växer linjärt", "correct": true, "feedback": "Rätt – bromsdelen ökar mycket snabbt vid högre fart, vilket gör att hela stoppsträckan växer kraftigt."},
+      {"text": "Endast reaktionssträckan ökar med farten", "correct": false, "feedback": "Reaktionssträckan ökar visserligen, men det är bromssträckans kvadratiska tillväxt som dominerar."},
+      {"text": "Stoppsträckan minskar faktiskt vid högre fart", "correct": false, "feedback": "Tvärtom – stoppsträckan blir längre ju högre farten är."},
+      {"text": "Det beror bara på däckens ålder", "correct": false, "feedback": "Däcken påverkar, men huvudorsaken är att bromssträckan växer med farten i kvadrat."}
+    ],
+    "explanation": "Reaktionssträckan ökar i proportion till hastigheten, men bromssträckan ökar med hastigheten i kvadrat. Därför växer den totala stoppsträckan mycket snabbt när farten ökar."
+  },
+  {
+    "id": "kor-ts-a-020",
+    "topic": "trafiksakerhet",
+    "tags": ["Bromssträcka", "Väglag"],
+    "question": "Vilket underlag ger längst bromssträcka av följande, allt annat lika?",
+    "image": null,
+    "options": [
+      {"text": "Is", "correct": true, "feedback": "Rätt – is har lägst friktion och ger därför klart längst bromssträcka av alternativen."},
+      {"text": "Torr asfalt", "correct": false, "feedback": "Torr asfalt ger bäst grepp och därmed kortast bromssträcka."},
+      {"text": "Våt asfalt", "correct": false, "feedback": "Våt asfalt förlänger bromssträckan, men is ger ändå betydligt sämre grepp."},
+      {"text": "Grusväg", "correct": false, "feedback": "Grus ger sämre grepp än asfalt, men is ger ännu lägre friktion och längre bromssträcka."}
+    ],
+    "explanation": "Bromssträckan beror på friktionen mellan däck och väg. Is har lägst friktion och ger därför längst bromssträcka, följt av grus och våt asfalt, medan torr asfalt ger kortast."
+  }
+]

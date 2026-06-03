@@ -1,0 +1,86 @@
+[
+  {
+    "id": "kor-tr-c-001",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Hastighet"],
+    "question": "Vad betyder detta vägmärke?",
+    "image": "vagmarke_hastighet_40.svg",
+    "options": [
+      { "text": "Högsta tillåtna hastighet är 40 km/h", "correct": true, "feedback": "Rätt – ett gult runt märke med röd ring och en siffra anger högsta tillåtna hastighet, här 40 km/h." },
+      { "text": "Rekommenderad hastighet är 40 km/h", "correct": false, "feedback": "Rekommenderad hastighet visas på en blå fyrkantig skylt, inte ett förbudsmärke." },
+      { "text": "Mötande trafik håller högst 40 km/h", "correct": false, "feedback": "Märket gäller din egen körriktning, inte mötande trafik." },
+      { "text": "Minsta tillåtna hastighet är 40 km/h", "correct": false, "feedback": "Påbjuden lägsta hastighet visas på ett blått runt märke, inte detta." }
+    ],
+    "explanation": "Hastighetsbegränsning (C31) är ett förbudsmärke: gul botten, röd ring och en svart siffra som anger den högsta tillåtna hastigheten. Gränsen gäller tills ett nytt hastighetsmärke eller en ny vägmiljö ändrar den."
+  },
+  {
+    "id": "kor-tr-c-002",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Hastighet"],
+    "question": "Vilken hastighet gäller när du passerat detta märke?",
+    "image": "vagmarke_hastighet_60.svg",
+    "options": [
+      { "text": "Högst 60 km/h", "correct": true, "feedback": "Rätt – märket anger att högsta tillåtna hastighet är 60 km/h." },
+      { "text": "Högst 50 km/h", "correct": false, "feedback": "Siffran på märket är 60, inte 50." },
+      { "text": "Exakt 60 km/h hela tiden", "correct": false, "feedback": "Det är en övre gräns – du får köra långsammare om situationen kräver det." },
+      { "text": "Minst 60 km/h", "correct": false, "feedback": "Det är en högsta gräns, inte en lägsta." }
+    ],
+    "explanation": "Märket anger högsta tillåtna hastighet, 60 km/h. Du måste alltid anpassa farten efter väglag, sikt och trafik – gränsen är ett tak, inte ett krav att hålla."
+  },
+  {
+    "id": "kor-tr-c-003",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Hastighet"],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vagmarke_hastighet_80.svg",
+    "options": [
+      { "text": "Högsta tillåtna hastighet är 80 km/h", "correct": true, "feedback": "Rätt – högsta tillåtna hastighet är 80 km/h tills annat anges." },
+      { "text": "Vägen är en motorväg", "correct": false, "feedback": "Motorväg visas med ett särskilt blått anvisningsmärke, inte ett hastighetsmärke." },
+      { "text": "Rekommenderad hastighet i kurvor är 80 km/h", "correct": false, "feedback": "Det här är en bindande hastighetsgräns, inte en rekommendation." },
+      { "text": "Hastighetsbegränsningen upphör", "correct": false, "feedback": "Att en begränsning upphör visas med ett grått överstruket märke, inte en siffra." }
+    ],
+    "explanation": "Ett hastighetsmärke med siffran 80 betyder att du högst får köra 80 km/h. Gränsen gäller tills du passerar ett nytt hastighetsmärke eller kör in i en ny vägmiljö (t.ex. tättbebyggt område)."
+  },
+  {
+    "id": "kor-tr-c-004",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Hastighet"],
+    "question": "Vad betyder detta märke?",
+    "image": "vagmarke_hastighet_100.svg",
+    "options": [
+      { "text": "Högsta tillåtna hastighet är 100 km/h", "correct": true, "feedback": "Rätt – siffran anger högsta tillåtna hastighet, 100 km/h." },
+      { "text": "Avståndet till nästa ort är 100 km", "correct": false, "feedback": "Avstånd visas på blå/vita lokaliseringsmärken, inte ett rött ringmärke." },
+      { "text": "Du måste hålla minst 100 km/h", "correct": false, "feedback": "Det är en övre gräns, inte en lägsta hastighet." },
+      { "text": "Vägen har 100 meter kvar", "correct": false, "feedback": "Märket anger hastighet i km/h, inte en sträcka i meter." }
+    ],
+    "explanation": "Hastighetsbegränsning 100 km/h gäller ofta på motortrafikleder och mötesfria landsvägar. Som alltid är det en högsta gräns som du ska underskrida när väglag eller sikt är dåliga."
+  },
+  {
+    "id": "kor-tr-c-005",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Hastighet", "Motorväg"],
+    "question": "Du ser detta märke på en motorväg. Vad gäller?",
+    "image": "vagmarke_hastighet_120.svg",
+    "options": [
+      { "text": "Du får köra högst 120 km/h", "correct": true, "feedback": "Rätt – 120 km/h är den högsta tillåtna hastigheten där, vanligt på motorväg." },
+      { "text": "Du måste köra exakt 120 km/h", "correct": false, "feedback": "Det är ett tak – du anpassar farten nedåt efter trafik och väglag." },
+      { "text": "120 gäller bara för tunga fordon", "correct": false, "feedback": "Tunga fordon har egna, lägre hastighetsgränser oavsett detta märke." },
+      { "text": "Rekommenderad hastighet är 120 km/h", "correct": false, "feedback": "Det här är en bindande gräns, inte en rekommendation." }
+    ],
+    "explanation": "120 km/h är den högsta hastighetsgräns som används i Sverige och förekommer på vissa motorvägar. Tunga lastbilar och bilar med släp har lägre gränser även där skylten visar 120."
+  },
+  {
+    "id": "kor-tr-c-006",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Hastighet"],
+    "question": "Vad betyder detta vägmärke?",
+    "image": "vagmarke_hastighet_50.svg",
+    "options": [
+      { "text": "Högsta tillåtna hastighet är 50 km/h", "correct": true, "feedback": "Rätt – märket anger att du högst får köra 50 km/h." },
+      { "text": "Bashastigheten utanför tättbebyggt område", "correct": false, "feedback": "Utanför tättbebyggt område är bashastigheten 70 km/h, inte 50." },
+      { "text": "Slut på tättbebyggt område", "correct": false, "feedback": "Tättbebyggt område och dess slut visas med särskilda blå/överstrukna ortsmärken." },
+      { "text": "Parkering tillåten i 50 minuter", "correct": false, "feedback": "Parkeringstid visas på en parkeringsskylt med tilläggstavla, inte detta märke." }
+    ],
+    "explanation": "Ett hastighetsmärke med 50 anger högsta tillåtna hastighet 50 km/h. Det motsvarar ofta bashastigheten inom tättbebyggt område, men gäller överallt där märket är uppsatt tills annat anges."
+  }
+]

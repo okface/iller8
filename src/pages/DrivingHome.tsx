@@ -5,7 +5,15 @@ import MonoBadge from '../components/ui/MonoBadge';
 import { IconChev } from '../components/ui/Icons';
 import { T, metaLabel } from '../lib/tokens';
 import { loadDrivingState } from '../driving/progress';
-import { QUESTIONS, EXAM_SIZE, listTopics, masteredByTopic, topicLabel } from '../driving/session';
+import {
+  QUESTIONS,
+  EXAM_SIZE,
+  listTopics,
+  masteredByTopic,
+  topicLabel,
+  topicGloss,
+  signQuestions,
+} from '../driving/session';
 import type { DrivingMode } from '../driving/types';
 
 /**
@@ -24,6 +32,7 @@ export default function DrivingHome() {
     state.totalAnswered > 0 ? Math.round((state.totalCorrect / state.totalAnswered) * 100) : 0;
   const topics = listTopics();
   const topicMastered = masteredByTopic(state);
+  const signCount = signQuestions().length;
 
   const start = (mode: DrivingMode) => navigate(`/driving/quiz?mode=${encodeURIComponent(mode)}`);
 
@@ -111,8 +120,33 @@ export default function DrivingHome() {
         </span>
       </Card>
 
-      {/* Topics */}
-      <div style={{ ...metaLabel, marginTop: 24, marginBottom: 8 }}>BY TOPIC</div>
+      {/* Sign-recognition drill (cross-cuts areas) */}
+      <Card
+        pad={14}
+        onClick={() => start('signs')}
+        style={{
+          marginTop: 8,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+        }}
+      >
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <MonoBadge kind="green">SKYLTAR</MonoBadge>
+          <div>
+            <div style={{ fontSize: 14, fontWeight: 600, color: T.text }}>Vägmärken</div>
+            <div style={{ fontSize: 11, color: T.dim, marginTop: 2 }}>
+              {signCount} road-sign questions
+            </div>
+          </div>
+        </div>
+        <span style={{ color: T.mute, display: 'flex' }}>
+          <IconChev size={18} />
+        </span>
+      </Card>
+
+      {/* The five official knowledge areas */}
+      <div style={{ ...metaLabel, marginTop: 24, marginBottom: 8 }}>BY KNOWLEDGE AREA</div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
         {topics.map(({ topic, count }) => (
           <Card
@@ -126,7 +160,8 @@ export default function DrivingHome() {
                 {topicLabel(topic)}
               </div>
               <div style={{ fontSize: 11, color: T.dim, marginTop: 2 }}>
-                {topicMastered[topic] ?? 0} / {count} mastered
+                {topicGloss(topic) ? `${topicGloss(topic)} · ` : ''}
+                {topicMastered[topic] ?? 0}/{count} mastered
               </div>
             </div>
             <span style={{ color: T.mute, display: 'flex' }}>

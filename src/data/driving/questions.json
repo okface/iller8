@@ -1,7 +1,7 @@
 [
   {
     "id": "kor-extra-001",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning",
@@ -35,7 +35,7 @@
   },
   {
     "id": "kor-extra-002",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning",
@@ -69,7 +69,7 @@
   },
   {
     "id": "kor-extra-003",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning",
@@ -103,7 +103,7 @@
   },
   {
     "id": "kor-extra-004",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning",
@@ -137,7 +137,7 @@
   },
   {
     "id": "kor-extra-005",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Förbud",
@@ -171,7 +171,7 @@
   },
   {
     "id": "kor-extra-006",
-    "topic": "extra_fragor",
+    "topic": "personliga_forutsattningar",
     "tags": [
       "Alkohol",
       "Trafikregler"
@@ -204,7 +204,7 @@
   },
   {
     "id": "kor-extra-007",
-    "topic": "extra_fragor",
+    "topic": "trafiksakerhet",
     "tags": [
       "Stoppsträcka",
       "Hastighet",
@@ -238,7 +238,7 @@
   },
   {
     "id": "kor-extra-008",
-    "topic": "extra_fragor",
+    "topic": "fordonskannedom",
     "tags": [
       "Däck",
       "Vinter",
@@ -272,7 +272,7 @@
   },
   {
     "id": "kor-extra-009",
-    "topic": "extra_fragor",
+    "topic": "fordonskannedom",
     "tags": [
       "Vinterdäck",
       "Trafikregler"
@@ -305,7 +305,7 @@
   },
   {
     "id": "kor-extra-010",
-    "topic": "extra_fragor",
+    "topic": "trafiksakerhet",
     "tags": [
       "Barn",
       "Säkerhet",
@@ -339,7 +339,7 @@
   },
   {
     "id": "kor-extra-011",
-    "topic": "extra_fragor",
+    "topic": "trafiksakerhet",
     "tags": [
       "Körning",
       "Scenario",
@@ -373,7 +373,7 @@
   },
   {
     "id": "kor-extra-012",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Scenario",
       "Korsning",
@@ -407,7 +407,7 @@
   },
   {
     "id": "kor-extra-013",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Scenario",
       "Motorväg",
@@ -441,7 +441,7 @@
   },
   {
     "id": "kor-extra-014",
-    "topic": "extra_fragor",
+    "topic": "fordonskannedom",
     "tags": [
       "Belysning",
       "Bil"
@@ -474,7 +474,7 @@
   },
   {
     "id": "kor-extra-015",
-    "topic": "extra_fragor",
+    "topic": "trafiksakerhet",
     "tags": [
       "Scenario",
       "Tätort",
@@ -508,7 +508,7 @@
   },
   {
     "id": "kor-extra-016",
-    "topic": "extra_fragor",
+    "topic": "trafiksakerhet",
     "tags": [
       "Scenario",
       "Halka",
@@ -542,7 +542,7 @@
   },
   {
     "id": "kor-extra-017",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Scenario",
       "Cykel",
@@ -576,7 +576,7 @@
   },
   {
     "id": "kor-extra-018",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Parkering",
       "Regler"
@@ -609,7 +609,7 @@
   },
   {
     "id": "kor-extra-019",
-    "topic": "extra_fragor",
+    "topic": "miljo",
     "tags": [
       "Miljö",
       "Ecodriving"
@@ -642,7 +642,7 @@
   },
   {
     "id": "kor-extra-020",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Scenario",
       "Utryckningsfordon"
@@ -675,7 +675,7 @@
   },
   {
     "id": "kor-extra-021",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Scenario",
       "Övergångsställe",
@@ -709,7 +709,7 @@
   },
   {
     "id": "kor-extra-022",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Motorväg",
       "Start",
@@ -743,7 +743,7 @@
   },
   {
     "id": "kor-extra-023",
-    "topic": "extra_fragor",
+    "topic": "personliga_forutsattningar",
     "tags": [
       "Säkerhet",
       "Trötthet"
@@ -776,7 +776,7 @@
   },
   {
     "id": "kor-extra-024",
-    "topic": "extra_fragor",
+    "topic": "trafiksakerhet",
     "tags": [
       "Last",
       "Säkerhet"
@@ -809,7 +809,7 @@
   },
   {
     "id": "kor-extra-025",
-    "topic": "extra_fragor",
+    "topic": "trafiksakerhet",
     "tags": [
       "Scenario",
       "Dimma",
@@ -843,7 +843,7 @@
   },
   {
     "id": "kor-extra-026",
-    "topic": "extra_fragor",
+    "topic": "trafiksakerhet",
     "tags": [
       "Oskyddade",
       "Tätort"
@@ -876,7 +876,7 @@
   },
   {
     "id": "kor-extra-027",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Övningskörning",
       "Körkort"
@@ -909,7 +909,7 @@
   },
   {
     "id": "kor-extra-028",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Scenario",
       "Korsning",
@@ -943,7 +943,7 @@
   },
   {
     "id": "kor-extra-029",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Vägmarkeringar",
       "Körfält"
@@ -976,7 +976,7 @@
   },
   {
     "id": "kor-extra-030",
-    "topic": "extra_fragor",
+    "topic": "trafikregler",
     "tags": [
       "Scenario",
       "Backkrön",
@@ -1009,76 +1009,8 @@
     "explanation": "Omkörning är förbjuden bland annat vid skymd sikt i backar och kurvor, strax före obevakat övergångsställe, i korsningar och där skylt eller heldragen linje förbjuder. Även utan uttrycklig skylt gäller att omkörning bara får ske när det kan göras utan fara — fri sikt över hela omkörningssträckan är avgörande."
   },
   {
-    "id": "kor-sample-001",
-    "topic": "trafik_och_vagmarken",
-    "tags": [
-      "Vägmärken",
-      "Varning",
-      "Barn"
-    ],
-    "question": "Du ser denna varningsskylt. Vad innebär den?",
-    "image": "varning_for_barn.svg",
-    "options": [
-      {
-        "text": "Varning för lekplats inom 50 meter",
-        "correct": false,
-        "feedback": "Skylten anger inte något specifikt avstånd, utan varnar generellt för barn."
-      },
-      {
-        "text": "Förare ska vara uppmärksam på barn som kan befinna sig på vägen",
-        "correct": true,
-        "feedback": "Skylten varnar om att barn kan vistas i området och förare ska vara extra försiktig."
-      },
-      {
-        "text": "Fartbegränsning 30 km/h gäller här",
-        "correct": false,
-        "feedback": "Skylten anger ingen fartbegränsning, det är ett varningsmärke."
-      },
-      {
-        "text": "Endast barn får färdas på denna väg",
-        "correct": false,
-        "feedback": "Detta är inte ett påbudsmärke, utan ett varningsmärke för alla trafikanter."
-      }
-    ],
-    "explanation": "Varningsmärket med triangel och barn indikerar att förare ska vara extra uppmärksam eftersom barn kan befinna sig på eller nära vägen. Skylten sätts ofta upp vid lekplatser, skolor eller bostadsområden."
-  },
-  {
-    "id": "kor-sample-002",
-    "topic": "trafik_och_vagmarken",
-    "tags": [
-      "Vägmärken",
-      "Förbud",
-      "Stopplikt"
-    ],
-    "question": "Vid en stoppskylt måste du alltid:",
-    "image": "vagmarke_stopplikt.svg",
-    "options": [
-      {
-        "text": "Stanna om du ser andra fordon",
-        "correct": false,
-        "feedback": "Du måste alltid stanna helt vid stoppskylt, oavsett om andra fordon syns."
-      },
-      {
-        "text": "Sakta ner till 10 km/h och titta åt sidorna",
-        "correct": false,
-        "feedback": "Stoppskylt kräver fullständigt stopp, inte bara sakta ner."
-      },
-      {
-        "text": "Stanna helt och ge företräde innan du kör vidare",
-        "correct": true,
-        "feedback": "Vid stoppskylt måste fordonet stanna helt innan stoplinjen och ge företräde åt korsande trafik."
-      },
-      {
-        "text": "Tuta för att varna andra trafikanter",
-        "correct": false,
-        "feedback": "Stoppskylt kräver stopp, inte att tuta. Tuta används bara vid fara."
-      }
-    ],
-    "explanation": "Stoppskylt (åttkantigt rött märke med texten STOPP) kräver att föraren stannar helt vid stoplinjen eller framför korsningen. Efter stopp ska föraren ge företräde åt korsande trafik innan fortsättning."
-  },
-  {
     "id": "kor-sample-003",
-    "topic": "trafik_och_vagmarken",
+    "topic": "trafikregler",
     "tags": [
       "Trafikregler",
       "Övergångsställe",
@@ -1112,7 +1044,7 @@
   },
   {
     "id": "kor-sample-004",
-    "topic": "trafik_och_vagmarken",
+    "topic": "trafiksakerhet",
     "tags": [
       "Hastighet",
       "Säkerhet",
@@ -1145,42 +1077,8 @@
     "explanation": "Vid halt väglag ökar bromssträckan betydligt. Föraren måste alltid anpassa hastigheten efter väglaget så att fordonet kan stanna inom synbart avstånd och ha tillräckligt säkerhetsavstånd till framförvarande fordon."
   },
   {
-    "id": "kor-sample-005",
-    "topic": "trafik_och_vagmarken",
-    "tags": [
-      "Miljö",
-      "Bränsle",
-      "Körning"
-    ],
-    "question": "För att minska bränsleförbrukningen och miljöpåverkan bör du:",
-    "image": null,
-    "options": [
-      {
-        "text": "Accelerera hårt och bromsa kraftigt för att spara tid",
-        "correct": false,
-        "feedback": "Hård acceleration och kraftig bromsning ökar bränsleförbrukningen betydligt."
-      },
-      {
-        "text": "Köra i så hög växel som möjligt och undvika tomgång",
-        "correct": true,
-        "feedback": "Att köra i hög växel med lågt varvtal och undvika onödig tomgång minskar förbrukningen."
-      },
-      {
-        "text": "Alltid köra i maximal hastighet på motorvägen",
-        "correct": false,
-        "feedback": "Högre hastighet ökar luftmotståndet och därmed bränsleförbrukningen."
-      },
-      {
-        "text": "Låta motorn gå på tomgång för att den ska vara varm",
-        "correct": false,
-        "feedback": "Modern motor värms upp bäst under körning, tomgång slösar bränsle."
-      }
-    ],
-    "explanation": "Miljövänlig körning innebär mjuk acceleration, att hålla jämn hastighet, köra i hög växel med lågt varvtal och undvika onödig tomgång. Detta minskar både bränsleförbrukning och miljöpåverkan."
-  },
-  {
     "id": "kor-auto-2541c8",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Förbud"
@@ -1213,7 +1111,7 @@
   },
   {
     "id": "kor-auto-31b832",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Väjningsplikt"
@@ -1246,7 +1144,7 @@
   },
   {
     "id": "kor-auto-9fccd1",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Förbud"
@@ -1279,7 +1177,7 @@
   },
   {
     "id": "kor-auto-f44585",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning"
@@ -1312,7 +1210,7 @@
   },
   {
     "id": "kor-auto-9baa56",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -1345,7 +1243,7 @@
   },
   {
     "id": "kor-auto-5c80d5",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -1378,7 +1276,7 @@
   },
   {
     "id": "kor-auto-7a661a",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Väjningsplikt"
@@ -1411,7 +1309,7 @@
   },
   {
     "id": "kor-auto-64d1a5",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Väjningsplikt"
@@ -1444,7 +1342,7 @@
   },
   {
     "id": "kor-auto-d8e6af",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -1477,7 +1375,7 @@
   },
   {
     "id": "kor-auto-7bdfb3",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -1510,7 +1408,7 @@
   },
   {
     "id": "kor-auto-76994c",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning"
@@ -1543,7 +1441,7 @@
   },
   {
     "id": "kor-auto-4e3619",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -1576,7 +1474,7 @@
   },
   {
     "id": "kor-auto-cbac9b",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -1609,7 +1507,7 @@
   },
   {
     "id": "kor-auto-607fab",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -1642,7 +1540,7 @@
   },
   {
     "id": "kor-auto-0818c7",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Väjningsplikt"
@@ -1675,7 +1573,7 @@
   },
   {
     "id": "kor-auto-226ddf",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -1708,7 +1606,7 @@
   },
   {
     "id": "kor-auto-f3e0ce",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -1741,7 +1639,7 @@
   },
   {
     "id": "kor-auto-1fc989",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Förbud"
@@ -1774,7 +1672,7 @@
   },
   {
     "id": "kor-auto-e3c566",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Förbud"
@@ -1807,7 +1705,7 @@
   },
   {
     "id": "kor-auto-1a3d90",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Påbud"
@@ -1840,7 +1738,7 @@
   },
   {
     "id": "kor-auto-89c0d4",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Förbud"
@@ -1873,7 +1771,7 @@
   },
   {
     "id": "kor-auto-f5cd23",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning"
@@ -1906,7 +1804,7 @@
   },
   {
     "id": "kor-auto-6eccaf",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Påbud"
@@ -1939,7 +1837,7 @@
   },
   {
     "id": "kor-auto-b90435",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Påbud"
@@ -1972,7 +1870,7 @@
   },
   {
     "id": "kor-auto-e697dd",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Väjningsplikt"
@@ -2005,7 +1903,7 @@
   },
   {
     "id": "kor-auto-97c565",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning"
@@ -2038,7 +1936,7 @@
   },
   {
     "id": "kor-auto-f8c12c",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Väjningsplikt"
@@ -2071,7 +1969,7 @@
   },
   {
     "id": "kor-auto-d21ea7",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Förbud"
@@ -2104,7 +2002,7 @@
   },
   {
     "id": "kor-auto-5b2809",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2137,7 +2035,7 @@
   },
   {
     "id": "kor-auto-e2e8ae",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2170,7 +2068,7 @@
   },
   {
     "id": "kor-auto-4d0d1d",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2203,7 +2101,7 @@
   },
   {
     "id": "kor-auto-cf48c7",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning"
@@ -2236,7 +2134,7 @@
   },
   {
     "id": "kor-auto-2b6870",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2269,7 +2167,7 @@
   },
   {
     "id": "kor-auto-c284f5",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2302,7 +2200,7 @@
   },
   {
     "id": "kor-auto-a61d8e",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2335,7 +2233,7 @@
   },
   {
     "id": "kor-auto-d06063",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning"
@@ -2368,7 +2266,7 @@
   },
   {
     "id": "kor-auto-9c928a",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning"
@@ -2401,7 +2299,7 @@
   },
   {
     "id": "kor-auto-719a56",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2434,7 +2332,7 @@
   },
   {
     "id": "kor-auto-630d79",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2467,7 +2365,7 @@
   },
   {
     "id": "kor-auto-207639",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2500,7 +2398,7 @@
   },
   {
     "id": "kor-auto-208825",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2533,7 +2431,7 @@
   },
   {
     "id": "kor-auto-410b11",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2566,7 +2464,7 @@
   },
   {
     "id": "kor-auto-e78115",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Förbud"
@@ -2599,7 +2497,7 @@
   },
   {
     "id": "kor-auto-4b492f",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Förbud"
@@ -2632,7 +2530,7 @@
   },
   {
     "id": "kor-auto-bfd434",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2665,7 +2563,7 @@
   },
   {
     "id": "kor-auto-ecbacf",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Väjningsplikt"
@@ -2698,7 +2596,7 @@
   },
   {
     "id": "kor-auto-b5f8c9",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Anvisning"
@@ -2731,7 +2629,7 @@
   },
   {
     "id": "kor-auto-d9425c",
-    "topic": "vagmarken_auto",
+    "topic": "trafikregler",
     "tags": [
       "Vägmärken",
       "Varning"
@@ -2761,5 +2659,4210 @@
       }
     ],
     "explanation": "Märket varnar för en kurva som kan vara särskilt farlig om hastigheten är för hög, så sänk farten i god tid. Håll rätt spårval och undvik plötsliga styr- eller bromsrörelser."
+  },
+  {
+    "id": "kor-fk-001",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Däck",
+      "Vinter"
+    ],
+    "question": "Vilket är minsta tillåtna mönsterdjup för vinterdäck vid vinterväglag?",
+    "image": null,
+    "options": [
+      {
+        "text": "3,0 mm",
+        "correct": true,
+        "feedback": "Rätt – vid vinterväglag måste vinterdäck ha minst 3,0 mm mönsterdjup."
+      },
+      {
+        "text": "1,6 mm",
+        "correct": false,
+        "feedback": "1,6 mm är minimikravet för sommardäck, inte för vinterdäck vid vinterväglag."
+      },
+      {
+        "text": "2,0 mm",
+        "correct": false,
+        "feedback": "Det räcker inte – kravet vid vinterväglag är 3,0 mm."
+      },
+      {
+        "text": "4,0 mm",
+        "correct": false,
+        "feedback": "Mer mönsterdjup är bra men lagkravet är 3,0 mm."
+      }
+    ],
+    "explanation": "Vid vinterväglag krävs vinterdäck med minst 3,0 mm mönsterdjup. För sommardäck är minimikravet 1,6 mm. Gott mönsterdjup minskar risken för vattenplaning och förbättrar greppet på snö och is."
+  },
+  {
+    "id": "kor-fk-002",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Däck",
+      "Sommar"
+    ],
+    "question": "Vilket är minsta tillåtna mönsterdjup för sommardäck?",
+    "image": null,
+    "options": [
+      {
+        "text": "1,6 mm",
+        "correct": true,
+        "feedback": "Rätt – sommardäck måste ha minst 1,6 mm mönsterdjup."
+      },
+      {
+        "text": "3,0 mm",
+        "correct": false,
+        "feedback": "3,0 mm gäller för vinterdäck vid vinterväglag, inte sommardäck."
+      },
+      {
+        "text": "1,0 mm",
+        "correct": false,
+        "feedback": "Det är för lågt och otillåtet."
+      },
+      {
+        "text": "2,5 mm",
+        "correct": false,
+        "feedback": "Rekommenderas ibland, men lagkravet är 1,6 mm."
+      }
+    ],
+    "explanation": "Lagens minimikrav för sommardäck är 1,6 mm mönsterdjup. Med slitna däck försämras greppet, särskilt på vått underlag där risken för vattenplaning ökar."
+  },
+  {
+    "id": "kor-fk-003",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Däck",
+      "Vinter"
+    ],
+    "question": "Under vilken period är vinterdäck obligatoriskt om det råder vinterväglag?",
+    "image": null,
+    "options": [
+      {
+        "text": "1 december–31 mars",
+        "correct": true,
+        "feedback": "Rätt – vid vinterväglag under denna period krävs vinterdäck."
+      },
+      {
+        "text": "1 oktober–15 april",
+        "correct": false,
+        "feedback": "Det är perioden då dubbdäck är tillåtna, inte kravperioden för vinterdäck."
+      },
+      {
+        "text": "1 november–31 mars",
+        "correct": false,
+        "feedback": "Fel startdatum – kravet gäller från 1 december."
+      },
+      {
+        "text": "Hela året vid kyla",
+        "correct": false,
+        "feedback": "Kravet är knutet till perioden 1 december–31 mars och vinterväglag."
+      }
+    ],
+    "explanation": "Mellan 1 december och 31 mars måste personbilen ha vinterdäck när det råder vinterväglag, det vill säga snö, is, snömodd eller frost på vägen. Råder inte vinterväglag är det tillåtet att köra på sommardäck även under denna period."
+  },
+  {
+    "id": "kor-fk-004",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Däck",
+      "Dubbdäck"
+    ],
+    "question": "När är dubbdäck normalt tillåtna att använda?",
+    "image": null,
+    "options": [
+      {
+        "text": "1 oktober–15 april",
+        "correct": true,
+        "feedback": "Rätt – dubbdäck får normalt användas under denna period."
+      },
+      {
+        "text": "1 december–31 mars",
+        "correct": false,
+        "feedback": "Det är kravperioden för vinterdäck vid vinterväglag, inte dubbdäcksperioden."
+      },
+      {
+        "text": "Hela året utan begränsning",
+        "correct": false,
+        "feedback": "Fel – utanför perioden krävs vinterväglag eller förväntat vinterväglag."
+      },
+      {
+        "text": "1 november–1 mars",
+        "correct": false,
+        "feedback": "Perioden är längre än så, från 1 oktober till 15 april."
+      }
+    ],
+    "explanation": "Dubbdäck får normalt användas 1 oktober–15 april. Utanför den perioden får de bara användas om det är eller förväntas bli vinterväglag. Dubbar sliter på vägbanan, därför är användningen tidsbegränsad."
+  },
+  {
+    "id": "kor-fk-005",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Däck",
+      "Vinter"
+    ],
+    "question": "Vad gäller sedan 1 december 2024 för odubbade vinterdäck?",
+    "image": null,
+    "options": [
+      {
+        "text": "De måste ha 3PMSF-märket (alptopp med snöflinga)",
+        "correct": true,
+        "feedback": "Rätt – odubbade vinterdäck ska vara märkta med alptoppssymbolen 3PMSF."
+      },
+      {
+        "text": "Det räcker att de är märkta med M+S",
+        "correct": false,
+        "feedback": "Fel – enbart M+S räcker inte längre, 3PMSF krävs."
+      },
+      {
+        "text": "De måste ha dubbar",
+        "correct": false,
+        "feedback": "Nej, kravet gäller just odubbade vinterdäck."
+      },
+      {
+        "text": "Inget särskilt märke krävs",
+        "correct": false,
+        "feedback": "Fel – alptoppssymbolen 3PMSF är ett krav."
+      }
+    ],
+    "explanation": "Sedan 1 december 2024 måste odubbade vinterdäck vara märkta med 3PMSF, en symbol som visar en alptopp med en snöflinga. Den gamla M+S-märkningen räcker inte längre, eftersom 3PMSF garanterar verklig vinterprestanda."
+  },
+  {
+    "id": "kor-fk-006",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Däck",
+      "Däcktryck"
+    ],
+    "question": "Hur påverkas bilen av för lågt däcktryck?",
+    "image": null,
+    "options": [
+      {
+        "text": "Ökad bränsleförbrukning och ökat slitage",
+        "correct": true,
+        "feedback": "Rätt – lågt tryck ger högre rullmotstånd, mer bränsle och slitage samt sämre köregenskaper."
+      },
+      {
+        "text": "Lägre bränsleförbrukning",
+        "correct": false,
+        "feedback": "Tvärtom – lågt tryck ökar rullmotståndet och därmed förbrukningen."
+      },
+      {
+        "text": "Förbättrat grepp i alla lägen",
+        "correct": false,
+        "feedback": "Fel – greppet och köregenskaperna försämras med fel tryck."
+      },
+      {
+        "text": "Ingen märkbar effekt alls",
+        "correct": false,
+        "feedback": "Fel – däcktrycket påverkar både ekonomi, slitage och säkerhet."
+      }
+    ],
+    "explanation": "För lågt däcktryck ökar rullmotståndet, vilket höjer bränsleförbrukningen och slitaget samt försämrar köregenskaperna. Däcktrycket ska kontrolleras när däcken är kalla för att få ett korrekt värde."
+  },
+  {
+    "id": "kor-fk-007",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Däck",
+      "Däcktryck"
+    ],
+    "question": "När bör du kontrollera däcktrycket för att få ett korrekt värde?",
+    "image": null,
+    "options": [
+      {
+        "text": "När däcken är kalla",
+        "correct": true,
+        "feedback": "Rätt – kalla däck ger ett rättvisande mätvärde."
+      },
+      {
+        "text": "Direkt efter en längre körning",
+        "correct": false,
+        "feedback": "Fel – varma däck visar ett för högt tryck."
+      },
+      {
+        "text": "Mitt på sommaren oavsett temperatur",
+        "correct": false,
+        "feedback": "Det är däckens temperatur som spelar roll, inte årstiden."
+      },
+      {
+        "text": "Endast vid besiktningen",
+        "correct": false,
+        "feedback": "Trycket bör kontrolleras regelbundet, inte bara vid besiktning."
+      }
+    ],
+    "explanation": "Däcktrycket ska kontrolleras på kalla däck eftersom luften expanderar och trycket stiger när däcken värms upp av körning. Mätning på varma däck ger ett felaktigt högt värde."
+  },
+  {
+    "id": "kor-fk-008",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Bromsar",
+      "ABS"
+    ],
+    "question": "Vad är huvudsyftet med ABS-bromsar?",
+    "image": null,
+    "options": [
+      {
+        "text": "Att hindra hjulen från att låsa sig så att du kan styra under hård inbromsning",
+        "correct": true,
+        "feedback": "Rätt – med ABS kan du behålla styrförmågan även när du bromsar hårt."
+      },
+      {
+        "text": "Att alltid förkorta bromssträckan oavsett underlag",
+        "correct": false,
+        "feedback": "Fel – ABS förkortar inte nödvändigtvis sträckan och kan förlänga den på grus och snö."
+      },
+      {
+        "text": "Att låsa hjulen snabbare vid nödbromsning",
+        "correct": false,
+        "feedback": "Tvärtom – ABS förhindrar att hjulen låser sig."
+      },
+      {
+        "text": "Att ersätta motorbromsen",
+        "correct": false,
+        "feedback": "Fel – ABS har inget med motorbroms att göra."
+      }
+    ],
+    "explanation": "ABS förhindrar att hjulen låser sig vid hård inbromsning, vilket gör att du kan fortsätta styra undan för hinder. ABS förkortar inte alltid bromssträckan, och på grus eller snö kan sträckan till och med bli något längre."
+  },
+  {
+    "id": "kor-fk-009",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Bromsar",
+      "ABS"
+    ],
+    "question": "På vilket underlag kan ABS-bromsar ge en något längre bromssträcka?",
+    "image": null,
+    "options": [
+      {
+        "text": "På grus och lös snö",
+        "correct": true,
+        "feedback": "Rätt – på löst underlag kan ABS ge en något längre bromssträcka."
+      },
+      {
+        "text": "På torr asfalt",
+        "correct": false,
+        "feedback": "På torr asfalt ger ABS normalt likvärdig eller kortare sträcka."
+      },
+      {
+        "text": "På våt asfalt",
+        "correct": false,
+        "feedback": "På våt asfalt är ABS oftast en fördel."
+      },
+      {
+        "text": "ABS förkortar alltid sträckan på alla underlag",
+        "correct": false,
+        "feedback": "Fel – det stämmer inte på löst underlag."
+      }
+    ],
+    "explanation": "På grus och lös snö kan låsta hjul bygga upp en kil av material framför däcket som bromsar fordonet. Eftersom ABS hindrar låsning kan bromssträckan därför bli något längre på sådant underlag, men du behåller alltid styrförmågan."
+  },
+  {
+    "id": "kor-fk-010",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Bromsar",
+      "Motorbroms"
+    ],
+    "question": "Varför bör du använda motorbroms i långa, branta nedförsbackar?",
+    "image": null,
+    "options": [
+      {
+        "text": "För att avlasta bromsarna och undvika överhettning",
+        "correct": true,
+        "feedback": "Rätt – motorbromsen sparar färdbromsen så att den inte överhettas."
+      },
+      {
+        "text": "För att spara på däcken",
+        "correct": false,
+        "feedback": "Motorbroms handlar om bromsarna, inte däcken."
+      },
+      {
+        "text": "För att öka hastigheten kontrollerat",
+        "correct": false,
+        "feedback": "Fel – motorbroms minskar hastigheten."
+      },
+      {
+        "text": "Det har ingen praktisk betydelse",
+        "correct": false,
+        "feedback": "Fel – det minskar tydligt risken för överhettade bromsar."
+      }
+    ],
+    "explanation": "Genom att växla ner och bromsa med motorn avlastar du färdbromsen i långa nedförsbackar. Annars riskerar bromsarna att överhettas och tappa verkan, så kallad bromsfädning eller bromsar som 'slår vågor'."
+  },
+  {
+    "id": "kor-fk-011",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Bromsar",
+      "Motorbroms"
+    ],
+    "question": "Vad menas med att använda motorbroms?",
+    "image": null,
+    "options": [
+      {
+        "text": "Att växla ner så att motorn bromsar fordonet",
+        "correct": true,
+        "feedback": "Rätt – vid nedväxling bromsar motorn fordonet."
+      },
+      {
+        "text": "Att trampa hårdare på färdbromsen",
+        "correct": false,
+        "feedback": "Det är vanlig fotbroms, inte motorbroms."
+      },
+      {
+        "text": "Att dra åt parkeringsbromsen under färd",
+        "correct": false,
+        "feedback": "Fel och farligt – det är inte motorbroms."
+      },
+      {
+        "text": "Att stänga av motorn i nedförsbackar",
+        "correct": false,
+        "feedback": "Fel – att stänga av motorn under färd är farligt och slår ut styrservo och bromsservo."
+      }
+    ],
+    "explanation": "Motorbroms innebär att du växlar ner så att motorns interna motstånd hjälper till att bromsa fordonet. Det är ett bra sätt att hålla hastigheten nere i nedförsbackar utan att slita på färdbromsen."
+  },
+  {
+    "id": "kor-fk-012",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Varningslampor",
+      "Olja"
+    ],
+    "question": "En röd varningslampa formad som en oljekanna tänds under färd. Vad bör du göra?",
+    "image": null,
+    "options": [
+      {
+        "text": "Stanna så snart det är säkert – det kan vara fel på oljetrycket",
+        "correct": true,
+        "feedback": "Rätt – röd oljekanna signalerar lågt oljetryck och du bör stanna direkt."
+      },
+      {
+        "text": "Fortsätta köra som vanligt, det är bara information",
+        "correct": false,
+        "feedback": "Fel – en röd lampa är allvarlig och kräver att du stannar."
+      },
+      {
+        "text": "Fylla på spolarvätska",
+        "correct": false,
+        "feedback": "Symbolen avser oljetryck, inte spolarvätska."
+      },
+      {
+        "text": "Öka varvtalet för att bygga upp trycket",
+        "correct": false,
+        "feedback": "Fel – det kan skada motorn ytterligare. Stanna i stället."
+      }
+    ],
+    "explanation": "En röd oljekanna varnar för lågt oljetryck, vilket snabbt kan förstöra motorn. Röda varningslampor betyder allvarligt fel – stanna så snart det går på ett säkert sätt och stäng av motorn."
+  },
+  {
+    "id": "kor-fk-013",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Varningslampor",
+      "Färg"
+    ],
+    "question": "Vad innebär en röd varningslampa generellt?",
+    "image": null,
+    "options": [
+      {
+        "text": "Allvarligt fel – stanna och åtgärda",
+        "correct": true,
+        "feedback": "Rätt – rött betyder allvarligt och att du bör stanna."
+      },
+      {
+        "text": "Information om en aktiv funktion",
+        "correct": false,
+        "feedback": "Det gäller gröna och blå lampor, inte röda."
+      },
+      {
+        "text": "Kontrollera vid tillfälle, ingen brådska",
+        "correct": false,
+        "feedback": "Det gäller snarare gula/orange lampor."
+      },
+      {
+        "text": "Att helljuset är på",
+        "correct": false,
+        "feedback": "Helljus visas med en blå lampa, inte röd."
+      }
+    ],
+    "explanation": "Röda varningslampor signalerar allvarliga fel, till exempel lågt oljetryck, hög motortemperatur, bromsfel eller laddningsfel. Du bör stanna så snart det är säkert. Gula/orange lampor betyder kontrollera snart, och gröna/blå är information."
+  },
+  {
+    "id": "kor-fk-014",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Varningslampor",
+      "Färg"
+    ],
+    "question": "Vad betyder en gul eller orange varningslampa oftast?",
+    "image": null,
+    "options": [
+      {
+        "text": "Kontrollera eller åtgärda snart, men oftast inte akut",
+        "correct": true,
+        "feedback": "Rätt – gult/orange betyder att något bör kontrolleras inom kort."
+      },
+      {
+        "text": "Allvarligt fel – stanna omedelbart",
+        "correct": false,
+        "feedback": "Det gäller röda lampor."
+      },
+      {
+        "text": "En funktion är aktiverad, ren information",
+        "correct": false,
+        "feedback": "Det gäller gröna eller blå lampor."
+      },
+      {
+        "text": "Att blinkers är på",
+        "correct": false,
+        "feedback": "Blinkers visas med grönt sken."
+      }
+    ],
+    "explanation": "Gula eller orange lampor betyder att du bör kontrollera eller åtgärda något snart, till exempel ABS-fel, motorlampan ('check engine'), lågt däcktryck eller låg bränslenivå. Det är sällan akut, men ska inte ignoreras."
+  },
+  {
+    "id": "kor-fk-015",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Varningslampor",
+      "Symboler"
+    ],
+    "question": "Vilket fel signalerar en röd symbol med ett utropstecken (!) inuti en cirkel?",
+    "image": null,
+    "options": [
+      {
+        "text": "Fel i bromssystemet",
+        "correct": true,
+        "feedback": "Rätt – (!) i en cirkel varnar för fel i bromssystemet."
+      },
+      {
+        "text": "Lågt oljetryck",
+        "correct": false,
+        "feedback": "Oljetryck visas med en oljekanna."
+      },
+      {
+        "text": "Laddningsfel",
+        "correct": false,
+        "feedback": "Laddningsfel visas med en batterisymbol."
+      },
+      {
+        "text": "Hög motortemperatur",
+        "correct": false,
+        "feedback": "Motortemperatur visas med en termometer- eller kylarsymbol."
+      }
+    ],
+    "explanation": "En röd cirkel med ett utropstecken inuti varnar för fel i bromssystemet, till exempel låg bromsvätskenivå. Eftersom det rör bromsarna är det allvarligt – stanna och kontrollera så snart det går."
+  },
+  {
+    "id": "kor-fk-016",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Varningslampor",
+      "Symboler"
+    ],
+    "question": "Vad varnar en röd batterisymbol på instrumentpanelen för?",
+    "image": null,
+    "options": [
+      {
+        "text": "Fel i laddningssystemet",
+        "correct": true,
+        "feedback": "Rätt – batterisymbolen visar att batteriet inte laddas som det ska."
+      },
+      {
+        "text": "Att motortemperaturen är för hög",
+        "correct": false,
+        "feedback": "Det visas med en termometer- eller kylarsymbol."
+      },
+      {
+        "text": "Att oljetrycket är lågt",
+        "correct": false,
+        "feedback": "Lågt oljetryck visas med en oljekanna."
+      },
+      {
+        "text": "Att bränslet är slut",
+        "correct": false,
+        "feedback": "Låg bränslenivå är en gul bensinpumpssymbol."
+      }
+    ],
+    "explanation": "En röd batterisymbol betyder att laddningssystemet inte fungerar, exempelvis ett trasigt drivrem till generatorn. Bilen drivs då på batteriets reservkapacitet och kan snart stanna – åtgärda snarast."
+  },
+  {
+    "id": "kor-fk-017",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Last",
+      "Säkring"
+    ],
+    "question": "Hur ska last i och på fordonet hanteras?",
+    "image": null,
+    "options": [
+      {
+        "text": "Den ska säkras så att den inte kan glida eller falla av",
+        "correct": true,
+        "feedback": "Rätt – lasten måste säkras mot glidning och förskjutning."
+      },
+      {
+        "text": "Den får ligga löst om den är tung",
+        "correct": false,
+        "feedback": "Fel – även tung last kan förskjutas och måste säkras."
+      },
+      {
+        "text": "Den behöver bara säkras vid motorvägskörning",
+        "correct": false,
+        "feedback": "Lasten ska alltid vara säkrad, oavsett vägtyp."
+      },
+      {
+        "text": "Den ska placeras så högt som möjligt",
+        "correct": false,
+        "feedback": "Tvärtom – hög placering höjer tyngdpunkten och försämrar köregenskaperna."
+      }
+    ],
+    "explanation": "All last ska säkras så att den inte kan glida, falla av eller förskjutas vid inbromsning eller i kurvor. Tung last bör placeras lågt och centralt, eftersom hög last höjer tyngdpunkten och försämrar köregenskaperna."
+  },
+  {
+    "id": "kor-fk-018",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Last",
+      "Märkning"
+    ],
+    "question": "Hur ska last som skjuter ut mer än 1 meter bakom bilen märkas i dagsljus?",
+    "image": null,
+    "options": [
+      {
+        "text": "Med en röd flagga eller skylt",
+        "correct": true,
+        "feedback": "Rätt – i dagsljus märks utskjutande last med rött tygstycke eller skylt."
+      },
+      {
+        "text": "Med ett blått ljus",
+        "correct": false,
+        "feedback": "Fel – blått ljus används inte för lastmärkning."
+      },
+      {
+        "text": "Med en grön reflex",
+        "correct": false,
+        "feedback": "Märkningen ska vara röd, inte grön."
+      },
+      {
+        "text": "Ingen märkning behövs i dagsljus",
+        "correct": false,
+        "feedback": "Fel – utskjutande last måste märkas även i dagsljus."
+      }
+    ],
+    "explanation": "Last som skjuter ut mer än 1 meter bakom fordonet ska märkas. I dagsljus används ett rött tygstycke eller skylt, och i mörker ett rött ljus bakåt samt reflex, så att andra trafikanter uppmärksammar lasten."
+  },
+  {
+    "id": "kor-fk-019",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Last",
+      "Tyngdpunkt"
+    ],
+    "question": "Hur påverkar taklast bilens köregenskaper?",
+    "image": null,
+    "options": [
+      {
+        "text": "Tyngdpunkten höjs och köregenskaperna försämras",
+        "correct": true,
+        "feedback": "Rätt – taklast höjer tyngdpunkten och gör bilen mer instabil i kurvor."
+      },
+      {
+        "text": "Bilen blir stabilare i kurvor",
+        "correct": false,
+        "feedback": "Tvärtom – hög last gör bilen mer vältbenägen."
+      },
+      {
+        "text": "Bromssträckan blir kortare",
+        "correct": false,
+        "feedback": "Mer vikt och högre tyngdpunkt förbättrar inte bromssträckan."
+      },
+      {
+        "text": "Det påverkar inte körningen alls",
+        "correct": false,
+        "feedback": "Fel – taklast har tydlig effekt på stabiliteten."
+      }
+    ],
+    "explanation": "Taklast höjer fordonets tyngdpunkt, vilket gör bilen mer instabil och vältbenägen, särskilt i kurvor och vid undanmanövrar. Anpassa hastigheten och kör mjukt när du har last på taket, och överskrid aldrig tillåten taklast."
+  },
+  {
+    "id": "kor-fk-020",
+    "topic": "fordonskannedom",
+    "tags": [
+      "Underhåll",
+      "Servostyrning"
+    ],
+    "question": "Vad krävs för att servostyrningen och bromsservon ska fungera?",
+    "image": null,
+    "options": [
+      {
+        "text": "Att motorn är igång",
+        "correct": true,
+        "feedback": "Rätt – servofunktionerna behöver en motor som är igång."
+      },
+      {
+        "text": "Att handbromsen är åtdragen",
+        "correct": false,
+        "feedback": "Handbromsen har inget med servofunktionerna att göra."
+      },
+      {
+        "text": "Att bilen står still",
+        "correct": false,
+        "feedback": "Fel – servon fungerar oavsett om bilen rör sig, så länge motorn går."
+      },
+      {
+        "text": "Att ABS är aktiverat",
+        "correct": false,
+        "feedback": "ABS är ett separat system och styr inte servofunktionerna."
+      }
+    ],
+    "explanation": "Servostyrning och bromsservo får sin hjälpkraft från motorn. Om motorn stannar under färd blir styrningen mycket tung och bromspedalen hård, vilket är en viktig anledning att aldrig stänga av motorn under körning."
+  },
+  {
+    "id": "kor-mi-001",
+    "topic": "miljo",
+    "tags": [
+      "Sparsam körning"
+    ],
+    "question": "Ungefär hur mycket bränsle kan du spara med sparsam körning (EcoDriving)?",
+    "image": null,
+    "options": [
+      {
+        "text": "10–20 procent",
+        "correct": true,
+        "feedback": "Rätt – sparsam körning sänker förbrukningen med cirka 10–20 procent."
+      },
+      {
+        "text": "0–2 procent",
+        "correct": false,
+        "feedback": "Effekten är betydligt större än så."
+      },
+      {
+        "text": "40–50 procent",
+        "correct": false,
+        "feedback": "Så stor besparing är inte realistisk med körteknik."
+      },
+      {
+        "text": "Det går inte att påverka förbrukningen med körsätt",
+        "correct": false,
+        "feedback": "Körsättet har stor betydelse för förbrukningen."
+      }
+    ],
+    "explanation": "Sparsam körning (EcoDriving) kan minska bränsleförbrukningen med ungefär 10–20 procent genom planering, jämn fart och rätt växling – samtidigt minskar utsläppen."
+  },
+  {
+    "id": "kor-mi-002",
+    "topic": "miljo",
+    "tags": [
+      "Sparsam körning",
+      "Växling"
+    ],
+    "question": "När bör du normalt växla upp för att köra bränslesnålt?",
+    "image": null,
+    "options": [
+      {
+        "text": "Tidigt, redan innan motorn nått omkring 2500 varv",
+        "correct": true,
+        "feedback": "Rätt – att växla upp tidigt håller varvtalet nere och sparar bränsle."
+      },
+      {
+        "text": "Först när motorn varvar runt 4000–5000 varv",
+        "correct": false,
+        "feedback": "Så högt varvtal slösar bränsle i onödan."
+      },
+      {
+        "text": "Aldrig förrän bilen börjar tappa fart",
+        "correct": false,
+        "feedback": "Då har du redan kört länge på onödigt högt varvtal."
+      },
+      {
+        "text": "Bara när du kör i uppförsbacke",
+        "correct": false,
+        "feedback": "Tidig uppväxling gäller vid normal körning, inte bara i backe."
+      }
+    ],
+    "explanation": "Genom att växla upp tidigt, gärna före cirka 2500 varv, håller du ett lågt varvtal. Lågt varvtal på hög växel ger lägre förbrukning."
+  },
+  {
+    "id": "kor-mi-003",
+    "topic": "miljo",
+    "tags": [
+      "Sparsam körning",
+      "Växling"
+    ],
+    "question": "Hur kan du köra mest bränslesnålt på en lång, jämn raksträcka?",
+    "image": null,
+    "options": [
+      {
+        "text": "På högsta möjliga växel med lägsta möjliga varvtal",
+        "correct": true,
+        "feedback": "Rätt – hög växel och lågt varvtal ger lägst förbrukning."
+      },
+      {
+        "text": "På en låg växel med högt varvtal för säkerhets skull",
+        "correct": false,
+        "feedback": "Lågt växelläge med högt varv drar mycket mer bränsle."
+      },
+      {
+        "text": "Genom att hela tiden växla upp och ner",
+        "correct": false,
+        "feedback": "Onödiga växlingar och varvtalsändringar ökar förbrukningen."
+      },
+      {
+        "text": "Genom att frikoppla och rulla i perioder",
+        "correct": false,
+        "feedback": "Att rulla frikopplat är både osäkert och sparar inget på en jämn sträcka."
+      }
+    ],
+    "explanation": "På jämn väg sparar du mest genom att ligga på högsta möjliga växel med så lågt varvtal som motorn klarar utan att gå ojämnt. Du kan ofta hoppa över växlar vid uppväxling."
+  },
+  {
+    "id": "kor-mi-004",
+    "topic": "miljo",
+    "tags": [
+      "Sparsam körning",
+      "Motorbroms"
+    ],
+    "question": "Vad händer med bränsletillförseln när du motorbromsar en modern bensin- eller dieselbil (låter bilen gå på växel utan gas)?",
+    "image": null,
+    "options": [
+      {
+        "text": "Motorn stänger av bränsletillförseln helt så länge varvtalet ligger över tomgång",
+        "correct": true,
+        "feedback": "Rätt – vid motorbromsning över tomgångsvarv kapas bränslet och förbrukningen blir noll."
+      },
+      {
+        "text": "Motorn drar mer bränsle än vid vanlig körning",
+        "correct": false,
+        "feedback": "Tvärtom – bränslet stängs av vid motorbromsning."
+      },
+      {
+        "text": "Förbrukningen är densamma som på tomgång",
+        "correct": false,
+        "feedback": "Motorbromsning över tomgång ger lägre förbrukning än tomgång."
+      },
+      {
+        "text": "Det går inte att motorbromsa med insprutningsmotor",
+        "correct": false,
+        "feedback": "Alla moderna bilar kan motorbromsa."
+      }
+    ],
+    "explanation": "Moderna insprutningsmotorer stänger av bränsletillförseln vid motorbromsning så länge varvtalet ligger över tomgångsvarvet. Att rulla på växel utan gas drar därför mindre än att frikoppla och rulla på tomgång."
+  },
+  {
+    "id": "kor-mi-005",
+    "topic": "miljo",
+    "tags": [
+      "Sparsam körning",
+      "Planering"
+    ],
+    "question": "Vilket körsätt sänker bränsleförbrukningen mest i stadstrafik?",
+    "image": null,
+    "options": [
+      {
+        "text": "Att planera, hålla jämn fart och undvika onödiga inbromsningar",
+        "correct": true,
+        "feedback": "Rätt – framförhållning och jämn fart minskar förbrukningen."
+      },
+      {
+        "text": "Att gasa snabbt mellan stoppen och bromsa hårt",
+        "correct": false,
+        "feedback": "Hård acceleration och inbromsning slösar mycket bränsle."
+      },
+      {
+        "text": "Att hålla extra hög hastighet för att hinna fram",
+        "correct": false,
+        "feedback": "Högre fart ökar förbrukningen, inte minskar den."
+      },
+      {
+        "text": "Att ligga kvar på låg växel hela tiden",
+        "correct": false,
+        "feedback": "Låg växel innebär högt varvtal och hög förbrukning."
+      }
+    ],
+    "explanation": "Genom att titta långt fram, anpassa farten efter trafiksignaler och hålla jämn fart slipper du onödiga accelerationer och inbromsningar – det sparar både bränsle och bromsar."
+  },
+  {
+    "id": "kor-mi-006",
+    "topic": "miljo",
+    "tags": [
+      "Sparsam körning",
+      "Underhåll"
+    ],
+    "question": "Vad av följande hjälper dig att hålla nere bränsleförbrukningen?",
+    "image": null,
+    "options": [
+      {
+        "text": "Rätt lufttryck i däcken och att ta bort onödig last och takbox",
+        "correct": true,
+        "feedback": "Rätt – korrekt däcktryck och låg vikt minskar rull- och luftmotståndet."
+      },
+      {
+        "text": "Att alltid köra med takbox monterad även när den är tom",
+        "correct": false,
+        "feedback": "En tom takbox ökar luftmotståndet och förbrukningen i onödan."
+      },
+      {
+        "text": "Att hålla för lågt lufttryck i däcken",
+        "correct": false,
+        "feedback": "För lågt däcktryck ökar rullmotståndet och drar mer bränsle."
+      },
+      {
+        "text": "Att fylla bilen med extra vikt för bättre väggrepp",
+        "correct": false,
+        "feedback": "Mer vikt ger högre förbrukning."
+      }
+    ],
+    "explanation": "Rätt däcktryck minskar rullmotståndet, och om du tar bort takbox och onödig vikt sänker du både luftmotstånd och tyngd. Allt detta minskar förbrukningen."
+  },
+  {
+    "id": "kor-mi-007",
+    "topic": "miljo",
+    "tags": [
+      "Tomgång",
+      "Lag"
+    ],
+    "question": "Hur länge får du normalt köra på tomgång inom de flesta kommuner?",
+    "image": null,
+    "options": [
+      {
+        "text": "Högst 1 minut",
+        "correct": true,
+        "feedback": "Rätt – i de flesta kommuner är tomgång längre än 1 minut förbjuden."
+      },
+      {
+        "text": "Högst 10 minuter",
+        "correct": false,
+        "feedback": "Gränsen är betydligt kortare, normalt 1 minut."
+      },
+      {
+        "text": "Obegränsat så länge motorn behöver värmas",
+        "correct": false,
+        "feedback": "Det finns en tidsgräns, oftast 1 minut."
+      },
+      {
+        "text": "Högst 30 minuter på parkering",
+        "correct": false,
+        "feedback": "Tomgångsbegränsningen är 1 minut, inte 30."
+      }
+    ],
+    "explanation": "I de flesta kommuner är tomgångskörning längre än 1 minut förbjuden. Undantag gäller bland annat när du står stilla i kö eller trafik. Onödig tomgång slösar bränsle och förorenar."
+  },
+  {
+    "id": "kor-mi-008",
+    "topic": "miljo",
+    "tags": [
+      "Tomgång"
+    ],
+    "question": "Du stannar för att vänta på en passagerare i flera minuter. Vad är bäst för miljön?",
+    "image": null,
+    "options": [
+      {
+        "text": "Stänga av motorn medan du väntar",
+        "correct": true,
+        "feedback": "Rätt – avstängd motor sparar bränsle och minskar utsläppen."
+      },
+      {
+        "text": "Låta motorn gå på tomgång hela tiden",
+        "correct": false,
+        "feedback": "Onödig tomgång slösar bränsle och är ofta förbjuden över 1 minut."
+      },
+      {
+        "text": "Höja varvtalet något så att motorn mår bättre",
+        "correct": false,
+        "feedback": "Det ökar bara förbrukning och utsläpp."
+      },
+      {
+        "text": "Köra runt kvarteret tills passageraren kommer",
+        "correct": false,
+        "feedback": "Att köra runt i onödan drar mer bränsle än att stå avstängd."
+      }
+    ],
+    "explanation": "Står du stilla mer än någon minut är det bäst att stänga av motorn. Modern teknik startar enkelt om, och du undviker både onödig förbrukning och tomgångsförbudet."
+  },
+  {
+    "id": "kor-mi-009",
+    "topic": "miljo",
+    "tags": [
+      "Drivmedel",
+      "Förnybart"
+    ],
+    "question": "Vilket av följande är ett förnybart drivmedel?",
+    "image": null,
+    "options": [
+      {
+        "text": "Etanol (E85)",
+        "correct": true,
+        "feedback": "Rätt – etanol är ett förnybart drivmedel med lägre nettoutsläpp av koldioxid."
+      },
+      {
+        "text": "Vanlig bensin",
+        "correct": false,
+        "feedback": "Bensin är ett fossilt drivmedel."
+      },
+      {
+        "text": "Vanlig diesel",
+        "correct": false,
+        "feedback": "Diesel är ett fossilt drivmedel."
+      },
+      {
+        "text": "Motorolja",
+        "correct": false,
+        "feedback": "Motorolja är smörjmedel, inte ett drivmedel."
+      }
+    ],
+    "explanation": "Förnybara drivmedel som etanol (E85) och biogas ger lägre nettoutsläpp av koldioxid än fossila bränslen som bensin och diesel, eftersom kolet ingår i ett kretslopp."
+  },
+  {
+    "id": "kor-mi-010",
+    "topic": "miljo",
+    "tags": [
+      "Avgaser",
+      "Koldioxid"
+    ],
+    "question": "Vilken avgas är en växthusgas som påverkar klimatet?",
+    "image": null,
+    "options": [
+      {
+        "text": "Koldioxid (CO2)",
+        "correct": true,
+        "feedback": "Rätt – koldioxid är en växthusgas som bidrar till klimatförändringar."
+      },
+      {
+        "text": "Syre (O2)",
+        "correct": false,
+        "feedback": "Syre är inte en växthusgas och är inte ett miljöproblem."
+      },
+      {
+        "text": "Kväve (N2)",
+        "correct": false,
+        "feedback": "Kvävgas utgör större delen av luften och är inte en växthusgas i sig."
+      },
+      {
+        "text": "Vattenånga från kupévärmaren",
+        "correct": false,
+        "feedback": "Det är inte den avgas som avses här – koldioxid är klimatgasen."
+      }
+    ],
+    "explanation": "Koldioxid (CO2) är den växthusgas som bildas när bränslet förbränns och som påverkar klimatet. Mängden CO2 är direkt kopplad till hur mycket bränsle du förbrukar."
+  },
+  {
+    "id": "kor-mi-011",
+    "topic": "miljo",
+    "tags": [
+      "Avgaser",
+      "Katalysator"
+    ],
+    "question": "Vad gör katalysatorn i bilens avgassystem?",
+    "image": null,
+    "options": [
+      {
+        "text": "Renar skadliga avgaser som kolväten, kolmonoxid och kväveoxider, men minskar inte koldioxiden",
+        "correct": true,
+        "feedback": "Rätt – katalysatorn omvandlar skadliga ämnen men påverkar inte CO2-mängden."
+      },
+      {
+        "text": "Tar bort all koldioxid ur avgaserna",
+        "correct": false,
+        "feedback": "Katalysatorn minskar inte koldioxidutsläppen."
+      },
+      {
+        "text": "Ökar motorns effekt",
+        "correct": false,
+        "feedback": "Katalysatorns uppgift är att rena avgaser, inte att ge effekt."
+      },
+      {
+        "text": "Gör att bilen drar mindre bränsle",
+        "correct": false,
+        "feedback": "Katalysatorn påverkar inte bränsleförbrukningen på det sättet."
+      }
+    ],
+    "explanation": "Katalysatorn renar de skadliga avgaserna kolmonoxid (CO), kolväten (HC) och kväveoxider (NOx). Den minskar däremot inte koldioxiden – den enda vägen att sänka CO2 är att förbruka mindre bränsle."
+  },
+  {
+    "id": "kor-mi-012",
+    "topic": "miljo",
+    "tags": [
+      "Avgaser",
+      "Kallstart"
+    ],
+    "question": "När släpper en bil ut mest skadliga avgaser per kilometer?",
+    "image": null,
+    "options": [
+      {
+        "text": "Vid kallstart och korta resor med kall motor",
+        "correct": true,
+        "feedback": "Rätt – en kall motor och katalysator renar sämst, så korta kalla resor förorenar mest per km."
+      },
+      {
+        "text": "Vid jämn motorvägskörning med varm motor",
+        "correct": false,
+        "feedback": "Med varm motor och katalysator är reningen som bäst."
+      },
+      {
+        "text": "När motorn nått full arbetstemperatur",
+        "correct": false,
+        "feedback": "En varm motor släpper ut mindre skadliga avgaser per km."
+      },
+      {
+        "text": "Aldrig – utsläppen är lika stora hela tiden",
+        "correct": false,
+        "feedback": "Utsläppen varierar, och kallstart är värst."
+      }
+    ],
+    "explanation": "Vid kallstart fungerar varken motor eller katalysator optimalt, så de skadliga utsläppen per kilometer blir störst. Korta resor med kall motor är därför extra dåliga för miljön."
+  },
+  {
+    "id": "kor-mi-013",
+    "topic": "miljo",
+    "tags": [
+      "Transportval"
+    ],
+    "question": "Du ska bara åka en kort sträcka inne i stan. Vilket val är bäst för miljön?",
+    "image": null,
+    "options": [
+      {
+        "text": "Gå, cykla eller åka kollektivt",
+        "correct": true,
+        "feedback": "Rätt – för korta resor är gång, cykel eller kollektivtrafik bäst för miljön."
+      },
+      {
+        "text": "Ta bilen ensam med kall motor",
+        "correct": false,
+        "feedback": "En kort resa med kall motor förorenar mest per kilometer."
+      },
+      {
+        "text": "Köra flera varv för att hinna värma motorn först",
+        "correct": false,
+        "feedback": "Det ökar både körsträcka och utsläpp."
+      },
+      {
+        "text": "Ta bilen även om kollektivtrafik finns",
+        "correct": false,
+        "feedback": "Finns bra alternativ är de oftast bättre för miljön på korta sträckor."
+      }
+    ],
+    "explanation": "Korta resor med kall motor förorenar mest per kilometer. För den typen av resor är det bäst att gå, cykla eller åka kollektivt – och om du måste ta bilen kan du samåka."
+  },
+  {
+    "id": "kor-mi-014",
+    "topic": "miljo",
+    "tags": [
+      "Hastighet",
+      "Bränsleförbrukning"
+    ],
+    "question": "Hur påverkar en höjd hastighet bränsleförbrukningen vid landsvägs- och motorvägskörning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Förbrukningen ökar oproportionerligt mycket eftersom luftmotståndet ökar kraftigt med farten",
+        "correct": true,
+        "feedback": "Rätt – luftmotståndet ökar med kvadraten på farten, så hög fart kostar mycket bränsle."
+      },
+      {
+        "text": "Förbrukningen blir lägre ju fortare du kör",
+        "correct": false,
+        "feedback": "Tvärtom – högre fart ger högre förbrukning."
+      },
+      {
+        "text": "Hastigheten påverkar inte förbrukningen alls",
+        "correct": false,
+        "feedback": "Hastigheten har stor betydelse, särskilt i hög fart."
+      },
+      {
+        "text": "Förbrukningen ökar exakt lika mycket som hastigheten",
+        "correct": false,
+        "feedback": "Ökningen är inte linjär – luftmotståndet växer snabbare än så."
+      }
+    ],
+    "explanation": "Luftmotståndet ökar med kvadraten på hastigheten, så bränsleförbrukningen och utsläppen stiger oproportionerligt mycket när du kör fortare. Att sänka farten något sparar därför märkbart med bränsle."
+  },
+  {
+    "id": "kor-pf-001",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Alkohol"
+    ],
+    "question": "Vid vilken alkoholhalt i blodet räknas det som rattfylleri i Sverige?",
+    "image": null,
+    "options": [
+      {
+        "text": "0,2 promille",
+        "correct": true,
+        "feedback": "Rätt – gränsen för rattfylleri i Sverige är 0,2 promille i blodet."
+      },
+      {
+        "text": "0,5 promille",
+        "correct": false,
+        "feedback": "0,5 är gräns i vissa andra länder, men inte i Sverige."
+      },
+      {
+        "text": "1,0 promille",
+        "correct": false,
+        "feedback": "Vid 1,0 promille räknas det i stället som grovt rattfylleri."
+      },
+      {
+        "text": "0,0 promille",
+        "correct": false,
+        "feedback": "Gränsen är 0,2 promille. Nollgräns gäller för narkotika, inte alkohol."
+      }
+    ],
+    "explanation": "Rattfylleri börjar vid 0,2 promille i blodet, vilket motsvarar 0,10 mg/l i utandningsluften. Vid 1,0 promille eller mer räknas det som grovt rattfylleri."
+  },
+  {
+    "id": "kor-pf-002",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Alkohol"
+    ],
+    "question": "Vad är det enda som faktiskt gör dig nykter efter att du druckit alkohol?",
+    "image": null,
+    "options": [
+      {
+        "text": "Att det går tillräckligt med tid",
+        "correct": true,
+        "feedback": "Rätt – alkoholen bryts ned i en fast takt och bara tid hjälper."
+      },
+      {
+        "text": "Att dricka starkt kaffe",
+        "correct": false,
+        "feedback": "Kaffe kan göra dig piggare men sänker inte alkoholhalten."
+      },
+      {
+        "text": "Att äta en rejäl måltid",
+        "correct": false,
+        "feedback": "Mat kan bromsa upptaget men bryter inte ned alkohol som redan finns i blodet."
+      },
+      {
+        "text": "Att ta en kall dusch",
+        "correct": false,
+        "feedback": "En dusch påverkar inte alls hur snabbt alkoholen försvinner."
+      }
+    ],
+    "explanation": "Alkohol bryts ned med ungefär 0,1–0,15 promille per timme oavsett vad du gör. Varken kaffe, mat, dusch eller sömn snabbar på processen – bara tid gör dig nykter."
+  },
+  {
+    "id": "kor-pf-003",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Alkohol"
+    ],
+    "question": "Du drack mycket alkohol igår kväll. Vad bör du tänka på morgonen efter?",
+    "image": null,
+    "options": [
+      {
+        "text": "Du kan fortfarande ha kvar alkohol i blodet och vara över gränsen",
+        "correct": true,
+        "feedback": "Rätt – det tar lång tid att bryta ned alkohol, så du kan vara påverkad på morgonen."
+      },
+      {
+        "text": "Efter en natts sömn är du alltid nykter igen",
+        "correct": false,
+        "feedback": "Sömn bryter inte ned alkohol snabbare; du kan vara kvar över gränsen."
+      },
+      {
+        "text": "Frukost neutraliserar resten av alkoholen",
+        "correct": false,
+        "feedback": "Mat tar inte bort alkohol som redan finns i blodet."
+      },
+      {
+        "text": "Känner du dig pigg är du garanterat under gränsen",
+        "correct": false,
+        "feedback": "Hur du känner dig är ingen tillförlitlig mätare på alkoholhalten."
+      }
+    ],
+    "explanation": "Eftersom alkohol bryts ned långsamt kan du vara över rattfyllerigränsen även morgonen efter. Räkna med att det tar lång tid och avstå från att köra om du är osäker."
+  },
+  {
+    "id": "kor-pf-004",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Alkohol"
+    ],
+    "question": "Hur påverkar alkohol din körförmåga redan vid små mängder?",
+    "image": null,
+    "options": [
+      {
+        "text": "Reaktionsförmågan blir långsammare och omdömet sämre",
+        "correct": true,
+        "feedback": "Rätt – redan små mängder försämrar reaktion, omdöme och uppmärksamhet."
+      },
+      {
+        "text": "Du blir mer fokuserad och kör försiktigare",
+        "correct": false,
+        "feedback": "Tvärtom – alkohol gör att man ofta överskattar sin förmåga."
+      },
+      {
+        "text": "Bara synen påverkas, inte omdömet",
+        "correct": false,
+        "feedback": "Alkohol påverkar mycket mer än synen, bland annat omdöme och reaktion."
+      },
+      {
+        "text": "Körförmågan påverkas inte förrän vid 1,0 promille",
+        "correct": false,
+        "feedback": "Körförmågan försämras långt innan dess, redan vid låga halter."
+      }
+    ],
+    "explanation": "Alkohol ger långsammare reaktion, sämre omdöme, smalare uppmärksamhet (tunnelseende) och gör att man överskattar sin egen förmåga – farligt redan vid små mängder."
+  },
+  {
+    "id": "kor-pf-005",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Alkohol",
+      "Straff"
+    ],
+    "question": "Vilket straff kan grovt rattfylleri som mest leda till?",
+    "image": null,
+    "options": [
+      {
+        "text": "Upp till två års fängelse",
+        "correct": true,
+        "feedback": "Rätt – grovt rattfylleri kan ge upp till två års fängelse."
+      },
+      {
+        "text": "Endast böter",
+        "correct": false,
+        "feedback": "Böter kan följa på vanligt rattfylleri, men grovt är allvarligare."
+      },
+      {
+        "text": "Upp till sex månaders fängelse",
+        "correct": false,
+        "feedback": "Sex månader är maxstraffet för vanligt rattfylleri, inte grovt."
+      },
+      {
+        "text": "En varning utan följder",
+        "correct": false,
+        "feedback": "Rattfylleri är ett brott; körkortet återkallas och påföljd döms ut."
+      }
+    ],
+    "explanation": "Grovt rattfylleri (från 1,0 promille eller om man är avsevärt påverkad) kan ge upp till två års fängelse. Vanligt rattfylleri ger böter eller upp till sex månaders fängelse. I båda fallen återkallas körkortet."
+  },
+  {
+    "id": "kor-pf-006",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Narkotika"
+    ],
+    "question": "Vad gäller för olagliga droger i blodet när du kör bil?",
+    "image": null,
+    "options": [
+      {
+        "text": "Det råder nollgräns – minsta spår är förbjudet",
+        "correct": true,
+        "feedback": "Rätt – för olagliga droger gäller nollgräns i trafiken."
+      },
+      {
+        "text": "Samma gräns som för alkohol, 0,2 promille",
+        "correct": false,
+        "feedback": "Nej, för narkotika gäller nollgräns, inte 0,2-gränsen."
+      },
+      {
+        "text": "Det är tillåtet så länge du känner dig opåverkad",
+        "correct": false,
+        "feedback": "Hur du känner dig spelar ingen roll – det är förbjudet oavsett."
+      },
+      {
+        "text": "Det är tillåtet dagen efter",
+        "correct": false,
+        "feedback": "Spår av droger kan finnas kvar länge och nollgränsen gäller ändå."
+      }
+    ],
+    "explanation": "För olagliga droger gäller nollgräns i trafiken – minsta spår i blodet är straffbart. Undantaget är läkarordinerad medicin som tas enligt ordination."
+  },
+  {
+    "id": "kor-pf-007",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Läkemedel"
+    ],
+    "question": "Hur tar du reda på om ett läkemedel kan försämra din körförmåga?",
+    "image": null,
+    "options": [
+      {
+        "text": "Kolla varningstriangeln på förpackningen och fråga läkare eller apotek",
+        "correct": true,
+        "feedback": "Rätt – varningstriangeln och råd från läkare/apotek visar om medicinen påverkar körningen."
+      },
+      {
+        "text": "Receptbelagda läkemedel påverkar aldrig körförmågan",
+        "correct": false,
+        "feedback": "Fel – många receptbelagda mediciner kan försämra körförmågan."
+      },
+      {
+        "text": "Bara om du blir riktigt dåsig finns det någon risk",
+        "correct": false,
+        "feedback": "Effekten kan vara svår att märka själv; läs varningstexten i stället."
+      },
+      {
+        "text": "Det går inte att veta i förväg",
+        "correct": false,
+        "feedback": "Jo – informationen finns på förpackningen och hos apoteket."
+      }
+    ],
+    "explanation": "Vissa läkemedel, till exempel lugnande medel och en del allergi- och värktabletter, kan försämra körförmågan. Leta efter den röda varningstriangeln på förpackningen och fråga läkare eller apotek vid tveksamhet."
+  },
+  {
+    "id": "kor-pf-008",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Läkemedel",
+      "Narkotika"
+    ],
+    "question": "Du tar en medicin som läkaren skrivit ut och följer ordinationen. Vad gäller då i trafiken?",
+    "image": null,
+    "options": [
+      {
+        "text": "Nollgränsen för narkotika gäller inte, men du får inte köra om körförmågan är nedsatt",
+        "correct": true,
+        "feedback": "Rätt – ordinerad medicin är undantagen nollgränsen, men du måste ändå vara körduglig."
+      },
+      {
+        "text": "Du får alltid köra, oavsett hur medicinen påverkar dig",
+        "correct": false,
+        "feedback": "Nej, du får inte köra om din förmåga är nedsatt av medicinen."
+      },
+      {
+        "text": "Du omfattas av nollgränsen och begår brott direkt",
+        "correct": false,
+        "feedback": "Läkarordinerad medicin enligt ordination är undantagen nollgränsen."
+      },
+      {
+        "text": "Du måste anmäla varje resa till Transportstyrelsen",
+        "correct": false,
+        "feedback": "Något sådant krav finns inte; det handlar om din körduglighet."
+      }
+    ],
+    "explanation": "Läkarordinerad medicin som tas enligt ordination omfattas inte av nollgränsen för narkotika. Men om medicinen ändå försämrar din körförmåga får du inte köra."
+  },
+  {
+    "id": "kor-pf-009",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Trötthet"
+    ],
+    "question": "Vad är det enda effektiva sättet att bota trötthet bakom ratten?",
+    "image": null,
+    "options": [
+      {
+        "text": "Att sova",
+        "correct": true,
+        "feedback": "Rätt – bara sömn botar trötthet, inget annat fungerar lika bra."
+      },
+      {
+        "text": "Att vrida ner värmen och veva ner rutan",
+        "correct": false,
+        "feedback": "Frisk luft kan pigga upp tillfälligt men botar inte tröttheten."
+      },
+      {
+        "text": "Att skruva upp musiken högt",
+        "correct": false,
+        "feedback": "Musik tar inte bort den verkliga sömnbristen."
+      },
+      {
+        "text": "Att tugga tuggummi och prata med passagerare",
+        "correct": false,
+        "feedback": "Det kan hjälpa en stund men ersätter inte sömn."
+      }
+    ],
+    "explanation": "Trötthet ger stor olycksrisk och kan leda till mikrosömn. Det enda som verkligen hjälper är sömn – planera in vila och kör inte när du är trött."
+  },
+  {
+    "id": "kor-pf-010",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Trötthet"
+    ],
+    "question": "Vad innebär mikrosömn vid bilkörning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Att man somnar till någon sekund utan att märka det",
+        "correct": true,
+        "feedback": "Rätt – mikrosömn är korta, ofrivilliga sömnögonblick som är mycket farliga."
+      },
+      {
+        "text": "En kort blund man tar medvetet vid rött ljus",
+        "correct": false,
+        "feedback": "Nej, mikrosömn är ofrivillig och sker utan att man vill det."
+      },
+      {
+        "text": "En vilopaus på en rastplats",
+        "correct": false,
+        "feedback": "Det är tvärtom en planerad vila, inte mikrosömn."
+      },
+      {
+        "text": "Att man gäspar några gånger men håller sig vaken",
+        "correct": false,
+        "feedback": "Mikrosömn är att man faktiskt somnar till, inte bara gäspar."
+      }
+    ],
+    "explanation": "Mikrosömn är korta ofrivilliga sömnögonblick på några sekunder som du oftast inte ens märker. I 90 km/h hinner bilen färdas långt utan förare – därför är trötthet livsfarligt. Enda boten är sömn."
+  },
+  {
+    "id": "kor-pf-011",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Känslor"
+    ],
+    "question": "Hur kan starka känslor som ilska eller stress påverka din körning?",
+    "image": null,
+    "options": [
+      {
+        "text": "De försämrar omdömet och uppmärksamheten",
+        "correct": true,
+        "feedback": "Rätt – starka känslor stjäl uppmärksamhet och försämrar omdömet."
+      },
+      {
+        "text": "De gör dig mer alert och därför till en bättre förare",
+        "correct": false,
+        "feedback": "Tvärtom – starka känslor försämrar din förmåga att köra säkert."
+      },
+      {
+        "text": "De påverkar bara om du är väldigt ung",
+        "correct": false,
+        "feedback": "Känslor påverkar förare i alla åldrar."
+      },
+      {
+        "text": "De påverkar bara om du också druckit alkohol",
+        "correct": false,
+        "feedback": "Känslor försämrar körningen i sig, helt utan alkohol."
+      }
+    ],
+    "explanation": "Ilska, stress, sorg och förälskelse försämrar omdöme och uppmärksamhet. Undvik att köra när du är starkt känslomässigt påverkad – ta en paus och lugna ner dig först."
+  },
+  {
+    "id": "kor-pf-012",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Känslor",
+      "Sjukdom"
+    ],
+    "question": "Du har hög feber och har tagit en stark medicin. Vad bör du göra?",
+    "image": null,
+    "options": [
+      {
+        "text": "Avstå från att köra om din förmåga är nedsatt",
+        "correct": true,
+        "feedback": "Rätt – är förmågan nedsatt av sjukdom eller medicin ska du låta bilen stå."
+      },
+      {
+        "text": "Köra som vanligt, feber påverkar inte körningen",
+        "correct": false,
+        "feedback": "Feber och stark medicin kan tydligt försämra din körförmåga."
+      },
+      {
+        "text": "Köra men hålla lägre hastighet",
+        "correct": false,
+        "feedback": "Lägre fart väger inte upp en nedsatt körförmåga."
+      },
+      {
+        "text": "Köra om du dricker mycket vatten först",
+        "correct": false,
+        "feedback": "Vatten botar varken febern eller medicinens effekt på körförmågan."
+      }
+    ],
+    "explanation": "Sjukdom, hög feber och starkt verkande mediciner kan försämra körförmågan. Om din förmåga är nedsatt ska du inte köra – det är ditt ansvar att bedöma om du är körduglig."
+  },
+  {
+    "id": "kor-pf-013",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Grupptryck"
+    ],
+    "question": "Dina passagerare tjatar på att du ska köra fortare och ta risker. Hur bör du agera?",
+    "image": null,
+    "options": [
+      {
+        "text": "Stå emot trycket – som förare är det du som är ansvarig",
+        "correct": true,
+        "feedback": "Rätt – föraren bär ansvaret och ska inte låta sig pressas."
+      },
+      {
+        "text": "Köra fortare så att passagerarna blir nöjda",
+        "correct": false,
+        "feedback": "Du får aldrig låta passagerare pressa dig till att köra farligt."
+      },
+      {
+        "text": "Ta lite risker eftersom ansvaret delas i bilen",
+        "correct": false,
+        "feedback": "Ansvaret delas inte – det är föraren som är ansvarig."
+      },
+      {
+        "text": "Låta den äldsta passageraren bestämma farten",
+        "correct": false,
+        "feedback": "Ingen passagerare bestämmer över ditt körsätt; du ansvarar."
+      }
+    ],
+    "explanation": "Låt dig inte pressas av passagerare att köra fort eller ta risker. Det är alltid föraren som är ansvarig för hur bilen framförs – våga säga nej till grupptryck."
+  },
+  {
+    "id": "kor-pf-014",
+    "topic": "personliga_forutsattningar",
+    "tags": [
+      "Attityd",
+      "Självinsikt"
+    ],
+    "question": "Varför bör nya och oerfarna förare vara extra försiktiga?",
+    "image": null,
+    "options": [
+      {
+        "text": "De är överrepresenterade i olyckor och saknar erfarenhet",
+        "correct": true,
+        "feedback": "Rätt – unga och oerfarna förare råkar oftare ut för olyckor."
+      },
+      {
+        "text": "Nya förare har lägre olycksrisk än erfarna",
+        "correct": false,
+        "feedback": "Tvärtom – nya förare är överrepresenterade i olycksstatistiken."
+      },
+      {
+        "text": "Reglerna är strängare bara för att begränsa nybörjare i onödan",
+        "correct": false,
+        "feedback": "Reglerna finns för säkerheten, inte för att begränsa i onödan."
+      },
+      {
+        "text": "Det spelar ingen roll, körvana saknar betydelse för säkerheten",
+        "correct": false,
+        "feedback": "Erfarenhet har stor betydelse för hur säkert man kör."
+      }
+    ],
+    "explanation": "Unga och oerfarna förare är överrepresenterade i olyckor. Trafikregler finns för säkerheten, och god självinsikt om sina egna begränsningar gör dig till en säkrare förare. Som ny förare bör du vara extra försiktig."
+  },
+  {
+    "id": "kor-tr-a-001",
+    "topic": "trafikregler",
+    "tags": [
+      "Hastighet"
+    ],
+    "question": "Vilken är den generella hastighetsgränsen utanför tättbebyggt område, om inget annat anges med vägmärke?",
+    "image": null,
+    "options": [
+      {
+        "text": "70 km/h",
+        "correct": true,
+        "feedback": "Rätt – bashastigheten utanför tättbebyggt område är 70 km/h när inget vägmärke anger annat."
+      },
+      {
+        "text": "50 km/h",
+        "correct": false,
+        "feedback": "50 km/h är grundregeln inom tättbebyggt område, inte utanför."
+      },
+      {
+        "text": "90 km/h",
+        "correct": false,
+        "feedback": "90 km/h förekommer bara där det är särskilt skyltat."
+      },
+      {
+        "text": "80 km/h",
+        "correct": false,
+        "feedback": "80 km/h gäller endast där det finns ett vägmärke som visar gränsen."
+      }
+    ],
+    "explanation": "Utanför tättbebyggt område är grundregeln 70 km/h om inget annat anges. Inom tättbebyggt område gäller i stället 50 km/h. Skyltade hastighetsgränser kan höja eller sänka detta i steg om 10 km/h."
+  },
+  {
+    "id": "kor-tr-a-002",
+    "topic": "trafikregler",
+    "tags": [
+      "Hastighet",
+      "Motorväg"
+    ],
+    "question": "Vilken hastighetsgräns gäller normalt på en svensk motorväg om inget annat skyltas?",
+    "image": null,
+    "options": [
+      {
+        "text": "110 km/h",
+        "correct": true,
+        "feedback": "Rätt – på motorväg är det vanligaste 110 km/h, ibland upp till 120 km/h där det är skyltat."
+      },
+      {
+        "text": "90 km/h",
+        "correct": false,
+        "feedback": "90 km/h är lägre än vad som normalt gäller på motorväg."
+      },
+      {
+        "text": "130 km/h",
+        "correct": false,
+        "feedback": "130 km/h är inte tillåtet på svenska vägar; högsta skyltade gräns är 120 km/h."
+      },
+      {
+        "text": "100 km/h",
+        "correct": false,
+        "feedback": "100 km/h är vanligt på motortrafikled och 2+1-vägar, men inte standard på motorväg."
+      }
+    ],
+    "explanation": "På motorväg är 110 km/h vanligast, och på vissa sträckor är gränsen 120 km/h. Skyltade gränser anges i steg om 10 km/h mellan 30 och 120. Lägre gräns kan gälla vid vägarbete eller dåligt väder."
+  },
+  {
+    "id": "kor-tr-a-003",
+    "topic": "trafikregler",
+    "tags": [
+      "Hastighet"
+    ],
+    "question": "Hur ändras de skyltade hastighetsgränserna i Sverige?",
+    "image": null,
+    "options": [
+      {
+        "text": "I steg om 10 km/h, mellan 30 och 120 km/h",
+        "correct": true,
+        "feedback": "Rätt – skyltade gränser går i tiosteg från 30 upp till 120 km/h."
+      },
+      {
+        "text": "I steg om 5 km/h",
+        "correct": false,
+        "feedback": "Hastighetsgränser anges inte i femsteg."
+      },
+      {
+        "text": "I steg om 20 km/h",
+        "correct": false,
+        "feedback": "Gränserna ändras i tiosteg, inte tjugosteg."
+      },
+      {
+        "text": "I steg om 25 km/h",
+        "correct": false,
+        "feedback": "Det finns inga skyltade gränser i steg om 25 km/h."
+      }
+    ],
+    "explanation": "Skyltade hastighetsgränser anges i steg om 10 km/h. Den lägsta skyltade gränsen är 30 km/h och den högsta är 120 km/h. Bashastigheterna 50 och 70 km/h gäller utan skylt."
+  },
+  {
+    "id": "kor-tr-a-004",
+    "topic": "trafikregler",
+    "tags": [
+      "Hastighet",
+      "Motortrafikled"
+    ],
+    "question": "Vilken hastighetsgräns är vanlig på en motortrafikled eller en 2+1-väg?",
+    "image": null,
+    "options": [
+      {
+        "text": "100 km/h",
+        "correct": true,
+        "feedback": "Rätt – på motortrafikleder och 2+1-vägar är 100 km/h en vanlig skyltad gräns."
+      },
+      {
+        "text": "120 km/h",
+        "correct": false,
+        "feedback": "120 km/h förekommer främst på motorväg, inte på en typisk motortrafikled."
+      },
+      {
+        "text": "70 km/h",
+        "correct": false,
+        "feedback": "70 km/h är bashastighet utanför tättbebyggt område, men gränsen är ofta högre här."
+      },
+      {
+        "text": "50 km/h",
+        "correct": false,
+        "feedback": "50 km/h är bashastighet i tättbebyggt område och passar inte på en motortrafikled."
+      }
+    ],
+    "explanation": "På motortrafikleder och 2+1-vägar är 100 km/h en vanlig hastighetsgräns. Gränsen anges alltid med vägmärke. På motorväg är det normalt 110 km/h, ibland 120 km/h."
+  },
+  {
+    "id": "kor-tr-a-005",
+    "topic": "trafikregler",
+    "tags": [
+      "Högerregeln"
+    ],
+    "question": "Du närmar dig en korsning utan vägmärken eller markeringar. Vem ska du lämna företräde åt?",
+    "image": null,
+    "options": [
+      {
+        "text": "Trafik som kommer från höger",
+        "correct": true,
+        "feedback": "Rätt – högerregeln innebär att du lämnar företräde åt fordon som kommer från höger när inget annat anges."
+      },
+      {
+        "text": "Trafik som kommer från vänster",
+        "correct": false,
+        "feedback": "Du har själv företräde framför trafik från vänster, inte tvärtom."
+      },
+      {
+        "text": "Den som kör fortast",
+        "correct": false,
+        "feedback": "Hastighet avgör inte vem som har företräde i en korsning."
+      },
+      {
+        "text": "Ingen, du har alltid företräde",
+        "correct": false,
+        "feedback": "I en oreglerad korsning måste du lämna företräde åt höger."
+      }
+    ],
+    "explanation": "När inget vägmärke eller annan regel gäller tillämpas högerregeln: du lämnar företräde åt trafik som kommer från höger. Var alltid beredd att sakta ner och stanna. Regeln gäller även på platser man lätt glömmer."
+  },
+  {
+    "id": "kor-tr-a-006",
+    "topic": "trafikregler",
+    "tags": [
+      "Högerregeln",
+      "Parkering"
+    ],
+    "question": "Var gäller högerregeln, utöver i vanliga vägkorsningar?",
+    "image": null,
+    "options": [
+      {
+        "text": "Även på parkeringsplatser och i T-korsningar",
+        "correct": true,
+        "feedback": "Rätt – högerregeln gäller också på exempelvis parkeringsytor och i T-korsningar utan skyltning."
+      },
+      {
+        "text": "Endast på huvudleder",
+        "correct": false,
+        "feedback": "På huvudled gäller tvärtom att huvudledstrafiken har företräde."
+      },
+      {
+        "text": "Endast inom tättbebyggt område",
+        "correct": false,
+        "feedback": "Högerregeln är inte begränsad till tättbebyggt område."
+      },
+      {
+        "text": "Bara på motorväg",
+        "correct": false,
+        "feedback": "På motorväg finns på- och avfarter med egna regler, inte högerregeln."
+      }
+    ],
+    "explanation": "Högerregeln gäller överallt där inget annat anges, även på parkeringsplatser och i T-korsningar. Många underskattar detta på just parkeringsytor. Finns det vägmärken, markeringar eller huvudled gäller de i stället."
+  },
+  {
+    "id": "kor-tr-a-007",
+    "topic": "trafikregler",
+    "tags": [
+      "Väjningsplikt"
+    ],
+    "question": "Vad innebär väjningsplikt vid en korsning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Du ska sakta ner och lämna företräde, men får rulla vidare om vägen är fri",
+        "correct": true,
+        "feedback": "Rätt – väjningsplikt betyder att du lämnar företräde men inte måste stanna helt om det är fritt."
+      },
+      {
+        "text": "Du måste alltid stanna helt vid linjen",
+        "correct": false,
+        "feedback": "Skyldighet att alltid stanna helt gäller vid stopplikt, inte väjningsplikt."
+      },
+      {
+        "text": "Du har företräde framför korsande trafik",
+        "correct": false,
+        "feedback": "Väjningsplikt innebär att du ska lämna företräde, inte att du har det."
+      },
+      {
+        "text": "Du får köra om annan trafik i korsningen",
+        "correct": false,
+        "feedback": "Väjningsplikt handlar om företräde, inte om omkörning."
+      }
+    ],
+    "explanation": "Vid väjningsplikt ska du sakta ner och lämna företräde åt korsande trafik. Är vägen helt fri får du rulla vidare utan att stanna. Detta skiljer väjningsplikt från stopplikt."
+  },
+  {
+    "id": "kor-tr-a-008",
+    "topic": "trafikregler",
+    "tags": [
+      "Stopplikt"
+    ],
+    "question": "Du kommer fram till en korsning med stopplikt och ser att vägen är helt fri. Hur ska du agera?",
+    "image": null,
+    "options": [
+      {
+        "text": "Stanna helt vid stopplinjen även om det är fritt",
+        "correct": true,
+        "feedback": "Rätt – stopplikt kräver att du stannar helt vid linjen oavsett om det är fritt eller inte."
+      },
+      {
+        "text": "Rulla sakta vidare eftersom det är fritt",
+        "correct": false,
+        "feedback": "Det är tillåtet vid väjningsplikt, men inte vid stopplikt."
+      },
+      {
+        "text": "Köra utan att sakta ner",
+        "correct": false,
+        "feedback": "Vid stopplikt måste du alltid stanna helt, inte bara sakta ner."
+      },
+      {
+        "text": "Tuta och köra vidare",
+        "correct": false,
+        "feedback": "Tutning ersätter inte skyldigheten att stanna helt."
+      }
+    ],
+    "explanation": "Vid stopplikt måste du alltid stanna helt vid stopplinjen, även om vägen verkar fri. Först efter att du stannat och kontrollerat får du köra vidare. Saknas stopplinje stannar du där du har bäst sikt."
+  },
+  {
+    "id": "kor-tr-a-009",
+    "topic": "trafikregler",
+    "tags": [
+      "Huvudled",
+      "Parkering"
+    ],
+    "question": "Vad gäller för parkering längs en huvudled?",
+    "image": null,
+    "options": [
+      {
+        "text": "Det är förbjudet att parkera på huvudled där inget annat anges",
+        "correct": true,
+        "feedback": "Rätt – det är förbjudet att parkera på en huvudled om inget vägmärke tillåter det."
+      },
+      {
+        "text": "Det är alltid tillåtet att parkera på huvudled",
+        "correct": false,
+        "feedback": "Parkering på huvudled är tvärtom förbjuden."
+      },
+      {
+        "text": "Du får parkera men bara på vänster sida",
+        "correct": false,
+        "feedback": "Sidan spelar ingen roll – parkering på huvudled är förbjuden."
+      },
+      {
+        "text": "Du får parkera om du sätter på varningsblinkers",
+        "correct": false,
+        "feedback": "Varningsblinkers gör inte parkering på huvudled tillåten."
+      }
+    ],
+    "explanation": "På en huvudled är det förbjudet att parkera, vilket håller leden framkomlig. Trafiken på huvudled har dessutom företräde mot korsande vägar. Förbudet gäller fram till märket Huvudled upphör."
+  },
+  {
+    "id": "kor-tr-a-010",
+    "topic": "trafikregler",
+    "tags": [
+      "Huvudled"
+    ],
+    "question": "Du kör på en huvudled. Vad gäller när du närmar dig korsningar längs vägen?",
+    "image": null,
+    "options": [
+      {
+        "text": "Du har företräde framför trafik från anslutande vägar",
+        "correct": true,
+        "feedback": "Rätt – trafik på huvudled har företräde mot fordon som kommer in från anslutande vägar."
+      },
+      {
+        "text": "Högerregeln gäller i varje korsning",
+        "correct": false,
+        "feedback": "Huvudleden upphäver högerregeln så länge märket gäller."
+      },
+      {
+        "text": "Du måste lämna företräde åt trafik från höger",
+        "correct": false,
+        "feedback": "På huvudled gäller inte högerregeln; du har företräde."
+      },
+      {
+        "text": "Du har stopplikt i varje korsning",
+        "correct": false,
+        "feedback": "Det är tvärtom – det är de anslutande vägarna som har väjnings- eller stopplikt."
+      }
+    ],
+    "explanation": "När du kör på en huvudled har du företräde mot trafik från anslutande vägar. Företrädet gäller tills du passerar märket Huvudled upphör. Var ändå uppmärksam, eftersom andra ibland missar sin väjningsplikt."
+  },
+  {
+    "id": "kor-tr-a-011",
+    "topic": "trafikregler",
+    "tags": [
+      "Omkörning"
+    ],
+    "question": "Åt vilket håll ska en omkörning normalt ske, och när är den förbjuden?",
+    "image": null,
+    "options": [
+      {
+        "text": "Till vänster, och den är förbjuden vid skymd sikt som backkrön och kurvor",
+        "correct": true,
+        "feedback": "Rätt – omkörning sker till vänster och är förbjuden där sikten är skymd."
+      },
+      {
+        "text": "Till höger, och alltid tillåten på landsväg",
+        "correct": false,
+        "feedback": "Omkörning sker normalt till vänster, inte till höger."
+      },
+      {
+        "text": "Till vänster, och alltid tillåten oavsett sikt",
+        "correct": false,
+        "feedback": "Den är förbjuden vid skymd sikt, exempelvis vid backkrön och kurvor."
+      },
+      {
+        "text": "Åt valfritt håll så länge det går fort",
+        "correct": false,
+        "feedback": "Hastighet avgör inte hur eller var du får köra om."
+      }
+    ],
+    "explanation": "Omkörning ska normalt ske till vänster. Den är förbjuden strax före och på backkrön samt i och före kurvor med skymd sikt. Den är också förbjuden vid övergångsställen och där märket Förbud mot omkörning gäller."
+  },
+  {
+    "id": "kor-tr-a-012",
+    "topic": "trafikregler",
+    "tags": [
+      "Omkörning"
+    ],
+    "question": "När får du undantagsvis köra om ett fordon på höger sida?",
+    "image": null,
+    "options": [
+      {
+        "text": "När fordonet framför har svängt eller tydligt förbereder vänstersväng",
+        "correct": true,
+        "feedback": "Rätt – du får passera till höger när framförvarande svänger eller ska svänga vänster."
+      },
+      {
+        "text": "Alltid, så länge det går fortare",
+        "correct": false,
+        "feedback": "Omkörning sker normalt till vänster; höger är bara tillåtet i vissa undantagsfall."
+      },
+      {
+        "text": "Aldrig under några omständigheter",
+        "correct": false,
+        "feedback": "Det finns tillåtna undantag, till exempel vid vänstersväng eller i köer."
+      },
+      {
+        "text": "När du kör snabbare än hastighetsgränsen",
+        "correct": false,
+        "feedback": "Att överskrida hastighetsgränsen är aldrig en grund för omkörning."
+      }
+    ],
+    "explanation": "Omkörning ska normalt ske till vänster. Du får dock passera till höger när framförvarande fordon svänger eller förbereder vänstersväng, samt i köer med flera körfält. Annars gäller alltid vänster sida vid omkörning."
+  },
+  {
+    "id": "kor-tr-a-013",
+    "topic": "trafikregler",
+    "tags": [
+      "Omkörning"
+    ],
+    "question": "När bör du återgå till ditt körfält efter en omkörning?",
+    "image": null,
+    "options": [
+      {
+        "text": "När du ser det omkörda fordonet i backspegeln",
+        "correct": true,
+        "feedback": "Rätt – återgå först när det omkörda fordonet syns i innerbackspegeln så att du inte tränger det."
+      },
+      {
+        "text": "Omedelbart när du passerat fordonets bakdel",
+        "correct": false,
+        "feedback": "Då riskerar du att tränga in framför det omkörda fordonet för tidigt."
+      },
+      {
+        "text": "Först efter nästa korsning",
+        "correct": false,
+        "feedback": "Du behöver inte vänta så länge; sikten i backspegeln avgör."
+      },
+      {
+        "text": "Aldrig, du stannar i vänsterfilen",
+        "correct": false,
+        "feedback": "Du ska återgå till höger körfält när omkörningen är klar."
+      }
+    ],
+    "explanation": "Efter en omkörning ska du återgå till höger körfält så snart det är säkert. Vänta tills du ser det omkörda fordonet i backspegeln, så att du inte tvingar det att bromsa. Blinka och kontrollera sidospegeln innan du byter tillbaka."
+  },
+  {
+    "id": "kor-tr-a-014",
+    "topic": "trafikregler",
+    "tags": [
+      "Stannande",
+      "Parkering"
+    ],
+    "question": "Hur nära en korsning är det förbjudet att stanna eller parkera?",
+    "image": null,
+    "options": [
+      {
+        "text": "Närmare än 10 meter före korsningen",
+        "correct": true,
+        "feedback": "Rätt – du får inte stanna eller parkera inom 10 meter före en korsande körbanas närmaste kant."
+      },
+      {
+        "text": "Närmare än 5 meter före korsningen",
+        "correct": false,
+        "feedback": "Gränsen är 10 meter, inte 5 meter."
+      },
+      {
+        "text": "Närmare än 20 meter före korsningen",
+        "correct": false,
+        "feedback": "20 meter är längre än vad regeln kräver; gränsen är 10 meter."
+      },
+      {
+        "text": "Det finns ingen avståndsregel vid korsningar",
+        "correct": false,
+        "feedback": "Det finns en tydlig regel: 10 meter före korsningen."
+      }
+    ],
+    "explanation": "Du får inte stanna eller parkera inom 10 meter före en korsning, räknat från den korsande körbanans närmaste kant. Samma 10-metersregel gäller före ett övergångsställe. Syftet är att hålla sikten fri för alla trafikanter."
+  },
+  {
+    "id": "kor-tr-a-015",
+    "topic": "trafikregler",
+    "tags": [
+      "Parkering",
+      "Övergångsställe"
+    ],
+    "question": "Var i förhållande till ett övergångsställe får du stanna för att släppa av en passagerare?",
+    "image": null,
+    "options": [
+      {
+        "text": "Strax efter övergångsstället, men inte inom 10 meter före det",
+        "correct": true,
+        "feedback": "Rätt – det är förbjudet inom 10 meter före, men tillåtet strax efter övergångsstället."
+      },
+      {
+        "text": "Direkt före övergångsstället",
+        "correct": false,
+        "feedback": "Inom 10 meter före övergångsstället är det förbjudet att stanna."
+      },
+      {
+        "text": "Mitt på övergångsstället",
+        "correct": false,
+        "feedback": "Du får aldrig stanna på själva övergångsstället."
+      },
+      {
+        "text": "Var som helst, bara det går fort",
+        "correct": false,
+        "feedback": "Reglerna om stannande gäller oavsett hur kort tid det tar."
+      }
+    ],
+    "explanation": "Det är förbjudet att stanna eller parkera inom 10 meter före ett övergångsställe, eftersom det skymmer sikten. Däremot får du stanna strax efter övergångsstället. Stanna aldrig på själva övergångsstället."
+  },
+  {
+    "id": "kor-tr-a-016",
+    "topic": "trafikregler",
+    "tags": [
+      "Parkering"
+    ],
+    "question": "På vilken av följande platser är det förbjudet att stanna eller parkera?",
+    "image": null,
+    "options": [
+      {
+        "text": "I en kurva, på ett backkrön eller vid en busshållplats",
+        "correct": true,
+        "feedback": "Rätt – sådana platser kräver fri sikt och framkomlighet, så stannande och parkering är förbjudet."
+      },
+      {
+        "text": "På en anvisad parkeringsruta",
+        "correct": false,
+        "feedback": "En anvisad parkeringsruta är just till för parkering."
+      },
+      {
+        "text": "På en parkeringsplats med tillåtande skylt",
+        "correct": false,
+        "feedback": "Där skylten tillåter parkering får du naturligtvis parkera."
+      },
+      {
+        "text": "Längs en gata utan parkeringsförbud",
+        "correct": false,
+        "feedback": "Saknas förbud får du normalt parkera längs gatan."
+      }
+    ],
+    "explanation": "Det är förbjudet att stanna eller parkera i kurvor, på eller nära backkrön och vid busshållplatser. Du får inte heller parkera framför en in- och utfart. Sådana platser kräver fri sikt och god framkomlighet."
+  },
+  {
+    "id": "kor-tr-a-017",
+    "topic": "trafikregler",
+    "tags": [
+      "Belysning"
+    ],
+    "question": "Vilken belysning ska normalt vara på när du kör i dagsljus?",
+    "image": null,
+    "options": [
+      {
+        "text": "Halvljus eller varselljus",
+        "correct": true,
+        "feedback": "Rätt – vid körning ska halvljus eller varselljus vara tänt dygnet runt."
+      },
+      {
+        "text": "Helljus",
+        "correct": false,
+        "feedback": "Helljus används i mörker när du inte möter eller följer annan trafik, inte i dagsljus."
+      },
+      {
+        "text": "Endast positionsljus",
+        "correct": false,
+        "feedback": "Enbart positionsljus räcker inte vid körning."
+      },
+      {
+        "text": "Dimljus",
+        "correct": false,
+        "feedback": "Dimljus får bara användas vid dimma eller kraftigt nedsatt sikt."
+      }
+    ],
+    "explanation": "Vid körning ska halvljus eller varselljus vara tänt dygnet runt, även i dagsljus. I mörker använder du helljus när du inte möter eller kör bakom någon. Dimljus får bara användas vid dis, dimma eller kraftig nederbörd."
+  },
+  {
+    "id": "kor-tr-a-018",
+    "topic": "trafikregler",
+    "tags": [
+      "Cirkulationsplats"
+    ],
+    "question": "Vad gäller när du kör in i en cirkulationsplats (rondell)?",
+    "image": null,
+    "options": [
+      {
+        "text": "Du ska lämna företräde åt fordon som redan befinner sig i rondellen",
+        "correct": true,
+        "feedback": "Rätt – fordon som redan kör i cirkulationsplatsen har företräde."
+      },
+      {
+        "text": "Du har alltid företräde vid infarten",
+        "correct": false,
+        "feedback": "Tvärtom – du lämnar företräde åt dem som redan är i rondellen."
+      },
+      {
+        "text": "Högerregeln gäller inne i rondellen",
+        "correct": false,
+        "feedback": "I en cirkulationsplats är det väjningsplikt vid infart, inte högerregeln."
+      },
+      {
+        "text": "Du ska blinka vänster innan du kör in",
+        "correct": false,
+        "feedback": "Du blinkar höger före din utfart, inte vänster vid infarten."
+      }
+    ],
+    "explanation": "När du kör in i en cirkulationsplats ska du lämna företräde åt fordon som redan är i rondellen. Inne i rondellen håller du till höger och blinkar höger strax innan du svänger ut. Glöm inte att kontrollera cyklister vid utfarten."
+  },
+  {
+    "id": "kor-tr-b-001",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Hastighet"
+    ],
+    "question": "Vad betyder det här vägmärket?",
+    "image": "vagmarke_hastighet_30.svg",
+    "options": [
+      {
+        "text": "Högsta tillåtna hastighet är 30 km/h",
+        "correct": true,
+        "feedback": "Rätt – den röda ringen med siffran 30 anger att du högst får köra 30 km/h."
+      },
+      {
+        "text": "Rekommenderad hastighet är 30 km/h",
+        "correct": false,
+        "feedback": "Nej, märket anger en bindande gräns, inte en rekommendation."
+      },
+      {
+        "text": "Lägsta tillåtna hastighet är 30 km/h",
+        "correct": false,
+        "feedback": "Lägsta hastighet visas med blå runt märke, inte med röd ring."
+      },
+      {
+        "text": "Avståndet till nästa korsning är 30 meter",
+        "correct": false,
+        "feedback": "Märket handlar om hastighet i km/h, inte om avstånd."
+      }
+    ],
+    "explanation": "Märket är ett förbudsmärke för hastighetsbegränsning. Den gula skylten med röd ring och en siffra anger den högsta hastighet du får hålla, här 30 km/h, tills gränsen upphör eller ändras."
+  },
+  {
+    "id": "kor-tr-b-002",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Hastighet"
+    ],
+    "question": "Du ser detta märke när du kör. Vilken hastighet får du högst hålla?",
+    "image": "vagmarke_hastighet_90.svg",
+    "options": [
+      {
+        "text": "Högst 90 km/h",
+        "correct": true,
+        "feedback": "Rätt – märket anger att högsta tillåtna hastighet är 90 km/h."
+      },
+      {
+        "text": "Minst 90 km/h",
+        "correct": false,
+        "feedback": "Märket anger en övre gräns, inte ett minimum."
+      },
+      {
+        "text": "Cirka 90 km/h om vägen tillåter",
+        "correct": false,
+        "feedback": "Det är en bindande gräns, inte ett ungefärligt riktvärde."
+      },
+      {
+        "text": "90 km/h enbart för tunga fordon",
+        "correct": false,
+        "feedback": "Gränsen gäller alla fordon om inget tilläggsmärke säger annat."
+      }
+    ],
+    "explanation": "Hastighetsbegränsningsmärket gäller från platsen där det sitter tills en ny gräns anges eller begränsningen upphör. Här får du som mest köra 90 km/h, oavsett att vägen kan kännas snabbare."
+  },
+  {
+    "id": "kor-tr-b-003",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Parkering"
+    ],
+    "question": "Vad innebär det här märket?",
+    "image": "vagmarke_forbud_parkera.svg",
+    "options": [
+      {
+        "text": "Du får inte parkera, men får stanna kort för av- och påstigning eller lastning",
+        "correct": true,
+        "feedback": "Rätt – förbud mot att parkera tillåter kortvarigt stannande för t.ex. på- och avstigning."
+      },
+      {
+        "text": "Du får varken stanna eller parkera",
+        "correct": false,
+        "feedback": "Det är ett annat märke; här är det bara parkering som är förbjuden."
+      },
+      {
+        "text": "Parkering är tillåten i högst 24 timmar",
+        "correct": false,
+        "feedback": "Märket förbjuder parkering helt, inget tidsbegränsat tillstånd."
+      },
+      {
+        "text": "Endast boende får parkera här",
+        "correct": false,
+        "feedback": "Det skulle krävas ett tilläggsmärke; själva märket betyder parkeringsförbud."
+      }
+    ],
+    "explanation": "Märket anger förbud mot att parkera. Du får dock stanna en kort stund för att låta passagerare stiga av eller på, eller för att lasta i och ur gods, så länge det sker utan onödigt dröjsmål."
+  },
+  {
+    "id": "kor-tr-b-004",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Parkering"
+    ],
+    "question": "Du ser detta märke längs gatan. Vad gäller?",
+    "image": "vagmarke_forbud_stanna.svg",
+    "options": [
+      {
+        "text": "Du får varken stanna eller parkera",
+        "correct": true,
+        "feedback": "Rätt – märket förbjuder både stannande och parkering."
+      },
+      {
+        "text": "Du får stanna kort men inte parkera",
+        "correct": false,
+        "feedback": "Nej, här är även kortvarigt stannande förbjudet."
+      },
+      {
+        "text": "Du får parkera men inte stanna länge",
+        "correct": false,
+        "feedback": "Tvärtom är all parkering och allt stannande förbjudet."
+      },
+      {
+        "text": "Förbudet gäller bara nattetid",
+        "correct": false,
+        "feedback": "Utan tilläggsmärke gäller förbudet hela tiden."
+      }
+    ],
+    "explanation": "Märket anger förbud mot att stanna och parkera. Det betyder att du inte ens får stanna kort för av- eller påstigning, annat än om en polis eller trafiksituation tvingar dig att stanna."
+  },
+  {
+    "id": "kor-tr-b-005",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Förbud"
+    ],
+    "question": "Vad betyder det här märket?",
+    "image": "vagmarke_forbud_infart_motordrivna.svg",
+    "options": [
+      {
+        "text": "Förbud mot infart med fordon i färdriktningen",
+        "correct": true,
+        "feedback": "Rätt – det runda röda märket med vit stapel betyder att infart är förbjuden åt det hållet."
+      },
+      {
+        "text": "Förbud mot att svänga vänster",
+        "correct": false,
+        "feedback": "Det finns särskilda svängförbudsmärken; detta gäller infart rakt fram."
+      },
+      {
+        "text": "Enkelriktad trafik som du får köra in på",
+        "correct": false,
+        "feedback": "Tvärtom – detta märke förbjuder dig att köra in i den riktningen."
+      },
+      {
+        "text": "Parkeringsförbud på hela gatan",
+        "correct": false,
+        "feedback": "Märket handlar om infart, inte om parkering."
+      }
+    ],
+    "explanation": "Det runda, röda märket med en vit vågrät stapel betyder förbud mot infart. Du får alltså inte köra in på vägen i den riktning du är på väg, ofta för att gatan är enkelriktad mot dig."
+  },
+  {
+    "id": "kor-tr-b-006",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Påbud"
+    ],
+    "question": "Vad betyder det här blå märket med en vit pil?",
+    "image": "vagmarke_pabjuden_korriktning_rakt.svg",
+    "options": [
+      {
+        "text": "Du måste köra rakt fram",
+        "correct": true,
+        "feedback": "Rätt – ett blått påbudsmärke med pil rakt upp betyder påbjuden körriktning rakt fram."
+      },
+      {
+        "text": "Du får välja att köra rakt fram eller svänga",
+        "correct": false,
+        "feedback": "Påbudsmärket är tvingande; du måste följa pilens riktning."
+      },
+      {
+        "text": "Rakt fram är förbjudet",
+        "correct": false,
+        "feedback": "Förbud visas med rött, inte med ett blått påbudsmärke."
+      },
+      {
+        "text": "Det är en återvändsgata rakt fram",
+        "correct": false,
+        "feedback": "Det är ett påbud om körriktning, inte information om återvändsgata."
+      }
+    ],
+    "explanation": "Blå runda märken med vit pil är påbudsmärken som anger den körriktning du måste följa. Här pekar pilen rakt upp, vilket innebär att du är skyldig att köra rakt fram."
+  },
+  {
+    "id": "kor-tr-b-007",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Väjningsplikt"
+    ],
+    "question": "Du passerar det här märket. Vad gäller efter det?",
+    "image": "vagmarke_huvudled_upphor.svg",
+    "options": [
+      {
+        "text": "Huvudleden upphör och därefter gäller bland annat högerregeln",
+        "correct": true,
+        "feedback": "Rätt – när huvudleden upphör har du inte längre förtur och högerregeln gäller i korsningar."
+      },
+      {
+        "text": "Huvudleden börjar och du har förtur",
+        "correct": false,
+        "feedback": "Det överkorsade märket betyder att huvudleden slutar, inte börjar."
+      },
+      {
+        "text": "Du har stopplikt vid nästa korsning",
+        "correct": false,
+        "feedback": "Stopplikt anges med eget märke; detta betyder bara att huvudleden upphör."
+      },
+      {
+        "text": "Hastigheten sänks automatiskt till 30 km/h",
+        "correct": false,
+        "feedback": "Märket säger inget om hastighet, bara att huvudleden tar slut."
+      }
+    ],
+    "explanation": "Märket anger att huvudleden upphör. Efter märket har du inte längre automatisk förtur, och i oskyltade korsningar gäller istället högerregeln, så du måste vara beredd att lämna företräde."
+  },
+  {
+    "id": "kor-tr-b-008",
+    "topic": "trafikregler",
+    "tags": [
+      "Scenario",
+      "Högerregeln"
+    ],
+    "question": "Du kör den blå bilen (DU) söderifrån rakt fram i den oskyltade korsningen. Hur ska du agera mot den röda bilen?",
+    "image": "scen_hogerregeln_4vag.svg",
+    "options": [
+      {
+        "text": "Lämna företräde åt den röda bilen från höger",
+        "correct": true,
+        "feedback": "Rätt – i en oskyltad korsning gäller högerregeln, så du väjer för bilen från höger."
+      },
+      {
+        "text": "Köra först eftersom du kör rakt fram",
+        "correct": false,
+        "feedback": "Att köra rakt fram ger ingen förtur i en oskyltad korsning."
+      },
+      {
+        "text": "Den röda bilen ska väja eftersom den ska svänga",
+        "correct": false,
+        "feedback": "Här är det riktningen höger som avgör, och bilen kommer från din höger."
+      },
+      {
+        "text": "Båda har stopplikt och får turas om",
+        "correct": false,
+        "feedback": "Det finns ingen stopplikt; högerregeln avgör vem som väjer."
+      }
+    ],
+    "explanation": "När inga vägmärken, signaler eller väjningslinjer styr korsningen gäller högerregeln. Den röda bilen kommer från din höger, så du är skyldig att lämna den företräde."
+  },
+  {
+    "id": "kor-tr-b-009",
+    "topic": "trafikregler",
+    "tags": [
+      "Scenario",
+      "Väjningsplikt"
+    ],
+    "question": "Du kör den blå bilen (DU) och har väjningsplikt (hajtänder och triangelmärke). En röd bil närmar sig på den korsande vägen. Vad gör du?",
+    "image": "scen_vajningsplikt_korsning.svg",
+    "options": [
+      {
+        "text": "Lämnar företräde åt den röda bilen och kör först när det är fritt",
+        "correct": true,
+        "feedback": "Rätt – väjningsplikten innebär att du ska släppa fram korsande trafik innan du kör."
+      },
+      {
+        "text": "Kör fram eftersom du kom till korsningen först",
+        "correct": false,
+        "feedback": "Vid väjningsplikt spelar ankomstordningen ingen roll; du måste väja."
+      },
+      {
+        "text": "Stannar alltid helt vid stopplinjen",
+        "correct": false,
+        "feedback": "Väjningsplikt kräver inte alltid full stopp, bara att du lämnar företräde."
+      },
+      {
+        "text": "Den röda bilen ska väja för dig",
+        "correct": false,
+        "feedback": "Tvärtom – dina hajtänder och triangelmärke visar att det är du som har väjningsplikt."
+      }
+    ],
+    "explanation": "Triangelmärket tillsammans med väjningslinjen (hajtänderna) anger väjningsplikt. Du ska anpassa farten och lämna företräde åt fordon på den korsande vägen, och får köra först när du inte hindrar dem."
+  },
+  {
+    "id": "kor-tr-b-010",
+    "topic": "trafikregler",
+    "tags": [
+      "Scenario",
+      "Stopplikt"
+    ],
+    "question": "Du kör den blå bilen (DU) fram till en stoppskylt med stopplinje. Du ser ingen annan trafik. Hur ska du agera?",
+    "image": "scen_stopplikt_korsning.svg",
+    "options": [
+      {
+        "text": "Stanna helt vid stopplinjen innan du kör vidare",
+        "correct": true,
+        "feedback": "Rätt – vid stopplikt måste du alltid stanna helt, även om det ser fritt ut."
+      },
+      {
+        "text": "Rulla sakta förbi eftersom det är fritt",
+        "correct": false,
+        "feedback": "Stopplikt kräver att fordonet står helt stilla, inte bara saktar ner."
+      },
+      {
+        "text": "Köra direkt eftersom ingen trafik syns",
+        "correct": false,
+        "feedback": "Du måste stanna helt vid linjen oavsett om trafik syns eller inte."
+      },
+      {
+        "text": "Stanna bara om en bil närmar sig",
+        "correct": false,
+        "feedback": "Vid stopplikt gäller skyldigheten att stanna alltid, inte bara vid trafik."
+      }
+    ],
+    "explanation": "Stopplikt innebär att du måste stanna fordonet helt vid stopplinjen eller, om linje saknas, omedelbart före korsningen. Först därefter, när du har god sikt och inte hindrar någon, får du köra vidare."
+  },
+  {
+    "id": "kor-tr-b-011",
+    "topic": "trafikregler",
+    "tags": [
+      "Scenario",
+      "Huvudled"
+    ],
+    "question": "Du kör den blå bilen (DU) på en liten väg med hajtänder och ska köra ut på en huvudled. En röd bil kommer på huvudleden från vänster. Vad gäller?",
+    "image": "scen_huvudled_infart.svg",
+    "options": [
+      {
+        "text": "Du lämnar företräde åt trafiken på huvudleden",
+        "correct": true,
+        "feedback": "Rätt – trafiken på huvudleden har förtur, så du väjer innan du kör ut."
+      },
+      {
+        "text": "Du har förtur eftersom du ska köra ut på den större vägen",
+        "correct": false,
+        "feedback": "Tvärtom – huvudledstrafiken har alltid förtur framför den som kör in."
+      },
+      {
+        "text": "Den röda bilen ska sakta ner och släppa in dig",
+        "correct": false,
+        "feedback": "Huvudledstrafiken behåller sin förtur; det är du som väjer."
+      },
+      {
+        "text": "Högerregeln gäller och bilen från vänster väjer",
+        "correct": false,
+        "feedback": "Vid huvudled gäller inte högerregeln; väjningslinjen avgör att du väjer."
+      }
+    ],
+    "explanation": "Hajtänderna visar att du har väjningsplikt mot huvudleden, som markeras med den gula romben. Du ska lämna företräde åt all trafik på huvudleden, oavsett från vilket håll den kommer, innan du kör in."
+  },
+  {
+    "id": "kor-tr-b-012",
+    "topic": "trafikregler",
+    "tags": [
+      "Scenario",
+      "Cirkulationsplats"
+    ],
+    "question": "Du kör den blå bilen (DU) söderifrån mot rondellen. En röd bil är redan inne i cirkulationen. Hur ska du agera?",
+    "image": "scen_cirkulationsplats.svg",
+    "options": [
+      {
+        "text": "Lämna företräde åt bilen i rondellen och blinka höger när du ska köra ut",
+        "correct": true,
+        "feedback": "Rätt – du väjer för trafik som redan är i cirkulationen och blinkar höger vid utfart."
+      },
+      {
+        "text": "Köra in direkt eftersom du kör rakt igenom",
+        "correct": false,
+        "feedback": "Du måste först släppa fram fordon som redan befinner sig i rondellen."
+      },
+      {
+        "text": "Bilen i rondellen ska väja för dig",
+        "correct": false,
+        "feedback": "Den som ska in i cirkulationen har väjningsplikt mot trafiken i rondellen."
+      },
+      {
+        "text": "Blinka vänster när du kör in i rondellen",
+        "correct": false,
+        "feedback": "Du blinkar inte in, utan blinkar höger när du ska lämna cirkulationen."
+      }
+    ],
+    "explanation": "Vid en cirkulationsplats har du väjningsplikt mot fordon som redan befinner sig i rondellen. Du ska lämna företräde åt den röda bilen och tända höger blinkers när du är på väg att köra ut."
+  },
+  {
+    "id": "kor-tr-b-013",
+    "topic": "trafikregler",
+    "tags": [
+      "Scenario",
+      "Övergångsställe"
+    ],
+    "question": "Du kör den blå bilen (DU) mot ett övergångsställe där en fotgängare redan har gått ut. Vad ska du göra?",
+    "image": "scen_overgangsstalle.svg",
+    "options": [
+      {
+        "text": "Stanna och låta fotgängaren gå över",
+        "correct": true,
+        "feedback": "Rätt – du ska stanna och släppa förbi fotgängare som gått ut på övergångsstället."
+      },
+      {
+        "text": "Köra om fotgängaren hinner före",
+        "correct": false,
+        "feedback": "Du får inte tvinga dig förbi; fotgängaren på övergångsstället har företräde."
+      },
+      {
+        "text": "Tuta så att fotgängaren skyndar sig",
+        "correct": false,
+        "feedback": "Att tuta är fel; du ska istället stanna och vänta."
+      },
+      {
+        "text": "Sakta ner men fortsätta rulla förbi",
+        "correct": false,
+        "feedback": "Det räcker inte att sakta ner; du måste stanna för fotgängaren."
+      }
+    ],
+    "explanation": "Vid ett obevakat övergångsställe har du väjningsplikt mot gående som har gått ut på eller just ska gå ut på övergångsstället. Du ska stanna och låta fotgängaren passera tryggt."
+  },
+  {
+    "id": "kor-tr-b-014",
+    "topic": "trafikregler",
+    "tags": [
+      "Scenario",
+      "Omkörning"
+    ],
+    "question": "Du kör den blå bilen (DU) bakom en långsam bil. Strax framför svänger vägen så att sikten skyms. Får du köra om?",
+    "image": "scen_omkorning_kurva.svg",
+    "options": [
+      {
+        "text": "Nej, du får inte köra om eftersom sikten är skymd i kurvan",
+        "correct": true,
+        "feedback": "Rätt – omkörning är förbjuden där sikten är skymd, till exempel i en kurva."
+      },
+      {
+        "text": "Ja, om du gör det snabbt hinner du före kurvan",
+        "correct": false,
+        "feedback": "Att köra fort gör inte omkörningen tillåten vid skymd sikt."
+      },
+      {
+        "text": "Ja, om du blinkar och tutar först",
+        "correct": false,
+        "feedback": "Blinkers och tuta ändrar inte att omkörning är förbjuden vid skymd sikt."
+      },
+      {
+        "text": "Ja, så länge ingen mötande bil syns just nu",
+        "correct": false,
+        "feedback": "I en kurva kan mötande dyka upp när som helst; därför är omkörning förbjuden."
+      }
+    ],
+    "explanation": "Du får inte köra om när sikten är skymd, exempelvis strax före eller i en kurva, eller vid backkrön. Eftersom du inte kan se att vägen är fri framåt ska du stanna kvar bakom det långsamma fordonet."
+  },
+  {
+    "id": "kor-tr-b-015",
+    "topic": "trafikregler",
+    "tags": [
+      "Scenario",
+      "Parkering"
+    ],
+    "question": "Du kör den blå bilen (DU) och vill parkera nära korsningen. En ruta ligger mycket nära korsningen (röd) och en längre bort (grön). Var får du parkera?",
+    "image": "scen_parkering_korsning.svg",
+    "options": [
+      {
+        "text": "I den bortre rutan, minst 10 meter från korsningen",
+        "correct": true,
+        "feedback": "Rätt – du måste parkera minst 10 meter från en korsning, alltså i den bortre rutan."
+      },
+      {
+        "text": "I rutan närmast korsningen, eftersom den är ledig",
+        "correct": false,
+        "feedback": "Den rutan ligger inom 10 meter från korsningen och parkering där är förbjuden."
+      },
+      {
+        "text": "I vilken ruta som helst, avståndet spelar ingen roll",
+        "correct": false,
+        "feedback": "Avståndet är avgörande; närmare än 10 meter från korsningen är förbjudet."
+      },
+      {
+        "text": "Du får inte parkera alls i närheten av en korsning",
+        "correct": false,
+        "feedback": "Du får parkera, så länge du håller minst 10 meter avstånd till korsningen."
+      }
+    ],
+    "explanation": "Det är förbjudet att stanna eller parkera närmare än 10 meter från en korsande körbanas närmaste kant. Därför ska du välja den bortre rutan, som ligger på tillräckligt avstånd från korsningen."
+  },
+  {
+    "id": "kor-tr-b-016",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Hastighet"
+    ],
+    "question": "Du ser detta märke på en motorväg. Vad innebär det?",
+    "image": "vagmarke_hastighet_110.svg",
+    "options": [
+      {
+        "text": "Högsta tillåtna hastighet är 110 km/h",
+        "correct": true,
+        "feedback": "Rätt – märket anger att du högst får köra 110 km/h."
+      },
+      {
+        "text": "Rekommenderad hastighet är 110 km/h",
+        "correct": false,
+        "feedback": "Det är en bindande gräns, inte en rekommendation."
+      },
+      {
+        "text": "Du måste hålla minst 110 km/h",
+        "correct": false,
+        "feedback": "Märket anger en övre gräns, inte ett minimum."
+      },
+      {
+        "text": "110 km/h gäller bara i högerfilen",
+        "correct": false,
+        "feedback": "Hastighetsgränsen gäller alla körfält om inget annat anges."
+      }
+    ],
+    "explanation": "Märket är ett hastighetsbegränsningsmärke som anger den högsta tillåtna hastigheten, här 110 km/h. Gränsen gäller tills en ny hastighet anges eller begränsningen upphör."
+  },
+  {
+    "id": "kor-tr-c-001",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Hastighet"
+    ],
+    "question": "Vad betyder detta vägmärke?",
+    "image": "vagmarke_hastighet_40.svg",
+    "options": [
+      {
+        "text": "Högsta tillåtna hastighet är 40 km/h",
+        "correct": true,
+        "feedback": "Rätt – ett gult runt märke med röd ring och en siffra anger högsta tillåtna hastighet, här 40 km/h."
+      },
+      {
+        "text": "Rekommenderad hastighet är 40 km/h",
+        "correct": false,
+        "feedback": "Rekommenderad hastighet visas på en blå fyrkantig skylt, inte ett förbudsmärke."
+      },
+      {
+        "text": "Mötande trafik håller högst 40 km/h",
+        "correct": false,
+        "feedback": "Märket gäller din egen körriktning, inte mötande trafik."
+      },
+      {
+        "text": "Minsta tillåtna hastighet är 40 km/h",
+        "correct": false,
+        "feedback": "Påbjuden lägsta hastighet visas på ett blått runt märke, inte detta."
+      }
+    ],
+    "explanation": "Hastighetsbegränsning (C31) är ett förbudsmärke: gul botten, röd ring och en svart siffra som anger den högsta tillåtna hastigheten. Gränsen gäller tills ett nytt hastighetsmärke eller en ny vägmiljö ändrar den."
+  },
+  {
+    "id": "kor-tr-c-002",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Hastighet"
+    ],
+    "question": "Vilken hastighet gäller när du passerat detta märke?",
+    "image": "vagmarke_hastighet_60.svg",
+    "options": [
+      {
+        "text": "Högst 60 km/h",
+        "correct": true,
+        "feedback": "Rätt – märket anger att högsta tillåtna hastighet är 60 km/h."
+      },
+      {
+        "text": "Högst 50 km/h",
+        "correct": false,
+        "feedback": "Siffran på märket är 60, inte 50."
+      },
+      {
+        "text": "Exakt 60 km/h hela tiden",
+        "correct": false,
+        "feedback": "Det är en övre gräns – du får köra långsammare om situationen kräver det."
+      },
+      {
+        "text": "Minst 60 km/h",
+        "correct": false,
+        "feedback": "Det är en högsta gräns, inte en lägsta."
+      }
+    ],
+    "explanation": "Märket anger högsta tillåtna hastighet, 60 km/h. Du måste alltid anpassa farten efter väglag, sikt och trafik – gränsen är ett tak, inte ett krav att hålla."
+  },
+  {
+    "id": "kor-tr-c-003",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Hastighet"
+    ],
+    "question": "Vad innebär detta vägmärke?",
+    "image": "vagmarke_hastighet_80.svg",
+    "options": [
+      {
+        "text": "Högsta tillåtna hastighet är 80 km/h",
+        "correct": true,
+        "feedback": "Rätt – högsta tillåtna hastighet är 80 km/h tills annat anges."
+      },
+      {
+        "text": "Vägen är en motorväg",
+        "correct": false,
+        "feedback": "Motorväg visas med ett särskilt blått anvisningsmärke, inte ett hastighetsmärke."
+      },
+      {
+        "text": "Rekommenderad hastighet i kurvor är 80 km/h",
+        "correct": false,
+        "feedback": "Det här är en bindande hastighetsgräns, inte en rekommendation."
+      },
+      {
+        "text": "Hastighetsbegränsningen upphör",
+        "correct": false,
+        "feedback": "Att en begränsning upphör visas med ett grått överstruket märke, inte en siffra."
+      }
+    ],
+    "explanation": "Ett hastighetsmärke med siffran 80 betyder att du högst får köra 80 km/h. Gränsen gäller tills du passerar ett nytt hastighetsmärke eller kör in i en ny vägmiljö (t.ex. tättbebyggt område)."
+  },
+  {
+    "id": "kor-tr-c-004",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Hastighet"
+    ],
+    "question": "Vad betyder detta märke?",
+    "image": "vagmarke_hastighet_100.svg",
+    "options": [
+      {
+        "text": "Högsta tillåtna hastighet är 100 km/h",
+        "correct": true,
+        "feedback": "Rätt – siffran anger högsta tillåtna hastighet, 100 km/h."
+      },
+      {
+        "text": "Avståndet till nästa ort är 100 km",
+        "correct": false,
+        "feedback": "Avstånd visas på blå/vita lokaliseringsmärken, inte ett rött ringmärke."
+      },
+      {
+        "text": "Du måste hålla minst 100 km/h",
+        "correct": false,
+        "feedback": "Det är en övre gräns, inte en lägsta hastighet."
+      },
+      {
+        "text": "Vägen har 100 meter kvar",
+        "correct": false,
+        "feedback": "Märket anger hastighet i km/h, inte en sträcka i meter."
+      }
+    ],
+    "explanation": "Hastighetsbegränsning 100 km/h gäller ofta på motortrafikleder och mötesfria landsvägar. Som alltid är det en högsta gräns som du ska underskrida när väglag eller sikt är dåliga."
+  },
+  {
+    "id": "kor-tr-c-005",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Hastighet",
+      "Motorväg"
+    ],
+    "question": "Du ser detta märke på en motorväg. Vad gäller?",
+    "image": "vagmarke_hastighet_120.svg",
+    "options": [
+      {
+        "text": "Du får köra högst 120 km/h",
+        "correct": true,
+        "feedback": "Rätt – 120 km/h är den högsta tillåtna hastigheten där, vanligt på motorväg."
+      },
+      {
+        "text": "Du måste köra exakt 120 km/h",
+        "correct": false,
+        "feedback": "Det är ett tak – du anpassar farten nedåt efter trafik och väglag."
+      },
+      {
+        "text": "120 gäller bara för tunga fordon",
+        "correct": false,
+        "feedback": "Tunga fordon har egna, lägre hastighetsgränser oavsett detta märke."
+      },
+      {
+        "text": "Rekommenderad hastighet är 120 km/h",
+        "correct": false,
+        "feedback": "Det här är en bindande gräns, inte en rekommendation."
+      }
+    ],
+    "explanation": "120 km/h är den högsta hastighetsgräns som används i Sverige och förekommer på vissa motorvägar. Tunga lastbilar och bilar med släp har lägre gränser även där skylten visar 120."
+  },
+  {
+    "id": "kor-tr-c-006",
+    "topic": "trafikregler",
+    "tags": [
+      "Vägmärken",
+      "Hastighet"
+    ],
+    "question": "Vad betyder detta vägmärke?",
+    "image": "vagmarke_hastighet_50.svg",
+    "options": [
+      {
+        "text": "Högsta tillåtna hastighet är 50 km/h",
+        "correct": true,
+        "feedback": "Rätt – märket anger att du högst får köra 50 km/h."
+      },
+      {
+        "text": "Bashastigheten utanför tättbebyggt område",
+        "correct": false,
+        "feedback": "Utanför tättbebyggt område är bashastigheten 70 km/h, inte 50."
+      },
+      {
+        "text": "Slut på tättbebyggt område",
+        "correct": false,
+        "feedback": "Tättbebyggt område och dess slut visas med särskilda blå/överstrukna ortsmärken."
+      },
+      {
+        "text": "Parkering tillåten i 50 minuter",
+        "correct": false,
+        "feedback": "Parkeringstid visas på en parkeringsskylt med tilläggstavla, inte detta märke."
+      }
+    ],
+    "explanation": "Ett hastighetsmärke med 50 anger högsta tillåtna hastighet 50 km/h. Det motsvarar ofta bashastigheten inom tättbebyggt område, men gäller överallt där märket är uppsatt tills annat anges."
+  },
+  {
+    "id": "kor-ts-a-001",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Stoppsträcka",
+      "Fysik"
+    ],
+    "question": "Vad händer ungefär med bromssträckan om du dubblar hastigheten?",
+    "image": null,
+    "options": [
+      {
+        "text": "Den fyrdubblas",
+        "correct": true,
+        "feedback": "Rätt – bromssträckan växer med kvadraten på hastigheten, så dubbel fart ger ungefär fyra gånger längre bromssträcka."
+      },
+      {
+        "text": "Den fördubblas",
+        "correct": false,
+        "feedback": "Bromssträckan ökar mer än så – sambandet är kvadratiskt, inte linjärt."
+      },
+      {
+        "text": "Den blir tre gånger längre",
+        "correct": false,
+        "feedback": "Sambandet är kvadratiskt, så det blir ungefär fyrdubbelt, inte tredubbelt."
+      },
+      {
+        "text": "Den påverkas inte",
+        "correct": false,
+        "feedback": "Hastigheten har mycket stor effekt på bromssträckan."
+      }
+    ],
+    "explanation": "Bromssträckan är proportionell mot hastigheten i kvadrat. Dubblad hastighet ger därför ungefär fyrdubbel bromssträcka, medan reaktionssträckan bara fördubblas."
+  },
+  {
+    "id": "kor-ts-a-002",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Stoppsträcka"
+    ],
+    "question": "Vad består den totala stoppsträckan av?",
+    "image": null,
+    "options": [
+      {
+        "text": "Reaktionssträcka plus bromssträcka",
+        "correct": true,
+        "feedback": "Rätt – stoppsträckan är summan av den sträcka du hinner köra under din reaktionstid och den sträcka det tar att bromsa in fordonet."
+      },
+      {
+        "text": "Endast bromssträckan",
+        "correct": false,
+        "feedback": "Du måste också räkna med sträckan du kör innan du hinner reagera och börja bromsa."
+      },
+      {
+        "text": "Endast reaktionssträckan",
+        "correct": false,
+        "feedback": "Själva inbromsningen står för en stor del av stoppsträckan och får inte glömmas bort."
+      },
+      {
+        "text": "Bromssträcka minus reaktionssträcka",
+        "correct": false,
+        "feedback": "Sträckorna ska adderas, inte subtraheras."
+      }
+    ],
+    "explanation": "Stoppsträckan är reaktionssträcka plus bromssträcka. Reaktionssträckan är vad du kör innan du börjar bromsa, bromssträckan är vad det tar att stanna när bromsen väl griper."
+  },
+  {
+    "id": "kor-ts-a-003",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Reaktionssträcka",
+      "Beräkning"
+    ],
+    "question": "Hur lång blir reaktionssträckan ungefär vid 70 km/h med 1 sekunds reaktionstid?",
+    "image": null,
+    "options": [
+      {
+        "text": "21 meter",
+        "correct": true,
+        "feedback": "Rätt – 7 × 1 × 3 = 21 meter, enligt tumregeln (hastigheten utan sista siffran gånger reaktionstid gånger 3)."
+      },
+      {
+        "text": "15 meter",
+        "correct": false,
+        "feedback": "15 meter är reaktionssträckan vid 50 km/h, inte vid 70 km/h."
+      },
+      {
+        "text": "27 meter",
+        "correct": false,
+        "feedback": "27 meter gäller ungefär vid 90 km/h, inte 70 km/h."
+      },
+      {
+        "text": "35 meter",
+        "correct": false,
+        "feedback": "Det är för långt – tumregeln ger 21 meter vid 70 km/h."
+      }
+    ],
+    "explanation": "Reaktionssträckan beräknas ungefär som hastigheten utan sista siffran gånger reaktionstiden gånger 3. Vid 70 km/h blir det 7 × 1 × 3 = 21 meter."
+  },
+  {
+    "id": "kor-ts-a-004",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Reaktionssträcka",
+      "Beräkning"
+    ],
+    "question": "Hur lång blir reaktionssträckan ungefär vid 50 km/h med 1 sekunds reaktionstid?",
+    "image": null,
+    "options": [
+      {
+        "text": "15 meter",
+        "correct": true,
+        "feedback": "Rätt – 5 × 1 × 3 = 15 meter enligt tumregeln."
+      },
+      {
+        "text": "10 meter",
+        "correct": false,
+        "feedback": "10 meter är snarare bromssträckan vid 50 km/h på torr asfalt."
+      },
+      {
+        "text": "21 meter",
+        "correct": false,
+        "feedback": "21 meter motsvarar 70 km/h, inte 50 km/h."
+      },
+      {
+        "text": "25 meter",
+        "correct": false,
+        "feedback": "25 meter är hela stoppsträckan vid 50 km/h, inte bara reaktionssträckan."
+      }
+    ],
+    "explanation": "Reaktionssträckan vid 50 km/h med en sekunds reaktionstid är cirka 5 × 1 × 3 = 15 meter. Lägger man till bromssträckan på cirka 10 meter blir stoppsträckan ungefär 25 meter."
+  },
+  {
+    "id": "kor-ts-a-005",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Stoppsträcka",
+      "Beräkning"
+    ],
+    "question": "Hur lång blir den totala stoppsträckan ungefär vid 50 km/h på torr asfalt med bra däck?",
+    "image": null,
+    "options": [
+      {
+        "text": "Cirka 25 meter",
+        "correct": true,
+        "feedback": "Rätt – 15 meter reaktionssträcka plus 10 meter bromssträcka blir ungefär 25 meter."
+      },
+      {
+        "text": "Cirka 10 meter",
+        "correct": false,
+        "feedback": "10 meter är bara bromssträckan – reaktionssträckan tillkommer."
+      },
+      {
+        "text": "Cirka 15 meter",
+        "correct": false,
+        "feedback": "15 meter är bara reaktionssträckan – inbromsningen tillkommer."
+      },
+      {
+        "text": "Cirka 40 meter",
+        "correct": false,
+        "feedback": "40 meter är för långt vid 50 km/h på torr asfalt."
+      }
+    ],
+    "explanation": "Vid 50 km/h är reaktionssträckan cirka 15 meter och bromssträckan cirka 10 meter. Tillsammans blir stoppsträckan ungefär 25 meter på torr asfalt med bra däck."
+  },
+  {
+    "id": "kor-ts-a-006",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Bromssträcka",
+      "Beräkning"
+    ],
+    "question": "Hur lång blir bromssträckan ungefär vid 100 km/h på torr asfalt med bra däck och bromsar?",
+    "image": null,
+    "options": [
+      {
+        "text": "Cirka 40 meter",
+        "correct": true,
+        "feedback": "Rätt – (100/10)² × 0,4 = 100 × 0,4 = 40 meter."
+      },
+      {
+        "text": "Cirka 20 meter",
+        "correct": false,
+        "feedback": "20 meter motsvarar ungefär 70 km/h, inte 100 km/h."
+      },
+      {
+        "text": "Cirka 10 meter",
+        "correct": false,
+        "feedback": "10 meter gäller vid 50 km/h – vid 100 km/h är bromssträckan mycket längre."
+      },
+      {
+        "text": "Cirka 60 meter",
+        "correct": false,
+        "feedback": "Det är för långt på torr asfalt – formeln ger cirka 40 meter."
+      }
+    ],
+    "explanation": "Bromssträckan kan uppskattas som (hastighet/10)² × 0,4. Vid 100 km/h blir det 10² × 0,4 = 40 meter på torr asfalt med bra däck."
+  },
+  {
+    "id": "kor-ts-a-007",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Bromssträcka",
+      "Beräkning"
+    ],
+    "question": "Hur lång blir bromssträckan ungefär vid 50 km/h på torr asfalt med bra däck?",
+    "image": null,
+    "options": [
+      {
+        "text": "Cirka 10 meter",
+        "correct": true,
+        "feedback": "Rätt – (50/10)² × 0,4 = 25 × 0,4 = 10 meter."
+      },
+      {
+        "text": "Cirka 5 meter",
+        "correct": false,
+        "feedback": "Det är för kort – formeln ger cirka 10 meter vid 50 km/h."
+      },
+      {
+        "text": "Cirka 15 meter",
+        "correct": false,
+        "feedback": "15 meter är reaktionssträckan vid 50 km/h, inte bromssträckan."
+      },
+      {
+        "text": "Cirka 25 meter",
+        "correct": false,
+        "feedback": "25 meter är hela stoppsträckan vid 50 km/h, inte enbart bromssträckan."
+      }
+    ],
+    "explanation": "Bromssträckan uppskattas som (hastighet/10)² × 0,4. Vid 50 km/h blir det 5² × 0,4 = 10 meter på torr asfalt med bra däck och bromsar."
+  },
+  {
+    "id": "kor-ts-a-008",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Reaktionssträcka",
+      "Risk"
+    ],
+    "question": "Vilket av följande ökar din reaktionssträcka men påverkar inte själva bromssträckan?",
+    "image": null,
+    "options": [
+      {
+        "text": "Trötthet",
+        "correct": true,
+        "feedback": "Rätt – trötthet förlänger reaktionstiden och därmed reaktionssträckan, men det fysiska bromsförloppet påverkas inte."
+      },
+      {
+        "text": "Vått väglag",
+        "correct": false,
+        "feedback": "Vått väglag förlänger främst bromssträckan, inte reaktionssträckan."
+      },
+      {
+        "text": "Slitna bromsbelägg",
+        "correct": false,
+        "feedback": "Slitna bromsar påverkar bromssträckan, inte din reaktionstid."
+      },
+      {
+        "text": "Dåligt mönsterdjup",
+        "correct": false,
+        "feedback": "Mönsterdjupet påverkar greppet och därmed bromssträckan, inte reaktionssträckan."
+      }
+    ],
+    "explanation": "Reaktionssträckan beror på din reaktionstid, som förlängs av trötthet, alkohol och distraktion. Bromssträckan beror i stället på fart, väglag, däck och bromsar."
+  },
+  {
+    "id": "kor-ts-a-009",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Reaktionssträcka",
+      "Alkohol"
+    ],
+    "question": "Hur påverkar alkohol i blodet din körning när det gäller stoppsträckan?",
+    "image": null,
+    "options": [
+      {
+        "text": "Reaktionstiden blir längre, vilket förlänger reaktionssträckan",
+        "correct": true,
+        "feedback": "Rätt – alkohol gör att du reagerar långsammare, så du hinner köra längre innan du börjar bromsa."
+      },
+      {
+        "text": "Bromssträckan blir kortare",
+        "correct": false,
+        "feedback": "Alkohol kan inte förkorta bromssträckan – tvärtom blir hela stoppsträckan längre."
+      },
+      {
+        "text": "Bara bromssträckan förlängs",
+        "correct": false,
+        "feedback": "Det är främst reaktionssträckan som förlängs eftersom reaktionstiden blir längre."
+      },
+      {
+        "text": "Inget påverkas så länge du kör långsamt",
+        "correct": false,
+        "feedback": "Alkohol förlänger reaktionstiden oavsett hastighet och försämrar omdömet."
+      }
+    ],
+    "explanation": "Alkohol förlänger reaktionstiden, vilket gör reaktionssträckan längre och hela stoppsträckan ökar. Dessutom försämras omdöme och precision, vilket gör körningen farligare."
+  },
+  {
+    "id": "kor-ts-a-010",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Bromssträcka",
+      "Väglag"
+    ],
+    "question": "Hur mycket längre kan bromssträckan bli på is jämfört med på torr asfalt?",
+    "image": null,
+    "options": [
+      {
+        "text": "Ungefär tio gånger så lång",
+        "correct": true,
+        "feedback": "Rätt – på blank is kan bromssträckan bli ungefär tio gånger längre på grund av det dåliga greppet."
+      },
+      {
+        "text": "Ungefär lika lång",
+        "correct": false,
+        "feedback": "Greppet på is är mycket sämre, så bromssträckan blir betydligt längre."
+      },
+      {
+        "text": "Ungefär dubbelt så lång",
+        "correct": false,
+        "feedback": "På is blir skillnaden mycket större än så – upp till cirka tio gånger."
+      },
+      {
+        "text": "Något kortare",
+        "correct": false,
+        "feedback": "Bromssträckan blir aldrig kortare på halt underlag – den blir mycket längre."
+      }
+    ],
+    "explanation": "På is är friktionen mellan däck och väg mycket låg. Därför kan bromssträckan bli ungefär tio gånger längre än på torr asfalt, vilket kräver mycket lägre fart och större avstånd."
+  },
+  {
+    "id": "kor-ts-a-011",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Avstånd",
+      "Tresekundersregeln"
+    ],
+    "question": "Vad innebär tresekundersregeln?",
+    "image": null,
+    "options": [
+      {
+        "text": "Du ska ha minst tre sekunders avstånd till fordonet framför",
+        "correct": true,
+        "feedback": "Rätt – tiden mellan att framförvarande passerar en punkt och att du gör det bör vara minst tre sekunder."
+      },
+      {
+        "text": "Du ska blinka i minst tre sekunder före varje sväng",
+        "correct": false,
+        "feedback": "Det handlar om avstånd till fordonet framför, inte om blinkers."
+      },
+      {
+        "text": "Du ska titta i backspegeln var tredje sekund",
+        "correct": false,
+        "feedback": "Regeln gäller avståndet framåt, inte hur ofta du tittar bakåt."
+      },
+      {
+        "text": "Du får stanna högst tre sekunder vid stopplikt",
+        "correct": false,
+        "feedback": "Det har inget med stopplikt att göra – regeln gäller avstånd till fordonet framför."
+      }
+    ],
+    "explanation": "Tresekundersregeln innebär att det ska ta minst tre sekunder från att fordonet framför passerar en punkt tills du själv når den. I dåligt väglag bör avståndet ökas ytterligare."
+  },
+  {
+    "id": "kor-ts-a-012",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Avstånd",
+      "Väglag"
+    ],
+    "question": "Hur bör du anpassa avståndet till fordonet framför i halt väglag?",
+    "image": null,
+    "options": [
+      {
+        "text": "Öka avståndet eftersom bromssträckan blir längre",
+        "correct": true,
+        "feedback": "Rätt – på halt underlag blir bromssträckan längre, så du behöver betydligt större avstånd för att hinna stanna."
+      },
+      {
+        "text": "Minska avståndet för att hänga med i trafiken",
+        "correct": false,
+        "feedback": "Att ligga närmare i halt väglag är farligt eftersom du inte hinner stanna i tid."
+      },
+      {
+        "text": "Behåll exakt samma avstånd som på torr väg",
+        "correct": false,
+        "feedback": "Samma avstånd räcker inte när bromssträckan är längre på halt underlag."
+      },
+      {
+        "text": "Avståndet spelar ingen roll om du kör sakta",
+        "correct": false,
+        "feedback": "Avståndet är alltid viktigt, och på halt underlag krävs extra marginal."
+      }
+    ],
+    "explanation": "I halt väglag blir bromssträckan mycket längre. Därför bör avståndet till fordonet framför ökas rejält, ofta långt mer än de tre sekunder som gäller vid normalt väglag."
+  },
+  {
+    "id": "kor-ts-a-013",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Vattenplaning",
+      "Väglag"
+    ],
+    "question": "Vad ökar risken för vattenplaning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Hög hastighet, mycket vatten och dåligt mönsterdjup",
+        "correct": true,
+        "feedback": "Rätt – ju högre fart och ju mindre mönsterdjup, desto sämre kan däcken leda bort vattnet och greppet försvinner."
+      },
+      {
+        "text": "Låg hastighet på torr väg",
+        "correct": false,
+        "feedback": "På torr väg och vid låg fart finns ingen risk för vattenplaning."
+      },
+      {
+        "text": "Nya däck med djupt mönster",
+        "correct": false,
+        "feedback": "Bra mönsterdjup minskar tvärtom risken för vattenplaning."
+      },
+      {
+        "text": "Att bromsa mjukt i en uppförsbacke",
+        "correct": false,
+        "feedback": "Det som styr risken är fart, vattenmängd och däckens mönsterdjup."
+      }
+    ],
+    "explanation": "Vattenplaning uppstår när däcken inte hinner pressa undan vattnet och i stället glider på en vattenfilm. Risken ökar med hög fart, mycket vatten och slitna däck med litet mönsterdjup."
+  },
+  {
+    "id": "kor-ts-a-014",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Vattenplaning"
+    ],
+    "question": "Vad är lämpligast att göra för att minska risken för vattenplaning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Sänka hastigheten",
+        "correct": true,
+        "feedback": "Rätt – vid lägre fart hinner däcken leda bort vattnet och greppet behålls bättre."
+      },
+      {
+        "text": "Öka hastigheten för att 'plana ovanpå' vattnet",
+        "correct": false,
+        "feedback": "Högre fart ökar tvärtom risken för vattenplaning."
+      },
+      {
+        "text": "Bromsa kraftigt och tvärt",
+        "correct": false,
+        "feedback": "Kraftig inbromsning kan låsa hjulen och förvärra situationen – sänk farten i god tid i stället."
+      },
+      {
+        "text": "Släppa ratten en stund",
+        "correct": false,
+        "feedback": "Du ska alltid behålla kontrollen över fordonet med båda händerna på ratten."
+      }
+    ],
+    "explanation": "Den viktigaste åtgärden mot vattenplaning är att sänka hastigheten, eftersom risken ökar kraftigt med farten. Bra mönsterdjup på däcken är också avgörande."
+  },
+  {
+    "id": "kor-ts-a-015",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Kurva",
+      "Fysik"
+    ],
+    "question": "Hur påverkas centrifugalkraften i en kurva om du ökar hastigheten?",
+    "image": null,
+    "options": [
+      {
+        "text": "Den ökar med kvadraten på hastigheten",
+        "correct": true,
+        "feedback": "Rätt – dubblad fart i en kurva ger ungefär fyra gånger så stor sidokraft, vilket kraftigt ökar risken att glida ut."
+      },
+      {
+        "text": "Den minskar med högre fart",
+        "correct": false,
+        "feedback": "Tvärtom – kraften som vill dra fordonet utåt växer med farten."
+      },
+      {
+        "text": "Den är oberoende av hastigheten",
+        "correct": false,
+        "feedback": "Hastigheten har stor betydelse; kraften växer med kvadraten på farten."
+      },
+      {
+        "text": "Den ökar exakt i takt med hastigheten",
+        "correct": false,
+        "feedback": "Sambandet är kvadratiskt, inte linjärt – dubbel fart ger cirka fyrdubbel kraft."
+      }
+    ],
+    "explanation": "Centrifugalkraften i en kurva växer med kvadraten på hastigheten. Dubblad fart ger ungefär fyrdubbel sidokraft, vilket är varför man ska sänka farten innan kurvan, inte i den."
+  },
+  {
+    "id": "kor-ts-a-016",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Kurva"
+    ],
+    "question": "När är det lämpligast att anpassa hastigheten inför en kurva?",
+    "image": null,
+    "options": [
+      {
+        "text": "Innan du kör in i kurvan",
+        "correct": true,
+        "feedback": "Rätt – sänk farten före kurvan så att du kan rulla eller gasa lätt igenom den med god kontroll."
+      },
+      {
+        "text": "Mitt inne i kurvan genom kraftig inbromsning",
+        "correct": false,
+        "feedback": "Att bromsa hårt mitt i kurvan kan göra att greppet släpper och fordonet glider ut."
+      },
+      {
+        "text": "Först när du ser kurvans utgång",
+        "correct": false,
+        "feedback": "Då är det ofta för sent – farten måste vara anpassad redan vid infarten."
+      },
+      {
+        "text": "Efter kurvan, vid behov",
+        "correct": false,
+        "feedback": "Anpassningen måste ske före kurvan eftersom sidokraften är som störst inne i den."
+      }
+    ],
+    "explanation": "Hastigheten ska anpassas innan kurvan eftersom centrifugalkraften ökar med farten. Bromsar du hårt inne i kurvan riskerar du att tappa greppet och glida ur kurvan."
+  },
+  {
+    "id": "kor-ts-a-017",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Tunga fordon",
+      "Bromssträcka"
+    ],
+    "question": "Hur skiljer sig ett tungt lastat fordons bromssträcka jämfört med en personbils?",
+    "image": null,
+    "options": [
+      {
+        "text": "Den är längre på grund av den större massan",
+        "correct": true,
+        "feedback": "Rätt – ett tungt fordon har mer rörelseenergi och behöver längre sträcka för att stanna."
+      },
+      {
+        "text": "Den är kortare eftersom tyngden ger bättre grepp",
+        "correct": false,
+        "feedback": "Trots mer tyngd blir bromssträckan längre eftersom den stora massan ska bromsas in."
+      },
+      {
+        "text": "Den är exakt densamma",
+        "correct": false,
+        "feedback": "Massan har stor betydelse och gör tunga fordons bromssträcka längre."
+      },
+      {
+        "text": "Den beror bara på däcken, inte på vikten",
+        "correct": false,
+        "feedback": "Vikten har stor betydelse för bromssträckan, även om däcken också spelar roll."
+      }
+    ],
+    "explanation": "Ett tungt lastat fordon har stor rörelseenergi och behöver därför längre bromssträcka. Det är ett skäl att hålla extra avstånd både framför och bakom tunga fordon."
+  },
+  {
+    "id": "kor-ts-a-018",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Reaktionssträcka",
+      "Distraktion"
+    ],
+    "question": "Hur långt hinner du köra vid 90 km/h under en sekunds reaktionstid?",
+    "image": null,
+    "options": [
+      {
+        "text": "Cirka 27 meter",
+        "correct": true,
+        "feedback": "Rätt – 9 × 1 × 3 = 27 meter, en sträcka du kör 'blint' om du tittar bort en sekund."
+      },
+      {
+        "text": "Cirka 9 meter",
+        "correct": false,
+        "feedback": "9 meter är för kort – tumregeln ger 27 meter vid 90 km/h."
+      },
+      {
+        "text": "Cirka 18 meter",
+        "correct": false,
+        "feedback": "18 meter motsvarar ungefär 60 km/h, inte 90 km/h."
+      },
+      {
+        "text": "Cirka 40 meter",
+        "correct": false,
+        "feedback": "40 meter är för långt – tumregeln ger 27 meter vid 90 km/h."
+      }
+    ],
+    "explanation": "Vid 90 km/h kör du cirka 9 × 1 × 3 = 27 meter under en sekunds reaktionstid. Att exempelvis titta på mobilen en sekund innebär alltså att du kör en lång sträcka utan uppmärksamhet."
+  },
+  {
+    "id": "kor-ts-a-019",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Stoppsträcka",
+      "Fysik"
+    ],
+    "question": "Varför blir stoppsträckan så mycket längre vid högre hastighet?",
+    "image": null,
+    "options": [
+      {
+        "text": "Bromssträckan växer med kvadraten på hastigheten medan reaktionssträckan växer linjärt",
+        "correct": true,
+        "feedback": "Rätt – bromsdelen ökar mycket snabbt vid högre fart, vilket gör att hela stoppsträckan växer kraftigt."
+      },
+      {
+        "text": "Endast reaktionssträckan ökar med farten",
+        "correct": false,
+        "feedback": "Reaktionssträckan ökar visserligen, men det är bromssträckans kvadratiska tillväxt som dominerar."
+      },
+      {
+        "text": "Stoppsträckan minskar faktiskt vid högre fart",
+        "correct": false,
+        "feedback": "Tvärtom – stoppsträckan blir längre ju högre farten är."
+      },
+      {
+        "text": "Det beror bara på däckens ålder",
+        "correct": false,
+        "feedback": "Däcken påverkar, men huvudorsaken är att bromssträckan växer med farten i kvadrat."
+      }
+    ],
+    "explanation": "Reaktionssträckan ökar i proportion till hastigheten, men bromssträckan ökar med hastigheten i kvadrat. Därför växer den totala stoppsträckan mycket snabbt när farten ökar."
+  },
+  {
+    "id": "kor-ts-a-020",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Bromssträcka",
+      "Väglag"
+    ],
+    "question": "Vilket underlag ger längst bromssträcka av följande, allt annat lika?",
+    "image": null,
+    "options": [
+      {
+        "text": "Is",
+        "correct": true,
+        "feedback": "Rätt – is har lägst friktion och ger därför klart längst bromssträcka av alternativen."
+      },
+      {
+        "text": "Torr asfalt",
+        "correct": false,
+        "feedback": "Torr asfalt ger bäst grepp och därmed kortast bromssträcka."
+      },
+      {
+        "text": "Våt asfalt",
+        "correct": false,
+        "feedback": "Våt asfalt förlänger bromssträckan, men is ger ändå betydligt sämre grepp."
+      },
+      {
+        "text": "Grusväg",
+        "correct": false,
+        "feedback": "Grus ger sämre grepp än asfalt, men is ger ännu lägre friktion och längre bromssträcka."
+      }
+    ],
+    "explanation": "Bromssträckan beror på friktionen mellan däck och väg. Is har lägst friktion och ger därför längst bromssträcka, följt av grus och våt asfalt, medan torr asfalt ger kortast."
+  },
+  {
+    "id": "kor-ts-b-001",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Oskyddade",
+      "Hastighet"
+    ],
+    "question": "Hur stor är risken ungefär att en fotgängare dör om hen blir påkörd i 50 km/h jämfört med 30 km/h?",
+    "image": null,
+    "options": [
+      {
+        "text": "Klart större – ca 80 % vid 50 km/h mot ca 10 % vid 30 km/h",
+        "correct": true,
+        "feedback": "Rätt – krockvåldet ökar kraftigt med farten; vid 50 km/h dör ca 80 %, vid 30 km/h ca 10 %."
+      },
+      {
+        "text": "Ungefär samma risk oavsett fart",
+        "correct": false,
+        "feedback": "Fel – risken skiljer sig dramatiskt eftersom farten avgör krockvåldet."
+      },
+      {
+        "text": "Något lägre risk vid 50 km/h",
+        "correct": false,
+        "feedback": "Tvärtom – högre fart ger mycket högre dödsrisk."
+      },
+      {
+        "text": "Försumbar risk i båda fallen",
+        "correct": false,
+        "feedback": "Vid 50 km/h är dödsrisken mycket hög för en oskyddad fotgängare."
+      }
+    ],
+    "explanation": "Krockvåldet växer snabbt med hastigheten. Därför är 30 km/h ofta gränsen där många oskyddade trafikanter rör sig. Sänkt fart i tätort räddar liv."
+  },
+  {
+    "id": "kor-ts-b-002",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Oskyddade",
+      "Barn"
+    ],
+    "question": "Varför kräver barn extra hänsyn i trafiken?",
+    "image": null,
+    "options": [
+      {
+        "text": "De är oberäkneliga, syns dåligt och kan inte bedöma fart och avstånd",
+        "correct": true,
+        "feedback": "Rätt – barn agerar impulsivt och har svårt att tolka trafiksituationer."
+      },
+      {
+        "text": "De följer alltid trafikreglerna bättre än vuxna",
+        "correct": false,
+        "feedback": "Fel – barn har sällan full förståelse för reglerna."
+      },
+      {
+        "text": "De rör sig alltid långsamt och förutsägbart",
+        "correct": false,
+        "feedback": "Fel – barn kan plötsligt springa ut i vägen."
+      },
+      {
+        "text": "De hörs och syns extra bra på grund av sin längd",
+        "correct": false,
+        "feedback": "Fel – barn är ofta korta och döljs lätt bakom hinder."
+      }
+    ],
+    "explanation": "Barn kan inte överblicka trafiken som vuxna. De handlar impulsivt och bedömer fart och avstånd dåligt, därför måste du sänka farten och vara beredd där barn finns."
+  },
+  {
+    "id": "kor-ts-b-003",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Barn",
+      "Scenario",
+      "Hastighet"
+    ],
+    "question": "Du kör i ett bostadsområde och ser en boll rulla ut i vägen med ett barn intill vägkanten. Hur bör du agera?",
+    "image": "scen_barn_boll.svg",
+    "options": [
+      {
+        "text": "Sänk farten direkt och var beredd att stanna helt",
+        "correct": true,
+        "feedback": "Rätt – barnet kan springa ut efter bollen utan att se sig för."
+      },
+      {
+        "text": "Tuta och fortsätt i samma fart",
+        "correct": false,
+        "feedback": "Fel – en tutning hindrar inte att barnet rusar ut, och farten är för hög."
+      },
+      {
+        "text": "Gasa förbi snabbt innan barnet hinner reagera",
+        "correct": false,
+        "feedback": "Fel – högre fart ökar både risken och krockvåldet."
+      },
+      {
+        "text": "Väja åt vänster utan att sänka farten",
+        "correct": false,
+        "feedback": "Fel – du vet inte vart barnet tar vägen; sänk farten först."
+      }
+    ],
+    "explanation": "En boll som rullar ut är en klassisk varningssignal – ett barn följer ofta efter. Sänk farten och var beredd att stanna helt."
+  },
+  {
+    "id": "kor-ts-b-004",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Fotgängare",
+      "Scenario",
+      "Företräde"
+    ],
+    "question": "Du närmar dig ett övergångsställe och en fotgängare är på väg ut i körbanan. Vad gäller?",
+    "image": "scen_overgangsstalle.svg",
+    "options": [
+      {
+        "text": "Du ska stanna och lämna fotgängaren företräde",
+        "correct": true,
+        "feedback": "Rätt – vid obevakat övergångsställe har gående som gått ut eller är på väg ut företräde."
+      },
+      {
+        "text": "Fotgängaren måste vänta tills du passerat",
+        "correct": false,
+        "feedback": "Fel – du har väjningsplikt mot gående vid övergångsstället."
+      },
+      {
+        "text": "Du behöver bara sakta in om någon redan står mitt i banan",
+        "correct": false,
+        "feedback": "Fel – företrädet gäller även den som är på väg ut."
+      },
+      {
+        "text": "Du kör förbi om du hinner före fotgängaren",
+        "correct": false,
+        "feedback": "Fel – att 'hinna före' är inte tillåtet vid övergångsställe."
+      }
+    ],
+    "explanation": "Vid övergångsställe har du väjningsplikt. En gående som är på väg ut ska få passera, så stanna och lämna företräde."
+  },
+  {
+    "id": "kor-ts-b-005",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Doda-vinkeln",
+      "Sväng"
+    ],
+    "question": "Hur kontrollerar du den döda vinkeln på rätt sätt innan ett filbyte eller en sväng?",
+    "image": null,
+    "options": [
+      {
+        "text": "Titta i spegeln och vrid dessutom på huvudet",
+        "correct": true,
+        "feedback": "Rätt – speglar täcker inte allt, så en blick över axeln behövs."
+      },
+      {
+        "text": "Det räcker att titta i innerbackspegeln",
+        "correct": false,
+        "feedback": "Fel – innerspegeln visar inte området vid sidan av bilen."
+      },
+      {
+        "text": "Tuta så att andra flyttar sig",
+        "correct": false,
+        "feedback": "Fel – en tutning ersätter inte en kontroll."
+      },
+      {
+        "text": "Lita helt på sidospeglarna",
+        "correct": false,
+        "feedback": "Fel – det finns alltid en död vinkel som speglarna inte täcker."
+      }
+    ],
+    "explanation": "Döda vinkeln är området speglarna inte visar. Kombinera spegelblick med en vridning av huvudet innan du svänger eller byter fil."
+  },
+  {
+    "id": "kor-ts-b-006",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Doda-vinkeln",
+      "Tunga-fordon"
+    ],
+    "question": "Du står med cykel eller bil i en korsning bredvid en lastbil som ska svänga höger. Vad är den största faran?",
+    "image": null,
+    "options": [
+      {
+        "text": "Du kan befinna dig i lastbilens stora döda vinkel och bli överkörd vid svängen",
+        "correct": true,
+        "feedback": "Rätt – tunga fordon har stora döda vinklar, särskilt på höger sida."
+      },
+      {
+        "text": "Lastbilen syns för dåligt så du missar den",
+        "correct": false,
+        "feedback": "Fel – lastbilen är stor och tydlig; problemet är att föraren inte ser dig."
+      },
+      {
+        "text": "Lastbilen accelererar snabbare än dig",
+        "correct": false,
+        "feedback": "Fel – accelerationen är inte huvudfaran här."
+      },
+      {
+        "text": "Det finns ingen särskild fara så länge du står stilla",
+        "correct": false,
+        "feedback": "Fel – att stå still i den döda vinkeln är just det farliga."
+      }
+    ],
+    "explanation": "Tunga fordon har stora döda vinklar, framför allt på höger sida. Stå aldrig bredvid en lastbil i en korsning – föraren kanske inte ser dig vid svängen."
+  },
+  {
+    "id": "kor-ts-b-007",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Trotthet"
+    ],
+    "question": "Vad är det enda som verkligt botar trötthet vid ratten?",
+    "image": null,
+    "options": [
+      {
+        "text": "Sömn",
+        "correct": true,
+        "feedback": "Rätt – bara sömn återställer vakenheten på riktigt."
+      },
+      {
+        "text": "En kopp kaffe",
+        "correct": false,
+        "feedback": "Fel – kaffe ger bara en kort, tillfällig effekt."
+      },
+      {
+        "text": "Att veva ner rutan och få frisk luft",
+        "correct": false,
+        "feedback": "Fel – frisk luft piggar bara upp för stunden."
+      },
+      {
+        "text": "Att höja musiken och sjunga med",
+        "correct": false,
+        "feedback": "Fel – det maskerar tröttheten men tar inte bort den."
+      }
+    ],
+    "explanation": "Kaffe, frisk luft och musik ger bara tillfällig effekt. Är du trött ska du stanna och sova – det är det enda som hjälper på riktigt."
+  },
+  {
+    "id": "kor-ts-b-008",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Trotthet",
+      "Mikrosomn"
+    ],
+    "question": "Vad är mikrosömn och varför är den så farlig vid bilkörning?",
+    "image": null,
+    "options": [
+      {
+        "text": "En kort ofrivillig insomning på några sekunder där du tappar kontrollen utan att märka det",
+        "correct": true,
+        "feedback": "Rätt – några sekunders bortdomning i hög fart innebär lång sträcka i blindo."
+      },
+      {
+        "text": "En medveten kort vilopaus du tar med öppna ögon",
+        "correct": false,
+        "feedback": "Fel – mikrosömn är ofrivillig och du är inte medveten om den."
+      },
+      {
+        "text": "En lätt dåsighet som inte påverkar körningen",
+        "correct": false,
+        "feedback": "Fel – den påverkar körningen kraftigt eftersom du somnar till."
+      },
+      {
+        "text": "En typ av yrsel som går över av sig själv",
+        "correct": false,
+        "feedback": "Fel – mikrosömn är en kort insomning, inte yrsel."
+      }
+    ],
+    "explanation": "Mikrosömn är en ofrivillig insomning på några sekunder. I hög fart hinner bilen färdas långt medan du i praktiken sover – därför är trötthet en vanlig olycksorsak."
+  },
+  {
+    "id": "kor-ts-b-009",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Trotthet",
+      "Paus"
+    ],
+    "question": "Ungefär hur ofta bör du ta en paus på en längre bilresa för att hålla dig pigg?",
+    "image": null,
+    "options": [
+      {
+        "text": "Cirka varannan timme",
+        "correct": true,
+        "feedback": "Rätt – regelbundna pauser ungefär varannan timme motverkar trötthet."
+      },
+      {
+        "text": "Bara när du känner dig helt utmattad",
+        "correct": false,
+        "feedback": "Fel – då är du redan farligt trött; ta pauser innan dess."
+      },
+      {
+        "text": "En gång per resa räcker alltid",
+        "correct": false,
+        "feedback": "Fel – en enda paus räcker inte på en lång resa."
+      },
+      {
+        "text": "Var tionde timme",
+        "correct": false,
+        "feedback": "Fel – det är alldeles för sällan."
+      }
+    ],
+    "explanation": "Planera in pauser ungefär varannan timme. Ta gärna en paus innan tröttheten blir påtaglig, och stanna för att sova om du blir riktigt trött."
+  },
+  {
+    "id": "kor-ts-b-010",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Distraktion",
+      "Mobil",
+      "Hastighet"
+    ],
+    "question": "Du tittar ner på mobilen i några sekunder medan du kör i 90 km/h. Vad innebär det?",
+    "image": null,
+    "options": [
+      {
+        "text": "Du kör en lång sträcka helt i blindo och risken ökar kraftigt",
+        "correct": true,
+        "feedback": "Rätt – i 90 km/h hinner bilen färdas långt på bara några sekunder utan din uppmärksamhet."
+      },
+      {
+        "text": "Det är ofarligt eftersom det bara är några sekunder",
+        "correct": false,
+        "feedback": "Fel – några sekunder räcker för att en farlig situation ska uppstå."
+      },
+      {
+        "text": "Bilen stannar automatiskt om något händer",
+        "correct": false,
+        "feedback": "Fel – du kan inte räkna med att tekniken räddar dig."
+      },
+      {
+        "text": "Det påverkar bara om det är mörkt ute",
+        "correct": false,
+        "feedback": "Fel – distraktionen är farlig oavsett ljusförhållanden."
+      }
+    ],
+    "explanation": "I 90 km/h färdas bilen cirka 25 meter per sekund. Att titta bort några sekunder betyder att du kör en lång sträcka utan att se vad som händer – mobilanvändning ökar olycksrisken kraftigt."
+  },
+  {
+    "id": "kor-ts-b-011",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Distraktion",
+      "Manniskan"
+    ],
+    "question": "Vilket av följande är ett bra sätt att minska risken för distraktion under körning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Ställ in navigation och musik innan du kör iväg",
+        "correct": true,
+        "feedback": "Rätt – förbered allt i förväg så du slipper pyssla med det under körning."
+      },
+      {
+        "text": "Skriv korta meddelanden vid rödljus",
+        "correct": false,
+        "feedback": "Fel – du ska ha uppmärksamheten på trafiken även vid rödljus."
+      },
+      {
+        "text": "Läs kartan i mobilen medan du kör",
+        "correct": false,
+        "feedback": "Fel – det tar blicken från vägen."
+      },
+      {
+        "text": "Ät och drick under tiden för att spara tid",
+        "correct": false,
+        "feedback": "Fel – det delar din uppmärksamhet och dina händer."
+      }
+    ],
+    "explanation": "Distraktion är en vanlig olycksorsak. Ställ in navigation, musik och annat innan du kör så att du kan hålla blicken på vägen och händerna på ratten."
+  },
+  {
+    "id": "kor-ts-b-012",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Cyklister",
+      "Omkorning",
+      "Placering"
+    ],
+    "question": "Hur stort sidoavstånd bör du som minst hålla när du kör om en cyklist i tätort?",
+    "image": null,
+    "options": [
+      {
+        "text": "Minst ungefär 1,5 meter",
+        "correct": true,
+        "feedback": "Rätt – ett betryggande avstånd på minst ca 1,5 m ger marginal om cyklisten vinglar."
+      },
+      {
+        "text": "Det räcker med några decimeter",
+        "correct": false,
+        "feedback": "Fel – för litet avstånd är farligt om cyklisten gör en plötslig rörelse."
+      },
+      {
+        "text": "Avståndet spelar ingen roll vid låg fart",
+        "correct": false,
+        "feedback": "Fel – sidoavståndet är viktigt oavsett fart."
+      },
+      {
+        "text": "Minst 5 meter",
+        "correct": false,
+        "feedback": "Fel – så stort avstånd är sällan möjligt; ca 1,5 m är riktmärket i tätort."
+      }
+    ],
+    "explanation": "Cyklister kan vingla eller väja för hinder. Håll ett betryggande sidoavstånd, minst omkring 1,5 meter i tätort, och vänta med omkörning om utrymmet är för litet."
+  },
+  {
+    "id": "kor-ts-b-013",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Cyklister",
+      "Bildorr"
+    ],
+    "question": "Varför rekommenderas det att öppna bildörren med höger hand (det 'holländska greppet') när du sitter på förarplats?",
+    "image": null,
+    "options": [
+      {
+        "text": "Kroppen vrids så att du automatiskt får blicken bakåt och upptäcker cyklister",
+        "correct": true,
+        "feedback": "Rätt – greppet tvingar fram en vridning som gör att du ser bakåt innan du öppnar."
+      },
+      {
+        "text": "Det gör att dörren öppnas tystare",
+        "correct": false,
+        "feedback": "Fel – syftet är att upptäcka cyklister, inte att minska ljud."
+      },
+      {
+        "text": "Det är enklare att nå handtaget med höger hand",
+        "correct": false,
+        "feedback": "Fel – poängen är säkerheten, inte bekvämligheten."
+      },
+      {
+        "text": "Det låser dörren snabbare",
+        "correct": false,
+        "feedback": "Fel – greppet handlar om att se bakåt, inte om låsning."
+      }
+    ],
+    "explanation": "Genom att öppna med den bortre handen vrids överkroppen så att du naturligt tittar bakåt och uppåt. Då upptäcker du cyklister innan du öppnar dörren och undviker en dörrolycka."
+  },
+  {
+    "id": "kor-ts-b-014",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Oskyddade",
+      "Aldre",
+      "Funktionsnedsatta"
+    ],
+    "question": "Hur bör du anpassa din körning nära äldre och personer med funktionsnedsättning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Räkna med att de kan röra sig långsamt eller oväntat och ge dem extra tid och marginal",
+        "correct": true,
+        "feedback": "Rätt – de kan behöva längre tid och kan vara svårare att förutse."
+      },
+      {
+        "text": "Förvänta dig att de alltid reagerar snabbt",
+        "correct": false,
+        "feedback": "Fel – de kan behöva mer tid att korsa eller reagera."
+      },
+      {
+        "text": "Köra som vanligt utan särskild hänsyn",
+        "correct": false,
+        "feedback": "Fel – de tillhör grupper som kräver extra hänsyn."
+      },
+      {
+        "text": "Tuta för att skynda på dem",
+        "correct": false,
+        "feedback": "Fel – det kan stressa och förvirra i stället för att hjälpa."
+      }
+    ],
+    "explanation": "Äldre och personer med funktionsnedsättning kan röra sig långsammare eller mer oförutsägbart. Ge dem god tid och marginal och var beredd att stanna."
+  },
+  {
+    "id": "kor-ts-b-015",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Vaglag",
+      "Vilt",
+      "Skymning"
+    ],
+    "question": "Vid gryning och skymning ökar risken för viltolyckor. Hur bör du köra då?",
+    "image": null,
+    "options": [
+      {
+        "text": "Sänk farten, var extra uppmärksam i skogspartier och var beredd att bromsa",
+        "correct": true,
+        "feedback": "Rätt – vilt rör sig ofta vid gryning och skymning och kan dyka upp plötsligt."
+      },
+      {
+        "text": "Öka farten för att snabbt passera riskområdet",
+        "correct": false,
+        "feedback": "Fel – högre fart ger längre bromssträcka och kortare reaktionstid."
+      },
+      {
+        "text": "Sätt på helljus konstant även mot mötande",
+        "correct": false,
+        "feedback": "Fel – du får inte blända mötande; väx till halvljus vid möte."
+      },
+      {
+        "text": "Det finns ingen ökad risk vid skymning",
+        "correct": false,
+        "feedback": "Fel – just gryning och skymning är högrisktid för vilt."
+      }
+    ],
+    "explanation": "Vid gryning och skymning är vilt aktivt och svårt att se. Sänk farten, var uppmärksam särskilt nära skog och åkermark, och var beredd att bromsa."
+  },
+  {
+    "id": "kor-ts-b-016",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Vaglag",
+      "Halka",
+      "Avstand"
+    ],
+    "question": "Vad bör du göra när väglaget är halt på grund av is eller snö?",
+    "image": null,
+    "options": [
+      {
+        "text": "Sänka farten och öka avståndet till framförvarande",
+        "correct": true,
+        "feedback": "Rätt – bromssträckan blir mycket längre på halt underlag."
+      },
+      {
+        "text": "Hålla samma fart och avstånd som på torr väg",
+        "correct": false,
+        "feedback": "Fel – halka kräver lägre fart och längre avstånd."
+      },
+      {
+        "text": "Bromsa hårt och tvärt vid behov",
+        "correct": false,
+        "feedback": "Fel – tvära inbromsningar ökar risken att sladda."
+      },
+      {
+        "text": "Köra närmare bilen framför för att hänga med",
+        "correct": false,
+        "feedback": "Fel – kortare avstånd ger ingen tid att stanna säkert."
+      }
+    ],
+    "explanation": "På halt väglag förlängs bromssträckan kraftigt. Sänk farten, öka avståndet och kör mjukt med gas, broms och styrning för att inte tappa greppet."
+  },
+  {
+    "id": "kor-ts-b-017",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Manniskan",
+      "Defensiv",
+      "Samspel"
+    ],
+    "question": "Vad innebär defensiv körning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Att hålla marginaler och vara beredd på att andra kan göra misstag",
+        "correct": true,
+        "feedback": "Rätt – defensiv körning bygger på framförhållning och beredskap för andras fel."
+      },
+      {
+        "text": "Att alltid ta ut din rätt även om någon annan gör fel",
+        "correct": false,
+        "feedback": "Fel – att hävda sin rätt kan leda till olyckor; var hellre förlåtande."
+      },
+      {
+        "text": "Att köra så fort som möjligt när du har företräde",
+        "correct": false,
+        "feedback": "Fel – defensiv körning handlar om marginaler, inte hög fart."
+      },
+      {
+        "text": "Att lita på att alla andra alltid följer reglerna",
+        "correct": false,
+        "feedback": "Fel – du ska räkna med att andra ibland gör fel."
+      }
+    ],
+    "explanation": "Defensiv körning betyder att du planerar framåt, håller goda marginaler och är beredd på att andra trafikanter kan missbedöma eller göra fel."
+  },
+  {
+    "id": "kor-ts-b-018",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Manniskan",
+      "Ogonkontakt",
+      "Samspel"
+    ],
+    "question": "Varför är ögonkontakt med andra trafikanter värdefull i en korsning?",
+    "image": null,
+    "options": [
+      {
+        "text": "Den hjälper dig att uppfatta om den andre sett dig och har förstått situationen",
+        "correct": true,
+        "feedback": "Rätt – ögonkontakt bekräftar samspelet, men du måste ändå vara beredd om den uteblir."
+      },
+      {
+        "text": "Den ger dig automatiskt företräde",
+        "correct": false,
+        "feedback": "Fel – ögonkontakt ändrar inte väjningsreglerna."
+      },
+      {
+        "text": "Den ersätter behovet av att titta efter andra fordon",
+        "correct": false,
+        "feedback": "Fel – du måste fortfarande bevaka hela trafiksituationen."
+      },
+      {
+        "text": "Den behövs bara mot fotgängare, aldrig mot andra förare",
+        "correct": false,
+        "feedback": "Fel – samspel genom ögonkontakt är värdefullt med alla trafikanter."
+      }
+    ],
+    "explanation": "Trafik bygger på samspel. Ögonkontakt hjälper dig avläsa om den andre uppmärksammat dig, men uteblir den ska du vara extra beredd att stanna."
+  },
+  {
+    "id": "kor-ts-b-019",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Bilbalte",
+      "Skydd"
+    ],
+    "question": "Vad är det viktigaste skälet till att alltid använda bilbälte?",
+    "image": null,
+    "options": [
+      {
+        "text": "Det håller dig kvar i sätet och minskar kraftigt risken att dö eller skadas allvarligt vid en krock",
+        "correct": true,
+        "feedback": "Rätt – bältet hindrar att du kastas runt eller ut ur bilen och räddar liv."
+      },
+      {
+        "text": "Det behövs bara vid höga hastigheter på motorväg",
+        "correct": false,
+        "feedback": "Fel – bältet skyddar även vid låga farter och i tätort."
+      },
+      {
+        "text": "Det är främst till för att slippa böter",
+        "correct": false,
+        "feedback": "Fel – huvudsyftet är säkerheten, inte att undvika böter."
+      },
+      {
+        "text": "Det skyddar bara baksätespassagerare",
+        "correct": false,
+        "feedback": "Fel – bältet skyddar alla i bilen, både fram och bak."
+      }
+    ],
+    "explanation": "Bilbältet håller dig kvar i sätet vid en kollision och förhindrar att du slungas mot inredningen eller ut ur fordonet. Det är en av de mest effektiva livräddarna i trafiken."
+  },
+  {
+    "id": "kor-ts-b-020",
+    "topic": "trafiksakerhet",
+    "tags": [
+      "Nackskydd",
+      "Skydd"
+    ],
+    "question": "Hur ska nackskyddet i bilen vara inställt för bästa skydd?",
+    "image": null,
+    "options": [
+      {
+        "text": "Med överkanten ungefär i höjd med hjässan och nära bakhuvudet",
+        "correct": true,
+        "feedback": "Rätt – då fångar nackskyddet upp huvudet och minskar risken för pisksnärtsskada."
+      },
+      {
+        "text": "Så lågt som möjligt, i nivå med nacken",
+        "correct": false,
+        "feedback": "Fel – ett för lågt nackskydd ger dåligt skydd och kan till och med skada nacken."
+      },
+      {
+        "text": "Det spelar ingen roll hur det är inställt",
+        "correct": false,
+        "feedback": "Fel – fel inställning försämrar skyddseffekten avsevärt."
+      },
+      {
+        "text": "Så långt bak från huvudet som möjligt",
+        "correct": false,
+        "feedback": "Fel – ett stort avstånd gör att huvudet kastas bakåt innan stödet tar emot."
+      }
+    ],
+    "explanation": "Ett rätt inställt nackskydd ska nå ungefär upp till hjässan och sitta nära bakhuvudet. Då minskar risken för pisksnärtsskada vid en påkörning bakifrån."
   }
 ]

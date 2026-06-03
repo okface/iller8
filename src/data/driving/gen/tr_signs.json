@@ -1,0 +1,226 @@
+[
+  {
+    "id": "kor-tr-b-001",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Hastighet"],
+    "question": "Vad betyder det här vägmärket?",
+    "image": "vagmarke_hastighet_30.svg",
+    "options": [
+      {"text": "Högsta tillåtna hastighet är 30 km/h", "correct": true, "feedback": "Rätt – den röda ringen med siffran 30 anger att du högst får köra 30 km/h."},
+      {"text": "Rekommenderad hastighet är 30 km/h", "correct": false, "feedback": "Nej, märket anger en bindande gräns, inte en rekommendation."},
+      {"text": "Lägsta tillåtna hastighet är 30 km/h", "correct": false, "feedback": "Lägsta hastighet visas med blå runt märke, inte med röd ring."},
+      {"text": "Avståndet till nästa korsning är 30 meter", "correct": false, "feedback": "Märket handlar om hastighet i km/h, inte om avstånd."}
+    ],
+    "explanation": "Märket är ett förbudsmärke för hastighetsbegränsning. Den gula skylten med röd ring och en siffra anger den högsta hastighet du får hålla, här 30 km/h, tills gränsen upphör eller ändras."
+  },
+  {
+    "id": "kor-tr-b-002",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Hastighet"],
+    "question": "Du ser detta märke när du kör. Vilken hastighet får du högst hålla?",
+    "image": "vagmarke_hastighet_90.svg",
+    "options": [
+      {"text": "Högst 90 km/h", "correct": true, "feedback": "Rätt – märket anger att högsta tillåtna hastighet är 90 km/h."},
+      {"text": "Minst 90 km/h", "correct": false, "feedback": "Märket anger en övre gräns, inte ett minimum."},
+      {"text": "Cirka 90 km/h om vägen tillåter", "correct": false, "feedback": "Det är en bindande gräns, inte ett ungefärligt riktvärde."},
+      {"text": "90 km/h enbart för tunga fordon", "correct": false, "feedback": "Gränsen gäller alla fordon om inget tilläggsmärke säger annat."}
+    ],
+    "explanation": "Hastighetsbegränsningsmärket gäller från platsen där det sitter tills en ny gräns anges eller begränsningen upphör. Här får du som mest köra 90 km/h, oavsett att vägen kan kännas snabbare."
+  },
+  {
+    "id": "kor-tr-b-003",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Parkering"],
+    "question": "Vad innebär det här märket?",
+    "image": "vagmarke_forbud_parkera.svg",
+    "options": [
+      {"text": "Du får inte parkera, men får stanna kort för av- och påstigning eller lastning", "correct": true, "feedback": "Rätt – förbud mot att parkera tillåter kortvarigt stannande för t.ex. på- och avstigning."},
+      {"text": "Du får varken stanna eller parkera", "correct": false, "feedback": "Det är ett annat märke; här är det bara parkering som är förbjuden."},
+      {"text": "Parkering är tillåten i högst 24 timmar", "correct": false, "feedback": "Märket förbjuder parkering helt, inget tidsbegränsat tillstånd."},
+      {"text": "Endast boende får parkera här", "correct": false, "feedback": "Det skulle krävas ett tilläggsmärke; själva märket betyder parkeringsförbud."}
+    ],
+    "explanation": "Märket anger förbud mot att parkera. Du får dock stanna en kort stund för att låta passagerare stiga av eller på, eller för att lasta i och ur gods, så länge det sker utan onödigt dröjsmål."
+  },
+  {
+    "id": "kor-tr-b-004",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Parkering"],
+    "question": "Du ser detta märke längs gatan. Vad gäller?",
+    "image": "vagmarke_forbud_stanna.svg",
+    "options": [
+      {"text": "Du får varken stanna eller parkera", "correct": true, "feedback": "Rätt – märket förbjuder både stannande och parkering."},
+      {"text": "Du får stanna kort men inte parkera", "correct": false, "feedback": "Nej, här är även kortvarigt stannande förbjudet."},
+      {"text": "Du får parkera men inte stanna länge", "correct": false, "feedback": "Tvärtom är all parkering och allt stannande förbjudet."},
+      {"text": "Förbudet gäller bara nattetid", "correct": false, "feedback": "Utan tilläggsmärke gäller förbudet hela tiden."}
+    ],
+    "explanation": "Märket anger förbud mot att stanna och parkera. Det betyder att du inte ens får stanna kort för av- eller påstigning, annat än om en polis eller trafiksituation tvingar dig att stanna."
+  },
+  {
+    "id": "kor-tr-b-005",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Förbud"],
+    "question": "Vad betyder det här märket?",
+    "image": "vagmarke_forbud_infart_motordrivna.svg",
+    "options": [
+      {"text": "Förbud mot infart med fordon i färdriktningen", "correct": true, "feedback": "Rätt – det runda röda märket med vit stapel betyder att infart är förbjuden åt det hållet."},
+      {"text": "Förbud mot att svänga vänster", "correct": false, "feedback": "Det finns särskilda svängförbudsmärken; detta gäller infart rakt fram."},
+      {"text": "Enkelriktad trafik som du får köra in på", "correct": false, "feedback": "Tvärtom – detta märke förbjuder dig att köra in i den riktningen."},
+      {"text": "Parkeringsförbud på hela gatan", "correct": false, "feedback": "Märket handlar om infart, inte om parkering."}
+    ],
+    "explanation": "Det runda, röda märket med en vit vågrät stapel betyder förbud mot infart. Du får alltså inte köra in på vägen i den riktning du är på väg, ofta för att gatan är enkelriktad mot dig."
+  },
+  {
+    "id": "kor-tr-b-006",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Påbud"],
+    "question": "Vad betyder det här blå märket med en vit pil?",
+    "image": "vagmarke_pabjuden_korriktning_rakt.svg",
+    "options": [
+      {"text": "Du måste köra rakt fram", "correct": true, "feedback": "Rätt – ett blått påbudsmärke med pil rakt upp betyder påbjuden körriktning rakt fram."},
+      {"text": "Du får välja att köra rakt fram eller svänga", "correct": false, "feedback": "Påbudsmärket är tvingande; du måste följa pilens riktning."},
+      {"text": "Rakt fram är förbjudet", "correct": false, "feedback": "Förbud visas med rött, inte med ett blått påbudsmärke."},
+      {"text": "Det är en återvändsgata rakt fram", "correct": false, "feedback": "Det är ett påbud om körriktning, inte information om återvändsgata."}
+    ],
+    "explanation": "Blå runda märken med vit pil är påbudsmärken som anger den körriktning du måste följa. Här pekar pilen rakt upp, vilket innebär att du är skyldig att köra rakt fram."
+  },
+  {
+    "id": "kor-tr-b-007",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Väjningsplikt"],
+    "question": "Du passerar det här märket. Vad gäller efter det?",
+    "image": "vagmarke_huvudled_upphor.svg",
+    "options": [
+      {"text": "Huvudleden upphör och därefter gäller bland annat högerregeln", "correct": true, "feedback": "Rätt – när huvudleden upphör har du inte längre förtur och högerregeln gäller i korsningar."},
+      {"text": "Huvudleden börjar och du har förtur", "correct": false, "feedback": "Det överkorsade märket betyder att huvudleden slutar, inte börjar."},
+      {"text": "Du har stopplikt vid nästa korsning", "correct": false, "feedback": "Stopplikt anges med eget märke; detta betyder bara att huvudleden upphör."},
+      {"text": "Hastigheten sänks automatiskt till 30 km/h", "correct": false, "feedback": "Märket säger inget om hastighet, bara att huvudleden tar slut."}
+    ],
+    "explanation": "Märket anger att huvudleden upphör. Efter märket har du inte längre automatisk förtur, och i oskyltade korsningar gäller istället högerregeln, så du måste vara beredd att lämna företräde."
+  },
+  {
+    "id": "kor-tr-b-008",
+    "topic": "trafikregler",
+    "tags": ["Scenario", "Högerregeln"],
+    "question": "Du kör den blå bilen (DU) söderifrån rakt fram i den oskyltade korsningen. Hur ska du agera mot den röda bilen?",
+    "image": "scen_hogerregeln_4vag.svg",
+    "options": [
+      {"text": "Lämna företräde åt den röda bilen från höger", "correct": true, "feedback": "Rätt – i en oskyltad korsning gäller högerregeln, så du väjer för bilen från höger."},
+      {"text": "Köra först eftersom du kör rakt fram", "correct": false, "feedback": "Att köra rakt fram ger ingen förtur i en oskyltad korsning."},
+      {"text": "Den röda bilen ska väja eftersom den ska svänga", "correct": false, "feedback": "Här är det riktningen höger som avgör, och bilen kommer från din höger."},
+      {"text": "Båda har stopplikt och får turas om", "correct": false, "feedback": "Det finns ingen stopplikt; högerregeln avgör vem som väjer."}
+    ],
+    "explanation": "När inga vägmärken, signaler eller väjningslinjer styr korsningen gäller högerregeln. Den röda bilen kommer från din höger, så du är skyldig att lämna den företräde."
+  },
+  {
+    "id": "kor-tr-b-009",
+    "topic": "trafikregler",
+    "tags": ["Scenario", "Väjningsplikt"],
+    "question": "Du kör den blå bilen (DU) och har väjningsplikt (hajtänder och triangelmärke). En röd bil närmar sig på den korsande vägen. Vad gör du?",
+    "image": "scen_vajningsplikt_korsning.svg",
+    "options": [
+      {"text": "Lämnar företräde åt den röda bilen och kör först när det är fritt", "correct": true, "feedback": "Rätt – väjningsplikten innebär att du ska släppa fram korsande trafik innan du kör."},
+      {"text": "Kör fram eftersom du kom till korsningen först", "correct": false, "feedback": "Vid väjningsplikt spelar ankomstordningen ingen roll; du måste väja."},
+      {"text": "Stannar alltid helt vid stopplinjen", "correct": false, "feedback": "Väjningsplikt kräver inte alltid full stopp, bara att du lämnar företräde."},
+      {"text": "Den röda bilen ska väja för dig", "correct": false, "feedback": "Tvärtom – dina hajtänder och triangelmärke visar att det är du som har väjningsplikt."}
+    ],
+    "explanation": "Triangelmärket tillsammans med väjningslinjen (hajtänderna) anger väjningsplikt. Du ska anpassa farten och lämna företräde åt fordon på den korsande vägen, och får köra först när du inte hindrar dem."
+  },
+  {
+    "id": "kor-tr-b-010",
+    "topic": "trafikregler",
+    "tags": ["Scenario", "Stopplikt"],
+    "question": "Du kör den blå bilen (DU) fram till en stoppskylt med stopplinje. Du ser ingen annan trafik. Hur ska du agera?",
+    "image": "scen_stopplikt_korsning.svg",
+    "options": [
+      {"text": "Stanna helt vid stopplinjen innan du kör vidare", "correct": true, "feedback": "Rätt – vid stopplikt måste du alltid stanna helt, även om det ser fritt ut."},
+      {"text": "Rulla sakta förbi eftersom det är fritt", "correct": false, "feedback": "Stopplikt kräver att fordonet står helt stilla, inte bara saktar ner."},
+      {"text": "Köra direkt eftersom ingen trafik syns", "correct": false, "feedback": "Du måste stanna helt vid linjen oavsett om trafik syns eller inte."},
+      {"text": "Stanna bara om en bil närmar sig", "correct": false, "feedback": "Vid stopplikt gäller skyldigheten att stanna alltid, inte bara vid trafik."}
+    ],
+    "explanation": "Stopplikt innebär att du måste stanna fordonet helt vid stopplinjen eller, om linje saknas, omedelbart före korsningen. Först därefter, när du har god sikt och inte hindrar någon, får du köra vidare."
+  },
+  {
+    "id": "kor-tr-b-011",
+    "topic": "trafikregler",
+    "tags": ["Scenario", "Huvudled"],
+    "question": "Du kör den blå bilen (DU) på en liten väg med hajtänder och ska köra ut på en huvudled. En röd bil kommer på huvudleden från vänster. Vad gäller?",
+    "image": "scen_huvudled_infart.svg",
+    "options": [
+      {"text": "Du lämnar företräde åt trafiken på huvudleden", "correct": true, "feedback": "Rätt – trafiken på huvudleden har förtur, så du väjer innan du kör ut."},
+      {"text": "Du har förtur eftersom du ska köra ut på den större vägen", "correct": false, "feedback": "Tvärtom – huvudledstrafiken har alltid förtur framför den som kör in."},
+      {"text": "Den röda bilen ska sakta ner och släppa in dig", "correct": false, "feedback": "Huvudledstrafiken behåller sin förtur; det är du som väjer."},
+      {"text": "Högerregeln gäller och bilen från vänster väjer", "correct": false, "feedback": "Vid huvudled gäller inte högerregeln; väjningslinjen avgör att du väjer."}
+    ],
+    "explanation": "Hajtänderna visar att du har väjningsplikt mot huvudleden, som markeras med den gula romben. Du ska lämna företräde åt all trafik på huvudleden, oavsett från vilket håll den kommer, innan du kör in."
+  },
+  {
+    "id": "kor-tr-b-012",
+    "topic": "trafikregler",
+    "tags": ["Scenario", "Cirkulationsplats"],
+    "question": "Du kör den blå bilen (DU) söderifrån mot rondellen. En röd bil är redan inne i cirkulationen. Hur ska du agera?",
+    "image": "scen_cirkulationsplats.svg",
+    "options": [
+      {"text": "Lämna företräde åt bilen i rondellen och blinka höger när du ska köra ut", "correct": true, "feedback": "Rätt – du väjer för trafik som redan är i cirkulationen och blinkar höger vid utfart."},
+      {"text": "Köra in direkt eftersom du kör rakt igenom", "correct": false, "feedback": "Du måste först släppa fram fordon som redan befinner sig i rondellen."},
+      {"text": "Bilen i rondellen ska väja för dig", "correct": false, "feedback": "Den som ska in i cirkulationen har väjningsplikt mot trafiken i rondellen."},
+      {"text": "Blinka vänster när du kör in i rondellen", "correct": false, "feedback": "Du blinkar inte in, utan blinkar höger när du ska lämna cirkulationen."}
+    ],
+    "explanation": "Vid en cirkulationsplats har du väjningsplikt mot fordon som redan befinner sig i rondellen. Du ska lämna företräde åt den röda bilen och tända höger blinkers när du är på väg att köra ut."
+  },
+  {
+    "id": "kor-tr-b-013",
+    "topic": "trafikregler",
+    "tags": ["Scenario", "Övergångsställe"],
+    "question": "Du kör den blå bilen (DU) mot ett övergångsställe där en fotgängare redan har gått ut. Vad ska du göra?",
+    "image": "scen_overgangsstalle.svg",
+    "options": [
+      {"text": "Stanna och låta fotgängaren gå över", "correct": true, "feedback": "Rätt – du ska stanna och släppa förbi fotgängare som gått ut på övergångsstället."},
+      {"text": "Köra om fotgängaren hinner före", "correct": false, "feedback": "Du får inte tvinga dig förbi; fotgängaren på övergångsstället har företräde."},
+      {"text": "Tuta så att fotgängaren skyndar sig", "correct": false, "feedback": "Att tuta är fel; du ska istället stanna och vänta."},
+      {"text": "Sakta ner men fortsätta rulla förbi", "correct": false, "feedback": "Det räcker inte att sakta ner; du måste stanna för fotgängaren."}
+    ],
+    "explanation": "Vid ett obevakat övergångsställe har du väjningsplikt mot gående som har gått ut på eller just ska gå ut på övergångsstället. Du ska stanna och låta fotgängaren passera tryggt."
+  },
+  {
+    "id": "kor-tr-b-014",
+    "topic": "trafikregler",
+    "tags": ["Scenario", "Omkörning"],
+    "question": "Du kör den blå bilen (DU) bakom en långsam bil. Strax framför svänger vägen så att sikten skyms. Får du köra om?",
+    "image": "scen_omkorning_kurva.svg",
+    "options": [
+      {"text": "Nej, du får inte köra om eftersom sikten är skymd i kurvan", "correct": true, "feedback": "Rätt – omkörning är förbjuden där sikten är skymd, till exempel i en kurva."},
+      {"text": "Ja, om du gör det snabbt hinner du före kurvan", "correct": false, "feedback": "Att köra fort gör inte omkörningen tillåten vid skymd sikt."},
+      {"text": "Ja, om du blinkar och tutar först", "correct": false, "feedback": "Blinkers och tuta ändrar inte att omkörning är förbjuden vid skymd sikt."},
+      {"text": "Ja, så länge ingen mötande bil syns just nu", "correct": false, "feedback": "I en kurva kan mötande dyka upp när som helst; därför är omkörning förbjuden."}
+    ],
+    "explanation": "Du får inte köra om när sikten är skymd, exempelvis strax före eller i en kurva, eller vid backkrön. Eftersom du inte kan se att vägen är fri framåt ska du stanna kvar bakom det långsamma fordonet."
+  },
+  {
+    "id": "kor-tr-b-015",
+    "topic": "trafikregler",
+    "tags": ["Scenario", "Parkering"],
+    "question": "Du kör den blå bilen (DU) och vill parkera nära korsningen. En ruta ligger mycket nära korsningen (röd) och en längre bort (grön). Var får du parkera?",
+    "image": "scen_parkering_korsning.svg",
+    "options": [
+      {"text": "I den bortre rutan, minst 10 meter från korsningen", "correct": true, "feedback": "Rätt – du måste parkera minst 10 meter från en korsning, alltså i den bortre rutan."},
+      {"text": "I rutan närmast korsningen, eftersom den är ledig", "correct": false, "feedback": "Den rutan ligger inom 10 meter från korsningen och parkering där är förbjuden."},
+      {"text": "I vilken ruta som helst, avståndet spelar ingen roll", "correct": false, "feedback": "Avståndet är avgörande; närmare än 10 meter från korsningen är förbjudet."},
+      {"text": "Du får inte parkera alls i närheten av en korsning", "correct": false, "feedback": "Du får parkera, så länge du håller minst 10 meter avstånd till korsningen."}
+    ],
+    "explanation": "Det är förbjudet att stanna eller parkera närmare än 10 meter från en korsande körbanas närmaste kant. Därför ska du välja den bortre rutan, som ligger på tillräckligt avstånd från korsningen."
+  },
+  {
+    "id": "kor-tr-b-016",
+    "topic": "trafikregler",
+    "tags": ["Vägmärken", "Hastighet"],
+    "question": "Du ser detta märke på en motorväg. Vad innebär det?",
+    "image": "vagmarke_hastighet_110.svg",
+    "options": [
+      {"text": "Högsta tillåtna hastighet är 110 km/h", "correct": true, "feedback": "Rätt – märket anger att du högst får köra 110 km/h."},
+      {"text": "Rekommenderad hastighet är 110 km/h", "correct": false, "feedback": "Det är en bindande gräns, inte en rekommendation."},
+      {"text": "Du måste hålla minst 110 km/h", "correct": false, "feedback": "Märket anger en övre gräns, inte ett minimum."},
+      {"text": "110 km/h gäller bara i högerfilen", "correct": false, "feedback": "Hastighetsgränsen gäller alla körfält om inget annat anges."}
+    ],
+    "explanation": "Märket är ett hastighetsbegränsningsmärke som anger den högsta tillåtna hastigheten, här 110 km/h. Gränsen gäller tills en ny hastighet anges eller begränsningen upphör."
+  }
+]

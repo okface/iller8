@@ -1,0 +1,198 @@
+[
+  {
+    "id": "kor-pf-001",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Alkohol"],
+    "question": "Vid vilken alkoholhalt i blodet räknas det som rattfylleri i Sverige?",
+    "image": null,
+    "options": [
+      {"text": "0,2 promille", "correct": true, "feedback": "Rätt – gränsen för rattfylleri i Sverige är 0,2 promille i blodet."},
+      {"text": "0,5 promille", "correct": false, "feedback": "0,5 är gräns i vissa andra länder, men inte i Sverige."},
+      {"text": "1,0 promille", "correct": false, "feedback": "Vid 1,0 promille räknas det i stället som grovt rattfylleri."},
+      {"text": "0,0 promille", "correct": false, "feedback": "Gränsen är 0,2 promille. Nollgräns gäller för narkotika, inte alkohol."}
+    ],
+    "explanation": "Rattfylleri börjar vid 0,2 promille i blodet, vilket motsvarar 0,10 mg/l i utandningsluften. Vid 1,0 promille eller mer räknas det som grovt rattfylleri."
+  },
+  {
+    "id": "kor-pf-002",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Alkohol"],
+    "question": "Vad är det enda som faktiskt gör dig nykter efter att du druckit alkohol?",
+    "image": null,
+    "options": [
+      {"text": "Att det går tillräckligt med tid", "correct": true, "feedback": "Rätt – alkoholen bryts ned i en fast takt och bara tid hjälper."},
+      {"text": "Att dricka starkt kaffe", "correct": false, "feedback": "Kaffe kan göra dig piggare men sänker inte alkoholhalten."},
+      {"text": "Att äta en rejäl måltid", "correct": false, "feedback": "Mat kan bromsa upptaget men bryter inte ned alkohol som redan finns i blodet."},
+      {"text": "Att ta en kall dusch", "correct": false, "feedback": "En dusch påverkar inte alls hur snabbt alkoholen försvinner."}
+    ],
+    "explanation": "Alkohol bryts ned med ungefär 0,1–0,15 promille per timme oavsett vad du gör. Varken kaffe, mat, dusch eller sömn snabbar på processen – bara tid gör dig nykter."
+  },
+  {
+    "id": "kor-pf-003",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Alkohol"],
+    "question": "Du drack mycket alkohol igår kväll. Vad bör du tänka på morgonen efter?",
+    "image": null,
+    "options": [
+      {"text": "Du kan fortfarande ha kvar alkohol i blodet och vara över gränsen", "correct": true, "feedback": "Rätt – det tar lång tid att bryta ned alkohol, så du kan vara påverkad på morgonen."},
+      {"text": "Efter en natts sömn är du alltid nykter igen", "correct": false, "feedback": "Sömn bryter inte ned alkohol snabbare; du kan vara kvar över gränsen."},
+      {"text": "Frukost neutraliserar resten av alkoholen", "correct": false, "feedback": "Mat tar inte bort alkohol som redan finns i blodet."},
+      {"text": "Känner du dig pigg är du garanterat under gränsen", "correct": false, "feedback": "Hur du känner dig är ingen tillförlitlig mätare på alkoholhalten."}
+    ],
+    "explanation": "Eftersom alkohol bryts ned långsamt kan du vara över rattfyllerigränsen även morgonen efter. Räkna med att det tar lång tid och avstå från att köra om du är osäker."
+  },
+  {
+    "id": "kor-pf-004",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Alkohol"],
+    "question": "Hur påverkar alkohol din körförmåga redan vid små mängder?",
+    "image": null,
+    "options": [
+      {"text": "Reaktionsförmågan blir långsammare och omdömet sämre", "correct": true, "feedback": "Rätt – redan små mängder försämrar reaktion, omdöme och uppmärksamhet."},
+      {"text": "Du blir mer fokuserad och kör försiktigare", "correct": false, "feedback": "Tvärtom – alkohol gör att man ofta överskattar sin förmåga."},
+      {"text": "Bara synen påverkas, inte omdömet", "correct": false, "feedback": "Alkohol påverkar mycket mer än synen, bland annat omdöme och reaktion."},
+      {"text": "Körförmågan påverkas inte förrän vid 1,0 promille", "correct": false, "feedback": "Körförmågan försämras långt innan dess, redan vid låga halter."}
+    ],
+    "explanation": "Alkohol ger långsammare reaktion, sämre omdöme, smalare uppmärksamhet (tunnelseende) och gör att man överskattar sin egen förmåga – farligt redan vid små mängder."
+  },
+  {
+    "id": "kor-pf-005",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Alkohol", "Straff"],
+    "question": "Vilket straff kan grovt rattfylleri som mest leda till?",
+    "image": null,
+    "options": [
+      {"text": "Upp till två års fängelse", "correct": true, "feedback": "Rätt – grovt rattfylleri kan ge upp till två års fängelse."},
+      {"text": "Endast böter", "correct": false, "feedback": "Böter kan följa på vanligt rattfylleri, men grovt är allvarligare."},
+      {"text": "Upp till sex månaders fängelse", "correct": false, "feedback": "Sex månader är maxstraffet för vanligt rattfylleri, inte grovt."},
+      {"text": "En varning utan följder", "correct": false, "feedback": "Rattfylleri är ett brott; körkortet återkallas och påföljd döms ut."}
+    ],
+    "explanation": "Grovt rattfylleri (från 1,0 promille eller om man är avsevärt påverkad) kan ge upp till två års fängelse. Vanligt rattfylleri ger böter eller upp till sex månaders fängelse. I båda fallen återkallas körkortet."
+  },
+  {
+    "id": "kor-pf-006",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Narkotika"],
+    "question": "Vad gäller för olagliga droger i blodet när du kör bil?",
+    "image": null,
+    "options": [
+      {"text": "Det råder nollgräns – minsta spår är förbjudet", "correct": true, "feedback": "Rätt – för olagliga droger gäller nollgräns i trafiken."},
+      {"text": "Samma gräns som för alkohol, 0,2 promille", "correct": false, "feedback": "Nej, för narkotika gäller nollgräns, inte 0,2-gränsen."},
+      {"text": "Det är tillåtet så länge du känner dig opåverkad", "correct": false, "feedback": "Hur du känner dig spelar ingen roll – det är förbjudet oavsett."},
+      {"text": "Det är tillåtet dagen efter", "correct": false, "feedback": "Spår av droger kan finnas kvar länge och nollgränsen gäller ändå."}
+    ],
+    "explanation": "För olagliga droger gäller nollgräns i trafiken – minsta spår i blodet är straffbart. Undantaget är läkarordinerad medicin som tas enligt ordination."
+  },
+  {
+    "id": "kor-pf-007",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Läkemedel"],
+    "question": "Hur tar du reda på om ett läkemedel kan försämra din körförmåga?",
+    "image": null,
+    "options": [
+      {"text": "Kolla varningstriangeln på förpackningen och fråga läkare eller apotek", "correct": true, "feedback": "Rätt – varningstriangeln och råd från läkare/apotek visar om medicinen påverkar körningen."},
+      {"text": "Receptbelagda läkemedel påverkar aldrig körförmågan", "correct": false, "feedback": "Fel – många receptbelagda mediciner kan försämra körförmågan."},
+      {"text": "Bara om du blir riktigt dåsig finns det någon risk", "correct": false, "feedback": "Effekten kan vara svår att märka själv; läs varningstexten i stället."},
+      {"text": "Det går inte att veta i förväg", "correct": false, "feedback": "Jo – informationen finns på förpackningen och hos apoteket."}
+    ],
+    "explanation": "Vissa läkemedel, till exempel lugnande medel och en del allergi- och värktabletter, kan försämra körförmågan. Leta efter den röda varningstriangeln på förpackningen och fråga läkare eller apotek vid tveksamhet."
+  },
+  {
+    "id": "kor-pf-008",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Läkemedel", "Narkotika"],
+    "question": "Du tar en medicin som läkaren skrivit ut och följer ordinationen. Vad gäller då i trafiken?",
+    "image": null,
+    "options": [
+      {"text": "Nollgränsen för narkotika gäller inte, men du får inte köra om körförmågan är nedsatt", "correct": true, "feedback": "Rätt – ordinerad medicin är undantagen nollgränsen, men du måste ändå vara körduglig."},
+      {"text": "Du får alltid köra, oavsett hur medicinen påverkar dig", "correct": false, "feedback": "Nej, du får inte köra om din förmåga är nedsatt av medicinen."},
+      {"text": "Du omfattas av nollgränsen och begår brott direkt", "correct": false, "feedback": "Läkarordinerad medicin enligt ordination är undantagen nollgränsen."},
+      {"text": "Du måste anmäla varje resa till Transportstyrelsen", "correct": false, "feedback": "Något sådant krav finns inte; det handlar om din körduglighet."}
+    ],
+    "explanation": "Läkarordinerad medicin som tas enligt ordination omfattas inte av nollgränsen för narkotika. Men om medicinen ändå försämrar din körförmåga får du inte köra."
+  },
+  {
+    "id": "kor-pf-009",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Trötthet"],
+    "question": "Vad är det enda effektiva sättet att bota trötthet bakom ratten?",
+    "image": null,
+    "options": [
+      {"text": "Att sova", "correct": true, "feedback": "Rätt – bara sömn botar trötthet, inget annat fungerar lika bra."},
+      {"text": "Att vrida ner värmen och veva ner rutan", "correct": false, "feedback": "Frisk luft kan pigga upp tillfälligt men botar inte tröttheten."},
+      {"text": "Att skruva upp musiken högt", "correct": false, "feedback": "Musik tar inte bort den verkliga sömnbristen."},
+      {"text": "Att tugga tuggummi och prata med passagerare", "correct": false, "feedback": "Det kan hjälpa en stund men ersätter inte sömn."}
+    ],
+    "explanation": "Trötthet ger stor olycksrisk och kan leda till mikrosömn. Det enda som verkligen hjälper är sömn – planera in vila och kör inte när du är trött."
+  },
+  {
+    "id": "kor-pf-010",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Trötthet"],
+    "question": "Vad innebär mikrosömn vid bilkörning?",
+    "image": null,
+    "options": [
+      {"text": "Att man somnar till någon sekund utan att märka det", "correct": true, "feedback": "Rätt – mikrosömn är korta, ofrivilliga sömnögonblick som är mycket farliga."},
+      {"text": "En kort blund man tar medvetet vid rött ljus", "correct": false, "feedback": "Nej, mikrosömn är ofrivillig och sker utan att man vill det."},
+      {"text": "En vilopaus på en rastplats", "correct": false, "feedback": "Det är tvärtom en planerad vila, inte mikrosömn."},
+      {"text": "Att man gäspar några gånger men håller sig vaken", "correct": false, "feedback": "Mikrosömn är att man faktiskt somnar till, inte bara gäspar."}
+    ],
+    "explanation": "Mikrosömn är korta ofrivilliga sömnögonblick på några sekunder som du oftast inte ens märker. I 90 km/h hinner bilen färdas långt utan förare – därför är trötthet livsfarligt. Enda boten är sömn."
+  },
+  {
+    "id": "kor-pf-011",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Känslor"],
+    "question": "Hur kan starka känslor som ilska eller stress påverka din körning?",
+    "image": null,
+    "options": [
+      {"text": "De försämrar omdömet och uppmärksamheten", "correct": true, "feedback": "Rätt – starka känslor stjäl uppmärksamhet och försämrar omdömet."},
+      {"text": "De gör dig mer alert och därför till en bättre förare", "correct": false, "feedback": "Tvärtom – starka känslor försämrar din förmåga att köra säkert."},
+      {"text": "De påverkar bara om du är väldigt ung", "correct": false, "feedback": "Känslor påverkar förare i alla åldrar."},
+      {"text": "De påverkar bara om du också druckit alkohol", "correct": false, "feedback": "Känslor försämrar körningen i sig, helt utan alkohol."}
+    ],
+    "explanation": "Ilska, stress, sorg och förälskelse försämrar omdöme och uppmärksamhet. Undvik att köra när du är starkt känslomässigt påverkad – ta en paus och lugna ner dig först."
+  },
+  {
+    "id": "kor-pf-012",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Känslor", "Sjukdom"],
+    "question": "Du har hög feber och har tagit en stark medicin. Vad bör du göra?",
+    "image": null,
+    "options": [
+      {"text": "Avstå från att köra om din förmåga är nedsatt", "correct": true, "feedback": "Rätt – är förmågan nedsatt av sjukdom eller medicin ska du låta bilen stå."},
+      {"text": "Köra som vanligt, feber påverkar inte körningen", "correct": false, "feedback": "Feber och stark medicin kan tydligt försämra din körförmåga."},
+      {"text": "Köra men hålla lägre hastighet", "correct": false, "feedback": "Lägre fart väger inte upp en nedsatt körförmåga."},
+      {"text": "Köra om du dricker mycket vatten först", "correct": false, "feedback": "Vatten botar varken febern eller medicinens effekt på körförmågan."}
+    ],
+    "explanation": "Sjukdom, hög feber och starkt verkande mediciner kan försämra körförmågan. Om din förmåga är nedsatt ska du inte köra – det är ditt ansvar att bedöma om du är körduglig."
+  },
+  {
+    "id": "kor-pf-013",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Grupptryck"],
+    "question": "Dina passagerare tjatar på att du ska köra fortare och ta risker. Hur bör du agera?",
+    "image": null,
+    "options": [
+      {"text": "Stå emot trycket – som förare är det du som är ansvarig", "correct": true, "feedback": "Rätt – föraren bär ansvaret och ska inte låta sig pressas."},
+      {"text": "Köra fortare så att passagerarna blir nöjda", "correct": false, "feedback": "Du får aldrig låta passagerare pressa dig till att köra farligt."},
+      {"text": "Ta lite risker eftersom ansvaret delas i bilen", "correct": false, "feedback": "Ansvaret delas inte – det är föraren som är ansvarig."},
+      {"text": "Låta den äldsta passageraren bestämma farten", "correct": false, "feedback": "Ingen passagerare bestämmer över ditt körsätt; du ansvarar."}
+    ],
+    "explanation": "Låt dig inte pressas av passagerare att köra fort eller ta risker. Det är alltid föraren som är ansvarig för hur bilen framförs – våga säga nej till grupptryck."
+  },
+  {
+    "id": "kor-pf-014",
+    "topic": "personliga_forutsattningar",
+    "tags": ["Attityd", "Självinsikt"],
+    "question": "Varför bör nya och oerfarna förare vara extra försiktiga?",
+    "image": null,
+    "options": [
+      {"text": "De är överrepresenterade i olyckor och saknar erfarenhet", "correct": true, "feedback": "Rätt – unga och oerfarna förare råkar oftare ut för olyckor."},
+      {"text": "Nya förare har lägre olycksrisk än erfarna", "correct": false, "feedback": "Tvärtom – nya förare är överrepresenterade i olycksstatistiken."},
+      {"text": "Reglerna är strängare bara för att begränsa nybörjare i onödan", "correct": false, "feedback": "Reglerna finns för säkerheten, inte för att begränsa i onödan."},
+      {"text": "Det spelar ingen roll, körvana saknar betydelse för säkerheten", "correct": false, "feedback": "Erfarenhet har stor betydelse för hur säkert man kör."}
+    ],
+    "explanation": "Unga och oerfarna förare är överrepresenterade i olyckor. Trafikregler finns för säkerheten, och god självinsikt om sina egna begränsningar gör dig till en säkrare förare. Som ny förare bör du vara extra försiktig."
+  }
+]

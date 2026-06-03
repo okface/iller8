@@ -42,4 +42,4 @@ export interface DrivingState {
   totalCorrect: number;
 }
 
-export type DrivingMode = 'quick10' | 'exam' | 'all' | `topic:${string}`;
+export type DrivingMode = 'quick10' | 'exam' | 'signs' | 'all' | `topic:${string}`;

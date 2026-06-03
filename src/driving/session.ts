@@ -13,28 +13,53 @@ const QUICK_SIZE = 10;
 export const EXAM_SIZE = Math.min(65, QUESTIONS.length);
 export const EXAM_PASS = Math.round(EXAM_SIZE * (65 / 70));
 
-/** Unique topics in source order, with question counts. */
-export function listTopics(): { topic: string; count: number }[] {
-  const order: string[] = [];
-  const counts: Record<string, number> = {};
-  for (const q of QUESTIONS) {
-    if (!(q.topic in counts)) order.push(q.topic);
-    counts[q.topic] = (counts[q.topic] ?? 0) + 1;
-  }
-  return order.map((topic) => ({ topic, count: counts[topic] }));
-}
+// The five official Trafikverket knowledge areas, in test order, with their
+// share of the 65 scored questions (used to weight the mock exam).
+export const TOPIC_ORDER = [
+  'trafikregler',
+  'trafiksakerhet',
+  'fordonskannedom',
+  'miljo',
+  'personliga_forutsattningar',
+] as const;
 
 const TOPIC_LABELS: Record<string, string> = {
-  vagmarken_auto: 'Vägmärken',
-  trafik_och_vagmarken: 'Trafik & vägmärken',
-  extra_fragor: 'Blandade frågor',
+  trafikregler: 'Trafikregler',
+  trafiksakerhet: 'Trafiksäkerhet',
+  fordonskannedom: 'Fordonskännedom',
+  miljo: 'Miljö',
+  personliga_forutsattningar: 'Personliga förutsättningar',
 };
+
+const TOPIC_GLOSS: Record<string, string> = {
+  trafikregler: 'Traffic rules & signs',
+  trafiksakerhet: 'Traffic safety',
+  fordonskannedom: 'Vehicle knowledge',
+  miljo: 'Environment & eco-driving',
+  personliga_forutsattningar: 'Alcohol, fatigue, attitude',
+};
+
+/** The five areas in test order, with question counts (areas with 0 are dropped). */
+export function listTopics(): { topic: string; count: number }[] {
+  const counts: Record<string, number> = {};
+  for (const q of QUESTIONS) counts[q.topic] = (counts[q.topic] ?? 0) + 1;
+  return TOPIC_ORDER.filter((t) => counts[t]).map((topic) => ({ topic, count: counts[topic] }));
+}
 
 export function topicLabel(topic: string): string {
   return (
     TOPIC_LABELS[topic] ??
     topic.replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())
   );
+}
+
+export function topicGloss(topic: string): string | undefined {
+  return TOPIC_GLOSS[topic];
+}
+
+/** Sign-recognition questions ("Vad betyder detta märke?"), tagged Vägmärken. */
+export function signQuestions(): DrivingQuestion[] {
+  return QUESTIONS.filter((q) => q.tags.includes('Vägmärken'));
 }
 
 function shuffle<T>(arr: T[]): T[] {
@@ -60,7 +85,9 @@ export function buildSession(mode: DrivingMode, state: DrivingState): DrivingQue
   }
 
   let pool: DrivingQuestion[];
-  if (mode.startsWith('topic:')) {
+  if (mode === 'signs') {
+    pool = signQuestions();
+  } else if (mode.startsWith('topic:')) {
     const topic = mode.slice('topic:'.length);
     pool = QUESTIONS.filter((q) => q.topic === topic);
   } else {

@@ -1,0 +1,198 @@
+[
+  {
+    "id": "kor-mi-001",
+    "topic": "miljo",
+    "tags": ["Sparsam körning"],
+    "question": "Ungefär hur mycket bränsle kan du spara med sparsam körning (EcoDriving)?",
+    "image": null,
+    "options": [
+      {"text": "10–20 procent", "correct": true, "feedback": "Rätt – sparsam körning sänker förbrukningen med cirka 10–20 procent."},
+      {"text": "0–2 procent", "correct": false, "feedback": "Effekten är betydligt större än så."},
+      {"text": "40–50 procent", "correct": false, "feedback": "Så stor besparing är inte realistisk med körteknik."},
+      {"text": "Det går inte att påverka förbrukningen med körsätt", "correct": false, "feedback": "Körsättet har stor betydelse för förbrukningen."}
+    ],
+    "explanation": "Sparsam körning (EcoDriving) kan minska bränsleförbrukningen med ungefär 10–20 procent genom planering, jämn fart och rätt växling – samtidigt minskar utsläppen."
+  },
+  {
+    "id": "kor-mi-002",
+    "topic": "miljo",
+    "tags": ["Sparsam körning", "Växling"],
+    "question": "När bör du normalt växla upp för att köra bränslesnålt?",
+    "image": null,
+    "options": [
+      {"text": "Tidigt, redan innan motorn nått omkring 2500 varv", "correct": true, "feedback": "Rätt – att växla upp tidigt håller varvtalet nere och sparar bränsle."},
+      {"text": "Först när motorn varvar runt 4000–5000 varv", "correct": false, "feedback": "Så högt varvtal slösar bränsle i onödan."},
+      {"text": "Aldrig förrän bilen börjar tappa fart", "correct": false, "feedback": "Då har du redan kört länge på onödigt högt varvtal."},
+      {"text": "Bara när du kör i uppförsbacke", "correct": false, "feedback": "Tidig uppväxling gäller vid normal körning, inte bara i backe."}
+    ],
+    "explanation": "Genom att växla upp tidigt, gärna före cirka 2500 varv, håller du ett lågt varvtal. Lågt varvtal på hög växel ger lägre förbrukning."
+  },
+  {
+    "id": "kor-mi-003",
+    "topic": "miljo",
+    "tags": ["Sparsam körning", "Växling"],
+    "question": "Hur kan du köra mest bränslesnålt på en lång, jämn raksträcka?",
+    "image": null,
+    "options": [
+      {"text": "På högsta möjliga växel med lägsta möjliga varvtal", "correct": true, "feedback": "Rätt – hög växel och lågt varvtal ger lägst förbrukning."},
+      {"text": "På en låg växel med högt varvtal för säkerhets skull", "correct": false, "feedback": "Lågt växelläge med högt varv drar mycket mer bränsle."},
+      {"text": "Genom att hela tiden växla upp och ner", "correct": false, "feedback": "Onödiga växlingar och varvtalsändringar ökar förbrukningen."},
+      {"text": "Genom att frikoppla och rulla i perioder", "correct": false, "feedback": "Att rulla frikopplat är både osäkert och sparar inget på en jämn sträcka."}
+    ],
+    "explanation": "På jämn väg sparar du mest genom att ligga på högsta möjliga växel med så lågt varvtal som motorn klarar utan att gå ojämnt. Du kan ofta hoppa över växlar vid uppväxling."
+  },
+  {
+    "id": "kor-mi-004",
+    "topic": "miljo",
+    "tags": ["Sparsam körning", "Motorbroms"],
+    "question": "Vad händer med bränsletillförseln när du motorbromsar en modern bensin- eller dieselbil (låter bilen gå på växel utan gas)?",
+    "image": null,
+    "options": [
+      {"text": "Motorn stänger av bränsletillförseln helt så länge varvtalet ligger över tomgång", "correct": true, "feedback": "Rätt – vid motorbromsning över tomgångsvarv kapas bränslet och förbrukningen blir noll."},
+      {"text": "Motorn drar mer bränsle än vid vanlig körning", "correct": false, "feedback": "Tvärtom – bränslet stängs av vid motorbromsning."},
+      {"text": "Förbrukningen är densamma som på tomgång", "correct": false, "feedback": "Motorbromsning över tomgång ger lägre förbrukning än tomgång."},
+      {"text": "Det går inte att motorbromsa med insprutningsmotor", "correct": false, "feedback": "Alla moderna bilar kan motorbromsa."}
+    ],
+    "explanation": "Moderna insprutningsmotorer stänger av bränsletillförseln vid motorbromsning så länge varvtalet ligger över tomgångsvarvet. Att rulla på växel utan gas drar därför mindre än att frikoppla och rulla på tomgång."
+  },
+  {
+    "id": "kor-mi-005",
+    "topic": "miljo",
+    "tags": ["Sparsam körning", "Planering"],
+    "question": "Vilket körsätt sänker bränsleförbrukningen mest i stadstrafik?",
+    "image": null,
+    "options": [
+      {"text": "Att planera, hålla jämn fart och undvika onödiga inbromsningar", "correct": true, "feedback": "Rätt – framförhållning och jämn fart minskar förbrukningen."},
+      {"text": "Att gasa snabbt mellan stoppen och bromsa hårt", "correct": false, "feedback": "Hård acceleration och inbromsning slösar mycket bränsle."},
+      {"text": "Att hålla extra hög hastighet för att hinna fram", "correct": false, "feedback": "Högre fart ökar förbrukningen, inte minskar den."},
+      {"text": "Att ligga kvar på låg växel hela tiden", "correct": false, "feedback": "Låg växel innebär högt varvtal och hög förbrukning."}
+    ],
+    "explanation": "Genom att titta långt fram, anpassa farten efter trafiksignaler och hålla jämn fart slipper du onödiga accelerationer och inbromsningar – det sparar både bränsle och bromsar."
+  },
+  {
+    "id": "kor-mi-006",
+    "topic": "miljo",
+    "tags": ["Sparsam körning", "Underhåll"],
+    "question": "Vad av följande hjälper dig att hålla nere bränsleförbrukningen?",
+    "image": null,
+    "options": [
+      {"text": "Rätt lufttryck i däcken och att ta bort onödig last och takbox", "correct": true, "feedback": "Rätt – korrekt däcktryck och låg vikt minskar rull- och luftmotståndet."},
+      {"text": "Att alltid köra med takbox monterad även när den är tom", "correct": false, "feedback": "En tom takbox ökar luftmotståndet och förbrukningen i onödan."},
+      {"text": "Att hålla för lågt lufttryck i däcken", "correct": false, "feedback": "För lågt däcktryck ökar rullmotståndet och drar mer bränsle."},
+      {"text": "Att fylla bilen med extra vikt för bättre väggrepp", "correct": false, "feedback": "Mer vikt ger högre förbrukning."}
+    ],
+    "explanation": "Rätt däcktryck minskar rullmotståndet, och om du tar bort takbox och onödig vikt sänker du både luftmotstånd och tyngd. Allt detta minskar förbrukningen."
+  },
+  {
+    "id": "kor-mi-007",
+    "topic": "miljo",
+    "tags": ["Tomgång", "Lag"],
+    "question": "Hur länge får du normalt köra på tomgång inom de flesta kommuner?",
+    "image": null,
+    "options": [
+      {"text": "Högst 1 minut", "correct": true, "feedback": "Rätt – i de flesta kommuner är tomgång längre än 1 minut förbjuden."},
+      {"text": "Högst 10 minuter", "correct": false, "feedback": "Gränsen är betydligt kortare, normalt 1 minut."},
+      {"text": "Obegränsat så länge motorn behöver värmas", "correct": false, "feedback": "Det finns en tidsgräns, oftast 1 minut."},
+      {"text": "Högst 30 minuter på parkering", "correct": false, "feedback": "Tomgångsbegränsningen är 1 minut, inte 30."}
+    ],
+    "explanation": "I de flesta kommuner är tomgångskörning längre än 1 minut förbjuden. Undantag gäller bland annat när du står stilla i kö eller trafik. Onödig tomgång slösar bränsle och förorenar."
+  },
+  {
+    "id": "kor-mi-008",
+    "topic": "miljo",
+    "tags": ["Tomgång"],
+    "question": "Du stannar för att vänta på en passagerare i flera minuter. Vad är bäst för miljön?",
+    "image": null,
+    "options": [
+      {"text": "Stänga av motorn medan du väntar", "correct": true, "feedback": "Rätt – avstängd motor sparar bränsle och minskar utsläppen."},
+      {"text": "Låta motorn gå på tomgång hela tiden", "correct": false, "feedback": "Onödig tomgång slösar bränsle och är ofta förbjuden över 1 minut."},
+      {"text": "Höja varvtalet något så att motorn mår bättre", "correct": false, "feedback": "Det ökar bara förbrukning och utsläpp."},
+      {"text": "Köra runt kvarteret tills passageraren kommer", "correct": false, "feedback": "Att köra runt i onödan drar mer bränsle än att stå avstängd."}
+    ],
+    "explanation": "Står du stilla mer än någon minut är det bäst att stänga av motorn. Modern teknik startar enkelt om, och du undviker både onödig förbrukning och tomgångsförbudet."
+  },
+  {
+    "id": "kor-mi-009",
+    "topic": "miljo",
+    "tags": ["Drivmedel", "Förnybart"],
+    "question": "Vilket av följande är ett förnybart drivmedel?",
+    "image": null,
+    "options": [
+      {"text": "Etanol (E85)", "correct": true, "feedback": "Rätt – etanol är ett förnybart drivmedel med lägre nettoutsläpp av koldioxid."},
+      {"text": "Vanlig bensin", "correct": false, "feedback": "Bensin är ett fossilt drivmedel."},
+      {"text": "Vanlig diesel", "correct": false, "feedback": "Diesel är ett fossilt drivmedel."},
+      {"text": "Motorolja", "correct": false, "feedback": "Motorolja är smörjmedel, inte ett drivmedel."}
+    ],
+    "explanation": "Förnybara drivmedel som etanol (E85) och biogas ger lägre nettoutsläpp av koldioxid än fossila bränslen som bensin och diesel, eftersom kolet ingår i ett kretslopp."
+  },
+  {
+    "id": "kor-mi-010",
+    "topic": "miljo",
+    "tags": ["Avgaser", "Koldioxid"],
+    "question": "Vilken avgas är en växthusgas som påverkar klimatet?",
+    "image": null,
+    "options": [
+      {"text": "Koldioxid (CO2)", "correct": true, "feedback": "Rätt – koldioxid är en växthusgas som bidrar till klimatförändringar."},
+      {"text": "Syre (O2)", "correct": false, "feedback": "Syre är inte en växthusgas och är inte ett miljöproblem."},
+      {"text": "Kväve (N2)", "correct": false, "feedback": "Kvävgas utgör större delen av luften och är inte en växthusgas i sig."},
+      {"text": "Vattenånga från kupévärmaren", "correct": false, "feedback": "Det är inte den avgas som avses här – koldioxid är klimatgasen."}
+    ],
+    "explanation": "Koldioxid (CO2) är den växthusgas som bildas när bränslet förbränns och som påverkar klimatet. Mängden CO2 är direkt kopplad till hur mycket bränsle du förbrukar."
+  },
+  {
+    "id": "kor-mi-011",
+    "topic": "miljo",
+    "tags": ["Avgaser", "Katalysator"],
+    "question": "Vad gör katalysatorn i bilens avgassystem?",
+    "image": null,
+    "options": [
+      {"text": "Renar skadliga avgaser som kolväten, kolmonoxid och kväveoxider, men minskar inte koldioxiden", "correct": true, "feedback": "Rätt – katalysatorn omvandlar skadliga ämnen men påverkar inte CO2-mängden."},
+      {"text": "Tar bort all koldioxid ur avgaserna", "correct": false, "feedback": "Katalysatorn minskar inte koldioxidutsläppen."},
+      {"text": "Ökar motorns effekt", "correct": false, "feedback": "Katalysatorns uppgift är att rena avgaser, inte att ge effekt."},
+      {"text": "Gör att bilen drar mindre bränsle", "correct": false, "feedback": "Katalysatorn påverkar inte bränsleförbrukningen på det sättet."}
+    ],
+    "explanation": "Katalysatorn renar de skadliga avgaserna kolmonoxid (CO), kolväten (HC) och kväveoxider (NOx). Den minskar däremot inte koldioxiden – den enda vägen att sänka CO2 är att förbruka mindre bränsle."
+  },
+  {
+    "id": "kor-mi-012",
+    "topic": "miljo",
+    "tags": ["Avgaser", "Kallstart"],
+    "question": "När släpper en bil ut mest skadliga avgaser per kilometer?",
+    "image": null,
+    "options": [
+      {"text": "Vid kallstart och korta resor med kall motor", "correct": true, "feedback": "Rätt – en kall motor och katalysator renar sämst, så korta kalla resor förorenar mest per km."},
+      {"text": "Vid jämn motorvägskörning med varm motor", "correct": false, "feedback": "Med varm motor och katalysator är reningen som bäst."},
+      {"text": "När motorn nått full arbetstemperatur", "correct": false, "feedback": "En varm motor släpper ut mindre skadliga avgaser per km."},
+      {"text": "Aldrig – utsläppen är lika stora hela tiden", "correct": false, "feedback": "Utsläppen varierar, och kallstart är värst."}
+    ],
+    "explanation": "Vid kallstart fungerar varken motor eller katalysator optimalt, så de skadliga utsläppen per kilometer blir störst. Korta resor med kall motor är därför extra dåliga för miljön."
+  },
+  {
+    "id": "kor-mi-013",
+    "topic": "miljo",
+    "tags": ["Transportval"],
+    "question": "Du ska bara åka en kort sträcka inne i stan. Vilket val är bäst för miljön?",
+    "image": null,
+    "options": [
+      {"text": "Gå, cykla eller åka kollektivt", "correct": true, "feedback": "Rätt – för korta resor är gång, cykel eller kollektivtrafik bäst för miljön."},
+      {"text": "Ta bilen ensam med kall motor", "correct": false, "feedback": "En kort resa med kall motor förorenar mest per kilometer."},
+      {"text": "Köra flera varv för att hinna värma motorn först", "correct": false, "feedback": "Det ökar både körsträcka och utsläpp."},
+      {"text": "Ta bilen även om kollektivtrafik finns", "correct": false, "feedback": "Finns bra alternativ är de oftast bättre för miljön på korta sträckor."}
+    ],
+    "explanation": "Korta resor med kall motor förorenar mest per kilometer. För den typen av resor är det bäst att gå, cykla eller åka kollektivt – och om du måste ta bilen kan du samåka."
+  },
+  {
+    "id": "kor-mi-014",
+    "topic": "miljo",
+    "tags": ["Hastighet", "Bränsleförbrukning"],
+    "question": "Hur påverkar en höjd hastighet bränsleförbrukningen vid landsvägs- och motorvägskörning?",
+    "image": null,
+    "options": [
+      {"text": "Förbrukningen ökar oproportionerligt mycket eftersom luftmotståndet ökar kraftigt med farten", "correct": true, "feedback": "Rätt – luftmotståndet ökar med kvadraten på farten, så hög fart kostar mycket bränsle."},
+      {"text": "Förbrukningen blir lägre ju fortare du kör", "correct": false, "feedback": "Tvärtom – högre fart ger högre förbrukning."},
+      {"text": "Hastigheten påverkar inte förbrukningen alls", "correct": false, "feedback": "Hastigheten har stor betydelse, särskilt i hög fart."},
+      {"text": "Förbrukningen ökar exakt lika mycket som hastigheten", "correct": false, "feedback": "Ökningen är inte linjär – luftmotståndet växer snabbare än så."}
+    ],
+    "explanation": "Luftmotståndet ökar med kvadraten på hastigheten, så bränsleförbrukningen och utsläppen stiger oproportionerligt mycket när du kör fortare. Att sänka farten något sparar därför märkbart med bränsle."
+  }
+]
